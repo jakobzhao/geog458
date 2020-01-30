@@ -46,11 +46,12 @@ html, javascript, css (no lab)
 
 (8) interactions.
 
-(9) platforms
+(9) platforms/boostrap
 
 ### Week 7: Geo-Narratives
 
 (10) storymap
+(11)
 
 ### Week 8:Emerging Techniques for Digital Geographies
 
