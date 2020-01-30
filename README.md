@@ -1,45 +1,69 @@
-# geog458
-Advanced Digital Geographies
+# GEOGRAPHY 458: Advanced Digital Geographies
 
-Week 1: Management
+**Meeting:** TBD
 
-intro, **management (lab)**
+**Instructor:** Bo Zhao, SMI 416B, Office hours by appointment
 
-Week 2: Web Fundamentals
+**Contact:** 206.685.3846, zhaobo@uw.edu, jakobzhao (skype/wechat)
+
+> This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed.
+
+
+## :calendar: Weekly Schedule
+
+### Week 1: Fundations
+
+Intro to digital Geographies
+
+Project Management using GitHub (lab 1)
+
+### Week 2: Web techiniques Fundamentals
+
+System Architecture
 
 html, javascript, css (no lab)
 
-Week 3: Twitter Data Collection with python
+### Week 3: Digital geospatial data
 
-(1) leaflet map 
-(2) **data collection (lab)**  --> geojson
+(1) leaflet map
+(2) **data collection (lab 2 quiz)**  --> geojson
 
-Week 4: Mapbox Basemap
-
-(3) **basemap design (lab)**
-(4) Tiles: Raster
-
-Week 5: Leaflet.
+### Week 4: Web Mapping
 
 (5) web map basics
-(6) **basic web map (lab)**
+(6) **basic web map (lab 3)**
 
-Week 6:  Charts and Interactions. 
+(online based mid-term)
 
-(7) charts 
+### Week 5: Base Map design
 
-(8) storymaps  or interactions.
+(3) **basemap design (lab4 quiz)**
+(4) Tiles: Raster
 
-Week 7: Geo-Narratives or Storymaps
+### Week 6: Dashboard for digital geographies
 
-(9) storymap
+(7) charts  C3.js
 
-(10) platforms
+(8) interactions.
 
-Week 8: 3D models/Drone maps and VR
+(9) platforms
 
-week 9: Studio
+### Week 7: Geo-Narratives
 
-Week 10: Studio
+(10) storymap
 
-Week 11: Final Presentation
+### Week 8:Emerging Techniques for Digital Geographies
+
+(11) Drone maps
+
+(12) Virtual Reality
+
+#### Week 9: Project Studio
+
+Studio
+
+#### Week 10: Project Studio
+
+Studio/Course Summary
+
+#### Week 11: Final Presentation
