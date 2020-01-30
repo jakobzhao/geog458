@@ -17,18 +17,18 @@ Intro to digital Geographies
 
 Project Management using GitHub (lab 1)
 
-### Week 2: Web techiniques Fundamentals
+### Week 2: Web techiniques fundamentals
 
 System Architecture
 
 html, javascript, css (no lab)
 
-### Week 3: Digital geospatial data
+### Week 3: Geospatial data
 
 (1) leaflet map
 (2) **data collection (lab 2 quiz)**  --> geojson
 
-### Week 4: Web Mapping
+### Week 4: Web mapping
 
 (5) web map basics
 (6) **basic web map (lab 3)**
