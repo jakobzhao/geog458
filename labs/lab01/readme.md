@@ -1,4 +1,4 @@
-!pip install geocoder
+!pip3 install geocoder
 import geocoder
 
 
