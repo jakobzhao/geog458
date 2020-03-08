@@ -1,4 +1,6 @@
-# GEOGRAPHY 458: Advanced Digital Geographies (Under Development)
+# GEOGRAPHY 458: Advanced Digital Geographies 
+
+#### (Under Development)
 
 **Meeting:** TBD
 
