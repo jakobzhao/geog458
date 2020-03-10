@@ -1,6 +1,5 @@
 import geocoder
-
-
+import numpy
 
 loc = "xi'an china"
 
