@@ -16,7 +16,7 @@ Please download and import the following iCalendar (.ics) files to your calendar
 Weekly: https://washington.zoom.us/meeting/vJwsfu2spjopLNJKVO_7eOWFmuBritlYtg/ics?icsToken=98tyKuigrzIuHtyUs1_9RbUvA97-bvHukl1ggIhrsyCyBg9kRA7jFPBLJr5GBN-B
 
 Join Zoom Meeting
-https://washington.zoom.us/j/181944813?pwd=dFFKbnZvam5WcHo4N2M1TU9nZjFKdz09
+https://washington.zoom.us/j/181944813
 
 Meeting ID: 181 944 813
 Password: please ask the instructor.
