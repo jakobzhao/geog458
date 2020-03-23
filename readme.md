@@ -27,56 +27,60 @@ As digital technologies have radically transformed human life, this course tries
 
 ### Week 1: Intro to digital geographies
 
-这周将关注于。
+- Readings: digital geographies 的paper.
+- Lab 1: [Project management using GitHub](labs/lab01)
+- Canvas Survey
 
-- Readings:
-- Lab 1: [Project management using GitHub](labs/lab1)
+### Week 2: Techiniques fundamentals
 
-### Week 2: Web techiniques fundamentals
-
-这周关注于 papers
-
-- Readings:
-
-System architecture of digital geographic platforms
-
+这周关注于技术基础。
+System architecture
 Web Development - html, javascript, css
+
+- Readings: w3schools - html, javascript, css and jquery.
 
 ### Week 3: Geospatial data
 
-(1) leaflet map
-(2) **data collection (lab 2 quiz)**  --> geojson
+这周讲地理数据。qgis 来生成数据，读取数据，管理数据？ 伦理问题。
+
+- Readings: geojson, qgis, python abc
+- Lab 2: [Geo-tagged tweet collection and visualization](labs/lab02)
 
 ### Week 4: Web mapping
 
-(5) web map basics
-(6) **basic web map (lab 3)**
+leaflet 最基础，到 lab 3 的讲解。
 
-(online based mid-term)
+- Readings: leaflet tutorial
+- Lab 3: [An integrative web mapping](labs/lab03)
 
 ### Week 5: Base Map Design
 
-(3) **basemap design (lab4 quiz)**
-(4) Tiles: Raster
+Tiles: Raster
+
+- Readings: Mapbox Studio, Bing Tile Structures
+- Lab 4: [Generating Map Tiles](labs/lab04)
+- Online Mid-term
 
 ### Week 6: Smart dashboard
 
-(7) charts  C3.js
+interface design, color, typography, icons, animation
 
-(8) interactions.
-
-(9) platforms/boostrap
+- Readings:  chroma.js, boostrap, c3.js, panopitican
 
 ### Week 7: Geo-Narratives
 
-(10) storymap
-(11)
+(10)  多媒体的制作 free resources
+(11)  storymap
 
-### Week 8:Emerging Techniques
+- Readings: Map Critique (ESRI), Storymaps
 
-(11) Drone maps
+- Lab 05: [An intergrative digital geographies project](labs/lab05)
 
-(12) Virtual Reality
+### Week 8: Emerging Techniques
+
+- Point Cloud Visualization - Drone, Structure from Motion (SfM), and etc.
+
+- Real-time Environment Data Collection
 
 #### Week 9: Project Studio
 
