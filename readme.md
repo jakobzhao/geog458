@@ -29,7 +29,7 @@ As digital technologies have radically transformed human life, this course tries
 
 - Readings: digital geographies 的paper.
 - Lab 1: [Project management using GitHub](labs/lab01)
-- Canvas Survey
+- Canvas Survey: 通过survey，学生们根据技术和兴趣的不同分成组。五个人一组。
 
 ### Week 2: Techiniques fundamentals
 
@@ -82,11 +82,11 @@ interface design, color, typography, icons, animation
 
 - Real-time Environment Data Collection
 
-#### Week 9: Project Studio
+### Week 9: Project Studio
 
 Studio
 
-#### Week 10: Project Studio
+### Week 10: Project Studio
 
 Studio
 
@@ -95,6 +95,10 @@ Studio
 ## :two_men_holding_hands: Targeted Audience
 
 This course targets students who have a background in fundamental geographic information science or equivalent computational or programming skills. This course is designed for students who are willing to learn defined GIS skills that will be important to many emerging jobs in location-based services, autonomous driving, web mapping, geographic data collection (using drone or LiDAR) and analyses. This course is also suitable for students who are interested in learning and critically reflecting upon cutting-edge geospatial techniques.
+
+## :heavy_check_mark: Grading
+
+Based on the above requirements - 40% seminar participation, think pieces, and discussion leadership, 20% practical exercise, 40% writing project.
 
 ## :love_letter: Accommodations
 
