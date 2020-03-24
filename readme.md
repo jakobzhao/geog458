@@ -58,7 +58,7 @@ This week's topic is around processing geospatial data for digital geographies p
 leaflet and lab 3
 
 - Readings: leaflet tutorial
-- Lab 3: [An integrative web mapping](labs/lab03)
+- Lab 3: [An intergrative web mapping](labs/lab03)
 
 ### Week 5: Base Map Design
 

@@ -1,0 +1,45 @@
+html, body, #map { width: 100%; height: 100%; margin: 0; background: #fff;}
+
+.legend {
+    line-height: 16px;
+    width: 140px;
+    color: #333333;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 6px 8px;
+    background: white;
+    background: rgba(255,255,255,0.5);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.legend i {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.9;
+}
+
+.legend img {
+    width: 16px;
+    height: 16px;
+    margin-right: 3px;
+    float: left;
+}
+
+.legend p {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+}
+
+.leaflet-tooltip.feature-label {
+    background-color: transparent;
+    border: transparent;
+    box-shadow: none;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Titillium Web', sans-serif;
+    text-shadow: 0 0 2px #FFFFFF;
+    color: rgba(35, 35, 35, 0.78)
+}
