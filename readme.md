@@ -25,7 +25,9 @@ As digital technologies have radically transformed human life, this course tries
 
 ## :calendar: Weekly Schedule
 
-[Gear up the working environment](assets/gearup.md) :computer: :cloud: :earth_americas: :beer:
+### Week 0: Preperation
+
+- [Gear up the working environment](assets/gearup.md) :computer: :cloud: :earth_americas: :beer:
 
 ### Week 1: Intro to digital geographies
 
