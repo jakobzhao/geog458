@@ -24,10 +24,10 @@ As digital technologies have radically transformed human life, this course tries
 
 ## :calendar: Weekly Schedule
 
-### Week 0: Preperation
+### Preperation
 
 - [Gear up the working environment](assets/gearup.md) :computer: :cloud: :earth_americas: :beer:
-- Survey: Through a survey, students can team up as group of 4 - 5 people according to the profeciency of technical skills and interests.
+- Canvas Survey: Through a survey, students will team up as group of 4 - 5 people according to the profeciency of technical skills and interests.
 
 ### Week 1: Intro to digital geographies
 
@@ -59,27 +59,24 @@ You will make your first web map in this week using a popular web mapping librar
 - Readings: leaflet tutorial
 - Lab 3: [An intergrative web mapping](labs/lab03)
 
-### Week 5: Base Map Design
+### Week 5: Base map design
 
-Tiles: Raster
 
 - Readings: Mapbox Studio, Bing Tile Structures
 - Lab 4: [Generating Map Tiles](labs/lab04)
 - Online Mid-term
 
-### Week 6: Smart dashboard
+### Week 6: Smart dashboards
 
- - Lecture Notes: interface design, color, typography, icons, animation
-
-- Readings:  chroma.js, boostrap, c3.js, panopitican
+- Lecture Notes: interface design, color, typography, icons, animation
+- Readings: [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), chroma.js, boostrap, c3.js, panopitican
 
 ### Week 7: Geo-Narratives
 
 (10)  multimedia free resources, full page
 (11)  storymap
 
-- Readings: Map Critique (ESRI), Storymaps
-
+- Readings: Storymaps
 - Lab 05: [An intergrative digital geographies project](labs/lab05)
 
 ### Week 8: Emerging topics
@@ -89,7 +86,7 @@ This week will focus on two emerging topics related to digital geographies, incl
 - Lecture Notes: [Point Cloud visualization]() and [Real-time environmental data visualization]().
 - Readings:
 
-### Week 9 & 10: Project Studio
+### Week 9 & 10: Project studio
 
 During these two weeks, each group will focusing on their final projects. The instructors are avaiable during the office hour, the normal lecture period to help with each group on their final projects.
 
