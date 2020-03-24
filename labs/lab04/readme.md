@@ -1,10 +1,4 @@
-# Map Server V: Generating Map Tiles
-
-> Winter 2019 | Geography 371 | Web Mapping
->
-> **Instructor:** Bo Zhao | **Location:** WLKN 210 | **Time:** MWF 0800 - 0850
-
-# Lab 2: Geo-tagged tweet collection and visualization
+# Lab 4: Geo-tagged tweet collection and visualization
 
 **Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu
 
