@@ -42,15 +42,15 @@ We walk through the syllabus and repond to students' inquiries. Each student is 
 
 We focuses on preparing you the fudamental skill set for web prorgamming. This week will begin with the system architecture of digital geographies project, and then guide yuo through some of the necessary front-end fudamentals, including internet basics, html, javascript, and css. This week requires a lot of self-learning. Please be preprared.
 
-- Lecture Notes: [System architecture]()
+- Lecture Notes: [System architecture](week02/readme.md)
 - Readings: [W3School Tutorials on Html, javascript, css and jquery](weeks/week02/readings.md).
 
 ### Week 3: Geospatial data
 
 This week's topic is around processing geospatial data for digital geographies projects. We will begin with introduce the structure of geojson format, adn then how to collect,convert and visualize geojson on web or a desktop environment like QGIS. After completing lab 2, each students will learn how to collect geo-tagged tweets of a specific topic (e.g., seattle, homeless, COVID-19, etc.), and then visualize the data for further uses.
 
-- Lecture Notes: [Geospatial data for digital geographies]
-- Readings: 
+- Lecture Notes: [Geospatial data for digital geographies](week03/readme.md)
+- Readings: `a paper on geo-tagged tweets`
 - Lab 2: [Geo-tagged tweet collection and visualization](labs/lab02)
 
 ### Week 4: Web mapping project
