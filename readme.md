@@ -63,7 +63,7 @@ You will make your first web map in this week using a popular web mapping librar
 
 - **Readings:** [The Guide to Map Design](weeks/week05/mapbox-design.pdf), Bing Tile Structures
 - **Lab 4:** [Generating Map Tiles](labs/lab04)
-- <i><b style="color: #dc3545">Online Mid-term</b></i>
+- <p style="color: #dc3545">Online Mid-term</p>
 
 ### Week 6: Smart dashboards
 
