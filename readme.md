@@ -6,7 +6,6 @@
 
 **Office Hour:** Tuesdays 1:00 to 3:00 PM PST or by appointment on [Zoom #: 181944813](https://washington.zoom.us/j/181944813)
 
-
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jakobzhao/geog458.git/master)
 
 > This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed.
@@ -70,7 +69,7 @@ Tiles: Raster
 
 ### Week 6: Smart dashboard
 
-interface design, color, typography, icons, animation
+ - Lecture Notes: interface design, color, typography, icons, animation
 
 - Readings:  chroma.js, boostrap, c3.js, panopitican
 
@@ -83,21 +82,20 @@ interface design, color, typography, icons, animation
 
 - Lab 05: [An intergrative digital geographies project](labs/lab05)
 
-### Week 8: Emerging Techniques
+### Week 8: Emerging topics
 
-- Point Cloud Visualization - Drone, Structure from Motion (SfM), and etc.
+This week will focus on two emerging topics related to digital geographies, including cloud point visualization and real-time environment data collection.
 
-- Real-time Environment Data Collection
+- Lecture Notes: [Point Cloud visualization]() and [Real-time environmental data visualization]().
+- Readings:
 
-### Week 9: Project Studio
+### Week 9 & 10: Project Studio
 
-Studio
-
-### Week 10: Project Studio
-
-Studio
+During these two weeks, each group will focusing on their final projects. The instructors are avaiable during the office hour, the normal lecture period to help with each group on their final projects.
 
 #### Week 11: Final Presentations and Course Summary
+
+
 
 ## :two_men_holding_hands: Targeted Audience
 
