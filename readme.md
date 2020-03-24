@@ -63,9 +63,8 @@ You will make your first web map in this week using a popular web mapping librar
 
 - **Readings:** [The Guide to Map Design](weeks/week05/mapbox-design.pdf), Bing Tile Structures
 - **Lab 4:** [Generating Map Tiles](labs/lab04)
-- <b style="color: #dc3545">Online Mid-term</b>
+- Online Mid-term
 
-<font color="red">Status: **Not yet implemented**</font>
 
 ### Week 6: Smart dashboards
 
@@ -91,7 +90,7 @@ During these two weeks, each group will focusing on their final projects. The in
 
 #### Week 11: Final Presentations and Course Summary
 
-
+Durint the last two meeting sessions, each group will present their final projects.
 
 ## :two_men_holding_hands: Targeted Audience
 
