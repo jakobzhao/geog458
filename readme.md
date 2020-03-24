@@ -50,7 +50,7 @@ We focuses on preparing you the fudamental skill set for web prorgamming. This w
 This week's topic is around processing geospatial data for digital geographies projects. We will begin with introduce the structure of geojson format, adn then how to collect,convert and visualize geojson on web or a desktop environment like QGIS. After completing lab 2, each students will learn how to collect geo-tagged tweets of a specific topic (e.g., seattle, homeless, COVID-19, etc.), and then visualize the data for further uses.
 
 - Lecture Notes: [Geospatial data for digital geographies](week03/readme.md)
-- Readings: `a paper on geo-tagged tweets`
+- Readings: [More than you ever wanted to know about GeoJSON](week03/assets/geojson.pdf)
 - Lab 2: [Geo-tagged tweet collection and visualization](labs/lab02)
 
 ### Week 4: Web mapping project
