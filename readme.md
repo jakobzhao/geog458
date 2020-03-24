@@ -55,7 +55,7 @@ This week's topic is around processing geospatial data for digital geographies p
 
 ### Week 4: Web mapping project
 
-leaflet and lab 3
+You will make your first web map in this week using a popular web mapping library - Leaflet. In the lecture, you will work with me to get familiar with the basics, and then we will give you an very detailed introduction to the lab 3.
 
 - Readings: leaflet tutorial
 - Lab 3: [An intergrative web mapping](labs/lab03)
