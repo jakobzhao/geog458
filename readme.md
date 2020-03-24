@@ -26,62 +26,62 @@ As digital technologies have radically transformed human life, this course tries
 
 ### Preperation
 
-- [Gear up the working environment](assets/gearup.md) :computer: :cloud: :earth_americas: :beer:
-- Canvas Survey: Through a survey, students will team up as group of 4 - 5 people according to the profeciency of technical skills and interests.
+- [**Gear up the working environment**](assets/gearup.md) :computer: :cloud: :earth_americas: :beer:
+- **Canvas Survey:** Through a survey, students will team up as group of 4 - 5 people according to the profeciency of technical skills and interests.
 
 ### Week 1: Intro to digital geographies
 
 We walk through the syllabus and repond to students' inquiries. Each student is expected to read the paper by Ash et al (2018). This week's lecture and lab will prepare you both the theortical and techinical foundation. After compeleting the lab 01, you can clone/synchronize the course material, set up a personal website, and more importantly, feel comfortable of using github to manage your digital geographies projects.
 
-- Lecutre Notes: [Syllabus](readme.md)
-- Readings: (1) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_) (2) [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
-- Lab 1: [Project management using GitHub](labs/lab01)
+- **Lecutre Notes:** [Syllabus](readme.md)
+- **Readings:** (1) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_) (2) [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
+- **Lab 1:** [Project management using GitHub](labs/lab01)
 
 ### Week 2: Prorgamming fundamentals
 
 We focuses on preparing you the fudamental skill set for web prorgamming. This week will begin with the system architecture of digital geographies project, and then guide yuo through some of the necessary front-end fudamentals, including internet basics, html, javascript, and css. This week requires a lot of self-learning. Please be preprared.
 
-- Lecture Notes: [System architecture](week02/readme.md)
-- Readings: [W3School Tutorials on Html, javascript, css and jquery](weeks/week02/readings.md).
+- **Lecture Notes:** [System architecture](week02/readme.md)
+- **Readings:** [W3School Tutorials on Html, javascript, css and jquery](weeks/week02/readings.md).
 
 ### Week 3: Geospatial data
 
 This week's topic is around processing geospatial data for digital geographies projects. We will begin with introduce the structure of geojson format, adn then how to collect,convert and visualize geojson on web or a desktop environment like QGIS. After completing lab 2, each students will learn how to collect geo-tagged tweets of a specific topic (e.g., seattle, homeless, COVID-19, etc.), and then visualize the data for further uses.
 
-- Lecture Notes: [Geospatial data for digital geographies](week03/readme.md)
-- Readings: [More than you ever wanted to know about GeoJSON](week03/assets/geojson.pdf)
-- Lab 2: [Geo-tagged tweet collection and visualization](labs/lab02)
+- **Lecture Notes:** [Geospatial data for digital geographies](week03/readme.md)
+- **Readings:** [More than you ever wanted to know about GeoJSON](week03/assets/geojson.pdf)
+- **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02)
 
 ### Week 4: Web mapping
 
 You will make your first web map in this week using a popular web mapping library - Leaflet. In the lecture, you will work with me to get familiar with the basics, and then we will give you an very detailed introduction to the lab 3.
 
-- Readings: leaflet tutorial
-- Lab 3: [An intergrative web mapping](labs/lab03)
+- **Readings:** leaflet tutorial
+- **Lab 3:** [An intergrative web mapping](labs/lab03)
 
 ### Week 5: Map design
 
-- Readings: [The Guide to Map Design](weeks/week05/mapbox-design.pdf), Bing Tile Structures
-- Lab 4: [Generating Map Tiles](labs/lab04)
-- Online Mid-term
+- **Readings:** [The Guide to Map Design](weeks/week05/mapbox-design.pdf), Bing Tile Structures
+- **Lab 4:** [Generating Map Tiles](labs/lab04)
+- <i><b style="color: #dc3545">Online Mid-term</b></i>
 
 ### Week 6: Smart dashboards
 
-- Lecture Notes: interface design, color, typography, icons, animation
-- Readings: [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), chroma.js, boostrap, c3.js, panopitican
+- **Lecture Notes:** interface design, color, typography, icons, animation
+- **Readings:** [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), chroma.js, boostrap, c3.js, panopitican
 
 ### Week 7: Geo-Narratives
 
-- Lecture Notes: Multimedia, Full Page, Picture, Icon, and other resources
-- Readings: [Map-based visual Storytelling: An Assessment of emerging genres and tropes](https://drive.google.com/file/d/133s4dxoRaT1A7OckBapS6e9Yxh_wQc9d/view?usp=sharing) (Ch 1,2 and 5)
-- Lab 05: [An intergrative digital geographies project](labs/lab05)
+- **Lecture Notes:** Multimedia, Full Page, Picture, Icon, and other resources
+- **Readings:** [Map-based visual Storytelling: An Assessment of emerging genres and tropes `Chapter 1,2 and 5`.](https://drive.google.com/file/d/133s4dxoRaT1A7OckBapS6e9Yxh_wQc9d/view?usp=sharing)
+- **Lab 05:** [An intergrative digital geographies project](labs/lab05)
 
 ### Week 8: Emerging topics
 
 This week will focus on two emerging topics related to digital geographies, including cloud point visualization and real-time environment data collection.
 
-- Lecture Notes: [Point Cloud visualization]() and [Real-time environmental data visualization]().
-- Readings: Real-time GIS and Panopticon
+- **Lecture Notes:** [Point Cloud visualization]() and [Real-time environmental data visualization]().
+- **Readings:** Real-time GIS and Panopticon
 
 ### Week 9 & 10: Project studio
 
