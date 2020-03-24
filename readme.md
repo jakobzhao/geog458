@@ -52,17 +52,16 @@ This week's topic is around processing geospatial data for digital geographies p
 - Readings: [More than you ever wanted to know about GeoJSON](week03/assets/geojson.pdf)
 - Lab 2: [Geo-tagged tweet collection and visualization](labs/lab02)
 
-### Week 4: Web mapping project
+### Week 4: Web mapping
 
 You will make your first web map in this week using a popular web mapping library - Leaflet. In the lecture, you will work with me to get familiar with the basics, and then we will give you an very detailed introduction to the lab 3.
 
 - Readings: leaflet tutorial
 - Lab 3: [An intergrative web mapping](labs/lab03)
 
-### Week 5: Base map design
+### Week 5: Map design
 
-
-- Readings: Mapbox Studio, Bing Tile Structures
+- Readings: [The Guide to Map Design](weeks/week05/mapbox-design.pdf), Bing Tile Structures
 - Lab 4: [Generating Map Tiles](labs/lab04)
 - Online Mid-term
 
@@ -73,10 +72,8 @@ You will make your first web map in this week using a popular web mapping librar
 
 ### Week 7: Geo-Narratives
 
-(10)  multimedia free resources, full page
-(11)  storymap
-
-- Readings: Storymaps
+- Lecture Notes: Multimedia, Full Page, Picture, Icon, and other resources
+- Readings: [Map-based visual Storytelling: An Assessment of emerging genres and tropes](https://drive.google.com/file/d/133s4dxoRaT1A7OckBapS6e9Yxh_wQc9d/view?usp=sharing) (Ch 1,2 and 5)
 - Lab 05: [An intergrative digital geographies project](labs/lab05)
 
 ### Week 8: Emerging topics
@@ -84,7 +81,7 @@ You will make your first web map in this week using a popular web mapping librar
 This week will focus on two emerging topics related to digital geographies, including cloud point visualization and real-time environment data collection.
 
 - Lecture Notes: [Point Cloud visualization]() and [Real-time environmental data visualization]().
-- Readings:
+- Readings: Real-time GIS and Panopticon
 
 ### Week 9 & 10: Project studio
 
