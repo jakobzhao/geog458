@@ -28,31 +28,34 @@ As digital technologies have radically transformed human life, this course tries
 ### Week 0: Preperation
 
 - [Gear up the working environment](assets/gearup.md) :computer: :cloud: :earth_americas: :beer:
+- Survey: Through a survey, students can team up as group of 4 - 5 people according to the profeciency of technical skills and interests.
 
 ### Week 1: Intro to digital geographies
 
-- Readings: digital geographies 的paper.
+We walk through the syllabus and answer the questions from the students. Students can expected to read the paper by Ash et al (2018). This week's lecture and lab will prepare you both the theortical and techinical foundation for this course. After compeleting the lab 01, you will be able to download the course material, set up a personal website, and more importantly feel comfortable of using github to manage your digital geographies projects.
+
+- Readings: [Ash, J., Kitchin, R. and Leszczynski, A., 2018. Digital turn, digital geographies?. *Progress in Human Geography*, 42(1), pp.25-430](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_).
+-
 - Lab 1: [Project management using GitHub](labs/lab01)
-- Canvas Survey: 通过survey，学生们根据技术和兴趣的不同分成组。五个人一组。
 
 ### Week 2: Techiniques fundamentals
 
-这周关注于技术基础。
-System architecture
-Web Development - html, javascript, css
+We focuses on preparing you the fudamental skill set for web prorgamming. This week will begin with the system architecture of digital geographies project, and then guide yuo through some of the necessary front-end fudamentals, including internet basics, html, javascript, and css. This week requires a lot of self-learning. Please be preprared.
 
 - Readings: w3schools - html, javascript, css and jquery.
 
 ### Week 3: Geospatial data
 
+
 这周讲地理数据。qgis 来生成数据，读取数据，管理数据？ 伦理问题。
+geospatial data process.
 
 - Readings: geojson, qgis, python abc.
 - Lab 2: [Geo-tagged tweet collection and visualization](labs/lab02)
 
 ### Week 4: Web mapping
 
-leaflet 最基础，到 lab 3 的讲解。
+leaflet and lab 3
 
 - Readings: leaflet tutorial
 - Lab 3: [An integrative web mapping](labs/lab03)
@@ -73,7 +76,7 @@ interface design, color, typography, icons, animation
 
 ### Week 7: Geo-Narratives
 
-(10)  多媒体的制作 free resources, full page
+(10)  multimedia free resources, full page
 (11)  storymap
 
 - Readings: Map Critique (ESRI), Storymaps
