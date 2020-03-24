@@ -65,20 +65,7 @@ You will make your first web map in this week using a popular web mapping librar
 - **Lab 4:** [Generating Map Tiles](labs/lab04)
 - <b style="color: #dc3545">Online Mid-term</b>
 
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-```
-
-- ![#f03534543c15432432432](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
-- ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `#c5f015`
-- ![#1589F0](https://placehold.it/15/1589F0/000000?text=+) `#1589F0`
-
-
-<a><img src="http://dump.thecybershadow.net/6c736bfd11ded8cdc5e2bda009a6694a/colortext.svg"/></a>
-
+<font color="red">Status: **Not yet implemented**</font>
 
 ### Week 6: Smart dashboards
 
