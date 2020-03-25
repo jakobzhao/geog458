@@ -27,7 +27,7 @@ As digital technologies have radically transformed human life, this course tries
 ### Preperation
 
 - [**Gear up the working environment**](assets/gearup.md) :computer: :cloud: :earth_americas: :beer:
-- **Canvas Survey:** Through a survey, students will team up as group of 4 - 5 people according to the profeciency of technical skills and interests.
+- **Canvas Survey:** Through a survey, students will team up as group of 4 ~ 5 people according to the profeciency of technical skills and interests.
 
 ### Week 1: Intro to digital geographies
 
@@ -49,7 +49,7 @@ We focuses on preparing you the fudamental skill set for web prorgamming. This w
 This week's topic is around processing geospatial data for digital geographies projects. We will begin with introduce the structure of geojson format, adn then how to collect,convert and visualize geojson on web or a desktop environment like QGIS. After completing lab 2, each students will learn how to collect geo-tagged tweets of a specific topic (e.g., seattle, homeless, COVID-19, etc.), and then visualize the data for further uses.
 
 - **Lecture Notes:** [Geospatial data for digital geographies](week03/readme.md)
-- **Readings:** [More than you ever wanted to know about GeoJSON](week03/assets/geojson.pdf)
+- **Readings:** [Can social media clear the air? A case study of the air pollution problem in Chinese cities](https://drive.google.com/open?id=1C0MTPaPnVALVemeYEfiDChUKRZfcMjz3), [More than you ever wanted to know about GeoJSON](week03/assets/geojson.pdf). 
 - **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02)
 
 ### Week 4: Web mapping
@@ -69,7 +69,7 @@ You will make your first web map in this week using a popular web mapping librar
 ### Week 6: Smart dashboards
 
 - **Lecture Notes:** interface design, color, typography, icons, animation
-- **Readings:** [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), chroma.js, boostrap, c3.js, panopitican
+- **Readings:** [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), chroma.js, boostrap, c3.js
 
 ### Week 7: Geo-Narratives
 
@@ -88,7 +88,7 @@ This week will focus on two emerging topics related to digital geographies, incl
 
 During these two weeks, each group will focusing on their final projects. The instructors are avaiable during the office hour, the normal lecture period to help with each group on their final projects.
 
-#### Week 11: Final Presentations and Course Summary
+### Week 11: Final Project Presentations and Course Summary
 
 Durint the last two meeting sessions, each group will present their final projects.
 
@@ -98,7 +98,11 @@ This course targets students who have a background in fundamental geographic inf
 
 ## :heavy_check_mark: Grading
 
-Based on the above requirements - 40% seminar participation, think pieces, and discussion leadership, 20% practical exercise, 40% writing project.
+10% lecture participation,
+20% labs,
+20% mid-term,
+20% final project + Presentation.
+20% essay.
 
 ## :love_letter: Accommodations
 
