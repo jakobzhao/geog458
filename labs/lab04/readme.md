@@ -1,8 +1,8 @@
-# Lab 4: Generating Map Tiles 
+# Lab 4: Generating Map Tiles
 
 **Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu
 
-**Assigned:** 1/10/2019 | **Due:**  1/15/2019 23:59:59 | **Points Available** = 50
+**Due:**  May 10th, by 11:59pm | **Points Available** = 50
 
 As mentioned in previous lessons, the earliest web maps were typically drawn on the fly by the server, no matter how many layers were available or requested. These are the types of maps you just created using GeoServer and WMS. As you may have noticed, **the symbol sets and labeling choices for this type of map are relatively limited and complex to work with**. In fact, for many years, web cartographers had to build a map with minimal layer set and simple symbols to avoid hampering performance. In many cases, a cartographer was not even involved; instead, the web map was made by a server administrator tweaking SLD files that defined the layer order, symbol sizes, and so forth. This was the case with both open specification web services (like WMS) and proprietary web services (like Esri ArcIMS).
 

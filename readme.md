@@ -33,7 +33,7 @@ We walk through the syllabus and repond to students' inquiries. Each student is 
 
 -   **Lecutre Notes:** [Syllabus](readme.md)
 -   **Readings:** a) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_), b) [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
--   **Lab 1:** [Project management using GitHub](labs/lab01) `Due: April 9th, by 5:00pm`
+-   **Lab 1:** [Project management using GitHub](labs/lab01) `Due: April 9th, by 11:59pm`
 
 ### Week 2: Prorgamming fundamentals
 
@@ -55,14 +55,14 @@ This week's topic is around processing geospatial data for digital geographies p
 You will make your first web map in this week using a popular web mapping library - Leaflet. In the lecture, you will work with me to get familiar with the basics, and then we will give you an very detailed introduction to the lab 3.
 
 -   **Readings:** leaflet tutorial
--   **Lab 3:** [An intergrative web mapping](labs/lab03) `Due: May 3rd, by 11:59pm`
+-   **Lab 3:** [An integrative web mapping](labs/lab03) `Due: May 3rd, by 11:59pm`
 
 ### Week 5: Map design
 
 -   **Lecture Notes:** [Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/)
 -   **Readings:** a) [The Guide to Map Design](weeks/week05/mapbox-design.pdf), b) [Mapbox Studio How-to Videos](weeks/week05/readme.md)
 -   **Lab 4:** [Generating Map Tiles](labs/lab04) `Due: May 10th, by 11:59pm`
--   Online Mid-term
+-   **Online Mid-term：** `April 30th 9:30 - 10:20 AM`
 
 ### Week 6: Smart dashboards
 
@@ -73,7 +73,7 @@ You will make your first web map in this week using a popular web mapping librar
 
 -   **Lecture Notes:** Multimedia, Full Page, Icon, and other resources
 -   **Readings:** [Map-based visual Storytelling: An Assessment of emerging genres and tropes `Chapter 1,2 and 5`.](https://drive.google.com/file/d/133s4dxoRaT1A7OckBapS6e9Yxh_wQc9d/view?usp=sharing)
--   **Lab 05:** [An intergrative digital geographies project](labs/lab05) `Due: May 24th, by 11:59pm`
+-   **Lab 05:** [An integrative digital geographies project](labs/lab05) `Due: May 24th, by 11:59pm`
 
 ### Week 8: Emerging topics
 
