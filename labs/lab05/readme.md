@@ -1,9 +1,8 @@
-# Lab 5: An intergrative digital geographies project
+# Lab 5: An intergrative project of digital geographies
 
 **Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu
 
 **Assigned:** 1/10/2019 | **Due:**  1/15/2019 23:59:59 | **Points Available** = 50
-
 
 In this lab, you are asked to make a storymap using the library `storymap.js`. This storymap.js library is hosted at [https://github.com/jakobzhao/storymap](https://github.com/jakobzhao/storymap). Your storymap will at least have the following features:
 

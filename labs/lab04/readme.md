@@ -1,15 +1,8 @@
-# Lab 4: Geo-tagged tweet collection and visualization
+# Lab 4: Generating Map Tiles 
 
 **Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu
 
 **Assigned:** 1/10/2019 | **Due:**  1/15/2019 23:59:59 | **Points Available** = 50
-
-**Learning Objectives**
-
-- Understand the structure of tile system;
-- Generate tiles using QTiles
-
-# 1. Overview
 
 As mentioned in previous lessons, the earliest web maps were typically drawn on the fly by the server, no matter how many layers were available or requested. These are the types of maps you just created using GeoServer and WMS. As you may have noticed, **the symbol sets and labeling choices for this type of map are relatively limited and complex to work with**. In fact, for many years, web cartographers had to build a map with minimal layer set and simple symbols to avoid hampering performance. In many cases, a cartographer was not even involved; instead, the web map was made by a server administrator tweaking SLD files that defined the layer order, symbol sizes, and so forth. This was the case with both open specification web services (like WMS) and proprietary web services (like Esri ArcIMS).
 
@@ -285,11 +278,9 @@ Here is what the final output looks like **[here](http://jakobzhao.github.io/geo
 
 ## Deliverable
 
-For this quiz, you will need to generate a tile set for an geographic area you are interested in. To generate the set of tiles, please refere to the lecture note on [map tiles](../lectures/lec14). After the map tiles are generated, you will need to create a leaflet map and add up the layer of tiles to the map. And then upload everything to a github repository.
+you will need to generate a tile set for an geographic area you are interested in. After the map tiles are generated, you will need to create a leaflet map and add up the layer of tiles to the map. And then upload everything to a github repository. In the readme.md file of this repository, please briefly introduce this tiles, the georaphic area, and the zoom levels you select.
 
-In the readme.md file of this repository, please briefly introduce this tiles, the georaphic area, and the zoom levels you select.
-
-> **Note:**  Since github repository only allows you upload a limited amount of data, so please make sure not to generate too many tiles.
+> **Note:**  Since github repository only allows you upload a limited amount of data, so please make sure not to generate too many tiles by limiting the boundingbox or the scale range.
 
 The structure of this repository should look like:
 
@@ -302,8 +293,6 @@ The structure of this repository should look like:
     │         XXX
     │         XXX
 ```
-
-Please only submit the url of this repository to canvas by **the end of Feb 13th**.
 
 ## Extended Readings
 
