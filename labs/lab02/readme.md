@@ -4,8 +4,9 @@
 
 **Assigned:** 1/10/2019 | **Due:**  1/15/2019 23:59:59 | **Points Available** = 50
 
-
 In this practical exercise, we will introduce how to collect Twitter data using a web crawler. A web crawler is a purposely designed bot for online data collection. In most cases, online data can be acquired through a dedicated API maintained by the data provider. If no API available, we can develop a customized crawler using a crawler library (e.g. Selenium, Scrapy, etc.). Below, two crawlers are coded for purpose of harvesting twitter data. The first one is developed with a python library named 'Selenium'; and the other one relies on Twitter API. Okay, let us get started!
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jakobzhao/geog458.git/master)
 
 ## 1. Environment setup
 
