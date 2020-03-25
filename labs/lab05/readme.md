@@ -1,4 +1,4 @@
-# Lab 5: An intergrative project of digital geographies
+# Lab 5: An integrative project of digital geographies
 
 **Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu
 
