@@ -1,12 +1,8 @@
-# Lab 3: Thematic Web Map Design
+# Lab 3: Web Map Design
 
-> Winter 2018 | Geography 371 | Web Mapping
->
-> **Instructor:** Bo Zhao  **Location:** Wilkinson 210 | **Time:** Th 0800 - 1150
->
-> **Assigned:** Jan 23rd, 2019  | **Due:** Feb 4th, 2019 by 11:59 PM  | **Points Available** = 50
->
-> **Contributors:** [Courtney Van Stolk](https://github.com/vanstolc)
+**Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu
+
+**Assigned:** 1/10/2019 | **Due:**  1/15/2019 23:59:59 | **Points Available** = 50
 
 In this lab, we will design an interact web map of cell towers in Oregon. When creating a web map, one of the key components is styling your elements to provide proper symbolization for your data. This increases legibility for users and can give your map an appealing, custom design. Elements that can be customized to include thematic layers (i.e., points, lines, and polygons), base maps (as a leaflet `tileLayer`), interactive features (the components of the map that allow for user interaction), and legends and supplemental information (such as credits, etc.). To do that, the county boundaries is from [Oregon Explorer](http://oregonexplorer.info), and the spatial distribution of cell towers is from [Map Cruzin](http://www.mapcruzin.com/google-earth-maps-resources/kml/us-cell.kmz). Below is the web map you will make by walking through this lab handout.
 
@@ -463,9 +459,7 @@ After you successfully deploy this cell tower map, you are expected to build ano
 
 #### Optional tasks:
 
-- Try to add on a feature of leaflet which we have not discussed in class. The new features  can be found on [the plugin page](https://leafletjs.com/plugins.html) of leafet; **(5 points)**
-
-> If you have a genuine reason(known medical condition, a pile-up of due assignments on other courses, ROTC,athletics teams, job interview, religious obligations etc.) for being unable to complete work on time, then some flexibility is possible. However, if in my judgment you could reasonably have let me know beforehand that there would likely be a delay, and then a late penalty will still be imposed if I don't hear from you until after the deadline has passed. For unforeseeable problems,I can be more flexible. If there are ongoing medical, personal, or other issues that are likely to affect your work all semester, then please arrange to see me to discuss the situation. There will be NO make-up exams except for circumstances like those above.
+- Try to add on a feature of leaflet which we have not discussed in class. The new features  can be found on [the plugin page](https://leafletjs.com/plugins.html) of leafet. **(5 points)**
 
 
 ## Reference
