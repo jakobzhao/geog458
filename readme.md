@@ -79,7 +79,7 @@ You will make your first web map in this week using a popular web mapping librar
 
 This week will focus on two emerging topics related to digital geographies, including cloud point visualization and real-time environment data collection.
 
--   **Lecture Notes:** [Point Cloud visualization](<>) and [Real-time environmental data visualization](<>).
+-   **Lecture Notes:** [Point Cloud visualization](https://jakobzhao.github.io/sfm/index.html) and [Real-time environmental data visualization](<>).
 -   **Readings:** Real-time GIS and Panopticon
 
 ### Week 9 & 10: Project studio
