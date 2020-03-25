@@ -76,7 +76,7 @@ You will make your first web map in this week using a popular web mapping librar
 
 -   **Lecture Notes:** Multimedia, Full Page, Icon, and other resources
 -   **Readings:** [Map-based visual Storytelling: An Assessment of emerging genres and tropes `Chapter 1,2 and 5`.](https://drive.google.com/file/d/133s4dxoRaT1A7OckBapS6e9Yxh_wQc9d/view?usp=sharing)
--   **Lab 05:** [An integrative digital geographies project](labs/lab05) `Due: May 24th, by 11:59pm`
+-   **Lab 05:** [An integrative project on digital geographies](labs/lab05) `Due: May 24th, by 11:59pm`
 -   **In-class Discussion:** a) Storymap A `Tuesday`, b) Storymap B `Thursday`
 
 ### Week 8: Emerging topics
