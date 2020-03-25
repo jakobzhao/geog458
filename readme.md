@@ -24,7 +24,7 @@ As digital technologies have radically transformed human life, this course tries
 
 ### _Preperation_
 
--   [**Gear up the working environment**](assets/gearup.md) :computer: :cloud: :earth_americas: :beer:
+-   [**Gear up the working environment**](assets/gearup.md) :computer:  :beer:
 -   **Canvas Survey:** Through a survey, students will team up as group of 4 ~ 5 people according to the profeciency of technical skills and interests.
 
 ### Week 1: Intro to digital geographies
