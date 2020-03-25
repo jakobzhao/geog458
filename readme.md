@@ -49,6 +49,7 @@ This week's topic is around processing geospatial data for digital geographies p
 -   **Lecture Notes:** [Geospatial data for digital geographies](week03/readme.md)
 -   **Readings:** a) [Can social media clear the air? A case study of the air pollution problem in Chinese cities](https://drive.google.com/open?id=1C0MTPaPnVALVemeYEfiDChUKRZfcMjz3), b) [More than you ever wanted to know about GeoJSON](week03/assets/geojson.pdf).
 -   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: April 23rd, by 5:00pm`
+-   a) Discussion on the weekly paper
 
 ### Week 4: Web mapping
 
@@ -56,6 +57,7 @@ You will make your first web map in this week using a popular web mapping librar
 
 -   **Readings:** leaflet tutorial
 -   **Lab 3:** [An integrative web mapping](labs/lab03) `Due: May 3rd, by 11:59pm`
+-   **In-class Discussion:** a) Web Map 1, b) Web Map 2
 
 ### Week 5: Map design
 
@@ -68,12 +70,14 @@ You will make your first web map in this week using a popular web mapping librar
 
 -   **Lecture Notes:** interface design, color, typography, icons, animation
 -   **Readings:** [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), chroma.js, boostrap, c3.js
+-   **In-class Discussion:** a) Discussion on the weekly paper, b) Any intersting Dashboard
 
 ### Week 7: Geo-Narratives
 
 -   **Lecture Notes:** Multimedia, Full Page, Icon, and other resources
 -   **Readings:** [Map-based visual Storytelling: An Assessment of emerging genres and tropes `Chapter 1,2 and 5`.](https://drive.google.com/file/d/133s4dxoRaT1A7OckBapS6e9Yxh_wQc9d/view?usp=sharing)
 -   **Lab 05:** [An integrative digital geographies project](labs/lab05) `Due: May 24th, by 11:59pm`
+-   **In-class Discussion:** a) Storymap A, b) Storymap B
 
 ### Week 8: Emerging topics
 
@@ -81,6 +85,7 @@ This week will focus on two emerging topics related to digital geographies, incl
 
 -   **Lecture Notes:** [Point Cloud visualization](https://jakobzhao.github.io/sfm/index.html) and [Real-time environmental data visualization](<>).
 -   **Readings:** Real-time GIS and Panopticon
+-   **In-class Discussion:** a) Point Cloud Visulization `Tuesday`, b) `Panopticon`
 
 ### Week 9 & 10: Project studio
 
