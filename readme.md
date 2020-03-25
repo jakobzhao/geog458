@@ -103,9 +103,9 @@ This course targets students who have a background in fundamental geographic inf
 
 | Grading items                      | %   |
 | ---------------------------------- | --- |
-| Constructive contribution to class | 5%  |
+| Constructive contribution to class | 10% |
 | Lab Assignments                    | 30% |
-| Mid-term                           | 35% |
+| Mid-term                           | 30% |
 | Final collaborative project        | 20% |
 | Essay                              | 10% |
 
