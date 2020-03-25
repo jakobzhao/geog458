@@ -32,7 +32,7 @@ As digital technologies have radically transformed human life, this course tries
 We walk through the syllabus and repond to students' inquiries. Each student is expected to read the paper by Ash et al (2018). This week's lecture and lab will prepare you both the theortical and techinical foundation. After compeleting the lab 01, you can clone/synchronize the course material, set up a personal website, and more importantly, feel comfortable of using github to manage your digital geographies projects.
 
 -   **Lecutre Notes:** [Syllabus](readme.md)
--   **Readings:** [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_), [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
+-   **Readings:** a) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_), b) [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
 -   **Lab 1:** [Project management using GitHub](labs/lab01)
 
 ### Week 2: Prorgamming fundamentals
@@ -47,7 +47,7 @@ We focuses on preparing you the fudamental skill set for web prorgamming. This w
 This week's topic is around processing geospatial data for digital geographies projects. We will begin with introduce the structure of geojson format, adn then how to collect,convert and visualize geojson on web or a desktop environment like QGIS. After completing lab 2, each students will learn how to collect geo-tagged tweets of a specific topic (e.g., seattle, homeless, COVID-19, etc.), and then visualize the data for further uses.
 
 -   **Lecture Notes:** [Geospatial data for digital geographies](week03/readme.md)
--   **Readings:** [Can social media clear the air? A case study of the air pollution problem in Chinese cities](https://drive.google.com/open?id=1C0MTPaPnVALVemeYEfiDChUKRZfcMjz3), [More than you ever wanted to know about GeoJSON](week03/assets/geojson.pdf).
+-   **Readings:** a) [Can social media clear the air? A case study of the air pollution problem in Chinese cities](https://drive.google.com/open?id=1C0MTPaPnVALVemeYEfiDChUKRZfcMjz3), b) [More than you ever wanted to know about GeoJSON](week03/assets/geojson.pdf).
 -   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02)
 
 ### Week 4: Web mapping
@@ -60,7 +60,7 @@ You will make your first web map in this week using a popular web mapping librar
 ### Week 5: Map design
 
 -   **Lecture Notes:** [Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/)
--   **Readings:** [The Guide to Map Design](weeks/week05/mapbox-design.pdf), [Mapbox Studio How-to Videos](weeks/week05/readme.md)
+-   **Readings:** a) [The Guide to Map Design](weeks/week05/mapbox-design.pdf), b) [Mapbox Studio How-to Videos](weeks/week05/readme.md)
 -   **Lab 4:** [Generating Map Tiles](labs/lab04)
 -   Online Mid-term
 
