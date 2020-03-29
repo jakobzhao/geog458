@@ -4,7 +4,7 @@
 
 **Due:**  May 10th, by 11:59pm | **Points Available** = 50
 
-As mentioned in previous lessons, the earliest web maps were typically drawn on the fly by the server, no matter how many layers were available or requested. These are the types of maps you just created using GeoServer and WMS. As you may have noticed, **the symbol sets and labeling choices for this type of map are relatively limited and complex to work with**. In fact, for many years, web cartographers had to build a map with minimal layer set and simple symbols to avoid hampering performance. In many cases, a cartographer was not even involved; instead, the web map was made by a server administrator tweaking SLD files that defined the layer order, symbol sizes, and so forth. This was the case with both open specification web services (like WMS) and proprietary web services (like Esri ArcIMS).
+The earliest web maps were typically drawn on the fly by the server, no matter how many layers were available or requested. As you may have noticed, **the symbol sets and labeling choices for this type of map are relatively limited and complex to work with**. In fact, for many years, web cartographers had to build a map with minimal layer set and simple symbols to avoid hampering performance. In many cases, a cartographer was not even involved; instead, the web map was made by a server administrator tweaking SLD files that defined the layer order, symbol sizes, and so forth. This was the case with both open specification web services (like WMS) and proprietary web services (like Esri ArcIMS).
 
 In the mid-2000s, after Google Maps, Microsoft Virtual Earth (now Bing Maps), and other popular mapping applications hit the web, **people started to realize that maybe they didn't need the ability to tinker with the properties of every single layer**. These providers had started fusing their vector layers together in a single rasterized image that was divided into 256 x 256 pixel images, or tiles. These tiles were pregenerated and stored on disk for rapid distribution to clients. This was done out of necessity to support hundreds or thousands of simultaneous users, a burden too great for drawing the maps on the fly.
 
@@ -17,12 +17,11 @@ The figure below shows how a tiled map consists of a "pyramid" of images coverin
 Cartographers loved the tiled maps, because now they could invest all the tools of their trade into making an aesthetically pleasing web map without worrying about performance. Once you had created the tiles, you just had a set of images sitting on disk, and the server could retrieve a beautiful image just as fast as it could retrieve an ugly one. And because the tiled map images could be distributed so quickly by a web server, Google and others were able to employ **asynchronous JavaScript and XML (AJAX)** programming techniques to retrieve the tiles with no page blink as people panned.
 
 > AJAX stands for Asynchronous JavaScript and XML. In a nutshell, it is the use of the `XMLHttpRequest` object to communicate with server-side scripts. It can send as well as receive information in a variety of formats, including JSON, XML, HTML, and even text files. AJAX’s most appealing characteristic, however, is its "asynchronous" nature, which means it can do all of this without having to refresh the page. This lets you update portions of a page based upon user events.
-
-
+>
 > The two major features of AJAX allow you to do the following:
 >
-> - Make requests to the server without reloading the page
-> - Receive and work with data from the server
+> -   Make requests to the server without reloading the page
+> -   Receive and work with data from the server
 
 Within a year or two of Google Maps' release, commercial GIS software began offering the ability to build map tiles. For many, ArcGIS Server was desirable because the map could be authored using the mature map authoring tools in ArcMap; however, cost was a concern for some. [Arc2Earth](https://www.arc2earth.com/) was another commercial alternative. The free and open source [Mapnik](http://mapnik.org/) library could also build tiles, but it wasn't until recent years that projects like [TileMill](https://tilemill-project.github.io/tilemill/) wrapped a user-friendly GUI around Mapnik.
 
@@ -48,36 +47,36 @@ To make the map seamless, and to ensure that aerial images from different source
 
 Although the Mercator projection significantly distorts scale and area (particularly near the poles), it has two important properties that outweigh the scale distortion:
 
-1. It’s a **conformal** projection, which means that it preserves the shape of relatively small objects. **This is especially important when showing aerial imagery**, because we want to avoid distorting the shape of buildings. Square buildings should appear square, not rectangular.
-2. It’s a **cylindrical** projection, which means that **north and south** are always straight up and down, and west and east are always straight left and right.
+1.  It’s a **conformal** projection, which means that it preserves the shape of relatively small objects. **This is especially important when showing aerial imagery**, because we want to avoid distorting the shape of buildings. Square buildings should appear square, not rectangular.
+2.  It’s a **cylindrical** projection, which means that **north and south** are always straight up and down, and west and east are always straight left and right.
 
 Since the Mercator projection goes to infinity at the poles, it doesn’t actually show the entire world. Using a square aspect ratio for the map, the maximum latitude shown is approximately 85.05 degrees.
 
 To simplify the calculations, we use the spherical form of this projection, not the ellipsoidal form. Since the projection is used only for map display, and not for displaying numeric coordinates, we don’t need the extra precision of an ellipsoidal projection. The spherical projection causes approximately 0.33% scale distortion in the Y direction, which is not visually noticeable.
 
-### 2.2 Ground Resolution and Map Scale
+### 2.2 Ground resolution and map scale
 
 In addition to the projection, the ground resolution or map scale must be specified in order to render a map. At the lowest level of detail `Level 1`, the map is 512 x 512 pixels. At each successive level of detail, the map width and height grow by a factor of 2: Level 2 is 1024 x 1024 pixels, Level 3 is 2048 x 2048 pixels, Level 4 is 4096 x 4096 pixels, and so on. In general, the width and height of the map (in pixels) can be calculated as:
 
 $$
-map width = map height = 256 * 2^\mathit{level} pixels
+map width = map height = 256 \* 2^\\mathit{level} pixels
 $$
 
 The **ground resolution** indicates the distance on the ground that’s represented by a single pixel in the map. For example, at a ground resolution of 10 meters/pixel, each pixel represents a ground distance of 10 meters. The ground resolution varies depending on the level of detail and the latitude at which it’s measured. Using an earth radius of 6,378,137 meters, the ground resolution (in meters per pixel) can be calculated as:
 
 $$
-ground resolution = cos(latitude * pi/180) * earth circumference / map width \\
-= (cos(latitude * pi/180) * 2 * pi * 6378137 meters) / (256 * 2^\mathit{level} pixels)
+ground resolution = cos(latitude _ pi/180) _ earth circumference / map width \\
+= (cos(latitude _ pi/180) _ 2 _ pi _ 6378137 meters) / (256 \* 2^\\mathit{level} pixels)
 $$
 
 The **map scale** indicates the ratio between map distance and ground distance, when measured in the same units. For instance, at a map scale of 1 : 100,000, each inch on the map represents a ground distance of 100,000 inches. Like the ground resolution, the map scale varies with the level of detail and the latitude of measurement. It can be calculated from the ground resolution as follows, given the screen resolution in dots per inch, **typically 96 dpi**:
 
 $$
-map scale = 1 : ground resolution * screen dpi / 0.0254 meters/inch  = 1 : (cos(latitude * pi/180) * 2 * pi * 6378137 * screen dpi) / (256 * 2^\mathit{level} * 0.0254)
+map scale = 1 : ground resolution _ screen dpi / 0.0254 meters/inch  = 1 : (cos(latitude _ pi/180) _ 2 _ pi _ 6378137 _ screen dpi) / (256 _ 2^\\mathit{level} _ 0.0254)
 $$
 
 > **Retina Display:**  Retina Display is a brand name used by Apple for its series of IPS panel displays that have a higher pixel density than traditional displays. Apple has applied to register the term "Retina" as a trademark in regard to computers and mobile devices. When introducing the iPhone 4, Steve Jobs said the number of pixels needed for a Retina Display is **326PPI** .
-
+>
 > **The `detectRetina` Option for LeafLet TileLayer:** If `true` and user is on a retina display, it will request four tiles of half the specified size and a bigger zoom level in place of one to utilize the high resolution. For example,
 
 ```js
@@ -118,7 +117,7 @@ This table shows each of these values at each level of detail, **as measured at
 ### 2.3 Pixel Coordinates
 
 Having chosen the projection and scale to use at each level of detail, we can convert geographic coordinates into pixel coordinates. Since the map width and height is different at each level, so are the pixel coordinates. The pixel at the upper-left corner of the map always has pixel coordinates (0, 0). The pixel at the lower-right corner of the map has pixel coordinates $$(width-1, height-1)$$, or referring to the equations in the previous section,
-$$(256 * 2^{level}–1, 256 * 2^{level}–1)$$.
+$$(256 _ 2^{level}–1, 256 _ 2^{level}–1)$$.
 
 For example, at level 3, the pixel coordinates range from (0, 0) to (2047, 2047), like this:
 
@@ -127,13 +126,13 @@ For example, at level 3, the pixel coordinates range from (0, 0) to (2047, 204
 Given latitude and longitude in degrees, and the level of detail, the pixel XY coordinates can be calculated as follows:
 
 $$
-sinLatitude = sin(latitude * pi/180)
+sinLatitude = sin(latitude _ pi/180)
 $$
 $$
-pixelX = ((longitude + 180) / 360) * 256 * 2^{level}
+pixelX = ((longitude + 180) / 360) _ 256 _ 2^{level}
 $$
 $$
-pixelY = (0.5 – log((1 + sinLatitude) / (1 – sinLatitude)) / (4 * pi)) * 256 * 2\mathit{level}
+pixelY = (0.5 – log((1 + sinLatitude) / (1 – sinLatitude)) / (4 _ pi)) _ 256 _ 2\\mathit{level}
 $$
 
 The latitude and longitude are assumed to be on the WGS 84 datum. Even though Bing Maps uses a spherical projection, it’s important to convert all geographic coordinates into a common datum, and WGS 84 was chosen to be that datum. The longitude is assumed to range from -180 to +180 degrees, and **the latitude must be clipped to range from -85.05112878 to 85.05112878. This avoids a singularity at the poles, and it causes the projected map to be square**.
@@ -143,11 +142,10 @@ The latitude and longitude are assumed to be on the WGS 84 datum. Even though Bi
 To optimize the performance of map retrieval and display, the rendered map is cut into tiles of 256 x 256 pixels each. As the number of pixels differs at each level of detail, so does the number of tiles:
 
 $$
-map width = map height = 2^\mathit{level} tiles
+map width = map height = 2^{level} tiles
 $$
 
-
-Each tile is given XY coordinates ranging from $$(0, 0)$$ in the upper left to $$(2^\mathit{level}–1, 2^\mathit{level}–1)$$ in the lower right. For example, at level 3 the tile coordinates range from $$(0, 0)$$ to $$(7, 7)$$ as follows:
+Each tile is given XY coordinates ranging from $$(0, 0)$$ in the upper left to $$(2^{level}–1, 2^{level}–1)$$ in the lower right. For example, at level 3 the tile coordinates range from $$(0, 0)$$ to $$(7, 7)$$ as follows:
 
 ![img](img/bing_overview3.png)
 
@@ -180,7 +178,6 @@ Quadkeys have several interesting properties. First, the length of a quadkey (th
 ![img](img/bing_overview4.png)
 
 Finally, quadkeys provide a one-dimensional index key that usually preserves the proximity of tiles in XY space. In other words, two tiles that have nearby XY coordinates usually have quadkeys that are relatively close together. This is important for optimizing database performance, because neighboring tiles are usually requested in groups, and it’s desirable to keep those tiles on the same disk blocks, in order to minimize the number of disk reads.
-
 
 ## 5 QGIS
 
@@ -216,7 +213,6 @@ Add a base map and zoom on the base map to you tile location. The **'zoom to lay
 
 Zoom into your tiles so that they fill most of the canvas space, see image below. The canvas is the extent we will use to generate QTiles.
 
-
 ### 5.5 Tile Server to QTiles
 
 Now we need to take out tiles from Google Cloud and generate QTiles.
@@ -227,9 +223,7 @@ Click the Plugins drop down, hover over QTiles to open the menu and select QTile
 
 ![QTiles](img/qtiles_to_leaflet.JPG)
 
-
 > Note: the runtime is dependent on the size and number of zoom levels.
-
 
 The file directory will contain your QTiles and an HTML document that can be integrated with leaflet.
 
@@ -267,16 +261,13 @@ var mytile =L.tileLayer('assets/tiles/{z}/{x}/{y}.png', {
     tms: false,
     attribution: 'Generated by QTiles'
 }).addTo(mymap);
- ```
-
+```
 
 ![leafletmap](img/qtiles.jpg)
 
+Here is what the final output looks like **[here](http://jakobzhao.github.io/geog458/labs/lab04/index.html)**
 
-Here is what the final output looks like **[here](http://jakobzhao.github.io/geog371/lectures/lec14/index.html)**
-
-
-## Deliverable
+## 7 Deliverable
 
 you will need to generate a tile set for an geographic area you are interested in. After the map tiles are generated, you will need to create a leaflet map and add up the layer of tiles to the map. And then upload everything to a github repository. In the readme.md file of this repository, please briefly introduce this tiles, the georaphic area, and the zoom levels you select.
 
@@ -296,10 +287,10 @@ The structure of this repository should look like:
 
 ## Extended Readings
 
-- Vector Tiles: http://docs.geoserver.org/latest/en/user/extensions/vectortiles/tutorial.html
-- 3D Tiles: https://github.com/AnalyticalGraphicsInc/3d-tile
+-   Vector Tiles: <http://docs.geoserver.org/latest/en/user/extensions/vectortiles/tutorial.html>
+-   3D Tiles: <https://github.com/AnalyticalGraphicsInc/3d-tile>
 
 ## References:
 
-1. https://www.e-education.psu.edu/geog585/node/706
-2. [https://docs.microsoft.com/en-us/bingmaps/articles/bing-maps-tile-system](https://docs.microsoft.com/en-us/bingmaps/articles/bing-maps-tile-system)
+1.  <https://www.e-education.psu.edu/geog585/node/706>
+2.  <https://docs.microsoft.com/en-us/bingmaps/articles/bing-maps-tile-system>

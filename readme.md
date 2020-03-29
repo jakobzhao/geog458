@@ -48,7 +48,7 @@ This week's topic is around processing geospatial data for digital geographies p
 
 -   **Lecture Notes:** [Geospatial data for digital geographies](week03/readme.md)
 -   **Readings:** a) [Can social media clear the air? A case study of the air pollution problem in Chinese cities](https://drive.google.com/open?id=1C0MTPaPnVALVemeYEfiDChUKRZfcMjz3), b) [More than you ever wanted to know about GeoJSON](week03/assets/geojson.pdf).
--   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: April 23rd, by 5:00pm`
+-   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: April 23rd, by 5:00pm`, `under development`
 -   **In-class Discussion:** Discussion on the weekly paper `Tuesday`
 
 ### Week 4: Web mapping
@@ -56,7 +56,7 @@ This week's topic is around processing geospatial data for digital geographies p
 You will make your first web map in this week using a popular web mapping library - Leaflet. In the lecture, you will work with me to get familiar with the basics, and then we will give you an very detailed introduction to the lab 3.
 
 -   **Readings:** leaflet tutorial
--   **Lab 3:** [An integrative web mapping](labs/lab03) `Due: May 3rd, by 11:59pm`
+-   **Lab 3:** [An integrative web mapping](labs/lab03) `Due: May 3rd, by 11:59pm`, `under development`
 -   **In-class Discussion:** a) Web Map A `Tuesday`, b) Web Map B `Thursday`
 
 ### Week 5: Map design
@@ -83,7 +83,7 @@ You will make your first web map in this week using a popular web mapping librar
 
 This week will focus on two emerging topics related to digital geographies, including cloud point visualization and real-time environment data collection.
 
--   **Lecture Notes:** [Point Cloud visualization](https://jakobzhao.github.io/sfm/index.html) and [Real-time environmental data visualization](<>).
+-   **Lecture Notes:** [Point Cloud visualization](https://jakobzhao.github.io/sfm/index.html) and [Real-time environmental data visualization](weeks/week08/).
 -   **Readings:** Real-time GIS and Panopticon
 -   **In-class Discussion:** a) Point Cloud Visulization `Tuesday`, b) Discussion on the paper about Panopticon `Thursday`
 
