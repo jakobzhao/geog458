@@ -1,0 +1,206 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 62.5% Verdana, Helvetica, Arial, sans-serif;
+    color: #000;
+    background: #fff;
+}
+#container {
+    font-size: 1.2em;
+    margin: 10px 2em;
+}
+
+h2 {
+    font-size: 1.3em;
+    margin-bottom: .5em;
+}
+h2.subtitle {
+    font: italic normal 1em "Times New Roman", Times, serif;
+    margin-top: 0;
+    margin-bottom: .5em;
+}
+h3 {
+    font-size: 1.1em;
+    margin-bottom: 0;
+}
+code {
+    font-family: "Gill Sans";
+    line-height: 1.8em;
+    font-size: 1.5em;
+}
+
+table {
+    border: 1px solid #777;
+    border-collapse: collapse;
+}
+th {
+    text-align: left;
+}
+th, td {
+    padding: 2px 4px;
+}
+
+.alt {
+    background-color: #ccf;
+}
+
+.pdf {
+    padding: 2px;
+    background-color: #900;
+    color: #fff;
+}
+
+form {
+    width: 600px;
+    padding: 1em;
+}
+fieldset {
+    border: 1px solid #ccf;
+}
+p label {
+    width: 100px;
+    float: left;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.faded {
+    color: #bbb;
+}
+
+a {
+    color: #343299;
+}
+
+#ad{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+    padding:20px;
+    width:125px;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    border-top-left-radius: 10px;
+    min-height: 156px;
+}
+
+.carbon-img{
+    margin-bottom: 10px;
+    display: block;
+}
+
+#ad .carbon-text{
+    font-size: 10px !important;
+}
+
+#ad a.carbon-text, #ad a.carbon-poweredby{
+    color: #fff;
+    text-decoration: none;
+}
+
+#ad .carbon-poweredby{
+    font-size: 0.6em;
+    text-align: center;
+    display: block;
+    margin-bottom: -10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: #e8e8e8;
+}
+
+/*more specific styles*/
+
+#container .highlight {
+    background-color: #ff6;
+    color: #c00;
+    position: relative;
+}
+
+#container {
+    margin-bottom: 48px;
+}
+
+h1 {
+    clear: both;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background: #e3e3e3;
+    padding: 3px 3px 3px 10px;
+    cursor: pointer;
+}
+
+.example {
+    overflow: hidden;
+    margin-bottom: 1em;
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 35%;
+    margin-right: 15px;
+}
+.domtree, .domsource {
+    background-color: #fff;
+    float: right;
+    width:60%;
+    border: 1px solid #e3e3e3;
+    padding: 5px;
+    margin-bottom: 1em;
+    position: fixed;
+    top: 95px;
+    right: 12px;
+}
+.domtree {
+    font-size: 1.0em;
+}
+
+.domtree code {
+    font-size: 1.0em;
+    line-height: 1.0em;
+}
+
+
+#myid {
+    margin-top: 1em;
+}
+.example h3 {
+    margin: 0;
+    cursor: pointer;
+}
+
+.example .content {
+    margin-top: 1em;
+}
+.example .content input {
+    float: left;
+    display: block;
+    margin: .85em 0 0 10px;
+}
+
+.sample-code {
+    float: left;
+    clear: left;
+    margin-top: .5em;
+    margin-right: .25em;
+    color: #060;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+
+.left {
+    float: left;
+    padding-right: 10px;
+}
+.clear-left {
+    clear: left;
+}
+label {
+    display: block;
+}
+
+form {
+    overflow: hidden;
+}

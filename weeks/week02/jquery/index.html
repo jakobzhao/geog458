@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>JQuery Selectors</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+    <script src="js/select.js" type="text/javascript"></script>
+    <script src="js/jquery.DOMWindow.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="container">
+    <div class="section">
+        <h1>JQuery Selectors for GEOG 371</h1>
+        <p style="margin:0;">
+            <small>Original lab by <a href="http://www.learningjquery.com/" target="_blank">Karl Swedberg</a> Enhanced
+                by <a href="http://www.codylindley.com">Cody Lindley</a>. Revised by <a href="" target="_blank">Bo
+                    Zhao</a> for <a href="https://github.com/jakobzhao/geog371" target="_blank">Geog 371: Web Mapping at
+                    Oregon State University</a></small>
+        </p>
+        <p/>
+
+        <div class="domtree">
+            <h3>Toggle Button = <code>$('selector').addClass('highlight').animate({ marginLeft: 10}, 'fast');</code>
+            </h3>
+            <p><a href="http://www.codylindley.com/jqueryselectors/jqueryselectors.zip" title="Download This Lab"
+                  rel="">Download This Lab</a></p>
+            <div id="myid">This sentence is in <code>&lt;div id="myid"&gt;</code>. It is followed by a horizontal rule.
+            </div>
+            <hr/>
+            <p>This is a paragraph, which means it is wrapped in <code>&lt;p&gt;</code> <span>and</span> <code>&lt;/p&gt;</code>.
+                Those "p" tags in the previous sentence are formatted as <code>&lt;code&gt;</code>.</p>
+            <ul>
+                <li>This is the first list item (<code>&lt;li&gt;</code>) in an unordered list (<code>&lt;ul&gt;</code>).
+                </li>
+                <li>This is the second list item. It has a <a rel="self" title="Learning jQuery blog"
+                                                              href="/archives/jquery-links.htm">link</a> in it.
+                </li>
+                <li class="myclass otherclass">This is the third list item. It has a <code>class</code> of "myclass
+                    otherclass"
+                </li>
+                <li>This is the fourth list item. It has <strong>strong</strong> text and <em>em</em>phasized
+                    <em>text</em>.
+                    <ul>
+                        <li>second-level list item 1</li>
+                        <li>second-level list item 2</li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="myclass"><code>&lt;p class="myclass"&gt;</code>This is another paragraph. It has class="myclass"
+                Otherwise, nothing <strong>special</strong> about it at all.</p>
+
+            <p>This is a paragraph, which means it is wrapped in <code>&lt;p&gt;</code> and <code>&lt;/p&gt;</code>.
+                Those "p" tags in the previous sentence are formatted as &lt;code&gt;.</p>
+            <form action="examples_submit" method="get" accept-charset="utf-8">
+                <div class="left">
+
+                    <div><input type="text" value="text input"/></div>
+                    <div><input type="text" value="disabled text input" disabled="disabled"/></div>
+                    <div><input type="password" name="password" value="password"/></div>
+                    <div><select>
+                        <option>select list w/ options</option>
+                        <option>another option</option>
+                        <option>a third option</option>
+                    </select>
+                    </div>
+                </div>
+                <textarea class="left" rows="5" cols="20">This is a textarea</textarea>
+                <div><select size="5" style="margin-left:10px">
+                    <option>select list w/ options</option>
+                    <option selected="selected">another option</option>
+                    <option>a third option</option>
+                </select></div>
+                <div class="clear-left"><label for="radio1">
+                    <input class="left" name="radiobtn" type="radio" id="radio1" value="checkedradio"
+                           checked="checked"/>
+                    Radio Checked
+                </label>
+                    <label class="left clear-left" for="radio2">
+                        <input class="left" id="radio2" name="radiobtn" type="radio" value="not"/>
+                        Radio Not Checked
+                    </label>
+                    <label class="left clear-left" for="check1">
+                        <input class="left" id="check1" name="checkbx" type="checkbox" value="checked"
+                               checked="checked"/>
+                        Checkbox Checked
+                    </label>
+                    <label class="left clear-left" for="check2">
+                        <input class="left" id="check2" name="checkbx" type="checkbox" value="not"/>
+                        Checkbox Not Checked
+                    </label>
+                    <label class="left clear-left" for="check3">
+                        <input class="left" id="check3" name="checkbx" type="checkbox" value="not"/>
+                        Another checkbox Not Checked
+                    </label>
+                </div>
+
+                <div class="left clear-left"><input type="submit" value="Submit input"/></div>
+                <div class="left"><input type="button" value="Button input"/></div>
+                <div class="left"><input type="reset" value="Reset input"/></div>
+                <div class="left">
+                    <button>Button button</button>
+                </div>
+                <div class="left clear-left"><input type="file" name="fileinput" value="file input" id="fileinput"/>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="example">
+            <h3>Enter Your Own Selectors ( example: li:nth-child(2) )</h3>
+            <textarea rows="3" id="customInput" style="width:250px;">li:nth-child(2)</textarea>
+            <input type="submit" value="toggle" id="toggleCustom"/>
+        </div>
+
+        <div class="example">
+            <h3>Basics</h3>
+            <div class="content">
+                <div class="sample-code">$('<span class="querystring">code</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/element#element"/>
+                <div class="sample-code">$('<span class="querystring">#myid</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/id#id"/>
+                <div class="sample-code">$('<span class="querystring">.myclass</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/class#class"/>
+                <div class="sample-code">$('<span class="querystring">*</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/all"/>
+                <div class="sample-code">$('<span class="querystring">code, #myid, .myclass</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/multiple#selector1selector2selectorN"/>
+            </div>
+        </div>
+
+        <div class="example">
+            <h3>Hierarchy</h3>
+            <div class="content">
+                <div class="sample-code">$('<span class="querystring">div code</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/descendant#ancestordescendant"/>
+                <div class="sample-code">$('<span class="querystring">li > ul</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/child#parentchild"/>
+                <div class="sample-code">$('<span class="querystring">strong + em</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/next#prevnext"/>
+                <div class="sample-code">$('<span class="querystring">strong ~ em</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/siblings#prevsiblings"/>
+            </div>
+        </div>
+
+        <div class="example">
+            <h3>Basic Filters</h3>
+            <div class="content">
+                <div class="sample-code">$('<span class="querystring">li:first</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/first"/>
+                <div class="sample-code">$('<span class="querystring">li:last</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/last"/>
+                <div class="sample-code">$('<span class="querystring">li:not(li:first)</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/not#selector"/>
+                <div class="sample-code">$('<span class="querystring">li:even</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/even"/>
+                <div class="sample-code">$('<span class="querystring">li:odd</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/odd"/>
+                <div class="sample-code">$('<span class="querystring">li:eq(1)</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/eq#index"/>
+                <div class="sample-code">$('<span class="querystring">li:gt(2)</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/gt#index"/>
+                <div class="sample-code">$('<span class="querystring">li:lt(2)</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/lt#index"/>
+                <div class="sample-code">$('<span class="querystring">:header</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/header"/>
+                <div class="sample-code">$('<span class="querystring">:animated</span>')</div>
+                <input type="submit" value="documentation" title="http://docs.jquery.com/Selectors/animated"/>
+            </div>
+        </div>
+
+        <div class="example">
+            <h3>Content Filters</h3>
+            <div class="content">
+                <div class="sample-code">$('<span class="querystring">li:contains(second-level)</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/contains#text"/>
+                <div class="sample-code">$('<span class="querystring">:empty</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/empty"/>
+                <div class="sample-code">$('<span class="querystring">li:has(a)</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/has#selector"/>
+                <div class="sample-code">$('<span class="querystring">p:parent</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/parent"/>
+            </div>
+        </div>
+
+        <div class="example">
+            <h3>Visibility Filters</h3>
+            <div class="content">
+                <div class="sample-code">$('<span class="querystring">:hidden</span>')</div>
+                <input type="submit" value="documentation" title="http://docs.jquery.com/Selectors/hidden"/>
+                <div class="sample-code">$('<span class="querystring">:visible</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/visible"/>
+            </div>
+        </div>
+
+        <div class="example">
+            <h3>Attribute Filters</h3>
+            <div class="content">
+                <div class="sample-code">$('<span class="querystring">li[class]</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/attributeHas#attribute"/>
+                <div class="sample-code">$('<span class="querystring">a[rel="self"]</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/attributeEquals#attributevalue"/>
+                <div class="sample-code">$('<span class="querystring">a[rel!="nofollow"]</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/attributeNotEqual#attributevalue"/>
+                <div class="sample-code">$('<span class="querystring">[class^="my"]</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/attributeStartsWith#attributevalue"/>
+                <div class="sample-code">$('<span class="querystring">a[title$="blog"]</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/attributeEndsWith#attributevalue"/>
+                <div class="sample-code">$('<span class="querystring">a[href*="zip"]</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/attributeContains#attributevalue"/>
+                <div class="sample-code">$('<span class="querystring">a[rel][href][title$="blog"]</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/attributeMultiple#attributeFilter1attributeFilter2attributeFilterN"/>
+            </div>
+        </div>
+
+        <div class="example">
+            <h3>Child Filters</h3>
+            <div class="content">
+                <div class="sample-code">$('<span class="querystring">li:nth-child(even)</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/nthChild#index"/>
+                <div class="sample-code">$('<span class="querystring">li:nth-child(odd)</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/nthChild#index"/>
+                <div class="sample-code">$('<span class="querystring">li:nth-child(2)</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/nthChild#index"/>
+                <div class="sample-code">$('<span class="querystring">li:nth-child(2n)</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/nthChild#index"/>
+                <div class="sample-code">$('<span class="querystring">li:first-child</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/firstChild"/>
+                <div class="sample-code">$('<span class="querystring">li:last-child</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/lastChild"/>
+                <div class="sample-code">$('<span class="querystring">code:only-child</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/onlyChild"/>
+            </div>
+        </div>
+
+        <div class="example">
+            <h3>Forms</h3>
+            <div class="content">
+                <div class="sample-code">$('<span class="querystring">:input</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/input"/>
+                <div class="sample-code">$('<span class="querystring">:text</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/text"/>
+                <div class="sample-code">$('<span class="querystring">:password</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/password"/>
+                <div class="sample-code">$('<span class="querystring">:radio</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/radio"/>
+                <div class="sample-code">$('<span class="querystring">:checkbox</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/checkbox"/>
+                <div class="sample-code">$('<span class="querystring">:submit</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/submit"/>
+                <div class="sample-code">$('<span class="querystring">:image</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/image"/>
+                <div class="sample-code">$('<span class="querystring">:reset</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/reset"/>
+                <div class="sample-code">$('<span class="querystring">:button</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/button"/>
+                <div class="sample-code">$('<span class="querystring">:file</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/file"/>
+                <div class="sample-code">$('<span class="querystring">:hidden</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/hidden"/>
+            </div>
+        </div>
+
+        <div class="example">
+            <h3>Form Filters</h3>
+            <div class="content">
+                <div class="sample-code">$('<span class="querystring">input:enabled</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/enabled"/>
+                <div class="sample-code">$('<span class="querystring">:disabled</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/disabled"/>
+                <div class="sample-code">$('<span class="querystring">:checked</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/checked"/>
+                <div class="sample-code">$('<span class="querystring">:selected</span>')</div>
+                <input type="submit" value="toggle"/><input type="submit" value="documentation"
+                                                            title="http://docs.jquery.com/Selectors/selected"/>
+            </div>
+        </div>
+    </div>  <!-- end of section  -->
+</div>
+
+</body>
+</html>

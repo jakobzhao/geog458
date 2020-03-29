@@ -31,7 +31,7 @@ As digital technologies have radically transformed human life, this course tries
 
 We walk through the syllabus and repond to students' inquiries. Each student is expected to read the paper by Ash et al (2018). This week's lecture and lab will prepare you both the theortical and techinical foundation. After compeleting the lab 01, you can clone/synchronize the course material, set up a personal website, and more importantly, feel comfortable of using github to manage your digital geographies projects.
 
--   **Lecutre Notes:** [Syllabus](readme.md)
+-   **Lecutre Notes:** [Syllabus](readme.md), [Intro to the Web](weeks/week01/intro-web)
 -   **Readings:** a) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_), b) [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
 -   **Lab 1:** [Project management using GitHub](labs/lab01) `Due: April 9th, by 11:59pm`
 
@@ -39,7 +39,7 @@ We walk through the syllabus and repond to students' inquiries. Each student is 
 
 We focuses on preparing you the fudamental skill set for web prorgamming. This week will begin with the system architecture of digital geographies project, and then guide yuo through some of the necessary front-end fudamentals, including internet basics, html, javascript, and css. This week requires a lot of self-learning. Please be preprared.
 
--   **Lecture Notes:** [System architecture](week02/readme.md)
+-   **Lecture Notes:** [System architecture](week02/readme.md), [intro-to-html, css](week02/) and [javascript](), and Jquery. 
 -   **Readings:** [W3School Tutorials on Html, javascript, css and jquery](weeks/week02/readings.md).
 
 ### Week 3: Geospatial data
