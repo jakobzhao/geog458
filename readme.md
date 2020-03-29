@@ -69,8 +69,9 @@ You will make your first web map in this week using a popular web mapping librar
 ### Week 6: Smart dashboards
 
 -   **Lecture Notes:** interface design, color, typography, icons, animation
--   **Readings:** [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), chroma.js, boostrap, c3.js
+-   **Readings:** [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), [Boostrap](weeks/week06/boostrap.md) chroma.js, boostrap, c3.js
 -   **In-class Discussion:** a) Discussion on the weekly paper `Tuesday`, b) Any intersting Dashboard `Thursday`
+-   **Examples:** [COVID-19 Dashboard](https://hgis.uw.edu/virus)
 
 ### Week 7: Geo-Narratives
 
@@ -78,13 +79,14 @@ You will make your first web map in this week using a popular web mapping librar
 -   **Readings:** [Map-based visual Storytelling: An Assessment of emerging genres and tropes `Chapter 1,2 and 5`.](https://drive.google.com/file/d/133s4dxoRaT1A7OckBapS6e9Yxh_wQc9d/view?usp=sharing)
 -   **Lab 05:** [An integrative project on digital geographies](labs/lab05) `Due: May 24th, by 11:59pm`
 -   **In-class Discussion:** a) Storymap A `Tuesday`, b) Storymap B `Thursday`
+-   **Examples:** [#Stand with StandingRock](https://jakobzhao.github.io/standwithstandingrock/)
 
 ### Week 8: Emerging topics
 
 This week will focus on two emerging topics related to digital geographies, including cloud point visualization and real-time environment data collection.
 
 -   **Lecture Notes:** [Point Cloud visualization](https://jakobzhao.github.io/sfm/index.html) and [Real-time environmental data visualization](weeks/week08/).
--   **Readings:** Real-time GIS and Panopticon
+-   **Readings:** [Real-time GIS](https://drive.google.com/file/d/1COD2OYBxEJThG5Lfx7-nzV0EGtGedndT/view?usp=sharing) and [Panopticon](https://drive.google.com/file/d/156fk11L9JFzsyV_9TRi9_c15MSIPCiL6/view?usp=sharing)
 -   **In-class Discussion:** a) Point Cloud Visulization `Tuesday`, b) Discussion on the paper about Panopticon `Thursday`
 
 ### Week 9 & 10: Project studio
