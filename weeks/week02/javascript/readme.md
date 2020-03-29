@@ -1,10 +1,10 @@
 # Lab 2: Web Programming Basics II: Javascript
 
-> Winter 2018 | Geography 371 | Web Mapping
->
-> **Instructor:** Bo Zhao  **Location:** Wilkinson 210 | **Time:** Th 0800 - 1150
->
-> **Assigned:** 1/14/2019  | **Due:** 1/22/2019 23:59:59 | **Points Available** = 50
+**Meeting:** Tuesdays and Thursdays 8:30 to 10:20 AM PST on [Zoom #: 785830819](https://washington.zoom.us/j/785830819)
+
+**Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu
+
+**Office Hour:** Tuesdays 1:00 to 3:00 PM PST or by appointment on [Zoom #: 181944813](https://washington.zoom.us/j/181944813)
 
 ## 1. Preparation
 
