@@ -1,4 +1,4 @@
-# Week 8B: Real Time Environmental Monitoring with Raspberry Pi
+# Real Time Environmental Monitoring with Raspberry Pi
 
 **Meeting:** Tuesdays and Thursdays 8:30 to 10:20 AM PST on [Zoom #: 785830819](https://washington.zoom.us/j/785830819)
 
