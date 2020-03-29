@@ -55,7 +55,7 @@ This week's topic is around processing geospatial data for digital geographies p
 
 You will make your first web map in this week using a popular web mapping library - Leaflet. In the lecture, you will work with me to get familiar with the basics, and then we will give you an very detailed introduction to the lab 3.
 
--   **Readings:** leaflet tutorial
+-   **Readings:** [Leaflet Basics](weeks/week04/leaflet), [Map Events](weeks/week04/mapevent)
 -   **Lab 3:** [An integrative web mapping](labs/lab03) `Due: May 3rd, by 11:59pm`, `under development`
 -   **In-class Discussion:** a) Web Map A `Tuesday`, b) Web Map B `Thursday`
 
