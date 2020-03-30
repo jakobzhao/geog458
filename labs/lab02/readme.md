@@ -28,15 +28,17 @@ Here, you can make your own edit to the file and run each blocks of code separat
 
 ## 2. Harvest geo-tagged tweets using a API-based Crawler
 
+> Note: Most of the codes are already written for you in `geosearch.ipynb` except for some parameters to change. Your important task here is to understand what each pieces of codes are doing, and be able to utilize it later in this assignment.
+
 In this section, we will make a Twitter crawler to collect geo-tagged tweets. This crawler is based on `Tweepy` - a python based library which wraps the Twitter API.  Tweepy provides a series of data crawling strategies - Harvesting geo-tagged tweets is just one of them. If you are interested in composing a more complicated data collection strategy, please refer to its documentation at [https://tweepy.readthedocs.io/en/latest/index.html](https://tweepy.readthedocs.io/en/latest/index.html).
 
-Above all, you need to install tweepy using on command prompt (if a windows user) or terminal (if a Mac or Linux user), as shown in the script below.
+We usually need to install libraries like tweepy using on command prompt (if a windows user) or terminal (if a Mac or Linux user). However, since we are working in Jupyter Notebook, we run the following code as shown in the script below to install a library.
 
-```powershell
-pip install tweepy
+```Python
+!python -m pip install tweepy
 ```
 
-To use the tweepy library, you need to register a Twitter developer account.
+To use the tweepy library, you need to register a Twitter developer account [here](https://developer.twitter.com/en).
 
 ![](img/twitter-developer.png)
 
@@ -46,15 +48,15 @@ Once you finish registering your account, you can apply for a Twitter app. It is
 
 Then, you will see a page with list of apps that you've created for getting Twittr API, but for now, the list should be empty. In order to register for Twitter API, click on `Create an app`.
 
-You will be prompted to fill in the app details. You are required to fill in: App name, Application description, Website URLs,and 'Tell us how this app will be used'. If you are not sure what to put for the website URLs, you may enter your SNS profile URLs, such as your Facebook page, LinkedIn page, etc...
+You will be prompted to fill in the app details. You are required to fill in: `App name`, `Application description`, `Website URLs`, and `'Tell us how this app will be used'`. If you are not sure what to put for the website URLs, you may enter your SNS profile URLs, such as your Facebook page, LinkedIn page, etc.
 
 ![](img/app_details.png)
 
 After you fill in all the required field, you may click on `Crate`. The Twitter takes some time to process your information to validate your access to the Twitter API.
 
-Once you are registered, go to the `App Detail` of the app you just created. Click on the tab `Keys and tokens`, and you should be see all the keys and tokens required to use the Twitter API.
+Once you are registered, you can finally get your own keys and tokens. Go to the `App Detail` of the app you just created. Click on the tab `Keys and tokens`, and you should be see all the keys and tokens required to use the Twitter API.
 
-Having a twitter app, you will receive four important parameters, they are:
+Copy and paste the keys and tokens you received into corresponding parameters in the code below:
 
 ```Python
 consumer_key = "your_consumer_key"
@@ -63,9 +65,7 @@ access_token = "your_access_token"
 access_token_secret = "your_access_token_secret"
 ```
 
-After installing tweepy, please execute the script [`02_geosearch.py`](02_geosearch.py) under the [03_bot folder](./) on PyCharm. This piece of code was programmed with the reference to [https://github.com/shawn-terryah/Twitter_Geolocation](https://github.com/shawn-terryah/Twitter_Geolocation).
-
-Compared with `01_twsearch.py`, this script `02_geosearch.py` was programmed using a `class` structure instead of a run-down script structure. A `StreamListener` is defined for later use, the main procedure will be executed after the line `if __name__ == "__main__":`. So, let us start with the main procedure, and then switch to the stream listener.
+This script `geosearch.ipynb` was programmed using a `class` structure instead of a run-down script structure. A `StreamListener` is defined for later use, the main procedure will be executed after the line `if __name__ == "__main__":`. This piece of code was programmed with the reference to [https://github.com/shawn-terryah/Twitter_Geolocation](https://github.com/shawn-terryah/Twitter_Geolocation). So, let us start with the main procedure, and then switch to the stream listener.
 
 ```Python
 class StreamListener(tweepy.StreamListener):
@@ -115,7 +115,7 @@ stream.filter(follow=["2211149702"])
 **Note:** An easy way to find a single ID is to use one conversion website and search for ‘what is my twitter ID’.
 
 
-The `on_data` function will handle the data processing and output. In general, this function terminated after `self.limit` second. To process each record `data`, the captured `data` is converted to a json variable `datajson`. we will mainly output six variables, in terms of id, username, created_at, lng, lat, and text. Notably, If the geotag is a single point, the lat and lng will be captured directly from the `coordinates`. If the geotag is place, the lat and lng will capture the centroid of the boundingbox. Similarity, a new csv file named `geotags.csv` is created after [the assets folder](assets/).
+The `on_data` function will handle the data processing and output. In general, this function terminated after `self.limit` second. To process each record `data`, the captured `data` is converted to a json variable `datajson`. we will mainly output six variables, in terms of id, username, created_at, lng, lat, and text. Notably, If the geotag is a single point, the lat and lng will be captured directly from the `coordinates`. If the geotag is place, the lat and lng will capture the centroid of the boundingbox. Similarity, a new csv file named `tweets.csv` is created under [the assets folder](assets/).
 
 ```Python
 def on_data(self, data):
@@ -145,6 +145,15 @@ def on_data(self, data):
         print ("finished.")
         return False
 ```
+
+Now, you should have a general idea of what the script does and how to change the parameters based on your interest. In this section, there are **3 main tasks** here for you to complete:
+
+1. Register your own Twitter developer account to claim API keys and access tokens. Copy and paste them onto corresponding parameter in `geosearch.ipynb` located under this lab.
+
+2. Change the location parameter based on areas you would like to gather twitter data from. It could be anywhere on this earth, but try to choose locations that are large enough to collect sufficient amount of data. (If you are interested in Twitter data that are geo-tagged in the US, you do not need to change this parameter)
+
+3. Change the keyword parameter based on your interest. The keyword here filters twitters that contain the same keyword. It could be any keywords that interest you. (Example: 'Seattle', 'football', 'python', etc.)
+
 ## 3. Visualizing geo-tagged data using QGIS
 
 ## 4. Deliverable
