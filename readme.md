@@ -85,7 +85,7 @@ You will make your first web map in this week using a popular web mapping librar
 
 This week will focus on two emerging topics related to digital geographies, including cloud point visualization and real-time environment data collection.
 
--   **Lecture Notes:** [Point Cloud visualization](https://jakobzhao.github.io/sfm/index.html) and [Real-time environmental data visualization](weeks/week08/).
+-   **Lecture Notes:** [Point Cloud visualization](https://jakobzhao.github.io/sfm/index.html) and [Real-time environmental data visualization](weeks/week08/rpi-iot).
 -   **Readings:** [Real-time GIS](https://drive.google.com/file/d/1COD2OYBxEJThG5Lfx7-nzV0EGtGedndT/view?usp=sharing) and [Panopticon](https://drive.google.com/file/d/156fk11L9JFzsyV_9TRi9_c15MSIPCiL6/view?usp=sharing)
 -   **In-class Discussion:** a) Point Cloud Visulization `Tuesday`, b) Discussion on the paper about Panopticon `Thursday`
 
