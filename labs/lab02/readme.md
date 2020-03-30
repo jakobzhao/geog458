@@ -38,10 +38,23 @@ pip install tweepy
 
 To use the tweepy library, you need to register a Twitter developer account.
 
-
 ![](img/twitter-developer.png)
 
-Once you register, you can apply for a Twitter app. Having a twitter app, you will receive four important parameters, they are:
+Once you finish registering your account, you can apply for a Twitter app. It is located on the top right corner of the page. Click on `Apps`.
+
+![](img/dev_acc.png)
+
+Then, you will see a page with list of apps that you've created for getting Twittr API, but for now, the list should be empty. In order to register for Twitter API, click on `Create an app`.
+
+You will be prompted to fill in the app details. You are required to fill in: App name, Application description, Website URLs,and 'Tell us how this app will be used'. If you are not sure what to put for the website URLs, you may enter your SNS profile URLs, such as your Facebook page, LinkedIn page, etc...
+
+![](img/app_details.png)
+
+After you fill in all the required field, you may click on `Crate`. The Twitter takes some time to process your information to validate your access to the Twitter API.
+
+Once you are registered, go to the `App Detail` of the app you just created. Click on the tab `Keys and tokens`, and you should be see all the keys and tokens required to use the Twitter API.
+
+Having a twitter app, you will receive four important parameters, they are:
 
 ```Python
 consumer_key = "your_consumer_key"
@@ -132,7 +145,6 @@ def on_data(self, data):
         print ("finished.")
         return False
 ```
-
 ## 3. Visualizing geo-tagged data using QGIS
 
 ## 4. Deliverable
