@@ -91,7 +91,7 @@ myauth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 myauth.set_access_token(access_token, access_token_secret)
 ```
 
-To retrieve geo-tagged tweets, three bounding boxes are defined. After initializing the stream listener, a stream object is created out of `tweepy.Stream object`. Then, the LOCATION array is passed to the stream filter method. By doing so, the geo-tagged are filtered and collected. Notably, the filter not only acquire geo-tagged tweets, but also other kinds of tweets according to the input filter strategy.  For example, to  filter all tweets containing the word seattle. The track parameter is an array of search terms to stream.
+To retrieve geo-tagged tweets, three bounding boxes are defined. After initializing the stream listener, a stream object is created out of `tweepy.Stream object`. Then, the LOCATION array is passed to the stream filter method. By doing so, the geo-tagged are filtered and collected.
 
 ```Python
 LOCATIONS = [-124.7771694, 24.520833, -66.947028, 49.384472,  # Contiguous US
@@ -101,19 +101,20 @@ stream_listener = StreamListener(time_limit=60, file=output_file)
 stream = tweepy.Stream(auth=myauth, listener=stream_listener)
 stream.filter(locations=LOCATIONS)
 ```
-You can filter tweets through a keyword, like "seattle".
+Notably, the filter not only acquire geo-tagged tweets, but also other kinds of tweets according to the input filter strategy.  
+tweepy allows you to filter tweets through a keyword, like "seattle".
 
 ```python
 stream.filter(track=['seattle'])
 ```
 
-To use filter to stream tweets by a specific user. The follow parameter is an array of IDs.
+Additionally, to use filter to stream tweets by a specific user. The follow parameter is an array of IDs.
 
 ```python
 stream.filter(follow=["2211149702"])
 ```
-**Note:** An easy way to find a single ID is to use one conversion website and search for ‘what is my twitter ID’.
 
+However, these different filtering parameter returns different data structures and they store different information about the tweets. Since we are interested in geo-tagged tweets in particular, we will not be changing filtering parameters in this lab.
 
 The `on_data` function will handle the data processing and output. In general, this function terminated after `self.limit` second. To process each record `data`, the captured `data` is converted to a json variable `datajson`. we will mainly output six variables, in terms of id, username, created_at, lng, lat, and text. Notably, If the geotag is a single point, the lat and lng will be captured directly from the `coordinates`. If the geotag is place, the lat and lng will capture the centroid of the boundingbox. Similarity, a new csv file named `tweets.csv` is created under [the assets folder](assets/).
 
@@ -146,13 +147,13 @@ def on_data(self, data):
         return False
 ```
 
-Now, you should have a general idea of what the script does and how to change the parameters based on your interest. In this section, there are **3 main tasks** here for you to complete:
+Now, you should have a general idea of what the script does and how to change the parameters based on your geographical area of interest. In this section, there are **3 main tasks** here for you to complete:
 
 1. Register your own Twitter developer account to claim API keys and access tokens. Copy and paste them onto corresponding parameter in `geosearch.ipynb` located under this lab.
 
-2. Change the location parameter based on areas you would like to gather twitter data from. It could be anywhere on this earth, but try to choose locations that are large enough to collect sufficient amount of data. (If you are interested in Twitter data that are geo-tagged in the US, you do not need to change this parameter)
+2. Change the location parameter to filter specific tweets based on your interest. Location could be anywhere on this earth, but try to choose locations that are large enough to collect sufficient amount of data. (If you are interested in Twitter data that are geo-tagged in the US, you do not need to change this parameter).
 
-3. Change the keyword parameter based on your interest. The keyword here filters twitters that contain the same keyword. It could be any keywords that interest you. (Example: 'Seattle', 'football', 'python', etc.)
+3. Run each blocks of code in `geosearch.ipynb`. Your collected data will be stored in `tweets.csv` under `assets` folder.
 
 ## 3. Visualizing geo-tagged data using QGIS
 
