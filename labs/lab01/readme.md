@@ -178,10 +178,6 @@ In this section, we will introduce a series of operations related to project man
 ```markdown
 # Your Name
 
-1234 Main St., City, State 12345
-
-(555) 555-5555
-
 your.name@example.com
 
 http://www.example.com
@@ -237,6 +233,8 @@ Summary of your role
 [University 3]: http://www.univ3.edu
 ```
 **Note:** This resume template is from [http://www.jasonfilley.com/resumeinmarkdown.html](http://www.jasonfilley.com/resumeinmarkdown.html).
+
+
 
 3\. In fact, you can use any text editor to generate Markdown files. If you do not have `Atom` at hand, you can use `Notepad` on Windows or `TextEdit` on MacOS as well. Another more advanced Markdown editor I highly recommend is `Typora`. Please let the instructor know if you meet any difficulty in installing this plugin.
 

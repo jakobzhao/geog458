@@ -105,11 +105,11 @@ Durint the last two meeting sessions, each group will present their final projec
 
 **Labs:** You need to finish all five labs by the due days. In order to help you work on each lab, we will walk through most of the labs in class.
 
-**Participation in in-class discussion:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and participating in critical discussions of those readings. You can also join the class slack (https://geog595win2020.slack.com) for virtual dicussions.
+**Participation in in-class discussion:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and participating in critical discussions of those readings.
 
+**Final Collaborative Project:** During the quarter, you will work with your group members to work on a collaborative project. During the final week, you will present your final project in class. The requriement for the final project will be published soon.
 
-**Final Collaborative Project:** During the quarter, you will complete a larger writing project that engages with the seminar material and course themes, along with additional readings that you bring into conversation with the assigned course readings. You are aiming for 20-30 pages coalescing around ideas and readings from this quarter – you can take up and extend one of the themes from our weekly structure or develop a new one relevant to your own work and thinking. Writing projects is due no later than the end of **Week 11**.
-
+**Essay:** Each student will complete an essay that engages with the readings and the course themes, along with additional readings that you bring into conversation with the assigned course readings. You are aiming for 10 pages (double-spaced) coalescing around ideas and readings from this quarter. Writing projects is due no later than the end of **Week 10**.
 
 ## :two_men_holding_hands: Targeted Audience
 
@@ -125,10 +125,17 @@ This course targets students who have a background in fundamental geographic inf
 | Final collaborative project        | 20% |
 | Essay                              | 10% |
 
+## :book: Copyright
+
+Through this course, I would like to cultiviate the open source culture. The course materials are apprently open source for students and open source community to access.
+
+Notably, **each student is not allow to videotape or audio-tape (record) my class in any form, and sharing recordings outside of class without the written consent of each student in the class is not permitted by [FERPA](https://registrar.washington.edu/students/ferpa/).** However, I will try to record most of the classes via Zoom and share them via Canvas. Even so, I still encourage each of you attending the lectures instead of watching the recorded videos afterwards. Your in-class participation is a key factor to yield the best learning outcome.
+
+ instructor determines if their class can and cannot be recorded. This decision should be clearly communicated by the instructor at the beginning and throughout the quarter. In Zoom, the recording feature can be controlled by the instructor, as the meeting host.
+
+
 ## :love_letter: Accommodations
 
 We welcome the opportunity to work with any students with disabilities in this class to ensure equal access to the course. If you have a letter from Disability Resources for Students (DRS) outlining your academic accommodations, please present the letter to me (or email us, to confirm, if the letter is electronic) as soon as possible so that we can discuss the accommodations you may need for this class. Any discussions between student and professor need to occur as early as possible in order for adequate arrangements to be made. If you do not yet have a letter from DRS, but would like to request academic accommodations due to a disability, please contact DRS [here (Links to an external site.)](https://depts.washington.edu/uwdrs/), or in-person at 011 Mary Gates Hall, or at 206-543-8924 (Voice & Relay), <mailto:uwdrs@uw.edu>.
 
 <a href="https://hgis.uw.edu"><img src="assets/logo.png" align="right" width="230px" target="_blank" /></a> Washington state law requires that UW develop a policy for accommodation of student absences or significant hardship due to reasons of faith or conscience, or for organized religious activities. The UW’s policy, including more information about how to request an accommodation, is available at [Religious Accommodations Policy](https://registrar.washington.edu/staffandfaculty/religious-accommodations-policy/). Accommodations must be requested within the first two weeks of this course using the [Religious Accommodations Request form](https://https:/registrar.washington.edu/students/religious-accommodations-request/).
-
-`© 2020-2021 All rights are reserved by Bo Zhao.`
