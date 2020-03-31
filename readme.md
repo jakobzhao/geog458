@@ -6,7 +6,7 @@
 
 **Office Hour:** Tuesdays 1:00 to 3:00 PM PST or by appointment on [Zoom #: 181944813](https://washington.zoom.us/j/181944813)
 
-**Class Slack:** geog458-workspace.slack.com
+**Class Slack:** [geog458-workspace.slack.com](https://geog458-workspace.slack.com)
 
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
 
