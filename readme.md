@@ -14,7 +14,7 @@ As digital technologies have radically transformed human life, this course tries
 
 -   To identify when and how the methods, sociology, and objects of geographical inquiry can be transformed through computational and networked approaches.
 
--   To learn to find, evaluate, use, extend, and combine various methods and tools of digital geography as needed for a given task. Recently, examples of such tools have included: GitHub, QGIS, Python, JavaScript, Mapbox, Unity, Gephi.
+-   To learn to find, evaluate, use, extend, and combine various methods and tools of digital geography as needed for a given task. Recently, examples of such tools have included: GitHub, QGIS, Python, JavaScript, and Mapbox.
 
 -   To practice and reflect theoretically upon emerging born-digital, multi-modal, narrative, and interactive approaches to cartography and scholarly communication.
 
@@ -96,6 +96,20 @@ During these two weeks, each group will focusing on their final projects. The in
 ### Week 11: Final collaborative Project Presentations
 
 Durint the last two meeting sessions, each group will present their final projects.
+
+## :bell: Course Requirement
+
+**GitHub:** This course material will be hosted on GitHub instead of UW Canvas. On this dedicated GitHub repository, you can find most of the course material, participate in group discussions by submitting GitHub issues, and creating new GitHub repositories to turn in the lab deliverables. By the end of this quarter, you will be more proficient in operating a cloud-based coding environment and able to host your work online as a way to gain public and peer attentions.
+
+**In-class discussion leadership:** You and your group mates will take at least  one in-class discussion. Please work together to prepare some activities and guiding questions that will inspire and structure our discussion of the material.
+
+**Labs:** You need to finish all five labs by the due days. In order to help you work on each lab, we will walk through most of the labs in class.
+
+**Participation in in-class discussion:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and participating in critical discussions of those readings. You can also join the class slack (https://geog595win2020.slack.com) for virtual dicussions.
+
+
+**Final Collaborative Project:** During the quarter, you will complete a larger writing project that engages with the seminar material and course themes, along with additional readings that you bring into conversation with the assigned course readings. You are aiming for 20-30 pages coalescing around ideas and readings from this quarter – you can take up and extend one of the themes from our weekly structure or develop a new one relevant to your own work and thinking. Writing projects is due no later than the end of **Week 11**.
+
 
 ## :two_men_holding_hands: Targeted Audience
 
