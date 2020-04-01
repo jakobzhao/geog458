@@ -118,6 +118,8 @@ However, these different filtering parameter returns different data structures a
 
 The `on_data` function will handle the data processing and output. In general, this function terminated after `self.limit` second. To process each record `data`, the captured `data` is converted to a json variable `datajson`. we will mainly output six variables, in terms of id, username, created_at, lng, lat, and text. Notably, If the geotag is a single point, the lat and lng will be captured directly from the `coordinates`. If the geotag is place, the lat and lng will capture the centroid of the boundingbox. Similarity, a new csv file named `tweets.csv` is created under [the assets folder](assets/).
 
+In a lot of actual work environment, it is common to use database to store information. We are using csv file as data storage to simplify our tasks. If you would like to know more about using database to store information, you can learn more [here](https://github.com/jakobzhao/geog458/blob/master/labs/lab02/database/pe.md).
+
 ```Python
 def on_data(self, data):
     """This is called when data are streamed in."""
@@ -156,6 +158,49 @@ Now, you should have a general idea of what the script does and how to change th
 3. Run each blocks of code in `geosearch.ipynb`. Your collected data will be stored in `tweets.csv` under `assets` folder.
 
 ## 3. Visualizing geo-tagged data using QGIS
+
+In the previous section, we developed a crawler for geo-tagged tweets. In this section, we will visualize the collected geo-tagged tweets data in previous section using a GIS application `QGIS`. QGIS is a free and open-source cross-platform desktop geographic information system application that supports viewing, editing, and analysis of geospatial data. If you have not downloaded QGIS yet, please download the latest version [here](https://qgis.org/en/site/forusers/download.html).
+
+Under `lab02` repository, you should have a csv file named `tweets.csv` filled with harvested data like below:
+
+![](img/gathered_data.png)
+
+A CSV file is a delimited text file that uses a comma to separate values. Each line of the file is a data record. Each record consists of one or more fields, separated by commas. Download this file by clicking `File -> Download`. Store it somewhere that you can find and access easily.
+
+Now, let's open up your QGIS Desktop and create a new project by either clicking on the blank paper icon on the top left, or simply press the shortcut key (Ctrl+N).
+
+The first step of mapping our data is to add base map. A base map is a layer with geographic information that serves as a background. A base map provides context for additional layers that are overlaid on top of the base map. We first need to download plugin that provides different base maps. After you open a new project in QGIS, navigate yourself to `Plugins > Manage and Install Plugins`. It will open a window like this:
+
+![](img/plugin_install.png)
+
+In the search bar, type in `QuickMapServices` and install the plugin. After installing it, close the plugins window. Navigate yourself to `Web > QuickMapServices > Settings`. You should see a page like this:
+
+![](img/QWS_setting.png)
+
+Click on `More Services` tab and click on `Get contributed pack`. This will downlead all the basemaps that are provided by different plugin authors. Then, close the page and navigate yourself again to `Web > QuickMapServices`. This time, you will see a list of contributors and basemaps that they provide. Feel free to try adding different basemaps, but for our exercise, let's use a basemap called `Dark Matter (retina)` under `CartoDB`.
+
+After adding the basemap, it should look like this:
+
+![](img/basemap.png)
+
+Now let's project the data we collected to this basemap. Click on `Layer > Add Layer`. You will see different ways of adding a layer. In our case, we would like to add data stored in csv file, which is a delimited text file. Therefore, choose  `Add Delimited Text Layer`. In file name section, choose the file we just downloaded from Jupyter Notebook named. Choose CSV as file format. Expand `Geometry Definition` tab, set X field as `lng` and set Y field as `lat`. Additionally, set Geometry CRS as `Default CRS: EPSG:4326 - WGS 84` and leave everything else as default. Now, go ahead and `add` this layer.
+
+After adding the layer, close your data source manager. Zoom into wherever you chose your target geographical area. Your map should look something similar to this:
+
+![](img/layer_added.png)
+
+You can also change the symbology (size, color, etc.) of data points. Left click on the `tweets` layer and click on `Properties -> Symbology`. Here, not only you can choose color and size of each data points, you can also edit what shape/symbol to represent each data points. Feel free to change the color/size/symbol here appropriately so that it looks aesthetically pleasing to your audience.
+
+We can now see geocoded locations where tweets were made and distribution of the tweets tells us in which geographic areas Twitter is most frequently used. Such trend gives us further insight when compared with other data. For example, this trend might be a result of increasing population in west and east coast.   
+
+In this section, you have **3 main tasks** to complete:
+
+1. Download the csv file with Twitter data to your computer.
+
+2. Download `QGIS` and plot the data onto a map.
+
+3. Make any appropriate visual edits to this map.
+
 
 ## 4. Deliverable
 
