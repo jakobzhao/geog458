@@ -102,6 +102,10 @@ Durint the last two meeting sessions, each group will present their final projec
 
 ## :bell: Course Requirement
 
+**Student Tech Support:**
+
+The Student Tech Loan Program is expanding as quickly as possible. We announced this to undergrads as soon as it hit the airwaves, in hopes some of them who need hardware can reserve for spring quarter. They expect new/additional machines to arrive in April. STLP Website: https://stlp.uw.edu/ (check the [Spring Announcement](https://drive.google.com/file/d/1qlbUBPdQFJt_jXS2fAOtORwNrBVtZqCb/view)).
+
 **GitHub:** This course material will be hosted on GitHub instead of UW Canvas. On this dedicated GitHub repository, you can find most of the course material, participate in group discussions by submitting GitHub issues, and creating new GitHub repositories to turn in the lab deliverables. By the end of this quarter, you will be more proficient in operating a cloud-based coding environment and able to host your work online as a way to gain public and peer attentions.
 
 **In-class discussion leadership:** You and your group mates will take at least  one in-class discussion. Please work together to prepare some activities and guiding questions that will inspire and structure our discussion of the material.
