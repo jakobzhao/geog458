@@ -27,7 +27,8 @@ As digital technologies have radically transformed human life, this course tries
 ### _Preperation_
 
 -   [**Gear up the working environment**](assets/gearup.md) :computer:  :beer:
--   **Canvas Survey:** Through a survey, students will team up as group of 4 ~ 5 people according to the profeciency of technical skills and interests. `Due: March 31st, 2020, by 11:59pm`
+-   **Canvas Survey:** Through a survey, students will team up as group of 5 ~ 6 people according to the profeciency of technical skills and interests. `Due: March 31st, 2020, by 11:59pm`
+-   **Groups:** Based on the Survey, we have 8 groups (check [here](assets/groups.md)), and I have assigned an group coordinator to each group. Please start meeting your gourp members, along the quarter, you will work together on the collaborative project and the in-class discussion.
 
 ### Week 1: Intro to digital geographies
 
@@ -51,7 +52,7 @@ This week's topic is around processing geospatial data for digital geographies p
 -   **Lecture Notes:** [Geospatial data for digital geographies](week03/readme.md)
 -   **Readings:** a) [Can social media clear the air? A case study of the air pollution problem in Chinese cities](https://drive.google.com/open?id=1C0MTPaPnVALVemeYEfiDChUKRZfcMjz3), b) [More than you ever wanted to know about GeoJSON](week03/assets/geojson.pdf).
 -   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: April 23rd, by 11:59pm`, `under development`
--   **In-class Discussion:** Discussion on the weekly paper `Tuesday`
+-   **In-class Discussion:** Discussion on the weekly paper led by `Group 2` on  `Tuesday`.
 
 ### Week 4: Web mapping
 
@@ -59,7 +60,7 @@ You will make your first web map in this week using a popular web mapping librar
 
 -   **Readings:** [Leaflet Basics](weeks/week04/leaflet), [Map Events](weeks/week04/mapevent)
 -   **Lab 3:** [An integrative web mapping](labs/lab03) `Due: May 3rd, by 11:59pm`, `under development`
--   **In-class Discussion:** a) Web Map A `Tuesday`, b) Web Map B `Thursday`
+-   **In-class Discussion:** a) Web Map A by `Group 3` on  `Tuesday` , b) Web Map B by `Group 4` on `Thursday`.
 
 ### Week 5: Map design
 
@@ -72,7 +73,7 @@ You will make your first web map in this week using a popular web mapping librar
 
 -   **Lecture Notes:** interface design, color, typography, icons, animation
 -   **Readings:** [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), [Boostrap](weeks/week06/boostrap.md) chroma.js, boostrap, c3.js
--   **In-class Discussion:** a) Discussion on the weekly paper `Tuesday`, b) Any intersting Dashboard `Thursday`
+-   **In-class Discussion:** Discussion on the weekly paper and sharing any intersting Dashboard led by `Group 5` on `Thursday`.
 -   **Examples:** [COVID-19 Dashboard](https://hgis.uw.edu/virus)
 
 ### Week 7: Geo-Narratives
@@ -80,7 +81,7 @@ You will make your first web map in this week using a popular web mapping librar
 -   **Lecture Notes:** Multimedia, Full Page, Icon, and other resources
 -   **Readings:** [Map-based visual Storytelling: An Assessment of emerging genres and tropes `Chapter 1,2 and 5`.](https://drive.google.com/file/d/133s4dxoRaT1A7OckBapS6e9Yxh_wQc9d/view?usp=sharing)
 -   **Lab 05:** [An integrative project on digital geographies](labs/lab05) `Due: May 24th, by 11:59pm`
--   **In-class Discussion:** a) Storymap A `Tuesday`, b) Storymap B `Thursday`
+-   **In-class Discussion:** a) Storymap A led by `Group 6` on `Tuesday`, b) Storymap B led by `Group 8` on `Thursday`.
 -   **Examples:** [#Stand with StandingRock](https://jakobzhao.github.io/standwithstandingrock/)
 
 ### Week 8: Emerging topics
@@ -89,7 +90,7 @@ This week will focus on two emerging topics related to digital geographies, incl
 
 -   **Lecture Notes:** [Point Cloud visualization](https://jakobzhao.github.io/sfm/index.html) and [Real-time environmental data visualization](weeks/week08/rpi-iot).
 -   **Readings:** [Real-time GIS](https://drive.google.com/file/d/1COD2OYBxEJThG5Lfx7-nzV0EGtGedndT/view?usp=sharing) and [Panopticon](https://drive.google.com/file/d/156fk11L9JFzsyV_9TRi9_c15MSIPCiL6/view?usp=sharing)
--   **In-class Discussion:** a) Point Cloud Visulization `Tuesday`, b) Discussion on the paper about Panopticon `Thursday`
+-   **In-class Discussion:** a) Point Cloud Visulization led by `Group 1` on `Tuesday`, b) Discussion on the paper about Panopticon led by `Group 7` on `Thursday`.
 
 ### Week 9 & 10: Project studio
 
