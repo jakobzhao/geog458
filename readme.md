@@ -2,7 +2,7 @@
 
 **Meeting:** Tuesdays and Thursdays 8:30 to 10:20 AM PST on [Zoom #: 785830819](https://washington.zoom.us/j/785830819)
 
-**Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu
+**Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu, jakobzhao `wechat/skype`
 
 **Office Hour:** Tuesdays 1:00 to 3:00 PM PST or by appointment on [Zoom #: 181944813](https://washington.zoom.us/j/181944813)
 
@@ -35,8 +35,10 @@ As digital technologies have radically transformed human life, this course tries
 We walk through the syllabus and repond to students' inquiries. Each student is expected to read the paper by Ash et al (2018). This week's lecture and lab will prepare you both the theortical and techinical foundation. After compeleting the lab 01, you can clone/synchronize the course material, set up a personal website, and more importantly, feel comfortable of using github to manage your digital geographies projects.
 
 -   **Lecture Notes:** [Syllabus](readme.md), [Intro to the Web](weeks/week01/intro-web)
--   **Readings:** a) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_), b) [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
+-   **Readings:** a) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_), b) [Mastering Markdown](https://guides.github.com/features/mastering-markdown/). 
 -   **Lab 1:** [Project management using GitHub](labs/lab01) `Due: April 9th, by 11:59pm`
+
+- **Extending Readings:** https://www.ft.com/content/19d90308-6858-11ea-a3c9-1fe6fedcca75?from=timeline&isappinstalled=0
 
 ### Week 2: Prorgamming fundamentals
 
