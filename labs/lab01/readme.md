@@ -1,5 +1,7 @@
 # Lab 1: Project management using GitHub
 
+hello, world!!!
+
 **Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu
 
 **Due:** April 9th, by 11:59pm | **Points Available** = 50
