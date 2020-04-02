@@ -30,7 +30,7 @@ Here, you can make your own edit to the file and run each blocks of code separat
 
 > Note: Most of the codes are already written for you in `geosearch.ipynb` except for some parameters to change. Your important task here is to understand what each pieces of codes are doing, and be able to utilize it later in this assignment.
 
-In this section, we will make a Twitter crawler to collect geo-tagged tweets. This crawler is based on `Tweepy` - a python based library which wraps the Twitter API. Tweepy provides a series of data crawling strategies - Harvesting geo-tagged tweets is just one of them. If you are interested in composing a more complicated data collection strategy, please refer to its documentation at [https://tweepy.readthedocs.io/en/latest/index.html](https://tweepy.readthedocs.io/en/latest/index.html).
+In this section, we will make a Twitter crawler to collect geo-tagged tweets. This crawler is based on `Tweepy` - a python based library which wraps the Twitter API. Tweepy provides a series of data crawling strategies - Harvesting geo-tagged tweets is just one of them. If you are interested in composing a more complicated data collection strategy, please refer to its documentation at <https://tweepy.readthedocs.io/en/latest/index.html>.
 
 We usually need to install libraries like tweepy using on command prompt (if a windows user) or terminal (if a Mac or Linux user). However, since we are working in Jupyter Notebook, we run the following code as shown in the script below to install a library.
 
@@ -65,7 +65,7 @@ access_token = "your_access_token"
 access_token_secret = "your_access_token_secret"
 ```
 
-This script `geosearch.ipynb` was programmed using a `class` structure instead of a run-down script structure. A `StreamListener` is defined for later use, the main procedure will be executed after the line `if __name__ == "__main__":`. This piece of code was programmed with the reference to [https://github.com/shawn-terryah/Twitter_Geolocation](https://github.com/shawn-terryah/Twitter_Geolocation). So, let us start with the main procedure, and then switch to the stream listener.
+This script `geosearch.ipynb` was programmed using a `class` structure instead of a run-down script structure. A `StreamListener` is defined for later use, the main procedure will be executed after the line `if __name__ == "__main__":`. This piece of code was programmed with the reference to <https://github.com/shawn-terryah/Twitter_Geolocation>. So, let us start with the main procedure, and then switch to the stream listener.
 
 ```Python
 class StreamListener(tweepy.StreamListener):
@@ -101,7 +101,8 @@ stream_listener = StreamListener(time_limit=60, file=output_file)
 stream = tweepy.Stream(auth=myauth, listener=stream_listener)
 stream.filter(locations=LOCATIONS)
 ```
-Notably, the filter not only acquire geo-tagged tweets, but also other kinds of tweets according to the input filter strategy.  
+
+Notably, the filter not only acquire geo-tagged tweets, but also other kinds of tweets according to the input filter strategy.
 tweepy allows you to filter tweets through a keyword, like "Seattle".
 
 ```python
@@ -151,11 +152,11 @@ def on_data(self, data):
 
 Now, you should have a general idea of what the script does and how to change the parameters based on your geographical area of interest. In this section, there are **3 main tasks** here for you to complete:
 
-1. Register your own Twitter developer account to claim API keys and access tokens. Copy and paste them onto corresponding parameter in `geosearch.ipynb` located under this lab.
+1.  Register your own Twitter developer account to claim API keys and access tokens. Copy and paste them onto corresponding parameter in `geosearch.ipynb` located under this lab.
 
-2. Change the location parameter to filter specific tweets based on your interest. Location could be anywhere on this earth, but try to choose locations that are large enough to collect sufficient amount of data. (If you are interested in Twitter data that are geo-tagged in the US, you do not need to change this parameter).
+2.  Change the location parameter to filter specific tweets based on your interest. Location could be anywhere on this earth, but try to choose locations that are large enough to collect sufficient amount of data. (If you are interested in Twitter data that are geo-tagged in the US, you do not need to change this parameter).
 
-3. Run each blocks of code in `geosearch.ipynb`. Your collected data will be stored in `tweets.csv` under `assets` folder.
+3.  Run each blocks of code in `geosearch.ipynb`. Your collected data will be stored in `tweets.csv` under `assets` folder.
 
 ## 3. Visualizing geo-tagged data using QGIS
 
@@ -191,16 +192,15 @@ After adding the layer, close your data source manager. Zoom into wherever you c
 
 You can also change the symbology (size, color, etc.) of data points. Left click on the `tweets` layer and click on `Properties -> Symbology`. Here, not only you can choose color and size of each data points, you can also edit what shape/symbol to represent each data points. Feel free to change the color/size/symbol here appropriately so that it looks aesthetically pleasing to your audience.
 
-We can now see geocoded locations where tweets were made and distribution of the tweets tells us in which geographic areas Twitter is most frequently used. Such trend gives us further insight when compared with other data. For example, this trend might be a result of increasing population in west and east coast.   
+We can now see geocoded locations where tweets were made and distribution of the tweets tells us in which geographic areas Twitter is most frequently used. Such trend gives us further insight when compared with other data. For example, this trend might be a result of increasing population in west and east coast.
 
 In this section, you have **3 main tasks** to complete:
 
-1. Download the csv file with Twitter data to your computer.
+1.  Download the csv file with Twitter data to your computer.
 
-2. Download `QGIS` and plot the data onto a map.
+2.  Download `QGIS` and plot the data onto a map.
 
-3. Make any appropriate visual edits to this map.
-
+3.  Make any appropriate visual edits to this map.
 
 ## 4. Deliverable
 
@@ -222,13 +222,12 @@ To submit your deliverable, please create a new GitHub repository, and submit th
 
 Here are the grading criteria:
 
-1\. Complete the main tasks in **section 2**. Export and save the `tweets.csv` file to `assets` folder under your own repository. (POINT XX)
+1. Complete the main tasks in **section 2**. Export and save the `tweets.csv` file to `assets` folder under your own repository. (POINT XX)
 
-2\. Complete the main tasks in **section 3**. Export and save both your `qgz` file and a screen shot of your map to the corresponding folder in your repository. (POINT XX)
+2. Complete the main tasks in **section 3**. Export and save both your `qgz` file and a screen shot of your map to the corresponding folder in your repository. (POINT XX)
 
-3\. In the `readme.md` file, write a short narrative for your generated map, making any meaningful analysis on the distribution of collected data. (POINT XX)
+3. In the `readme.md` file, write a short narrative for your generated map, making any meaningful analysis on the distribution of collected data. (POINT XX)
 
-4\. (Extra Credits) Using technical knowledge learned in this lab tutorial, create another map using QGIS to compare and make further analysis on the map you created. For example, you could compare population density map and distribution of geo-tagged tweets to see if there is any correlation between the size of population and the number of tweets in different areas. To earn this extra credit, simply save your generated files in appropriate folders and write your analysis in md file with a screenshot of newly created visuals. (POINT XX)
+4. (Extra Credits) Using technical knowledge learned in this lab tutorial, create another map using QGIS to compare and make further analysis on the map you created. For example, you could compare population density map and distribution of geo-tagged tweets to see if there is any correlation between the size of population and the number of tweets in different areas. To earn this extra credit, simply save your generated files in appropriate folders and write your analysis in md file with a screenshot of newly created visuals. (POINT XX)
 
-
-**Note:** Lab assignments are required to be submitted electronically to Canvas unless stated otherwise. Efforts will be made to have them graded and returned within one week after they are submitted. Lab assignments are expected to be completed by the due date. ***A late penalty of at least 10 percentage units will be taken off each day after the due date.*** If you have a genuine reason(known medical condition, a pile-up of due assignments on other courses, ROTC, athletics teams, job interview, religious obligations etc.) for being unable to complete work on time, then some flexibility is possible. However, if in my judgment you could reasonably have let me know beforehand that there would likely be a delay, and then a late penalty will still be imposed if I don't hear from you until after the deadline has passed. For unforeseeable problems, I can be more flexible. If there are ongoing medical, personal, or other issues that are likely to affect your work all semester, then please arrange to see me to discuss the situation. There will be NO make-up exams except for circumstances like those above.
+**Note:** Lab assignments are required to be submitted electronically to Canvas unless stated otherwise. Efforts will be made to have them graded and returned within one week after they are submitted. Lab assignments are expected to be completed by the due date. **_A late penalty of at least 10 percentage units will be taken off each day after the due date._** If you have a genuine reason(known medical condition, a pile-up of due assignments on other courses, ROTC, athletics teams, job interview, religious obligations etc.) for being unable to complete work on time, then some flexibility is possible. However, if in my judgment you could reasonably have let me know beforehand that there would likely be a delay, and then a late penalty will still be imposed if I don't hear from you until after the deadline has passed. For unforeseeable problems, I can be more flexible. If there are ongoing medical, personal, or other issues that are likely to affect your work all semester, then please arrange to see me to discuss the situation. There will be NO make-up exams except for circumstances like those above.
