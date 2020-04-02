@@ -20,7 +20,7 @@ Instead of running Jupyter Notebook on local machines, we will be using `Binder`
 
 ![](img/jup_home.png)
 
-You can access all the files that are under geog458 repository. When you open one of the ipynb file, you will see a page like below.
+You can access all the files that are under geog458 repository. When you open one of the `ipynb` file, you will see a page like below.
 
 ![](img/jup_example.png)
 
@@ -30,7 +30,7 @@ Here, you can make your own edit to the file and run each blocks of code separat
 
 > Note: Most of the codes are already written for you in `geosearch.ipynb` except for some parameters to change. Your important task here is to understand what each pieces of codes are doing, and be able to utilize it later in this assignment.
 
-In this section, we will make a Twitter crawler to collect geo-tagged tweets. This crawler is based on `Tweepy` - a python based library which wraps the Twitter API.  Tweepy provides a series of data crawling strategies - Harvesting geo-tagged tweets is just one of them. If you are interested in composing a more complicated data collection strategy, please refer to its documentation at [https://tweepy.readthedocs.io/en/latest/index.html](https://tweepy.readthedocs.io/en/latest/index.html).
+In this section, we will make a Twitter crawler to collect geo-tagged tweets. This crawler is based on `Tweepy` - a python based library which wraps the Twitter API. Tweepy provides a series of data crawling strategies - Harvesting geo-tagged tweets is just one of them. If you are interested in composing a more complicated data collection strategy, please refer to its documentation at [https://tweepy.readthedocs.io/en/latest/index.html](https://tweepy.readthedocs.io/en/latest/index.html).
 
 We usually need to install libraries like tweepy using on command prompt (if a windows user) or terminal (if a Mac or Linux user). However, since we are working in Jupyter Notebook, we run the following code as shown in the script below to install a library.
 
@@ -46,7 +46,7 @@ Once you finish registering your account, you can apply for a Twitter app. It is
 
 ![](img/dev_acc.png)
 
-Then, you will see a page with list of apps that you've created for getting Twittr API, but for now, the list should be empty. In order to register for Twitter API, click on `Create an app`.
+Then, you will see a page with list of apps that you've created for getting Twitter API, but for now, the list should be empty. In order to register for Twitter API, click on `Create an app`.
 
 You will be prompted to fill in the app details. You are required to fill in: `App name`, `Application description`, `Website URLs`, and `'Tell us how this app will be used'`. If you are not sure what to put for the website URLs, you may enter your SNS profile URLs, such as your Facebook page, LinkedIn page, etc.
 
@@ -102,7 +102,7 @@ stream = tweepy.Stream(auth=myauth, listener=stream_listener)
 stream.filter(locations=LOCATIONS)
 ```
 Notably, the filter not only acquire geo-tagged tweets, but also other kinds of tweets according to the input filter strategy.  
-tweepy allows you to filter tweets through a keyword, like "seattle".
+tweepy allows you to filter tweets through a keyword, like "Seattle".
 
 ```python
 stream.filter(track=['seattle'])
@@ -116,7 +116,7 @@ stream.filter(follow=["2211149702"])
 
 However, these different filtering parameter returns different data structures and they store different information about the tweets. Since we are interested in geo-tagged tweets in particular, we will not be changing filtering parameters in this lab.
 
-The `on_data` function will handle the data processing and output. In general, this function terminated after `self.limit` second. To process each record `data`, the captured `data` is converted to a json variable `datajson`. we will mainly output six variables, in terms of id, username, created_at, lng, lat, and text. Notably, If the geotag is a single point, the lat and lng will be captured directly from the `coordinates`. If the geotag is place, the lat and lng will capture the centroid of the boundingbox. Similarity, a new csv file named `tweets.csv` is created under [the assets folder](assets/).
+The `on_data` function will handle the data processing and output. In general, this function terminated after `self.limit` second. To process each record `data`, the captured `data` is converted to a json variable `datajson`. we will mainly output six variables, in terms of id, username, created_at, lng, lat, and text. Notably, If the geotag is a single point, the lat and lng will be captured directly from the `coordinates`. If the geotag is place, the lat and lng will capture the centroid of the bounding box. Similarity, a new csv file named `tweets.csv` is created under [the assets folder](assets/).
 
 In a lot of actual work environment, it is common to use database to store information. We are using csv file as data storage to simplify our tasks. If you would like to know more about using database to store information, you can learn more [here](https://github.com/jakobzhao/geog458/blob/master/labs/lab02/database/pe.md).
 
@@ -204,9 +204,9 @@ In this section, you have **3 main tasks** to complete:
 
 ## 4. Deliverable
 
-You are expected to walk through this instruction, execute python script in geosearch.ipynb to develop your own crawler to collect geo-tagged tweets, and additionally, visualize your harvested geo-tagged data using QGIS. Then, you are asked to write a short narrative of your map analyzing the data you gathered in a markdown file.
+You are expected to walk through this instruction, execute python script in `geosearch.ipynb` to develop your own crawler to collect geo-tagged tweets, and additionally, visualize your harvested geo-tagged data using QGIS. Then, you are asked to write a short narrative of your map analyzing the data you gathered in a markdown file.
 
-To submit your deliverable, please create a new github repository, and submit the url of the GitHub to the **Canvas Dropbox** of this practical exercise. The file structure of this github repository should look similar to below.
+To submit your deliverable, please create a new GitHub repository, and submit the URL of the GitHub to the **Canvas Dropbox** of this practical exercise. The file structure of this GitHub repository should look similar to below.
 
 ```powershell
 [your_repository]
@@ -231,4 +231,4 @@ Here are the grading criteria:
 4\. (Extra Credits) Using technical knowledge learned in this lab tutorial, create another map using QGIS to compare and make further analysis on the map you created. For example, you could compare population density map and distribution of geo-tagged tweets to see if there is any correlation between the size of population and the number of tweets in different areas. To earn this extra credit, simply save your generated files in appropriate folders and write your analysis in md file with a screenshot of newly created visuals. (POINT XX)
 
 
-**Note:** Lab assignments are required to be submitted electronically to Canvas unless stated otherwise. Efforts will be made to have them graded and returned within one week after they are submitted.Lab assignments are expected to be completed by the due date. ***A late penalty of at least 10 percentage units will be taken off each day after the due date.*** If you have a genuine reason(known medical condition, a pile-up of due assignments on other courses, ROTC,athletics teams, job interview, religious obligations etc.) for being unable to complete work on time, then some flexibility is possible. However, if in my judgment you could reasonably have let me know beforehand that there would likely be a delay, and then a late penalty will still be imposed if I don't hear from you until after the deadline has passed. For unforeseeable problems,I can be more flexible. If there are ongoing medical, personal, or other issues that are likely to affect your work all semester, then please arrange to see me to discuss the situation. There will be NO make-up exams except for circumstances like those above.
+**Note:** Lab assignments are required to be submitted electronically to Canvas unless stated otherwise. Efforts will be made to have them graded and returned within one week after they are submitted. Lab assignments are expected to be completed by the due date. ***A late penalty of at least 10 percentage units will be taken off each day after the due date.*** If you have a genuine reason(known medical condition, a pile-up of due assignments on other courses, ROTC, athletics teams, job interview, religious obligations etc.) for being unable to complete work on time, then some flexibility is possible. However, if in my judgment you could reasonably have let me know beforehand that there would likely be a delay, and then a late penalty will still be imposed if I don't hear from you until after the deadline has passed. For unforeseeable problems, I can be more flexible. If there are ongoing medical, personal, or other issues that are likely to affect your work all semester, then please arrange to see me to discuss the situation. There will be NO make-up exams except for circumstances like those above.
