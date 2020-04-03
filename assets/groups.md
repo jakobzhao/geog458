@@ -74,8 +74,6 @@ Alex
 
 Foresty
 
-Eleanor
-
 Chongzhi
 
 ## Group 7
