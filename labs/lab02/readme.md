@@ -222,12 +222,12 @@ To submit your deliverable, please create a new GitHub repository, and submit th
 
 Here are the grading criteria:
 
-1. Complete the main tasks in **section 2**. Export and save the `tweets.csv` file to `assets` folder under your own repository. (POINT XX)
+1.  Complete the main tasks in **section 2**. Export and save the `tweets.csv` file to `assets` folder under your own repository. (POINT XX)
 
-2. Complete the main tasks in **section 3**. Export and save both your `qgz` file and a screen shot of your map to the corresponding folder in your repository. (POINT XX)
+2.  Complete the main tasks in **section 3**. Export and save both your `qgz` file and a screen shot of your map to the corresponding folder in your repository. (POINT XX)
 
-3. In the `readme.md` file, write a short narrative for your generated map, making any meaningful analysis on the distribution of collected data. (POINT XX)
+3.  In the `readme.md` file, write a short narrative for your generated map, making any meaningful analysis on the distribution of collected data. (POINT XX)
 
-4. (Extra Credits) Using technical knowledge learned in this lab tutorial, create another map using QGIS to compare and make further analysis on the map you created. For example, you could compare population density map and distribution of geo-tagged tweets to see if there is any correlation between the size of population and the number of tweets in different areas. To earn this extra credit, simply save your generated files in appropriate folders and write your analysis in md file with a screenshot of newly created visuals. (POINT XX)
+4.  (Extra Credits) Using technical knowledge learned in this lab tutorial, create another map using QGIS to compare and make further analysis on the map you created. For example, you could compare population density map and distribution of geo-tagged tweets to see if there is any correlation between the size of population and the number of tweets in different areas. To earn this extra credit, simply save your generated files in appropriate folders and write your analysis in md file with a screenshot of newly created visuals. (POINT XX)
 
 **Note:** Lab assignments are required to be submitted electronically to Canvas unless stated otherwise. Efforts will be made to have them graded and returned within one week after they are submitted. Lab assignments are expected to be completed by the due date. **_A late penalty of at least 10 percentage units will be taken off each day after the due date._** If you have a genuine reason(known medical condition, a pile-up of due assignments on other courses, ROTC, athletics teams, job interview, religious obligations etc.) for being unable to complete work on time, then some flexibility is possible. However, if in my judgment you could reasonably have let me know beforehand that there would likely be a delay, and then a late penalty will still be imposed if I don't hear from you until after the deadline has passed. For unforeseeable problems, I can be more flexible. If there are ongoing medical, personal, or other issues that are likely to affect your work all semester, then please arrange to see me to discuss the situation. There will be NO make-up exams except for circumstances like those above.
