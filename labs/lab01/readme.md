@@ -337,7 +337,7 @@ Github allows its user to convert a repository as a website automatically. In th
 
 ![](img/front-page.png)
 
-4\. After you successfully push the local repostory to github. You can visit the website at `https://[github_username].github.io`. For example, I can vist the website at `https://geovizlabtest.github.io`. Usually, the URL will automaticaly navigate to the default page under the root of the repo. Usualy, the name of the default page is `index.html`.
+4\. After you successfully push the local repository to github. You can visit the website at `https://[github_username].github.io`. For example, I can vist the website at `https://geovizlabtest.github.io`. Usually, the URL will automaticaly navigate to the default page under the root of the repo. Usually, the name of the default page is `index.html`.
 
 ![](img/front-page-index.png)
 
