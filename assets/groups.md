@@ -4,8 +4,6 @@
 
 Steven `Group Coordinator`
 
-Astrid
-
 Gordon
 
 Oliver
@@ -86,7 +84,7 @@ Joshua
 
 Amanda
 
-Angel Lin
+Angel
 
 
 ## Group 8
