@@ -32,7 +32,7 @@ Here, you can make your own edit to the file and run each blocks of code separat
 
 In this section, we will make a Twitter crawler to collect geo-tagged tweets. This crawler is based on `Tweepy` - a python based library which wraps the Twitter API. Tweepy provides a series of data crawling strategies - Harvesting geo-tagged tweets is just one of them. If you are interested in composing a more complicated data collection strategy, please refer to its documentation at <https://tweepy.readthedocs.io/en/latest/index.html>.
 
-We usually need to install libraries like tweepy using on command prompt (if a windows user) or terminal (if a Mac or Linux user). However, since we are working in Jupyter Notebook, we run the following code as shown in the script below to install a library.
+We usually need to install libraries like tweepy using command prompt (if a windows user) or terminal (if a Mac or Linux user). However, since we are working in Jupyter Notebook, we run the following code as shown in the script below to install a library.
 
 ```Python
 !python -m pip install tweepy
@@ -52,7 +52,7 @@ You will be prompted to fill in the app details. You are required to fill in: `A
 
 ![](img/app_details.png)
 
-After you fill in all the required field, you may click on `Crate`. The Twitter takes some time to process your information to validate your access to the Twitter API.
+After you fill in all the required field, you may click on `Create`. The Twitter takes some time to process your information to validate your access to the Twitter API.
 
 Once you are registered, you can finally get your own keys and tokens. Go to the `App Detail` of the app you just created. Click on the tab `Keys and tokens`, and you should be see all the keys and tokens required to use the Twitter API.
 
@@ -106,16 +106,20 @@ Notably, the filter not only acquire geo-tagged tweets, but also other kinds of 
 tweepy allows you to filter tweets through a keyword, like "Seattle".
 
 ```python
-stream.filter(track=['seattle'])
+stream.filter(track=['seattle'], is_async=True)
 ```
 
-Additionally, to use filter to stream tweets by a specific user. The follow parameter is an array of IDs.
+Additionally, to use filter to stream tweets by a specific user. The follow parameter is an array of IDs. We will not be changing this parameter in this lab exercise.
 
 ```python
 stream.filter(follow=["2211149702"])
 ```
 
-However, these different filtering parameter returns different data structures and they store different information about the tweets. Since we are interested in geo-tagged tweets in particular, we will not be changing filtering parameters in this lab.
+However, these different filtering parameter returns different data structures and they store different information about the tweets. For this reason, keyword filtering does not return plenty of geo-tagged tweets. If you will be changing the keyword parameter, you should run this crawler for a longer duration. To do so, simply change the `time_limit` paramter. For example, if you want to run this crawler for 5 minutes, set it to 300. If you are trying to use a less common keyword, the chance is you will not have sufficient amount of data. In that case, consider running this crawler for even longer.
+
+```python
+stream_listener = StreamListener(time_limit=60, file=output_file)
+```
 
 The `on_data` function will handle the data processing and output. In general, this function terminated after `self.limit` second. To process each record `data`, the captured `data` is converted to a json variable `datajson`. we will mainly output six variables, in terms of id, username, created_at, lng, lat, and text. Notably, If the geotag is a single point, the lat and lng will be captured directly from the `coordinates`. If the geotag is place, the lat and lng will capture the centroid of the bounding box. Similarity, a new csv file named `tweets.csv` is created under [the assets folder](assets/).
 
@@ -154,7 +158,7 @@ Now, you should have a general idea of what the script does and how to change th
 
 1.  Register your own Twitter developer account to claim API keys and access tokens. Copy and paste them onto corresponding parameter in `geosearch.ipynb` located under this lab.
 
-2.  Change the location parameter to filter specific tweets based on your interest. Location could be anywhere on this earth, but try to choose locations that are large enough to collect sufficient amount of data. (If you are interested in Twitter data that are geo-tagged in the US, you do not need to change this parameter).
+2.  Change either the location parameter or the keyword parameter to filter specific tweets based on your interest. Location could be anywhere on this earth, but try to choose locations that are large enough to collect sufficient amount of data. (If you are interested in Twitter data that are geo-tagged in the US, you do not need to change this parameter). If you are changing keyword paramter, think carefully about how long you should run the crawler for.
 
 3.  Run each blocks of code in `geosearch.ipynb`. Your collected data will be stored in `tweets.csv` under `assets` folder.
 
@@ -227,7 +231,5 @@ Here are the grading criteria:
 2.  Complete the main tasks in **section 3**. Export and save both your `qgz` file and a screen shot of your map to the corresponding folder in your repository. (POINT XX)
 
 3.  In the `readme.md` file, write a short narrative for your generated map, making any meaningful analysis on the distribution of collected data. (POINT XX)
-
-4.  (Extra Credits) Using technical knowledge learned in this lab tutorial, create another map using QGIS to compare and make further analysis on the map you created. For example, you could compare population density map and distribution of geo-tagged tweets to see if there is any correlation between the size of population and the number of tweets in different areas. To earn this extra credit, simply save your generated files in appropriate folders and write your analysis in md file with a screenshot of newly created visuals. (POINT XX)
 
 **Note:** Lab assignments are required to be submitted electronically to Canvas unless stated otherwise. Efforts will be made to have them graded and returned within one week after they are submitted. Lab assignments are expected to be completed by the due date. **_A late penalty of at least 10 percentage units will be taken off each day after the due date._** If you have a genuine reason(known medical condition, a pile-up of due assignments on other courses, ROTC, athletics teams, job interview, religious obligations etc.) for being unable to complete work on time, then some flexibility is possible. However, if in my judgment you could reasonably have let me know beforehand that there would likely be a delay, and then a late penalty will still be imposed if I don't hear from you until after the deadline has passed. For unforeseeable problems, I can be more flexible. If there are ongoing medical, personal, or other issues that are likely to affect your work all semester, then please arrange to see me to discuss the situation. There will be NO make-up exams except for circumstances like those above.
