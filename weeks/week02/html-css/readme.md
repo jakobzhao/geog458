@@ -33,13 +33,14 @@ Standard protocol is that a file named **index** is what will be provided by def
 > **Note:** the HTML file extension, indicating the file is written in HTML). The file structure found in my directory looks like the following.
 
 ```
- Geog371
-   lectures
-     lec03
-      │  index.html
-      ├─css
-      ├─img
-      └─js
+ Geog458
+   weeks
+     week02
+      html-css
+        │  index.html
+        ├─css
+        ├─img
+        └─js
 ```
 
 You can also have supplemental files, such as images, style files, scripts, and other items in your root directory alongside the `index.html` standing alone or in subdirectories. You can see in the above-listed file structure, I have `img` for holding images, `css` for holding style files, `js` for scripts, and usually another folder named `assets` or `data` for holding miscellaneous items.
@@ -67,23 +68,7 @@ While you can get away with using a basic text editor to create HTML files, ther
 
 For testing and debugging purpose, we need our computer to act like a WebServer, allowing it to access files online. There are many tools for doing this, and one is built right into python. If you use a Mac or Linux, please open `Terminal`, if on Windows, open command prompt. In the main working interface, use the command `cd` to **change directory** to the folder in which your website files are located. Once there, type the following to start a simple Python server.
 
-```bash
-$ python -m SimpleHTTPServer 8000
-```
-
-> **Note:** If the above command line does not work, probably your computer has not installed python yet. Please follow a tutorial at [here](../../resources/SimpleHTTPServer.md) to install a SimpleHTTPServer. Also, if you work on a Windows envrionment, the python path might not be inserted to the system envrionment yet, so you have to inserted it.
-
-Now open a browser and access your site at: **http://localhost:8000**
-
-8000 is the default port of SimpleHTTPServer. Other than 8000, you can also try 80 that is the default port of Http service. for example:
-
-```bash
-$ python -m SimpleHTTPServer 80
-```
-
-Now you can access your site **http://localhost** without specifying a port.
-
-Other than setting up a server environment through python SimpleHTTPServer, you can also If you work in `Atom` (what we suggested for this course), you do not need to start the Python server by inputting commands in the Terminal or Command promt. In Atom's main window, please press a key combination `Ctrl` + `Alt` + `l` to open up a live server. In this way, a server environment will automatically launch, and a browser showing the front page of the server will be opened up.
+you can also If you work in `Atom` (what we suggested for this course), you do not need to start the Python server by inputting commands in the Terminal or Command promt. In Atom's main window, please press a key combination `Ctrl` + `Alt` + `l` to open up a live server. In this way, a server environment will automatically launch, and a browser showing the front page of the server will be opened up.
 
  Sometimes, you will need to relaunch the live server, so you can stop the server by pressing `Ctrl` + `Alt` + `q`, and then quickly start it by pressing `Ctrl` + `Alt` + `l`. Also, to set up the server on a dedicated port, or you want to set up multiple server for testing purpose, please refer to the commands below:
 
@@ -318,11 +303,11 @@ Our page, with this code, contains a bit more content now.
 
 Cascading Style Sheets (CSS) is a styling language used for describing the look and formatting of an HTML page. It uses the DOM and styles "cascade" from higher elements in the DOM tree to elements further down.
 
-CSS is a very useful styling system, and allows you to style items on your page according to a number of methods based on the element it falls within (i.e., div, body, p, etc.), the id of the element, or the class of the element.
+CSS is a very useful styling system, and allows you to style items on your page according to a number of methods based on the element it falls within (i.e., `div`, `body`, `p`, etc.), the id of the element, or the class of the element.
 
 ### Why Cascading?
 
-The language 'cascades' in the effect that if you style an element, any nested elements will get the same styling unless you specify otherwise. For example, if you set the font for your body element, a p (paragraph) will also be set to the same font, unless you specify specifically in the CSS that you want that `p` to have another font. This is a useful method in that it minimizes the code you need to write and forces you to be careful with your page structure.
+The term 'cascades' in the effect that if you style an element, any nested elements will get the same styling unless you specify otherwise. For example, if you set the font for your body element, a p (paragraph) will also be set to the same font, unless you specify specifically in the CSS that you want that `p` to have another font. This is a useful method in that it minimizes the code you need to write and forces you to be careful with your page structure.
 
 ### Link a CSS File to your site
 

@@ -11,7 +11,7 @@
 - Understand how to program in Atom and debug by Chrome through the Instructor's demostration;
 - Get to know the basic concepts (especially the selectors) of JQuery.
 
-After a self-learning of this week's reading list as well as the Lab 2, you might have some questions related to Web Programming. In this lecture, the instructor will help you deal with these common problems. And we will also talk about JQuery which is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML. More importantly, JQuery can boost the efficiency of both Leaflet (web mapping framework) and Bootstrap (web design framework).
+In this lecture, the instructor will help you deal with these common problems. And we will also talk about JQuery which is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML. More importantly, JQuery can boost the efficiency of both Leaflet (web mapping framework) and Bootstrap (web design framework).
 
 **Introduction**
 

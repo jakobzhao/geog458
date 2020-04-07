@@ -1,4 +1,4 @@
-# Lab 2: Web Programming Basics II: Javascript
+# Web Programming Basics II: Javascript
 
 **Meeting:** Tuesdays and Thursdays 8:30 to 10:20 AM PST on [Zoom #: 785830819](https://washington.zoom.us/j/785830819)
 
@@ -32,14 +32,15 @@ When you are working with javascript, some of your main goals will be to:
 
 JavaScript can be added to your website by either typing in script between two script tags, or by linking a JavaScript file to your site. Please synchronize all the course material, the file structure for this lab is structured as below:
 ```powershell
-geog371
-    labs
-        lab02
-        │  index.html
-        │  readme.md
-        └─js
-           └──main.js
-        └─img
+geog458
+    weeks
+        week02
+          javascript
+            │  index.html
+            │  readme.md
+            └─js
+               └──main.js
+            └─img
 ```
 Please activate a web server environment under the lab02 directory by **SimpleHTTPServer** or **Atom**.  Then visit `index.html` on Google Chrome. For example, if you activate a web server environment by SimpleHTTPServer with default setting, you may need to visit http://localhost:8000/index.html.
 
@@ -666,9 +667,9 @@ Adding jQuery to your webpage is done by including the following line of code at
 - Cesium is a javascript library to make virtual global.
 
 
-## 3. Deliverable
+## 3. Ungraded questions
 
-Please create a lab report as a word document, and answer all the following questions in this report.
+To evaluate your skills in Javascript, please try to answer the questions below. We will publish the answer to each question later.
 
 **Question 1.** Inside which HTML element do we put the JavaScript? (5 points)
 
@@ -769,17 +770,12 @@ Please create a lab report as a word document, and answer all the following ques
 >
 > D. 2;
 
-#### Optional task
 
 **Question 11.** Please briefly describe how to launch the atom live server to port 5000 on localhost (127.0.0.1).  --  1 POINTS
 
 **Question 12.** Please list two ways to activate the inspector of Google Chrome.  -- 1 POINTS
 
 **Question 13.** Assume a repository of course material has already been cloned to your local computer. In the class, you have annotated some markdown files in the local repository as a convenient way to take notes. Do you think it is an appropriate way to do that? Please describe the reasons why. If it is not an appropriate, please list your suggestion. -- 3 POINTS
-
-
-
-Once you finish this lab, you need to submit the lab report to **Canvas Dropbox**. On the assignment tab,  check the item of this lab, press the `Submit Assignment` button to submit your lab report. Please contact the instructor or TA if you have any difficulty. Note: only submit your lab report in Word or PDF format.
 
 
 ## Reference
