@@ -1,7 +1,5 @@
 # GEOGRAPHY 458: Advanced Digital Geographies
 
-test
-
 **Meeting:** Tuesdays and Thursdays 8:30 to 10:20 AM PST on [Zoom #: 785830819](https://washington.zoom.us/j/785830819)
 
 **Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu, jakobzhao `wechat/skype`
@@ -128,7 +126,7 @@ The Student Tech Loan Program is expanding as quickly as possible. We announced 
 
 ~~**Final Collaborative Project:** During the quarter, you will work with your group members to work on a collaborative project. During the final week, you will present your final project in class. The requriement for the final project will be published soon.~~
 
-**Individual Final Project:** Considering the difficulty of working as a team when you cannot meet each other in person, I decide to change the final collaborative project as individual base. And this final project will extend the lab 05. Thus, the lab 05 will be converted to a final indvidual project, you only need to submit this final project at the end of this quarter and you do not need to submit the lab 5. 
+**Individual Final Project:** Considering the difficulty of working as a team when you cannot meet each other in person, I decide to change the final collaborative project as individual base. And this final project will extend the lab 05. Thus, the lab 05 will be converted to a final indvidual project, you only need to submit this final project at the end of this quarter and you do not need to submit the lab 5.
 
 **Essay:** Each student will complete an essay that engages with the readings and the course themes, along with additional readings that you bring into conversation with the assigned course readings. You are aiming for 10 pages (double-spaced) coalescing around ideas and readings from this quarter. Writing projects is due no later than the end of **Week 10**.
 
