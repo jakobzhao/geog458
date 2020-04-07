@@ -777,7 +777,7 @@ To evaluate your skills in Javascript, please try to answer the questions below.
 
 **Question 13.** Assume a repository of course material has already been cloned to your local computer. In the class, you have annotated some markdown files in the local repository as a convenient way to take notes. Do you think it is an appropriate way to do that? Please describe the reasons why. If it is not an appropriate, please list your suggestion. -- 3 POINTS
 
-You can find th answer o those questions [here](/answer.md).
+You can find the answer to those questions [here](https://github.com/jakobzhao/geog458/blob/master/weeks/week02/javascript/answer.md).
 
 ## Reference
 
