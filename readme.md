@@ -14,9 +14,10 @@ test
 >
 > **Course Updates (4/7/2020):**
 >
-> -   **No final projects**.
+> -   **No final colloraive projects since I realize the difficulty of woring as a group when you cannot meet in person.**
+> -   The lab 5 will be reformatted as an individual final project\*\*. You will sill present your final project in the last week.
 > -   Students work together as groups for the in-class discussion.
-> -   Students should use **GitHub Issues** as the primary place to submit your questions about the course material, lectures, and/or labs. If you cannot get a proper answer from GitHub issue, then we can talk through slack, email, skype, or wechat.
+> -   Students should use **GitHub Issues** as the primary place to submit your questions about the course material, lectures, and/or labs. If you cannot get a proper answer from GitHub issue,  we can talk through slack, email, skype, or wechat.
 > -   For each student, the activity of issue response is expected. Moreover, if you have an comparative more number of issue replies, you will receive extra credits.
 
 As digital technologies have radically transformed human life, this course tries to engage students in this digitally mediated and data-intensive geographic world, and also train them the timely technical skills which are demanding in emerging job markets. This course will provide a unique opportunity to explore emerging digital methods, to build a holistic solution to real-world problems, and to critically analyze their social implications. Rather than focusing exclusively on one or two specific topics, this course covers a full range of theoretical perspectives and practical exercises. The course begins with teaching students on geospatial project management using GitHub, and then a series of geospatial data operations and analyses are covered in detail, such as online data (e.g., geotagged tweets) acquisition, geocoding, spatial and placial analyses. With these preparations, this course switches to online geovisualization. After a brief introduction to web programming basics (e.g., JavaScript, Html, and CSS), students will learn how to visualize and narrate geographic phenomena in an online environment. A few state-of-the-art approaches and applications in digital geographies will be practiced, such as collecting aerial imagery and point clouds using an unmanned aerial vehicle (UAV, commonly known as drone) or LiDAR, as well as storing real-time data from an environmental sensor. Throughout, students will be empowered not only with defined skills that will be important to many emerging jobs, but also with critical intellectual vision. This course is very “hands-on” and interactive! Most of our time will be spent in a hybrid lecture/lab where students will be working together. Although there will be some individual written reflections and analyses, no formal written final exam will be set up. The final project enables students to work collaboratively to figure out a holistic solution to researching a real-world problem. With the completion of this course, each student can share the course work at a self-made website which can be publicly viewed by classmates, open-source community as well as future industrial recruiters. Along the way, the readings will include both applied and theoretical selections. Students will learn not only how people have been programming and visualizing, but also about how critical social theorists have identified assumptions, ideologies, and rigidities in existing practices that can help students to make effective, inclusive and empathetic decisions in today’s data-intensive geographic world.
@@ -91,7 +92,7 @@ You will make your first web map in this week using a popular web mapping librar
 
 -   **Lecture Notes:** Multimedia, Full Page, Icon, and other resources
 -   **Readings:** [Map-based visual Storytelling: An Assessment of emerging genres and tropes `Chapter 1,2 and 5`.](https://drive.google.com/file/d/133s4dxoRaT1A7OckBapS6e9Yxh_wQc9d/view?usp=sharing)
--   **Lab 05:** [An integrative project on digital geographies](labs/lab05) `Due: May 24th, by 11:59pm`
+-   **Final Project:** [An integrative project on digital geographies](labs/lab05)
 -   **In-class Discussion:** a) Storymap A led by `Group 6` on `Tuesday`, b) Storymap B led by `Group 8` on `Thursday`.
 -   **Examples:** [#Stand with StandingRock](https://jakobzhao.github.io/standwithstandingrock/)
 
@@ -107,9 +108,9 @@ This week will focus on two emerging topics related to digital geographies, incl
 
 During these two weeks, each group will focusing on their final projects. The instructors are avaiable during the office hour, the normal lecture period to help with each group on their final projects.
 
-### Week 11: Final collaborative Project Presentations
+### Week 11: Final ~~collaborative~~ project presentations
 
-Durint the last two meeting sessions, each group will present their final projects.
+Durint the last two meeting sessions, each group will present their final projects. More information about final project will be presented afer the mid-term.
 
 ## :bell: Course Requirement
 
@@ -125,7 +126,9 @@ The Student Tech Loan Program is expanding as quickly as possible. We announced 
 
 **Participation in in-class discussion:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and participating in critical discussions of those readings.
 
-**Final Collaborative Project:** During the quarter, you will work with your group members to work on a collaborative project. During the final week, you will present your final project in class. The requriement for the final project will be published soon.
+~~**Final Collaborative Project:** During the quarter, you will work with your group members to work on a collaborative project. During the final week, you will present your final project in class. The requriement for the final project will be published soon.~~
+
+**Individual Final Project:** Considering the difficulty of working as a team when you cannot meet each other in person, I decide to change the final collaborative project as individual base. And this final project will extend the lab 05. Thus, the lab 05 will be converted to a final indvidual project, you only need to submit this final project at the end of this quarter and you do not need to submit the lab 5. 
 
 **Essay:** Each student will complete an essay that engages with the readings and the course themes, along with additional readings that you bring into conversation with the assigned course readings. You are aiming for 10 pages (double-spaced) coalescing around ideas and readings from this quarter. Writing projects is due no later than the end of **Week 10**.
 
@@ -135,13 +138,15 @@ This course targets students who have a background in fundamental geographic inf
 
 ## :heavy_check_mark: Grading
 
-| Grading items                      | %   |
-| ---------------------------------- | --- |
-| Constructive contribution to class | 10% |
-| Lab Assignments                    | 30% |
-| Mid-term                           | 30% |
-| Final collaborative project        | 20% |
-| Essay                              | 10% |
+| Grading items                        | %   |
+| ------------------------------------ | --- |
+| Constructive contribution to class\* | 10% |
+| Lab Assignments                      | 30% |
+| Mid-term                             | 30% |
+| Final  project                       | 20% |
+| Essay                                | 10% |
+
+> The item on **_constructive contribution to class_** includes your participation to the class (e.g., self-intruction, answer questions in class, etc/) and/or your response on github issues (ask questions via GitHub issue,and help your classmates using github issues).
 
 ## :book: Copyright
 
