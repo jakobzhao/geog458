@@ -9,6 +9,13 @@
 **Class Discussion Board:** [geog458-workspace.slack.com](https://geog458-workspace.slack.com)
 
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
+>
+> **Course Updates (4/7/2020):**
+>
+> -   **No final projects**.
+> -   Students work together as groups for the in-class discussion.
+> -   Students should use **GitHub Issues** as the primary place to submit your questions about the course material, lectures, and/or labs. If you cannot get a proper answer from GitHub issue, then we can talk through slack, email, skype, or wechat.
+> -   For each student, the activity of issue response is expected. Moreover, if you have an comparative more number of issue replies, you will receive extra credits.
 
 As digital technologies have radically transformed human life, this course tries to engage students in this digitally mediated and data-intensive geographic world, and also train them the timely technical skills which are demanding in emerging job markets. This course will provide a unique opportunity to explore emerging digital methods, to build a holistic solution to real-world problems, and to critically analyze their social implications. Rather than focusing exclusively on one or two specific topics, this course covers a full range of theoretical perspectives and practical exercises. The course begins with teaching students on geospatial project management using GitHub, and then a series of geospatial data operations and analyses are covered in detail, such as online data (e.g., geotagged tweets) acquisition, geocoding, spatial and placial analyses. With these preparations, this course switches to online geovisualization. After a brief introduction to web programming basics (e.g., JavaScript, Html, and CSS), students will learn how to visualize and narrate geographic phenomena in an online environment. A few state-of-the-art approaches and applications in digital geographies will be practiced, such as collecting aerial imagery and point clouds using an unmanned aerial vehicle (UAV, commonly known as drone) or LiDAR, as well as storing real-time data from an environmental sensor. Throughout, students will be empowered not only with defined skills that will be important to many emerging jobs, but also with critical intellectual vision. This course is very “hands-on” and interactive! Most of our time will be spent in a hybrid lecture/lab where students will be working together. Although there will be some individual written reflections and analyses, no formal written final exam will be set up. The final project enables students to work collaboratively to figure out a holistic solution to researching a real-world problem. With the completion of this course, each student can share the course work at a self-made website which can be publicly viewed by classmates, open-source community as well as future industrial recruiters. Along the way, the readings will include both applied and theoretical selections. Students will learn not only how people have been programming and visualizing, but also about how critical social theorists have identified assumptions, ideologies, and rigidities in existing practices that can help students to make effective, inclusive and empathetic decisions in today’s data-intensive geographic world.
 
@@ -38,7 +45,7 @@ We walk through the syllabus and repond to students' inquiries. Each student is 
 -   **Readings:** a) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_), b) [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
 -   **Lab 1:** [Project management using GitHub](labs/lab01) `Due: April 9th, by 11:59pm`
 
-- **Extending Readings:** https://www.ft.com/content/19d90308-6858-11ea-a3c9-1fe6fedcca75?from=timeline&isappinstalled=0
+-   **Extending Readings:** <https://www.ft.com/content/19d90308-6858-11ea-a3c9-1fe6fedcca75?from=timeline&isappinstalled=0>
 
 ### Week 2: Prorgamming fundamentals
 
@@ -106,7 +113,7 @@ Durint the last two meeting sessions, each group will present their final projec
 
 **Student Tech Support:**
 
-The Student Tech Loan Program is expanding as quickly as possible. We announced this to undergrads as soon as it hit the airwaves, in hopes some of them who need hardware can reserve for spring quarter. They expect new/additional machines to arrive in April. STLP Website: https://stlp.uw.edu/ (check the [Spring Announcement](https://drive.google.com/file/d/1qlbUBPdQFJt_jXS2fAOtORwNrBVtZqCb/view)).
+The Student Tech Loan Program is expanding as quickly as possible. We announced this to undergrads as soon as it hit the airwaves, in hopes some of them who need hardware can reserve for spring quarter. They expect new/additional machines to arrive in April. STLP Website: <https://stlp.uw.edu/> (check the [Spring Announcement](https://drive.google.com/file/d/1qlbUBPdQFJt_jXS2fAOtORwNrBVtZqCb/view)).
 
 **GitHub:** This course material will be hosted on GitHub instead of UW Canvas. On this dedicated GitHub repository, you can find most of the course material, participate in group discussions by submitting GitHub issues, and creating new GitHub repositories to turn in the lab deliverables. By the end of this quarter, you will be more proficient in operating a cloud-based coding environment and able to host your work online as a way to gain public and peer attentions.
 
@@ -141,7 +148,6 @@ Through this course, I would like to cultiviate the open source culture. The cou
 Notably, **each student is not allow to videotape or audio-tape (record) my class in any form, and sharing recordings outside of class without the written consent of each student in the class is not permitted by [FERPA](https://registrar.washington.edu/students/ferpa/).** However, I will try to record most of the classes via Zoom and share them via Canvas. Even so, I still encourage each of you attending the lectures instead of watching the recorded videos afterwards. Your in-class participation is a key factor to yield the best learning outcome.
 
  instructor determines if their class can and cannot be recorded. This decision should be clearly communicated by the instructor at the beginning and throughout the quarter. In Zoom, the recording feature can be controlled by the instructor, as the meeting host.
-
 
 ## :love_letter: Accommodations
 
