@@ -198,7 +198,13 @@ You can also change the symbology (size, color, etc.) of data points. Left click
 
 We can now see geocoded locations where tweets were made and distribution of the tweets tells us in which geographic areas Twitter is most frequently used. Such trend gives us further insight when compared with other data. For example, this trend might be a result of increasing population in west and east coast.
 
-Finally, save your map as a `qgz` file. To do so, 
+Finally, save your map as a `qgz` file. To do so, click on `Project -> Save as` and change the file type to qgz format.
+
+> What is QGZ file? QGZ file is a Quantum GIS Compressed Project. Quantum GIS (QGIS) is a cross-platform free and open source desktop geographic information systems (GIS) application that provides data viewing, editing, and analysis capabilities.
+
+![](img/save_as.png)
+
+Additionally, take a nice screenshot of your generated map. You will insert your qgz file and screenshot to your reository later.
 
 In this section, you have **3 main tasks** to complete:
 
@@ -206,7 +212,7 @@ In this section, you have **3 main tasks** to complete:
 
 2.  Download `QGIS` and plot the data onto a map.
 
-3.  Make any appropriate visual edits to this map.
+3.  Make any appropriate visual edits to this map. Save it as `qgz` file and take a screenshot of the map.
 
 ## 4. Deliverable
 
