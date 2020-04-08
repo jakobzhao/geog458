@@ -4,7 +4,7 @@
 
 **Due:**  April 23rd, by 5:00pm | **Points Available** = 50
 
-In this practical exercise, we will introduce how to collect Geo-tagged Twitter data using a API-based crawler and visualize them on a map using a mapping tool `QGIS`. A web crawler is a purposely designed bot for online data collection. In most cases, online data can be acquired through a dedicated API maintained by the data provider. Below, we will go over in detail the process of developing an API-based crawler and using QGIS to visualize collected data onto a map. Okay, let us get started!
+In this practical exercise, we will introduce how to collect Geo-tagged Twitter data using a API-based crawler and visualize them on a map using a mapping tool `QGIS`. A web crawler is a purposely designed bot for online data collection. In most cases, online data can be acquired through a dedicated API maintained by the data provider. This lab exercise focuses on visualizing spatial distribution of twitter data, which reflect the public perception of specific topic. As you go though this tutorial, think about how you can apply this technique to your individual final project. Below, we will go over in detail the process of developing an API-based crawler and using QGIS to visualize collected data onto a map. Okay, let us get started!
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jakobzhao/geog458.git/master)
 
@@ -40,7 +40,7 @@ We usually need to install libraries like tweepy using command prompt (if a wind
 
 To use the tweepy library, you need to register a Twitter developer account [here](https://developer.twitter.com/en).
 
-![](img/twitter-developer.png)
+![](img/twitter_dev.png)
 
 Once you finish registering your account, you can apply for a Twitter app. It is located on the top right corner of the page. Click on `Apps`.
 
@@ -103,13 +103,13 @@ stream.filter(locations=LOCATIONS)
 ```
 
 Notably, the filter not only acquire geo-tagged tweets, but also other kinds of tweets according to the input filter strategy.
-tweepy allows you to filter tweets through a keyword, like "Seattle".
+tweepy allows you to filter tweets through a keyword. By choosing a keyword related to timely topic like "coronavirus", you can obtain data that gives you an insight to the public perception of the topic.
 
 ```python
-stream.filter(track=['seattle'], is_async=True)
+stream.filter(track=['coronavirus'], is_async=True)
 ```
 
-Additionally, to use filter to stream tweets by a specific user. The follow parameter is an array of IDs. We will not be changing this parameter in this lab exercise.
+Additionally, to use filter to stream tweets by a specific user. The follow parameter is an array of IDs. For example, the twitter ID for the white house is `822215673812119553` and you can collect tweets from this specific account. We will not be changing this parameter in this lab exercise, but consider how you can utilize this function if this is something that you would like to link to your final project.
 
 ```python
 stream.filter(follow=["2211149702"])
@@ -197,6 +197,8 @@ After adding the layer, close your data source manager. Zoom into wherever you c
 You can also change the symbology (size, color, etc.) of data points. Left click on the `tweets` layer and click on `Properties -> Symbology`. Here, not only you can choose color and size of each data points, you can also edit what shape/symbol to represent each data points. Feel free to change the color/size/symbol here appropriately so that it looks aesthetically pleasing to your audience.
 
 We can now see geocoded locations where tweets were made and distribution of the tweets tells us in which geographic areas Twitter is most frequently used. Such trend gives us further insight when compared with other data. For example, this trend might be a result of increasing population in west and east coast.
+
+Finally, save your map as a `qgz` file. To do so, 
 
 In this section, you have **3 main tasks** to complete:
 
