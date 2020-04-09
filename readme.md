@@ -13,7 +13,7 @@
 >
 > **Course Updates (4/7/2020):**
 >
-> -   **No final colloraive projects since I realize the difficulty of woring as a group when you cannot meet in person.**
+> -   **No final colloraive projects since I realize the difficulty of working as a group when you cannot meet in person.**
 > -   The lab 5 will be reformatted as an individual final project\*\*. You will sill present your final project in the last week.
 > -   Students work together as groups for the in-class discussion.
 > -   Students should use **GitHub Issues** as the primary place to submit your questions about the course material, lectures, and/or labs. If you cannot get a proper answer from GitHub issue,  we can talk through slack, email, skype, or wechat.
