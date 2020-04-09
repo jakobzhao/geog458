@@ -19,7 +19,7 @@ Today, let us switch gear to some heavy lifting of Web Programming. This lecture
 
 A web page is a document suitable for display and distribution over the internet. At the most basic level, a web page is a text document containing code (often HyperText Markup Language, shortened to `HTML`), that is located at a node on the internet. This node is called a 'server', as it serves the file to the world wide web, allowing your computer, the 'client', to access it.
 
-When you open a web browser, such as `Chrome`, `Firefox` or `Internet Explorer`, and input a URL, something like www.oregonstate.edu into the address bar, the web browser navigates to the node you have specified and requests this document, which it reads, interprets, and displays on your screen depending on the interpretation of the document. This means a couple of things:
+When you open a web browser, such as `Chrome`, `Firefox` or `Internet Explorer`, and input a URL, something like www.uw.edu into the address bar, the web browser navigates to the node you have specified and requests this document, which it reads, interprets, and displays on your screen depending on the interpretation of the document. This means a couple of things:
 
     - You need to have a location (url) on the internet you can place your documents.
     - You have to create and place the right kinds of documents in this location.

@@ -8,6 +8,8 @@
 
 **Class Discussion Board:** [geog458-workspace.slack.com](https://geog458-workspace.slack.com)
 
+test
+
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
 >
 > **Course Updates (4/7/2020):**

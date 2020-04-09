@@ -250,9 +250,9 @@ Object Literal data type is a comma separated list of name value pairs.
 
 ```javascript
 var course = {
-    name: "Geovisualization: Web Mapping",
-    year: 2017,
-    univ: "Oregon State University"
+    name: "Advanced Digital Geographies",
+    year: 2020,
+    univ: "University of Washington"
 };
 
 console.log(course.name);
