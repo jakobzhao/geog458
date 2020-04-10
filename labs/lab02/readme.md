@@ -172,7 +172,9 @@ Under `lab02` repository, you should have a CSV file named `tweets.csv` filled w
 
 A CSV file is a delimited text file that uses a comma to separate values. Each line of the file is a data record. Each record consists of one or more fields, separated by commas. Download this file by clicking `File -> Download`. Store it somewhere that you can find and access easily.
 
-Now, let's open up your QGIS Desktop and create a new project by either clicking on the blank paper icon on the top left or press the shortcut key (Ctrl+N).
+Now, let's open up your QGIS Desktop. When you first open GQIS, it should look like below. To create a new project, either click on the blank paper icon on the top left or press the shortcut key (Ctrl+N).
+
+![](img/q_interface.png)
 
 The first step of mapping our data is to add a base map. A base map is a layer with geographic information that serves as a background. A base map provides context for additional layers that are overlaid on top of the base map. We first need to download a plugin that provides different base maps. After you open a new project in QGIS, navigate yourself to `Plugins > Manage and Install Plugins`. It will open a window like this:
 
@@ -188,7 +190,9 @@ After adding the base map, it should look like this:
 
 ![](img/basemap.png)
 
-Now let us project the data we collected to this base map. Click on `Layer > Add Layer`. You will see different ways of adding a layer. In our case, we would like to add data stored in a CSV file, which is a delimited text file. Therefore, choose  `Add Delimited Text Layer`. In the file name section, choose the file we just downloaded from Jupyter Notebook named. Choose CSV as the file format. Expand `Geometry Definition` tab, set the X field as `lng`, and set the Y field as `lat`. Additionally, set Geometry CRS as `Default CRS: EPSG:4326 - WGS 84` and leave everything else as default. Now, go ahead and `add` this layer.
+Now let us project the data we collected to this base map. Click on `Layer > Add Layer`. You will see different ways of adding a layer. In our case, we would like to add data stored in a CSV file, which is a delimited text file. Therefore, choose  `Add Delimited Text Layer`. In the file name section, choose the file we just downloaded from Jupyter Notebook named. Choose CSV as the file format. Expand `Geometry Definition` tab, set the X field as `lng`, and set the Y field as `lat`. Additionally, set Geometry CRS as `Default CRS: EPSG:4326 - WGS 84` and leave everything else as default. Now, go ahead and `add` this layer. All the layers you add to a map can be edited and managed in the `layer` section on bottom-left corner of QGIS interface.
+
+![](img/layer_section.png)
 
 After adding the layer, close your data source manager. Zoom in to wherever you chose your target geographical area. Your map should look something similar to this:
 
@@ -204,7 +208,11 @@ Finally, save your map as a `qgz` file. To do so, click on `Project -> Save as` 
 
 ![](img/save_as.png)
 
-Additionally, take a nice screenshot of your generated map. You will insert your qgz file and screenshot to your repository later.
+Additionally, export this map as an image. To do so, `Project -> Import/Export -> Export Map to Image...`.
+
+![](img/image_export.png)
+
+You will insert your qgz file and this exported image to your repository later.
 
 In this section, you have **3 main tasks** to complete:
 
@@ -212,7 +220,7 @@ In this section, you have **3 main tasks** to complete:
 
 2.  Download `QGIS` and plot the data onto a map.
 
-3.  Make any appropriate visual edits to this map. Save it as `qgz` file and take a screenshot of the map.
+3.  Make any appropriate visual edits to this map. Save it as `qgz` file and export the map as an image.
 
 ## 4. Deliverable
 
