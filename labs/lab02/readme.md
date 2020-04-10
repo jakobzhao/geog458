@@ -244,7 +244,7 @@ Here are the grading criteria:
 
 1.  Complete the main tasks in **section 2**. Export and save the `tweets.csv` file to the `assets` folder under your own repository. (POINT 15)
 
-2.  Complete the main tasks in **section 3**. Export and save both your `qgz` file and a screenshot of your map to the corresponding folder in your repository. (POINT 15)
+2.  Complete the main tasks in **section 3**. Export and save both your `qgz` file and an exported image of the map to the corresponding folder in your repository. (POINT 15)
 
 3.  In the `readme.md` file, write a short narrative for your generated map, making any meaningful analysis on the distribution of collected data. (POINT 20)
 
