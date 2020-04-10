@@ -76,7 +76,6 @@ If you are using Atom, please open up the atom live server, and then navigate to
 
 The base map (in the format of `tile layer`) is provided by CartoDB. The light color stands out the principal features. In addition to switch to other map providers, please refer to [Leaflet providers](http://leaflet-extras.github.io/leaflet-providers/preview/).
 
-
 **Add the Cell Towers Data**
 
 Next, we want to add the cell tower data set to the map. Firstly, we need to include another Javascript library [`leaflet.ajax`](https://github.com/calvinmetcalf/leaflet-ajax) in the `head` element. This library will be used to read `GeoJson` data asynchronously.
@@ -103,9 +102,9 @@ The `cellTowers` object holds the GeoJSON data, and then it adds to the `mymap` 
 
 Besides, to append some credit information to the Leaflet link at the right bottom corner, we will assign the `attribute` option the credit information, as shown below.
 
- ```javascript
+```javascript
 attribution: 'Cell Tower Data &copy; Map Cruzin | Oregon counties &copy; Oregon Explorer | Base Map &copy; CartoDB | Made By Bo Zhao'
- ```
+```
 
  Here, we add credit information about the data source and the map author's information. The map author should be your name.
 
@@ -134,9 +133,9 @@ In addition, we will use another library `chroma.js` to colorize the icon and ut
 
 Furthermore, we also need some predefined color ramp to symbolize geographic features. [ColorBrewer](http://colorbrewer2.org/) is an online tool designed to help people select good color schemes for maps and other graphics. It provides three types of palettes: sequential, diverging, and qualitative.
 
-- Sequential palettes are suited to ordered data that progress from low to high.
-- Diverging palettes are suited to centered data with extremes in either direction.
-- Qualitative palettes are suited to nominal or categorical data.
+-   Sequential palettes are suited to ordered data that progress from low to high.
+-   Diverging palettes are suited to centered data with extremes in either direction.
+-   Qualitative palettes are suited to nominal or categorical data.
 
 ![](img/colorbrewer.jpg)
 
@@ -154,7 +153,7 @@ for (i = 0; i < 9; i++) {
 }
 ```
 
->**Note:**  Refer to the color palettes from color brewer, and try other palettes such as `Set1`, `Dark2` , etc.
+> **Note:**  Refer to the color palettes from color brewer, and try other palettes such as `Set1`, `Dark2` , etc.
 
 ### 2.2 Assign a style class to each company
 
@@ -182,7 +181,7 @@ function (feature, latlng) {
 
 We apply an icon to each marker. To apply that, you will link the class with the marker. Notably, a javascript object or HTML element can carry multiple classes. In our case, a class `fa` informs that the font awesome will be applied, and another class `fa-signal` informs that an icon showing a signal will be added. And other classes `marker-color-1~9` deal with color, font-size, as well as text-shadow.
 
->**Note:** If you feel a little confused about the style properties of a class, please try to change the property value to some extreme numbers, and then see the differences. For example, you can change the font-size from 15 to 100, and then see what has been changed.
+> **Note:** If you feel a little confused about the style properties of a class, please try to change the property value to some extreme numbers, and then see the differences. For example, you can change the font-size from 15 to 100, and then see what has been changed.
 
 **Use `point to layer` option of `L.geoJson.ajax` to set the icon**
 
@@ -208,11 +207,11 @@ pointToLayer: function (feature, latlng) {
 
 **Options available for `L.geoJson.ajax` include**:
 
-- `pointToLayer`: Function that will be used for creating layers for GeoJSON points (if not specified, simple markers will be created).
-- `style`: Function that will be used to get style options for vector layers created for GeoJSON features.
-- `onEachFeature`: Function that will be called on for each created feature layer. Useful for attaching events and popups to features.
-- `filter`: Function that will be used to decide whether to show a feature or not.
-- `coordsToLatLng`: Function that will be used for converting GeoJSON coordinates to `LatLng` points (if not specified, coordinates will be assumed to be WGS84 — standard [longitude, latitude] values in degrees).
+-   `pointToLayer`: Function that will be used for creating layers for GeoJSON points (if not specified, simple markers will be created).
+-   `style`: Function that will be used to get style options for vector layers created for GeoJSON features.
+-   `onEachFeature`: Function that will be called on for each created feature layer. Useful for attaching events and popups to features.
+-   `filter`: Function that will be used to decide whether to show a feature or not.
+-   `coordsToLatLng`: Function that will be used for converting GeoJSON coordinates to `LatLng` points (if not specified, coordinates will be assumed to be WGS84 — standard [longitude, latitude] values in degrees).
 
 In addition to `pointToLayer`, we will use `onEachFeature` option to set the popup.
 
@@ -224,15 +223,14 @@ onEachFeature: function (feature, layer) {
     layer.bindPopup(feature.properties.company);
 },
 ```
+
  Please open **map3.html** to see how the map looks like. We have changed icon to cell tower!
 
 ![](img/map3.jpg)
 
-
 ## 3. Polygon Visualization
 
 In the `assets` directory, you will see another dataset  `counties.geojson`. This file stores all the counties of Oregon. Each county contains the number of cell towers; this number is pre-calculated in QGIS. To add the data to the map, create another `L.geoJson.ajax` object. Enter the following code at the end of your script, staying within the `script` tag.
-
 
 ```js
 // create the county layer
@@ -243,12 +241,11 @@ Save and refresh your map. Counties of Oregon will be displayed on the map, symb
 
 ![](img/map4-1.jpg)
 
-
 Let us do something about that default blue and thematically style our data to these polygons useful by turning them into a choropleth layer. The `counties.geojson` file contains numbers of cell towers in each county, calculated in QGIS.  To symbolize the counties by the number of counties, we will use the `style` option that contains styling properties.
 
 ### 3.1 Set a sequential color palette
 
-The first step is to set up a function to create color classes.  One way to hard code the colors is to make the color scheme via QGIS or ArcGIS, selecting some classification rule like Jenk's Natural Breaks, and copy the break numbers as well as the color value. Alternatively, you can check out a color ramp from [colorbrewer2.org](). In this lab, you will use `chroma.js` to dynamically create an array of colors. Since the number of cell towers in each county is ordered data that progress from low to high, we will use a sequential color palette `OrRd` (meaning from Orange to Red). Then, we develop a `setColor` function that returns the color value using the number of cell tower lying in a county. Add the following code snippet in the `script` tag.
+The first step is to set up a function to create color classes.  One way to hard code the colors is to make the color scheme via QGIS or ArcGIS, selecting some classification rule like Jenk's Natural Breaks, and copy the break numbers as well as the color value. Alternatively, you can check out a color ramp from [colorbrewer2.org](<>). In this lab, you will use `chroma.js` to dynamically create an array of colors. Since the number of cell towers in each county is ordered data that progress from low to high, we will use a sequential color palette `OrRd` (meaning from Orange to Red). Then, we develop a `setColor` function that returns the color value using the number of cell tower lying in a county. Add the following code snippet in the `script` tag.
 
 ```js
 // 6. Set function for color ramp
@@ -426,20 +423,20 @@ Save and refresh your map. Or open `map5.html`.  `Titillium Web` will now be you
 
 After you successfully deploy this cell tower map, you are expected to build another web map of airports in the United States. In the `assets` directory of this lab, you will see two geojson files: one is [`airports.geojson`](assets/airports.geojson), another is [`us-states.geojson`](assets/us-states.geojson).
 
-`airports.geojson` contains all the airports in the United States. This data is converted from a shapefile, which was downloaded and unzipped from https://catalog.data.gov/dataset/usgs-small-scale-dataset-airports-of-the-united-states-201207-shapefile. For each airport feature, the field `CNTL_TWR` indicates whether the airport has an air traffic control tower or not. If there is a tower, the value of `CNTL_TWR` is 'Y', otherwise 'N'. You may need to find an appropriate icon on `font awesome`. **(7 points)**
+`airports.geojson` contains all the airports in the United States. This data is converted from a shapefile, which was downloaded and unzipped from <https://catalog.data.gov/dataset/usgs-small-scale-dataset-airports-of-the-united-states-201207-shapefile>. For each airport feature, the field `CNTL_TWR` indicates whether the airport has an air traffic control tower or not. If there is a tower, the value of `CNTL_TWR` is 'Y', otherwise 'N'. You may need to find an appropriate icon on `font awesome`. **(7 points)**
 
 `us-states.geojson` is a geojson data file containing all the states' boundaries of the United States. This data is acquired from [Mike Bostock](http://bost.ocks.org/mike) of [D3](http://d3js.org/). The `count` field indicates the number of airports within the boundary of the state under investigation. So please make a choropleth map based on the number of airports within each state.  **(7 points)**
 
-- an appropriate basemap;  **(7 points)**
-- some interactive elements, like a clickable marker; **(8 points)**
-- some map elements, such as legend, scale bar, credit;  **(8 points)**
-- write up a project description in the `readme.md` file. This file will introduce the project name, a brief introduction, the primary functions(especially the function which was not covered in the lectures), libraries, data sources, credit, acknowledgment, and other necessary information. **(8 points)**
+-   an appropriate basemap;  **(7 points)**
+-   some interactive elements, like a clickable marker; **(8 points)**
+-   some map elements, such as legend, scale bar, credit;  **(8 points)**
+-   write up a project description in the `readme.md` file. This file will introduce the project name, a brief introduction, the primary functions(especially the function which was not covered in the lectures), libraries, data sources, credit, acknowledgment, and other necessary information. **(8 points)**
 
-- you will need to synchronize this project to a GitHub repository. And make sure the web map is accessible from a URL link, which should be similar to `http://[your_github_username].github.io/[your_repository_name]/index.html`. (To do that, you may want to check out a previous lecture or lab handouts on how to host a repository on GitHub pages.); **(6 points)**
+-   you will need to synchronize this project to a GitHub repository. And make sure the web map is accessible from a URL link, which should be similar to `http://[your_github_username].github.io/[your_repository_name]/index.html`. (To do that, you may want to check out a previous lecture or lab handouts on how to host a repository on GitHub pages.); **(6 points)**
 
 > **Note:** Please make sure the name of your repository is **NOT** `lab03` or similar, use a name that can describe the theme of the map you will make. Think about that, which one do you prefer? - showing your future employer or Ph.D. admission committee a lot of course work on GitHub or a list of professional projects.
 
-- please make sure the internal structure of the files in your project repository is well organized. For example, it may be similar to the file structure below. **(5 points)**
+-   please make sure the internal structure of the files in your project repository is well organized. For example, it may be similar to the file structure below. **(5 points)**
 
 ```powershell
 [your_repository_name]
@@ -456,18 +453,16 @@ After you successfully deploy this cell tower map, you are expected to build ano
             main.js
 ```
 
-
 #### Optional tasks:
 
-- Try to add on a feature of the leaflet which we have not discussed in class. The new features can be found on [the plugin page](https://leafletjs.com/plugins.html) of the leafet. **(5 points)**
-
+-   Try to add on a feature of the leaflet which we have not discussed in class. The new features can be found on [the plugin page](https://leafletjs.com/plugins.html) of the leafet. **(5 points)**
 
 ## Reference
 
-[1] Map Symbolization http://duspviz.mit.edu/web-map-workshop/map-symbolization/
+[1] Map Symbolization <http://duspviz.mit.edu/web-map-workshop/map-symbolization/>
 
-[2] Data source: http://www.mapcruzin.com/google-earth-maps-resources/google-earth-cell-towers.htm
+[2] Data source: <http://www.mapcruzin.com/google-earth-maps-resources/google-earth-cell-towers.htm>
 
-[3] Boundary: http://oregonexplorer.info/ExternalContent/SpatialDataForDownload/RCE_counties.zip
+[3] Boundary: <http://oregonexplorer.info/ExternalContent/SpatialDataForDownload/RCE_counties.zip>
 
-[4] Add topojson instead of geojson http://blog.webkid.io/maps-with-leaflet-and-topojson/
+[4] Add topojson instead of geojson <http://blog.webkid.io/maps-with-leaflet-and-topojson/>
