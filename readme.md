@@ -62,7 +62,7 @@ This week's topic is around processing geospatial data for digital geographies p
 
 -   **Lecture Notes:** [Geospatial data for digital geographies](week03/readme.md)
 -   **Readings:** a) [Can social media clear the air? A case study of the air pollution problem in Chinese cities](https://drive.google.com/open?id=1C0MTPaPnVALVemeYEfiDChUKRZfcMjz3), b) [More than you ever wanted to know about GeoJSON](week03/assets/geojson.pdf).
--   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: April 23rd, by 11:59pm`, `under development`
+-   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: April 23rd, by 11:59pm`
 -   **In-class Discussion:** Discussion on the weekly paper led by `Group 2` on  `Tuesday`.
 
 ### Week 4: Web mapping
