@@ -19,7 +19,7 @@ Today, let us switch gear to some heavy lifting of Web Programming. This lecture
 
 A web page is a document suitable for display and distribution over the internet. At the most basic level, a web page is a text document containing code (often HyperText Markup Language, shortened to `HTML`), that is located at a node on the internet. This node is called a 'server', as it serves the file to the world wide web, allowing your computer, the 'client', to access it.
 
-When you open a web browser, such as `Chrome`, `Firefox` or `Internet Explorer`, and input a URL, something like www.uw.edu into the address bar, the web browser navigates to the node you have specified and requests this document, which it reads, interprets, and displays on your screen depending on the interpretation of the document. This means a couple of things:
+When you open a web browser, such as `Chrome`, `Firefox`, `Edge` or `Internet Explorer`, and input a URL, something like www.uw.edu into the address bar, the web browser navigates to the node you have specified and requests this document, which it reads, interprets, and displays on your screen depending on the interpretation of the document. This means a couple of things:
 
     - You need to have a location (url) on the internet you can place your documents.
     - You have to create and place the right kinds of documents in this location.
@@ -32,7 +32,7 @@ Standard protocol is that a file named **index** is what will be provided by def
 
 > **Note:** the HTML file extension, indicating the file is written in HTML). The file structure found in my directory looks like the following.
 
-```
+```powershell
  Geog458
    weeks
      week02
@@ -56,6 +56,8 @@ To host a web application, you need to move the codes and the supplemental files
 ## 3. Use an IDE
 
 While you can get away with using a basic text editor to create HTML files, there are Integrated Development Environment (IDE) designed to make your life easier by color coding code snips and autocompleting lines. Download and install one of the following text editing software if you don’t already have one. In this lecture, you will mainly use `Atom` to edit HTML, CSS, and Javascript files. We also have `Atom` installed in the Digital Earth Lab, and you can install an open source version of `Atom` on your own machine, no matter you are a Mac or Windows users. Here is a list of other IDEs:
+
+- `VS Code`
 
 - `Webstorm` - (Windows, Mac, or Linux) One of cross-platform IDEs primarily for web, JavaScript and TypeScript development. Many of JetBrain's other IDEs include the feature set of WebStorm via plugins.
 - `Sublime Text` – (Windows, Mac, or Linux) One of the most popular and well-loved text editors around. Free to download and use, but will occasionally show a pop-up window if you don’t purchase it. This is what I’ll be using during the workshop
