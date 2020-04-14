@@ -8,10 +8,10 @@
 
 **Learning Objectives**
 
-- Review the data tier in a web mapping architecture;
-- Understand the differences between file server and database server;
-- Get to know the major geospatial data formats for web mapping, shapefile, kml, geojson and topojson;
-- Able to read, edit, display, convert GeoJson files.
+-   Review the data tier in a web mapping architecture;
+-   Understand the differences between file server and database server;
+-   Get to know the major geospatial data formats for web mapping, shapefile, kml, geojson and topojson;
+-   Able to read, edit, display, convert GeoJson files.
 
 ## 1. The data tier of your web mapping architecture
 
@@ -82,14 +82,12 @@ Mandatory files
 | LAYER.shx | Feature geometry index |
 | LAYER.dbf | Feature attributes     |
 
-
 Other common files
 
-
-| LAYER.prj | Projection format     |
-| --------- | ---------------------- |
-| LAYER.sbn and LAYER.sbx | Spatial index |
-| LAYER.dbf | Feature attributes     |
+| LAYER.prj               | Projection format  |
+| ----------------------- | ------------------ |
+| LAYER.sbn and LAYER.sbx | Spatial index      |
+| LAYER.dbf               | Feature attributes |
 
 Because a shapefile requires multiple files, it is often expected that you will zip them all together in a single file when downloading, uploading, and emailing them. See the [Wikipedia](https://en.wikipedia.org/wiki/Shapefile) for more details about this format.
 
@@ -102,7 +100,6 @@ KML stands for Keyhole Markup Language, and was developed by Keyhole, Inc., befo
 KML is a form of XML, wherein data is maintained in a series of structured tags. KML is unique and versatile in that it can contain styling information and it can hold either vector or raster formats ("overlays", in KML-speak). The rasters themselves are not written in the KML, but are included with it in a zipped file called a KMZ. Large vector datasets are also commonly compressed into KMZs.
 
 The key XML tag behind KML is the **placemark**. This defines a geographic feature, sometimes with symbol feature, and extra information.
-
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -149,7 +146,7 @@ The key XML tag behind KML is the **placemark**. This defines a geographic featu
 </kml>
 ```
 
-Open this kml in [http://geojson.io](http://geojson.io), you will see how these placemarks look like:
+Open this kml in <http://geojson.io>, you will see how these placemarks look like:
 
 ![](img/kml_map.jpg)
 
@@ -233,7 +230,7 @@ In the GeoJSON above, notice the use of several JavaScript objects embedded with
 
 TopoJSON is an extension of GeoJSON that encodes topology. Rather than representing geometries discretely, **geometries in TopoJSON files are stitched together from shared line segments called arcs**. Arcs are sequences of points, while line strings and polygons are defined as sequences of arcs. Each arc is defined only once, but can be referenced several times by different shapes, **thus reducing redundancy and decreasing the file size**. In addition, TopoJSON facilitates applications that use topology, such as topology-preserving shape simplification, automatic map coloring, and cartograms.
 
-A reference implementation of the [TopoJSON specification]( https://github.com/topojson/topojson-specification) is available as a command-line tool to encode TopoJSON from GeoJSON (or ESRI Shapefiles) and a client side JavaScript library to decode TopoJSON back to GeoJSON again. TopoJSON is also supported by the popular OGR tool as of version 1.11 and PostGIS as of version 2.1.0.
+A reference implementation of the [TopoJSON specification](https://github.com/topojson/topojson-specification) is available as a command-line tool to encode TopoJSON from GeoJSON (or ESRI Shapefiles) and a client side JavaScript library to decode TopoJSON back to GeoJSON again. TopoJSON is also supported by the popular OGR tool as of version 1.11 and PostGIS as of version 2.1.0.
 
 ```json
 {
@@ -306,7 +303,6 @@ A reference implementation of the [TopoJSON specification]( https://github.com/t
 }
 ```
 
-
 **Other text files**
 
 Many GIS programs can read vector data out of other types of text files such as .gpx (popular format for GPS tracks) and various types of .csv (comma-separated value files often used with Microsoft Excel) that include longitude (X) and latitude (Y) columns. You can engineer your web map to parse and read these files, or you may want to use your scripting skills to get the data into another standard format before deploying it in your web map. This is where Python skills and helper libraries can be handy.
@@ -319,78 +315,75 @@ Most raster formats are openly documented and do not require royalties or attrib
 
 Usually the base maps are stored as tile layers, designed for fast and simple access by web maps. Tile layers are also useful when you need to expose a map or layer on the web for the visualization of relatively static data. Tile layers come in different formats based on the original source data. Tile layers can be stored as prerendered raster tiles or as vector tiles. Both raster and vector tiles are designed to provide high-performance and high-scalability delivery of map data for visualization purposes.
 
-
 ## 3. Geospatial data conversion: Shapefile to GeoJson
 
 This section will show you how to convert a shapefile to a geojson data step by step. Though there are multiple online or desktop based tools we could implement the conversion. Here, we would recommend using QGIS, mainly because it is intuitive to understand the conversion process and easy to use. Once you are familiar with QGIS, I believe you will be more confident in switching to other geospatial data conversion tools (e.g., ogr2ogr).
 
-1\. Above all, we need to get some geospatial data. So, we download the shapefile of Oregon Counties (2015) from the data repository at [oregon explorer](http://oregonexplorer.info/data). This specific data set is located at [http://spatialdata.oregonexplorer.info/geoportal/details;id=361c06fee9de4e24a72e280fb386a771](http://spatialdata.oregonexplorer.info/geoportal/details;id=361c06fee9de4e24a72e280fb386a771). There is another copy of this data set in this repository at [assets/orcnty2015.zip](assets/orcnty2015.zip).
+1. Above all, we need to get some geospatial data. So, we download the shapefile of Oregon Counties (2015) from the data repository at [oregon explorer](http://oregonexplorer.info/data). This specific data set is located at <http://spatialdata.oregonexplorer.info/geoportal/details;id=361c06fee9de4e24a72e280fb386a771>. There is another copy of this data set in this repository at [assets/orcnty2015.zip](assets/orcnty2015.zip).
 
 ![](img/oregon_county_download.jpg)
 
-2\. Press the download button to download the data, and unzip the file. you will see two sets of data, in terms of orcntyline and orcntypoly. In this tutorial, we will use the orcntpoly dataset.
+2. Press the download button to download the data, and unzip the file. you will see two sets of data, in terms of orcntyline and orcntypoly. In this tutorial, we will use the orcntpoly dataset.
 
 ![](img/oregon_county_download_folder.jpg)
 
-We are going to transform this current 7 file folder into a single, compact format called GeoJSON (http://geojson.org/). Geojson differs from a shapefile in a few ways. The first is that GeoJSON is an open standard format.
+We are going to transform this current 7 file folder into a single, compact format called GeoJSON (<http://geojson.org/>). Geojson differs from a shapefile in a few ways. The first is that GeoJSON is an open standard format.
 
-3\. Open QGIS.
+3. Open QGIS.
 
 ![](img/qgis-interface.jpg)
 
-4\. A shapefile is a vector file format. We will add our shapefile to our project through the 'Add Vector Layer'. Everything in the Source type dialogue can be left as is. Use the browser to navigate to the location of your shapefile. Click open to load the shapefile into QGIS.
+4. A shapefile is a vector file format. We will add our shapefile to our project through the 'Add Vector Layer'. Everything in the Source type dialogue can be left as is. Use the browser to navigate to the location of your shapefile. Click open to load the shapefile into QGIS.
 
 ![](img/qgis-open-data.jpg)
 
-5\. In a new QGIS project, a great first question is what map projection is our shapefile in? Double click on the shapefile in the Table of Contents to pull up the Properties Dialogue Box. In the General tab, under 'Coordinate reference system' you will see a value `EPSG:4269, NAD83` representing our map projection.
+5. In a new QGIS project, a great first question is what map projection is our shapefile in? Double click on the shapefile in the Table of Contents to pull up the Properties Dialogue Box. In the General tab, under 'Coordinate reference system' you will see a value `EPSG:4269, NAD83` representing our map projection.
 
 ![](img/qgis-general-tab.jpg)
 
 For our purposes we will convert our shapefile into a GeoJson and into a geographic projection for web mapping. EPSG is a coded value that is used to identify certain projections, which in this case is 4269. We want to convert this to 4326, WGS84, a more suitable web mapping projection.
 
-6\. Close the Layer Properties page, and then Right click on the shapefile `orcntypoly` in the Table of Contents, and click Save as.
+6. Close the Layer Properties page, and then Right click on the shapefile `orcntypoly` in the Table of Contents, and click Save as.
 
 ![](img/qgis-save-as.jpg)
 
-7\. In the Save As dialogue, switch the format to GeoJson. Then click the small globe-ish icon to the right of the CRS drop down option. Enter '4326' in the Filter box and select EPSG: 4326. Click OK.
+7. In the Save As dialogue, switch the format to GeoJson. Then click the small globe-ish icon to the right of the CRS drop down option. Enter '4326' in the Filter box and select EPSG: 4326. Click OK.
 
 ![](img/qgis-4326.jpg)
 
->**Note:** in order to reduce the size of geospatial data, you can change the coordinate precision. To do that, in the `Layer Options` Section, Please change the precision value to a smaller number. In our case, we use 10 instead of 15.
+> **Note:** in order to reduce the size of geospatial data, you can change the coordinate precision. To do that, in the `Layer Options` Section, Please change the precision value to a smaller number. In our case, we use 10 instead of 15.
 
  ![](img/qgis-precision.jpg)
 
-
-8\. Browse to your location and save the file. There is a copy of the geojson data in this repository at [assets/oregon_county.geojson](assets/oregon_county.geojson).
+8. Browse to your location and save the file. There is a copy of the geojson data in this repository at [assets/oregon_county.geojson](assets/oregon_county.geojson).
 
 ![](img/qgis-geojson-saveas.jpg)
 
-9\. The file will be automatically added to the current project view.
+9. The file will be automatically added to the current project view.
 
 ![](img/gis-geojson-mapview.jpg)
 
-10\. Now you can open the geojson file in a text editor (e.g., webstorm) to view the json structure.
+10. Now you can open the geojson file in a text editor (e.g., webstorm) to view the json structure.
 
 ![](img/gis-webstorm-view-geojson.jpg)
 
-11\. And also you can validate the data on [http://www.geojson.io](http://www.geojson.io).
+11. And also you can validate the data on <http://www.geojson.io>.
 
 ![](img/qgis-geojson-io.jpg)
 
 Now we have a single geojson file opposed to a complicated shapefile structure, and a geojson file in a more appropriate for web based geovisualization.
 
-
 ## References:
 
 [1] GeoJson/TopoJson Converter:
 
-- http://geojson.io/
-- http://shancarter.github.io/distillery/
-- http://mapstarter.com/
-- http://www.mapshaper.org/
-- http://shpescape.com/mix/
+-   <http://geojson.io/>
+-   <http://shancarter.github.io/distillery/>
+-   <http://mapstarter.com/>
+-   <http://www.mapshaper.org/>
+-   <http://shpescape.com/mix/>
 
 [2] Spatial data on a diet: tips for file size reducation using TopoJSON:
-http://zevross.com/blog/2014/04/22/spatial-data-on-a-diet-tips-for-file-size-reduction-using-topojson/
+<http://zevross.com/blog/2014/04/22/spatial-data-on-a-diet-tips-for-file-size-reduction-using-topojson/>
 
-[3] https://gist.github.com/YKCzoli/b7f5ff0e0f641faba0f47fa5d16c4d8d
+[3] <https://gist.github.com/YKCzoli/b7f5ff0e0f641faba0f47fa5d16c4d8d>
