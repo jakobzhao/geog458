@@ -373,6 +373,8 @@ For our purposes, we will convert our shapefile into a GeoJson and a geographic 
 
 Now we have a single geojson file opposed to a complicated shapefile structure and a geojson file in a more appropriate for web-based geovisualization.
 
+> Now, Congradulations! you have generate an appropriate geospatial data for web uses! In most cases, a geojson should be smaller than 4 megabytes considering the speed of transfering the data from the server to the client, otherwise, the web map user would take too long to download the data. If your data is still large than 4 megabytes after the optimization strategies we have introduced above, please consider converting the data from geojson to topojson (using [mapshaper](http://www.mapshaper.org/)), or even CSV.
+
 ## References:
 
 [1] GeoJson/TopoJson Converter:
