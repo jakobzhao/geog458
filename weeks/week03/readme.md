@@ -1,4 +1,4 @@
-# Spatial Data for Digital Geographies
+# Geospatial Data for Digital Geographies
 
 **Meeting:** Tuesdays and Thursdays 8:30 to 10:20 AM PST on [Zoom #: 785830819](https://washington.zoom.us/j/785830819)
 
