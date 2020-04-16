@@ -42,13 +42,13 @@ To use the tweepy library, you need to register a Twitter developer account [her
 
 ![](img/twitter_dev.png)
 
-Once you finish registering your account, you can apply for a Twitter app. It is located on the top right corner of the page. Click on `Apps`.
+In order to register your account, you will be prompted to answer a series of questions. Please answer those that are required to fill in and you can ignore optional questions. Once you finish registering your account, you can apply for a Twitter app. It is located on the top right corner of the page. Click on `Apps`.
 
 ![](img/dev_acc.png)
 
 Then, you will see a page with a list of apps that you've created for getting Twitter API, but for now, the list should be empty. In order to register for Twitter API, click on `Create an app`.
 
-You will be prompted to fill in the app details. You are required to fill in: `App name`, `Application description`, `Website URLs`, and `'Tell us how this app will be used'`. If you are not sure what to put for the website URLs, you may enter your SNS profile URLs, such as your Facebook page, LinkedIn page, etc.
+You will be prompted to fill in the app details. Here, you are required to fill in: `App name`, `Application description`, `Website URLs`, and `'Tell us how this app will be used'`. If you are not sure what to put for the website URLs, you may enter your SNS profile URLs, such as your Facebook page, LinkedIn page, etc.
 
 ![](img/app_details.png)
 
