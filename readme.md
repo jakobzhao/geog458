@@ -47,7 +47,7 @@ We walk through the syllabus and repond to students' inquiries. Each student is 
 -   **Readings:** a) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_), b) [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
 -   **Lab 1:** [Project management using GitHub](labs/lab01) `Due: April 9th, by 11:59pm`
 
--   **Extending Readings:** <https://www.ft.com/content/19d90308-6858-11ea-a3c9-1fe6fedcca75?from=timeline&isappinstalled=0>
+-   **Extending Readings:** [the world after coronavirus](https://www.ft.com/content/19d90308-6858-11ea-a3c9-1fe6fedcca75?from=timeline&isappinstalled=0)
 
 ### Week 2: Prorgamming fundamentals
 
