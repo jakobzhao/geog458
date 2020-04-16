@@ -63,7 +63,7 @@ This week's topic is around processing geospatial data for digital geographies p
 -   **Lecture Notes:** [Geospatial data for digital geographies](weeks/week03/readme.md)
 -   **Readings:** a) [Can social media clear the air? A case study of the air pollution problem in Chinese cities](https://drive.google.com/open?id=1C0MTPaPnVALVemeYEfiDChUKRZfcMjz3), b) [More than you ever wanted to know about GeoJSON](weeks/week03/assets/geojson.pdf).
 -   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: April 23rd, by 11:59pm`
--   **In-class Discussion:** Discussion on the weekly paper led by `Group 2` on  `Tuesday`.
+-   **In-class Discussion:** Discussion on the weekly paper led by `Group 2` on  `Tuesday`. The following questions are expected to cover in the discussion. What were the geospatial data?  How were they used for what purposes? What were their social implications, and how the authors analyzed the examined case (air pollution issue) by interpreting the geospatial data? Overall, the in-class disucssion will be in approximately 30 minutes. After the group presentation, a following Q&A will be organized. 
 
 ### Week 4: Web mapping
 
@@ -71,7 +71,7 @@ You will make your first web map in this week using a popular web mapping librar
 
 -   **Readings:** [Leaflet Basics](weeks/week04/leaflet), [Map Events](weeks/week04/mapevent)
 -   **Lab 3:** [An integrative web mapping](labs/lab03) `Due: May 3rd, by 11:59pm`, `under development`
--   **In-class Discussion:** a) Web Map A by `Group 3` on  `Tuesday` , b) Web Map B by `Group 4` on `Thursday`.
+-   **In-class Discussion:** a) Web Map A by `Group 3` on  `Tuesday` , b) Web Map B by `Group 4` on `Thursday`. Each group will need to pick any online web map you feel interested in and then introduce this web map to the class. Each groop are expected to (1) describe the functions and the targeted audience of this web map. (2) discuss the possible sysmtem architecture (you might want to refer to the diagram which is introduced in week 2). (3) Analyze the codes (you are expected to open up the Chrome inspector, and introduce the libraries, the network flow, the major visual components and possibliy their functioons, etc.) (4) The pros and cons, especially the map design (please recall the map critique you did in the prerequisite class - what are the visual stratgeies, the use of visual hierechy, etc.), (5) do you think the visualized topic is appropriated to be visualized on a web map? Or is there any better medium (a interactive tabular or static infographics, (6) anything else you feel important. Overall, the in-class disucssion will be in approximately 30 minutes. After the group presentation, a following Q&A will be organized. 
 
 ### Week 5: Map design
 
