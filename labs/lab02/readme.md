@@ -224,7 +224,7 @@ In this section, you have **3 main tasks** to complete:
 
 ## 4. Deliverable
 
-You are expected to walk through this instruction, execute python script in `geosearch.ipynb` to develop your own crawler to collect geotagged tweets, and additionally, visualize your harvested geotagged data using QGIS. Then, you are asked to write a short narrative of your map, analyzing the data you gathered in a markdown file.
+You are expected to walk through this instruction, execute python script in `geosearch.ipynb` with your own Twitter API keys and filtering parameters to collect geotagged tweets. Additionally, visualize your harvested geotagged data using QGIS. Then, you are asked to write a short narrative of your map, analyzing the data you gathered in a markdown file.
 
 To submit your deliverable, please create a new GitHub repository, and submit the URL of the GitHub to the **Canvas Dropbox** of this practical exercise. The file structure of this GitHub repository should look similar to below.
 
