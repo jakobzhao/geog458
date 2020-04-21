@@ -248,12 +248,13 @@ Here are the grading criteria:
 
 3.  In the `readme.md` file, insert the exported image of your map and  write a short narrative for your generated map, making any meaningful analysis on the distribution of collected data. (POINT 20)
 
-**Assignment update\***
-We observed several students having issues registering for a Twitter developer account. Ignore this section if you were successfully able to register for one. Please try using your UW email for registration or asking your classmates for the API keys privately before giving up! If any of these methods still do not work for you, please follow the alternative deliverable below to complete this lab assignment.
+**Assignment update**
+
+We observed several students having issues registering for a Twitter developer account. Ignore this section if you were successfully able to register for one. Please try **using your UW email for registration** or asking your classmates for the API keys privately before giving up! If any of these methods still do not work for you, please follow the alternative deliverable below to complete this lab assignment.
 
 1.  To prove that you actually applied to the Twitter Developer account, please provide proof of application. It could be a confirmation email from Twitter or a screenshot of your application page.
-2.  Provide a screenshot of the Twitter developer page that indicates your request has been declined. The page looks something like this:![](img/twitter_decline.png) Store these images in addition to your map image under your own `img` folder indicated in the deliverable.
-3.  Use sample Twitter data provided to complete the deliverable. The sample Twitter data that we collected during class for demonstration is available under the `assets` folder of this lab's repository named `smaple.csv`. This dataset is a collection of geotagged Twitter data within the United States. You should be able to use this data to complete the rest of the deliverable.
+
+2.  Use sample Twitter data provided to complete the deliverable. The sample Twitter data that we collected during class for demonstration is available under the `assets` folder of this lab's repository named `smaple.csv`. This dataset is a collection of geotagged Twitter data within the United States. You should be able to use this data to complete the rest of the deliverable.
 
 **Note:** Lab assignments are required to be submitted electronically to Canvas unless stated otherwise. Efforts will be made to have them graded and returned within one week after they are submitted. Lab assignments are expected to be completed by the due date. **_A late penalty of at least ten percentage units will be taken off each day after the due date._** If you have a genuine reason(known medical condition, a pile-up of due assignments on other courses, ROTC, athletics teams, job interview, religious obligations, etc.) for being unable to complete work on time, then some flexibility is possible. However, if in my judgment you could reasonably have let me know beforehand that there would likely be a delay, and then a late penalty will still be imposed if I do not hear from you until after the deadline has passed. For unforeseeable problems, I can be more flexible. If there are ongoing medical, personal, or other issues that are likely to affect your work all semester, then please arrange to see me to discuss the situation. There will be NO make-up exams except for circumstances like those above.
 
