@@ -234,7 +234,6 @@ To submit your deliverable, please create a new GitHub repository, and submit th
     │readme.md
     ├─assets
     │      tweets.csv
-    │      [your_dataset].csv
     |      [your_map].qgz
     ├─img
     |      [screenshot_of_map].png
@@ -250,7 +249,7 @@ Here are the grading criteria:
 
 **Assignment update**
 
-We observed several students having issues registering for a Twitter developer account. Ignore this section if you were successfully able to register for one. Please try **using your UW email for registration** or asking your classmates for the API keys privately before giving up! If any of these methods still do not work for you, please follow the alternative deliverable below to complete this lab assignment.
+We observed several students having issues registering for a Twitter developer account. Ignore this section if you were successfully able to register for one. Please try **using your UW email for registration** or asking your classmates for the API keys privately before giving up! If any of these methods still do not work for you, please follow the alternative deliverable below to complete this lab assignment. You may also be given two days extension for this lab assignment. Please consult Professor Bo Zhao if you need extension.
 
 1.  To prove that you actually applied to the Twitter Developer account, please provide proof of application. It could be a confirmation email from Twitter or a screenshot of your application page.
 
