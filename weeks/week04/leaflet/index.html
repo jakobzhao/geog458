@@ -15,7 +15,7 @@
 
 <script>
     // Create variable to hold map element, give initial settings to map
-    var map = L.map('map', {
+    var mymap = L.map('map', {
         center: [44.56576, -123.27888],
         zoom: 16
     });
@@ -23,12 +23,10 @@
     // Add OpenStreetMap tile layer to map element
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
+    }).addTo(mymap);
 
     // Create point feature for Wilkinson Hall
-
-
-    var layer = L.geoJson.ajax("assets/geog371.geojson").addTo(map);
+    var layer = L.geoJson.ajax("assets/geog458.geojson").addTo(mymap);
 </script>
 </body>
 </html>

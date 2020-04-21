@@ -37,21 +37,7 @@ The latest stable Leaflet release is hosted on a CDN — to start using it strai
 
 ## 2. Project Preparation
 
-### 2.1 Build a project repository
-
 The first step is to create a project working directory which holds all the files. To do that, we will create a project repository on GitHub, and then sync the empty repository to your **working space** on local computer. If you have any questions on how to conduct the above-mentioned operations, please refer to lab 1.
-
-### 2.2 Use an IDE (Atom) or command line to start up a server
-
-To set up a local server, you can try Atom or python SimpleHTTPServer, such as:
-
-```bash
-$ python -m SimpleHTTPServer
-```
-
-Now open a browser and access your site at: <http://localhost:8000>
-
-> **Note:** Compared with python SimpleHTTPServer, we recommend to use Atom.
 
 ## 3. Create a Webpage and Simple Map
 
