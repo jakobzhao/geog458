@@ -8,15 +8,14 @@
 
 **Learning Objectives**
 
-- Get to know the most popular web map client library/framework - Leaflet;
-- Use Leaflet to create a map, geographic feature;
-- Link external javascript libs to a web map application; and
-- Add geospatial data to a leaflet based map.
+-   Get to know the most popular web map client library/framework - Leaflet;
+-   Use Leaflet to create a map, geographic feature;
+-   Link external javascript libs to a web map application; and
+-   Add geospatial data to a leaflet based map.
 
 In this lecture, we move forward to make a web map from scratch! To do that, this lecture starts with introducing Leaflet - a Javascript library used to create interactive, web-based, mobile-friendly maps. With Leaflet, you can create a simple map in as little as three lines of code, or you can build complex, dynamic, and complex maps that contain hundreds of lines. This lecture assumes you have worked through the previous lectures and lab exercises, and have a working knowledge of HTML, CSS and JavaScript. Here is the look of the web map we will build.
 
 ![](img/polygon.jpg)
-
 
 ## 1. Introduction
 
@@ -25,9 +24,9 @@ Leaflet is an open-source JavaScript library for interactive web maps. It's ligh
 What Leaflet does web maps with tiled base layers, panning and zooming, and feature layers that you supply. It handles various basic tasks like converting data to map layers and mouse interactions, and it's easy to extend with plugins. It will also work well across most types of devices.
 
 What Leaflet does not do: Provide any data for you! Leaflet is a framework for showing and interacting with map data, but it's up to you to provide that data, including a basemap. Leaflet is also not GIS, although it can be combined with tools like **ArcGIS**, **MapBox**, or **CartoDB** for GIS-like capabilities.
-- *If you need total freedom of form, interaction, transitions, and map projections, consider working with something like D3.*
-- *If you need a 3D virtual globe, cesium is alternative.*
 
+-   _If you need total freedom of form, interaction, transitions, and map projections, consider working with something like D3._
+-   _If you need a 3D virtual globe, cesium is alternative._
 
 The latest stable Leaflet release is hosted on a CDN — to start using it straight away, place this in the head of your HTML code:
 
@@ -37,7 +36,6 @@ The latest stable Leaflet release is hosted on a CDN — to start using it strai
 ```
 
 ## 2. Project Preparation
-
 
 ### 2.1 Build a project repository
 
@@ -51,12 +49,11 @@ To set up a local server, you can try Atom or python SimpleHTTPServer, such as:
 $ python -m SimpleHTTPServer
 ```
 
-Now open a browser and access your site at: http://localhost:8000
+Now open a browser and access your site at: <http://localhost:8000>
 
 > **Note:** Compared with python SimpleHTTPServer, we recommend to use Atom.
 
 ## 3. Create a Webpage and Simple Map
-
 
 ### 3.1 Setup a web page for our map
 
@@ -75,12 +72,13 @@ Enter the following code into your blank HTML page.
 </body>
 </html>
 ```
+
 From here, we will do the following four things to add a map to our page:
 
-- Reference the Leaflet CSS and JavaScript files.
-- Add a `div` element to our page that will hold the map.
-- Create a map object in Javascript that will interact with the map `div` element
-- Add the tiled OpenStreetMap basemap to our map object using tileLayer
+-   Reference the Leaflet CSS and JavaScript files.
+-   Add a `div` element to our page that will hold the map.
+-   Create a map object in Javascript that will interact with the map `div` element
+-   Add the tiled OpenStreetMap basemap to our map object using tileLayer
 
 ### 3.2 Reference the leaflet CSS and JavaScript files
 
@@ -122,8 +120,9 @@ Now we can start coding the map using JavaScript. The Leaflet library is referen
 ```
 
 > **Note:**
-> - the `script` tags, this is where we will will put all of our JavaScript for the map.
-> - Where did I get my Lat/Lng values? **A quick tip is that you can find it on [Google Maps](http://maps.google.com)**, right clicking on a location on the map, and selecting 'What's here?'. This will provide latitude and longitude values for that location you can then copy.
+>
+> -   the `script` tags, this is where we will will put all of our JavaScript for the map.
+> -   Where did I get my Lat/Lng values? **A quick tip is that you can find it on [Google Maps](http://maps.google.com)**, right clicking on a location on the map, and selecting 'What's here?'. This will provide latitude and longitude values for that location you can then copy.
 
 ### 3.5 Add a tiled basemap with tileLayer class
 
@@ -140,7 +139,7 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 
 **Base Map**
 
-Save your HTML document and open your web browser to your localhost server (http://localhost:8000). You will see the map we just created! Or you can open this map through the internal web server of Webstorm. After you synchronize your data to Github, you can even see your web map on the github page website.
+Save your HTML document and open your web browser to your localhost server (<http://localhost:8000>). You will see the map we just created! Or you can open this map through the internal web server of Webstorm. After you synchronize your data to Github, you can even see your web map on the github page website.
 
 ![](img/basemap.jpg)
 
@@ -178,8 +177,8 @@ To add a polyline (a line that can have multiple segments) to your map, we use t
 var myDataLine = L.polyline([[44.5656915, -123.2775289], [44.5656992, -123.2778923], [44.5662266, -123.2778722], [44.5682559, -123.2778293], [44.5682445, -123.2800823]],
     {color: 'red', weight: 5}).addTo(map);
 ```
-![](img/polyline.jpg)
 
+![](img/polyline.jpg)
 
 ### 4.3 Adding Polygons
 
@@ -190,6 +189,7 @@ Adding polygons is very similar, we use the L.polygon class. Specify a latitude 
 var myArea = L.polygon([[44.5651985, -123.2769978],[44.566131, -123.2769978], [44.5661339, -123.2775027], [44.5651985, -123.2775182], [44.5651985, -123.2769978],],
     {color: 'orange', weight: 5}).addTo(map);
 ```
+
 Save your document and refresh your browser.
 
 ![](img/polygon.jpg)
@@ -198,12 +198,12 @@ Save your document and refresh your browser.
 
 There are a number of other simple data types and groups you can add, read more about them in the Leaflet documentation. These include:
 
-- [Path](http://leafletjs.com/reference.html#path)
-- [MultiPolyline](http://leafletjs.com/reference.html#multipolyline)
-- [MultiPolygon](http://leafletjs.com/reference.html#multipolygon)
-- [Rectangle](http://leafletjs.com/reference.html#rectangle)
-- [Circle](http://leafletjs.com/reference.html#circle)
-- [CircleMarker](http://leafletjs.com/reference.html#circlemarker)
+-   [Path](http://leafletjs.com/reference.html#path)
+-   [MultiPolyline](http://leafletjs.com/reference.html#multipolyline)
+-   [MultiPolygon](http://leafletjs.com/reference.html#multipolygon)
+-   [Rectangle](http://leafletjs.com/reference.html#rectangle)
+-   [Circle](http://leafletjs.com/reference.html#circle)
+-   [CircleMarker](http://leafletjs.com/reference.html#circlemarker)
 
 ### 4.5 Feature Groups and GeoJSON
 
@@ -215,4 +215,4 @@ Additionally, Leaflet is designed work natively with GeoJson. We will look at ho
 
 ## References:
 
-[1] http://duspviz.mit.edu/web-map-workshop/leaflet-js/
+[1] <http://duspviz.mit.edu/web-map-workshop/leaflet-js/>
