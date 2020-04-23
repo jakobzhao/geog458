@@ -11,9 +11,13 @@
 
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
 
+> **Course Updates (4/23/2020):**
+>
+> -  Mid-term Study Guide is provided.
+>
 > **Course Updates (4/21/2020):**
 >
-> -   If you cannot register for the twitter developer account, we provide an alternative option to finish the Lab 2.
+> -   If you have any difficulty in registering for the twitter developer account, we provide an alternative option for you to finish the Lab 2.
 >
 > **Course Updates (4/7/2020):**
 >
