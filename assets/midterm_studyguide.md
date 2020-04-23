@@ -1,35 +1,33 @@
 ## Study Guide for Midterm
 
-Here is the study guide for 2020 Spring Geog 458 class. We will be holding Midterm on **April 30th 9:30 - 10:20 AM** on-line, via CANVAS. The midterm will cover all material that we have covered through week 1 to week 4. You are responsible for all material covered during this quater in any form but most of the questions will come from leactures and reading.
+Here is the study guide for 2020 Spring Geog 458 class. We will be holding Midterm on **April 30th 9:30 - 10:20 AM** on-line, via CANVAS. The midterm will cover all material that we have covered through week 1 to week 4. You are responsible for all material covered during the firt 4 weeks in this quater in any form but most of the questions will come from leactures, labs and readings.
 
-The best approach to review is to make sure you understand all the concepts.Here are some o the topics/concepts that I think you should be able to answer, in particular, for the test:
+The best approach to review is to make sure you understand all the concepts. Here are some the topics/concepts that we think you should be able to answer, in particular, for the test:
 
 **Github**
 - Know how to clone a repository
 - What’s the difference between github and git?
 
 **Terminal / CMD**
-- What’s the function of ‘cd’, ‘ls’ ?
+- What’s functions of terminal commands like ‘cd’, 'ls', 'dir', etc.?
 
 **Atom**
-- Wath's the shortcut to open file/ markdown preview/ atom-live server?
+- Wath's the shortcut (a.k.a shortkey combination) to open the command dialog, file, or atom-live server?
 
 **Chrome developer tool**
-- What’s the shortcup to open the developer tool?
+- What’s the shortcut to open the developer tool?
 - What’s the function of the console / elements/ sources/ netwrok?
 
 **Week 1:**
 - IP Addresses and Ports
   - What is IP address?
   - What are the two versions of IP in use today?
+  - Ports
 - IP geolocation
   - Ports Range Groups
   -  What are the ports for requesting Quote of the Day, outgoing information and email receiving?
 - Protocols:
   - Understand what’s HTTP, HTTPS, FTP and SSH
-- Browsers
-  -  The purpose of the browsers
-  -  What are considered as common features?
 - URL of a web page
   - Understand the structure of a URL
   - Understand the URL syntax rules, able to identify the search term
@@ -51,7 +49,7 @@ The best approach to review is to make sure you understand all the concepts.Here
   - What is thematic layer
 - Familiar with javascript, html, css and jquery
   - Css selector, style
-  - Html port
+  - Html default port
   - DOM structure
   - Javascript data type
   - Understand what is json file
@@ -72,10 +70,10 @@ The best approach to review is to make sure you understand all the concepts.Here
   - What is geojson? Understand the structure of geojson
   - What’s the relationship  between topoJSON and GeoJSON and what’s the differences
 - Geospatial data conversion: Shapefile to GeoJson
-  - Know the steps of convert a shapefile to a geojson data and how to export a geojson file    
+  - Know the steps of convert a shapefile to a geojson data and how to export a geojson file
 - QGIS
   - How to import layers
-  - Default reference system for qgis    
+  - Default reference system for qgis, and what is the espg code for the deafualt coordinate reference system?
   - How to reduce output file size?
 
 **Week 4:**
