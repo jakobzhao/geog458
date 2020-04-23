@@ -73,7 +73,7 @@ The best approach to review is to make sure you understand all the concepts. Her
   - Know the steps of convert a shapefile to a geojson data and how to export a geojson file
 - QGIS
   - How to import layers
-  - Default reference system for qgis, and what is the espg code for the deafualt coordinate reference system?
+  - Default reference system for qgis, and what is the espg code for the deafualt coordinate reference system.
   - How to reduce output file size?
 
 **Week 4:**
