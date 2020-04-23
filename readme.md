@@ -11,15 +11,16 @@
 
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
 
-> **Course Updates (4/23/2020):**
+> **Updates (4/23/2020):**
 >
 > -  Mid-term Study Guide is provided.
+> -  Guest Lecturer on design critique on May 7th.
 >
-> **Course Updates (4/21/2020):**
+> **Updates (4/21/2020):**
 >
 > -   If you have any difficulty in registering for the twitter developer account, we provide an alternative option for you to finish the Lab 2.
 >
-> **Course Updates (4/7/2020):**
+> **Updates (4/7/2020):**
 >
 > -   **No final collorative projects since I realize the difficulty of working as a group when you cannot meet in person.**
 > -   The lab 5 will be reformatted as an individual final project\*\*. You will sill present your final project in the last week.
@@ -91,6 +92,7 @@ You will make your first web map in this week using a popular web mapping librar
 ### Week 6: Smart dashboards
 
 -   **Lecture Notes:** interface design, color, typography, icons, animation
+-   **Guest Lecture:** Design critique for digital georgaphies projects -- `Bailiang Zhou from Tableau` on May 7th after the in-class discussion
 -   **Readings:** [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), [Boostrap](weeks/week06/boostrap.md) chroma.js, boostrap, c3.js
 -   **In-class Discussion:** Discussion on the weekly paper and sharing any intersting Dashboard led by `Group 5` on `Thursday`.
 -   **Examples:** [COVID-19 Dashboard](https://hgis.uw.edu/virus)
