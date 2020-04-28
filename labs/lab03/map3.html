@@ -61,7 +61,8 @@
             else if (feature.properties.company == "Medford Cellular")  { id = 6; }
             else if (feature.properties.company == "Oregon RSA")  { id = 7; }
             else { id = 8;} // "Salem Cellular"
-            return L.marker(latlng, {icon: L.divIcon({className: 'fa fa-signal marker-color-' + (id + 1).toString() })});
+            //<i class="fas fa-broadcast-tower"></i>
+            return L.marker(latlng, {icon: L.divIcon({className: 'fa fa-rss marker-color-' + (id + 1).toString() })});
         },
         attribution: 'Cell Tower Data &copy; Map Cruzin | Oregon counties &copy; Oregon Explorer | Base Map &copy; CartoDB | Made By Bo Zhao'
     }).addTo(mymap);

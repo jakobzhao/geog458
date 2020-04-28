@@ -68,14 +68,14 @@
 
 
     // 6. Set function for color ramp
-    colors = chroma.scale('OrRd').colors(5); //colors = chroma.scale('OrRd').colors(5);
+    colors = chroma.scale('YlOrRd').colors(5); //colors = chroma.scale('OrRd').colors(5);
 
-    function setColor(density) {
+    function setColor(count) {
         var id = 0;
-        if (density > 18) { id = 4; }
-        else if (density > 13 && density <= 18) { id = 3; }
-        else if (density > 10 && density <= 13) { id = 2; }
-        else if (density > 5 &&  density <= 10) { id = 1; }
+        if (count > 18) { id = 4; }
+        else if (count > 13 && count <= 18) { id = 3; }
+        else if (count > 10 && count <= 13) { id = 2; }
+        else if (count > 5 &&  count <= 10) { id = 1; }
         else  { id = 0; }
         return colors[id];
     }
