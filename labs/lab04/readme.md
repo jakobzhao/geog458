@@ -268,7 +268,7 @@ Here is what the final output looks like **[here](http://jakobzhao.github.io/geo
 
 ## 7 Deliverable
 
-you will need to generate a tile set for an geographic area you are interested in. After the map tiles are generated, you will need to create a leaflet map and add up the layer of tiles to the map. And then upload everything to a github repository. In the readme.md file of this repository, please briefly introduce this tiles, the georaphic area, and the zoom levels you select.
+You will need to generate a tile set for an geographic area you are interested in. **This tile set should be generated through MapBox**. After the map tiles are generated, you will need to create a leaflet map and add up the layer of tiles to the map. And then upload everything to a github repository. In the readme.md file of this repository, please briefly introduce this tiles, the georaphic area, and the zoom levels you select.
 
 > **Note:**  Since github repository only allows you upload a limited amount of data, so please make sure not to generate too many tiles by limiting the boundingbox or the scale range.
 
