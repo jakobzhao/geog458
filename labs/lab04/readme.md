@@ -59,20 +59,19 @@ To simplify the calculations, we use the spherical form of this projection, not 
 In addition to the projection, the ground resolution or map scale must be specified in order to render a map. At the lowest level of detail `Level 1`, the map is 512 x 512 pixels. At each successive level of detail, the map width and height grow by a factor of 2: Level 2 is 1024 x 1024 pixels, Level 3 is 2048 x 2048 pixels, Level 4 is 4096 x 4096 pixels, and so on. In general, the width and height of the map (in pixels) can be calculated as:
 
 $$
-map width = map height = 256 \* 2^\\mathit{level} pixels
+map width = map height = 256 * 2^m pixels
 $$
 
 The **ground resolution** indicates the distance on the ground that’s represented by a single pixel in the map. For example, at a ground resolution of 10 meters/pixel, each pixel represents a ground distance of 10 meters. The ground resolution varies depending on the level of detail and the latitude at which it’s measured. Using an earth radius of 6,378,137 meters, the ground resolution (in meters per pixel) can be calculated as:
 
 $$
-ground resolution = cos(latitude _ pi/180) _ earth circumference / map width \\
-= (cos(latitude _ pi/180) _ 2 _ pi _ 6378137 meters) / (256 \* 2^\\mathit{level} pixels)
+ground resolution = cos(latitude * pi/180) * earth circumference / map width = (cos(latitude * pi/180) * 2 * pi * 6378137 meters) / (256 * 2^m pixels)
 $$
 
 The **map scale** indicates the ratio between map distance and ground distance, when measured in the same units. For instance, at a map scale of 1 : 100,000, each inch on the map represents a ground distance of 100,000 inches. Like the ground resolution, the map scale varies with the level of detail and the latitude of measurement. It can be calculated from the ground resolution as follows, given the screen resolution in dots per inch, **typically 96 dpi**:
 
 $$
-map scale = 1 : ground resolution _ screen dpi / 0.0254 meters/inch  = 1 : (cos(latitude _ pi/180) _ 2 _ pi _ 6378137 _ screen dpi) / (256 _ 2^\\mathit{level} _ 0.0254)
+map scale = 1 : ground resolution * screen dpi / 0.0254 meters/inch  = 1 : (cos(latitude * pi/180) * 2 * pi * 6378137 * screen dpi) / (256 * 2^m * 0.0254)
 $$
 
 > **Retina Display:**  Retina Display is a brand name used by Apple for its series of IPS panel displays that have a higher pixel density than traditional displays. Apple has applied to register the term "Retina" as a trademark in regard to computers and mobile devices. When introducing the iPhone 4, Steve Jobs said the number of pixels needed for a Retina Display is **326PPI** .
