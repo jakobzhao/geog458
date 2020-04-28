@@ -452,6 +452,7 @@ After you successfully deploy this cell tower map, you are expected to build ano
     └─js
             main.js
 ```
+- Finally, submit your repository URL under `Lab 3. An integrative web mapping` on Canvas.
 
 #### Optional tasks:
 
