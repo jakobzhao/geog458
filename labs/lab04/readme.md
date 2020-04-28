@@ -220,7 +220,7 @@ The raster you are working with needs to occupies the extent of the canvas (area
 
 Click the Plugins drop down, hover over QMetaTiles to open the menu and select QMetaTiles. The QMetaTiles screen pops up.  Name the directory where you want to save your QMetaTiles and provide a name for the Tileset. Select Canvas Extent and Zoom levels. In the Parameters make the **'Background transparency'** clear by changing the value to zero and make sure to select **'Write Leaflet-based viewer'**. Click Run.
 
-![QMetaTiles](img/QMetaTiles_to_leaflet.JPG)
+![QMetaTiles](img/qmetatiles_to_leaflet.JPG)
 
 > Note: the runtime is dependent on the size and number of zoom levels.
 
@@ -262,7 +262,7 @@ var mytile =L.tileLayer('assets/tiles/{z}/{x}/{y}.png', {
 }).addTo(mymap);
 ```
 
-![leafletmap](img/QMetaTiles.jpg)
+![leafletmap](img/qmetatiles.jpg)
 
 Here is what the final output looks like **[here](http://jakobzhao.github.io/geog458/labs/lab04/index.html)**
 
