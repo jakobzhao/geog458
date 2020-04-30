@@ -87,7 +87,7 @@ You will make your first web map in this week using a popular web mapping librar
 -   **Lecture Notes:** [Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/)
 -   **Readings:** a) [The Guide to Map Design](weeks/week05/mapbox-design.pdf), b) [Mapbox Studio How-to Videos](weeks/week05/readme.md)
 -   **Lab 4:** [Generating Map Tiles](labs/lab04) `Due: May 10th, by 11:59pm`
--   **Online Mid-term:** `April 30th 8:30 - 10:20 AM` [Study Guide](assets/midterm_studyguide.md)
+-   **Online Mid-term:** `April 30th 9:30 - 10:20 AM` [Study Guide](assets/midterm_studyguide.md)
 
 ### Week 6: Smart dashboards
 
