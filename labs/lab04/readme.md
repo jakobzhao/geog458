@@ -178,21 +178,21 @@ Quadkeys have several interesting properties. First, the length of a quadkey (th
 
 Finally, quadkeys provide a one-dimensional index key that usually preserves the proximity of tiles in XY space. In other words, two tiles that have nearby XY coordinates usually have quadkeys that are relatively close together. This is important for optimizing database performance, because neighboring tiles are usually requested in groups, and it’s desirable to keep those tiles on the same disk blocks, in order to minimize the number of disk reads.
 
-## 5 QGIS
+## 3 QGIS
 
 QMetaTiles is a plugin for QGIS 3. QGIS is an open source platform and is freely available. QGIS can be down loaded **[here](https://qgis.org/en/site/forusers/download.html#)**.
 
-### 5.1 Install Plugins
+### 3.1 Install Plugins
 
-#### 5.1.1 QMetaTiles Plugin
+#### 3.1.1 QMetaTiles Plugin
 
 Make sure the QMetaTiles plugin is enabled. Click the plugins drop down menu. QMetaTiles should be listed at the bottom. If not then click the 'Manage and install Plugins...' and add QMetaTiles.
 
-#### 5.1.2 QuickMapServices Plugin
+#### 3.1.2 QuickMapServices Plugin
 
 Make sure the QuickMapServices plugin is installed. Check this by clicking on the Web drop down menu If you are installing QuickMapServices Plugin, you will install, and then click on the Web tab, navigate to QuickMapServies and select Settings and then the tab for More Services. Then click **'Get Contibuted Pack'**. Click 'OK' for the pop-up window and then click 'Save.' Open a Reference Map (e.g., Bing).
 
-### 5.2 Tile Server
+### 3.2 Tile Server
 
 We now want to add our bucket from Google Cloud to the Tile Server. To do this open the browser panel in QGIS. Scroll Down to the **'Tile Server'**, right click, and click **'New Connection'**. A pop-up window should appear.
 
@@ -204,15 +204,15 @@ We need to open the source code. To do this make sure the source tab is selected
 
 Add your tiles by right clicking the tile server, in the example here we would right click the **'eetest'**, and select add layer to add it to our map.
 
-### 5.3 View Tiles
+### 3.3 View Tiles
 
 Add a base map and zoom on the base map to you tile location. The **'zoom to layer'** function will not work on the tiles. Make sure you turn the base map off once you have located your tiles.
 
-### 5.4 Canvas Extent
+### 3.4 Canvas Extent
 
 Zoom into your tiles so that they fill most of the canvas space, see image below. The canvas is the extent we will use to generate QMetaTiles.
 
-### 5.5 Tile Server to QMetaTiles
+### 3.5 Tile Server to QMetaTiles
 
 Now we need to take out tiles from Google Cloud and generate QMetaTiles.
 
@@ -228,7 +228,7 @@ The file directory will contain your QMetaTiles and an HTML document that can be
 
 Additional help with QMetaTiles can be found **[here](http://felix.rohrba.ch/en/2017/easily-add-tilemap-layers-qgis/)**.
 
-### 5.6 Navigate to QMetaTiles folder
+### 3.6 Navigate to QMetaTiles folder
 
 Navigate to the output file after QMetaTiles finishes running. In this folder will be your sub folders of tiles arranged by zoom level and an html document, in this example it is called eetest.html.
 
@@ -236,7 +236,7 @@ Open the html and look at the source code. Copy the L.tilelayer variable that co
 
 This can be inserted into a new index.html with base map code to visualize.
 
-## 6 Leaflet
+## 4 Leaflet
 
 Starting with a basic leaflet html add in your tile layer that you copied in the above step. Make sure it is added to your map variable.
 
@@ -266,17 +266,19 @@ var mytile =L.tileLayer('assets/tiles/{z}/{x}/{y}.png', {
 
 Here is what the final output looks like **[here](http://jakobzhao.github.io/geog458/labs/lab04/index.html)**
 
-## 7 Deliverable
+## 5 Deliverable
 
-You will need to generate a tile set for an geographic area you are interested in.
--  **This tile set should be generated through MapBox** (25 POINTS).
--  After the map tiles are generated, you will need to create a leaflet map and add up the layer of tiles to the map (10 POINTS).
--  And then upload everything to a github repository. In the readme.md file of this repository, please briefly introduce this tiles, the georaphic area, and the zoom levels you select (10 POINTS).
-- make sure the repository can be accessed/visualized through the url `https://[your_github_username].github.io/[your_repository_name]`.
+You are expected to generate a tile set for an geographic area you are interested in.
 
-> **Note:**  Since github repository only allows you upload a limited amount of data, so please make sure not to generate too many tiles by limiting the boundingbox or the scale range.
+-  **This tile set should be generated through a map made by MapBox** (25 POINTS).
 
-The structure of this repository should look like:
+-  After the map tiles are generated, you are expected to create a leaflet map and add up the layer of tiles to the map (10 POINTS).
+
+-  Upload everything to a github repository. In the readme.md file of this repository, please briefly introduce this tiles, the georaphic area, and the zoom levels you select (10 POINTS).
+
+- make sure the repository accessible through the url `https://[your_github_username].github.io/[your_repository_name]`.
+
+> **Note:**  Since github repository only allows you upload a limited amount of data, so please make sure not to generate too many tiles by limiting the boundingbox or the scale range. The structure of this repository should look like:
 
 ```powershell
 [your_repository_name]
