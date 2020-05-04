@@ -8,9 +8,8 @@
 
 **Class Discussion Board:** [geog458-workspace.slack.com](https://geog458-workspace.slack.com)
 
-
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
-
+>
 > **Updates (4/23/2020):**
 >
 > -  Mid-term Study Guide is provided.
@@ -46,7 +45,7 @@ As digital technologies have radically transformed human life, this course tries
 
 -   [**Gear up the working environment**](assets/gearup.md) :computer:  :beer:
 -   **Canvas Survey:** Through a survey, students will team up as group of 5 ~ 6 people according to the profeciency of technical skills and interests. `Due: March 31st, 2020, by 11:59pm`
--   **Groups:** Based on the Survey, we have 8 groups (check [here](assets/groups.md)), and I have assigned an group coordinator to each group. Please start meeting your gourp members, along the quarter, you will work together on the collaborative project and the in-class discussion.
+-   **Groups:** Based on the Survey, we have 8 groups (check [here](assets/groups.md)), and I have assigned an group coordinator to each group. Please start meeting your gourp members. In the quarter, you will work together on ~~the collaborative project and~~ the in-class discussion.
 
 ### Week 1: Intro to digital geographies
 
