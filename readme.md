@@ -138,7 +138,7 @@ The Student Tech Loan Program is expanding as quickly as possible. We announced 
 
 **Individual Final Project:** Considering the difficulty of working as a team when you cannot meet each other in person, I decide to change the final collaborative project as individual base. And this final project will extend the lab 05. Thus, the lab 05 will be converted to a final indvidual project, you only need to submit this final project at the end of this quarter and you do not need to submit the lab 5.
 
-**Essay:** Each student will complete an essay that engages with the readings and the course themes, along with additional readings that you bring into conversation with the assigned course readings. You are aiming for 10 pages (double-spaced) coalescing around ideas and readings from this quarter. Writing projects is due no later than the end of **Week 10**.
+**Essay:** Each student will complete an essay that engages with the readings and the course themes, along with additional readings that you bring into conversation with the assigned course readings. You are aiming for ~~10 pages (double-spaced)~~ **no less than 1500 words** coalescing around ideas and readings from this quarter. Essay is due no later than the end of **Week 10**.
 
 ## :two_men_holding_hands: Targeted Audience
 

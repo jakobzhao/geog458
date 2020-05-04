@@ -1,6 +1,8 @@
 # The Guideline for Essay
 
-You are expected to write a essay to analyze a digital-geography-related project (e.g., web map, smart dashboard, geo-narrative, etc.). Through writing this essay, you are expected to use the learned knowledge and skill set to holistically examine the project's functions and critically reflect upon its social implications. This essay can be simple and focus in nature, but must include the following features:
+You are expected to write a essay to analyze a digital-geography-related project (e.g., web map, smart dashboard, geo-narrative, etc.). You are aiming for ~~10 pages (double-spaced)~~ **no less than 1500 words** coalescing around the examined digital-geography project and readings from this quarter.
+
+ Through writing this essay, you are expected to use the learned knowledge and skill set to holistically examine the project's functions and critically reflect upon its social implications. This essay can be simple and focus in nature, but must include the following features:
 
 - create a dedicated github repository, and write this essay on a readme.md file of this repo.
 - introduce this digital-geography project, including, but not limitedt to,
@@ -31,9 +33,9 @@ Since the essay is written in mardown syntax, please try your best to include th
 - code snippet
 - table
 
-##Submission##
+##Submission
 
-Please submit the url link of your essay to the final project submission tab on Canvas. **(by 5:00pm on March 19th)**.
+Please submit the url link of your essay to the final project submission tab on Canvas. Essay is due no later than the end of **Week 10**.
 
 
 >  **Note:** The requirements to the essay may be slightly changed according the progress of this course. The final requirements are subject to the instructor's notification.
