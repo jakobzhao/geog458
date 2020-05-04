@@ -82,7 +82,7 @@ This week's topic is around processing geospatial data for digital geographies p
 You will make your first web map in this week using a popular web mapping library - Leaflet. In the lecture, you will work with me to get familiar with the basics, and then we will give you an very detailed introduction to the lab 3.
 
 -   **Readings:** [Leaflet Basics](weeks/week04/leaflet), [Map Events](weeks/week04/mapevent)
--   **Lab 3:** [An integrative web mapping](labs/lab03) `Due: May 3rd, by 11:59pm`, `under development` Example: [Oregon Water Atlas](http://oregonwater.info/atlas.html)
+-   **Lab 3:** [An integrative web mapping](labs/lab03) `Due: May 3rd, by 11:59pm`,  Example: [Oregon Water Atlas](http://oregonwater.info/atlas.html)
 -   **In-class Discussion:** a) Web Map A by `Group 3` on  `Tuesday` , b) Web Map B by `Group 4` on `Thursday`. Each group will need to pick any online web map you feel interested in and then introduce this web map to the class. Each group are expected to (1) describe the functions and the targeted audience of this web map; (2) discuss the possible system architecture (you might want to refer to the system architecture diagram which is introduced in week 2); (3) analyze the codes. You are expected to open up the Chrome inspector, and introduce the libraries, the network flow, the major visual components and possibliy their functioons, etc; (4) The stregths and weekness about this web map, especially the map design. Please recall the map critique you did in the prerequisite class `geog 360` - what are the visual stratgies, the use of visual hierechy, and so on; (5) do you think the interactive map is an appropriate strategy for the examinedd topic? If yes, why? If not, what else would be better? e.g., an interactive chart, or a static infographics? (6) anything else you feel worthy to share with the classmates. Overall, the in-class disucssion will be in approximately 30 minutes. After the group presentation, a following Q&A will be organized.
 
 ### Week 5: Map design
@@ -100,7 +100,7 @@ You will make your first web map in this week using a popular web mapping librar
 -   **Readings:** [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), [Boostrap](weeks/week06/boostrap.md) chroma.js, boostrap, c3.js
 -   **In-class Discussion:** Discussion on the weekly paper and sharing any intersting Dashboard led by `Group 5` on `Thursday`.
 -   **Examples:** [COVID-19 Dashboard](https://hgis.uw.edu/virus)
--   **Final Project:**  1) proposal, 2) geosaptial data collection, 3) relative resource collection, 4) create a repository. 
+-   **Final Project:**  1) proposal, 2) geosaptial data collection, 3) relative resource collection, 4) create a repository.
 
 ### Week 7: Geo-Narratives
 
