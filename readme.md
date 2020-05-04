@@ -118,7 +118,7 @@ During these two weeks, each group will focusing on their final projects. The in
 
 ### Week 11: Final ~~collaborative~~ project presentations
 
-Durint the last two meeting sessions, each group will present their final projects. More information about final project will be presented afer the mid-term.
+Durint the last two meeting sessions, each group will present their final projects. More information about final project will be shared afer the mid-term.
 
 ## :bell: Course Requirement
 

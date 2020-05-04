@@ -1,6 +1,6 @@
 # The Guideline for Essay
 
-You are expected to write a essay to analyze a digital-geography-related project (e.g., web map, smart dashboard, geo-narrative, etc.). You are aiming for ~~10 pages (double-spaced)~~ **no less than 1500 words** coalescing around the examined digital-geography project and readings from this quarter.
+You are expected to write a essay to analyze a digital-geography-related project (e.g., web map, smart dashboard, geo-narrative, etc.). You are aiming for **no less than 1500 words** coalescing around the examined digital-geography project and readings from this quarter.
 
  Through writing this essay, you are expected to use the learned knowledge and skill set to holistically examine the project's functions and critically reflect upon its social implications. This essay can be simple and focus in nature, but must include the following features:
 

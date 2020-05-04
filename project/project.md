@@ -1,34 +1,30 @@
 # The Guideline for the Final Project
 
-## 1\. Requirement
+The final project is a major component of this course. Each project are expected to develop a digital-geographies related project. It can be a web map, a smart dashboard, a geo-narrative, or a project idea which has been approved by the instructor. All the final projects are expected to **publish online**, and the **codes are expected to be shared on GitHub** to contribute to both the open source community and academia. The final project must satisfy the follwoing items:
 
-Regarding the final project, you are expected to work individually to write a report to examine a project related to digital geographies (e.g., web map, smart dashboard, geo-narrative, etc.). This report can be simple and focus in nature, but must include:
+- Host your project on github. By doing so, your project can be visited via a url link such as `[username].github.io/[repo_name]`.
 
-- This report needs to be written on the readme file of a github repository.
-- an introduction to this web mapping application, including, but not limitedt to,
-  - the design objective of this web mapping
-  - basic web mapping functions
-  - the targeting audience
-  - the created date
-  - the authors and the affilication
-- describe the systematic architecture
-- critique the web map design
-- list the data sources
-  - vectors (i.e., geojson)
-  - rasters (i.e., tilelayer)
-- describe the basemap, the thematic layer and the interactive features.
-- what the web map elements are used? (e.g, scalar bar, north arrow, legend, etc.)
-- Does this web map support responsive design?
-- From your own perspective, what is the merits of this web map, and how this web map could be further improved?
+- In addition to the main feature of the digital-geographies (e.g. web map, smart dashboard or geo-narrative), you should also show the project title, a short description, legend, data sources, and acknowledgement at easily found places on the web page.
 
+- A `readme.md` describes your web map, including, but not limited to,
+    - Project title
+    - Project description
+    - Project goal (such as, what is the message you want to deliver through your project?)
+    - Data sources
+    - Applied libraries (e.g., Leaflet, D3, C3) and Web Services (e.g., github, basemap) in use
+    - Acknowledgement
+    - Other things necessary to inform the audience.
 
-## 2\. Presentation and peer review
+## 2\. Presentation
 
-Academics often attend conferences where they share their discoveries and browse the work of others to gain new ideas and offer feedback. on **March 14th**, we will hold a final presentation meeting at the digital earth lab. Each student is expected to present their final project in ~8 minutes. And there will be a F&Q session in 2 ~ 3 minutes.  During the final presentation, each student will need to review all final projects and submit your review notes.
+Academics often attend conferences where they share their discoveries and browse the work of others to gain new ideas and offer feedback. during the last two lectures on Week 11, we will hold two final presentation meetings, Each student is expected to present the final project in ~4 minutes. And there will be a F&A session in 1 ~ 2 minutes.
 
-## 3\. Submission
+## 3\. Peer Review
+During the final presentation, each student will need to share some constructive comments to at least **FIVE** of your class mates's final projects. The comments needs to be submitted as a new github issue to the presenter's final project repository. The comment can be as short as one or two sentence, but you are encourgaed to comment on someting the presenter did well, and something can be further improved.
 
-Please submit the url link of your final project's github repository to the final project submission tab on Canvas. **(by 5:00pm on March 19th)**.
+## 4\. Submission
+
+To submit your final project, you will need to share the url link of your final project's github repository to a dedicated final project submission tab on Canvas **by the end of Week 11**.
 
 
 >  **Note:** The requirements to the essay may be slightly changed according the progress of this course. The final requirements are subject to the instructor's notification.
