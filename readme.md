@@ -10,6 +10,10 @@
 
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
 >
+> **Updates (5/3/2020):**
+>
+> -  the guidelines for final project and essay.
+>
 > **Updates (4/23/2020):**
 >
 > -  Mid-term Study Guide is provided.
@@ -90,6 +94,7 @@ You will make your first web map in this week using a popular web mapping librar
 
 ### Week 6: Smart dashboards
 
+- check out the guidelines for [final project](project/project.md) and [essay](project/essay.md).
 -   **Lecture Notes:** interface design, color, typography, icons, animation
 -   **Guest Lecture:** Design critique for digital georgaphies projects -- given by [Bailiang Zhou](https://www.zhoubailiang.com/) from Tableau on May 7th after the in-class discussion
 -   **Readings:** [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), [Boostrap](weeks/week06/boostrap.md) chroma.js, boostrap, c3.js
