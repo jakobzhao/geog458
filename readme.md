@@ -100,6 +100,7 @@ You will make your first web map in this week using a popular web mapping librar
 -   **Readings:** [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), [Boostrap](weeks/week06/boostrap.md) chroma.js, boostrap, c3.js
 -   **In-class Discussion:** Discussion on the weekly paper and sharing any intersting Dashboard led by `Group 5` on `Thursday`.
 -   **Examples:** [COVID-19 Dashboard](https://hgis.uw.edu/virus)
+-   **Final Project:**  1) proposal, 2) geosaptial data collection, 3) relative resource collection, 4) create a repository. 
 
 ### Week 7: Geo-Narratives
 
