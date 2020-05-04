@@ -12,7 +12,7 @@
 >
 > **Updates (5/3/2020):**
 >
-> -  the guidelines for final project and essay.
+> -  the guidelines for [final project](project/project.md) and [essay](project/essay.md) have released.
 >
 > **Updates (4/23/2020):**
 >
