@@ -17,7 +17,7 @@ The final project is a major component of this course. Each project are expected
 
 ## 2\. Presentation
 
-Academics often attend conferences where they share their discoveries and browse the work of others to gain new ideas and offer feedback. during the last two lectures on Week 11, we will hold two final presentation meetings, Each student is expected to present the final project in ~4 minutes. And there will be a F&A session in 1 ~ 2 minutes.
+Academics often attend conferences where they share their discoveries and browse the work of others to gain new ideas and offer feedback. during the last two lectures on Week 11, we will hold two final presentation meetings, Each student is expected to present the final project in ~4 minutes. And there will be a Q&A session in 1 ~ 2 minutes.
 
 ## 3\. Peer Review
 During the final presentation, each student will need to share some constructive comments to at least **FIVE** of your class mates's final projects. The comments needs to be submitted as a new github issue to the presenter's final project repository. The comment can be as short as one or two sentence, but you are encourgaed to comment on someting the presenter did well, and something can be further improved.
