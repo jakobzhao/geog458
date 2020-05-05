@@ -1,0 +1,99 @@
+/* Mobile devices */
+@media only screen and (max-width: 1026px) {
+  .legend, .leaflet-control-layers {
+    display: none;
+  }
+
+  #info, #source-website, #source, .card-deck, #rank-chart, #legend-panel, #total-chart, .c3-legend-item, .c3-legend-background, #footer, #title>img, #title>span {
+    visibility: hidden !important;
+  }
+
+  #mobiledeck {
+    font-size: 10px;
+    z-index: 1000;
+    position: fixed;
+    top: 90px;
+    display: block;
+    visibility: visible;
+    margin-top: 20px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+  }
+
+  .mobile-title {
+    font-size: 13px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+  }
+
+  #mobiledeck>p {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .simplebar-track {
+    visibility: hidden !important;
+  }
+
+  #info {
+    position: fixed !important;
+    top: 0px;
+    height: 30%;
+    left: 0;
+    width: 100wh !important;
+  }
+
+  #title {
+    position: fixed;
+    color: black;
+    font-size: 18px !important;
+    top: 5px !important;
+    left: -20px !important;
+    width: 400px !important;
+  }
+
+  #placename {
+    /* position: relative; */
+    color: black;
+    font-size: 30px !important;
+    position: fixed !important;
+    left: 10px;
+    top: 28px !important;
+    width: 500px;
+  }
+
+  #last-date {
+    /* position: relative; */
+    color: black;
+    font-size: 13px !important;
+    position: fixed !important;
+    left: 12px;
+    top: 65px !important;
+    width: 300px;
+  }
+
+  #date {
+    position: relative;
+    color: black;
+    font-size: 12px !important;
+    position: fixed !important;
+    left:85px;
+    top: 66px !important;
+    width: 300px;
+  }
+
+  #hint {
+    /* position: relative; */
+    color: black !important;
+    font-size: 11px !important;
+    position: fixed !important;
+    left: 10px !important;
+    font-weight: bold;
+    top: 85px !important;
+    width: 300px;
+    text-decoration-line: underline !important;
+    text-decoration-style: dotted !important;
+  }
+
+}

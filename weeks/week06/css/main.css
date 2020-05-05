@@ -1,0 +1,570 @@
+html, body, main {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background: #fff;
+  font-family: 'Titillium Web', sans-serif;
+  overflow: hidden
+}
+
+.emphasis {
+  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
+#rankingToggle {
+  visibility: hidden
+}
+
+#table {
+  visibility: hidden;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(245, 245, 245, 0.7);
+  z-index: 500 !important;
+  font-size: 12px;
+  /* overflow: auto; */
+}
+
+#table-container {
+  position: fixed;
+  /* overflow: auto; */
+  left: 500px;
+  right: 10px;
+  top: 15px;
+  bottom: 10px;
+}
+
+#table-container-div {
+  width: 800px !important;
+}
+
+th {
+  /* text-align: center; */
+  /* width: 40px !important;
+  height: 40px !important; */
+}
+
+i.cell {
+  position: absolute;
+  /* background-color: orange; */
+  opacity: 0.8;
+  font-size: 9px;
+  /* margin-top: -.5rem;
+  margin-left: -1rem; */
+  /* background-color: #dc3545; */
+  border: 4px solid green;
+}
+
+.grey-circles {
+  background-color: white;
+  background-image: url("../img/texture-s.png");
+}
+
+.green-circles {
+  background-color: white;
+  background-image: url("../img/green_texture.png");
+}
+
+.leaflet-tooltip.feature-label {
+  background-color: transparent;
+  border: transparent;
+  box-shadow: none;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: 'Titillium Web', sans-serif;
+  text-shadow: 0 0 2px #FFFFFF;
+  color: #dc3545;
+}
+
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: url('../img/loading.gif') 50% 50% no-repeat white;
+  opacity: 1;
+}
+
+div#footer>div {
+  margin-bottom: 10px
+}
+
+.community {
+  color: #dc3545;
+  /* font-size: 15px; */
+  text-shadow: 0 0 3px #ffffff;
+  visibility: visible;
+  /*   z-index: 400 !important; */
+}
+
+.case-marker {
+  width: 10px;
+}
+
+.community-marker {
+  width: 80px;
+}
+
+.community-marker>b {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.leaflet-marker-icon {
+  visibility: hidden;
+  /* width:20px!important */
+}
+
+#demo {
+  font-size: 14px
+}
+
+#demo>h5 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  font-size: 16px
+}
+
+#demo>li {
+  /* padding: 5px; */
+  margin-left: 10px;
+  line-height: 20px;
+}
+
+#map {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  /* z-index: 1000 !important; */
+  left: 0;
+  right: 0;
+  margin: 0;
+  background: #fff;
+  font-family: 'Titillium Web', sans-serif;
+  overflow: hidden
+}
+
+.leaflet-control-layers {
+  color: white !important;
+  background-color: none;
+  padding: 6px 8px;
+  border: none !important;
+  background: #343a40 !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 5px !important;
+  /* z-index: 299 !important; */
+}
+
+.leaflet-control-zoom, .leaflet-control-zoom-in, .leaflet-control-zoom-out {
+  color: white !important;
+  padding: 0px !important;
+  background-color: none;
+  border: none !important;
+  background: #343a40 !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 5px !important;
+  /* z-index: 299 !important; */
+}
+
+.c3-legend-background {
+  fill: transparent;
+  stroke: transparent;
+}
+
+#mobiledeck {
+  display: none;
+  visibility: hidden;
+}
+
+#info {
+  position: absolute;
+  width: 480px;
+  top: 1%;
+  bottom: 1%;
+  left: .5%;
+  z-index: 1000;
+  background: #343a40;
+  color: white;
+  opacity: 1;
+  padding: 40px 15px 20px 15px;
+}
+
+.card-deck .card {
+  top: -40px;
+  background: #343a40;
+  padding: 2px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.card-body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  flex:none;
+}
+
+.card-text {
+  font-size: 33px !important
+}
+
+.card-title {
+  color: lightgray;
+  font-size: 14px;
+  margin-bottom: 0rem;
+  font-weight: bold;
+}
+
+#legend-panel {
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  width: 340px;
+  height: 15px;
+  z-index: 499;
+}
+
+#legend-panel .card {
+  background-color: rgba(174, 254, 167, 0) !important
+}
+
+.legend>div.card {
+  padding: 0px;
+  margin: 0px;
+}
+
+.legend .card-title {
+  font-size: 12px !important;
+}
+
+.card-text {
+  font-size: 40px;
+  text-align: center;
+}
+
+#info h4 i {
+  font-size: 1.25e;
+  padding-right: 10px
+}
+
+#title {
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+}
+
+#title span {
+  font-size: 14px;
+  float: right;
+}
+
+span {
+  margin-right: 10px;
+}
+
+#info a {
+  color: white;
+}
+
+#info a:hover {
+  color: white;
+  opacity: 0.3;
+}
+
+#last-date {
+  position: relative;
+  top: -20px;
+  font-size: 16px;
+  color: danger;
+}
+
+#info a {
+  color: lightgray !important
+}
+
+#date {
+  position: relative;
+  top: -20px;
+  left: -10px;
+  font-size: 12px;
+  color: lightgray;
+}
+
+#placename {
+  font-size: 40px;
+  position: relative;
+  /* top: -20px; */
+  font-family: 'Oswald', sans-serif;
+}
+
+#hint {
+  position: relative;
+  top: -21px;
+  width: 5000px;
+  color: gray;
+  font-size: 12px;
+  font-style: italic;
+  text-decoration-line: underline !important;
+  text-decoration-style: dotted !important;
+  left: -17px;
+}
+
+#source {
+  position: relative;
+  top: -20px;
+  font-size: 16px;
+  margin-right: 0px;
+}
+
+#source-website {
+  top: -38px;
+  text-indent: 55px;
+  line-height: 1.3 !important;
+  font-size: 12px;
+  color: lightgray !important;
+  line-height: 1.3;
+  display: block;
+  position:relative;
+}
+
+.counts {
+  margin-top: 0px;
+}
+
+text {
+  fill: gray
+}
+
+.tick line {
+  stroke: gray;
+}
+
+.c3-axis path {
+  stroke: gray;
+}
+
+.c3-bar {
+  fill: #dc3545 !important;
+}
+
+.name {
+  background-color: black;
+  color: black
+}
+
+.value {
+  background-color: black;
+  color: black
+}
+
+#total-chart {
+  position: relative;
+  top: -10px;
+  left: -20px;
+}
+
+/* #rank-chart {
+  position: relative;
+  top: 20px;
+  left: -20px;
+}
+
+#rank-chart>div>table>tbody>tr>td>span {
+  background-color: #dc3545 !important
+} */
+
+#footer {
+  position: relative;
+  top: 15px;
+  bottom: 10px;
+  font-size: 13px;
+  line-height: 150%;
+  color: lightgray;
+  margin-bottom: 100px;
+}
+
+
+/*
+#footer>div {
+  font-size: 13px;
+} */
+
+.confirmed-count {
+  color: #dc3545;
+}
+
+.active-count {
+  color: orange;
+}
+
+/* .suspected-count {
+  color: orange;
+} */
+.recovered-count {
+  color: #28a745;
+}
+
+.death-count {
+  color: SlateBlue;
+}
+
+.confirmed-new-count {
+  vertical-align: super !important;
+  font-size: 50% !important;
+  color: #dc3545;
+  font-style: italic;
+  font-kerning: normal;
+  position: relative;
+  left: -10px
+}
+
+.active-new-count {
+  vertical-align: super !important;
+  font-size: 50% !important;
+  color: orange;
+  font-style: italic;
+  font-kerning: normal;
+  position: relative;
+  left: -14px
+}
+
+.death-new-count {
+  vertical-align: super !important;
+  font-size: 50% !important;
+  color: SlateBlue;
+  font-style: italic;
+  font-kerning: normal;
+  position: relative;
+  left: -10px
+}
+
+/* .c3-line {
+    stroke-width: 2px;
+} */
+.recovered-new-count {
+  vertical-align: super !important;
+  font-size: 50% !important;
+  color: #28a745;
+  font-style: italic;
+  font-kerning: normal;
+  position: relative;
+  left: -10px
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: super;
+  opacity: 1;
+  color: #737373;
+}
+
+/* Tooltip text */
+.tooltiptext {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 2px;
+  bottom: 100%;
+  left: 50%;
+  visibility: hidden;
+  line-height: 150%;
+  width: 200px;
+  margin-left: -170px;
+  /* Use half of the width (120/2 = 60), to center the tooltip */
+  margin-bottom: 5px;
+  background-color: gray;
+  color: #fff;
+  font-size: 12px !important;
+  /* text-align: center; */
+  padding: 5px;
+  border-radius: 2px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  opacity: 0.8;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.counticon {
+  position: relative;
+  left: -27px;
+  bottom: 5px;
+  color: #6d5831;
+}
+
+#heatmap-legend-panel {
+  position: relative;
+  bottom: -40px;
+  right: -15px;
+  width: 50px;
+  height: 5px;
+  z-index: 499;
+}
+
+.card-deck .size-card {
+  align-self: center;
+}
+
+.size-card-title{
+  color: lightgray;
+  text-shadow:none;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 6px;
+}
+
+#heatmap-size{
+  position: relative;
+  top: -116px;
+  left: 38px;
+  width: 275px;
+}
+
+/* Dropdown Button */
+.dropdown{
+  position: relative;
+  bottom: 25px;
+  color:lightgrey;
+}
+
+.dropdown-item{
+  margin: 0;
+  color: lightgrey;
+  font-size: 14px;
+}
+
+.dropdown-menu{
+  padding: 0;
+  background-color: #6c757d;
+}
+
+.chart-legend{
+  width: 345px;
+  position: relative;
+  top: -57px;
+  left: 120px;
+  font-size: 14px;
+  color: grey;
+  line-height: 15px;
+  margin: 0;
+  height: 1px;
+}
+
+.btn-secondary {
+    color: grey;
+    border-color: grey;
+    background-color:transparent;
+}
