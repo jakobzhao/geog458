@@ -103,7 +103,7 @@
 
 
     // 2. Add a base map.
-    var basemap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(mymap);
+     L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(mymap);
 
 
     // 4. build up a set of colors from colorbrewer's dark2 category
@@ -121,10 +121,7 @@
     }
 
 
-    var rchart;
-    var cellTowersLayer = null;
-    var countiesLayer = null;
-    var counties = {};
+    var rchart, cellTowersLayer, countiesLayer = null, counties = {};
 
     //load all datasets through d3 and store them in an array
     Promise.all([
@@ -302,7 +299,6 @@
             displayPlace(countyName);
 
             datasets[1].features.forEach(function(t) {
-              var a = 2;
               if (t.properties.NAME == countyName) {
                 countybound = L.geoJSON(t)
                  mymap.fitBounds(countybound.getBounds());
