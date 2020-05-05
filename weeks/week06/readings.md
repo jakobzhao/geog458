@@ -53,4 +53,4 @@
 
 [5] http://tools.medialab.sciences-po.fr/iwanthue/
 
-[6] ALl other concepts in the Bootstrap 4 Tutorial from W3Schools.
+[6] All other concepts in the Bootstrap 4 Tutorial from W3Schools.
