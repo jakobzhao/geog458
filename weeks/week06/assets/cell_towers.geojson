@@ -11,7 +11,7 @@
 { "type": "Feature", "properties": { "Name": "NEW CINGULAR WIRELESS PCS, LLC", "company": "New Cingular" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -123.2508, 45.7311, 0.0 ] ] } },
 { "type": "Feature", "properties": { "Name": "Verizon Wireless (VAW) LLC", "company": "Verizon" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -123.2094, 46.04, 0.0 ] ] } },
 { "type": "Feature", "properties": { "Name": "Verizon Wireless (VAW) LLC", "company": "Verizon" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -123.1806, 46.1108, 0.0 ] ] } },
-{ "type": "Feature", "properties": { "Name": "NEW CINGULAR WIRELESS PCS, LLC", "company": null }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -122.9197, 46.0492, 0.0 ] ] } },
+{ "type": "Feature", "properties": { "Name": "NEW CINGULAR WIRELESS PCS, LLC", "company": "Verizon" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -122.9197, 46.0492, 0.0 ] ] } },
 { "type": "Feature", "properties": { "Name": "OREGON RSA #2, INC.", "company": "Oregon RSA" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -117.3753, 45.3792, 0.0 ] ] } },
 { "type": "Feature", "properties": { "Name": "RCC Minnesota, Inc", "company": "RCC Minnesota" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -117.3894, 45.3997, 0.0 ] ] } },
 { "type": "Feature", "properties": { "Name": "HOOD RIVER CELLULAR TELEPHONE COMPANY, INC.", "company": "Hood River Cellular" }, "geometry": { "type": "MultiPoint", "coordinates": [ [ -119.2958, 45.2128, 0.0 ] ] } },

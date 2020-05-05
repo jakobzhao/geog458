@@ -6,17 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Cell Towers in Oregon (2009)</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/leaflet.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-  <link href="https://fonts.googleapis.com/css?family=Titillium+Web|Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
   <link href="css/c3.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/simplebar.css" />
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web|Oswald" rel="stylesheet">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <script src="js/d3.js"></script>
   <script src="js/c3.min.js"></script>
-  <script src="js/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
   <script src="js/chroma.min.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -27,157 +26,75 @@
 <body>
   <main>
     <div id="mobiledeck">
+
+      <div class="placename"> OREGON</div>
       <p>
-        <span class="mobile-title">Aggr. Confirmed</span>
-        <span class="confirmed-count"></span>
-        <span class="confirmed-new-count "></span>
+        <span class="mobile-title"># Cell Tower in the selected county: </span>
+        <span class="county-count">n/a</span>
       <p>
 
       <p>
-        <span class="mobile-title">Active Confirmed</span>
-        <span class="active-count"></span>
-        <span class="active-new-count"></span>
+        <span class="mobile-title"># Cell Tower in Oregon: </span>
+        <span class="state-count">351</span>
       <p>
 
-      <p>
-        <span class="mobile-title">Recovered</span>
-        <span class="recovered-count"></span>
-        <span class="recovered-new-count"></span>
-      <p>
-
-      <p>
-        <span class="mobile-title">Death</span>
-        <span class="death-count"></span>
-        <span class="death-new-count"></span>
-      <p>
     </div>
 
-    <div id="info" data-simplebar data-simplebar-auto-hide="true" style="width:520px!important">
-      <div id="title" style="font-size:19px">
-        <img src="img/virus_logo.png" width="28px">
-        Cell Tower in Oregon (2009)
-        <span><a href="https://twitter.com/UW" target="_blank"><i class="fab fa-twitter-square"></i></a></span>
-        <span><a href="https://github.com/jakobzhao/virus" target="_blank"><i class="fab fa-github-square"></i></a></span>
-        <span><a data-toggle="modal" data-target="#infowindow"><i class="nav fas fa-question-circle"></i></a></span>
+    <div id="info">
+      <div id="title">
+        Cell Tower Map (2009)
+        <span><a href="https://twitter.com/UW" target="_blank"><i class="fa fa-twitter-square"></i></a></span>
+        <span><a href="https://github.com/jakobzhao/geog458" target="_blank"><i class="fa fa-github-square"></i></a></span>
       </div>
 
-      <p><span id="placename">GLOBAL TREND</span> </p>
-      <p><span id="source">Source: </span><span id="source-website" href="" target="_blank"></span></p>
-      <div id="deck-1" class="card-deck counts">
+      <p><span class="placename">OREGON</span></p>
+      <div class="card-deck counts">
         <div class="card">
-          <div class="card-body confirmed">
-            <h5 class="card-title">Confirmed
-              <i class="nav fas fa-exclamation-circle tooltip">
-                <span class="tooltiptext">All the confirmed cases ever since the discovery of the COVID-19 in the statistical area.</span>
-              </i>
+          <div class="card-body county">
+            <h5 class="card-title"> # Cell Tower in the selected county
             </h5>
           </div>
           <p class="card-text">
-            <span class="confirmed-count"></span><span class="confirmed-new-count">
-            </span>
+            <span class="county-count">N/A</span>
           </p>
         </div>
         <div class="card">
-          <div class="card-body death">
-            <h5 class="card-title">Death</h5>
-            <p class="card-text"><span class="death-count"></span><span class="death-new-count"></span></p>
+          <div class="card-body state">
+            <h5 class="card-title"># Cell Tower in Oregon </h5>
+            <p class="card-text">
+              <span class="state-count">351</span>
+            </p>
           </div>
         </div>
       </div>
 
-
-      <div id="timeline-chart"></div>
-      <div id="total-chart"></div>
-      <div id="rank-chart"></div>
+      <div id="county-chart"></div>
 
       <div id="footer">
-
-
-        <div>This map is made by the <a href="http://hgis.uw.edu" target="_blank">Humanistic GIS Lab at University of Washington - Seattle</a>.
-          The data are mainly collected from <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/" target="_blank">WHO</a>,
-          <a href="https://www.cdc.gov/coronavirus/2019-ncov/cases-in-us.html" target="_blank">CDC</a>,
-          <a href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html" target="_blank">PHA</a> ,
-          <a href="http://2019ncov.chinacdc.cn/2019-nCoV/" target="_blank">China CDC</a>,
-          <a href="https://www.nbcnews.com/health/health-news/coronavirus-u-s-map-where-virus-has-been-confirmed-across-n1124546" target="_blank">NBC News</a>,
-          <a href="https://en.wikipedia.org/wiki/Template:2019%E2%80%9320_coronavirus_pandemic_data" target="_blank">Wikipedia</a>, <a target="_blank" href="https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html">New York Times</a>,
-          and <a href="https://voice.baidu.com/act/newpneumonia/newpneumonia" target="_blank">Baidu</a>. Regarding the state level data in the U.S., they are collected from CDC, state officials, <a target="_blank"
-            href="https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html">New York Times</a>, and <a href="https://www.nbcnews.com/health/health-news/coronavirus-u-s-map-where-virus-has-been-confirmed-across-n1124546"
-            target="_blank">NBC News</a>.
-          The computational resources are provided by <a href="https://csde.washington.edu/" target="_blank">UW's Center for Studies in Demography and Ecology</a>. The base maps are from <a target="_blank"
-            href="https://github.com/CartoDB/cartodb/wiki/BaseMaps-available">Carto</a> and <a href="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/" target="_blank">ESRI</a>, and the geospatial data for the base maps
-          are acquired from the <a href="openstreetmap.org/copyright" target="_blank"> OpenStreetMap</a>.
-          <span class="emphasis">The timely updated dataset of the virus infection can be downloaded <a href="http://hgis.uw.edu/virus/assets/virus.csv" target="_blank">here.</a></span> Details
-          about this interactive
-          map can be found <a data-toggle="modal" data-target="#infowindow"> here</a>. If you have any questions or
-          concerns, please contact <a href="mailto:zhaobo@uw.edu">Bo Zhao</a>.
-        </div>
-        <p align="right" style="margin-right:20px; margin-top:-25px"><a href="https://hgis.uw.edu/2020/03/18/covid-19-novel-coronavirus-infection-map/" target="_blank"><img src="img/logo.png" width="120px"></img></a></p>
-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </div>
 
     </div>
 
-    <div id="legend-panel" class="card-deck legend">
 
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title grey-circles" style="color:black">no case</h5>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-body legend-color-1">
-          <h5 class="card-title" style="color:black">1</h5>
-
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-body legend-color-2">
-          <h5 class="card-title" style="color:black">100</h5>
-
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body  legend-color-3">
-          <h5 class="card-title" style="color:black">1,000</h5>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-body  legend-color-4">
-          <h5 class="card-title" style="color:black">5,000</h5>
-
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-body legend-color-5">
-          <h5 class="card-title" style="color:black">10,000</h5>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-body legend-color-6">
-          <h5 class="card-title" style="color:black">50,000+</h5>
-        </div>
-      </div>
-    </div>
     <div id="map"></div>
 
   </main>
-  <!-- <script src="js/main.js"></script> -->
   <script>
-
-
     //create the base map and set the initial view point
+    // 1. Create a map object.
     var mymap = L.map('map', {
-      center: [38, -120],
-      zoomControl: false,
-      zoom: 4,
+      center: [44.13, -121.93],
+      zoom: 8,
       maxZoom: 10,
-      minZoom: 2,
-      worldCopyJump: true
+      minZoom: 3,
+      zoomControl: false,
+      detectRetina: true
     });
 
     new L.Control.Zoom({
@@ -185,179 +102,99 @@
     }).addTo(mymap);
 
 
-    var gray = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png').addTo(mymap);
+    // 2. Add a base map.
+    var basemap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(mymap);
 
 
-    var chart, rchart;
+    // 4. build up a set of colors from colorbrewer's dark2 category
+    var colors = chroma.scale('Dark2').mode('lch').colors(9);
 
-    //create colot scale for both region and legend,and insert the "style" into the "head" tag
-    var colors = chroma.scale('YlOrRd').mode('lch').colors(6);
-    for (i = 0; i < 6; i++) {
-      $('head').append($("<style> .region-color-" + (i + 1).toString() + " { color: " + colors[i] + "; font-size: 15px; text-shadow: 0 0 3px #ffffff;} </style>"));
-      $('head').append($("<style> .legend-color-" + (i + 1).toString() + " { background: " + colors[i] + "; font-size: 15px; text-shadow: 0 0 3px #ffffff;} </style>"));
+    // 5. dynamically append style classes to this page. This style classes will be used for colorize the markers.
+    for (i = 0; i < 9; i++) {
+      $('head').append($("<style> .marker-color-" + (i + 1).toString() + " { color: " + colors[i] + "; font-size: 15px; text-shadow: 0 0 3px #ffffff;} </style>"));
+    }
+
+    // 6. Set function for color ramp
+    colors = chroma.scale('YlOrRd').colors(5);
+    for (i = 0; i < 5; i++) {
+      $('head').append($("<style> .county-color-" + (i + 1).toString() + " { color: " + colors[i] + "} </style>"));
     }
 
 
+    var rchart;
+    var cellTowersLayer = null;
+    var countiesLayer = null;
+    var counties = {};
+
     //load all datasets through d3 and store them in an array
     Promise.all([
-      d3.csv('assets/virus.csv'), //datasets[0]
-      d3.json("assets/all-topo-15.json"), //datasets[1]
-      //d3.csv('assets/communities.csv'), //chinese cases
-      d3.csv('assets/timestamp.txt'), //datasets[3]
-      d3.csv('assets/cases.csv'), //America cases
-      d3.csv('assets/united-states.txt'), //datasets[5]
-      d3.csv('assets/canada-city.txt'), //datasets[6]
-      d3.csv('assets/old-name.csv'), //datasets[7] chinese provinces
-      d3.csv('assets/cases-canada.csv') //datasets[8]
+      d3.json("assets/cell_towers.geojson"),
+      d3.json("assets/counties.geojson")
     ]).then(function(datasets) {
 
-
-      //read data from cases.csv and add each case on to the map with given information
-      //cases in America
-      datasets[3].forEach(function(d) {
-        //console.log(d.id)
-        L.marker([parseFloat(d.lat), parseFloat(d.lng)]).bindPopup("<b>" + d.no + "</b> <p>" + d.note + " identified on " + d.date + ", &nbsp;<a href='https://" + d.reference + "' target='_blank'>" + d.reference + "</a>.</p>").addTo(
-          cases);
-      })
-
-      //cases in Canada
-      datasets[7].forEach(function(d) {
-        //console.log(d.id)
-        L.marker([parseFloat(d.lat), parseFloat(d.lng)]).bindPopup("<b>" + d.no + "</b> <p>" + d.note + " identified on " + d.date + ", &nbsp;<a href='https://" + d.reference + "' target='_blank'>" + d.reference + "</a>.</p>").addTo(
-          cases);
-      })
-
-
-      //this function take a place name and diaplay the data to the info panel
-      function showPlace(name) {
-
-        len = places[name].t.length;
-        $(".confirmed-count").text(places[name].c[len - 1].toLocaleString());
-        $(".recovered-count").text(places[name].r[len - 1].toLocaleString());
-        $(".death-count").text(places[name].d[len - 1].toLocaleString());
-        $(".active-count").text(places[name].a[len - 1].toLocaleString());
-
-        nc = places[name].c[len - 1] - places[name].c[len - 2]; //new aggregate confirmed cases of the day
-        nr = places[name].r[len - 1] - places[name].r[len - 2]; //new recovered confirmed cases of the day
-        nd = places[name].d[len - 1] - places[name].d[len - 2]; //new death of the day
-        na = places[name].a[len - 1] - places[name].a[len - 2]; //new active cases of the days
-
-        if (nc > 0) {
-          $(".confirmed-new-count").text("+" + nc.toLocaleString());
-        } else if (nc == 0) {
-          $(".confirmed-new-count").text("");
-        } else {
-          $(".confirmed-new-count").text(nc.toLocaleString());
-        }
-
-        if (nr > 0) {
-          $(".recovered-new-count").text("+" + nr.toLocaleString());
-        } else if (nr == 0) {
-          $(".recovered-new-count").text("")
-        } else {
-          $(".recovered-new-count").text(nr.toLocaleString());
-        }
-        if (nd > 0) {
-          $(".death-new-count").text("+" + nd.toLocaleString());
-        } else if (nd == 0) {
-          $(".death-new-count").text("")
-        } else {
-          $(".death-new-count").text(nd.toLocaleString());
-        }
+      cellTowersLayer = L.geoJSON(datasets[0], {
+        onEachFeature: function(feature, layer) {
+          layer.bindPopup(feature.properties.company);
+        },
+        pointToLayer: function(feature, latlng) {
+          var id = 0;
+          if (feature.properties.company == "New Cingular") {
+            id = 0;
+          } else if (feature.properties.company == "Cellco") {
+            id = 1;
+          } else if (feature.properties.company == "RCC Minnesota") {
+            id = 2;
+          } else if (feature.properties.company == "Verizon") {
+            id = 3;
+          } else if (feature.properties.company == "US Cellular") {
+            id = 4;
+          } else if (feature.properties.company == "Hood River Cellular") {
+            id = 5;
+          } else if (feature.properties.company == "Medford Cellular") {
+            id = 6;
+          } else if (feature.properties.company == "Oregon RSA") {
+            id = 7;
+          } else {
+            id = 8;
+          } // "Salem Cellular"
+          return L.marker(latlng, {
+            icon: L.divIcon({
+              className: 'fa fa-signal marker-color-' + (id + 1).toString()
+            })
+          });
+        },
+        attribution: 'Cell Tower Data &copy; Map Cruzin | Oregon counties &copy; Oregon Explorer | Base Map &copy; CartoDB | Made By Bo Zhao'
+      }).addTo(mymap);
 
 
-        if (na > 0) { //only display info icon when there's change
-          document.getElementById("counticon").style.display = "initial";
-          $(".active-new-count").text("+" + na.toLocaleString());
-        } else if (na < 0) {
-          document.getElementById("counticon").style.display = "initial";
-          $(".active-new-count").text("" + na.toLocaleString());
-        } else if (na == 0) {
-          document.getElementById("counticon").style.display = "none";
-          $(".active-new-count").text("")
-        } else {
-          document.getElementById("counticon").style.display = "none";
-          $(".active-new-count").text(na.toLocaleString());
-        }
 
-        //add ",CHINA" to every provinces in China
-        if (datasets[6]["columns"].includes(name)) { //add ",CHINA" to every provinces in China
-          $("#placename").text(name.toUpperCase() + ", CHINA");
-          if (name == "taiwan") {
-            $("#placename").text("Taiwan");
-          }
-          if (name == "hongkong") {
-            $("#placename").text("Hong Kong");
-          }
-          if (name == "macau") {
-            $("#placename").text("Macau");
-          }
-
-        } else {
-          $("#placename").text(name.toUpperCase());
-        }
-
-        //add reference source for each place
-        if (datasets[4]["columns"].includes(name)) {
-          $("#source-website").html( //Unisted states
-            '<a target="_blank" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/"> WHO</a>, <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/cases-in-us.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fcases-in-us.html">CDC</a>, <a target="_blank" href="https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html">New York Times</a>, and <a target="_blank" href="https://www.nbcnews.com/health/health-news/coronavirus-u-s-map-where-virus-has-been-confirmed-across-n1124546">NBC News</a>.'
-          );
-        } else if (datasets[5]["columns"].includes(name)) { //Canada
-          $("#source-website").html('<a target="_blank" href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html">Public Health Agency of Canada.</a>');
-        } else if (datasets[6]["columns"].includes(name)) { //China
-          $("#source-website").html(
-            '<a target="_blank" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/"> WHO</a>, <a target="_blank" href="http://www.nhc.gov.cn/xcs/xxgzbd/gzbd_index.shtml">China CDC</a>, and <a target="_blank" href="https://voice.baidu.com/act/newpneumonia/newpneumonia">Baidu</a>.'
-          );
-        } else if (name == "Global Trend") { //global
-          $("#source-website").html(
-            '<a target="_blank" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/"> WHO</a>, <a target="_blank" href="https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html">New York Times</a>, <a target="_blank" href="https://www.nbcnews.com/health/health-news/coronavirus-u-s-map-where-virus-has-been-confirmed-across-n1124546">NBC News</a>, <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/cases-in-us.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fcases-in-us.html">CDC</a>, <a target="_blank" href="https://voice.baidu.com/act/newpneumonia/newpneumonia">Baidu</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic">Wikipedia</a>, and etc.'
-          );
-        } else if (name == "japan") { //japan
-          $("#source-website").html(
-            '<a target="_blank" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/"> WHO</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic">Wikipedia</a>, and <a target="_blank" href="https://voice.baidu.com/act/newpneumonia/newpneumonia">Baidu</a>. The discrepancy on the data in Japan between March 11th and March 12th comes from the disagreement of whether to include cases from the Princess Diamond cruise.'
-          );
-        } else { //Other countries
-          $("#source-website").html(
-            '<a target="_blank" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports/"> WHO</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic">Wikipedia</a>, and <a target="_blank" href="https://voice.baidu.com/act/newpneumonia/newpneumonia">Baidu</a>.'
-          );
-        }
-      }
-
-
-      //this function take a place name, return a color that fills the place area on the maps
-      //the color is based on the number of active confirmed case
-      function setColor(enname) {
+      function setColor(density) {
         var id = 0;
-        var pop = datasets[0][datasets[0].length - 1][enname];
-
-        if (pop != undefined) {
-          pop = +pop.toString().split("-")[0] - +pop.toString().split("-")[2] - +pop.toString().split("-")[3]; // remaining confirmed
-        } else {
-          pop = 0;
-          // return "#00000000";
-        }
-
-        if (pop >= 50000) {
-          id = 5;
-        } else if (pop > 10000 && pop <= 50000) {
+        if (density > 18) {
           id = 4;
-        } else if (pop > 5000 && pop <= 10000) {
+        } else if (density > 13 && density <= 18) {
           id = 3;
-        } else if (pop > 1000 && pop <= 5000) {
+        } else if (density > 10 && density <= 13) {
           id = 2;
-        } else if (pop > 100 && pop <= 1000) {
+        } else if (density > 5 && density <= 10) {
           id = 1;
-        } else if (pop > 0 && pop <= 100) {
-          id = 0;
         } else {
-          id = -1;
-          return "#00000000";
+          id = 0;
         }
-
         return colors[id];
-
       }
 
+
+      function style(feature) {
+        return {
+          fillColor: setColor(feature.properties.CT_CNT),
+          fillOpacity: 0.4,
+          weight: 3,
+          opacity: 1,
+          color: '#b4b4b4',
+          dashArray: '2'
+        };
+      }
 
       //this function works when there's a click on the map
       //will highlight the layer that the mouse clicked
@@ -371,162 +208,136 @@
           fillColor: '#00ffd9',
           fillOpacity: 0.1
         });
-        // bring the layer to the front.
-        layer.bringToFront();
-        if (e.target.feature.properties.enname == "us" || e.target.feature.properties.enname == "canada") {
-          layer.bringToBack();
-        }
       }
 
-      // 3.2.2 zoom to the highlighted feature when the mouse is clicking onto it.
-      function zoomToFeature(e) {
-        // mymap.fitBounds(e.target.getBounds());
+      function clickFeature(e) {
         L.DomEvent.stopPropagation(e);
-        $("#hint").text("Click here to the global trend.");
-        displayPlace(e.target.feature.properties.enname)
+        // $("#hint").text("Click here to the global trend.");
+        displayPlace(e.target.feature.properties.NAME)
       }
 
       // 3.2.3 reset the hightlighted feature when the mouse is out of its region.
       function resetHighlight(e) {
-        areas.resetStyle(e.target);
-
+        countiesLayer.resetStyle(e.target);
       }
 
       // 3.3 add these event the layer obejct.
       function onEachFeature(feature, layer) {
         layer.on({
           mouseover: highlightFeature,
-          click: zoomToFeature,
+          click: clickFeature,
           mouseout: resetHighlight
         });
       }
 
-      var areas = new L.TopoJSON(datasets[1], {
+      countiesLayer = L.geoJSON(datasets[1], {
         style: style,
         onEachFeature: onEachFeature
       }).addTo(mymap);
 
+      function displayPlace(name) {
+        $(".placename").text(name + " COUNTY");
+        $(".county-count").text(counties[name]);
+      }
 
-      //when click on the tag with "hint" class, the info panel will display global information
-      $("#hint").on("click", function() {
-
-        showPlace("Global Trend");
-        // calCounts(global);
-        chart.load({
-          columns: [places["Global Trend"].c, places["Global Trend"].d],
-          unload: ['Aggr. Confirmed', 'Death'],
-        });
-
-        $("#hint").text("Click a place to review local trend.");
-
-      });
 
       mymap.on('click', onMapClick);
 
       function onMapClick(e) {
-        $("#hint").click();
+        $(".placename").text("OREGON");
+        $(".county-count").text("N/A");
       }
 
 
+      datasets[1].features.forEach(function(d) {
+        counties[d.properties.NAME] = d.properties.CT_CNT;
+      })
 
-      places["Global Trend"] = calPlace("Global Trend");
-      showPlace("Global Trend");
 
-      //this set the style for the linechart displayed in info panel
-      chart = c3.generate({
+      // this function take a dictionary, return a dictionary that sorted by the number of cell towers.
+      function sortJsObject(obj) {
+        items = Object.keys(obj).map(function(key) {
+          return [key, obj[key]];
+        });
+        items.sort(function(first, second) {
+          return second[1] - first[1];
+        });
+        sorted_obj = {}
+        $.each(items, function(k, v) {
+          use_key = v[0]
+          use_value = v[1]
+          sorted_obj[use_key] = use_value
+        })
+        return (sorted_obj)
+      }
+
+      counties_sorted = sortJsObject(counties);
+
+      x = Object.keys(counties_sorted).slice(0, 10);
+      x.reverse();
+      x.push("county");
+      x.reverse();
+
+      y = Object.values(counties_sorted).slice(0, 10);
+      y.reverse();
+      y.push("#");
+      y.reverse();
+
+      rchart = c3.generate({
         size: {
           height: 350,
           width: 460
         },
         data: {
-          x: "t",
-          y: "confirmed",
-          columns: [places["Global Trend"].t, places["Global Trend"].c, places["Global Trend"].d],
-          type: 'line',
-          axes: {
-            confirmed: 'y'
-          },
-          colors: {
-            'Aggr. Confirmed': '#dc3545',
-            // Suspected: 'orange',
-            //'Active Confirmed': 'orange',
-            //'Recovered': '#28a745',
-            'Death': 'SlateBlue'
+          x: 'county',
+          columns: [
+            x, y
+          ],
+          type: 'bar',
+          // onmouseover: function(d) {
+          //   displayPlace(x[d.x + 1]);
+          // },
+          onclick: function(d) {
+            var countyName = x[d.x + 1];
+            displayPlace(countyName);
+
+            datasets[1].features.forEach(function(t) {
+              var a = 2;
+              if (t.properties.NAME == countyName) {
+                countybound = L.geoJSON(t)
+                 mymap.fitBounds(countybound.getBounds());
+                 maymap.setZoom(16);
+              }
+            }) ;
+
           }
-        },
-        zoom: {
-          enabled: true,
-          type: "scroll"
         },
         axis: {
           x: {
-            type: "timeseries",
+            type: 'category',
             tick: {
-              format: "%b %d",
-              centered: true,
-              fit: true,
-              count: 8
+              rotate: -60,
+              multiline: false
             }
           },
           y: {
             label: {
-              text: 'Cases',
+              text: '#',
               position: 'outer-middle'
             },
-            min: 0,
-            padding: {
-              bottom: 0
-            },
             tick: {
-              format: d3locale.format(",")
+              values: [5, 10, 15, 20, 25, 30]
             },
-            type: 'linear'
           }
-        },
-        point: {
-          r: 3,
-          focus: {
-            expand: {
-              r: 5
-            }
-          }
-        },
-        tooltip: {
-          linked: true,
         },
         legend: {
-          position: 'inset',
-          inset: {
-            anchor: "top-left",
-            y: 0,
-            step: 20
-          },
+          show: false
         },
-        bindto: "#total-chart"
+        bindto: "#county-chart"
       });
 
 
-      //this funtion take a place's name and load the linechart with that place's data
-      function displayPlace(name) {
-        places[name] = calPlace(name);
-        showPlace(name);
-
-        chart.load({
-          columns: [places[name].c, places[name].d],
-          unload: ['Aggr. Confirmed', 'Death'],
-        });
-
-      }
-
-
-      $(".leaflet-control-attribution")
-        .css("background-color", "transparent")
-        .html("");
-
-
     });
-
-
   </script>
 </body>
 
