@@ -22,7 +22,7 @@ You are expected to write a essay to analyze a digital-geography-related project
   - critique its overalll UI/UX and Web Mapping design if it has.
 - describe the basemap, the thematic layer and the interactive features if it has.
 - list any web map element in use (e.g, scalar bar, north arrow, legend, etc.) if it has.
-- analyze the stregths and weekness of the examined project.
+- analyze the strengths and weakness of the examined project.
 - disucss anything else you feel worthy to share.
 - reflect upon this project with some social theories, such as digital divide, power relationship, surveillance and/or resistance.
 
