@@ -194,33 +194,25 @@ Make sure the QuickMapServices plugin is installed. Check this by clicking on th
 
 ### 3.2 Tile Server
 
-We now want to add our bucket from Google Cloud to the Tile Server. To do this open the browser panel in QGIS. Scroll Down to the **'Tile Server'**, right click, and click **'New Connection'**. A pop-up window should appear.
+We now want to add our original basemap created using MapBox studio to the Tile Server. Refer back to Tuesday's lecture if you need a guide to make your own MapBox basemap. After creating your own basemap, open the browser panel in QGIS. Scroll Down to the **'WMS/WMTS'**, right click, and click **'New Connection'**. A pop-up window should appear.
 
-In order to enter the tile layer we will navigate back to our bucket in Google cloud. Open the bucket. We need to open the index.html file, which is the last item in the bucket. Click index.html.
+Here, you can make a new connection to basemaps by providing the URL. In order to obtain the URL to your mapbox basemap, click `share` located next to your map on MapBox Studio:
 
-A new tab opens with a map and the tiles generated from GEE. Click on the settings in the upper right (3 vertical dots). Click **'More tools'**. Then click **'Developer tools'**.
+![](img/mapbox_url.png)
 
-We need to open the source code. To do this make sure the source tab is selected and open the index.html so we can look at the code.
+Make sure you pick Third party option and copy the Integration URL like the example above. After establishing the connection, you should be able to add your basemap by double-clicking the newly created connection.
 
-Add your tiles by right clicking the tile server, in the example here we would right click the **'eetest'**, and select add layer to add it to our map.
+### 3.3 Canvas Extent
 
-### 3.3 View Tiles
+Zoom into your tiles so that they fill most of the canvas space. The canvas is the extent we will use to generate QMetaTiles.
 
-Add a base map and zoom on the base map to you tile location. The **'zoom to layer'** function will not work on the tiles. Make sure you turn the base map off once you have located your tiles.
+### 3.4 Tile Server to QMetaTiles
 
-### 3.4 Canvas Extent
+Now we need to take out tiles from MapBox and generate QMetaTiles.
 
-Zoom into your tiles so that they fill most of the canvas space, see image below. The canvas is the extent we will use to generate QMetaTiles.
+Click the Plugins drop down, hover over QMetaTiles to open the menu and select QMetaTiles. The QMetaTiles screen pops up.  Name the directory where you want to save your QMetaTiles and provide a name for the Tileset. Select Canvas Extent and Zoom levels. In the Parameters make the **'Background transparency'** clear by changing the value to zero and make sure to select **'Write Leaflet-based viewer'**. Click Ok.
 
-### 3.5 Tile Server to QMetaTiles
-
-Now we need to take out tiles from Google Cloud and generate QMetaTiles.
-
-The raster you are working with needs to occupies the extent of the canvas (area of visualization in Qgis). Zoom in or out as needed.
-
-Click the Plugins drop down, hover over QMetaTiles to open the menu and select QMetaTiles. The QMetaTiles screen pops up.  Name the directory where you want to save your QMetaTiles and provide a name for the Tileset. Select Canvas Extent and Zoom levels. In the Parameters make the **'Background transparency'** clear by changing the value to zero and make sure to select **'Write Leaflet-based viewer'**. Click Run.
-
-![QMetaTiles](img/qmetatiles_to_leaflet.JPG)
+![QMetaTiles](img/qmetatiles_to_leaflet.png)
 
 > Note: the runtime is dependent on the size and number of zoom levels.
 
@@ -228,7 +220,7 @@ The file directory will contain your QMetaTiles and an HTML document that can be
 
 Additional help with QMetaTiles can be found **[here](http://felix.rohrba.ch/en/2017/easily-add-tilemap-layers-qgis/)**.
 
-### 3.6 Navigate to QMetaTiles folder
+### 3.5 Navigate to QMetaTiles folder
 
 Navigate to the output file after QMetaTiles finishes running. In this folder will be your sub folders of tiles arranged by zoom level and an html document, in this example it is called eetest.html.
 
@@ -264,7 +256,7 @@ var mytile =L.tileLayer('assets/tiles/{z}/{x}/{y}.png', {
 
 ![leafletmap](img/qmetatiles.jpg)
 
-Here is what the final output looks like **[here](http://jakobzhao.github.io/geog458/labs/lab04/index.html)**
+Here is what the final output looks like **[here](http://jakobzhao.github.io/geog458/labs/lab04/index.html)**, but you are not required to include any data points for your deliverable.
 
 ## 5 Deliverable
 
@@ -284,8 +276,8 @@ You are expected to generate a tile set for an geographic area you are intereste
 [your_repository_name]
     │readme.md
     │index.html
-    ├─assets
-    │      [tile set name]
+    ├─tiles
+    │      [tile sets]
     │         XXX
     │         XXX
 ```
