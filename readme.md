@@ -10,6 +10,9 @@
 
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
 >
+> **Updates (5/7/2020):**
+>
+> -  [mid-term clarifications](assets/midterm-clarification.docx)
 > **Updates (5/3/2020):**
 >
 > -  the guidelines for [final project](project/project.md) and [essay](project/essay.md) have released.
@@ -106,7 +109,7 @@ You will make your first web map in this week using a popular web mapping librar
 
 -   **Lecture Notes:** Multimedia, Full Page, Icon, and other resources
 -   **Readings:** [Map-based visual Storytelling: An Assessment of emerging genres and tropes `Chapter 1,2 and 5`.](https://drive.google.com/file/d/133s4dxoRaT1A7OckBapS6e9Yxh_wQc9d/view?usp=sharing)
--   **Final Project:** [An integrative project on digital geographies](labs/lab05)
+<!-- -   **Final Project:** [An integrative project on digital geographies](labs/lab05) -->
 -   **In-class Discussion:** a) Storymap A led by `Group 6` on `Tuesday`, b) Storymap B led by `Group 8` on `Thursday`.
 -   **Examples:** [#Stand with StandingRock](https://jakobzhao.github.io/standwithstandingrock/)
 
