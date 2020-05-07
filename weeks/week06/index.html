@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,14 +11,14 @@
   <link rel="stylesheet" href="css/mobile.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web|Oswald" rel="stylesheet">
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
   <script src="js/d3.js"></script>
   <script src="js/c3.min.js"></script>
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
   <script src="js/chroma.min.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/simplebar.min.js"></script>
+  <!-- <script src="js/simplebar.min.js"></script> -->
 </head>
 
 <body>
@@ -125,7 +124,8 @@
     //load all datasets through d3 and store them in an array
     Promise.all([
       d3.json("assets/cell_towers.geojson"),
-      d3.json("assets/counties.geojson")
+      d3.json("assets/counties.geojson"),
+      d3.csv("assets/sample.csv")
     ]).then(function(datasets) {
 
       cellTowersLayer = L.geoJSON(datasets[0], {
@@ -196,8 +196,8 @@
       //will highlight the layer that the mouse clicked
       function highlightFeature(e) {
         // e indicates the current event
-        var layer = e.target; //the target capture the object which the event associates with
-        layer.setStyle({
+        var feature = e.target; //the target capture the object which the event associates with
+        feature.setStyle({
           weight: 2,
           opacity: 0.8,
           color: '#e3e3e3',
