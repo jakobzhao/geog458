@@ -13,6 +13,7 @@
 > **Updates (5/7/2020):**
 >
 > -  [mid-term clarifications](assets/midterm-clarification.docx)
+>
 > **Updates (5/3/2020):**
 >
 > -  the guidelines for [final project](project/project.md) and [essay](project/essay.md) have released.
@@ -108,10 +109,10 @@ You will make your first web map in this week using a popular web mapping librar
 ### Week 7: Geo-Narratives
 
 -   **Lecture Notes:** Multimedia, Full Page, Icon, and other resources
--   **Readings:** [Map-based visual Storytelling: An Assessment of emerging genres and tropes `Chapter 1,2 and 5`.](https://drive.google.com/file/d/133s4dxoRaT1A7OckBapS6e9Yxh_wQc9d/view?usp=sharing)
-<!-- -   **Final Project:** [An integrative project on digital geographies](labs/lab05) -->
--   **In-class Discussion:** a) Storymap A led by `Group 6` on `Tuesday`, b) Storymap B led by `Group 8` on `Thursday`.
--   **Examples:** [#Stand with StandingRock](https://jakobzhao.github.io/standwithstandingrock/)
+-   **Readings:** [Storymap.js](https://github.com/jakobzhao/storymap), [Map-based visual Storytelling: An Assessment of emerging genres and tropes `Chapter 1,2 and 5`.](https://drive.google.com/file/d/133s4dxoRaT1A7OckBapS6e9Yxh_wQc9d/view?usp=sharing)
+-   **In-class Discussion:** a) Storymap A led by `Group 6` on `Tuesday`, b) Storymap B led by `Group 8` on `Thursday`. -   **In-class Discussion:** a) Web Map A by `Group 3` on  `Tuesday` , b) Web Map B by `Group 4` on `Thursday`. Each group will need to pick any online web map you feel interested in and then introduce this web map to the class. Each group are expected to (1) describe the functions and the targeted audience of this web map; (2) discuss the possible system architecture (you might want to refer to the system architecture diagram which is introduced in week 2); (3) analyze the codes. You are expected to open up the Chrome inspector, and introduce the libraries, the network flow, the major visual components and possibliy their functioons, etc; (4) The stregths and weekness about this web map, especially the map design. Please recall the map critique you did in the prerequisite class `geog 360` - what are the visual stratgies, the use of visual hierechy, and so on; (5) do you think the interactive map is an appropriate strategy for the examinedd topic? If yes, why? If not, what else would be better? e.g., an interactive chart, or a static infographics? (6) anything else you feel worthy to share with the classmates. Overall, the in-class disucssion will be in approximately 30 minutes. After the group presentation, a following Q&A will be organized.
+-
+-   **Examples:** [#Stand with StandingRock](https://jakobzhao.github.io/standwithstandingrock/), [Oregon Waters](http://oregonwater.info/atlas.html)
 
 ### Week 8: Emerging topics
 
