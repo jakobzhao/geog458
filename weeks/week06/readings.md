@@ -35,8 +35,11 @@
 
 - Bootstrap 4 Themes
 
+[2] C3.js get-started and examples https://c3js.org/examples.html and https://c3js.org/gettingstarted.html
 
-[2] Gregor Aisch, 201X chroma.js Tutorial, retrieved December 20, 2016 from http://gka.github.io/chroma.js/
+### Optional:
+
+[3] Gregor Aisch, 201X chroma.js Tutorial, retrieved December 20, 2016 from http://gka.github.io/chroma.js/
 
 - Quick-start
 - chroma.brewer
@@ -45,12 +48,11 @@
 - Lab/Lch interpolation
 
 
-[3] Google 201X Get Started with the Google Fonts API retrieved April 20, 2018 from  https://developers.google.com/fonts/docs/getting_started
+[4] Google 201X Get Started with the Google Fonts API retrieved April 20, 2018 from  https://developers.google.com/fonts/docs/getting_started
 
-### Optional:
 
-[4] Gregor Aisch, 2011, How To Avoid Equidistant HSV Colors  retrieved April 14, 2017 from https://www.vis4.net/blog/2011/12/avoid-equidistant-hsv-colors/
+[5] Gregor Aisch, 2011, How To Avoid Equidistant HSV Colors  retrieved April 14, 2017 from https://www.vis4.net/blog/2011/12/avoid-equidistant-hsv-colors/
 
-[5] http://tools.medialab.sciences-po.fr/iwanthue/
+[6] http://tools.medialab.sciences-po.fr/iwanthue/
 
-[6] All other concepts in the Bootstrap 4 Tutorial from W3Schools.
+[7] All other concepts in the Bootstrap 4 Tutorial from W3Schools.
