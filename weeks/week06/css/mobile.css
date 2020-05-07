@@ -1,7 +1,6 @@
 /* Mobile devices */
 @media only screen and (max-width: 1026px) {
 
-
   #info,.card-deck,  #footer,  #title>span {
     visibility: hidden !important;
   }
