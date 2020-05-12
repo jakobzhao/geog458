@@ -126,6 +126,8 @@
       d3.csv("assets/sample.csv")
     ]).then(function(datasets) {
 
+      //assign id to icon that has different company name
+      //based on the id, the icon will assigned a color
       cellTowersLayer = L.geoJSON(datasets[0], {
         onEachFeature: function(feature, layer) {
           layer.bindPopup(feature.properties.company);
@@ -161,7 +163,8 @@
       }).addTo(mymap);
 
 
-
+      //accept an density(integer) as parameterr, based on the density of the tower
+      //the function will return a color that will bed used as background color
       function setColor(density) {
         var id = 0;
         if (density > 18) {
@@ -178,7 +181,9 @@
         return colors[id];
       }
 
-
+      //accept a feautre/an area as parameterr
+      // call the setColor peature to set the background based on the density of the tower
+      //set other styles: opacity, weight, border color, border opacity...
       function style(feature) {
         return {
           fillColor: setColor(feature.properties.CT_CNT),
@@ -229,6 +234,7 @@
         onEachFeature: onEachFeature
       }).addTo(mymap);
 
+      //display the onclick feature's name to the tag with class 'placename' and 'county-count'on dashboard
       function displayPlace(name) {
         $(".placename").text(name + " COUNTY");
         $(".county-count").text(counties[name]);
@@ -237,12 +243,14 @@
 
       mymap.on('click', onMapClick);
 
+      //while click on the map, it will set the placename and county-count to defaulr 'oregon N/A'
       function onMapClick(e) {
         $(".placename").text("OREGON");
         $(".county-count").text("N/A");
       }
 
-
+      //add the county name as key and the number of cell tower as values
+      //in a dictionary declared before
       datasets[1].features.forEach(function(d) {
         counties[d.properties.NAME] = d.properties.CT_CNT;
       })
@@ -267,17 +275,19 @@
 
       counties_sorted = sortJsObject(counties);
 
+      //store the key(county name) of the dictionary into an array
       x = Object.keys(counties_sorted).slice(0, 10);
       x.reverse();
       x.push("county");
       x.reverse();
 
+      //store the value(count of cell tower) of the dictionary into an array
       y = Object.values(counties_sorted).slice(0, 10);
       y.reverse();
       y.push("#");
       y.reverse();
 
-
+      //generate the chart
       rchart = c3.generate({
         size: {
           height: 350,
@@ -288,7 +298,7 @@
           columns: [
             x, y
           ],
-          type: 'bar',
+          type: 'bar', //a bar chart
           // onmouseover: function(d) {
           //   displayPlace(x[d.x + 1]);
           // },
@@ -307,14 +317,14 @@
           }
         },
         axis: {
-          x: {
+          x: { //county
             type: 'category',
             tick: {
               rotate: -60,
               multiline: false
             }
           },
-          y: {
+          y: { //count
             tick: {
               values: [5, 10, 15, 20, 25, 30]
             },
@@ -323,7 +333,7 @@
         legend: {
           show: false
         },
-        bindto: "#county-chart"
+        bindto: "#county-chart" //dispay in the element with "county-chart" id
       });
 
 
