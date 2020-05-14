@@ -108,7 +108,7 @@ You will make your first web map in this week using a popular web mapping librar
 
 ### Week 7: Geo-Narratives
 
--   **Lecture Notes:** [Video](assets/video.md), [Image](assets/image.md), [Favicon](favicon.md), [Icon](assets/icon.md), [Web Fonts](assets/fonts.md), and other resources.
+-   **Lecture Notes:** [Video](assets/video.md), [Image](assets/image.md), [Favicon](assets/favicon.md), [Icon](assets/icon.md), [Web Fonts](assets/fonts.md), and other resources.
 -   **Readings:** [Storymap.js](https://github.com/jakobzhao/storymap), [Map-based visual Storytelling: An Assessment of emerging genres and tropes `Chapter 1,2 and 5`.](https://drive.google.com/file/d/133s4dxoRaT1A7OckBapS6e9Yxh_wQc9d/view?usp=sharing)
 -   **In-class Discussion:** a) Storymap A led by `Group 6` on `Tuesday`, b) Storymap B led by `Group 8` on `Thursday`.
 -   **Examples:** [#Stand with StandingRock](https://jakobzhao.github.io/standwithstandingrock/), [Oregon Waters](http://oregonwater.info/atlas.html)
