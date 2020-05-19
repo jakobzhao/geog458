@@ -11,7 +11,7 @@
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
 >
 > **Updates (5/19/2020):**
->
+> - storymap template: https://github.com/jakobzhao/storymap-test
 > -  mid-term score has been adjusted.
 > -  please evaluate this course by filling the course evaluation survey `evaluation open period: Wednesday (5/20) 12am to Friday (6/5) 12am`
 >
@@ -116,7 +116,7 @@ You will make your first web map in this week using a popular web mapping librar
 -   **Lecture Notes:** [Video](assets/video.md), [Image](assets/image.md), [Favicon](assets/favicon.md), [Icon](assets/icon.md), [Web Fonts](assets/fonts.md), and other resources.
 -   **Readings:** [Storymap.js](https://github.com/jakobzhao/storymap), [Map-based visual Storytelling: An Assessment of emerging genres and tropes `Chapter 1,2 and 5`.](https://drive.google.com/file/d/133s4dxoRaT1A7OckBapS6e9Yxh_wQc9d/view?usp=sharing)
 -   **In-class Discussion:** a) Storymap A led by `Group 6` on `Tuesday`, b) Storymap B led by `Group 8` on `Thursday`.
--   **Examples:** [#Stand with StandingRock](https://jakobzhao.github.io/standwithstandingrock/), [Oregon Waters](http://oregonwater.info/atlas.html)
+-   **Examples:** [#Stand with StandingRock](https://jakobzhao.github.io/standwithstandingrock/), [Oregon Waters](http://oregonwater.info/atlas.html), [storymap template](https://github.com/jakobzhao/storymap-test)
 > **Notes for the in-class discussion:** Each group will need to pick any online dynamic geo-narrative you feel interested in and then introduce it to the class. Each group are expected to (1) describe the functions and the (intended) targeted audience; (2) describe the storyline, Genres, tropes as well as other things you want to share with the studnets (please refer to this week's requried reading); (3) analyze the codes. You are expected to open up the Chrome inspector, and introduce the libraries, the network flow, the major visual components and possibliy their functioons, etc; (4) The stregths and weekness about this geo-narrative, especially the map design. Please recall the map critique you did in the prerequisite class `geog 360` - what are the visual stratgies, the use of visual hierechy, and so on; (5) do you think the geo-narrative is an appropriate strategy for the examinedd topic? If yes, why? If not, what else would be better? e.g., an interactive chart, or a static infographics? (6) anything else you feel worthy to share with the classmates. Overall, the in-class disucssion will be in approximately 30 minutes. After the group presentation, a following Q&A will be organized.
 -   **Final Project:**  1) [data table](assets/datatable.md) -  [`geosaptial data collection`](https://guides.lib.uw.edu/research/gis/data_sites), 2) [sketch](assets/sketch.md), 3) design scheme, and (4) coding!
 
