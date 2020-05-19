@@ -24,7 +24,7 @@ During the final presentation, each student will need to share some constructive
 
 ## 4\. Submission
 
-To submit your final project, you will need to share the url link of your final project's github repository to a dedicated final project submission tab on Canvas **by the end of Week 11**.
+To submit your final project, you will need to share the url link of your final project's github repository to a dedicated final project submission tab on Canvas **Week 11** - on Friday(June 12) by 11:59pm.
 
 
 >  **Note:** The requirements to the essay may be slightly changed according the progress of this course. The final requirements are subject to the instructor's notification.
