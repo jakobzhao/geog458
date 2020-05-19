@@ -12,7 +12,8 @@
 >
 > **Updates (5/19/2020):**
 >
-> mid-term score has been adjusted.
+> -  mid-term score has been adjusted.
+> -  please evaluate this course by filling the course evaluation survey `evaluation open period: Wednesday (5/20) 12am to Friday (6/5) 12am`
 >
 > **Updates (5/7/2020):**
 >
