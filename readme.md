@@ -10,6 +10,10 @@
 
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
 >
+> **Updates (5/19/2020):**
+>
+> mid-term score has been adjusted.
+>
 > **Updates (5/7/2020):**
 >
 > -  [mid-term clarifications](assets/midterm-clarification.docx)
