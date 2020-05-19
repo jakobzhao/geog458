@@ -127,6 +127,7 @@ This week will focus on two emerging topics related to digital geographies, incl
 -   **Lecture Notes:** [Point Cloud visualization](https://jakobzhao.github.io/sfm/index.html) and [Real-time environmental data visualization](weeks/week08/rpi-iot).
 -   **Readings:** [Real-time GIS](https://drive.google.com/file/d/1COD2OYBxEJThG5Lfx7-nzV0EGtGedndT/view?usp=sharing) and [Panopticon](https://drive.google.com/file/d/156fk11L9JFzsyV_9TRi9_c15MSIPCiL6/view?usp=sharing)
 -   **In-class Discussion:** a) Point Cloud Visulization led by `Group 1` on `Tuesday`, b) Discussion on the paper about Panopticon led by `Group 7` on `Thursday`.
+-  **Extending reading:** [Fake Geography](https://geoconnexion.com/downloads/import-int_v17i01-018-019-OnLocation.pdf) and [fake obstacles](https://news.engin.umich.edu/2019/09/new-attack-on-autonomous-vehicle-sensors-creates-fake-obstacles/).
 
 ### Week 9 & 10: Project studio
 
