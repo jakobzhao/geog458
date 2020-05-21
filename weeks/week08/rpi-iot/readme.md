@@ -318,6 +318,8 @@ After a few moments of initializing, a window will appear showing the webcam fee
 ![Object Detection Example](img/object_detection.png)
 _Image Credit: Gilbert Tanner(Live Object Detection with the Tensorflow Object Detection API)_
 
+watach this [youtube video](https://www.youtube.com/watch?v=aimSGOAUI8Y) to see the performance of tensorflow light on RPI
+
 
 ## 5. References
 
