@@ -6,7 +6,7 @@
 
 **Office Hour:** Tuesdays 1:00 to 3:00 PM PST or by appointment on [Zoom #: 181944813](https://washington.zoom.us/j/181944813)
 
-> This lecture note is modified from a [github repository](https://github.com/jakobzhao/rpi-iot/blob/master/pe.md) written by Bo Zhao and Angel Lin.
+> This lecture note is modified from a [github repository](https://github.com/jakobzhao/rpi-iot/blob/master/pe.md) written by Angel Lin and Bo Zhao.
 
 This practical exercise includes six sections:
 - PART 1: Preparation
