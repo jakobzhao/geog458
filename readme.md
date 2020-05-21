@@ -11,8 +11,8 @@
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
 >
 > **Updates (5/19/2020):**
-> - [Final project](project/project.md) `Due: Friday (June 5) by 11:59pm` 
-> - [Essay](project/essay.md) `Due: Friday (June 12) by 11:59pm` 
+> - [Final project](project/project.md) `Due: Friday (June 12) by 11:59pm` 
+> - [Essay](project/essay.md) `Due: Friday (June 5) by 11:59pm` 
 > - storymap template: https://github.com/jakobzhao/storymap-test
 > -  mid-term score has been adjusted.
 > -  please evaluate this course by filling the course evaluation survey `evaluation open period: Wednesday (5/20) 12am to Friday (6/5) 12am`
