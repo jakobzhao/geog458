@@ -176,7 +176,7 @@ This course targets students who have a background in fundamental geographic inf
 | Final  project                       | 20% |
 | Essay                                | 10% |
 
-> The item on **_constructive contribution to class_** includes your participation to the class (e.g., self-intruction, answer questions in class, etc/) and/or your response on github issues (ask questions via GitHub issue,and help your classmates using github issues).
+> The item on **_constructive contribution to class_** includes your participation in the class (e.g., self-introduction, answer questions in class, etc/) and/or your response on github issues (ask questions via GitHub issue,and help your classmates using github issues).
 
 ## :book: Copyright
 
