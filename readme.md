@@ -342,6 +342,19 @@ This week will focus on two emerging topics related to digital geographies, incl
 
 During these two weeks, each group will focusing on their final projects. The instructors are avaiable during the office hour, the normal lecture period to help with each group on their final projects.
 
+-   **Additional Resources** 
+
+**Below is a list of recent or forthcoming books/reports suggested for future reading, these books are meant to encourage critical reflection on this course, the nature of digital geographies, and the connections between geospatial research, technology and society.**
+
+-   [Changing Digital Geographies - Technologies, Environments and People: JESSICA MCLEAN, 2020](Print Book)
+-   [Counterpoints: An Atlas of Displacement and Resistance: Anti-Eviction Mapping Project (AEMP), forthcoming](Print Book) 
+-   [Stones That Calculate: Collection of resources about post-digital materiality: VARIOUS AUTHORS, 2020](https://stones.computer/)
+-   [Machine Landscapes Architectures of the Post-Anthropocene: ARCHITECTURAL DESIGN, 2019](https://monoskop.org/images/0/0a/Architectural_Design_89_1_Machine_Landscapes_Architectures_of_the_Post-Anthropocene_2019.pdf)
+-   [Automating Inequality: How High-Tech Tools Profile, Police, and Punish the Poor: VIRGINIA EUBANKS, 2018](Print Book)
+-   [A Vision of Community Powered Tech - Report & Toolkit: RACHEL COLDICUTT, 2020](https://glimmersreport.net/report)
+-   [Too Smart: How Digital Capitalism is Extracting Data, Controlling Our Lives, and Taking Over the World: JATHAN SADOWSKI, 2020](Print Book) 
+-   [Slow Computing: Why We Need Balanced Digital Lives: FRASER & KITCHIN, 2020](Print Book) 
+
 ### Week 11: Final ~~collaborative~~ project presentations
 
 Durint the last two meeting sessions, each group will present their final projects. More information about final project will be shared afer the mid-term.
