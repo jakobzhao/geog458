@@ -78,7 +78,24 @@ This week’s lecture and lab will prepare you for the course, and provide a the
 -   **Readings:** a) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_), b) [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
 -   **Lab 1:** [Project management using GitHub](labs/lab01) `Due: April 9th, by 11:59pm`
 
--   **Extending Readings:** [the world after coronavirus](https://www.ft.com/content/19d90308-6858-11ea-a3c9-1fe6fedcca75?from=timeline&isappinstalled=0)
+**Extended Readings:**
+
+(*) denotes that this article should be skimmed before class
+
+*Topic: the internet - materiality, structure, & power* 
+
+-   (*) [Critical Atlas of the Internet:  LOUISE DRULHE, 2015](https://louisedrulhe.fr/internet-atlas/)
+-   (*) [Google Is Not God of The Web: DAVID BLUE, 2020](https://bilge.world/google-page-experience)
+
+*Topic: digital humanities, mapping & activism (theory + praxis)*
+
+-   [The Digital Humanities, American Studies, and the Anti-Eviction Mapping Project: ERIN MCELROY, 2018 ](https://drive.google.com/file/d/1bS5iI0jmQaGLtMk0k2sQUghvYpJsSH-a/view?usp=sharing)
+
+*Topic: community tech*
+
+-   [DIY Internet Network in NYC: KARL BODE, 2019](https://www.vice.com/en_us/article/paj8z8/a-diy-internet-network-has-drastically-expanded-its-coverage-in-nyc)
+-   (*) [Building the People’s Internet: GRETA BYRUM, 2019](https://urbanomnibus.net/2019/10/building-the-peoples-internet/)
+
 
 ### Week 2: Prorgamming fundamentals
 
@@ -87,6 +104,31 @@ This week we’ll focus on providing you all with the fundamental skill set for 
 -   **Lecture Notes:** [System architecture](weeks/week02/architecture), [intro-to-html, css](weeks/week02/html-css) and [javascript](weeks/week02/javascript), and [Jquery](weeks/week02/jquery).
 -   **Readings:** [W3School Tutorials on Html, javascript, css and jquery](weeks/week02/readings.md).
 
+**Extended Readings:**
+
+(*) denotes that this article should be skimmed before class
+
+*Topic: software - past, present & future* 
+
+-   (*) [Introducing Code/Space: KITCHIN & DODGE, 2011](https://drive.google.com/file/d/1T7ChuOnaKrgjTVhAeV_Niei2pqCWiiqK/view?usp=sharing)
+
+*Topic: race, code, bias & exposure *
+
+-   (*) [Race After Technology: Abolitionist Tools for the New Jim Code; Chapter 3 (Coded Exposure): RUHA BENJAMIN, 2019](https://drive.google.com/file/d/1ddKr5eykntv9FmZ2UxS2fIGjFeSAAotF/view?usp=sharing)
+
+*Topic: tech and racial inequity*
+
+-   [Are Robots Racist (Lecture): RUHA BENJAMIN, 2019](https://www.dropbox.com/s/j80s8kjm63erf70/Ruha%20Benjamin%20Guest%20Lecture.mp4?dl=0)
+
+*Topic: algorithmic biases, authorship & code*
+
+-   [Cloud Ethics: Algorithms and the Attributes of Ourselves and Others; Chapter 3 (The Uncertain Author): LOUISE AMOORE, 2020](https://drive.google.com/file/d/1C3925q917K7cD8-NEbw_Yik_X0oCeSfd/view?usp=sharing) 
+
+*Topic: algorithmic biases, race & tech patriarchy*
+
+-   [Algorithms of Oppression; Chapter 2: SAFIYA U. NOBLE, 2018](https://drive.google.com/file/d/1QE3A_BF3vqPL7uDsMgKwmSxrhjMGhHKN/view?usp=sharing) 
+
+
 ### Week 3: Geospatial data
 
 This week’s focus is on processing geospatial data for your digital geographies projects. We will begin by introducing the structure of the geojson format, and then look at techniques for collecting, converting and visualizing geojson objects/features in a web or desktop environment such as QGIS. After completing Lab 2, students will have learned how to collect geo-tagged tweets using specific keywords/topics (e.g., etc.), and methods for visualizing the spatial distribution of the locations for those tweets. 
@@ -94,7 +136,33 @@ This week’s focus is on processing geospatial data for your digital geographie
 -   **Lecture Notes:** [Geospatial data for digital geographies](weeks/week03/readme.md)
 -   **Readings:** a) [Can social media clear the air? A case study of the air pollution problem in Chinese cities](https://drive.google.com/open?id=1C0MTPaPnVALVemeYEfiDChUKRZfcMjz3), b) [More than you ever wanted to know about GeoJSON](weeks/week03/assets/geojson.pdf).
 -   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: April 23rd, by 11:59pm`
--   **In-class Discussion:** Discussion on the weekly paper led by `Group 2` on  `Tuesday`. The following questions are expected to cover in the discussion. What were the geospatial data?  How were they used for what purposes? What were their social implications, and how the authors analyzed the examined case (air pollution issue) by interpreting the geospatial data? Overall, the in-class disucssion will be in approximately 30 minutes. After the group presentation, a following Q&A will be organized.
+-   **In-class Discussion:** In-class Discussion: Discussion on the weekly paper led by Group 2 on Tuesday. 
+  -   The following questions are expected to be covered in the discussion: 
+  -   What were the geospatial data featured in the study? 
+  -   How were they used, and for what purposes? 
+  -   What were their social implications, and how did the authors analyze the examined case (air pollution issue) by interpreting the geospatial data? 
+      Overall, the in-class discussion will be in approximately 30 minutes. After the group presentation, we will open the floor for a Q&A 
+
+**Extended Readings:**
+
+(*) denotes that this article should be skimmed before class
+
+*Topic: “local” data - setting & context*
+
+-   All Data Are Local: YANNI ALEXANDER LOUKISSAS, 2019 - “How to analyze data settings rather than data sets, acknowledging the meaning-making power of the local.” 
+  -   [Chapter 4 - Newsworthy Algorithms](https://drive.google.com/file/d/1J_RiZfHoXVtOnUGkg5U-5lmsWfumN3BJ/view?usp=sharing)
+  -   (*) [Chapter 6 - Models of Local Practice (Praxis and Critical Knowledge](https://drive.google.com/file/d/1ex1l1RoPLBt0bey4W3UUrlQYfChQNwzt/view?usp=sharing) 
+  -   [Chapter 7 - Local Ends](https://drive.google.com/file/d/1hmRthNixJl83AXytyUbtXG6r5yyfeeLT/view?usp=sharing)
+
+*Topic: data processing and context*
+
+-   (*) [Putting Data back into Context: CATHERINE D'IGNAZIO, 2019](https://datajournalism.com/read/longreads/putting-data-back-into-context)
+
+*Topic: who collections location data and why?*
+
+-   [The Wired Guide to Personal Data Collection: LOUISE MATSAKIS, 2019](https://www.wired.com/story/wired-guide-personal-data-collection/)
+-   (*) [CBP Paid $476K for Personal Data: AARON HOLMES, 2020](https://www.businessinsider.com/cbp-venntel-contract-phone-location-data-2020-8 )
+
 
 ### Week 4: Web mapping
 
@@ -284,17 +352,17 @@ Durint the last two meeting sessions, each group will present their final projec
 
 The Student Tech Loan Program is expanding as quickly as possible. We announced this to undergrads as soon as it hit the airwaves, in hopes some of them who need hardware can reserve for spring quarter. They expect new/additional machines to arrive in April. STLP Website: <https://stlp.uw.edu/> (check the [Spring Announcement](https://drive.google.com/file/d/1qlbUBPdQFJt_jXS2fAOtORwNrBVtZqCb/view)).
 
-**GitHub:** This course material will be hosted on GitHub instead of UW Canvas. On this dedicated GitHub repository, you can find most of the course material, participate in group discussions by submitting GitHub issues, and creating new GitHub repositories to turn in the lab deliverables. By the end of this quarter, you will be more proficient in operating a cloud-based coding environment and able to host your work online as a way to gain public and peer attentions.
+**GitHub:** This course material will be hosted on GitHub instead of UW Canvas. On this dedicated GitHub repository, you can find most of the course material, participate in group discussions by submitting GitHub issues, and create new GitHub repositories to turn in the lab deliverables. By the end of this quarter, you will be more proficient in operating a cloud-based coding environment and able to host your work online as a way to gain public and peer attentions.
 
-**In-class discussion leadership:** You and your group mates will take at least  one in-class discussion. Please work together to prepare some activities and guiding questions that will inspire and structure our discussion of the material.
+**In-class discussion leadership:** You and your group mates will lead at least one in-class discussion. Please work together to prepare some activities and guiding questions that will inspire and structure our discussion of the material.
 
-**Labs:** You need to finish all five labs by the due days. In order to help you work on each lab, we will walk through most of the labs in class.
+**Labs:** You need to finish all five labs by the due date listed. In order to help you work on each lab, we will walk through most of the labs in class.
 
-**Participation in in-class discussion:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and participating in critical discussions of those readings.
+**Participation in in-class discussion:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and actively participate in critical discussions of those readings.
 
 ~~**Final Collaborative Project:** During the quarter, you will work with your group members to work on a collaborative project. During the final week, you will present your final project in class. The requriement for the final project will be published soon.~~
 
-**Individual Final Project:** Considering the difficulty of working as a team when you cannot meet each other in person, I decide to change the final collaborative project as individual base. And this final project will extend the lab 05. Thus, the lab 05 will be converted to a final indvidual project, you only need to submit this final project at the end of this quarter and you do not need to submit the lab 5.
+**Individual Final Project:** Considering the difficulty of working as a team when you cannot meet each other in person, I have decided to change the final collaborative project as individual base. And this final project will extend the lab 05. Thus, the lab 05 will be converted to a final indvidual project, you only need to submit this final project at the end of this quarter and you do not need to submit the lab 5.
 
 **Essay:** Each student will complete an essay that engages with the readings and the course themes, along with additional readings that you bring into conversation with the assigned course readings. You are aiming for ~~10 pages (double-spaced)~~ **no less than 1500 words** coalescing around ideas and readings from this quarter. Essay is due no later than the end of **Week 10**.
 
@@ -318,9 +386,9 @@ This course targets students who have a background in fundamental geographic inf
 
 Through this course, I would like to cultiviate the open source culture. The course materials are apprently open source for students and open source community to access.
 
-Notably, **each student is not allow to videotape or audio-tape (record) my class in any form, and sharing recordings outside of class without the written consent of each student in the class is not permitted by [FERPA](https://registrar.washington.edu/students/ferpa/).** However, I will try to record most of the classes via Zoom and share them via Canvas. Even so, I still encourage each of you attending the lectures instead of watching the recorded videos afterwards. Your in-class participation is a key factor to yield the best learning outcome.
+Notably, **students are not allow to videotape or audio-tape (record) this class in any form, and sharing recordings outside of class without the written consent of each student in the class is not permitted by [FERPA](https://registrar.washington.edu/students/ferpa/).** However, I will try to record most of the classes via Zoom and share them via Canvas. Even so, I still encourage each of you attend the lectures instead of watching the recorded videos afterwards. Your in-class participation is a key factor to yield the best learning outcome.
 
- instructor determines if their class can and cannot be recorded. This decision should be clearly communicated by the instructor at the beginning and throughout the quarter. In Zoom, the recording feature can be controlled by the instructor, as the meeting host.
+The instructor determines if their class can and cannot be recorded. This decision should be clearly communicated by the instructor at the beginning and throughout the quarter. In Zoom, the recording feature can be controlled by the instructor, as the meeting host.
 
 ## :love_letter: Accommodations
 
