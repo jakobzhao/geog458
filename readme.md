@@ -150,9 +150,9 @@ This week’s focus is on processing geospatial data for your digital geographie
 *Topic: “local” data - setting & context*
 
 -   All Data Are Local: YANNI ALEXANDER LOUKISSAS, 2019 - “How to analyze data settings rather than data sets, acknowledging the meaning-making power of the local.” 
-  -   [Chapter 4 - Newsworthy Algorithms](https://drive.google.com/file/d/1J_RiZfHoXVtOnUGkg5U-5lmsWfumN3BJ/view?usp=sharing)
-  -   (*) [Chapter 6 - Models of Local Practice (Praxis and Critical Knowledge](https://drive.google.com/file/d/1ex1l1RoPLBt0bey4W3UUrlQYfChQNwzt/view?usp=sharing) 
-  -   [Chapter 7 - Local Ends](https://drive.google.com/file/d/1hmRthNixJl83AXytyUbtXG6r5yyfeeLT/view?usp=sharing)
+    -   [Chapter 4 - Newsworthy Algorithms](https://drive.google.com/file/d/1J_RiZfHoXVtOnUGkg5U-5lmsWfumN3BJ/view?usp=sharing)
+    -   (*) [Chapter 6 - Models of Local Practice (Praxis and Critical Knowledge](https://drive.google.com/file/d/1ex1l1RoPLBt0bey4W3UUrlQYfChQNwzt/view?usp=sharing) 
+    -   [Chapter 7 - Local Ends](https://drive.google.com/file/d/1hmRthNixJl83AXytyUbtXG6r5yyfeeLT/view?usp=sharing)
 
 *Topic: data processing and context*
 
@@ -186,7 +186,7 @@ This week you will be making your first web map of the quarter using the popular
 
 *Topic: web mapping and research futures*
 
--   (*)[Digital Mapping and Segregation: SARAH BOND, 2017](https://www.forbes.com/sites/drsarahbond/2017/10/20/how-is-digital-mapping-changing-the-way-we-visualize-racism-and-segregation/#4df35c7d33fa)
+-   (*) [Digital Mapping and Segregation: SARAH BOND, 2017](https://www.forbes.com/sites/drsarahbond/2017/10/20/how-is-digital-mapping-changing-the-way-we-visualize-racism-and-segregation/#4df35c7d33fa)
 
 *Topic: towards data feminism & spatial activism*
 
