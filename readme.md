@@ -149,7 +149,7 @@ This week we will explore the concept of geo-narrative, the use of storytelling 
 
 -   [Geo-Subjective Visions: DANIELA GIL ESTEVA, 2014](http://www.scapegoatjournal.org/docs/06/Scapegoat_06_Gil%20Esteva_Geo-Subjective%20Visions.pdf) 
 
-*[Topic: deep mapping]*(https://polis.iupui.edu/defining-deep-maps/)
+*[Topic: deep mapping](https://polis.iupui.edu/defining-deep-maps/)*
 
 -   [Deep Mapping and Spatial Anthropology: LES ROBERTS, 2016](https://www.mdpi.com/2076-0787/5/1/5/htm) 
 
