@@ -54,6 +54,16 @@ As digital technologies have radically transformed human life, this course tries
 
 -   To reflect on the iterative and social dimensions to one’s own learning process.
 
+**Potential Learning Objective Additions:**
+
+-   To think critically about the technologies used in digital scholarship, including the material, social, and political implications of digital tech development, maintenance and utilization. 
+
+-   To discern, through investigation, the  relationship between space, technology, and society through critical engagement with practical and theoretical digital geographies methods. 
+
+      -
+
+
+
 ## :calendar: Weekly Schedule
 
 ### _Preperation_
