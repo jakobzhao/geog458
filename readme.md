@@ -358,22 +358,22 @@ During these two weeks, each group will focusing on their final projects. The in
 **Below is a brief collection of online resources related to digital geographies, space, technology, society and mapping for future reference, and to foster continued critical engagement with the topics covered in this course.**
 
 -   *Journals*
-  -   [Society & Space](https://www.societyandspace.org/)
-  -   [Digital Geography & Society](https://www.journals.elsevier.com/digital-geography-and-society/)
-  -   [Places Journal](https://placesjournal.org/)
-  -   [Bulletin of Science, Technology & Society](https://journals.sagepub.com/home/bst)
-  -   [Engaging STS](https://estsjournal.org/index.php/ests)
-  -   [Scapegoat Journal](http://www.scapegoatjournal.org/)
+   -   [Society & Space](https://www.societyandspace.org/)
+   -   [Digital Geography & Society](https://www.journals.elsevier.com/digital-geography-and-society/)
+   -   [Places Journal](https://placesjournal.org/)
+   -   [Bulletin of Science, Technology & Society](https://journals.sagepub.com/home/bst)
+   -   [Engaging STS](https://estsjournal.org/index.php/ests)
+   -   [Scapegoat Journal](http://www.scapegoatjournal.org/)
   
 -   *Research Groups*
-  -   [Digital Geographies Research Group (UK)](https://digitalgeographiesrg.org/)
-  -   [Digital Geographies Specialty Group AAG](https://community.aag.org/specialtygroups/allspecialtygroups)
-  -   [Critical Platform Studies Group](https://sites.uw.edu/critplat/)
+   -   [Digital Geographies Research Group (UK)](https://digitalgeographiesrg.org/)
+   -   [Digital Geographies Specialty Group AAG](https://community.aag.org/specialtygroups/allspecialtygroups)
+   -   [Critical Platform Studies Group](https://sites.uw.edu/critplat/)
   
 -   *Miscellaneous*
-  -   [Data & Society](https://datasociety.net/)
-  -   [Logic Magazine](https://logicmag.io/)
-  -   [AI Now Institute](https://ainowinstitute.org/)
+   -   [Data & Society](https://datasociety.net/)
+   -   [Logic Magazine](https://logicmag.io/)
+   -   [AI Now Institute](https://ainowinstitute.org/)
   
 
 ### Week 11: Final ~~collaborative~~ project presentations
