@@ -134,7 +134,7 @@ This week we will explore the concept of geo-narrative, the use of storytelling 
 
 -  **Proposed Additional Readings:**
 
-* denotes that this article should be skimmed before class
++ denotes that this article should be skimmed before class
 
 
 ### Week 8: Emerging topics
@@ -150,16 +150,16 @@ This week will focus on two emerging topics related to digital geographies, incl
 
 -  **Proposed Additional Readings:**
 
-* denotes that this article should be skimmed before class
++ denotes that this article should be skimmed before class
 
 *Topic: mapping futures - where are the blank spaces?* 
 
--   * [Here Be Dragons - Finding the Blank Spaces in a Well-Mapped World: LOIS PARSHLEY, 2017](https://drive.google.com/file/d/1B2b47XJyHiDk0S_qkiq4LsKLJe7SRbBe/view?usp=sharing)
+-   + [Here Be Dragons - Finding the Blank Spaces in a Well-Mapped World: LOIS PARSHLEY, 2017](https://drive.google.com/file/d/1B2b47XJyHiDk0S_qkiq4LsKLJe7SRbBe/view?usp=sharing)
 -   [Point Clouds and Smart Cities: GIM INTERNATIONAL, 2018](https://www.gim-international.com/magazines/gim-international-september-october-2018.pdf) 
 
 *Topic: AI - materiality, structure, labor & power*
 
--   * [*Anatomy of an AI System: CRAWFORD & JOLER, 2018](https://anatomyof.ai/)
+-   + [Anatomy of an AI System: CRAWFORD & JOLER, 2018](https://anatomyof.ai/)
 
 *Topic: algorithmic policing, race and bias*
 
@@ -168,7 +168,7 @@ This week will focus on two emerging topics related to digital geographies, incl
 *Topic: simulation, glitches & hacks*
 
 -   [Flight Simulator Glitches: TOM WARREN, 2020](https://www.theverge.com/2020/8/20/21376978/microsoft-flight-simulator-glitches-maps-bugs) 
--   * [GPS Jamming and Spoofing: DirectionsMag, 2018](https://www.directionsmag.com/article/8107) 
+-   + [GPS Jamming and Spoofing: DirectionsMag, 2018](https://www.directionsmag.com/article/8107) 
 
 ### Week 9 & 10: Project studio
 
