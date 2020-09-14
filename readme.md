@@ -121,6 +121,25 @@ This week you will be making your first web map of the quarter using the popular
 -   **Examples:** [COVID-19 Dashboard](https://hgis.uw.edu/virus)
 -   **Final Project:**  1) proposal, 2) [geosaptial data collection](https://guides.lib.uw.edu/research/gis/data_sites), 3) relative resource collection, 4) create a repository.
 
+-  **Proposed Extended Readings:**
+
+(*) denotes that this article should be skimmed before class
+
+*Topic: urban dashboards, data interfaces & the rise of “informatic urbanism” * 
+
+-   [History of the Urban Dashboard:  SHANNON MATTERN, 2015](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/)
+-   (*) [Interfacing Urban Intelligence: SHANNON MATTERN, 2014](https://placesjournal.org/article/interfacing-urban-intelligence/#0)
+-   (*) [A City is Not a Computer: SHANNON MATTERN, 2017](https://placesjournal.org/article/a-city-is-not-a-computer/#0)
+
+*Topic: how data dashboards distort*
+
+-   (*) [3 Ways Data Dashboards Can Mislead You: HARVARD BUSINESS REVIEW, 2017](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section)
+
+*Topic: data dashboard trends*
+
+-   (*) [Google Trends - data dashboard](https://trends.google.com/trends/explore?date=all&geo=US&q=Data%20Dashboard) 
+
+
 ### Week 7: Geo-Narratives
 
 This week we will explore the concept of geo-narrative, the use of storytelling in mapping practice, by looking at existing geo-narrative mapping projects and engaging in a group discussion and map critique. 
