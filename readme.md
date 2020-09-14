@@ -132,9 +132,33 @@ This week we will explore the concept of geo-narrative, the use of storytelling 
 > **Notes for the in-class discussion:** Each group will need to pick an online dynamic geo-narrative example that you feel interested in and then introduce it to the class. Each group is expected to (1) describe the functions and the (intended) targeted audience; (2) describe the storyline, Genres, tropes as well as other things you want to share with the students (please refer to this week's required reading); (3) analyze the codes. You are expected to open up the Chrome inspector, and introduce the libraries, the network flow, the major visual components and possibly their functions, etc; (4) The strengths and weaknesses of this geo-narrative, especially the map design. Please recall the map critique you did in the prerequisite class geog 360 - what are the visual strategies, the use of visual hierarchy, and so on; (5) do you think the geo-narrative is an appropriate strategy for the examined topic? If yes, why? If not, what else would be better? e.g., an interactive chart, or a static infographics? (6) anything else you feel worthy to share with the classmates. Overall, the in-class discussion will be in approximately 30 minutes. Following the group discussion, we will hold a Q&A session. 
 -   **Final Project:**  1) [data table](assets/datatable.md) -  [`geosaptial data collection`](https://guides.lib.uw.edu/research/gis/data_sites), 2) [sketch](assets/sketch.md), 3) design scheme, and (4) coding!
 
--  **Proposed Additional Readings:**
+-  **Proposed Extended Readings:**
 
-+ denotes that this article should be skimmed before class
+(*) denotes that this article should be skimmed before class
+
+*Topic: geovisualization & narrativity (storytelling & emotion)* 
+
+-   (*) [Affective Geovisualisations: AITKEN & CRAINE, 2011](https://drive.google.com/file/d/1aqMFkewNT9s9nrAecAVYiaBAbtCrf7xj/view?usp=sharing)
+-   [Using Narrativity as Methodological Tool: EEVA-KAISA PROKKOLA, 2014](https://drive.google.com/file/d/1w8kM9zdfNRA0bLaQJn5Zvdl8SCuz52Nu/view?usp=sharing) 
+
+*Topic: mapping, direct action and oral histories - a guide*
+
+-   (*) [Anti-Eviction Mapping Project Handbook: AEMP, 2018](https://static1.squarespace.com/static/52b7d7a6e4b0b3e376ac8ea2/t/5bc76571b208fc10defc815a/1539794295823/AEMP+Handbook.pdf)
+
+*Topic: dwelling, identity, mapping reflections of place*
+
+-   [Geo-Subjective Visions: DANIELA GIL ESTEVA, 2014](http://www.scapegoatjournal.org/docs/06/Scapegoat_06_Gil%20Esteva_Geo-Subjective%20Visions.pdf) 
+
+*[Topic: deep mapping]*(https://polis.iupui.edu/defining-deep-maps/)
+
+-   [Deep Mapping and Spatial Anthropology: LES ROBERTS, 2016](https://www.mdpi.com/2076-0787/5/1/5/htm) 
+
+-  **Proposed Supplemental Resources:**
+
+*Topic: online story/web maps with interesting geo-narrative or “affective” framing:*
+
+-   [Mapping Amazon: GOOD JOBS FIRST](https://storymaps.arcgis.com/stories/adc5ff253a3643f88d39e7f3ef1a09ee)
+-   [Survival by Degrees: 389 Bird Species on the Brink: AUDUBON](https://www.audubon.org/climate/survivalbydegrees#climate2-survival-search)
 
 
 ### Week 8: Emerging topics
@@ -144,9 +168,6 @@ This week will focus on two emerging topics related to digital geographies, incl
 -   **Lecture Notes:** [Point Cloud visualization](https://jakobzhao.github.io/sfm/index.html) and [Real-time environmental data visualization](weeks/week08/rpi-iot).
 -   **Readings:** [Real-time GIS](https://drive.google.com/file/d/1COD2OYBxEJThG5Lfx7-nzV0EGtGedndT/view?usp=sharing) and [Panopticon](https://drive.google.com/file/d/156fk11L9JFzsyV_9TRi9_c15MSIPCiL6/view?usp=sharing)
 -   **In-class Discussion:** a) Point Cloud Visulization led by `Group 1` on `Tuesday`, b) Discussion on the paper about Panopticon led by `Group 7` on `Thursday`.
--  ~~**Extending reading:** 
-   - ~~[Fake Geography]~~(https://geoconnexion.com/downloads/import-int_v17i01-018-019-OnLocation.pdf) and [Fake obstacles](https://news.engin.umich.edu/2019/09/new-attack-on-autonomous-vehicle-sensors-creates-fake-obstacles/).
-   - ~~[AI powered CCTV in China]~~(https://www.nytimes.com/2018/07/08/business/china-surveillance-technology.html) and [Digital contact tracing](https://abcnews.go.com/Technology/apple-google-launch-digital-contact-tracing-system/story?id=70789376)
 
 -  **Proposed Extended Readings:**
 
