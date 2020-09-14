@@ -102,7 +102,7 @@ This week you will be making your first web map of the quarter using the popular
 
 -   **Readings:** [Leaflet Basics](weeks/week04/leaflet), [Map Events](weeks/week04/mapevent)
 -   **Lab 3:** [An integrative web mapping](labs/lab03) `Due: May 3rd, by 11:59pm`,  Example: [Oregon Water Atlas](http://oregonwater.info/atlas.html)
--   **In-class Discussion:** In-class Discussion: a) Web Map A by `Group 3` on `Tuesday` , b) Web Map B by `Group 4` on `Thursday`. Each group will need to pick any online web map you feel interested in, and then introduce this web map to the class. Each group is expected to (1) describe the functions and the targeted audience of this web map; (2) discuss the possible system architecture (you might want to refer to the system architecture diagram which is introduced in week 2); (3) analyze the codes. You are expected to open up the Chrome inspector, and introduce the libraries, the network flow, the major visual components and possibly their functions, etc; (4) The strengths and weaknesses about this web map, especially the map design elements. Please recall the map critique you did in the prerequisite class `geog 360` - what are the visual strategies, the use of visual hierarchy, and so on; (5) do you think the interactive map is an appropriate strategy for the examined topic? If yes, why? If not, what else would be better? e.g., an interactive chart, or a static infographics? (6) anything else you feel worthy to share with the classmates. Overall, the in-class discussion will be in approximately 30 minutes. Following the group discussion, we will hold a Q&A session. 
+-   **In-class Discussion:** a) Web Map A by `Group 3` on `Tuesday` , b) Web Map B by `Group 4` on `Thursday`. Each group will need to pick any online web map you feel interested in, and then introduce this web map to the class. Each group is expected to (1) describe the functions and the targeted audience of this web map; (2) discuss the possible system architecture (you might want to refer to the system architecture diagram which is introduced in week 2); (3) analyze the codes. You are expected to open up the Chrome inspector, and introduce the libraries, the network flow, the major visual components and possibly their functions, etc; (4) The strengths and weaknesses about this web map, especially the map design elements. Please recall the map critique you did in the prerequisite class `geog 360` - what are the visual strategies, the use of visual hierarchy, and so on; (5) do you think the interactive map is an appropriate strategy for the examined topic? If yes, why? If not, what else would be better? e.g., an interactive chart, or a static infographics? (6) anything else you feel worthy to share with the classmates. Overall, the in-class discussion will be in approximately 30 minutes. Following the group discussion, we will hold a Q&A session. 
 
 ### Week 5: Map design
 
@@ -129,8 +129,13 @@ This week we will explore the concept of geo-narrative, the use of storytelling 
 -   **Readings:** [Storymap.js](https://github.com/jakobzhao/storymap), [Map-based visual Storytelling: An Assessment of emerging genres and tropes `Chapter 1,2 and 5`.](https://drive.google.com/file/d/133s4dxoRaT1A7OckBapS6e9Yxh_wQc9d/view?usp=sharing)
 -   **In-class Discussion:** a) Storymap A led by `Group 6` on `Tuesday`, b) Storymap B led by `Group 8` on `Thursday`.
 -   **Examples:** [#Stand with StandingRock](https://jakobzhao.github.io/standwithstandingrock/), [Oregon Waters](http://oregonwater.info/atlas.html), [storymap template](https://github.com/jakobzhao/storymap-test)
-> **Notes for the in-class discussion:** Notes for the in-class discussion: Each group will need to pick an online dynamic geo-narrative example that you feel interested in and then introduce it to the class. Each group is expected to (1) describe the functions and the (intended) targeted audience; (2) describe the storyline, Genres, tropes as well as other things you want to share with the students (please refer to this week's required reading); (3) analyze the codes. You are expected to open up the Chrome inspector, and introduce the libraries, the network flow, the major visual components and possibly their functions, etc; (4) The strengths and weaknesses of this geo-narrative, especially the map design. Please recall the map critique you did in the prerequisite class geog 360 - what are the visual strategies, the use of visual hierarchy, and so on; (5) do you think the geo-narrative is an appropriate strategy for the examined topic? If yes, why? If not, what else would be better? e.g., an interactive chart, or a static infographics? (6) anything else you feel worthy to share with the classmates. Overall, the in-class discussion will be in approximately 30 minutes. Following the group discussion, we will hold a Q&A session. 
+> **Notes for the in-class discussion:** Each group will need to pick an online dynamic geo-narrative example that you feel interested in and then introduce it to the class. Each group is expected to (1) describe the functions and the (intended) targeted audience; (2) describe the storyline, Genres, tropes as well as other things you want to share with the students (please refer to this week's required reading); (3) analyze the codes. You are expected to open up the Chrome inspector, and introduce the libraries, the network flow, the major visual components and possibly their functions, etc; (4) The strengths and weaknesses of this geo-narrative, especially the map design. Please recall the map critique you did in the prerequisite class geog 360 - what are the visual strategies, the use of visual hierarchy, and so on; (5) do you think the geo-narrative is an appropriate strategy for the examined topic? If yes, why? If not, what else would be better? e.g., an interactive chart, or a static infographics? (6) anything else you feel worthy to share with the classmates. Overall, the in-class discussion will be in approximately 30 minutes. Following the group discussion, we will hold a Q&A session. 
 -   **Final Project:**  1) [data table](assets/datatable.md) -  [`geosaptial data collection`](https://guides.lib.uw.edu/research/gis/data_sites), 2) [sketch](assets/sketch.md), 3) design scheme, and (4) coding!
+
+-  **Proposed Additional Readings:**
+
+* denotes that this article should be skimmed before class
+
 
 ### Week 8: Emerging topics
 
@@ -143,6 +148,27 @@ This week will focus on two emerging topics related to digital geographies, incl
    - [Fake Geography](https://geoconnexion.com/downloads/import-int_v17i01-018-019-OnLocation.pdf) and [Fake obstacles](https://news.engin.umich.edu/2019/09/new-attack-on-autonomous-vehicle-sensors-creates-fake-obstacles/).
    - [AI powered CCTV in China](https://www.nytimes.com/2018/07/08/business/china-surveillance-technology.html) and [Digital contact tracing](https://abcnews.go.com/Technology/apple-google-launch-digital-contact-tracing-system/story?id=70789376)
 
+-  **Proposed Additional Readings:**
+
+* denotes that this article should be skimmed before class
+
+*Topic: mapping futures - where are the blank spaces?* 
+
+-   * [Here Be Dragons - Finding the Blank Spaces in a Well-Mapped World: LOIS PARSHLEY, 2017](https://drive.google.com/file/d/1B2b47XJyHiDk0S_qkiq4LsKLJe7SRbBe/view?usp=sharing)
+-   [Point Clouds and Smart Cities: GIM INTERNATIONAL, 2018](https://www.gim-international.com/magazines/gim-international-september-october-2018.pdf) 
+
+*Topic: AI - materiality, structure, labor & power*
+
+-   * [*Anatomy of an AI System: CRAWFORD & JOLER, 2018](https://anatomyof.ai/)
+
+*Topic: algorithmic policing, race and bias*
+
+-   [Abolishing Racist Police Algorithms: RYAN-MOSLEY & STRONG, 2020](https://www.technologyreview.com/2020/06/05/1002709/the-activist-dismantling-racist-police-algorithms/) 
+
+*Topic: simulation, glitches & hacks*
+
+-   [Flight Simulator Glitches: TOM WARREN, 2020](https://www.theverge.com/2020/8/20/21376978/microsoft-flight-simulator-glitches-maps-bugs) 
+-   * [GPS Jamming and Spoofing: DirectionsMag, 2018](https://www.directionsmag.com/article/8107) 
 
 ### Week 9 & 10: Project studio
 
