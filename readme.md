@@ -104,6 +104,36 @@ This week you will be making your first web map of the quarter using the popular
 -   **Lab 3:** [An integrative web mapping](labs/lab03) `Due: May 3rd, by 11:59pm`,  Example: [Oregon Water Atlas](http://oregonwater.info/atlas.html)
 -   **In-class Discussion:** a) Web Map A by `Group 3` on `Tuesday` , b) Web Map B by `Group 4` on `Thursday`. Each group will need to pick any online web map you feel interested in, and then introduce this web map to the class. Each group is expected to (1) describe the functions and the targeted audience of this web map; (2) discuss the possible system architecture (you might want to refer to the system architecture diagram which is introduced in week 2); (3) analyze the codes. You are expected to open up the Chrome inspector, and introduce the libraries, the network flow, the major visual components and possibly their functions, etc; (4) The strengths and weaknesses about this web map, especially the map design elements. Please recall the map critique you did in the prerequisite class `geog 360` - what are the visual strategies, the use of visual hierarchy, and so on; (5) do you think the interactive map is an appropriate strategy for the examined topic? If yes, why? If not, what else would be better? e.g., an interactive chart, or a static infographics? (6) anything else you feel worthy to share with the classmates. Overall, the in-class discussion will be in approximately 30 minutes. Following the group discussion, we will hold a Q&A session. 
 
+**Extended Readings:**
+
+(*) denotes that this article should be skimmed before class
+
+*Topic: web mapping overview* 
+
+-   (*) [Web Mapping: The Geographic Information Science & Technology Body of Knowledge, 2017](https://gistbok.ucgis.org/bok-topics/web-mapping)
+
+*Topic: doing critical GIS*
+
+-   [Hacker Cartography:  ALAN MCCONCHIE, 2015](https://drive.google.com/file/d/1H76GJFXwS5dOPZYyxfyuud0DGQzYGNIr/view?usp=sharing)
+
+*Topic: web mapping and research futures*
+
+-   (*)[Digital Mapping and Segregation: SARAH BOND, 2017](https://www.forbes.com/sites/drsarahbond/2017/10/20/how-is-digital-mapping-changing-the-way-we-visualize-racism-and-segregation/#4df35c7d33fa)
+
+*Topic: towards data feminism & spatial activism*
+
+-   [DGEI Medium Article + Data Feminism: CATHERINE D'IGNAZIO, 2020](https://medium.com/nightingale/gwendolyn-warren-and-the-detroit-geographic-expedition-and-institute-df9ee10e6ad2) 
+
+**Supplemental Resources**
+
+-   [Web Mapping Textbook: University of Wisconsin Cartography Lab](https://github.com/uwcartlab/webmapping)
+
+*Interesting web maps*
+
+-   [Submarine Cable Map: TELEGEOGRAPHY](https://www.submarinecablemap.com/#/)
+-   [Mapping Inequality - Redlining in New Deal America: COLLABORATIVE PROJECT](https://dsl.richmond.edu/panorama/redlining/#loc=5/39.1/-94.58)
+
+
 ### Week 5: Map design
 
 -   **Lecture Notes:** [Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/)
@@ -111,7 +141,7 @@ This week you will be making your first web map of the quarter using the popular
 -   **Lab 4:** [Generating Map Tiles](labs/lab04) `Due: May 10th, by 11:59pm`
 -   **Online Mid-term:** `April 30th 9:30 - 10:20 AM` [Study Guide](assets/midterm_studyguide.md)
 
-**Proposed Extended Readings:**
+**Extended Readings:**
 
 (*) denotes that this article should be skimmed before class
 
@@ -139,6 +169,7 @@ This week you will be making your first web map of the quarter using the popular
 -   [Fild Papers: STAMEN DESIGNS](http://fieldpapers.org/)
 -   [Cartographic Grounds - Projecting the Landscape Imaginary: JILL DESIMINI, 2013](https://placesjournal.org/article/cartographic-grounds-projecting-the-landscape-imaginary/)
 
+
 ### Week 6: Smart dashboards
 
 - check out the guidelines for [final project](project/project.md) and [essay](project/essay.md).
@@ -149,7 +180,7 @@ This week you will be making your first web map of the quarter using the popular
 -   **Examples:** [COVID-19 Dashboard](https://hgis.uw.edu/virus)
 -   **Final Project:**  1) proposal, 2) [geosaptial data collection](https://guides.lib.uw.edu/research/gis/data_sites), 3) relative resource collection, 4) create a repository.
 
--  **Proposed Extended Readings:**
+**Extended Readings:**
 
 (*) denotes that this article should be skimmed before class
 
@@ -179,7 +210,7 @@ This week we will explore the concept of geo-narrative, the use of storytelling 
 > **Notes for the in-class discussion:** Each group will need to pick an online dynamic geo-narrative example that you feel interested in and then introduce it to the class. Each group is expected to (1) describe the functions and the (intended) targeted audience; (2) describe the storyline, Genres, tropes as well as other things you want to share with the students (please refer to this week's required reading); (3) analyze the codes. You are expected to open up the Chrome inspector, and introduce the libraries, the network flow, the major visual components and possibly their functions, etc; (4) The strengths and weaknesses of this geo-narrative, especially the map design. Please recall the map critique you did in the prerequisite class geog 360 - what are the visual strategies, the use of visual hierarchy, and so on; (5) do you think the geo-narrative is an appropriate strategy for the examined topic? If yes, why? If not, what else would be better? e.g., an interactive chart, or a static infographics? (6) anything else you feel worthy to share with the classmates. Overall, the in-class discussion will be in approximately 30 minutes. Following the group discussion, we will hold a Q&A session. 
 -   **Final Project:**  1) [data table](assets/datatable.md) -  [`geosaptial data collection`](https://guides.lib.uw.edu/research/gis/data_sites), 2) [sketch](assets/sketch.md), 3) design scheme, and (4) coding!
 
--  **Proposed Extended Readings:**
+**Extended Readings:**
 
 (*) denotes that this article should be skimmed before class
 
@@ -200,7 +231,7 @@ This week we will explore the concept of geo-narrative, the use of storytelling 
 
 -   [Deep Mapping and Spatial Anthropology: LES ROBERTS, 2016](https://www.mdpi.com/2076-0787/5/1/5/htm) 
 
--  **Proposed Supplemental Resources:**
+**Supplemental Resources:**
 
 *Topic: online story/web maps with interesting geo-narrative or “affective” framing:*
 
@@ -216,7 +247,7 @@ This week will focus on two emerging topics related to digital geographies, incl
 -   **Readings:** [Real-time GIS](https://drive.google.com/file/d/1COD2OYBxEJThG5Lfx7-nzV0EGtGedndT/view?usp=sharing) and [Panopticon](https://drive.google.com/file/d/156fk11L9JFzsyV_9TRi9_c15MSIPCiL6/view?usp=sharing)
 -   **In-class Discussion:** a) Point Cloud Visulization led by `Group 1` on `Tuesday`, b) Discussion on the paper about Panopticon led by `Group 7` on `Thursday`.
 
--  **Proposed Extended Readings:**
+**Extended Readings:**
 
 (*) denotes that this article should be skimmed before class
 
@@ -237,6 +268,7 @@ This week will focus on two emerging topics related to digital geographies, incl
 
 -   [Flight Simulator Glitches: TOM WARREN, 2020](https://www.theverge.com/2020/8/20/21376978/microsoft-flight-simulator-glitches-maps-bugs) 
 -   (*) [GPS Jamming and Spoofing: DirectionsMag, 2018](https://www.directionsmag.com/article/8107) 
+
 
 ### Week 9 & 10: Project studio
 
