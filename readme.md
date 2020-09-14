@@ -112,7 +112,7 @@ This week we’ll focus on providing you all with the fundamental skill set for 
 
 -   (*) [Introducing Code/Space: KITCHIN & DODGE, 2011](https://drive.google.com/file/d/1T7ChuOnaKrgjTVhAeV_Niei2pqCWiiqK/view?usp=sharing)
 
-*Topic: race, code, bias & exposure *
+*Topic: race, code, bias & exposure*
 
 -   (*) [Race After Technology: Abolitionist Tools for the New Jim Code; Chapter 3 (Coded Exposure): RUHA BENJAMIN, 2019](https://drive.google.com/file/d/1ddKr5eykntv9FmZ2UxS2fIGjFeSAAotF/view?usp=sharing)
 
