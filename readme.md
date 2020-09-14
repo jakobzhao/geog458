@@ -56,9 +56,9 @@ As digital technologies have radically transformed human life, this course tries
 
 **Potential Learning Objective Additions:**
 
--   'To think critically about the technologies used in digital scholarship, including the material, social, and political implications of digital tech development, maintenance and utilization.' 
+-   `To think critically about the technologies used in digital scholarship, including the material, social, and political implications of digital tech development, maintenance and utilization.`
 
--   'To discern, through investigation, the  relationship between space, technology, and society through critical engagement with practical and theoretical digital geographies methods.' 
+-   `To discern, through investigation, the  relationship between space, technology, and society through critical engagement with practical and theoretical digital geographies methods.` 
 
 
 
@@ -68,11 +68,11 @@ As digital technologies have radically transformed human life, this course tries
 
 -   [**Gear up the working environment**](assets/gearup.md) :computer:  :beer:
 -   **Canvas Survey:** Through a survey, students will team up as group of 5 ~ 6 people according to the profeciency of technical skills and interests. `Due: March 31st, 2020, by 11:59pm`
--   **Groups:** Based on the Survey, we have 8 groups (check [here](assets/groups.md)), and I have assigned an group coordinator to each group. Please start meeting your gourp members. In the quarter, you will work together on ~~the collaborative project and~~ the in-class discussion.
+-   **Groups:** Based on the Survey, we have 8 groups (check [here](assets/groups.md)), and I have assigned an group coordinator to each group. Please start meeting your gourp members. Over the quarter, you will work together on ~~the collaborative project and~~ the in-class discussion.
 
 ### Week 1: Intro to digital geographies
 
-We walk through the syllabus and repond to students' inquiries. Each student is expected to read the paper by Ash et al (2018). This week's lecture and lab will prepare you both the theortical and techinical foundation. After compeleting the lab 01, you can clone/synchronize the course material, set up a personal website, and more importantly, feel comfortable of using github to manage your digital geographies projects.
+This week’s lecture and lab will prepare you for the course, and provide a theoretical and technical foundation to build from. We’ll work through the syllabus together, and answer any questions you all may have. Each student is expected to read the Ash et al (2018) paper. After completing Lab 1, you will be able to clone/synchronize the course material, set up a personal website, and gain practical experience using github to manage your digital geographies projects.
 
 -   **Lecture Notes:** [Syllabus](readme.md), [Intro to the Web](weeks/week01/intro-web)
 -   **Readings:** a) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_), b) [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
@@ -82,14 +82,14 @@ We walk through the syllabus and repond to students' inquiries. Each student is 
 
 ### Week 2: Prorgamming fundamentals
 
-We focuses on preparing you the fudamental skill set for web prorgamming. This week will begin with the system architecture of digital geographies project, and then guide you through some of the necessary front-end fudamentals, including internet basics, html, javascript, and css. This week requires a lot of self-learning. Please be preprared.
+This week we’ll focus on providing you all with the fundamental skill set for web programming.  We will begin with an overview of the system architecture required for a digital geographies project,  then guide you through some of the essential front-end fundamentals. Including, internet basics, html, javascript, and css. This week requires a lot of self-learning,  and includes fairly lengthy readings and practical exercises. Please be prepared. 
 
 -   **Lecture Notes:** [System architecture](weeks/week02/architecture), [intro-to-html, css](weeks/week02/html-css) and [javascript](weeks/week02/javascript), and [Jquery](weeks/week02/jquery).
 -   **Readings:** [W3School Tutorials on Html, javascript, css and jquery](weeks/week02/readings.md).
 
 ### Week 3: Geospatial data
 
-This week's topic is around processing geospatial data for digital geographies projects. We will begin with introduce the structure of geojson format, adn then how to collect,convert and visualize geojson on web or a desktop environment like QGIS. After completing lab 2, each students will learn how to collect geo-tagged tweets of a specific topic (e.g., seattle, homeless, COVID-19, etc.), and then visualize the data for further uses.
+This week’s focus is on processing geospatial data for your digital geographies projects. We will begin by introducing the structure of the geojson format, and then look at techniques for collecting, converting and visualizing geojson objects/features in a web or desktop environment such as QGIS. After completing Lab 2, students will have learned how to collect geo-tagged tweets using specific keywords/topics (e.g., etc.), and methods for visualizing the spatial distribution of the locations for those tweets. 
 
 -   **Lecture Notes:** [Geospatial data for digital geographies](weeks/week03/readme.md)
 -   **Readings:** a) [Can social media clear the air? A case study of the air pollution problem in Chinese cities](https://drive.google.com/open?id=1C0MTPaPnVALVemeYEfiDChUKRZfcMjz3), b) [More than you ever wanted to know about GeoJSON](weeks/week03/assets/geojson.pdf).
@@ -98,11 +98,11 @@ This week's topic is around processing geospatial data for digital geographies p
 
 ### Week 4: Web mapping
 
-You will make your first web map in this week using a popular web mapping library - Leaflet. In the lecture, you will work with me to get familiar with the basics, and then we will give you an very detailed introduction to the lab 3.
+This week you will be making your first web map of the quarter using the popular web mapping library - [Leaflet](https://leafletjs.com/) The lecture section this week we’ll work together familiarizing everyone with the basics of web mapping, and then provide a detailed introduction to the Lab 3 exercise. 
 
 -   **Readings:** [Leaflet Basics](weeks/week04/leaflet), [Map Events](weeks/week04/mapevent)
 -   **Lab 3:** [An integrative web mapping](labs/lab03) `Due: May 3rd, by 11:59pm`,  Example: [Oregon Water Atlas](http://oregonwater.info/atlas.html)
--   **In-class Discussion:** a) Web Map A by `Group 3` on  `Tuesday` , b) Web Map B by `Group 4` on `Thursday`. Each group will need to pick any online web map you feel interested in and then introduce this web map to the class. Each group are expected to (1) describe the functions and the targeted audience of this web map; (2) discuss the possible system architecture (you might want to refer to the system architecture diagram which is introduced in week 2); (3) analyze the codes. You are expected to open up the Chrome inspector, and introduce the libraries, the network flow, the major visual components and possibliy their functioons, etc; (4) The stregths and weekness about this web map, especially the map design. Please recall the map critique you did in the prerequisite class `geog 360` - what are the visual stratgies, the use of visual hierechy, and so on; (5) do you think the interactive map is an appropriate strategy for the examinedd topic? If yes, why? If not, what else would be better? e.g., an interactive chart, or a static infographics? (6) anything else you feel worthy to share with the classmates. Overall, the in-class disucssion will be in approximately 30 minutes. After the group presentation, a following Q&A will be organized.
+-   **In-class Discussion:** In-class Discussion: a) Web Map A by `Group 3` on `Tuesday` , b) Web Map B by `Group 4` on `Thursday`. Each group will need to pick any online web map you feel interested in, and then introduce this web map to the class. Each group is expected to (1) describe the functions and the targeted audience of this web map; (2) discuss the possible system architecture (you might want to refer to the system architecture diagram which is introduced in week 2); (3) analyze the codes. You are expected to open up the Chrome inspector, and introduce the libraries, the network flow, the major visual components and possibly their functions, etc; (4) The strengths and weaknesses about this web map, especially the map design elements. Please recall the map critique you did in the prerequisite class `geog 360` - what are the visual strategies, the use of visual hierarchy, and so on; (5) do you think the interactive map is an appropriate strategy for the examined topic? If yes, why? If not, what else would be better? e.g., an interactive chart, or a static infographics? (6) anything else you feel worthy to share with the classmates. Overall, the in-class discussion will be in approximately 30 minutes. Following the group discussion, we will hold a Q&A session. 
 
 ### Week 5: Map design
 
@@ -123,16 +123,18 @@ You will make your first web map in this week using a popular web mapping librar
 
 ### Week 7: Geo-Narratives
 
+This week we will explore the concept of geo-narrative, the use of storytelling in mapping practice, by looking at existing geo-narrative mapping projects and engaging in a group discussion and map critique. 
+
 -   **Lecture Notes:** [Video](assets/video.md), [Image](assets/image.md), [Favicon](assets/favicon.md), [Icon](assets/icon.md), [Web Fonts](assets/fonts.md), and other resources.
 -   **Readings:** [Storymap.js](https://github.com/jakobzhao/storymap), [Map-based visual Storytelling: An Assessment of emerging genres and tropes `Chapter 1,2 and 5`.](https://drive.google.com/file/d/133s4dxoRaT1A7OckBapS6e9Yxh_wQc9d/view?usp=sharing)
 -   **In-class Discussion:** a) Storymap A led by `Group 6` on `Tuesday`, b) Storymap B led by `Group 8` on `Thursday`.
 -   **Examples:** [#Stand with StandingRock](https://jakobzhao.github.io/standwithstandingrock/), [Oregon Waters](http://oregonwater.info/atlas.html), [storymap template](https://github.com/jakobzhao/storymap-test)
-> **Notes for the in-class discussion:** Each group will need to pick any online dynamic geo-narrative you feel interested in and then introduce it to the class. Each group are expected to (1) describe the functions and the (intended) targeted audience; (2) describe the storyline, Genres, tropes as well as other things you want to share with the studnets (please refer to this week's requried reading); (3) analyze the codes. You are expected to open up the Chrome inspector, and introduce the libraries, the network flow, the major visual components and possibliy their functioons, etc; (4) The stregths and weekness about this geo-narrative, especially the map design. Please recall the map critique you did in the prerequisite class `geog 360` - what are the visual stratgies, the use of visual hierechy, and so on; (5) do you think the geo-narrative is an appropriate strategy for the examinedd topic? If yes, why? If not, what else would be better? e.g., an interactive chart, or a static infographics? (6) anything else you feel worthy to share with the classmates. Overall, the in-class disucssion will be in approximately 30 minutes. After the group presentation, a following Q&A will be organized.
+> **Notes for the in-class discussion:** Notes for the in-class discussion: Each group will need to pick an online dynamic geo-narrative example that you feel interested in and then introduce it to the class. Each group is expected to (1) describe the functions and the (intended) targeted audience; (2) describe the storyline, Genres, tropes as well as other things you want to share with the students (please refer to this week's required reading); (3) analyze the codes. You are expected to open up the Chrome inspector, and introduce the libraries, the network flow, the major visual components and possibly their functions, etc; (4) The strengths and weaknesses of this geo-narrative, especially the map design. Please recall the map critique you did in the prerequisite class geog 360 - what are the visual strategies, the use of visual hierarchy, and so on; (5) do you think the geo-narrative is an appropriate strategy for the examined topic? If yes, why? If not, what else would be better? e.g., an interactive chart, or a static infographics? (6) anything else you feel worthy to share with the classmates. Overall, the in-class discussion will be in approximately 30 minutes. Following the group discussion, we will hold a Q&A session. 
 -   **Final Project:**  1) [data table](assets/datatable.md) -  [`geosaptial data collection`](https://guides.lib.uw.edu/research/gis/data_sites), 2) [sketch](assets/sketch.md), 3) design scheme, and (4) coding!
 
 ### Week 8: Emerging topics
 
-This week will focus on two emerging topics related to digital geographies, including cloud point visualization and real-time environment data collection.
+This week will focus on two emerging topics related to digital geographies, including cloud point visualization and real-time environment data collection, and explore their promise and pitfalls. 
 
 -   **Lecture Notes:** [Point Cloud visualization](https://jakobzhao.github.io/sfm/index.html) and [Real-time environmental data visualization](weeks/week08/rpi-iot).
 -   **Readings:** [Real-time GIS](https://drive.google.com/file/d/1COD2OYBxEJThG5Lfx7-nzV0EGtGedndT/view?usp=sharing) and [Panopticon](https://drive.google.com/file/d/156fk11L9JFzsyV_9TRi9_c15MSIPCiL6/view?usp=sharing)
