@@ -11,8 +11,8 @@
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
 >
 > **Updates (5/19/2020):**
-> - [Final project](project/project.md) `Due: Friday (June 12) by 11:59pm` 
-> - [Essay](project/essay.md) `Due: Friday (June 5) by 11:59pm` 
+> - [Final project](project/project.md) `Due: Friday (June 12) by 11:59pm`
+> - [Essay](project/essay.md) `Due: Friday (June 5) by 11:59pm`
 > - storymap template: https://github.com/jakobzhao/storymap-test
 > -  mid-term score has been adjusted.
 > -  please evaluate this course by filling the course evaluation survey `evaluation open period: Wednesday (5/20) 12am to Friday (6/5) 12am`
@@ -36,11 +36,11 @@
 >
 > **Updates (4/7/2020):**
 >
-> -   **No final collorative projects since I realize the difficulty of working as a group when you cannot meet in person.**
+> -   **No final collaborative projects since I realize the difficulty of working as a group when you cannot meet in person.**
 > -   The lab 5 will be reformatted as an individual final project\*\*. You will sill present your final project in the last week.
 > -   Students work together as groups for the in-class discussion.
 > -   Students should use **GitHub Issues** as the primary place to submit your questions about the course material, lectures, and/or labs. If you cannot get a proper answer from GitHub issue,  we can talk through slack, email, skype, or wechat.
-> -   For each student, the activity of issue response is expected. Moreover, if you have an comparative more number of issue replies, you will receive extra credits.
+> -   For each student, the activity of issue response is expected. Moreover, if you have an comparatively more number of issue replies, you will receive extra credits.
 
 As digital technologies have radically transformed human life, this course tries to engage students in this digitally mediated and data-intensive geographic world, and also train them the timely technical skills which are demanding in emerging job markets. This course will provide a unique opportunity to explore emerging digital methods, to build a holistic solution to real-world problems, and to critically analyze their social implications. Rather than focusing exclusively on one or two specific topics, this course covers a full range of theoretical perspectives and practical exercises. The course begins with teaching students on geospatial project management using GitHub, and then a series of geospatial data operations and analyses are covered in detail, such as online data (e.g., geotagged tweets) acquisition, geocoding, spatial and placial analyses. With these preparations, this course switches to online geovisualization. After a brief introduction to web programming basics (e.g., JavaScript, Html, and CSS), students will learn how to visualize and narrate geographic phenomena in an online environment. A few state-of-the-art approaches and applications in digital geographies will be practiced, such as collecting aerial imagery and point clouds using an unmanned aerial vehicle (UAV, commonly known as drone) or LiDAR, as well as storing real-time data from an environmental sensor. Throughout, students will be empowered not only with defined skills that will be important to many emerging jobs, but also with critical intellectual vision. This course is very “hands-on” and interactive! Most of our time will be spent in a hybrid lecture/lab where students will be working together. Although there will be some individual written reflections and analyses, no formal written final exam will be set up. The final project enables students to work collaboratively to figure out a holistic solution to researching a real-world problem. With the completion of this course, each student can share the course work at a self-made website which can be publicly viewed by classmates, open-source community as well as future industrial recruiters. Along the way, the readings will include both applied and theoretical selections. Students will learn not only how people have been programming and visualizing, but also about how critical social theorists have identified assumptions, ideologies, and rigidities in existing practices that can help students to make effective, inclusive and empathetic decisions in today’s data-intensive geographic world.
 
@@ -58,17 +58,17 @@ As digital technologies have radically transformed human life, this course tries
 
 -   `To think critically about the technologies used in digital scholarship, including the material, social, and political implications of digital tech development, maintenance and utilization.`
 
--   `To discern, through investigation, the  relationship between space, technology, and society through critical engagement with practical and theoretical digital geographies methods.` 
+-   `To discern, through investigation, the  relationship between space, technology, and society through critical engagement with practical and theoretical digital geographies methods.`
 
 
 
 ## :calendar: Weekly Schedule
 
-### _Preperation_
+### _Preparation_
 
 -   [**Gear up the working environment**](assets/gearup.md) :computer:  :beer:
--   **Canvas Survey:** Through a survey, students will team up as group of 5 ~ 6 people according to the profeciency of technical skills and interests. `Due: March 31st, 2020, by 11:59pm`
--   **Groups:** Based on the Survey, we have 8 groups (check [here](assets/groups.md)), and I have assigned an group coordinator to each group. Please start meeting your gourp members. Over the quarter, you will work together on ~~the collaborative project and~~ the in-class discussion.
+-   **Canvas Survey:** Through a survey, students will team up as group of 5 ~ 6 people according to the proficiency of technical skills and interests. `Due: March 31st, 2020, by 11:59pm`
+-   **Groups:** Based on the Survey, we have 8 groups (check [here](assets/groups.md)), and I have assigned an group coordinator to each group. Please start meeting your group members. Over the quarter, you will work together on ~~the collaborative project and~~ the in-class discussion.
 
 ### Week 1: Intro to digital geographies
 
@@ -82,7 +82,7 @@ This week’s lecture and lab will prepare you for the course, and provide a the
 
 (*) denotes that this article should be skimmed before class
 
-*Topic: the internet - materiality, structure, & power* 
+*Topic: the internet - materiality, structure, & power*
 
 -   (*) [Critical Atlas of the Internet:  LOUISE DRULHE, 2015](https://louisedrulhe.fr/internet-atlas/)
 -   (*) [Google Is Not God of The Web: DAVID BLUE, 2020](https://bilge.world/google-page-experience)
@@ -97,9 +97,9 @@ This week’s lecture and lab will prepare you for the course, and provide a the
 -   (*) [Building the People’s Internet: GRETA BYRUM, 2019](https://urbanomnibus.net/2019/10/building-the-peoples-internet/)
 
 
-### Week 2: Prorgamming fundamentals
+### Week 2: Programing fundamentals
 
-This week we’ll focus on providing you all with the fundamental skill set for web programming.  We will begin with an overview of the system architecture required for a digital geographies project,  then guide you through some of the essential front-end fundamentals. Including, internet basics, html, javascript, and css. This week requires a lot of self-learning,  and includes fairly lengthy readings and practical exercises. Please be prepared. 
+This week we’ll focus on providing you all with the fundamental skill set for web programming.  We will begin with an overview of the system architecture required for a digital geographies project,  then guide you through some of the essential front-end fundamentals. Including, internet basics, html, javascript, and css. This week requires a lot of self-learning,  and includes fairly lengthy readings and practical exercises. Please be prepared.
 
 -   **Lecture Notes:** [System architecture](weeks/week02/architecture), [intro-to-html, css](weeks/week02/html-css) and [javascript](weeks/week02/javascript), and [Jquery](weeks/week02/jquery).
 -   **Readings:** [W3School Tutorials on Html, javascript, css and jquery](weeks/week02/readings.md).
@@ -108,7 +108,7 @@ This week we’ll focus on providing you all with the fundamental skill set for 
 
 (*) denotes that this article should be skimmed before class
 
-*Topic: software - past, present & future* 
+*Topic: software - past, present & future*
 
 -   (*) [Introducing Code/Space: KITCHIN & DODGE, 2011](https://drive.google.com/file/d/1T7ChuOnaKrgjTVhAeV_Niei2pqCWiiqK/view?usp=sharing)
 
@@ -122,26 +122,26 @@ This week we’ll focus on providing you all with the fundamental skill set for 
 
 *Topic: algorithmic biases, authorship & code*
 
--   [Cloud Ethics: Algorithms and the Attributes of Ourselves and Others; Chapter 3 (The Uncertain Author): LOUISE AMOORE, 2020](https://drive.google.com/file/d/1C3925q917K7cD8-NEbw_Yik_X0oCeSfd/view?usp=sharing) 
+-   [Cloud Ethics: Algorithms and the Attributes of Ourselves and Others; Chapter 3 (The Uncertain Author): LOUISE AMOORE, 2020](https://drive.google.com/file/d/1C3925q917K7cD8-NEbw_Yik_X0oCeSfd/view?usp=sharing)
 
 *Topic: algorithmic biases, race & tech patriarchy*
 
--   [Algorithms of Oppression; Chapter 2: SAFIYA U. NOBLE, 2018](https://drive.google.com/file/d/1QE3A_BF3vqPL7uDsMgKwmSxrhjMGhHKN/view?usp=sharing) 
+-   [Algorithms of Oppression; Chapter 2: SAFIYA U. NOBLE, 2018](https://drive.google.com/file/d/1QE3A_BF3vqPL7uDsMgKwmSxrhjMGhHKN/view?usp=sharing)
 
 
 ### Week 3: Geospatial data
 
-This week’s focus is on processing geospatial data for your digital geographies projects. We will begin by introducing the structure of the geojson format, and then look at techniques for collecting, converting and visualizing geojson objects/features in a web or desktop environment such as QGIS. After completing Lab 2, students will have learned how to collect geo-tagged tweets using specific keywords/topics (e.g., etc.), and methods for visualizing the spatial distribution of the locations for those tweets. 
+This week’s focus is on processing geospatial data for your digital geographies projects. We will begin by introducing the structure of the geojson format, and then look at techniques for collecting, converting and visualizing geojson objects/features in a web or desktop environment such as QGIS. After completing Lab 2, students will have learned how to collect geo-tagged tweets using specific keywords/topics (e.g., etc.), and methods for visualizing the spatial distribution of the locations for those tweets.
 
 -   **Lecture Notes:** [Geospatial data for digital geographies](weeks/week03/readme.md)
 -   **Readings:** a) [Can social media clear the air? A case study of the air pollution problem in Chinese cities](https://drive.google.com/open?id=1C0MTPaPnVALVemeYEfiDChUKRZfcMjz3), b) [More than you ever wanted to know about GeoJSON](weeks/week03/assets/geojson.pdf).
 -   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: April 23rd, by 11:59pm`
--   **In-class Discussion:** In-class Discussion: Discussion on the weekly paper led by Group 2 on Tuesday. 
-  -   The following questions are expected to be covered in the discussion: 
-  -   What were the geospatial data featured in the study? 
-  -   How were they used, and for what purposes? 
-  -   What were their social implications, and how did the authors analyze the examined case (air pollution issue) by interpreting the geospatial data? 
-      Overall, the in-class discussion will be in approximately 30 minutes. After the group presentation, we will open the floor for a Q&A 
+-   **In-class Discussion:** In-class Discussion: Discussion on the weekly paper led by Group 2 on Tuesday.
+  -   The following questions are expected to be covered in the discussion:
+  -   What were the geospatial data featured in the study?
+  -   How were they used, and for what purposes?
+  -   What were their social implications, and how did the authors analyze the examined case (air pollution issue) by interpreting the geospatial data?
+      Overall, the in-class discussion will be in approximately 30 minutes. After the group presentation, we will open the floor for a Q&A
 
 **Extended Readings:**
 
@@ -149,9 +149,9 @@ This week’s focus is on processing geospatial data for your digital geographie
 
 *Topic: “local” data - setting & context*
 
--   All Data Are Local: YANNI ALEXANDER LOUKISSAS, 2019 - “How to analyze data settings rather than data sets, acknowledging the meaning-making power of the local.” 
+-   All Data Are Local: YANNI ALEXANDER LOUKISSAS, 2019 - “How to analyze data settings rather than data sets, acknowledging the meaning-making power of the local.”
     -   [Chapter 4 - Newsworthy Algorithms](https://drive.google.com/file/d/1J_RiZfHoXVtOnUGkg5U-5lmsWfumN3BJ/view?usp=sharing)
-    -   (*) [Chapter 6 - Models of Local Practice (Praxis and Critical Knowledge](https://drive.google.com/file/d/1ex1l1RoPLBt0bey4W3UUrlQYfChQNwzt/view?usp=sharing) 
+    -   (*) [Chapter 6 - Models of Local Practice (Praxis and Critical Knowledge](https://drive.google.com/file/d/1ex1l1RoPLBt0bey4W3UUrlQYfChQNwzt/view?usp=sharing)
     -   [Chapter 7 - Local Ends](https://drive.google.com/file/d/1hmRthNixJl83AXytyUbtXG6r5yyfeeLT/view?usp=sharing)
 
 *Topic: data processing and context*
@@ -166,17 +166,17 @@ This week’s focus is on processing geospatial data for your digital geographie
 
 ### Week 4: Web mapping
 
-This week you will be making your first web map of the quarter using the popular web mapping library - [Leaflet](https://leafletjs.com/) The lecture section this week we’ll work together familiarizing everyone with the basics of web mapping, and then provide a detailed introduction to the Lab 3 exercise. 
+This week you will be making your first web map of the quarter using the popular web mapping library - [Leaflet](https://leafletjs.com/) The lecture section this week we’ll work together familiarizing everyone with the basics of web mapping, and then provide a detailed introduction to the Lab 3 exercise.
 
 -   **Readings:** [Leaflet Basics](weeks/week04/leaflet), [Map Events](weeks/week04/mapevent)
 -   **Lab 3:** [An integrative web mapping](labs/lab03) `Due: May 3rd, by 11:59pm`,  Example: [Oregon Water Atlas](http://oregonwater.info/atlas.html)
--   **In-class Discussion:** a) Web Map A by `Group 3` on `Tuesday` , b) Web Map B by `Group 4` on `Thursday`. Each group will need to pick any online web map you feel interested in, and then introduce this web map to the class. Each group is expected to (1) describe the functions and the targeted audience of this web map; (2) discuss the possible system architecture (you might want to refer to the system architecture diagram which is introduced in week 2); (3) analyze the codes. You are expected to open up the Chrome inspector, and introduce the libraries, the network flow, the major visual components and possibly their functions, etc; (4) The strengths and weaknesses about this web map, especially the map design elements. Please recall the map critique you did in the prerequisite class `geog 360` - what are the visual strategies, the use of visual hierarchy, and so on; (5) do you think the interactive map is an appropriate strategy for the examined topic? If yes, why? If not, what else would be better? e.g., an interactive chart, or a static infographics? (6) anything else you feel worthy to share with the classmates. Overall, the in-class discussion will be in approximately 30 minutes. Following the group discussion, we will hold a Q&A session. 
+-   **In-class Discussion:** a) Web Map A by `Group 3` on `Tuesday` , b) Web Map B by `Group 4` on `Thursday`. Each group will need to pick any online web map you feel interested in, and then introduce this web map to the class. Each group is expected to (1) describe the functions and the targeted audience of this web map; (2) discuss the possible system architecture (you might want to refer to the system architecture diagram which is introduced in week 2); (3) analyze the codes. You are expected to open up the Chrome inspector, and introduce the libraries, the network flow, the major visual components and possibly their functions, etc; (4) The strengths and weaknesses about this web map, especially the map design elements. Please recall the map critique you did in the prerequisite class `geog 360` - what are the visual strategies, the use of visual hierarchy, and so on; (5) do you think the interactive map is an appropriate strategy for the examined topic? If yes, why? If not, what else would be better? e.g., an interactive chart, or a static infographics? (6) anything else you feel worthy to share with the classmates. Overall, the in-class discussion will be in approximately 30 minutes. Following the group discussion, we will hold a Q&A session.
 
 **Extended Readings:**
 
 (*) denotes that this article should be skimmed before class
 
-*Topic: web mapping overview* 
+*Topic: web mapping overview*
 
 -   (*) [Web Mapping: The Geographic Information Science & Technology Body of Knowledge, 2017](https://gistbok.ucgis.org/bok-topics/web-mapping)
 
@@ -190,7 +190,7 @@ This week you will be making your first web map of the quarter using the popular
 
 *Topic: towards data feminism & spatial activism*
 
--   [DGEI Medium Article + Data Feminism: CATHERINE D'IGNAZIO, 2020](https://medium.com/nightingale/gwendolyn-warren-and-the-detroit-geographic-expedition-and-institute-df9ee10e6ad2) 
+-   [DGEI Medium Article + Data Feminism: CATHERINE D'IGNAZIO, 2020](https://medium.com/nightingale/gwendolyn-warren-and-the-detroit-geographic-expedition-and-institute-df9ee10e6ad2)
 
 **Supplemental Resources**
 
@@ -213,7 +213,7 @@ This week you will be making your first web map of the quarter using the popular
 
 (*) denotes that this article should be skimmed before class
 
-*Topic: the abc’s of critical cartography* 
+*Topic: the abc’s of critical cartography*
 
 -   (*) [Intro to Critical Cartography: CRAMPTON & KRYGIER, 2005](https://drive.google.com/file/d/1IEz_9J4vH6foIrV36wDoIovOYNomZBWj/view?usp=sharing)
 
@@ -252,7 +252,7 @@ This week you will be making your first web map of the quarter using the popular
 
 (*) denotes that this article should be skimmed before class
 
-*Topic: urban dashboards, data interfaces & the rise of “informatic urbanism” * 
+*Topic: urban dashboards, data interfaces & the rise of “informatic urbanism” *
 
 -   [History of the Urban Dashboard:  SHANNON MATTERN, 2015](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/)
 -   (*) [Interfacing Urban Intelligence: SHANNON MATTERN, 2014](https://placesjournal.org/article/interfacing-urban-intelligence/#0)
@@ -264,28 +264,28 @@ This week you will be making your first web map of the quarter using the popular
 
 *Topic: data dashboard trends*
 
--   (*) [Google Trends - data dashboard](https://trends.google.com/trends/explore?date=all&geo=US&q=Data%20Dashboard) 
+-   (*) [Google Trends - data dashboard](https://trends.google.com/trends/explore?date=all&geo=US&q=Data%20Dashboard)
 
 
 ### Week 7: Geo-Narratives
 
-This week we will explore the concept of geo-narrative, the use of storytelling in mapping practice, by looking at existing geo-narrative mapping projects and engaging in a group discussion and map critique. 
+This week we will explore the concept of geo-narrative, the use of storytelling in mapping practice, by looking at existing geo-narrative mapping projects and engaging in a group discussion and map critique.
 
 -   **Lecture Notes:** [Video](assets/video.md), [Image](assets/image.md), [Favicon](assets/favicon.md), [Icon](assets/icon.md), [Web Fonts](assets/fonts.md), and other resources.
 -   **Readings:** [Storymap.js](https://github.com/jakobzhao/storymap), [Map-based visual Storytelling: An Assessment of emerging genres and tropes `Chapter 1,2 and 5`.](https://drive.google.com/file/d/133s4dxoRaT1A7OckBapS6e9Yxh_wQc9d/view?usp=sharing)
 -   **In-class Discussion:** a) Storymap A led by `Group 6` on `Tuesday`, b) Storymap B led by `Group 8` on `Thursday`.
 -   **Examples:** [#Stand with StandingRock](https://jakobzhao.github.io/standwithstandingrock/), [Oregon Waters](http://oregonwater.info/atlas.html), [storymap template](https://github.com/jakobzhao/storymap-test)
-> **Notes for the in-class discussion:** Each group will need to pick an online dynamic geo-narrative example that you feel interested in and then introduce it to the class. Each group is expected to (1) describe the functions and the (intended) targeted audience; (2) describe the storyline, Genres, tropes as well as other things you want to share with the students (please refer to this week's required reading); (3) analyze the codes. You are expected to open up the Chrome inspector, and introduce the libraries, the network flow, the major visual components and possibly their functions, etc; (4) The strengths and weaknesses of this geo-narrative, especially the map design. Please recall the map critique you did in the prerequisite class geog 360 - what are the visual strategies, the use of visual hierarchy, and so on; (5) do you think the geo-narrative is an appropriate strategy for the examined topic? If yes, why? If not, what else would be better? e.g., an interactive chart, or a static infographics? (6) anything else you feel worthy to share with the classmates. Overall, the in-class discussion will be in approximately 30 minutes. Following the group discussion, we will hold a Q&A session. 
--   **Final Project:**  1) [data table](assets/datatable.md) -  [`geosaptial data collection`](https://guides.lib.uw.edu/research/gis/data_sites), 2) [sketch](assets/sketch.md), 3) design scheme, and (4) coding!
+> **Notes for the in-class discussion:** Each group will need to pick an online dynamic geo-narrative example that you feel interested in and then introduce it to the class. Each group is expected to (1) describe the functions and the (intended) targeted audience; (2) describe the storyline, Genres, tropes as well as other things you want to share with the students (please refer to this week's required reading); (3) analyze the codes. You are expected to open up the Chrome inspector, and introduce the libraries, the network flow, the major visual components and possibly their functions, etc; (4) The strengths and weaknesses of this geo-narrative, especially the map design. Please recall the map critique you did in the prerequisite class geog 360 - what are the visual strategies, the use of visual hierarchy, and so on; (5) do you think the geo-narrative is an appropriate strategy for the examined topic? If yes, why? If not, what else would be better? e.g., an interactive chart, or a static infographics? (6) anything else you feel worthy to share with the classmates. Overall, the in-class discussion will be in approximately 30 minutes. Following the group discussion, we will hold a Q&A session.
+-   **Final Project:**  1) [data table](assets/datatable.md) -  [`geospatial data collection`](https://guides.lib.uw.edu/research/gis/data_sites), 2) [sketch](assets/sketch.md), 3) design scheme, and (4) coding!
 
 **Extended Readings:**
 
 (*) denotes that this article should be skimmed before class
 
-*Topic: geovisualization & narrativity (storytelling & emotion)* 
+*Topic: geovisualization & narrativity (storytelling & emotion)*
 
 -   (*) [Affective Geovisualisations: AITKEN & CRAINE, 2011](https://drive.google.com/file/d/1aqMFkewNT9s9nrAecAVYiaBAbtCrf7xj/view?usp=sharing)
--   [Using Narrativity as Methodological Tool: EEVA-KAISA PROKKOLA, 2014](https://drive.google.com/file/d/1w8kM9zdfNRA0bLaQJn5Zvdl8SCuz52Nu/view?usp=sharing) 
+-   [Using Narrativity as Methodological Tool: EEVA-KAISA PROKKOLA, 2014](https://drive.google.com/file/d/1w8kM9zdfNRA0bLaQJn5Zvdl8SCuz52Nu/view?usp=sharing)
 
 *Topic: mapping, direct action and oral histories - a guide*
 
@@ -293,11 +293,11 @@ This week we will explore the concept of geo-narrative, the use of storytelling 
 
 *Topic: dwelling, identity, mapping reflections of place*
 
--   [Geo-Subjective Visions: DANIELA GIL ESTEVA, 2014](http://www.scapegoatjournal.org/docs/06/Scapegoat_06_Gil%20Esteva_Geo-Subjective%20Visions.pdf) 
+-   [Geo-Subjective Visions: DANIELA GIL ESTEVA, 2014](http://www.scapegoatjournal.org/docs/06/Scapegoat_06_Gil%20Esteva_Geo-Subjective%20Visions.pdf)
 
 *[Topic: deep mapping](https://polis.iupui.edu/defining-deep-maps/)*
 
--   [Deep Mapping and Spatial Anthropology: LES ROBERTS, 2016](https://www.mdpi.com/2076-0787/5/1/5/htm) 
+-   [Deep Mapping and Spatial Anthropology: LES ROBERTS, 2016](https://www.mdpi.com/2076-0787/5/1/5/htm)
 
 **Supplemental Resources:**
 
@@ -309,20 +309,20 @@ This week we will explore the concept of geo-narrative, the use of storytelling 
 
 ### Week 8: Emerging topics
 
-This week will focus on two emerging topics related to digital geographies, including cloud point visualization and real-time environment data collection, and explore their promise and pitfalls. 
+This week will focus on two emerging topics related to digital geographies, including cloud point visualization and real-time environment data collection, and explore their promise and pitfalls.
 
 -   **Lecture Notes:** [Point Cloud visualization](https://jakobzhao.github.io/sfm/index.html) and [Real-time environmental data visualization](weeks/week08/rpi-iot).
 -   **Readings:** [Real-time GIS](https://drive.google.com/file/d/1COD2OYBxEJThG5Lfx7-nzV0EGtGedndT/view?usp=sharing) and [Panopticon](https://drive.google.com/file/d/156fk11L9JFzsyV_9TRi9_c15MSIPCiL6/view?usp=sharing)
--   **In-class Discussion:** a) Point Cloud Visulization led by `Group 1` on `Tuesday`, b) Discussion on the paper about Panopticon led by `Group 7` on `Thursday`.
+-   **In-class Discussion:** a) Point Cloud Visualization led by `Group 1` on `Tuesday`, b) Discussion on the paper about Panopticon led by `Group 7` on `Thursday`.
 
 **Extended Readings:**
 
 (*) denotes that this article should be skimmed before class
 
-*Topic: mapping futures - where are the blank spaces?* 
+*Topic: mapping futures - where are the blank spaces?*
 
 -   (*) [Here Be Dragons - Finding the Blank Spaces in a Well-Mapped World: LOIS PARSHLEY, 2017](https://drive.google.com/file/d/1B2b47XJyHiDk0S_qkiq4LsKLJe7SRbBe/view?usp=sharing)
--   [Point Clouds and Smart Cities: GIM INTERNATIONAL, 2018](https://www.gim-international.com/magazines/gim-international-september-october-2018.pdf) 
+-   [Point Clouds and Smart Cities: GIM INTERNATIONAL, 2018](https://www.gim-international.com/magazines/gim-international-september-october-2018.pdf)
 
 *Topic: AI - materiality, structure, labor & power*
 
@@ -330,30 +330,30 @@ This week will focus on two emerging topics related to digital geographies, incl
 
 *Topic: algorithmic policing, race and bias*
 
--   [Abolishing Racist Police Algorithms: RYAN-MOSLEY & STRONG, 2020](https://www.technologyreview.com/2020/06/05/1002709/the-activist-dismantling-racist-police-algorithms/) 
+-   [Abolishing Racist Police Algorithms: RYAN-MOSLEY & STRONG, 2020](https://www.technologyreview.com/2020/06/05/1002709/the-activist-dismantling-racist-police-algorithms/)
 
 *Topic: simulation, glitches & hacks*
 
--   [Flight Simulator Glitches: TOM WARREN, 2020](https://www.theverge.com/2020/8/20/21376978/microsoft-flight-simulator-glitches-maps-bugs) 
--   (*) [GPS Jamming and Spoofing: DirectionsMag, 2018](https://www.directionsmag.com/article/8107) 
+-   [Flight Simulator Glitches: TOM WARREN, 2020](https://www.theverge.com/2020/8/20/21376978/microsoft-flight-simulator-glitches-maps-bugs)
+-   (*) [GPS Jamming and Spoofing: DirectionsMag, 2018](https://www.directionsmag.com/article/8107)
 
 
 ### Week 9 & 10: Project studio
 
-During these two weeks, each group will focusing on their final projects. The instructors are avaiable during the office hour, the normal lecture period to help with each group on their final projects.
+During these two weeks, each group will focusing on their final projects. The instructors are available during the office hour, the normal lecture period to help with each group on their final projects.
 
--   **Additional Resources** 
+-   **Additional Resources**
 
 **Below is a list of recent or forthcoming books/reports suggested for future reading, these books are meant to encourage critical reflection on this course, the nature of digital geographies, and the connections between geospatial research, technology and society.**
 
 -   [Changing Digital Geographies - Technologies, Environments and People: JESSICA MCLEAN, 2020](https://researchers.mq.edu.au/en/publications/changing-digital-geographies-technologies-environments-and-people)
--   [Counterpoints: An Atlas of Displacement and Resistance: Anti-Eviction Mapping Project (AEMP), forthcoming](https://antievictionmap.com/blog/2020/9/3/counterpoints-an-atlas-of-displacement-and-resistance) 
+-   [Counterpoints: An Atlas of Displacement and Resistance: Anti-Eviction Mapping Project (AEMP), forthcoming](https://antievictionmap.com/blog/2020/9/3/counterpoints-an-atlas-of-displacement-and-resistance)
 -   [Stones That Calculate: Collection of resources about post-digital materiality: VARIOUS AUTHORS, 2020](https://stones.computer/)
 -   [Machine Landscapes Architectures of the Post-Anthropocene: ARCHITECTURAL DESIGN, 2019](https://monoskop.org/images/0/0a/Architectural_Design_89_1_Machine_Landscapes_Architectures_of_the_Post-Anthropocene_2019.pdf)
 -   [Automating Inequality: How High-Tech Tools Profile, Police, and Punish the Poor: VIRGINIA EUBANKS, 2018](https://us.macmillan.com/books/9781250074317)
 -   [A Vision of Community Powered Tech - Report & Toolkit: RACHEL COLDICUTT, 2020](https://glimmersreport.net/report)
--   [Too Smart: How Digital Capitalism is Extracting Data, Controlling Our Lives, and Taking Over the World: JATHAN SADOWSKI, 2020](https://mitpress.mit.edu/books/too-smart) 
--   [Slow Computing: Why We Need Balanced Digital Lives: FRASER & KITCHIN, 2020](https://bristoluniversitypress.co.uk/slow-computing) 
+-   [Too Smart: How Digital Capitalism is Extracting Data, Controlling Our Lives, and Taking Over the World: JATHAN SADOWSKI, 2020](https://mitpress.mit.edu/books/too-smart)
+-   [Slow Computing: Why We Need Balanced Digital Lives: FRASER & KITCHIN, 2020](https://bristoluniversitypress.co.uk/slow-computing)
 
 **Below is a brief collection of online resources related to digital geographies, space, technology, society and mapping for future reference, and to foster continued critical engagement with the topics covered in this course.**
 
@@ -364,21 +364,21 @@ During these two weeks, each group will focusing on their final projects. The in
     -   [Bulletin of Science, Technology & Society](https://journals.sagepub.com/home/bst)
     -   [Engaging STS](https://estsjournal.org/index.php/ests)
     -   [Scapegoat Journal](http://www.scapegoatjournal.org/)
-  
+
 -   *Research Groups*
     -   [Digital Geographies Research Group (UK)](https://digitalgeographiesrg.org/)
     -   [Digital Geographies Specialty Group AAG](https://community.aag.org/specialtygroups/allspecialtygroups)
     -   [Critical Platform Studies Group](https://sites.uw.edu/critplat/)
-  
+
 -   *Miscellaneous*
     -   [Data & Society](https://datasociety.net/)
     -   [Logic Magazine](https://logicmag.io/)
     -   [AI Now Institute](https://ainowinstitute.org/)
-  
+
 
 ### Week 11: Final ~~collaborative~~ project presentations
 
-Durint the last two meeting sessions, each group will present their final projects. More information about final project will be shared afer the mid-term.
+During the last two meeting sessions, each group will present their final projects. More information about final project will be shared after the mid-term.
 
 ## :bell: Course Requirement
 
@@ -390,7 +390,7 @@ The Student Tech Loan Program is expanding as quickly as possible. We announced 
 
 **In-class discussion leadership:** You and your group mates will lead at least one in-class discussion. Please work together to prepare some activities and guiding questions that will inspire and structure our discussion of the material.
 
-**Labs:** You need to finish all five labs by the due date listed. In order to help you work on each lab, we will walk through most of the labs in class.
+**Labs:** You need to finish all five labs by the due date. In order to help you work on each lab, we will walk through most of the labs in class.
 
 **Participation in in-class discussion:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and actively participate in critical discussions of those readings.
 
@@ -414,11 +414,11 @@ This course targets students who have a background in fundamental geographic inf
 | Final  project                       | 20% |
 | Essay                                | 10% |
 
-> The item on **_constructive contribution to class_** includes your participation in the class (e.g., self-introduction, answer questions in class, etc/) and/or your response on github issues (ask questions via GitHub issue,and help your classmates using github issues).
+> The item on **_constructive contribution to class_** includes your participation in the class (e.g., self-introduction, answer questions in class, etc/) and/or your response on github issues (ask questions via GitHub issue, and help your classmates using github issues).
 
 ## :book: Copyright
 
-Through this course, I would like to cultiviate the open source culture. The course materials are apprently open source for students and open source community to access.
+Through this course, I would like to cultivate the open source culture. The course materials are open source for students and open source community to access.
 
 Notably, **students are not allow to videotape or audio-tape (record) this class in any form, and sharing recordings outside of class without the written consent of each student in the class is not permitted by [FERPA](https://registrar.washington.edu/students/ferpa/).** However, I will try to record most of the classes via Zoom and share them via Canvas. Even so, I still encourage each of you attend the lectures instead of watching the recorded videos afterwards. Your in-class participation is a key factor to yield the best learning outcome.
 
