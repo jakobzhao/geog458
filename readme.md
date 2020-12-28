@@ -1,19 +1,19 @@
 # GEOGRAPHY 458: Advanced Digital Geographies
 
 **Meetings**
- - **Lectures:** Tuesdays and Thursdays 11:30 AM to 12:20 PM PST on Zoom
- - **Reading Discussion:** TBD
+
+-   **Lectures:** Tuesdays and Thursdays 11:30 AM to 12:20 PM PST on Zoom
+-   **Reading Discussion:** TBD
 
 **Personnel:**
 
- - **Bo Zhao**, Instructor, 206.685.3846 or zhaobo@uw.edu | Office Hour: Thursdays 1:10 to 5:00 PM PST on Slack or by appointment
+-   **Bo Zhao**, Instructor, 206.685.3846 or zhaobo@uw.edu | Office Hour: Thursdays 1:10 to 5:00 PM PST on Slack or by appointment
 
- - **Tyler McCrea**, Teaching Assistant, tmccrea@uw.edu
+-   **Tyler McCrea**, Teaching Assistant, tmccrea@uw.edu
 
 **Class Discussion Board:** [geog458-winter-2021.slack.com](geog458-winter-2021.slack.com)
 
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
-
 
 As digital technologies have radically transformed human life, this course tries to engage students in this digitally mediated and data-intensive geographic world, and also train them the timely technical skills which are demanding in emerging job markets. This course will provide a unique opportunity to explore emerging digital methods, to build a holistic solution to real-world problems, and to critically analyze their social implications. Rather than focusing exclusively on one or two specific topics, this course covers a full range of theoretical perspectives and practical exercises. The course begins with teaching students on geospatial project management using GitHub, and then a series of geospatial data operations and analyses are covered in detail, such as online data (e.g., geotagged tweets) acquisition, geocoding, spatial and placial analyses. With these preparations, this course switches to online geovisualization. After a brief introduction to web programming basics (e.g., JavaScript, Html, and CSS), students will learn how to visualize and narrate geographic phenomena in an online environment. A few state-of-the-art approaches and applications in digital geographies will be practiced, such as collecting aerial imagery and point clouds using an unmanned aerial vehicle (UAV, commonly known as drone) or LiDAR, as well as storing real-time data from an environmental sensor. Throughout, students will be empowered not only with defined skills that will be important to many emerging jobs, but also with critical intellectual visions.
 
@@ -33,7 +33,6 @@ This course is very “hands-on” and interactive! Most of our time will be spe
 
 -   To discern, through investigation, the  relationship between space, technology, and society through critical engagement with practical and theoretical digital geographies methods.
 
-
 ## :calendar: Weekly Schedule
 
 ### _Preparation_
@@ -52,22 +51,21 @@ This week’s lecture and lab will prepare you for the course, and provide a the
 
 **Extended Readings:**
 
-(*) denotes that this article should be skimmed before class
+(\*) denotes that this article should be skimmed before class
 
-*Topic: the internet - materiality, structure, & power*
+_Topic: the internet - materiality, structure, & power_
 
--   (*) [Critical Atlas of the Internet:  LOUISE DRULHE, 2015](https://louisedrulhe.fr/internet-atlas/)
--   (*) [Google Is Not God of The Web: DAVID BLUE, 2020](https://bilge.world/google-page-experience)
+-   (\*) [Critical Atlas of the Internet:  LOUISE DRULHE, 2015](https://louisedrulhe.fr/internet-atlas/)
+-   (\*) [Google Is Not God of The Web: DAVID BLUE, 2020](https://bilge.world/google-page-experience)
 
-*Topic: digital humanities, mapping & activism (theory + praxis)*
+_Topic: digital humanities, mapping & activism (theory + praxis)_
 
 -   [The Digital Humanities, American Studies, and the Anti-Eviction Mapping Project: ERIN MCELROY, 2018 ](https://drive.google.com/file/d/1bS5iI0jmQaGLtMk0k2sQUghvYpJsSH-a/view?usp=sharing)
 
-*Topic: community tech*
+_Topic: community tech_
 
 -   [DIY Internet Network in NYC: KARL BODE, 2019](https://www.vice.com/en_us/article/paj8z8/a-diy-internet-network-has-drastically-expanded-its-coverage-in-nyc)
--   (*) [Building the People’s Internet: GRETA BYRUM, 2019](https://urbanomnibus.net/2019/10/building-the-peoples-internet/)
-
+-   (\*) [Building the People’s Internet: GRETA BYRUM, 2019](https://urbanomnibus.net/2019/10/building-the-peoples-internet/)
 
 ### Week 2: Programing fundamentals
 
@@ -78,28 +76,27 @@ This week we’ll focus on providing you all with the fundamental skill set for 
 
 **Extended Readings:**
 
-(*) denotes that this article should be skimmed before class
+(\*) denotes that this article should be skimmed before class
 
-*Topic: software - past, present & future*
+_Topic: software - past, present & future_
 
--   (*) [Introducing Code/Space: KITCHIN & DODGE, 2011](https://drive.google.com/file/d/1T7ChuOnaKrgjTVhAeV_Niei2pqCWiiqK/view?usp=sharing)
+-   (\*) [Introducing Code/Space: KITCHIN & DODGE, 2011](https://drive.google.com/file/d/1T7ChuOnaKrgjTVhAeV_Niei2pqCWiiqK/view?usp=sharing)
 
-*Topic: race, code, bias & exposure*
+_Topic: race, code, bias & exposure_
 
--   (*) [Race After Technology: Abolitionist Tools for the New Jim Code; Chapter 3 (Coded Exposure): RUHA BENJAMIN, 2019](https://drive.google.com/file/d/1ddKr5eykntv9FmZ2UxS2fIGjFeSAAotF/view?usp=sharing)
+-   (\*) [Race After Technology: Abolitionist Tools for the New Jim Code; Chapter 3 (Coded Exposure): RUHA BENJAMIN, 2019](https://drive.google.com/file/d/1ddKr5eykntv9FmZ2UxS2fIGjFeSAAotF/view?usp=sharing)
 
-*Topic: tech and racial inequity*
+_Topic: tech and racial inequity_
 
 -   [Are Robots Racist (Lecture): RUHA BENJAMIN, 2019](https://www.dropbox.com/s/j80s8kjm63erf70/Ruha%20Benjamin%20Guest%20Lecture.mp4?dl=0)
 
-*Topic: algorithmic biases, authorship & code*
+_Topic: algorithmic biases, authorship & code_
 
 -   [Cloud Ethics: Algorithms and the Attributes of Ourselves and Others; Chapter 3 (The Uncertain Author): LOUISE AMOORE, 2020](https://drive.google.com/file/d/1C3925q917K7cD8-NEbw_Yik_X0oCeSfd/view?usp=sharing)
 
-*Topic: algorithmic biases, race & tech patriarchy*
+_Topic: algorithmic biases, race & tech patriarchy_
 
 -   [Algorithms of Oppression; Chapter 2: SAFIYA U. NOBLE, 2018](https://drive.google.com/file/d/1QE3A_BF3vqPL7uDsMgKwmSxrhjMGhHKN/view?usp=sharing)
-
 
 ### Week 3: Geospatial data
 
@@ -109,32 +106,31 @@ This week’s focus is on processing geospatial data for your digital geographie
 -   **Readings:** a) [Can social media clear the air? A case study of the air pollution problem in Chinese cities](https://drive.google.com/open?id=1C0MTPaPnVALVemeYEfiDChUKRZfcMjz3), b) [More than you ever wanted to know about GeoJSON](weeks/week03/assets/geojson.pdf).
 -   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: April 23rd, by 11:59pm`
 -   **In-class Discussion:** In-class Discussion: Discussion on the weekly paper led by Group 2 on Tuesday.
-  -   The following questions are expected to be covered in the discussion:
-  -   What were the geospatial data featured in the study?
-  -   How were they used, and for what purposes?
-  -   What were their social implications, and how did the authors analyze the examined case (air pollution issue) by interpreting the geospatial data?
-      Overall, the in-class discussion will be in approximately 30 minutes. After the group presentation, we will open the floor for a Q&A
+-   The following questions are expected to be covered in the discussion:
+-   What were the geospatial data featured in the study?
+-   How were they used, and for what purposes?
+-   What were their social implications, and how did the authors analyze the examined case (air pollution issue) by interpreting the geospatial data?
+    Overall, the in-class discussion will be in approximately 30 minutes. After the group presentation, we will open the floor for a Q&A
 
 **Extended Readings:**
 
-(*) denotes that this article should be skimmed before class
+(\*) denotes that this article should be skimmed before class
 
-*Topic: “local” data - setting & context*
+_Topic: “local” data - setting & context_
 
 -   All Data Are Local: YANNI ALEXANDER LOUKISSAS, 2019 - “How to analyze data settings rather than data sets, acknowledging the meaning-making power of the local.”
     -   [Chapter 4 - Newsworthy Algorithms](https://drive.google.com/file/d/1J_RiZfHoXVtOnUGkg5U-5lmsWfumN3BJ/view?usp=sharing)
-    -   (*) [Chapter 6 - Models of Local Practice (Praxis and Critical Knowledge](https://drive.google.com/file/d/1ex1l1RoPLBt0bey4W3UUrlQYfChQNwzt/view?usp=sharing)
+    -   (\*) [Chapter 6 - Models of Local Practice (Praxis and Critical Knowledge](https://drive.google.com/file/d/1ex1l1RoPLBt0bey4W3UUrlQYfChQNwzt/view?usp=sharing)
     -   [Chapter 7 - Local Ends](https://drive.google.com/file/d/1hmRthNixJl83AXytyUbtXG6r5yyfeeLT/view?usp=sharing)
 
-*Topic: data processing and context*
+_Topic: data processing and context_
 
--   (*) [Putting Data back into Context: CATHERINE D'IGNAZIO, 2019](https://datajournalism.com/read/longreads/putting-data-back-into-context)
+-   (\*) [Putting Data back into Context: CATHERINE D'IGNAZIO, 2019](https://datajournalism.com/read/longreads/putting-data-back-into-context)
 
-*Topic: who collections location data and why?*
+_Topic: who collections location data and why?_
 
 -   [The Wired Guide to Personal Data Collection: LOUISE MATSAKIS, 2019](https://www.wired.com/story/wired-guide-personal-data-collection/)
--   (*) [CBP Paid $476K for Personal Data: AARON HOLMES, 2020](https://www.businessinsider.com/cbp-venntel-contract-phone-location-data-2020-8 )
-
+-   (\*) [CBP Paid $476K for Personal Data: AARON HOLMES, 2020](https://www.businessinsider.com/cbp-venntel-contract-phone-location-data-2020-8)
 
 ### Week 4: Web mapping
 
@@ -146,21 +142,21 @@ This week you will be making your first web map of the quarter using the popular
 
 **Extended Readings:**
 
-(*) denotes that this article should be skimmed before class
+(\*) denotes that this article should be skimmed before class
 
-*Topic: web mapping overview*
+_Topic: web mapping overview_
 
--   (*) [Web Mapping: The Geographic Information Science & Technology Body of Knowledge, 2017](https://gistbok.ucgis.org/bok-topics/web-mapping)
+-   (\*) [Web Mapping: The Geographic Information Science & Technology Body of Knowledge, 2017](https://gistbok.ucgis.org/bok-topics/web-mapping)
 
-*Topic: doing critical GIS*
+_Topic: doing critical GIS_
 
 -   [Hacker Cartography:  ALAN MCCONCHIE, 2015](https://drive.google.com/file/d/1H76GJFXwS5dOPZYyxfyuud0DGQzYGNIr/view?usp=sharing)
 
-*Topic: web mapping and research futures*
+_Topic: web mapping and research futures_
 
--   (*) [Digital Mapping and Segregation: SARAH BOND, 2017](https://www.forbes.com/sites/drsarahbond/2017/10/20/how-is-digital-mapping-changing-the-way-we-visualize-racism-and-segregation/#4df35c7d33fa)
+-   (\*) [Digital Mapping and Segregation: SARAH BOND, 2017](https://www.forbes.com/sites/drsarahbond/2017/10/20/how-is-digital-mapping-changing-the-way-we-visualize-racism-and-segregation/#4df35c7d33fa)
 
-*Topic: towards data feminism & spatial activism*
+_Topic: towards data feminism & spatial activism_
 
 -   [DGEI Medium Article + Data Feminism: CATHERINE D'IGNAZIO, 2020](https://medium.com/nightingale/gwendolyn-warren-and-the-detroit-geographic-expedition-and-institute-df9ee10e6ad2)
 
@@ -168,11 +164,10 @@ This week you will be making your first web map of the quarter using the popular
 
 -   [Web Mapping Textbook: University of Wisconsin Cartography Lab](https://github.com/uwcartlab/webmapping)
 
-*Interesting web maps*
+_Interesting web maps_
 
 -   [Submarine Cable Map: TELEGEOGRAPHY](https://www.submarinecablemap.com/#/)
 -   [Mapping Inequality - Redlining in New Deal America: COLLABORATIVE PROJECT](https://dsl.richmond.edu/panorama/redlining/#loc=5/39.1/-94.58)
-
 
 ### Week 5: Map design
 
@@ -183,23 +178,23 @@ This week you will be making your first web map of the quarter using the popular
 
 **Extended Readings:**
 
-(*) denotes that this article should be skimmed before class
+(\*) denotes that this article should be skimmed before class
 
-*Topic: the abc’s of critical cartography*
+_Topic: the abc’s of critical cartography_
 
--   (*) [Intro to Critical Cartography: CRAMPTON & KRYGIER, 2005](https://drive.google.com/file/d/1IEz_9J4vH6foIrV36wDoIovOYNomZBWj/view?usp=sharing)
+-   (\*) [Intro to Critical Cartography: CRAMPTON & KRYGIER, 2005](https://drive.google.com/file/d/1IEz_9J4vH6foIrV36wDoIovOYNomZBWj/view?usp=sharing)
 
-*Topic: maps and knowledge, indigenous mapping methods, maps as colonial tools & the construction/ordering of space*
+_Topic: maps and knowledge, indigenous mapping methods, maps as colonial tools & the construction/ordering of space_
 
--   (*) [Maps Are Territories: Science is an Atlas: DAVID TURNBULL & OTHERS, 1989](http://territories.indigenousknowledge.org/index.html)
+-   (\*) [Maps Are Territories: Science is an Atlas: DAVID TURNBULL & OTHERS, 1989](http://territories.indigenousknowledge.org/index.html)
 
-*Topic: counter mapping practice*
+_Topic: counter mapping practice_
 
 -   [Counter Map Collection: VARIOUS CONTRIBUTORS, 2013](http://countermapcollection.org/collection/)
 
-*Topic: mapping practice & community impact
+\*Topic: mapping practice & community impact
 
--   (*)[William Bunge, the DGEI & Radical Cartography: MORRIS & VOYCE, 2015](http://jacket2.org/commentary/william-bunge-dgei-radical-cartography)
+-   (\*)[William Bunge, the DGEI & Radical Cartography: MORRIS & VOYCE, 2015](http://jacket2.org/commentary/william-bunge-dgei-radical-cartography)
 -   [Mapshop: Learning to Map, Mapping to Learn: BARRETT & WILSON, 2019](http://livingmaps.review/journal/index.php/LMR/article/view/166/306)
 
 **Supplemental Resources**
@@ -209,10 +204,9 @@ This week you will be making your first web map of the quarter using the popular
 -   [Fild Papers: STAMEN DESIGNS](http://fieldpapers.org/)
 -   [Cartographic Grounds - Projecting the Landscape Imaginary: JILL DESIMINI, 2013](https://placesjournal.org/article/cartographic-grounds-projecting-the-landscape-imaginary/)
 
-
 ### Week 6: Smart dashboards
 
-- check out the guidelines for [final project](project/project.md) and [essay](project/essay.md).
+-   check out the guidelines for [final project](project/project.md) and [essay](project/essay.md).
 -   **Lecture Notes:** interface design, color, typography, icons, animation
 -   **Guest Lecture:** Design critique for digital geographies projects -- given by [Bailiang Zhou](https://www.zhoubailiang.com/) from Tableau on May 7th after the in-class discussion
 -   **Readings:** [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), [Bootstrap](weeks/week06/readings.md)
@@ -222,22 +216,21 @@ This week you will be making your first web map of the quarter using the popular
 
 **Extended Readings:**
 
-(*) denotes that this article should be skimmed before class
+(\*) denotes that this article should be skimmed before class
 
-*Topic: urban dashboards, data interfaces & the rise of “informational urbanism” *
+_Topic: urban dashboards, data interfaces & the rise of “informational urbanism” _
 
 -   [History of the Urban Dashboard:  SHANNON MATTERN, 2015](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/)
--   (*) [Interfacing Urban Intelligence: SHANNON MATTERN, 2014](https://placesjournal.org/article/interfacing-urban-intelligence/#0)
--   (*) [A City is Not a Computer: SHANNON MATTERN, 2017](https://placesjournal.org/article/a-city-is-not-a-computer/#0)
+-   (\*) [Interfacing Urban Intelligence: SHANNON MATTERN, 2014](https://placesjournal.org/article/interfacing-urban-intelligence/#0)
+-   (\*) [A City is Not a Computer: SHANNON MATTERN, 2017](https://placesjournal.org/article/a-city-is-not-a-computer/#0)
 
-*Topic: how data dashboards distort*
+_Topic: how data dashboards distort_
 
--   (*) [3 Ways Data Dashboards Can Mislead You: HARVARD BUSINESS REVIEW, 2017](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section)
+-   (\*) [3 Ways Data Dashboards Can Mislead You: HARVARD BUSINESS REVIEW, 2017](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section)
 
-*Topic: data dashboard trends*
+_Topic: data dashboard trends_
 
--   (*) [Google Trends - data dashboard](https://trends.google.com/trends/explore?date=all&geo=US&q=Data%20Dashboard)
-
+-   (\*) [Google Trends - data dashboard](https://trends.google.com/trends/explore?date=all&geo=US&q=Data%20Dashboard)
 
 ### Week 7: Geo-Narratives
 
@@ -247,37 +240,36 @@ This week we will explore the concept of geo-narrative, the use of storytelling 
 -   **Readings:** [Storymap.js](https://github.com/jakobzhao/storymap), [Map-based visual Storytelling: An Assessment of emerging genres and tropes `Chapter 1,2 and 5`.](https://drive.google.com/file/d/133s4dxoRaT1A7OckBapS6e9Yxh_wQc9d/view?usp=sharing)
 -   **In-class Discussion:** a) Storymap A led by `Group 6` on `Tuesday`, b) Storymap B led by `Group 8` on `Thursday`.
 -   **Examples:** [#Stand with StandingRock](https://jakobzhao.github.io/standwithstandingrock/), [Oregon Waters](http://oregonwater.info/atlas.html), [storymap template](https://github.com/jakobzhao/storymap-test)
-> **Notes for the in-class discussion:** Each group will need to pick an online dynamic geo-narrative example that you feel interested in and then introduce it to the class. Each group is expected to (1) describe the functions and the (intended) targeted audience; (2) describe the storyline, Genres, tropes as well as other things you want to share with the students (please refer to this week's required reading); (3) analyze the codes. You are expected to open up the Chrome inspector, and introduce the libraries, the network flow, the major visual components and possibly their functions, etc; (4) The strengths and weaknesses of this geo-narrative, especially the map design. Please recall the map critique you did in the prerequisite class geog 360 - what are the visual strategies, the use of visual hierarchy, and so on; (5) do you think the geo-narrative is an appropriate strategy for the examined topic? If yes, why? If not, what else would be better? e.g., an interactive chart, or a static infographics? (6) anything else you feel worthy to share with the classmates. Overall, the in-class discussion will be in approximately 30 minutes. Following the group discussion, we will hold a Q&A session.
+    > **Notes for the in-class discussion:** Each group will need to pick an online dynamic geo-narrative example that you feel interested in and then introduce it to the class. Each group is expected to (1) describe the functions and the (intended) targeted audience; (2) describe the storyline, Genres, tropes as well as other things you want to share with the students (please refer to this week's required reading); (3) analyze the codes. You are expected to open up the Chrome inspector, and introduce the libraries, the network flow, the major visual components and possibly their functions, etc; (4) The strengths and weaknesses of this geo-narrative, especially the map design. Please recall the map critique you did in the prerequisite class geog 360 - what are the visual strategies, the use of visual hierarchy, and so on; (5) do you think the geo-narrative is an appropriate strategy for the examined topic? If yes, why? If not, what else would be better? e.g., an interactive chart, or a static infographics? (6) anything else you feel worthy to share with the classmates. Overall, the in-class discussion will be in approximately 30 minutes. Following the group discussion, we will hold a Q&A session.
 -   **Final Project:**  1) [data table](assets/datatable.md) -  [`geospatial data collection`](https://guides.lib.uw.edu/research/gis/data_sites), 2) [sketch](assets/sketch.md), 3) design scheme, and (4) coding!
 
 **Extended Readings:**
 
-(*) denotes that this article should be skimmed before class
+(\*) denotes that this article should be skimmed before class
 
-*Topic: geovisualization & narrativity (storytelling & emotion)*
+_Topic: geovisualization & narrativity (storytelling & emotion)_
 
--   (*) [Affective Geovisualisations: AITKEN & CRAINE, 2011](https://drive.google.com/file/d/1aqMFkewNT9s9nrAecAVYiaBAbtCrf7xj/view?usp=sharing)
+-   (\*) [Affective Geovisualisations: AITKEN & CRAINE, 2011](https://drive.google.com/file/d/1aqMFkewNT9s9nrAecAVYiaBAbtCrf7xj/view?usp=sharing)
 -   [Using Narrativity as Methodological Tool: EEVA-KAISA PROKKOLA, 2014](https://drive.google.com/file/d/1w8kM9zdfNRA0bLaQJn5Zvdl8SCuz52Nu/view?usp=sharing)
 
-*Topic: mapping, direct action and oral histories - a guide*
+_Topic: mapping, direct action and oral histories - a guide_
 
--   (*) [Anti-Eviction Mapping Project Handbook: AEMP, 2018](https://static1.squarespace.com/static/52b7d7a6e4b0b3e376ac8ea2/t/5bc76571b208fc10defc815a/1539794295823/AEMP+Handbook.pdf)
+-   (\*) [Anti-Eviction Mapping Project Handbook: AEMP, 2018](https://static1.squarespace.com/static/52b7d7a6e4b0b3e376ac8ea2/t/5bc76571b208fc10defc815a/1539794295823/AEMP+Handbook.pdf)
 
-*Topic: dwelling, identity, mapping reflections of place*
+_Topic: dwelling, identity, mapping reflections of place_
 
 -   [Geo-Subjective Visions: DANIELA GIL ESTEVA, 2014](http://www.scapegoatjournal.org/docs/06/Scapegoat_06_Gil%20Esteva_Geo-Subjective%20Visions.pdf)
 
-*[Topic: deep mapping](https://polis.iupui.edu/defining-deep-maps/)*
+_[Topic: deep mapping](https://polis.iupui.edu/defining-deep-maps/)_
 
 -   [Deep Mapping and Spatial Anthropology: LES ROBERTS, 2016](https://www.mdpi.com/2076-0787/5/1/5/htm)
 
 **Supplemental Resources:**
 
-*Topic: online story/web maps with interesting geo-narrative or “affective” framing:*
+_Topic: online story/web maps with interesting geo-narrative or “affective” framing:_
 
 -   [Mapping Amazon: GOOD JOBS FIRST](https://storymaps.arcgis.com/stories/adc5ff253a3643f88d39e7f3ef1a09ee)
 -   [Survival by Degrees: 389 Bird Species on the Brink: AUDUBON](https://www.audubon.org/climate/survivalbydegrees#climate2-survival-search)
-
 
 ### Week 8: Emerging topics
 
@@ -289,31 +281,29 @@ This week will focus on two emerging topics related to digital geographies, incl
 
 **Extended Readings:**
 
-(*) denotes that this article should be skimmed before class
+(\*) denotes that this article should be skimmed before class
 
-*Topic: mapping futures - where are the blank spaces?*
+_Topic: mapping futures - where are the blank spaces?_
 
--   (*) [Here Be Dragons - Finding the Blank Spaces in a Well-Mapped World: LOIS PARSHLEY, 2017](https://drive.google.com/file/d/1B2b47XJyHiDk0S_qkiq4LsKLJe7SRbBe/view?usp=sharing)
+-   (\*) [Here Be Dragons - Finding the Blank Spaces in a Well-Mapped World: LOIS PARSHLEY, 2017](https://drive.google.com/file/d/1B2b47XJyHiDk0S_qkiq4LsKLJe7SRbBe/view?usp=sharing)
 -   [Point Clouds and Smart Cities: GIM INTERNATIONAL, 2018](https://www.gim-international.com/magazines/gim-international-september-october-2018.pdf)
 
-*Topic: AI - materiality, structure, labor & power*
+_Topic: AI - materiality, structure, labor & power_
 
--   (*) [Anatomy of an AI System: CRAWFORD & JOLER, 2018](https://anatomyof.ai/)
+-   (\*) [Anatomy of an AI System: CRAWFORD & JOLER, 2018](https://anatomyof.ai/)
 
-*Topic: algorithmic policing, race and bias*
+_Topic: algorithmic policing, race and bias_
 
 -   [Abolishing Racist Police Algorithms: RYAN-MOSLEY & STRONG, 2020](https://www.technologyreview.com/2020/06/05/1002709/the-activist-dismantling-racist-police-algorithms/)
 
-*Topic: simulation, glitches & hacks*
+_Topic: simulation, glitches & hacks_
 
 -   [Flight Simulator Glitches: TOM WARREN, 2020](https://www.theverge.com/2020/8/20/21376978/microsoft-flight-simulator-glitches-maps-bugs)
--   (*) [GPS Jamming and Spoofing: DirectionsMag, 2018](https://www.directionsmag.com/article/8107)
-
+-   (\*) [GPS Jamming and Spoofing: DirectionsMag, 2018](https://www.directionsmag.com/article/8107)
 
 ### Week 9 & 10: Project studio
 
 During these two weeks, each group will focusing on their final projects. The instructors are available during the office hour, the normal lecture period to help with each group on their final projects.
-
 
 ### Week 11: Final project presentations
 
