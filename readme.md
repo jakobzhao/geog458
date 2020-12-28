@@ -215,7 +215,7 @@ This week you will be making your first web map of the quarter using the popular
 - check out the guidelines for [final project](project/project.md) and [essay](project/essay.md).
 -   **Lecture Notes:** interface design, color, typography, icons, animation
 -   **Guest Lecture:** Design critique for digital geographies projects -- given by [Bailiang Zhou](https://www.zhoubailiang.com/) from Tableau on May 7th after the in-class discussion
--   **Readings:** [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), [Boostrap](weeks/week06/readings.md)
+-   **Readings:** [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), [Bootstrap](weeks/week06/readings.md)
 -   **In-class Discussion:** Discussion on the weekly paper and sharing any interesting Dashboard led by `Group 5` on `Thursday`.
 -   **Examples:** [COVID-19 Dashboard](https://hgis.uw.edu/virus)
 -   **Final Project:**  1) proposal, 2) [geospatial data collection](https://guides.lib.uw.edu/research/gis/data_sites), 3) relative resource collection, 4) create a repository.
@@ -383,10 +383,10 @@ This course targets students who have a background in fundamental geographic inf
 | Constructive contribution to class\* | 10% |
 | Lab Assignments                      | 30% |
 | Mid-term                             | 30% |
-| Final  project                       | 20% |
+| Final project                        | 20% |
 | Essay                                | 10% |
 
-> The item on **_constructive contribution to class_** includes your participation in the class (e.g., self-introduction, answer questions in class, etc/) and/or your response on github issues (ask questions via GitHub issue, and help your classmates using github issues).
+> The item on **_constructive contribution to class_** includes your participation in the class (e.g., self-introduction, answer questions in class, etc.) or your response on GitHub issues (ask questions via GitHub issue, and help your classmates using the GitHub issues function).
 
 ## :book: Copyright
 
