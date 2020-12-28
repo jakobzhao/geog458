@@ -2,7 +2,7 @@
 
 **Meetings**
  - **Lectures:** Tuesdays and Thursdays 11:30 AM to 12:20 PM PST on Zoom
- - **Labs:** TBD
+ - **Reading Discussion:** TBD
 
 **Personnel:**
 
