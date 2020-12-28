@@ -250,7 +250,7 @@ This week you will be making your first web map of the quarter using the popular
 
 **Extended Readings:**
 
-(*) denotes that this article should be skimmed before class.
+(*) denotes that this article should be skimmed before class
 
 *Topic: urban dashboards, data interfaces & the rise of “informational urbanism” *
 
