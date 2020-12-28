@@ -242,9 +242,9 @@ This week you will be making your first web map of the quarter using the popular
 
 - check out the guidelines for [final project](project/project.md) and [essay](project/essay.md).
 -   **Lecture Notes:** interface design, color, typography, icons, animation
--   **Guest Lecture:** Design critique for digital georgaphies projects -- given by [Bailiang Zhou](https://www.zhoubailiang.com/) from Tableau on May 7th after the in-class discussion
+-   **Guest Lecture:** Design critique for digital geographies projects -- given by [Bailiang Zhou](https://www.zhoubailiang.com/) from Tableau on May 7th after the in-class discussion
 -   **Readings:** [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), [Boostrap](weeks/week06/readings.md)
--   **In-class Discussion:** Discussion on the weekly paper and sharing any intersting Dashboard led by `Group 5` on `Thursday`.
+-   **In-class Discussion:** Discussion on the weekly paper and sharing any interesting Dashboard led by `Group 5` on `Thursday`.
 -   **Examples:** [COVID-19 Dashboard](https://hgis.uw.edu/virus)
 -   **Final Project:**  1) proposal, 2) [geosaptial data collection](https://guides.lib.uw.edu/research/gis/data_sites), 3) relative resource collection, 4) create a repository.
 
@@ -252,7 +252,7 @@ This week you will be making your first web map of the quarter using the popular
 
 (*) denotes that this article should be skimmed before class
 
-*Topic: urban dashboards, data interfaces & the rise of “informatic urbanism” *
+*Topic: urban dashboards, data interfaces & the rise of “informational urbanism” *
 
 -   [History of the Urban Dashboard:  SHANNON MATTERN, 2015](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/)
 -   (*) [Interfacing Urban Intelligence: SHANNON MATTERN, 2014](https://placesjournal.org/article/interfacing-urban-intelligence/#0)
