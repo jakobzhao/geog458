@@ -137,6 +137,8 @@ The Student Tech Loan Program is expanding as quickly as possible. We announced 
 
 **Labs:** You need to finish all four labs by the due date. In order to help you work on each lab, we will walk through most of the labs in class.
 
+**Think Pieces:** for week 1 to 8, there will be weekly reading assignments. To evaluate your reflection upon each week's reading material, we set up a discussion board for each week. You need to submit think pieces to **3** out of the 8 weeks' discussion topics.
+
 **Participation in in-class discussion:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and actively participate in critical discussions of those readings.
 
 ~~**Final Collaborative Project:** During the quarter, you will work with your group members to work on a collaborative project. During the final week, you will present your final project in class. The requirement for the final project will be published soon.~~
@@ -153,11 +155,11 @@ This course targets students who have a background in fundamental geographic inf
 
 | Grading items   | %   |
 | --------------- | --- |
-| Participation   | 10% |
-| Think Pieces    | 30% |
+| Participation   |  5% |
+| Think Pieces    | 15% |
 | Lab Assignments | 30% |
-| Mid-term        | 30% |
-| Final project   | 20% |
+| Mid-term        | 25% |
+| Final project   | 15% |
 | Essay           | 10% |
 
 > The item `participation` includes your participation in the class (e.g., self-introduction, answer questions in class, etc.) and/or your response on GitHub issues (ask questions via GitHub issue, and help your classmates using the GitHub issues function).
