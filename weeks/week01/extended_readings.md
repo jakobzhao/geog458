@@ -1,4 +1,6 @@
-_(\*) denotes that this article should be skimmed before class_
+**Extended Readings:**
+
+(\*) denotes that this article should be skimmed before class
 
 _Topic: the internet - materiality, structure, & power_
 

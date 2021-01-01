@@ -15,7 +15,7 @@
 
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
 
-As digital technologies have radically transformed human life, this course tries to engage students in this digitally mediated and data-intensive geographic world, and also train them the timely technical skills which are demanding in emerging job markets. This course will provide a unique opportunity to explore emerging digital methods, to build a holistic solution to real-world problems, and to critically analyze their social implications. Rather than focusing exclusively on one or two specific topics, this course covers a full range of theoretical perspectives and practical exercises. The course begins with teaching students on geospatial project management using GitHub, and then a series of geospatial data operations and analyses are covered in detail, such as online data (e.g., geotagged tweets) acquisition, geocoding, spatial and placial analyses. With these preparations, this course switches to online geovisualization. After a brief introduction to web programming basics (e.g., JavaScript, Html, and CSS), students will learn how to visualize and narrate geographic phenomena in an online environment. A few state-of-the-art approaches and applications in digital geographies will be practiced, such as collecting aerial imagery and point clouds using an unmanned aerial vehicle (UAV, commonly known as drone) or LiDAR, as well as storing real-time data from an environmental sensor. Throughout, students will be empowered not only with defined skills that will be important to many emerging jobs, but also with critical intellectual visions.
+As digital technologies have radically transformed human life, this course tries to engage students in this digitally mediated and data-intensive geographic world, and also train them the timely technical skills which are demanding in emerging job markets. This course will provide a unique opportunity to explore emerging digital methods, to build a holistic solution to real-world problems, and to critically analyze their social implications. Rather than focusing exclusively on one or two specific topics, this course covers a full range of theoretical perspectives and practical exercises. The course begins with teaching students on geospatial project management using GitHub, and then a series of geospatial data operations and analyses are covered in detail, such as online data (e.g., geotagged tweets) acquisition, geocoding, and geospatial analyses. With these preparations, this course switches to online geovisualization. After a brief introduction to web programming basics (e.g., JavaScript, Html, and CSS), students will learn how to visualize and narrate geographic phenomena in an online environment. A few state-of-the-art approaches and applications in digital geographies will be practiced, such as collecting aerial imagery and point clouds using an unmanned aerial vehicle (UAV, commonly known as drone) or LiDAR, as well as storing real-time data from an environmental sensor. Throughout, students will be empowered not only with skill set that is important to many emerging jobs, but also with critical intellectual visions.
 
 This course is very “hands-on” and interactive! Most of our time will be spent in a hybrid lecture/lab where students will be working together. Although there will be some individual written reflections and analyses, no formal final exam will be set up. The final project enables students to figure out a holistic solution to a real-world problem. With the completion of this course, each student can share the course work at a self-made website which can be publicly viewed by classmates, open-source community as well as future industrial recruiters. Along the way, the readings will include both applied and theoretical selections. Students will learn not only how people have been programming and visualizing, but also about how critical social theorists have identified assumptions, ideologies, and rigidities in existing practices that can help students to make effective, inclusive and empathetic decisions in today’s data-intensive geographic world.
 
@@ -63,12 +63,6 @@ This week’s focus is on processing geospatial data for your digital geographie
 -   **Lecture Notes:** [Geospatial data for digital geographies](weeks/week03/readme.md)
 -   **Readings:** a) [Can social media clear the air? A case study of the air pollution problem in Chinese cities](https://drive.google.com/open?id=1C0MTPaPnVALVemeYEfiDChUKRZfcMjz3), b) [More than you ever wanted to know about GeoJSON](weeks/week03/assets/geojson.pdf), and c) [extended readings](weeks/week03/extended_readings.md).
 -   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: April 23rd, by 11:59pm`
--   **In-class Discussion:** In-class Discussion: Discussion on the weekly paper led by Group 2 on Tuesday.
--   The following questions are expected to be covered in the discussion:
--   What were the geospatial data featured in the study?
--   How were they used, and for what purposes?
--   What were their social implications, and how did the authors analyze the examined case (air pollution issue) by interpreting the geospatial data?
-    Overall, the in-class discussion will be in approximately 30 minutes. After the group presentation, we will open the floor for a Q&A
 
 ### Week 4: Web mapping
 
@@ -76,25 +70,20 @@ This week you will be making your first web map of the quarter using the popular
 
 -   **Readings:** a) [Leaflet Basics](weeks/week04/leaflet), b) [Map Events](weeks/week04/mapevent) and c) [extended readings](weeks/week04/extended_readings.md).
 -   **Lab 3:** [An integrative web mapping](labs/lab03) `Due: May 3rd, by 11:59pm`,  Example: [Oregon Water Atlas](http://oregonwater.info/atlas.html)
--   **In-class Discussion:** a) Web Map A by `Group 3` on `Tuesday` , b) Web Map B by `Group 4` on `Thursday`. Each group will need to pick any online web map you feel interested in, and then introduce this web map to the class. Each group is expected to (1) describe the functions and the targeted audience of this web map; (2) discuss the possible system architecture (you might want to refer to the system architecture diagram which is introduced in week 2); (3) analyze the codes. You are expected to open up the Chrome inspector, and introduce the libraries, the network flow, the major visual components and possibly their functions, etc; (4) The strengths and weaknesses about this web map, especially the map design elements. Please recall the map critique you did in the prerequisite class `geog 360` - what are the visual strategies, the use of visual hierarchy, and so on; (5) do you think the interactive map is an appropriate strategy for the examined topic? If yes, why? If not, what else would be better? e.g., an interactive chart, or a static infographics? (6) anything else you feel worthy to share with the classmates. Overall, the in-class discussion will be in approximately 30 minutes. Following the group discussion, we will hold a Q&A session.
-
 
 ### Week 5: Map design
 
 -   **Lecture Notes:** [Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/)
 -   **Readings:** a) [The Guide to Map Design](weeks/week05/mapbox-design.pdf), b) [Mapbox Studio How-to Videos](weeks/week05/readme.md), and c) [extended readings](weeks/week05/extended_readings.md).
 -   **Lab 4:** [Generating Map Tiles](labs/lab04) `Due: May 10th, by 11:59pm`
--   **Online Mid-term:** `April 30th 9:30 - 10:20 AM` [Study Guide](assets/midterm_studyguide.md)
+-   **Online Mid-term:** `April 30th 9:30 - 10:20 AM` [_Study Guide_](#)
 
 
 ### Week 6: Smart dashboards
 
 -   check out the guidelines for [final project](project/project.md) and [essay](project/essay.md).
--   **Lecture Notes:** interface design, color, typography, icons, animation
+-   **Lecture Notes:** interface design, color, typography, icons, animation, **Examples:** [COVID-19 Dashboard](https://hgis.uw.edu/virus)
 -   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [Bootstrap](weeks/week06/readings.md), and c) [extended readings](weeks/week06/extended_readings.md).
--   **In-class Discussion:** Discussion on the weekly paper and sharing any interesting Dashboard led by `Group 5` on `Thursday`.
--   **Examples:** [COVID-19 Dashboard](https://hgis.uw.edu/virus)
--   **Final Project:**  1) proposal, 2) [geospatial data collection](https://guides.lib.uw.edu/research/gis/data_sites), 3) relative resource collection, 4) create a repository.
 
 
 ### Week 7: Geo-Narratives
@@ -103,9 +92,7 @@ This week we will explore the concept of geo-narrative, the use of storytelling 
 
 -   **Lecture Notes:** [Video](assets/video.md), [Image](assets/image.md), [Favicon](assets/favicon.md), [Icon](assets/icon.md), [Web Fonts](assets/fonts.md), and other resources.
 -   **Readings:** a) [Storymap.js](https://github.com/jakobzhao/storymap), b) [Map-based visual Storytelling: An Assessment of emerging genres and tropes `Chapter 1,2 and 5`.](https://drive.google.com/file/d/133s4dxoRaT1A7OckBapS6e9Yxh_wQc9d/view?usp=sharing), and c) [extended readings](weeks/week07/extended_readings.md).
--   **In-class Discussion:** a) Storymap A led by `Group 6` on `Tuesday`, b) Storymap B led by `Group 8` on `Thursday`.
--   **Examples:** [#Stand with StandingRock](https://jakobzhao.github.io/standwithstandingrock/), [Oregon Waters](http://oregonwater.info/atlas.html), [storymap template](https://github.com/jakobzhao/storymap-test)
-    > **Notes for the in-class discussion:** Each group will need to pick an online dynamic geo-narrative example that you feel interested in and then introduce it to the class. Each group is expected to (1) describe the functions and the (intended) targeted audience; (2) describe the storyline, Genres, tropes as well as other things you want to share with the students (please refer to this week's required reading); (3) analyze the codes. You are expected to open up the Chrome inspector, and introduce the libraries, the network flow, the major visual components and possibly their functions, etc; (4) The strengths and weaknesses of this geo-narrative, especially the map design. Please recall the map critique you did in the prerequisite class geog 360 - what are the visual strategies, the use of visual hierarchy, and so on; (5) do you think the geo-narrative is an appropriate strategy for the examined topic? If yes, why? If not, what else would be better? e.g., an interactive chart, or a static infographics? (6) anything else you feel worthy to share with the classmates. Overall, the in-class discussion will be in approximately 30 minutes. Following the group discussion, we will hold a Q&A session.
+
 -   **Final Project:**  1) [data table](assets/datatable.md) -  [`geospatial data collection`](https://guides.lib.uw.edu/research/gis/data_sites), 2) [sketch](assets/sketch.md), 3) design scheme, and (4) coding!
 
 
@@ -115,7 +102,7 @@ This week will focus on two emerging topics related to digital geographies, incl
 
 -   **Lecture Notes:** [Point Cloud visualization](https://jakobzhao.github.io/sfm/index.html) and [Real-time environmental data visualization](weeks/week08/rpi-iot).
 -   **Readings:** a) [Real-time GIS](https://drive.google.com/file/d/1COD2OYBxEJThG5Lfx7-nzV0EGtGedndT/view?usp=sharing), b) [Panopticon](https://drive.google.com/file/d/156fk11L9JFzsyV_9TRi9_c15MSIPCiL6/view?usp=sharing), and c) [extended readings](weeks/week08/extended_readings.md).
--   **In-class Discussion:** a) Point Cloud Visualization led by `Group 1` on `Tuesday`, b) Discussion on the paper about Panopticon led by `Group 7` on `Thursday`.
+-   **In-class Activities:** Students-led presentations.
 
 ### Week 9 & 10: Project studio
 
@@ -141,7 +128,8 @@ The Student Tech Loan Program is expanding as quickly as possible. We announced 
 
 ~~**Final Collaborative Project:** During the quarter, you will work with your group members to work on a collaborative project. During the final week, you will present your final project in class. The requirement for the final project will be published soon.~~
 
-**Individual Final Project:** Considering the difficulty of working as a team when you cannot meet each other in person, I have decided to change the final collaborative project as individual base, and cancel lab 5. So, at the end of this quarter, you only need to submit this final project.
+**Individual Final Project:** Considering the difficulty of working as a team when you cannot meet each other in person, I have decided to change the final collaborative project as individual base, and cancel lab 5. So, at the end of this quarter, you only need to submit this final project. Steps:
+
 
 **Essay:** Each student will complete an essay that engages with the readings and the course themes, along with additional readings that you bring into conversation with the assigned course readings. You are aiming for ~~10 pages (double-spaced)~~ **no less than 1500 words** coalescing around ideas and readings from this quarter. Essay is due no later than the end of **Week 10**.
 
