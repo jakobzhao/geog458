@@ -9,13 +9,13 @@
 
 -   **Bo Zhao**, Instructor, 206.685.3846 or zhaobo@uw.edu | Office Hour: Thursdays 1:10 to 5:00 PM PST on [Slack](geog458-winter-2021.slack.com) or by appointment
 
--   **Tyler McCrea**, Teaching Assistant, tmccrea@uw.edu
+-   **Tyler McCrea**, Teaching Assistant, tmccrea@uw.edu |  Office Hour: `TBD` on [Slack](geog458-winter-2021.slack.com) or by appointment
 
 **Class Discussion Board:** [geog458-winter-2021.slack.com](geog458-winter-2021.slack.com)
 
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
 
-As digital technologies have radically transformed human life, this course tries to engage students in this digitally mediated and data-intensive geographic world, and also train them the timely technical skills which are demanding in emerging job markets. This course will provide a unique opportunity to explore emerging digital methods, to build a holistic solution to real-world problems, and to critically analyze their social implications. Rather than focusing exclusively on one or two specific topics, this course covers a full range of theoretical perspectives and practical exercises. The course begins with teaching students on geospatial project management using GitHub, and then a series of geospatial data operations and analyses are covered in detail, such as online data (e.g., geotagged tweets) acquisition, geocoding, and geospatial analyses. With these preparations, this course switches to online geovisualization. After a brief introduction to web programming basics (e.g., JavaScript, Html, and CSS), students will learn how to visualize and narrate geographic phenomena in an online environment. A few state-of-the-art approaches and applications in digital geographies will be practiced, such as collecting aerial imagery and point clouds using an unmanned aerial vehicle (UAV, commonly known as drone) or LiDAR, as well as storing real-time data from an environmental sensor. Throughout this quarter, students will not only learn and practice geospatial techiniques which are important to many emerging jobs, but also equip with critical intellectual visions on the social implications of the appiled techiniques.
+As digital technologies have radically transformed human life, this course tries to engage students in this digitally mediated and data-intensive geographic world, and also train them the timely technical skills which are demanding in emerging job markets. This course will provide a unique opportunity to explore emerging digital methods, to build a holistic solution to real-world problems, and to critically analyze their social implications. Rather than focusing exclusively on one or two specific topics, this course covers a full range of theoretical perspectives and practical exercises. The course begins with teaching students on geospatial project management using GitHub, and then a series of geospatial data operations and analyses are covered in detail, such as online data (e.g., geotagged tweets) acquisition, geocoding, and geospatial analyses. With these preparations, this course switches to online geovisualization. After a brief introduction to web programming basics (e.g., JavaScript, Html, and CSS), students will learn how to visualize and narrate geographic phenomena in an online environment. A few state-of-the-art approaches and applications in digital geographies will be practiced, such as collecting aerial imagery and point clouds using an unmanned aerial vehicle (UAV, commonly known as drone) or LiDAR, as well as storing real-time data from an environmental sensor. Throughout this quarter, students will not only learn and practice geospatial techniques which are important to many emerging jobs, but also hone their critical intellectual visions on the social implications of the applied techniques.
 
 This course is very “hands-on” and interactive! Most of our time will be spent in a hybrid lecture/lab where students will be working together. Although there will be some individual written reflections and analyses, no formal final exam will be set up. The final project enables students to figure out a holistic solution to a real-world problem. With the completion of this course, each student can share the course work at a self-made website which can be publicly viewed by classmates, open-source community as well as future industrial recruiters. Along the way, the readings will include both applied and theoretical selections. Students will learn not only how people have been programming and visualizing, but also about how critical social theorists have identified assumptions, ideologies, and rigidities in existing practices that can help students to make effective, inclusive and empathetic decisions in today’s data-intensive geographic world.
 
@@ -46,7 +46,7 @@ This course is very “hands-on” and interactive! Most of our time will be spe
 This week’s lecture and lab will prepare you for the course, and provide a theoretical and technical foundation to build from. We’ll work through the syllabus together, and answer any questions you all may have. Each student is expected to read the Ash et al (2018) paper. After completing Lab 1, you will be able to clone/synchronize the course material, set up a personal website, and gain practical experience using github to manage your digital geographies projects.
 
 -   **Lecture Notes:** [Syllabus](readme.md), [Intro to the Web](weeks/week01/intro-web)
--   **Readings:** a) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_), b) [Mastering Markdown](https://guides.github.com/features/mastering-markdown/), and c) [extended readings](weeks/week01/extended_readings.md).
+-   **Readings:** a) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_), b) [Mastering Markdown](https://guides.github.com/features/mastering-markdown/), and c) [extended readings](weeks/week01/readings.md).
 -   **Lab 1:** [Project management using GitHub](labs/lab01) `Due: April 9th, by 11:59pm`
 
 ### Week 2: Programing fundamentals
@@ -54,27 +54,27 @@ This week’s lecture and lab will prepare you for the course, and provide a the
 This week we’ll focus on providing you all with the fundamental skill set for web programming.  We will begin with an overview of the system architecture required for a digital geographies project,  then guide you through some of the essential front-end fundamentals. Including, internet basics, html, javascript, and css. This week requires a lot of self-learning,  and includes fairly lengthy readings and practical exercises. Please be prepared.
 
 -   **Lecture Notes:** [System architecture](weeks/week02/architecture), [intro-to-html, css](weeks/week02/html-css) and [javascript](weeks/week02/javascript), and [Jquery](weeks/week02/jquery).
--   **Readings:** a) [W3School Tutorials on Html, javascript, css and jquery](weeks/week02/readings.md), and b) [extended readings](weeks/week02/extended_readings.md).
+-   **Readings:** a) [W3School Tutorials on Html, javascript, css and jquery](weeks/week02/tech-readings.md), and b) [extended readings](weeks/week02/readings.md).
 
 ### Week 3: Geospatial data
 
 This week’s focus is on processing geospatial data for your digital geographies projects. We will begin by introducing the structure of the geojson format, and then look at techniques for collecting, converting and visualizing geojson objects/features in a web or desktop environment such as QGIS. After completing Lab 2, students will have learned how to collect geo-tagged tweets using specific keywords/topics (e.g., etc.), and methods for visualizing the spatial distribution of the locations for those tweets.
 
 -   **Lecture Notes:** [Geospatial data for digital geographies](weeks/week03/readme.md)
--   **Readings:** a) [Can social media clear the air? A case study of the air pollution problem in Chinese cities](https://drive.google.com/open?id=1C0MTPaPnVALVemeYEfiDChUKRZfcMjz3), b) [More than you ever wanted to know about GeoJSON](weeks/week03/assets/geojson.pdf), and c) [extended readings](weeks/week03/extended_readings.md).
+-   **Readings:** a) [Can social media clear the air? A case study of the air pollution problem in Chinese cities](https://drive.google.com/open?id=1C0MTPaPnVALVemeYEfiDChUKRZfcMjz3), b) [More than you ever wanted to know about GeoJSON](weeks/week03/assets/geojson.pdf), and c) [extended readings](weeks/week03/readings.md).
 -   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: April 23rd, by 11:59pm`
 
 ### Week 4: Web mapping
 
 This week you will be making your first web map of the quarter using the popular web mapping library - [Leaflet](https://leafletjs.com/) The lecture section this week we’ll work together familiarizing everyone with the basics of web mapping, and then provide a detailed introduction to the Lab 3 exercise.
 
--   **Readings:** a) [Leaflet Basics](weeks/week04/leaflet), b) [Map Events](weeks/week04/mapevent) and c) [extended readings](weeks/week04/extended_readings.md).
+-   **Readings:** a) [Leaflet Basics](weeks/week04/leaflet), b) [Map Events](weeks/week04/mapevent) and c) [extended readings](weeks/week04/readings.md).
 -   **Lab 3:** [An integrative web mapping](labs/lab03) `Due: May 3rd, by 11:59pm`,  Example: [Oregon Water Atlas](http://oregonwater.info/atlas.html)
 
 ### Week 5: Map design
 
 -   **Lecture Notes:** [Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/)
--   **Readings:** a) [The Guide to Map Design](weeks/week05/mapbox-design.pdf), b) [Mapbox Studio How-to Videos](weeks/week05/readme.md), and c) [extended readings](weeks/week05/extended_readings.md).
+-   **Readings:** a) [The Guide to Map Design](weeks/week05/mapbox-design.pdf), b) [Mapbox Studio How-to Videos](weeks/week05/readme.md), and c) [extended readings](weeks/week05/readings.md).
 -   **Lab 4:** [Generating Map Tiles](labs/lab04) `Due: May 10th, by 11:59pm`
 -   **Online Mid-term:** `April 30th 9:30 - 10:20 AM` [_Study Guide_](#)
 
@@ -83,7 +83,7 @@ This week you will be making your first web map of the quarter using the popular
 
 -   check out the guidelines for [final project](project/project.md) and [essay](project/essay.md).
 -   **Lecture Notes:** interface design, color, typography, icons, animation, **Examples:** [COVID-19 Dashboard](https://hgis.uw.edu/virus)
--   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [Bootstrap](weeks/week06/readings.md), and c) [extended readings](weeks/week06/extended_readings.md).
+-   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [Bootstrap](weeks/week06/tech-readings.md), and c) [extended readings](weeks/week06/readings.md).
 
 
 ### Week 7: Geo-Narratives
@@ -91,7 +91,7 @@ This week you will be making your first web map of the quarter using the popular
 This week we will explore the concept of geo-narrative, the use of storytelling in mapping practice, by looking at existing geo-narrative mapping projects and engaging in a group discussion and map critique.
 
 -   **Lecture Notes:** [Video](assets/video.md), [Image](assets/image.md), [Favicon](assets/favicon.md), [Icon](assets/icon.md), [Web Fonts](assets/fonts.md), and other relevant items.
--   **Readings:** a) [Storymap.js](https://github.com/jakobzhao/storymap), b) [Map-based visual Storytelling: An Assessment of emerging genres and tropes `Chapter 1,2 and 5`.](https://drive.google.com/file/d/133s4dxoRaT1A7OckBapS6e9Yxh_wQc9d/view?usp=sharing), and c) [extended readings](weeks/week07/extended_readings.md).
+-   **Readings:** a) [Storymap.js](https://github.com/jakobzhao/storymap), b) [Map-based visual Storytelling: An Assessment of emerging genres and tropes `Chapter 1,2 and 5`.](https://drive.google.com/file/d/133s4dxoRaT1A7OckBapS6e9Yxh_wQc9d/view?usp=sharing), and c) [extended readings](weeks/week07/readings.md).
 
 
 ### Week 8: Emerging topics
@@ -99,7 +99,7 @@ This week we will explore the concept of geo-narrative, the use of storytelling 
 This week will focus on two emerging topics related to digital geographies, including cloud point visualization and real-time environment data collection, and explore their promise and pitfalls.
 
 -   **Lecture Notes:** [Point Cloud visualization](https://jakobzhao.github.io/sfm/index.html) and [Real-time environmental data visualization](weeks/week08/rpi-iot).
--   **Readings:** a) [Real-time GIS](https://drive.google.com/file/d/1COD2OYBxEJThG5Lfx7-nzV0EGtGedndT/view?usp=sharing), b) [Panopticon](https://drive.google.com/file/d/156fk11L9JFzsyV_9TRi9_c15MSIPCiL6/view?usp=sharing), and c) [extended readings](weeks/week08/extended_readings.md).
+-   **Readings:** a) [Real-time GIS](https://drive.google.com/file/d/1COD2OYBxEJThG5Lfx7-nzV0EGtGedndT/view?usp=sharing), b) [Panopticon](https://drive.google.com/file/d/156fk11L9JFzsyV_9TRi9_c15MSIPCiL6/view?usp=sharing), and c) [extended readings](weeks/week08/readings.md).
 -   **In-class Activities:** Students-led presentations.
 
 ### Week 9 & 10: Project studios

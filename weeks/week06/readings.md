@@ -1,58 +1,17 @@
-# Bootstrap 4
-### Required:
+**Extended Readings:**
 
-[1] W3Schools (201X) Bootstrap 4 Tutorial, retrieved December 20, 2016 from http://www.w3schools.com/bootstrap4/default.asp
+(\*) denotes that this article should be skimmed before class
 
-- BS4 Home
+_Topic: urban dashboards, data interfaces & the rise of “informational urbanism” _
 
-- BS4 Get Started
+-   [History of the Urban Dashboard:  SHANNON MATTERN, 2015](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/)
+-   (\*) [Interfacing Urban Intelligence: SHANNON MATTERN, 2014](https://placesjournal.org/article/interfacing-urban-intelligence/#0)
+-   (\*) [A City is Not a Computer: SHANNON MATTERN, 2017](https://placesjournal.org/article/a-city-is-not-a-computer/#0)
 
-- BS4 Grid Basic
+_Topic: how data dashboards distort_
 
-- BS4 Typogrpahy
+-   (\*) [3 Ways Data Dashboards Can Mislead You: HARVARD BUSINESS REVIEW, 2017](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section)
 
-- BS4 Images
+_Topic: data dashboard trends_
 
-- BS4 Jumbotron
-
-- BS4 Buttons
-
-- BS4 Glyphicons
-
-- BS4 Navbar
-
-- BS4 Media Objects
-
-- BS4 Carousel
-
-- BS4 Model
-
-- BS4 Tooltip
-
-- BS4 Affix
-
-- Bootstrap 4 Grids
-
-- Bootstrap 4 Themes
-
-[2] C3.js get-started and examples https://c3js.org/examples.html and https://c3js.org/gettingstarted.html
-
-### Optional:
-
-[3] Gregor Aisch, 201X chroma.js Tutorial, retrieved December 20, 2016 from http://gka.github.io/chroma.js/
-
-- Quick-start
-- chroma.brewer
-- Color Scales
-- scale.correctLightness
-- Lab/Lch interpolation
-
-
-[4] Google 201X Get Started with the Google Fonts API retrieved April 20, 2018 from  https://developers.google.com/fonts/docs/getting_started
-
-
-[5] Gregor Aisch, 2011, How To Avoid Equidistant HSV Colors  retrieved April 14, 2017 from https://www.vis4.net/blog/2011/12/avoid-equidistant-hsv-colors/
-
-[6] http://tools.medialab.sciences-po.fr/iwanthue/
-
-[7] All other concepts in the Bootstrap 4 Tutorial from W3Schools.
+-   (\*) [Google Trends - data dashboard](https://trends.google.com/trends/explore?date=all&geo=US&q=Data%20Dashboard)

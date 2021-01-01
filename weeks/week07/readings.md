@@ -1,4 +1,3 @@
-
 **Extended Readings:**
 
 (\*) denotes that this article should be skimmed before class
