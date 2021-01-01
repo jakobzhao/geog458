@@ -2,7 +2,7 @@
 
 **Meetings**
 
--   **Lectures:** Tuesdays and Thursdays 11:30 AM to 12:20 PM PST on Zoom
+-   **Lectures:** Tuesdays and Thursdays 11:30 AM to 12:20 PM PST on [Zoom](https://washington.zoom.us/meeting/register/tJcuf-ippzIrHNA1U1xoZDe7CR9ktaTTaAwU)
 -   **Reading Discussion:** TBD
 
 **Personnel:**
@@ -303,7 +303,7 @@ _Topic: simulation, glitches & hacks_
 
 ### Week 9 & 10: Project studio
 
-During these two weeks, each group will focusing on their final projects. The instructors are available during the office hour, the normal lecture period to help with each group on their final projects.
+During these two weeks, each group will focusing on their final projects and essay. The instructor and teaching assistant are available during the normal lecture period and the office hour if help is needed.
 
 ### Week 11: Final project presentations
 
