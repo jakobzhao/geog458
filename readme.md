@@ -70,25 +70,25 @@ This week’s focus is on processing geospatial data for your digital geographie
 
 ### Week 4 : Web mapping
 
-<!-- (Jan 25 to 29)-->
+<!-- Jan 25 to 29 -->
 
 This week you will be making your first web map of the quarter using the popular web mapping library - [Leaflet](https://leafletjs.com/) The lecture section this week we’ll work together familiarizing everyone with the basics of web mapping, and then provide a detailed introduction to the Lab 3 exercise.
 
 -   **Readings:** a) [Leaflet Basics](weeks/week04/leaflet), b) [Map Events](weeks/week04/mapevent) and c) [extended readings](weeks/week04/readings.md).
--   **Lab 3:** [An integrative web mapping](labs/lab03) `Due: May 3rd, by 11:59pm`,  Example: [Oregon Water Atlas](http://oregonwater.info/atlas.html)
+-   **Lab 3:** [An integrative web mapping application](labs/lab03) `Due: May 3rd, by 11:59pm`,  Example: [Oregon Water Atlas](http://oregonwater.info/atlas.html)
 
 ### Week 5 : Map design
 
-<!-- (Feb 1 to 5)-->
+<!-- Feb 1 to 5 -->
 
 -   **Lecture Notes:** [Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/)
 -   **Readings:** a) [The Guide to Map Design](weeks/week05/mapbox-design.pdf), b) [Mapbox Studio How-to Videos](weeks/week05/readme.md), and c) [extended readings](weeks/week05/readings.md).
--   **Lab 4:** [Generating Map Tiles](labs/lab04) `Due: May 10th, by 11:59pm`
+-   **Lab 4:** [Map design and tiles generation](labs/lab04) `Due: May 10th, by 11:59pm`
 -   **Online Mid-term:** `April 30th 9:30 - 10:20 AM` [_Study Guide_](#)
 
 ### Week 6 : Smart dashboards
 
-<!-- (Feb 8 to 12)-->
+<!-- Feb 8 to 12 -->
 
 -   check out the guidelines for [final project](project/project.md) and [essay](project/essay.md).
 -   **Lecture Notes:** interface design, color, typography, icons, animation, **Examples:** [COVID-19 Dashboard](https://hgis.uw.edu/virus)
@@ -96,7 +96,7 @@ This week you will be making your first web map of the quarter using the popular
 
 ### Week 7 : Geo-Narratives
 
-<!-- (Feb 15 to 19)-->
+<!-- Feb 15 to 19 -->
 
 This week we will explore the concept of geo-narrative, the use of storytelling in mapping practice, by looking at existing geo-narrative mapping projects and engaging in a group discussion and map critique.
 
@@ -115,13 +115,13 @@ This week will focus on two emerging topics related to digital geographies, incl
 
 ### Week 9 & 10 : Project studios
 
-<!-- (Mar 1 to 12)-->
+<!-- Mar 1 to 12 -->
 
 During these two weeks, each group will focusing on their final projects and essay. The instructor and teaching assistant are available during the normal lecture period and the office hour if help is needed.
 
 ### Finals Week : Final project presentations
 
-<!-- (Mar 15 to 19)-->
+<!-- Mar 15 to 19 -->
 
 During the last two meeting sessions, each group will present their final projects. More information about final project will be shared after the mid-term.
 
@@ -162,16 +162,21 @@ This course targets students who have a background in fundamental geographic inf
 
 > The item `participation` includes your participation in the class (e.g., self-introduction, answer questions in class, etc.) and/or your response on GitHub issues (ask questions via GitHub issue, and help your classmates using the GitHub issues function).
 
-## :book: Copyright
-
-Through this course, I would like to cultivate the open source culture. The course materials are open source for students and open source community to access.
-
-Notably, **students are not allow to videotape or audio-tape (record) this class in any form, and sharing recordings outside of class without the written consent of each student in the class is not permitted by [FERPA](https://registrar.washington.edu/students/ferpa/).** However, I will try to record most of the classes via Zoom and share them via Canvas. Even so, I still encourage each of you attend the lectures instead of watching the recorded videos afterwards. Your in-class participation is a key factor to yield the best learning outcome.
-
-The instructor determines if their class can and cannot be recorded. This decision should be clearly communicated by the instructor at the beginning and throughout the quarter. In Zoom, the recording feature can be controlled by the instructor, as the meeting host.
 
 ## :love_letter: Accommodations
 
 We welcome the opportunity to work with any students with disabilities in this class to ensure equal access to the course. If you have a letter from Disability Resources for Students (DRS) outlining your academic accommodations, please present the letter to me (or email us, to confirm, if the letter is electronic) as soon as possible so that we can discuss the accommodations you may need for this class. Any discussions between student and professor need to occur as early as possible in order for adequate arrangements to be made. If you do not yet have a letter from DRS, but would like to request academic accommodations due to a disability, please contact DRS [here (Links to an external site.)](https://depts.washington.edu/uwdrs/), or in-person at 011 Mary Gates Hall, or at 206-543-8924 (Voice & Relay), <mailto:uwdrs@uw.edu>.
 
-<a href="https://hgis.uw.edu"><img src="assets/logo.png" align="right" width="230px" target="_blank" /></a> Washington state law requires that UW develop a policy for accommodation of student absences or significant hardship due to reasons of faith or conscience, or for organized religious activities. The UW’s policy, including more information about how to request an accommodation, is available at [Religious Accommodations Policy](https://registrar.washington.edu/staffandfaculty/religious-accommodations-policy/). Accommodations must be requested within the first two weeks of this course using the [Religious Accommodations Request form](https://https:/registrar.washington.edu/students/religious-accommodations-request/).
+ Washington state law requires that UW develop a policy for accommodation of student absences or significant hardship due to reasons of faith or conscience, or for organized religious activities. The UW’s policy, including more information about how to request an accommodation, is available at [Religious Accommodations Policy](https://registrar.washington.edu/staffandfaculty/religious-accommodations-policy/). Accommodations must be requested within the first two weeks of this course using the [Religious Accommodations Request form](https://https:/registrar.washington.edu/students/religious-accommodations-request/).
+
+ ## :book: Copyright
+
+ This course advocates for the open culture. The course materials are open source for both students and open source community to access.
+
+ Notably, **students are not allow to videotape or audio-tape (record) this class in any form, and sharing recordings outside of class without the written consent of each student in the class is not permitted by [FERPA](https://registrar.washington.edu/students/ferpa/).** However, I will try to record most of the classes via Zoom and share them via Canvas. Even so, I still encourage each of you attend the lectures instead of watching the recorded videos afterwards. Your in-class participation is a key factor to yield the best learning outcome.
+
+ The instructor determines if their class can and cannot be recorded. This decision should be clearly communicated by the instructor at the beginning and throughout the quarter. In Zoom, the recording feature can be controlled by the instructor, as the meeting host.
+
+## :bouquet: Acknowledgement
+
+<a href="https://hgis.uw.edu"><img src="assets/logo.png" align="right" width="230px" target="_blank" /></a> The development of this course has been financially supported by UW's data science minior committee. I sincerely appreciate Tyler McCrea, Jou Ho, Fengyu Xu for their assistance in developing this course.
