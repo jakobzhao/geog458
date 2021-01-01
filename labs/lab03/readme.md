@@ -1,8 +1,8 @@
-# Lab 3: Web Map Design
+# Lab 3: Web Map Application
 
 **Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu
 
-**Due:**  Due: May 3rd, by 11:59pm | **Points Available** = 50
+**Due:**  Feb 12th, by 11:59pm | **Points Available** = 50
 
 In this lab, we will design an interactive web map of cell towers in Oregon. When creating a web map, one of the critical components is styling your elements to provide proper symbolization for your data. This increases legibility for users and can give your map an appealing, custom design. Elements that can be customized to include thematic layers (i.e., points, lines, and polygons), base maps (as a leaflet `tileLayer`), interactive features (the components of the map that allow for user interaction), and legends and supplemental information (such as credits, etc.). To do that, the county boundaries are from [Oregon Explorer](http://oregonexplorer.info), and the spatial distribution of cell towers is from [Map Cruzin](http://www.mapcruzin.com/google-earth-maps-resources/kml/us-cell.kmz). Below is the web map you will make by walking through this lab handout.
 

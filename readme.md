@@ -66,7 +66,7 @@ This week’s focus is on processing geospatial data for your digital geographie
 
 -   **Lecture Notes:** [Geospatial data for digital geographies](weeks/week03/readme.md)
 -   **Readings:** a) [Can social media clear the air? A case study of the air pollution problem in Chinese cities](https://drive.google.com/open?id=1C0MTPaPnVALVemeYEfiDChUKRZfcMjz3), b) [More than you ever wanted to know about GeoJSON](weeks/week03/assets/geojson.pdf), and c) [extended readings](weeks/week03/readings.md).
--   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: Jan 29nd, by 11:59pm`
+-   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: Jan 29th, by 11:59pm`
 
 ### Week 4 : Web mapping
 
@@ -75,7 +75,7 @@ This week’s focus is on processing geospatial data for your digital geographie
 This week you will be making your first web map of the quarter using the popular web mapping library - [Leaflet](https://leafletjs.com/) The lecture section this week we’ll work together familiarizing everyone with the basics of web mapping, and then provide a detailed introduction to the Lab 3 exercise.
 
 -   **Readings:** a) [Leaflet Basics](weeks/week04/leaflet), b) [Map Events](weeks/week04/mapevent) and c) [extended readings](weeks/week04/readings.md).
--   **Lab 3:** [An integrative web mapping application](labs/lab03) `Due:Feb 12th, by 11:59pm`,  Example: [Oregon Water Atlas](http://oregonwater.info/atlas.html)
+-   **Lab 3:** [Web map application](labs/lab03) `Due:Feb 12th, by 11:59pm`,  Example: [Oregon Water Atlas](http://oregonwater.info/atlas.html)
 
 ### Week 5 : Map design
 
