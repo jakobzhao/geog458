@@ -2,7 +2,7 @@
 
 **Meetings**
 
--   **Lectures:** Tuesdays and Thursdays 11:30 AM to 12:20 PM PST on [Zoom](https://washington.zoom.us/meeting/register/tJcuf-ippzIrHNA1U1xoZDe7CR9ktaTTaAwU)
+-   **Lectures:** Tuesdays and Thursdays 11:30 AM to 12:50 PM PST on [Zoom](https://washington.zoom.us/meeting/register/tJcuf-ippzIrHNA1U1xoZDe7CR9ktaTTaAwU)
 -   **Labs/Reading Discussions:** Wednesdays and Fridays 10:30 AM to 12:20 PM PST on [Slack](geog458-winter-2021.slack.com)
 
 **Personnel:**
@@ -36,8 +36,8 @@ This course is very “hands-on” and interactive! Most of our time will be spe
 ### _Preparation_
 
 -   [**Gear up the working environment**](assets/gearup.md) :computer:  :beer:
--   **Canvas Survey:** Through a survey, students will team up as group of 5 ~ 6 people according to the proficiency of technical skills and interests. `Due: March 31st, 2020, by 11:59pm`
--   **Groups:** Based on the Survey, we have 8 groups, and I will assign an group coordinator to each group. Please start meeting your group members. Over the quarter, you will work together on the in-class presentation with your group members.
+-   **Canvas Survey:** Through a survey, students will team up as group of 5 ~ 6 people according to the proficiency of technical skills and interests. `Due: Jan 8th, 2021, by 11:59pm`
+-   **Groups:** Based on the Survey, we will break all the students to 8 groups, and I will assign an group coordinator to each group. Please start meeting your group members. Over the quarter, you will work together on the in-class presentation with your group members.
 
 ### Week 1: Intro to digital geographies
 
@@ -47,7 +47,7 @@ This week’s lecture and lab will prepare you for the course, and provide a the
 
 -   **Lecture Notes:** [Syllabus](readme.md), [Intro to the Web](weeks/week01/intro-web)
 -   **Readings:** a) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_), b) [Mastering Markdown](https://guides.github.com/features/mastering-markdown/), and c) [extended readings](weeks/week01/readings.md).
--   **Lab 1:** [Project management using GitHub](labs/lab01) `Due: April 9th, by 11:59pm`
+-   **Lab 1:** [Project management using GitHub](labs/lab01) `Due: Jan 16th, by 11:59pm`
 
 ### Week 2 : Programing fundamentals
 
@@ -66,7 +66,7 @@ This week’s focus is on processing geospatial data for your digital geographie
 
 -   **Lecture Notes:** [Geospatial data for digital geographies](weeks/week03/readme.md)
 -   **Readings:** a) [Can social media clear the air? A case study of the air pollution problem in Chinese cities](https://drive.google.com/open?id=1C0MTPaPnVALVemeYEfiDChUKRZfcMjz3), b) [More than you ever wanted to know about GeoJSON](weeks/week03/assets/geojson.pdf), and c) [extended readings](weeks/week03/readings.md).
--   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: April 23rd, by 11:59pm`
+-   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: Jan 29nd, by 11:59pm`
 
 ### Week 4 : Web mapping
 
@@ -75,7 +75,7 @@ This week’s focus is on processing geospatial data for your digital geographie
 This week you will be making your first web map of the quarter using the popular web mapping library - [Leaflet](https://leafletjs.com/) The lecture section this week we’ll work together familiarizing everyone with the basics of web mapping, and then provide a detailed introduction to the Lab 3 exercise.
 
 -   **Readings:** a) [Leaflet Basics](weeks/week04/leaflet), b) [Map Events](weeks/week04/mapevent) and c) [extended readings](weeks/week04/readings.md).
--   **Lab 3:** [An integrative web mapping application](labs/lab03) `Due: May 3rd, by 11:59pm`,  Example: [Oregon Water Atlas](http://oregonwater.info/atlas.html)
+-   **Lab 3:** [An integrative web mapping application](labs/lab03) `Due:Feb 12th, by 11:59pm`,  Example: [Oregon Water Atlas](http://oregonwater.info/atlas.html)
 
 ### Week 5 : Map design
 
@@ -83,8 +83,8 @@ This week you will be making your first web map of the quarter using the popular
 
 -   **Lecture Notes:** [Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/)
 -   **Readings:** a) [The Guide to Map Design](weeks/week05/mapbox-design.pdf), b) [Mapbox Studio How-to Videos](weeks/week05/readme.md), and c) [extended readings](weeks/week05/readings.md).
--   **Lab 4:** [Map design and tiles generation](labs/lab04) `Due: May 10th, by 11:59pm`
--   **Online Mid-term:** `April 30th 9:30 - 10:20 AM` [_Study Guide_](#)
+-   **Lab 4:** [Map design and tiles generation](labs/lab04) `Due: Feb 19th, by 11:59pm`
+-   **Online Mid-term:** `Feb 2nd 11:30 - 12:20 AM` [_Study Guide_](#)
 
 ### Week 6 : Smart dashboards
 
