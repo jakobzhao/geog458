@@ -15,7 +15,7 @@
 
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
 
-As digital technologies have radically transformed human life, this course tries to engage students in this digitally mediated and data-intensive geographic world, and also train them the timely technical skills which are demanding in emerging job markets. This course will provide a unique opportunity to explore emerging digital methods, to build a holistic solution to real-world problems, and to critically analyze their social implications. Rather than focusing exclusively on one or two specific topics, this course covers a full range of theoretical perspectives and practical exercises. The course begins with teaching students on geospatial project management using GitHub, and then a series of geospatial data operations and analyses are covered in detail, such as online data (e.g., geotagged tweets) acquisition, geocoding, and geospatial analyses. With these preparations, this course switches to online geovisualization. After a brief introduction to web programming basics (e.g., JavaScript, Html, and CSS), students will learn how to visualize and narrate geographic phenomena in an online environment. A few state-of-the-art approaches and applications in digital geographies will be practiced, such as collecting aerial imagery and point clouds using an unmanned aerial vehicle (UAV, commonly known as drone) or LiDAR, as well as storing real-time data from an environmental sensor. Throughout, students will be empowered not only with skill set that is important to many emerging jobs, but also with critical intellectual visions.
+As digital technologies have radically transformed human life, this course tries to engage students in this digitally mediated and data-intensive geographic world, and also train them the timely technical skills which are demanding in emerging job markets. This course will provide a unique opportunity to explore emerging digital methods, to build a holistic solution to real-world problems, and to critically analyze their social implications. Rather than focusing exclusively on one or two specific topics, this course covers a full range of theoretical perspectives and practical exercises. The course begins with teaching students on geospatial project management using GitHub, and then a series of geospatial data operations and analyses are covered in detail, such as online data (e.g., geotagged tweets) acquisition, geocoding, and geospatial analyses. With these preparations, this course switches to online geovisualization. After a brief introduction to web programming basics (e.g., JavaScript, Html, and CSS), students will learn how to visualize and narrate geographic phenomena in an online environment. A few state-of-the-art approaches and applications in digital geographies will be practiced, such as collecting aerial imagery and point clouds using an unmanned aerial vehicle (UAV, commonly known as drone) or LiDAR, as well as storing real-time data from an environmental sensor. Throughout this quarter, students will not only learn and practice geospatial techiniques which are important to many emerging jobs, but also equip with critical intellectual visions on the social implications of the appiled techiniques.
 
 This course is very “hands-on” and interactive! Most of our time will be spent in a hybrid lecture/lab where students will be working together. Although there will be some individual written reflections and analyses, no formal final exam will be set up. The final project enables students to figure out a holistic solution to a real-world problem. With the completion of this course, each student can share the course work at a self-made website which can be publicly viewed by classmates, open-source community as well as future industrial recruiters. Along the way, the readings will include both applied and theoretical selections. Students will learn not only how people have been programming and visualizing, but also about how critical social theorists have identified assumptions, ideologies, and rigidities in existing practices that can help students to make effective, inclusive and empathetic decisions in today’s data-intensive geographic world.
 
@@ -39,7 +39,7 @@ This course is very “hands-on” and interactive! Most of our time will be spe
 
 -   [**Gear up the working environment**](assets/gearup.md) :computer:  :beer:
 -   **Canvas Survey:** Through a survey, students will team up as group of 5 ~ 6 people according to the proficiency of technical skills and interests. `Due: March 31st, 2020, by 11:59pm`
--   **Groups:** Based on the Survey, we have 8 groups (check [here](assets/groups.md)), and I have assigned an group coordinator to each group. Please start meeting your group members. Over the quarter, you will work together on ~~the collaborative project and~~ the in-class discussion.
+-   **Groups:** Based on the Survey, we have 8 groups, and I will assign an group coordinator to each group. Please start meeting your group members. Over the quarter, you will work together on the in-class presentation with your group members.
 
 ### Week 1: Intro to digital geographies
 
@@ -90,10 +90,8 @@ This week you will be making your first web map of the quarter using the popular
 
 This week we will explore the concept of geo-narrative, the use of storytelling in mapping practice, by looking at existing geo-narrative mapping projects and engaging in a group discussion and map critique.
 
--   **Lecture Notes:** [Video](assets/video.md), [Image](assets/image.md), [Favicon](assets/favicon.md), [Icon](assets/icon.md), [Web Fonts](assets/fonts.md), and other resources.
+-   **Lecture Notes:** [Video](assets/video.md), [Image](assets/image.md), [Favicon](assets/favicon.md), [Icon](assets/icon.md), [Web Fonts](assets/fonts.md), and other relevant items.
 -   **Readings:** a) [Storymap.js](https://github.com/jakobzhao/storymap), b) [Map-based visual Storytelling: An Assessment of emerging genres and tropes `Chapter 1,2 and 5`.](https://drive.google.com/file/d/133s4dxoRaT1A7OckBapS6e9Yxh_wQc9d/view?usp=sharing), and c) [extended readings](weeks/week07/extended_readings.md).
-
--   **Final Project:**  1) [data table](assets/datatable.md) -  [`geospatial data collection`](https://guides.lib.uw.edu/research/gis/data_sites), 2) [sketch](assets/sketch.md), 3) design scheme, and (4) coding!
 
 
 ### Week 8: Emerging topics
@@ -104,7 +102,7 @@ This week will focus on two emerging topics related to digital geographies, incl
 -   **Readings:** a) [Real-time GIS](https://drive.google.com/file/d/1COD2OYBxEJThG5Lfx7-nzV0EGtGedndT/view?usp=sharing), b) [Panopticon](https://drive.google.com/file/d/156fk11L9JFzsyV_9TRi9_c15MSIPCiL6/view?usp=sharing), and c) [extended readings](weeks/week08/extended_readings.md).
 -   **In-class Activities:** Students-led presentations.
 
-### Week 9 & 10: Project studio
+### Week 9 & 10: Project studios
 
 During these two weeks, each group will focusing on their final projects and essay. The instructor and teaching assistant are available during the normal lecture period and the office hour if help is needed.
 
@@ -120,9 +118,9 @@ The Student Tech Loan Program is expanding as quickly as possible. We announced 
 
 **GitHub:** This course material will be hosted on GitHub instead of UW Canvas. On this dedicated GitHub repository, you can find most of the course material, participate in group discussions by submitting GitHub issues, and create new GitHub repositories to turn in the lab deliverables. By the end of this quarter, you will be more proficient in operating a cloud-based coding environment and able to host your work online as a way to gain public and peer attentions.
 
-**In-class discussion leadership:** You and your group mates will lead at least one in-class discussion. Please work together to prepare some activities and guiding questions that will inspire and structure our discussion of the material.
+**In-class presentation leadership:** You and your group mates will lead at least one in-class discussion. Please work together to prepare some activities and guiding questions that will inspire and structure our discussion of the material.
 
-**Labs:** You need to finish all five labs by the due date. In order to help you work on each lab, we will walk through most of the labs in class.
+**Labs:** You need to finish all four labs by the due date. In order to help you work on each lab, we will walk through most of the labs in class.
 
 **Participation in in-class discussion:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and actively participate in critical discussions of those readings.
 
@@ -141,13 +139,13 @@ This course targets students who have a background in fundamental geographic inf
 
 | Grading items                        | %   |
 | ------------------------------------ | --- |
-| Constructive contribution to class\* | 10% |
+| Participation | 10% |
 | Lab Assignments                      | 30% |
 | Mid-term                             | 30% |
 | Final project                        | 20% |
 | Essay                                | 10% |
 
-> The item on **_constructive contribution to class_** includes your participation in the class (e.g., self-introduction, answer questions in class, etc.) or your response on GitHub issues (ask questions via GitHub issue, and help your classmates using the GitHub issues function).
+> The item `participation` includes your participation in the class (e.g., self-introduction, answer questions in class, etc.) and/or your response on GitHub issues (ask questions via GitHub issue, and help your classmates using the GitHub issues function).
 
 ## :book: Copyright
 
