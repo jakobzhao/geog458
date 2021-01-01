@@ -140,6 +140,7 @@ This course targets students who have a background in fundamental geographic inf
 | Grading items                        | %   |
 | ------------------------------------ | --- |
 | Participation | 10% |
+| Think Pieces                         | 30% |
 | Lab Assignments                      | 30% |
 | Mid-term                             | 30% |
 | Final project                        | 20% |
