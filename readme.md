@@ -3,15 +3,13 @@
 **Meetings**
 
 -   **Lectures:** Tuesdays and Thursdays 11:30 AM to 12:20 PM PST on [Zoom](https://washington.zoom.us/meeting/register/tJcuf-ippzIrHNA1U1xoZDe7CR9ktaTTaAwU)
--   **Reading Discussion:** TBD
+-   **Labs/Reading Discussions:** Wednesdays and Fridays 10:30 AM to 12:20 PM PST on [Slack](geog458-winter-2021.slack.com)
 
 **Personnel:**
 
 -   **Bo Zhao**, Instructor, 206.685.3846 or zhaobo@uw.edu | Office Hour: Thursdays 1:10 to 5:00 PM PST on [Slack](geog458-winter-2021.slack.com) or by appointment
 
 -   **Tyler McCrea**, Teaching Assistant, tmccrea@uw.edu |  Office Hour: `TBD` on [Slack](geog458-winter-2021.slack.com) or by appointment
-
-**Class Discussion Board:** [geog458-winter-2021.slack.com](geog458-winter-2021.slack.com)
 
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
 
@@ -23,7 +21,7 @@ This course is very “hands-on” and interactive! Most of our time will be spe
 
 -   To identify when and how the methods, sociology, and objects of geographical inquiry can be transformed through computational and networked approaches.
 
--   To learn to find, evaluate, use, extend, and combine various methods and tools of digital geography as needed for a given task. Recently, examples of such tools have included: GitHub, QGIS, Python, JavaScript, and Mapbox.
+-   To learn to find, evaluate, use, extend, and combine various methods and tools of digital geography as needed for a given task. Examples of such tools have included: GitHub, QGIS, Python, JavaScript, and Mapbox.
 
 -   To practice and reflect theoretically upon emerging born-digital, multi-modal, narrative, and interactive approaches to cartography and scholarly communication.
 
@@ -31,7 +29,7 @@ This course is very “hands-on” and interactive! Most of our time will be spe
 
 -   To think critically about the technologies used in digital scholarship, including the material, social, and political implications of digital tech development, maintenance and utilization.
 
--   To discern, through investigation, the  relationship between space, technology, and society through critical engagement with practical and theoretical digital geographies methods.
+-   To discern, through investigation, the relationship between space, technology, and society through critical engagement with practical and theoretical digital geographies methods.
 
 ## :calendar: Weekly Schedule
 
@@ -43,20 +41,26 @@ This course is very “hands-on” and interactive! Most of our time will be spe
 
 ### Week 1: Intro to digital geographies
 
+<!-- Jan 4 to 8 -->
+
 This week’s lecture and lab will prepare you for the course, and provide a theoretical and technical foundation to build from. We’ll work through the syllabus together, and answer any questions you all may have. Each student is expected to read the Ash et al (2018) paper. After completing Lab 1, you will be able to clone/synchronize the course material, set up a personal website, and gain practical experience using github to manage your digital geographies projects.
 
 -   **Lecture Notes:** [Syllabus](readme.md), [Intro to the Web](weeks/week01/intro-web)
 -   **Readings:** a) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_), b) [Mastering Markdown](https://guides.github.com/features/mastering-markdown/), and c) [extended readings](weeks/week01/readings.md).
 -   **Lab 1:** [Project management using GitHub](labs/lab01) `Due: April 9th, by 11:59pm`
 
-### Week 2: Programing fundamentals
+### Week 2 : Programing fundamentals
+
+<!-- Jan 11 to 15 -->
 
 This week we’ll focus on providing you all with the fundamental skill set for web programming.  We will begin with an overview of the system architecture required for a digital geographies project,  then guide you through some of the essential front-end fundamentals. Including, internet basics, html, javascript, and css. This week requires a lot of self-learning,  and includes fairly lengthy readings and practical exercises. Please be prepared.
 
 -   **Lecture Notes:** [System architecture](weeks/week02/architecture), [intro-to-html, css](weeks/week02/html-css) and [javascript](weeks/week02/javascript), and [Jquery](weeks/week02/jquery).
 -   **Readings:** a) [W3School Tutorials on Html, javascript, css and jquery](weeks/week02/tech-readings.md), and b) [extended readings](weeks/week02/readings.md).
 
-### Week 3: Geospatial data
+### Week 3 : Geospatial data
+
+<!-- Jan 18 to 22 -->
 
 This week’s focus is on processing geospatial data for your digital geographies projects. We will begin by introducing the structure of the geojson format, and then look at techniques for collecting, converting and visualizing geojson objects/features in a web or desktop environment such as QGIS. After completing Lab 2, students will have learned how to collect geo-tagged tweets using specific keywords/topics (e.g., etc.), and methods for visualizing the spatial distribution of the locations for those tweets.
 
@@ -64,37 +68,44 @@ This week’s focus is on processing geospatial data for your digital geographie
 -   **Readings:** a) [Can social media clear the air? A case study of the air pollution problem in Chinese cities](https://drive.google.com/open?id=1C0MTPaPnVALVemeYEfiDChUKRZfcMjz3), b) [More than you ever wanted to know about GeoJSON](weeks/week03/assets/geojson.pdf), and c) [extended readings](weeks/week03/readings.md).
 -   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: April 23rd, by 11:59pm`
 
-### Week 4: Web mapping
+### Week 4 : Web mapping
+
+<!-- (Jan 25 to 29)-->
 
 This week you will be making your first web map of the quarter using the popular web mapping library - [Leaflet](https://leafletjs.com/) The lecture section this week we’ll work together familiarizing everyone with the basics of web mapping, and then provide a detailed introduction to the Lab 3 exercise.
 
 -   **Readings:** a) [Leaflet Basics](weeks/week04/leaflet), b) [Map Events](weeks/week04/mapevent) and c) [extended readings](weeks/week04/readings.md).
 -   **Lab 3:** [An integrative web mapping](labs/lab03) `Due: May 3rd, by 11:59pm`,  Example: [Oregon Water Atlas](http://oregonwater.info/atlas.html)
 
-### Week 5: Map design
+### Week 5 : Map design
+
+<!-- (Feb 1 to 5)-->
 
 -   **Lecture Notes:** [Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/)
 -   **Readings:** a) [The Guide to Map Design](weeks/week05/mapbox-design.pdf), b) [Mapbox Studio How-to Videos](weeks/week05/readme.md), and c) [extended readings](weeks/week05/readings.md).
 -   **Lab 4:** [Generating Map Tiles](labs/lab04) `Due: May 10th, by 11:59pm`
 -   **Online Mid-term:** `April 30th 9:30 - 10:20 AM` [_Study Guide_](#)
 
+### Week 6 : Smart dashboards
 
-### Week 6: Smart dashboards
+<!-- (Feb 8 to 12)-->
 
 -   check out the guidelines for [final project](project/project.md) and [essay](project/essay.md).
 -   **Lecture Notes:** interface design, color, typography, icons, animation, **Examples:** [COVID-19 Dashboard](https://hgis.uw.edu/virus)
 -   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [Bootstrap](weeks/week06/tech-readings.md), and c) [extended readings](weeks/week06/readings.md).
 
+### Week 7 : Geo-Narratives
 
-### Week 7: Geo-Narratives
+<!-- (Feb 15 to 19)-->
 
 This week we will explore the concept of geo-narrative, the use of storytelling in mapping practice, by looking at existing geo-narrative mapping projects and engaging in a group discussion and map critique.
 
 -   **Lecture Notes:** [Video](assets/video.md), [Image](assets/image.md), [Favicon](assets/favicon.md), [Icon](assets/icon.md), [Web Fonts](assets/fonts.md), and other relevant items.
 -   **Readings:** a) [Storymap.js](https://github.com/jakobzhao/storymap), b) [Map-based visual Storytelling: An Assessment of emerging genres and tropes `Chapter 1,2 and 5`.](https://drive.google.com/file/d/133s4dxoRaT1A7OckBapS6e9Yxh_wQc9d/view?usp=sharing), and c) [extended readings](weeks/week07/readings.md).
 
+### Week 8 : Emerging topics
 
-### Week 8: Emerging topics
+<!--(Feb 22 to 26) -->
 
 This week will focus on two emerging topics related to digital geographies, including cloud point visualization and real-time environment data collection, and explore their promise and pitfalls.
 
@@ -102,11 +113,15 @@ This week will focus on two emerging topics related to digital geographies, incl
 -   **Readings:** a) [Real-time GIS](https://drive.google.com/file/d/1COD2OYBxEJThG5Lfx7-nzV0EGtGedndT/view?usp=sharing), b) [Panopticon](https://drive.google.com/file/d/156fk11L9JFzsyV_9TRi9_c15MSIPCiL6/view?usp=sharing), and c) [extended readings](weeks/week08/readings.md).
 -   **In-class Activities:** Students-led presentations.
 
-### Week 9 & 10: Project studios
+### Week 9 & 10 : Project studios
+
+<!-- (Mar 1 to 12)-->
 
 During these two weeks, each group will focusing on their final projects and essay. The instructor and teaching assistant are available during the normal lecture period and the office hour if help is needed.
 
-### Week 11: Final project presentations
+### Finals Week : Final project presentations
+
+<!-- (Mar 15 to 19)-->
 
 During the last two meeting sessions, each group will present their final projects. More information about final project will be shared after the mid-term.
 
@@ -128,7 +143,6 @@ The Student Tech Loan Program is expanding as quickly as possible. We announced 
 
 **Individual Final Project:** Considering the difficulty of working as a team when you cannot meet each other in person, I have decided to change the final collaborative project as individual base, and cancel lab 5. So, at the end of this quarter, you only need to submit this final project. Steps:
 
-
 **Essay:** Each student will complete an essay that engages with the readings and the course themes, along with additional readings that you bring into conversation with the assigned course readings. You are aiming for ~~10 pages (double-spaced)~~ **no less than 1500 words** coalescing around ideas and readings from this quarter. Essay is due no later than the end of **Week 10**.
 
 ## :two_men_holding_hands: Targeted Audience
@@ -137,14 +151,14 @@ This course targets students who have a background in fundamental geographic inf
 
 ## :heavy_check_mark: Grading
 
-| Grading items                        | %   |
-| ------------------------------------ | --- |
-| Participation | 10% |
-| Think Pieces                         | 30% |
-| Lab Assignments                      | 30% |
-| Mid-term                             | 30% |
-| Final project                        | 20% |
-| Essay                                | 10% |
+| Grading items   | %   |
+| --------------- | --- |
+| Participation   | 10% |
+| Think Pieces    | 30% |
+| Lab Assignments | 30% |
+| Mid-term        | 30% |
+| Final project   | 20% |
+| Essay           | 10% |
 
 > The item `participation` includes your participation in the class (e.g., self-introduction, answer questions in class, etc.) and/or your response on GitHub issues (ask questions via GitHub issue, and help your classmates using the GitHub issues function).
 
