@@ -100,8 +100,7 @@ This week you will be making your first web map of the quarter using the popular
 
 This week we will explore the concept of geo-narrative, the use of storytelling in mapping practice, by looking at existing geo-narrative mapping projects and engaging in a group discussion and map critique.
 
--   **Lecture Notes:** [Video](assets/video.md), [Image](assets/image.md), [Favicon](assets/favicon.md), [Icon](assets/icon.md), [Web Fonts](assets/fonts.md), and other relevant items.
--   **Readings:** a) [Storymap.js](https://github.com/jakobzhao/storymap), b) [Map-based visual Storytelling: An Assessment of emerging genres and tropes `Chapter 1,2 and 5`.](https://drive.google.com/file/d/133s4dxoRaT1A7OckBapS6e9Yxh_wQc9d/view?usp=sharing), and c) [extended readings](weeks/week07/readings.md).
+-   **Readings:** a) [Getting started with ArcGIS StoryMap](https://storymaps.arcgis.com/stories/cea22a609a1d4cccb8d54c650b595bc4), b) [Planning and outlining your story map](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/sharing-collaboration/planning-and-outlining-your-story-map-how-to-set-yourself-up-for-success/), and c) [extended readings](weeks/week07/readings.md).
 
 ### Week 8 : Emerging topics
 
