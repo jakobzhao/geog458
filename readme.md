@@ -90,7 +90,7 @@ This week you will be making your first web map of the quarter using the popular
 
 <!-- Feb 8 to 12 -->
 
--   **Lecture Notes:** design a dashboard to monitor COVID-19 infection trend, **Example:** [COVID-19 Dashboard](https://hgis.uw.edu/virus), [a dashboard template](https://jakobzhao.github.io/geog458/weeks/week06/)
+-   **Lecture Notes:** design a dashboard to monitor COVID-19 infection trend, **Examples:** [COVID-19 Dashboard](https://hgis.uw.edu/virus), [a dashboard template](https://jakobzhao.github.io/geog458/weeks/week06/)
 -   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [Bootstrap](weeks/week06/tech-readings.md), and c) [extended readings](weeks/week06/readings.md).
 
 ### Week 7 : Geo-Narratives
@@ -109,7 +109,7 @@ This week we will explore the concept of geo-narrative, the use of storytelling 
 
 This week will focus on two emerging topics related to digital geographies, including cloud point visualization and real-time environment data collection, and explore their promise and pitfalls.
 
--   **Lecture Notes:** [Point Cloud visualization](https://jakobzhao.github.io/sfm/index.html) and [Real-time environmental data visualization](weeks/week08/rpi-iot).
+-   **Lecture Notes:** [Point cloud (Lidar Data) visualization](https://jakobzhao.github.io/sfm/index.html) and [Real-time environmental data visualization](weeks/week08/rpi-iot).
 -   **Readings:** a) [Real-time GIS](https://drive.google.com/file/d/1COD2OYBxEJThG5Lfx7-nzV0EGtGedndT/view?usp=sharing), b) [Panopticon](https://drive.google.com/file/d/156fk11L9JFzsyV_9TRi9_c15MSIPCiL6/view?usp=sharing), and c) [extended readings](weeks/week08/readings.md).
 
 
