@@ -91,7 +91,7 @@ This week you will be making your first web map of the quarter using the popular
 <!-- Feb 8 to 12 -->
 
 -   check out the guidelines for [final project](project/project.md) and [essay](project/essay.md).
--   **Lecture Notes:** interface design, color, typography, icons, animation, **Examples:** [COVID-19 Dashboard](https://hgis.uw.edu/virus)
+-   **Lecture Notes:** design a dashboard to monitor COVID-19 infection trend, **Example:** [COVID-19 Dashboard](https://hgis.uw.edu/virus), [a dashboard template](https://jakobzhao.github.io/geog458/weeks/week06/)
 -   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [Bootstrap](weeks/week06/tech-readings.md), and c) [extended readings](weeks/week06/readings.md).
 
 ### Week 7 : Geo-Narratives
@@ -100,7 +100,9 @@ This week you will be making your first web map of the quarter using the popular
 
 This week we will explore the concept of geo-narrative, the use of storytelling in mapping practice, by looking at existing geo-narrative mapping projects and engaging in a group discussion and map critique.
 
--   **Readings:** a) [Getting started with ArcGIS StoryMap](https://storymaps.arcgis.com/stories/cea22a609a1d4cccb8d54c650b595bc4), b) [Planning and outlining your story map](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/sharing-collaboration/planning-and-outlining-your-story-map-how-to-set-yourself-up-for-success/), and c) [extended readings](weeks/week07/readings.md).
+-   **Lecture Notes:** a) [Getting started with ArcGIS StoryMap](https://storymaps.arcgis.com/stories/cea22a609a1d4cccb8d54c650b595bc4), b) [Planning and outlining your story map](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/sharing-collaboration/planning-and-outlining-your-story-map-how-to-set-yourself-up-for-success/).
+
+- **Readings:** [extended readings](weeks/week07/readings.md).
 
 ### Week 8 : Emerging topics
 
