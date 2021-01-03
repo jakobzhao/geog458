@@ -13,7 +13,6 @@
 
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
 
-
 ![course cover](assets/img/cover.png)
 
 As digital technologies have radically transformed human life, this course tries to engage students in this digitally mediated and data-intensive geographic world, and also train them the timely technical skills which are demanding in emerging job markets. This course will provide a unique opportunity to explore emerging digital methods, to build a holistic solution to real-world problems, and to critically analyze their social implications. Rather than focusing exclusively on one or two specific topics, this course covers a full range of theoretical perspectives and practical exercises. The course begins with teaching students on geospatial project management using GitHub, and then a series of geospatial data operations and analyses are covered in detail, such as online data (e.g., geotagged tweets) acquisition, geocoding, and geospatial analyses. With these preparations, this course switches to online geovisualization. After a brief introduction to web programming basics (e.g., JavaScript, Html, and CSS), students will learn how to visualize and narrate geographic phenomena in an online environment. A few state-of-the-art approaches and applications in digital geographies will be practiced, such as collecting aerial imagery and point clouds using an unmanned aerial vehicle (UAV, commonly known as drone) or LiDAR, as well as storing real-time data from an environmental sensor. Throughout this quarter, students will not only learn and practice geospatial techniques which are important to many emerging jobs, but also hone their critical intellectual visions on the social implications of the applied techniques.
@@ -36,7 +35,7 @@ This course is very “hands-on” and interactive! Most of our time will be spe
 
 ## :calendar: Weekly Schedule
 
-### _Preparation_
+### Preparation
 
 -   [**Gear up the working environment**](assets/gearup.md) :computer:  :beer:
 -   **Canvas Survey:** Through a survey, students will team up as group of 5 ~ 6 people according to the proficiency of technical skills and interests. `Due: Jan 8th, 2021, by 11:59pm`
@@ -104,7 +103,7 @@ This week we will explore the concept of geo-narrative, the use of storytelling 
 
 -   **Lecture Notes:** a) [Getting started with ArcGIS StoryMap](https://storymaps.arcgis.com/stories/cea22a609a1d4cccb8d54c650b595bc4), b) [Planning and outlining your story map](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/sharing-collaboration/planning-and-outlining-your-story-map-how-to-set-yourself-up-for-success/).
 
-- **Readings:** [extended readings](weeks/week07/readings.md).
+-   **Readings:** [extended readings](weeks/week07/readings.md).
 
 ### Week 8 : Emerging topics
 
@@ -114,7 +113,6 @@ This week will focus on two emerging topics related to digital geographies, incl
 
 -   **Lecture Notes:** [Point cloud (Lidar Data) visualization](https://jakobzhao.github.io/sfm/index.html) and [Real-time environmental data visualization](weeks/week08/rpi-iot).
 -   **Readings:** a) [Real-time GIS](https://drive.google.com/file/d/1COD2OYBxEJThG5Lfx7-nzV0EGtGedndT/view?usp=sharing), b) [Panopticon](https://drive.google.com/file/d/156fk11L9JFzsyV_9TRi9_c15MSIPCiL6/view?usp=sharing), and c) [extended readings](weeks/week08/readings.md).
-
 
 ### Week 9 & 10 : Project studios
 
@@ -127,8 +125,6 @@ During these two weeks, each group will focusing on their final projects and ess
 <!-- Mar 15 to 19 -->
 
 During the last two meeting sessions, each group will present their final projects. More information about final project will be shared after the mid-term.
-
-
 
 ## :bell: Course Requirement
 
@@ -160,7 +156,7 @@ This course targets students who have a background in fundamental geographic inf
 
 | Grading items   | %   |
 | --------------- | --- |
-| Participation   |  5% |
+| Participation   | 5%  |
 | Think Pieces    | 15% |
 | Lab Assignments | 30% |
 | Mid-term        | 25% |
@@ -169,14 +165,13 @@ This course targets students who have a background in fundamental geographic inf
 
 > The item `participation` includes your participation in the class (e.g., self-introduction, answer questions in class, etc.) and/or your response on GitHub issues (ask questions via GitHub issue, and help your classmates using the GitHub issues function).
 
-
 ## :love_letter: Accommodations
 
 We welcome the opportunity to work with any students with disabilities in this class to ensure equal access to the course. If you have a letter from Disability Resources for Students (DRS) outlining your academic accommodations, please present the letter to me (or email us, to confirm, if the letter is electronic) as soon as possible so that we can discuss the accommodations you may need for this class. Any discussions between student and professor need to occur as early as possible in order for adequate arrangements to be made. If you do not yet have a letter from DRS, but would like to request academic accommodations due to a disability, please contact DRS [here (Links to an external site.)](https://depts.washington.edu/uwdrs/), or in-person at 011 Mary Gates Hall, or at 206-543-8924 (Voice & Relay), <mailto:uwdrs@uw.edu>.
 
  Washington state law requires that UW develop a policy for accommodation of student absences or significant hardship due to reasons of faith or conscience, or for organized religious activities. The UW’s policy, including more information about how to request an accommodation, is available at [Religious Accommodations Policy](https://registrar.washington.edu/staffandfaculty/religious-accommodations-policy/). Accommodations must be requested within the first two weeks of this course using the [Religious Accommodations Request form](https://https:/registrar.washington.edu/students/religious-accommodations-request/).
 
- ## :book: Copyright
+## :book: Copyright
 
  This course advocates for the open culture. The course materials are open source for both students and open source community to access.
 
