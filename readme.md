@@ -181,4 +181,4 @@ We welcome the opportunity to work with any students with disabilities in this c
 
 ## :bouquet: Acknowledgement
 
-<a href="https://hgis.uw.edu"><img src="assets/logo.png" align="right" width="230px" target="_blank" /></a> The development of this course has been financially supported by UW's data science minior committee. I sincerely appreciate Tyler McCrea, Jou Ho, Fengyu Xu for their assistance in developing this course.
+<a href="https://hgis.uw.edu"><img src="assets/logo.png" align="right" width="230px" target="_blank" /></a> The development of this course has been financially supported by UW's data science minior committee. This course is largely based upon material designed with Tyler McCrea, and also I sincerely appreciate Jou Ho, Fengyu Xu for their assistances in developing this course.
