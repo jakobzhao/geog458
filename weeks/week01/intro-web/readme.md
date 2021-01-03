@@ -1,17 +1,13 @@
-#  Introduction to the Web
+structure#  Introduction to the Web
 
-**Meeting:** Tuesdays and Thursdays 8:30 to 10:20 AM PST on [Zoom #: 785830819](https://washington.zoom.us/j/785830819)
 
-**Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu
-
-**Office Hour:** Tuesdays 1:00 to 3:00 PM PST or by appointment on [Zoom #: 181944813](https://washington.zoom.us/j/181944813)
 
 **Learning Objectives**
 
 - Understand the basic concepts related to Internet and the Web;
 - IP and ports;
 - the three major options for visualization on the web; and
-- The strucutre of a URL;
+- The structure of a URL;
 
 ## 1.1 Internet
 
@@ -261,7 +257,7 @@ Depending on the type of information, a web page could be qualified as being sta
 
 [2] https://www.ntchosting.com/encyclopedia/internet/web-page/
 
-## Web architecture
+## Web architectures
 
 Web architecture is the conceptual structure of the World Wide Web. The WWW or the Internet is a constantly changing medium that enables communication between different users and the technical interaction (interoperability) between different systems and subsystems. The basis for this is different components and data formats, which are usually arranged in tiers and build on each other. Overall, they form the infrastructure of the Internet, which is made possible by the three core components of data transmission protocols (TCP/IP, HTTP, HTTPS), representation formats (HTML, CSS, XML), and addressing standards (URI, URL). The term web architecture should be distinguished from the terms website architecture and information architecture.
 

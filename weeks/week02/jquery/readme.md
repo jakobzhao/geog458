@@ -1,10 +1,5 @@
 # Web Programming Basics III: JQuery
 
-**Meeting:** Tuesdays and Thursdays 8:30 to 10:20 AM PST on [Zoom #: 785830819](https://washington.zoom.us/j/785830819)
-
-**Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu
-
-**Office Hour:** Tuesdays 1:00 to 3:00 PM PST or by appointment on [Zoom #: 181944813](https://washington.zoom.us/j/181944813)
 
 **Learning Objectives**
 
