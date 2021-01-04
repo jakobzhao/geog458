@@ -18,7 +18,7 @@ Many designers and developers find it useful to have a test computer running a d
 
 ### Mobile devices for testing
 
-The web has gone mobile! That means it is absolutely critical that you test the appearance and performance of your site on browsers on smartphones and tablet devices. Device testing is discussed in Chapter 17, Responsive Web Design.
+The web has gone mobile! That means it is absolutely critical that you test the appearance and performance of your site on browsers on smartphones and tablet devices.
 
 ### Rasperry Pi (Optinal)
 
