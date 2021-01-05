@@ -1,10 +1,6 @@
 **Extended Readings:**
 
-(\*) denotes that this article should be skimmed before class
-
-_Topic: the abc’s of critical cartography_
-
--   (\*) [Intro to Critical Cartography: CRAMPTON & KRYGIER, 2005](https://drive.google.com/file/d/1IEz_9J4vH6foIrV36wDoIovOYNomZBWj/view?usp=sharing)
+(\*) Articles with this symbol should be skimmed before class if you are able
 
 _Topic: maps and knowledge, indigenous mapping methods, maps as colonial tools & the construction/ordering of space_
 
