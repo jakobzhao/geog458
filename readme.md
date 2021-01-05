@@ -86,7 +86,7 @@ This week you will be making your first web map of the quarter using the popular
 <!-- Feb 1 to 5 -->
 
 -   **Lecture Notes:** [Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/)
--   **Readings:** a) [The Guide to Map Design](weeks/week05/mapbox-design.pdf), b) [Mapbox Studio How-to Videos](weeks/week05/readme.md), and c) [extended readings](weeks/week05/readings.md).
+-   **Readings:** a) [The Guide to Map Design](weeks/week05/mapbox-design.pdf), b) [Intro to Critical Cartography](https://drive.google.com/file/d/1IEz_9J4vH6foIrV36wDoIovOYNomZBWj/view?usp=sharing), c) [Mapbox Studio How-to Videos](weeks/week05/readme.md), and d) [extended readings](weeks/week05/readings.md).
 -   **Lab 4:** [Map design and tiles generation](labs/lab04) `Due: Feb 19th, by 11:59pm`
 -   **Online Mid-term:** `Feb 2nd 11:30 - 12:20 AM` [_Study Guide_](#)
 
@@ -95,7 +95,7 @@ This week you will be making your first web map of the quarter using the popular
 <!-- Feb 8 to 12 -->
 
 -   **Lecture Notes:** design a dashboard to monitor COVID-19 infection trend, **Examples:** [COVID-19 Dashboard](https://hgis.uw.edu/virus), [a dashboard template](https://jakobzhao.github.io/geog458/weeks/week06/)
--   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [Bootstrap](weeks/week06/tech-readings.md), and c) [extended readings](weeks/week06/readings.md).
+-   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [History of the Urban Dashboard](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/), b) [3 Ways Data Dashboards Can Mislead You](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section), d) [Bootstrap](weeks/week06/tech-readings.md), and e) [extended readings](weeks/week06/readings.md).
 
 ### Week 7 : Geo-Narratives
 
@@ -105,7 +105,7 @@ This week we will explore the concept of geo-narrative, the use of storytelling 
 
 -   **Lecture Notes:** a) [Getting started with ArcGIS StoryMap](https://storymaps.arcgis.com/stories/cea22a609a1d4cccb8d54c650b595bc4), b) [Planning and outlining your story map](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/sharing-collaboration/planning-and-outlining-your-story-map-how-to-set-yourself-up-for-success/).
 
--   **Readings:** [extended readings](weeks/week07/readings.md).
+-   **Readings:** a) [Affective Geovisualisations](https://drive.google.com/file/d/1aqMFkewNT9s9nrAecAVYiaBAbtCrf7xj/view?usp=sharing), b) [Anti-Eviction Mapping Project Handbook](https://static1.squarespace.com/static/52b7d7a6e4b0b3e376ac8ea2/t/5bc76571b208fc10defc815a/1539794295823/AEMP+Handbook.pdf), c)[extended readings](weeks/week07/readings.md).
 
 ### Week 8 : Emerging topics
 
@@ -114,7 +114,7 @@ This week we will explore the concept of geo-narrative, the use of storytelling 
 This week will focus on two emerging topics related to digital geographies, including cloud point visualization and real-time environment data collection, and explore their promise and pitfalls.
 
 -   **Lecture Notes:** [Point cloud (Lidar Data) visualization](https://jakobzhao.github.io/sfm/index.html) and [Real-time environmental data visualization](weeks/week08/rpi-iot).
--   **Readings:** a) [Real-time GIS](https://drive.google.com/file/d/1COD2OYBxEJThG5Lfx7-nzV0EGtGedndT/view?usp=sharing), b) [Panopticon](https://drive.google.com/file/d/156fk11L9JFzsyV_9TRi9_c15MSIPCiL6/view?usp=sharing), and c) [extended readings](weeks/week08/readings.md).
+-   **Readings:** a) [Real-time GIS](https://drive.google.com/file/d/1COD2OYBxEJThG5Lfx7-nzV0EGtGedndT/view?usp=sharing), b) [Anatomy of an AI System](https://anatomyof.ai/), c) [Abolishing Racist Police Algorithms](https://www.technologyreview.com/2020/06/05/1002709/the-activist-dismantling-racist-police-algorithms/), and d) [extended readings](weeks/week08/readings.md).
 
 ### Week 9 & 10 : Project studios
 
