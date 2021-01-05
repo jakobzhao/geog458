@@ -60,7 +60,7 @@ This week’s lecture and lab will prepare you for the course, and provide a the
 This week we’ll focus on providing you all with the fundamental skill set for web programming.  We will begin with an overview of the system architecture required for a digital geographies project,  then guide you through some of the essential front-end fundamentals. Including, internet basics, html, javascript, and css. This week requires a lot of self-learning,  and includes fairly lengthy readings and practical exercises. Please be prepared.
 
 -   **Lecture Notes:** [System architecture](weeks/week02/architecture), [intro-to-html, css](weeks/week02/html-css) and [javascript](weeks/week02/javascript), and [Jquery](weeks/week02/jquery).
--   **Readings:** a) [W3School Tutorials on Html, javascript, css and jquery](weeks/week02/tech-readings.md), b) [Introducing Code/Space](https://drive.google.com/file/d/1T7ChuOnaKrgjTVhAeV_Niei2pqCWiiqK/view?usp=sharing), c) [Cloud Ethics: Algorithms and the Attributes of Ourselves and Others](https://drive.google.com/file/d/1C3925q917K7cD8-NEbw_Yik_X0oCeSfd/view?usp=sharing)and d) [extended readings](weeks/week02/readings.md).
+-   **Readings:** a) [W3School Tutorials on Html, javascript, css and jquery](weeks/week02/tech-readings.md), b) [Introducing Code/Space](https://drive.google.com/file/d/1T7ChuOnaKrgjTVhAeV_Niei2pqCWiiqK/view?usp=sharing), c) [Cloud Ethics: Algorithms and the Attributes of Ourselves and Others](https://drive.google.com/file/d/1C3925q917K7cD8-NEbw_Yik_X0oCeSfd/view?usp=sharing), and d) [extended readings](weeks/week02/readings.md).
 
 ### Week 3 : Geospatial data
 
@@ -95,7 +95,7 @@ This week you will be making your first web map of the quarter using the popular
 <!-- Feb 8 to 12 -->
 
 -   **Lecture Notes:** design a dashboard to monitor COVID-19 infection trend, **Examples:** [COVID-19 Dashboard](https://hgis.uw.edu/virus), [a dashboard template](https://jakobzhao.github.io/geog458/weeks/week06/)
--   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [History of the Urban Dashboard](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/), b) [3 Ways Data Dashboards Can Mislead You](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section), d) [Bootstrap](weeks/week06/tech-readings.md), and e) [extended readings](weeks/week06/readings.md).
+-   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [History of the Urban Dashboard](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/), c) [3 Ways Data Dashboards Can Mislead You](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section), d) [Bootstrap](weeks/week06/tech-readings.md), and e) [extended readings](weeks/week06/readings.md).
 
 ### Week 7 : Geo-Narratives
 
