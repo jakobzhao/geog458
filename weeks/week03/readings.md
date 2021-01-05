@@ -9,10 +9,6 @@ _Topic: “local” data - setting & context_
     -   (\*) [Chapter 6 - Models of Local Practice (Praxis and Critical Knowledge](https://drive.google.com/file/d/1ex1l1RoPLBt0bey4W3UUrlQYfChQNwzt/view?usp=sharing)
     -   [Chapter 7 - Local Ends](https://drive.google.com/file/d/1hmRthNixJl83AXytyUbtXG6r5yyfeeLT/view?usp=sharing)
 
-_Topic: data processing and context_
-
--   (\*) [Putting Data back into Context: CATHERINE D'IGNAZIO, 2019](https://datajournalism.com/read/longreads/putting-data-back-into-context)
-
 _Topic: who collections location data and why?_
 
 -   [The Wired Guide to Personal Data Collection: LOUISE MATSAKIS, 2019](https://www.wired.com/story/wired-guide-personal-data-collection/)
