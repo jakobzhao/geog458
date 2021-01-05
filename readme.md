@@ -51,6 +51,7 @@ This week’s lecture and lab will prepare you for the course, and provide a the
 
 -   **Lecture Notes:** [Syllabus](readme.md), [Intro to the Web](weeks/week01/intro-web)
 -   **Readings:** a) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_), b) [Critical Atlas of the Internet](https://louisedrulhe.fr/internet-atlas/), c) [Mastering Markdown](https://guides.github.com/features/mastering-markdown/), and d) [extended readings](weeks/week01/readings.md).
+-   **Think Piece 1:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000366) `Due: Jan 7th, by 5:00pm`
 -   **Lab 1:** [Project management using GitHub](labs/lab01) `Due: Jan 16th, by 11:59pm`
 
 ### Week 2 : Programing fundamentals
@@ -61,6 +62,7 @@ This week we’ll focus on providing you all with the fundamental skill set for 
 
 -   **Lecture Notes:** [System architecture](weeks/week02/architecture), [intro-to-html, css](weeks/week02/html-css) and [javascript](weeks/week02/javascript), and [Jquery](weeks/week02/jquery).
 -   **Readings:** a) [W3School Tutorials on Html, javascript, css and jquery](weeks/week02/tech-readings.md), b) [Introducing Code/Space](https://drive.google.com/file/d/1T7ChuOnaKrgjTVhAeV_Niei2pqCWiiqK/view?usp=sharing), c) [Cloud Ethics: Algorithms and the Attributes of Ourselves and Others](https://drive.google.com/file/d/1C3925q917K7cD8-NEbw_Yik_X0oCeSfd/view?usp=sharing), and d) [extended readings](weeks/week02/readings.md).
+-   **Think Piece 2:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000368) `Due: Jan 14th, by 5:00pm`
 
 ### Week 3 : Geospatial data
 
@@ -70,6 +72,7 @@ This week’s focus is on processing geospatial data for your digital geographie
 
 -   **Lecture Notes:** [Geospatial data for digital geographies](weeks/week03/readme.md)
 -   **Readings:** a) [Can social media clear the air? A case study of the air pollution problem in Chinese cities](https://drive.google.com/open?id=1C0MTPaPnVALVemeYEfiDChUKRZfcMjz3), b) [Putting Data back into Context](https://datajournalism.com/read/longreads/putting-data-back-into-context), c) [More than you ever wanted to know about GeoJSON](weeks/week03/assets/geojson.pdf), and d) [extended readings](weeks/week03/readings.md).
+-   **Think Piece 3:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000371) `Due: Jan 21st, by 5:00pm`
 -   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: Jan 29th, by 11:59pm`
 
 ### Week 4 : Web mapping
@@ -79,6 +82,7 @@ This week’s focus is on processing geospatial data for your digital geographie
 This week you will be making your first web map of the quarter using the popular web mapping library - [Leaflet](https://leafletjs.com/) The lecture section this week we’ll work together familiarizing everyone with the basics of web mapping, and then provide a detailed introduction to the Lab 3 exercise.
 
 -   **Readings:** a) [Leaflet Basics](weeks/week04/leaflet), b) [Map Events](weeks/week04/mapevent), c) [Digital Mapping and Segregation](https://www.forbes.com/sites/drsarahbond/2017/10/20/how-is-digital-mapping-changing-the-way-we-visualize-racism-and-segregation/#4df35c7d33fa), and d) [extended readings](weeks/week04/readings.md).
+-   **Think Piece 4:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000373) `Due: Jan 28th, by 5:00pm`
 -   **Lab 3:** [Web map application](labs/lab03) `Due:Feb 12th, by 11:59pm`,  Example: [Oregon Water Atlas](http://oregonwater.info/atlas.html)
 
 ### Week 5 : Map design
@@ -87,6 +91,7 @@ This week you will be making your first web map of the quarter using the popular
 
 -   **Lecture Notes:** [Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/)
 -   **Readings:** a) [The Guide to Map Design](weeks/week05/mapbox-design.pdf), b) [Intro to Critical Cartography](https://drive.google.com/file/d/1IEz_9J4vH6foIrV36wDoIovOYNomZBWj/view?usp=sharing), c) [Mapbox Studio How-to Videos](weeks/week05/readme.md), and d) [extended readings](weeks/week05/readings.md).
+-   **Think Piece 5:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000375) `Due: Fed 4th, by 5:00pm`
 -   **Lab 4:** [Map design and tiles generation](labs/lab04) `Due: Feb 19th, by 11:59pm`
 -   **Online Mid-term:** `Feb 2nd 11:30 - 12:20 AM` [_Study Guide_](#)
 
@@ -96,6 +101,7 @@ This week you will be making your first web map of the quarter using the popular
 
 -   **Lecture Notes:** design a dashboard to monitor COVID-19 infection trend, **Examples:** [COVID-19 Dashboard](https://hgis.uw.edu/virus), [a dashboard template](https://jakobzhao.github.io/geog458/weeks/week06/)
 -   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [History of the Urban Dashboard](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/), c) [3 Ways Data Dashboards Can Mislead You](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section), d) [Bootstrap](weeks/week06/tech-readings.md), and e) [extended readings](weeks/week06/readings.md).
+-   **Think Piece 6:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000376) `Due: Feb 11th, by 5:00pm`
 
 ### Week 7 : Geo-Narratives
 
@@ -106,6 +112,7 @@ This week we will explore the concept of geo-narrative, the use of storytelling 
 -   **Lecture Notes:** a) [Getting started with ArcGIS StoryMap](https://storymaps.arcgis.com/stories/cea22a609a1d4cccb8d54c650b595bc4), b) [Planning and outlining your story map](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/sharing-collaboration/planning-and-outlining-your-story-map-how-to-set-yourself-up-for-success/).
 
 -   **Readings:** a) [Affective Geovisualisations](https://drive.google.com/file/d/1aqMFkewNT9s9nrAecAVYiaBAbtCrf7xj/view?usp=sharing), b) [Anti-Eviction Mapping Project Handbook](https://static1.squarespace.com/static/52b7d7a6e4b0b3e376ac8ea2/t/5bc76571b208fc10defc815a/1539794295823/AEMP+Handbook.pdf), c)[extended readings](weeks/week07/readings.md).
+-   **Think Piece 7:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000379) `Due: Feb 18th, by 5:00pm`
 
 ### Week 8 : Emerging topics
 
@@ -115,6 +122,7 @@ This week will focus on two emerging topics related to digital geographies, incl
 
 -   **Lecture Notes:** [Point cloud (Lidar Data) visualization](https://jakobzhao.github.io/sfm/index.html) and [Real-time environmental data visualization](weeks/week08/rpi-iot).
 -   **Readings:** a) [Real-time GIS](https://drive.google.com/file/d/1COD2OYBxEJThG5Lfx7-nzV0EGtGedndT/view?usp=sharing), b) [Anatomy of an AI System](https://anatomyof.ai/), c) [Abolishing Racist Police Algorithms](https://www.technologyreview.com/2020/06/05/1002709/the-activist-dismantling-racist-police-algorithms/), and d) [extended readings](weeks/week08/readings.md).
+-   **Think Piece 8:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000381) `Due: Feb 25th, by 5:00pm`
 
 ### Week 9 & 10 : Project studios
 
