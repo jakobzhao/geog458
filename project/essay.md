@@ -35,7 +35,7 @@ Since the essay is written in mardown syntax, please try your best to include th
 
 ## Submission
 
-Please submit the url link of your essay to the final project submission tab on Canvas. Essay is due no later than the end of **Week 10** - on Friday(June 5) by 11:59pm.
+Please submit the url link of your essay to the final project submission tab on Canvas. Essay is due no later than the end of **Week 10** - on Friday by 11:59pm.
 
 
 >  **Note:** The requirements to the essay may be slightly changed according the progress of this course. The final requirements are subject to the instructor's notification.
