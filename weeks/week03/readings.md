@@ -1,6 +1,6 @@
 **Extended Readings:**
 
-(\*) denotes that this article should be skimmed before class
+(\*) Articles with this symbol should be skimmed before class if you are able
 
 _Topic: “local” data - setting & context_
 
