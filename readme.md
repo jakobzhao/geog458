@@ -78,7 +78,7 @@ This week’s focus is on processing geospatial data for your digital geographie
 
 This week you will be making your first web map of the quarter using the popular web mapping library - [Leaflet](https://leafletjs.com/) The lecture section this week we’ll work together familiarizing everyone with the basics of web mapping, and then provide a detailed introduction to the Lab 3 exercise.
 
--   **Readings:** a) [Leaflet Basics](weeks/week04/leaflet), b) [Map Events](weeks/week04/mapevent), c) [Digital Mapping and Segregation](https://www.forbes.com/sites/drsarahbond/2017/10/20/how-is-digital-mapping-changing-the-way-we-visualize-racism-and-segregation/#4df35c7d33fa)and d) [extended readings](weeks/week04/readings.md).
+-   **Readings:** a) [Leaflet Basics](weeks/week04/leaflet), b) [Map Events](weeks/week04/mapevent), c) [Digital Mapping and Segregation](https://www.forbes.com/sites/drsarahbond/2017/10/20/how-is-digital-mapping-changing-the-way-we-visualize-racism-and-segregation/#4df35c7d33fa), and d) [extended readings](weeks/week04/readings.md).
 -   **Lab 3:** [Web map application](labs/lab03) `Due:Feb 12th, by 11:59pm`,  Example: [Oregon Water Atlas](http://oregonwater.info/atlas.html)
 
 ### Week 5 : Map design
