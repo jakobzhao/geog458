@@ -1,6 +1,6 @@
 **Extended Readings:**
 
-(\*) denotes that this article should be skimmed before class
+(\*) Articles with this symbol should be skimmed before class if you are able
 
 _Topic: web mapping overview_
 
@@ -9,10 +9,6 @@ _Topic: web mapping overview_
 _Topic: doing critical GIS_
 
 -   [Hacker Cartography:  ALAN MCCONCHIE, 2015](https://drive.google.com/file/d/1H76GJFXwS5dOPZYyxfyuud0DGQzYGNIr/view?usp=sharing)
-
-_Topic: web mapping and research futures_
-
--   (\*) [Digital Mapping and Segregation: SARAH BOND, 2017](https://www.forbes.com/sites/drsarahbond/2017/10/20/how-is-digital-mapping-changing-the-way-we-visualize-racism-and-segregation/#4df35c7d33fa)
 
 _Topic: towards data feminism & spatial activism_
 
