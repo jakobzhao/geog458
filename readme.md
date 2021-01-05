@@ -3,13 +3,13 @@
 **Meetings**
 
 -   **Lectures:** Tuesdays and Thursdays 11:30 AM to 12:50 PM PST on [Zoom](https://washington.zoom.us/meeting/register/tJcuf-ippzIrHNA1U1xoZDe7CR9ktaTTaAwU)
--   **Labs/Reading Discussions:** Wednesdays and Fridays 10:30 AM to 12:20 PM PST on [Slack](https://geog458-winter-2021.slack.com)
+-   **Labs/Reading Discussions:** Wednesdays and Fridays 10:30 AM to 12:20 PM PST on [Zoom (https://washington.zoom.us/meeting/register/tJYrdumgqDsiHNXZDEg_YelFbX8_67eMyPlK)
 
 **Personnel:**
 
 -   **Bo Zhao**, Instructor, zhaobo@uw.edu | Office Hour: Thursdays 1:10 to 3:10 PM PST on [Slack](https://geog458-winter-2021.slack.com) or by appointment
 
--   **Tyler McCrea**, Teaching Assistant, tmccrea@uw.edu |  Office Hour: `TBD` on [Slack](https://geog458-winter-2021.slack.com) or by appointment
+-   **Tyler McCrea**, Teaching Assistant, tmccrea@uw.edu |  Office Hour: Fridays 12:30 to 1:30 PM PST on [Slack](https://geog458-winter-2021.slack.com) or by appointment
 
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
 
@@ -114,7 +114,7 @@ This week will focus on two emerging topics related to digital geographies, incl
 
 <!-- Mar 1 to 12 -->
 
-During these two weeks, each group will focusing on their final projects and essay. The instructor and teaching assistant are available during the normal lecture period and the office hour if help is needed.
+During these two weeks, each group will focusing on their final projects and essay. The instructor and teaching assistant are available during the normal lecture period, lab sections and office hours if help is needed.
 
 ### Finals Week : Final project presentations
 
@@ -132,10 +132,9 @@ The Student Tech Loan Program is expanding as quickly as possible. We announced 
 
 **Labs:** You need to finish all four labs by the due date. In order to help you work on each lab, we will walk through most of the labs in class.
 
-**Think Pieces:** for week 1 to 8, there will be weekly reading assignments. To evaluate your reflection upon each week's reading material, we set up a discussion board for each week. You need to submit think pieces to **3** out of the 8 weeks' discussion topics.
+**Think Pieces:** for week 1 to 8, there will be weekly reading assignments. To evaluate your reflection upon each week's reading material, we set up a discussion board for each week. You need to submit think pieces to **3** out of the 8 weeks' discussion topics. Your think pieces should be completed by Thursday @ 5 pm PST for the weeks you are submitting a piece. Your think pieces should be at least 350 words and engage substantially with the reading materials, and connections to the lab assignements and lectures. Submit your think pieces on Canvas in the applicable week's discussion section (https://canvas.uw.edu/courses/1434645/discussion_topics). 
 
-**Participation in in-class discussion:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and actively participate in critical discussions of those readings.
-
+**Participation in in-class discussion:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and actively participate in critical discussions of those readings. You should have completed all of the weekly readings before our Friday lab sections as these sections will be devoted to critical discussion and engagement with the required readings. 
 
 **Individual Final Project:** Considering the difficulty of working as a team when you cannot meet each other in person, I have decided to change the final collaborative project as individual base, and cancel lab 5. So, at the end of this quarter, you only need to submit this final project. check out  [the detailed requirement for final project](project/project.md)
 
@@ -156,7 +155,7 @@ This course targets students who have a background in fundamental geographic inf
 | Final project   | 15% |
 | Essay           | 10% |
 
-> The item `participation` includes your participation in the class (e.g., self-introduction, answer questions in class, etc.) and/or your response on GitHub issues (ask questions via GitHub issue, and help your classmates using the GitHub issues function).
+> The item `participation` includes your participation in the class (e.g., self-introduction, answer questions in class, etc.) and/or your response on GitHub issues (ask questions via GitHub issue, and help your classmates using the GitHub issues function). As well as participation in the weekly lab/discussion sections. 
 
 ## :love_letter: Accommodations
 
