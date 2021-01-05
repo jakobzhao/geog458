@@ -3,7 +3,7 @@
 **Meetings**
 
 -   **Lectures:** Tuesdays and Thursdays 11:30 AM to 12:50 PM PST on [Zoom](https://washington.zoom.us/meeting/register/tJcuf-ippzIrHNA1U1xoZDe7CR9ktaTTaAwU)
--   **Labs/Reading Discussions:** Wednesdays and Fridays 10:30 AM to 12:20 PM PST on [Zoom]  (https://washington.zoom.us/meeting/register/tJYrdumgqDsiHNXZDEg_YelFbX8_67eMyPlK)
+-   **Labs/Reading Discussions:** Wednesdays and Fridays 10:30 AM to 12:20 PM PST on [Zoom](https://washington.zoom.us/meeting/register/tJYrdumgqDsiHNXZDEg_YelFbX8_67eMyPlK)
 
 **Personnel:**
 
