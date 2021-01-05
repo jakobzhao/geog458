@@ -1,10 +1,9 @@
 **Extended Readings:**
 
-(\*) denotes that this article should be skimmed before class
+(\*) Articles with this symbol should be skimmed before class if you are able
 
 _Topic: the internet - materiality, structure, & power_
 
--   (\*) [Critical Atlas of the Internet:  LOUISE DRULHE, 2015](https://louisedrulhe.fr/internet-atlas/)
 -   (\*) [Google Is Not God of The Web: DAVID BLUE, 2020](https://bilge.world/google-page-experience)
 
 _Topic: digital humanities, mapping & activism (theory + praxis)_
