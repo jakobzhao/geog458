@@ -9,7 +9,7 @@
 - the three major options for visualization on the web; and
 - The structure of a URL;
 
-## 1.1 Internet
+## 1 Internet
 
 The internet is an international network of connected computers. No company owns the internet; it is a cooperative effort governed by a system of standards and rules. The purpose of connecting computers together, of course, is to share information. There are many ways information can be passed between computers, including email (POP3/IMAP/SMTP), file transfer (FTP), secure shell (SSH), HyperText Transfer Protocol(HTTP), and many more specialized modes upon which the internet is built. These standardized methods for transferring data or documents over a network are known as protocols.
 
@@ -24,7 +24,7 @@ World Wide Web browser software, such as Microsoft's Internet Explorer/Edge, Moz
 
 > **Note:** The web was born in a particle physics laboratory (CERN) in Geneva, Switzerland, in 1989. There a computer specialist named Tim Berners-Lee first proposed a system of information management that used a “hypertext” process to link related documents over a network. He and his partner, Robert Cailliau, created a prototype and released it for review. For the first several years, web pages were text-only. It’s difficult to believe that in 1992, the world had only about 50 web servers, total. The real boost to the web’s popularity came in 1992 when the first graphical browser (NCSA Mosaic) was introduced, and the web broke out of the realm of scientific research into mass media. The ongoing development of web technologies is overseen by the World Wide Web Consortium (W3C).
 
-## 1.2 IP Addresses and Ports
+## 2 IP Addresses and Ports
 
 ### IP addresses
 
@@ -62,7 +62,7 @@ For example, all computers accessing or requesting Quote of the Day will always 
 
 `49152 to 65536` - Dynamic or private ports; meaning that they can be used by just about anybody.
 
-## 1.3 Protocols:
+## 3 Protocols:
 
 #### HTTP(S)
 
@@ -89,7 +89,7 @@ Secure Shell (SSH) is a cryptographic network protocol for operating network ser
 
 SSH provides a secure channel over an unsecured network in a client–server architecture, connecting an SSH client application with an SSH server. The protocol specification distinguishes between two major versions, referred to as SSH-1 and SSH-2. The standard TCP port for SSH is 22. SSH is generally used to access Unix-like operating systems, but it can also be used on Windows. Windows 10 uses OpenSSH as its default SSH client.
 
-## 1.4 Browsers
+## 4 Browsers
 
 A web browser (commonly referred to as a browser) is a software application for accessing information on the World Wide Web. Each individual web page, image, and video is identified by a distinct URL, enabling browsers to retrieve and display them on the user's device.
 
@@ -122,7 +122,7 @@ Common user interface features of browsers:
 - An address bar to input the URL of a page and display it.
 - A search bar to input terms into a search engine. (In some browsers, the search bar is merged with the address bar.)
 
-## 1.5 URL of a web page
+## 5 URL of a web page
 
 A Uniform Resource Locator (URL), colloquially termed a web address, is a reference to a web resource that specifies its location on a computer network and a mechanism for retrieving it. A URL is a specific type of Uniform Resource Identifier (URI), although many people use the two terms interchangeably. URLs occur most commonly to reference web pages (http), but are also used for file transfer (ftp), email (mailto), database access (JDBC), and many other applications.
 
@@ -212,7 +212,7 @@ By default, FTP sites use port 21, but others may be set up on port 22 or someth
 
 [2] https://www.lifewire.com/what-is-a-url-2626035
 
-## 1.6 The anatomy of a web page
+## 6 The anatomy of a web page
 
 A web page (also written as webpage) is a document that is suitable for the World Wide Web and web browsers. A web browser displays a web page on a monitor or mobile device.
 
@@ -309,7 +309,7 @@ With 3-tier architecture, you have the ability to utilize new technologies as th
 
 [2] https://www.izenda.com/blog/5-benefits-3-tier-architecture/
 
-## 1.7 Graphics on the Web
+## 7 Graphics on the Web
 
 Websites and applications often need to present graphics. Static images can easily be displayed using the `<img>` element, or by setting the background of HTML elements using the background-image property. You can also construct graphics on-the-fly, or manipulate images after the fact. These articles provide insight into how you can accomplish this.
 
