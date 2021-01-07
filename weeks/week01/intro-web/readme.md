@@ -257,59 +257,8 @@ Depending on the type of information, a web page could be qualified as being sta
 
 [2] https://www.ntchosting.com/encyclopedia/internet/web-page/
 
-## Web architectures
 
-Web architecture is the conceptual structure of the World Wide Web. The WWW or the Internet is a constantly changing medium that enables communication between different users and the technical interaction (interoperability) between different systems and subsystems. The basis for this is different components and data formats, which are usually arranged in tiers and build on each other. Overall, they form the infrastructure of the Internet, which is made possible by the three core components of data transmission protocols (TCP/IP, HTTP, HTTPS), representation formats (HTML, CSS, XML), and addressing standards (URI, URL). The term web architecture should be distinguished from the terms website architecture and information architecture.
-
-The Internet is a medium that is constantly changing and expanded by numerous developers, programmers and various consortia such as the W3C. However, the architectures used can be schematically distinguished.
-
-### Client-server model
-
-Initially, the web consisted of a two-tiered architecture: clients and servers. Clients and servers shared the tasks and services that the system was supposed to perform. For example, the client may request a service from the server; the server answers the request by providing the service. Retrieving a website using a URL address that directs to a server to load the site in the client’s browser is an example of the two-layer model, also known as the client-server model.
-
-The Internet protocol family, which now consists of around 500 different network protocols, is usually used as the basis for the WWW, but it usually comprises the TCP/TCP/IP reference model. Three prerequisites must exist in the web architecture for the distributed application systems to communicate with one another:
-
-- Representation formats with a fixed standard: The most frequently used formats are HTML and CSS; or XML when machines communicate with one another.
-
-- Protocols for data transfer: HTTP (Hypertext Transfer Protocol) or HTTPS (Hypertext Transfer Protocol Secure) is used in the web. Other applications, such as mail servers use SMTP (Simple Mail Transfer Protocol) or POP (Post Office Protocol). Determining the protocols used depends on the application.
--
-- The standard for addressing: This refers to the URL (Uniform Resource Locator) which is an instance of the more general concept of URI.
-
-Finally, the web architecture is analogous to the operational structure of application systems for data storage, data transmission, and presentation. When transferred to the web, the web architecture typically consists of database servers that manage the data and resources. They communicate with a client using a transfer protocol that can retrieve the data and view it in a browser. The representation is usually done with HTML and CSS.
-
-### Three-tier model
-
-“3-tier architecture is a client-server architecture in which the functional process logic, data access, computer data storage and user interface are developed and maintained as independent modules on separate platforms.”
-
-![](img/3-tiers.png)
-
-A “tier” in this case can also be referred to as a “layer”. The three tiers, or layers, involved include:
-
-- A Presentation Layer that sends content to browsers in the form of HTML/JS/CSS. This might leverage frameworks like React, Angular, Ember, Aurora, etc.
-
-- An Application Layer that uses an application server and processes the business logic for the application. This might be written in C#, Java, C++, Python, Ruby, etc.
-
-- A Data Layer which is a database management system that provides access to application data. This could be MSSQL, MySQL, Oracle, or PostgreSQL, Mongo, etc.
-
-As a simple example, suppose you are looking to find movie times in your area using a web application. First, the presentation layer displays a web page with some fields for you to enter, like the date you want to view the movie and your zip code. This information is then passed to the application layer, which formats a query and passes it to the database layer. The database system runs the query and returns the results (a list of movies available within your geographic area) to the application layer, which formats it into a web page. The page is then sent back to the browser, where the presentation layer displays it on a laptop or other device.
-
-Here are 5 benefits of separating an application into tiers:
-
-- It gives you the ability to update the technology stack of one tier, without impacting other areas of the application.
-- It allows for different development teams to each work on their own areas of expertise. Today’s developers are more likely to have deep competency in one area, like coding the front end of an application, instead of working on the full stack.
-- You are able to scale the application up and out. A separate back-end tier, for example, allows you to deploy to a variety of databases instead of being locked into one particular technology. It also allows you to scale up by adding multiple web servers.
-- It adds reliability and more independence of the underlying servers or services.
-- It provides an ease of maintenance of the code base, managing presentation code and business logic separately, so that a change to business logic, for example, does not impact the presentation layer.
-
-With 3-tier architecture, you have the ability to utilize new technologies as they become available. This ensures your product is ready to adapt; ready for the future. You have the opportunity to redesign your product or application and actually look not only to today’s needs but into the future. Stay ahead of the game and maintain a competitive advantage.
-
-**Reference:**
-
-[1] https://en.ryte.com/wiki/Web_Architecture
-
-[2] https://www.izenda.com/blog/5-benefits-3-tier-architecture/
-
-## 7 Graphics on the Web
+## 6 Graphics on the Web
 
 Websites and applications often need to present graphics. Static images can easily be displayed using the `<img>` element, or by setting the background of HTML elements using the background-image property. You can also construct graphics on-the-fly, or manipulate images after the fact. These articles provide insight into how you can accomplish this.
 
