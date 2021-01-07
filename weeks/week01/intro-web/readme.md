@@ -1,13 +1,13 @@
 #  Introduction to the Web
 
 
-
 **Learning Objectives**
 
 - Understand the basic concepts related to Internet and the Web;
 - IP and ports;
-- the three major options for visualization on the web; and
+- the three major options for visualization on the web;
 - The structure of a URL;
+- graphcis on Web
 
 ## 1 Internet
 
