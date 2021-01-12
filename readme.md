@@ -54,7 +54,7 @@ This week’s lecture and lab will prepare you for the course, and provide a the
 -   **Think Piece 1:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000366) `Due: Jan 7th, by 5:00pm`
 -   **Lab 1:** [Project management using GitHub](labs/lab01) `Due: Jan 16th, by 11:59pm`
 
-### Week 2 : Programing fundamentals
+### Week 2: Programing fundamentals
 
 <!-- Jan 11 to 15 -->
 
