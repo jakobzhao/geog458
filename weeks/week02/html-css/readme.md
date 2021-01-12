@@ -1,7 +1,6 @@
 # Web Programming Basics I: HTML and CSS
 
 
-
 **Learning Objectives**
 
 - Understand how to organize files on a server.
@@ -240,7 +239,7 @@ The h1 tag signifies a heading, this is a bolded style of text that vary in size
 Adding a link to your site is simple. To add a link, we use the a tag. The a tag defines a hyperlink that can be used to link from one page to another. HTML tags can have attributes. Attributes define and provide additional information about an element. To create a hyperlink, we use the href attribute of the a tag. The following line contains a link to oregon state university's home page, and illustrates how you would set up a link. You can place links separate from your paragraphs, or place them within. Write the following line of code at the end your second paragraph, just before the p end tag.
 
 ```html
-<a href="http://www.oregonstate.edu">Take me to OSU.</a>
+<a href="http://www.uw.edu">Take me to UW.</a>
 ```
 
 You have many options for links. For example, if you want a link to open in a new page, you can use **target="_blank"** as a property of the A tag.
