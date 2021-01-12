@@ -40,7 +40,6 @@ This course is very “hands-on” and interactive! Most of our time will be spe
 #### Weekly Expectations: 
 
 -   You should try to attend both lecture and lab sections each week. 
-
 -   You should complete all weekly readings before the Friday Lab sections, and submit weekly think pieces by Thursday @ 5 pm PST (further instructions below)
 
 ### Week 1: Intro to digital geographies
