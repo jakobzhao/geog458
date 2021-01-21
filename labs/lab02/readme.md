@@ -38,23 +38,27 @@ We usually need to install libraries like tweepy using command prompt (if a wind
 !python -m pip install tweepy
 ```
 
-To use the tweepy library, you need to register a Twitter developer account [here](https://developer.twitter.com/en).
+To use the tweepy library, you need to register a Twitter developer account [here](https://developer.twitter.com/en/apply-for-access).
 
 ![](img/twitter_dev.png)
 
-In order to register your account, you will be prompted to answer a series of questions. Please answer those that are required to fill in and you can ignore optional questions. Once you finish registering your account, you can apply for a Twitter app. It is located on the top right corner of the page. Click on `Apps`.
+In order to register your account, you will be prompted to answer a series of questions. Please answer those that are required to fill in and you can ignore optional questions. Once you finish registering your account, you can apply for a Twitter app. First of all, you will need to click on `Developer Portal` which is located on the top right corner of the page.
 
 ![](img/dev_acc.png)
 
-Then, you will see a page with a list of apps that you've created for getting Twitter API, but for now, the list should be empty. In order to register for Twitter API, click on `Create an app`.
+Then, you will enter developer portal. On the left bar, you can click on `Projects &  Apps` for checking the list of apps that you've created for getting Twitter API, but for now, the list should be empty. In order to register for Twitter API, click on `Create an app` which is under the `Standalone Apps`.
 
-You will be prompted to fill in the app details. Here, you are required to fill in: `App name`, `Application description`, `Website URLs`, and `'Tell us how this app will be used'`. If you are not sure what to put for the website URLs, you may enter your SNS profile URLs, such as your Facebook page, LinkedIn page, etc.
+![](img/creat_app.png)
+
+You will be prompted to fill in the app details. Here, you are required to fill in: `App name`.
 
 ![](img/app_details.png)
 
-After you fill in all the required fields, you may click on `Create`. Twitter takes some time to process your information to validate your access to the Twitter API.
+After you fill in all the required fields, you may click on `Create`. Twitter takes some time to process your information to validate your access to the Twitter API. Then you will be able to see your keys and tokens.
 
-Once you are registered, you can finally get your own keys and tokens. Go to the `App Detail` of the app you just created. Click on the tab `Keys and tokens`, and you should be able to see all the keys and tokens required to use the Twitter API.
+Once you are registered, you could check your own keys and tokens again by click on your app-name which is under your app list. Go to the `App Detail` of the app you just created. Click on the tab `Keys and tokens`, and you should be able to see all the keys and tokens required to use the Twitter API.
+
+![](img/app_keys.png)
 
 Copy and paste the keys and tokens you received into corresponding parameters in the code below:
 
