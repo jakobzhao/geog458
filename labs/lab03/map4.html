@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Cell Towers in Oregon (2009)</title>
+    <title>Cell Towers in Washington (2010)</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
     <style>
@@ -20,7 +20,7 @@
 
     // 1. Create a map object.
     var mymap = L.map('map', {
-        center: [44.13, -119.93],
+        center: [47.7511, -120.7401],
         zoom: 7,
         maxZoom: 10,
         minZoom: 3,
@@ -35,56 +35,59 @@
 
 
     // 4. build up a set of colors from colorbrewer's dark2 category
-    var colors = chroma.scale('Dark2').mode('lch').colors(9);
+    var colors = chroma.scale('Dark2').mode('lch').colors(13);
 
     // 5. dynamically append style classes to this page. This style classes will be used for colorize the markers.
-    for (i = 0; i < 9; i++) {
+    for (i = 0; i < 13; i++) {
         $('head').append($("<style> .marker-color-" + (i + 1).toString() + " { color: " + colors[i] + "; font-size: 15px; text-shadow: 0 0 3px #ffffff;} </style>"));
     }
 
     // Get GeoJSON and put on it on the map when it loads
-    cellTowers= L.geoJson.ajax("assets/cell_towers.geojson", {
+    cellTowers= L.geoJson.ajax("assets/celltowers.geojson", {
         // assign a function to the onEachFeature parameter of the cellTowers object.
         // Then each (point) feature will bind a popup window.
         // The content of the popup window is the value of `feature.properties.company`
         onEachFeature: function (feature, layer) {
-            layer.bindPopup(feature.properties.company);
+            layer.bindPopup(feature.properties.LICENSEE);
+            return feature.properties.LOCCOUNTY;
         },
         pointToLayer: function (feature, latlng) {
             var id = 0;
-            if (feature.properties.company == "New Cingular") { id = 0; }
-            else if (feature.properties.company == "Cellco")  { id = 1; }
-            else if (feature.properties.company == "RCC Minnesota")  { id = 2; }
-            else if (feature.properties.company == "Verizon")  { id = 3; }
-            else if (feature.properties.company == "US Cellular")  { id = 4; }
-            else if (feature.properties.company == "Hood River Cellular")  { id = 5; }
-            else if (feature.properties.company == "Medford Cellular")  { id = 6; }
-            else if (feature.properties.company == "Oregon RSA")  { id = 7; }
-            else { id = 8;} // "Salem Cellular"
+            if (feature.properties.LICENSEE == "AT&T MOBILITY WIRELESS OPERATIONS HOLDINGS, INC.") { id = 0; }
+            else if (feature.properties.LICENSEE == "EASTERN SUB-RSA LIMITED PARTNERSHIP")  { id = 1; }
+            else if (feature.properties.LICENSEE == "MCDANIEL CELLULAR TELEPHONE COMPANY")  { id = 2; }
+            else if (feature.properties.LICENSEE == "NEW CINGULAR WIRELESS PCS, LLC")  { id = 3; }
+            else if (feature.properties.LICENSEE == "OREGON RSA #2, INC.")  { id = 4; }
+            else if (feature.properties.LICENSEE == "RCC MINNESOTA, INC.")  { id = 5; }
+            else if (feature.properties.LICENSEE == "SEATTLE SMSA LIMITED PARTNERSHIP")  { id = 6; }
+            else if (feature.properties.LICENSEE == "USCOC OF RICHLAND, INC.")  { id = 7; }
+            else if (feature.properties.LICENSEE == "USCOC OF WASHINGTON-4, INC.")  { id = 8; }
+            else if (feature.properties.LICENSEE == "VERIZON WIRELESS (VAW), LLC")  { id = 9; }
+            else if (feature.properties.LICENSEE == "WASHINGTON RSA #8 LIMITED PARTNERSHIP")  { id = 10; }
+            else if (feature.properties.LICENSEE == "WESTERN SUB-RSA LIMITED PARTNERSHIP")  { id = 11; }
+            else { id = 12;} // "Yakima MSA limited partnership"
             return L.marker(latlng, {icon: L.divIcon({className: 'fa fa-signal marker-color-' + (id + 1).toString() })});
         },
-        attribution: 'Cell Tower Data &copy; Map Cruzin | Oregon counties &copy; Oregon Explorer | Base Map &copy; CartoDB | Made By Bo Zhao'
+        attribution: 'Cell Tower Data &copy; HIFLD | Washington counties &copy; Washington Data & Research | Base Map &copy; CartoDB | Made By Kevin Ko'
     }).addTo(mymap);
 
-
     // 6. Set function for color ramp
-    colors = chroma.scale('YlOrRd').colors(5); //colors = chroma.scale('OrRd').colors(5);
+    colors = chroma.scale('YlOrRd').colors(5);
 
-    function setColor(count) {
+    function setColor(density) {
         var id = 0;
-        if (count > 18) { id = 4; }
-        else if (count > 13 && count <= 18) { id = 3; }
-        else if (count > 10 && count <= 13) { id = 2; }
-        else if (count > 5 &&  count <= 10) { id = 1; }
+        if (density > 61) { id = 4; }
+        else if (density > 46 && density <= 60) { id = 3; }
+        else if (density > 12 && density <= 45) { id = 2; }
+        else if (density > 3 &&  density <= 11) { id = 1; }
         else  { id = 0; }
         return colors[id];
     }
-
-
+    
     // 7. Set style function that sets fill color.md property equal to cell tower density
     function style(feature) {
         return {
-            fillColor: setColor(feature.properties.CT_CNT),
+            fillColor: setColor(feature.properties.CTNUM / (feature.properties.POP / 100000)),
             fillOpacity: 0.4,
             weight: 2,
             opacity: 1,
@@ -96,9 +99,10 @@
     // 8. Add county polygons
     // create counties variable, and assign null to it.
     var counties = null;
-    counties = L.geoJson.ajax("assets/counties.geojson", {
+    counties = L.geoJson.ajax("assets/wacountydata.geojson", {
         style: style
     }).addTo(mymap);
+
 
 </script>
 </body>

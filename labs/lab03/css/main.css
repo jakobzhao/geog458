@@ -10,6 +10,8 @@ html, body, #map { width: 100%; height: 100%; margin: 0; background: #fff;}
     background: rgba(255,255,255,0.5);
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     border-radius: 5px;
+    font-family: 'Titillium Web', sans-serif;
+
 }
 
 .legend i {

@@ -4,7 +4,7 @@
 
 **Due:**  Feb 12th, by 11:59pm | **Points Available** = 50
 
-In this lab, we will design an interactive web map of cell towers in Oregon. When creating a web map, one of the critical components is styling your elements to provide proper symbolization for your data. This increases legibility for users and can give your map an appealing, custom design. Elements that can be customized to include thematic layers (i.e., points, lines, and polygons), base maps (as a leaflet `tileLayer`), interactive features (the components of the map that allow for user interaction), and legends and supplemental information (such as credits, etc.). To do that, the county boundaries are from [Oregon Explorer](http://oregonexplorer.info), and the spatial distribution of cell towers is from [Map Cruzin](http://www.mapcruzin.com/google-earth-maps-resources/kml/us-cell.kmz). Below is the web map you will make by walking through this lab handout.
+In this lab, we will design an interactive web map of cell towers in Washington. When creating a web map, one of the critical components is styling your elements to provide proper symbolization for your data. This increases legibility for users and can give your map an appealing, custom design. Elements that can be customized to include thematic layers (i.e., points, lines, and polygons), base maps (as a leaflet `tileLayer`), interactive features (the components of the map that allow for user interaction), and legends and supplemental information (such as credits, etc.). To do that, the county boundaries are from [Washington Data & Research](https://www.ofm.wa.gov/washington-data-research/population-demographics/gis-data/census-geographic-files), and the spatial distribution of cell towers is from [Homeland Infrastructure Foundation-Level Data (HIFLD)](https://hifld-geoplatform.opendata.arcgis.com/datasets/0835ba2ed38f494196c14af8407454fb_0?geometry=-126.488%2C45.696%2C-112.612%2C48.318). Below is the web map you will make by walking through this lab handout.
 
 ![](img/final_map.png)
 
@@ -25,7 +25,7 @@ Inside the `body` tag, we put a `map` div tag for holding the map object. After 
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Cell Towers in Oregon (2009)</title>
+    <title>Cell Towers in Washington (2010)</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"/>
     <style>
 
@@ -59,7 +59,7 @@ Next, we add a `tileLayer` to add a base map to the `mymap` variable.
 ```js
 // 1. Create a map object.
 var mymap = L.map('map', {
-    center: [44.13, -119.93],
+    center: [47.7511, -120.7401],
     zoom: 7,
     maxZoom: 10,
     minZoom: 3,
@@ -72,7 +72,7 @@ L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(
 
 If you are using Atom, please open up the atom live server, and then navigate to the map1.html. If you follow the default setting of Atom, the URL address of map1.html should be `https://localhost:3000/labs/lab03/map1.html`.
 
-![](img/map1.jpg)
+![](img/map1.png)
 
 The base map (in the format of `tile layer`) is provided by CartoDB. The light color stands out the principal features. In addition to switch to other map providers, please refer to [Leaflet providers](http://leaflet-extras.github.io/leaflet-providers/preview/).
 
@@ -84,15 +84,15 @@ Next, we want to add the cell tower data set to the map. Firstly, we need to inc
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
 ```
 
-In the directory `assets`, you will find a geojson file - `cell_towers.geojson`. Enter the following code snippet to add the cell towers to the map.
+In the directory `assets`, you will find a geojson file - `celltowers.geojson`. Enter the following code snippet to add the cell towers to the map.
 
 ```js
 // 3. Add cell towers GeoJSON Data
 // Null variable that will hold cell tower data
 var cellTowers = null;
 // Get GeoJSON and put on it on the map when it loads
-cellTowers= L.geoJson.ajax("assets/cell_towers.geojson",{
-    attribution: 'Cell Tower Data &copy; Map Cruzin | Oregon counties &copy; Oregon Explorer | Base Map &copy; CartoDB | Made By Bo Zhao'
+cellTowers= L.geoJson.ajax("assets/celltowers.geojson",{
+    attribution: 'Cell Tower Data &copy; HIFLD | Washington counties &copy; Washington Data & Research | Base Map &copy; CartoDB | Made By Kevin Ko'
 });
 // Add the cellTowers to the map.
 cellTowers.addTo(mymap);
@@ -103,14 +103,14 @@ The `cellTowers` object holds the GeoJSON data, and then it adds to the `mymap` 
 Besides, to append some credit information to the Leaflet link at the right bottom corner, we will assign the `attribute` option the credit information, as shown below.
 
 ```javascript
-attribution: 'Cell Tower Data &copy; Map Cruzin | Oregon counties &copy; Oregon Explorer | Base Map &copy; CartoDB | Made By Bo Zhao'
+attribution: 'Cell Tower Data &copy; HIFLD | Washington counties &copy; Washington Data & Research | Base Map &copy; CartoDB | Made By Kevin Ko'
 ```
 
  Here, we add credit information about the data source and the map author's information. The map author should be your name.
 
  Then, please open `map2.html` to see how the map looks like at this stage.
 
-![](img/map2.jpg)
+![](img/map2.png)
 
 ## 2. Point Marker Visualization
 
@@ -141,14 +141,14 @@ Furthermore, we also need some predefined color ramp to symbolize geographic fea
 
 > **Note:** Color palettes from Color Brewer.
 
-We need to create a set of random colors for representing cell towers of different companies. The color should follow the qualitative palettes because this palette can provide better visualization of the nominal data. Therefore, we select the `dark2` category (as shown in the figure above). Since there are nine cell tower types in Oregon, we will create nine different colors. To apply these colors, we dynamically build classes and then embed these classes in `style` elements.  The style classes are from `marker-color-1` to `marker-color-9`. Each class includes a color `property`. Below is the code snippet.
+We need to create a set of random colors for representing cell towers of different companies. The color should follow the qualitative palettes because this palette can provide better visualization of the nominal data. Therefore, we select the `dark2` category (as shown in the figure above). Since there are nine cell tower types in Oregon, we will create nine different colors. To apply these colors, we dynamically build classes and then embed these classes in `style` elements.  The style classes are from `marker-color-1` to `marker-color-12`. Each class includes a color `property`. Below is the code snippet.
 
 ```javascript
 // 4. build up a set of colors from colorbrewer's dark2 category
-var colors = chroma.scale('Set2').mode('lch').colors(9);
+var colors = chroma.scale('Set2').mode('lch').colors(13);
 
 // 5. dynamically append style classes to this page. This style classes will be used for colorize the markers.
-for (i = 0; i < 9; i++) {
+for (i = 0; i < 13; i++) {
     $('head').append($("<style> .marker-color-" + (i + 1).toString() + " { color: " + colors[i] + "; font-size: 15px; text-shadow: 0 0 3px #ffffff;} </style>"));
 }
 ```
@@ -157,29 +157,33 @@ for (i = 0; i < 9; i++) {
 
 ### 2.2 Assign a style class to each company
 
-Next, we will assign a style class to each type of cell tower company. The nine wireless companies are `New Cingular`, `Verizon`, `Cello`, `Salem Cellular`, etc.  We number the company name from 0 to 8 and then assign the style class (from `marker-color-1` to `marker-color-9`) to markers. If the value of `feature.property.company` is equal to "New Cingular", we set `marker-color-1` class to it, and so on so forth.
+Next, we will assign a style class to each type of cell tower company. The twelve wireless companies are `New Cingular`, `Verizon`, `Cello`, `AT&T`, etc.  We number the company name from 0 to 12 and then assign the style class (from `marker-color-1` to `marker-color-12`) to markers. If the value of `feature.property.LICENSEE` is equal to "New Cingular", we set `marker-color-1` class to it, and so on so forth.
 
-Here we use `If.. Else` statement. To do this, we can put a conditional statement to see whether the value of the `feature.property.company` variable is equal to a specific company name.  If it equals, we determine its id value, and if not, the else statement will run, setting other id value. Below is the code snippet.
+Here we use `If.. Else` statement. To do this, we can put a conditional statement to see whether the value of the `feature.property.LICENSEE` variable is equal to a specific company name.  If it equals, we determine its id value, and if not, the else statement will run, setting other id value. Below is the code snippet.
 
 ```javascript
 function (feature, latlng) {
     var id = 0;
-    if (feature.properties.company == "New Cingular") { id = 0; }
-    else if (feature.properties.company == "Cellco")  { id = 1; }
-    else if (feature.properties.company == "RCC Minnesota")  { id = 2; }
-    else if (feature.properties.company == "Verizon")  { id = 3; }
-    else if (feature.properties.company == "US Cellular")  { id = 4; }
-    else if (feature.properties.company == "Hood River Cellular")  { id = 5; }
-    else if (feature.properties.company == "Medford Cellular")  { id = 6; }
-    else if (feature.properties.company == "Oregon RSA")  { id = 7; }
-    else { id = 8;} // "Salem Cellular"
+    if (feature.properties.LICENSEE == "AT&T MOBILITY WIRELESS OPERATIONS HOLDINGS, INC.") { id = 0; }
+    else if (feature.properties.LICENSEE == "EASTERN SUB-RSA LIMITED PARTNERSHIP")  { id = 1; }
+    else if (feature.properties.LICENSEE == "MCDANIEL CELLULAR TELEPHONE COMPANY")  { id = 2; }
+    else if (feature.properties.LICENSEE == "NEW CINGULAR WIRELESS PCS, LLC")  { id = 3; }
+    else if (feature.properties.LICENSEE == "OREGON RSA #2, INC.")  { id = 4; }
+    else if (feature.properties.LICENSEE == "RCC MINNESOTA, INC.")  { id = 5; }
+    else if (feature.properties.LICENSEE == "SEATTLE SMSA LIMITED PARTNERSHIP")  { id = 6; }
+    else if (feature.properties.LICENSEE == "USCOC OF RICHLAND, INC.")  { id = 7; }
+    else if (feature.properties.LICENSEE == "USCOC OF WASHINGTON-4, INC.")  { id = 8; }
+    else if (feature.properties.LICENSEE == "VERIZON WIRELESS (VAW), LLC")  { id = 9; }
+    else if (feature.properties.LICENSEE == "WASHINGTON RSA #8 LIMITED PARTNERSHIP")  { id = 10; }
+    else if (feature.properties.LICENSEE == "WESTERN SUB-RSA LIMITED PARTNERSHIP")  { id = 11; }
+    else { id = 12;}
     return L.marker(latlng, {icon: L.divIcon({className: 'fa fa-signal marker-color-' + (id + 1).toString() })});
 }
 ```
 
 ### 2.3. Apply an Icon
 
-We apply an icon to each marker. To apply that, you will link the class with the marker. Notably, a javascript object or HTML element can carry multiple classes. In our case, a class `fa` informs that the font awesome will be applied, and another class `fa-signal` informs that an icon showing a signal will be added. And other classes `marker-color-1~9` deal with color, font-size, as well as text-shadow.
+We apply an icon to each marker. To apply that, you will link the class with the marker. Notably, a javascript object or HTML element can carry multiple classes. In our case, a class `fa` informs that the font awesome will be applied, and another class `fa-signal` informs that an icon showing a signal will be added. And other classes `marker-color-1~12` deal with color, font-size, as well as text-shadow.
 
 > **Note:** If you feel a little confused about the style properties of a class, please try to change the property value to some extreme numbers, and then see the differences. For example, you can change the font-size from 15 to 100, and then see what has been changed.
 
@@ -190,17 +194,21 @@ To set icons in a different color, we will use the `pointToLayer` option. `point
 ```js
 pointToLayer: function (feature, latlng) {
     var id = 0;
-    if (feature.properties.company == "New Cingular") { id = 0; }
-    else if (feature.properties.company == "Cellco")  { id = 1; }
-    else if (feature.properties.company == "RCC Minnesota")  { id = 2; }
-    else if (feature.properties.company == "Verizon")  { id = 3; }
-    else if (feature.properties.company == "US Cellular")  { id = 4; }
-    else if (feature.properties.company == "Hood River Cellular")  { id = 5; }
-    else if (feature.properties.company == "Medford Cellular")  { id = 6; }
-    else if (feature.properties.company == "Oregon RSA")  { id = 7; }
-    else { id = 8;} // "Salem Cellular"
+    if (feature.properties.LICENSEE == "AT&T MOBILITY WIRELESS OPERATIONS HOLDINGS, INC.") { id = 0; }
+    else if (feature.properties.LICENSEE == "EASTERN SUB-RSA LIMITED PARTNERSHIP")  { id = 1; }
+    else if (feature.properties.LICENSEE == "MCDANIEL CELLULAR TELEPHONE COMPANY")  { id = 2; }
+    else if (feature.properties.LICENSEE == "NEW CINGULAR WIRELESS PCS, LLC")  { id = 3; }
+    else if (feature.properties.LICENSEE == "OREGON RSA #2, INC.")  { id = 4; }
+    else if (feature.properties.LICENSEE == "RCC MINNESOTA, INC.")  { id = 5; }
+    else if (feature.properties.LICENSEE == "SEATTLE SMSA LIMITED PARTNERSHIP")  { id = 6; }
+    else if (feature.properties.LICENSEE == "USCOC OF RICHLAND, INC.")  { id = 7; }
+    else if (feature.properties.LICENSEE == "USCOC OF WASHINGTON-4, INC.")  { id = 8; }
+    else if (feature.properties.LICENSEE == "VERIZON WIRELESS (VAW), LLC")  { id = 9; }
+    else if (feature.properties.LICENSEE == "WASHINGTON RSA #8 LIMITED PARTNERSHIP")  { id = 10; }
+    else if (feature.properties.LICENSEE == "WESTERN SUB-RSA LIMITED PARTNERSHIP")  { id = 11; }
+    else { id = 12;} // "Yakima MSA limited partnership"
     return L.marker(latlng, {icon: L.divIcon({className: 'fa fa-signal marker-color-' + (id + 1).toString() })});
-    }
+}
 ```
 
 > **Note:**  Two-equal signs (==)  is a very particular javascript operator. To read more, check out this documentation from `w3schools`.
@@ -220,43 +228,43 @@ In addition to `pointToLayer`, we will use `onEachFeature` option to set the pop
 // Then each (point) feature will bind a popup window.
 // The content of the popup window is the value of `feature.properties.company`
 onEachFeature: function (feature, layer) {
-    layer.bindPopup(feature.properties.company);
+    layer.bindPopup(feature.properties.LOCCOUNTY);
 },
 ```
 
  Please open **map3.html** to see how the map looks like. We have changed icon to cell tower!
 
-![](img/map3.jpg)
+![](img/map3.png)
 
 ## 3. Polygon Visualization
 
-In the `assets` directory, you will see another dataset  `counties.geojson`. This file stores all the counties of Oregon. Each county contains the number of cell towers; this number is pre-calculated in QGIS. To add the data to the map, create another `L.geoJson.ajax` object. Enter the following code at the end of your script, staying within the `script` tag.
+In the `assets` directory, you will see another dataset  `wacountydata.geojson`. This file stores all the counties of Washington. Each county contains the number of cell towers; this number is pre-calculated in QGIS. To add the data to the map, create another `L.geoJson.ajax` object. Enter the following code at the end of your script, staying within the `script` tag.
 
 ```js
 // create the county layer
-L.geoJson.ajax("assets/counties.geojson").addTo(mymap);
+L.geoJson.ajax("assets/wacountydata.geojson").addTo(mymap);
 ```
 
-Save and refresh your map. Counties of Oregon will be displayed on the map, symbolized in a default blue.
+Save and refresh your map. Counties of Washington will be displayed on the map, symbolized in a default blue.
 
-![](img/map4-1.jpg)
+![](img/map3-1.png)
 
-Let us do something about that default blue and thematically style our data to these polygons useful by turning them into a choropleth layer. The `counties.geojson` file contains numbers of cell towers in each county, calculated in QGIS.  To symbolize the counties by the number of counties, we will use the `style` option that contains styling properties.
+Let us do something about that default blue and thematically style our data to these polygons useful by turning them into a choropleth layer. The `wacountydata.geojson` file contains numbers of cell towers in each county, calculated in QGIS.  To symbolize the counties by the number of counties, we will use the `style` option that contains styling properties.
 
 ### 3.1 Set a sequential color palette
 
-The first step is to set up a function to create color classes.  One way to hard code the colors is to make the color scheme via QGIS or ArcGIS, selecting some classification rule like Jenk's Natural Breaks, and copy the break numbers as well as the color value. Alternatively, you can check out a color ramp from [colorbrewer2.org](<>). In this lab, you will use `chroma.js` to dynamically create an array of colors. Since the number of cell towers in each county is ordered data that progress from low to high, we will use a sequential color palette `OrRd` (meaning from Orange to Red). Then, we develop a `setColor` function that returns the color value using the number of cell tower lying in a county. Add the following code snippet in the `script` tag.
+The first step is to set up a function to create color classes.  One way to hard code the colors is to make the color scheme via QGIS or ArcGIS, selecting some classification rule like Jenk's Natural Breaks, and copy the break numbers as well as the color value. Alternatively, you can check out a color ramp from [colorbrewer2.org](<>). In this lab, you will use `chroma.js` to dynamically create an array of colors. Since the number of cell towers in each county is ordered data that progress from low to high, we will use a sequential color palette `YlOrRd` (meaning from Yellow, Orange to Red). Then, we develop a `setColor` function that returns the color value using the number of cell tower lying in a county. Add the following code snippet in the `script` tag.
 
 ```js
 // 6. Set function for color ramp
-colors = chroma.scale('OrRd').colors(5); //colors = chroma.scale('OrRd').colors(5);
+colors = chroma.scale('YlOrRd').colors(5);
 
 function setColor(density) {
     var id = 0;
-    if (density > 18) { id = 4; }
-    else if (density > 13 && density <= 18) { id = 3; }
-    else if (density > 10 && density <= 13) { id = 2; }
-    else if (density > 5 &&  density <= 10) { id = 1; }
+    if (density > 61) { id = 4; }
+    else if (density > 46 && density <= 60) { id = 3; }
+    else if (density > 12 && density <= 45) { id = 2; }
+    else if (density > 3 &&  density <= 11) { id = 1; }
     else  { id = 0; }
     return colors[id];
 }
@@ -264,13 +272,13 @@ function setColor(density) {
 
 ### 3.2 Apply the color palette
 
-Next, develop a function that will set the style option of  `L.geoJson.ajax()` object. We name this function `style`, and it can accept a GeoJson feature. Having the feature loaded, this function sets the `fillColor` property with `setColor` function as well as an input value - `feature.properties.CT_CNT`.  Then, we add the following code snippet in the `script` element.
+Next, develop a function that will set the style option of  `L.geoJson.ajax()` object. We name this function `style`, and it can accept a GeoJson feature. Having the feature loaded, this function sets the `fillColor` property with `setColor` function as well as an input value - `feature.properties.CTNUM / (features.properties.POP/100000)`. Here we want to find the number of cell towers per 100k residents. Then, we add the following code snippet in the `script` element.
 
 ```js
 // 7. Set style function that sets fill color.md property equal to cell tower density
 function style(feature) {
     return {
-        fillColor: setColor(feature.properties.CT_CNT),
+        fillColor: setColor(feature.properties.CTNUM / (feature.properties.POP/100000)),
         fillOpacity: 0.4,
         weight: 2,
         opacity: 1,
@@ -278,6 +286,7 @@ function style(feature) {
         dashArray: '4'
     };
 }
+
 ```
 
 While `fillColor` and `fillOpacity` properties are for the fill; `weight`, `opacity`, `color`, and `dashArray` properties are for the border.
@@ -288,14 +297,14 @@ The final step is to set the style option for the county layer. Below shows the 
 
 ```js
 // 8. Add county polygons
-L.geoJson.ajax("assets/counties.geojson", {
+L.geoJson.ajax("assets/wacountydata.geojson", {
     style: style
 }).addTo(mymap);
 ```
 
 Save and refresh the html page. Open `map4.html`  to see our styled polygons!
 
-![](img/map4.jpg)
+![](img/map4.png)
 
 ## 4. Map Elements
 
@@ -314,28 +323,33 @@ legend.onAdd = function () {
 
     // Create Div Element and Populate it with HTML
     var div = L.DomUtil.create('div', 'legend');
-    div.innerHTML += '<b># Cell Tower</b><br />';
-    div.innerHTML += '<i style="background: ' + colors[4] + '; opacity: 0.5"></i><p>19+</p>';
-    div.innerHTML += '<i style="background: ' + colors[3] + '; opacity: 0.5"></i><p>14-18</p>';
-    div.innerHTML += '<i style="background: ' + colors[2] + '; opacity: 0.5"></i><p>11-13</p>';
-    div.innerHTML += '<i style="background: ' + colors[1] + '; opacity: 0.5"></i><p> 6-10</p>';
-    div.innerHTML += '<i style="background: ' + colors[0] + '; opacity: 0.5"></i><p> 0- 5</p>';
+    div.innerHTML += '<b># Cell Tower per 100k residents</b><br />';
+    div.innerHTML += '<i style="background: ' + colors[4] + '; opacity: 0.5"></i><p> 61+ </p>';
+    div.innerHTML += '<i style="background: ' + colors[3] + '; opacity: 0.5"></i><p> 46-60 </p>';
+    div.innerHTML += '<i style="background: ' + colors[2] + '; opacity: 0.5"></i><p> 12-45 </p>';
+    div.innerHTML += '<i style="background: ' + colors[1] + '; opacity: 0.5"></i><p> 3-11 </p>';
+    div.innerHTML += '<i style="background: ' + colors[0] + '; opacity: 0.5"></i><p> 0-2 </p>';
     div.innerHTML += '<hr><b>Company<b><br />';
-    div.innerHTML += '<i class="fa fa-signal marker-color-1"></i><p> New Cingular</p>';
-    div.innerHTML += '<i class="fa fa-signal marker-color-2"></i><p> Cello</p>';
-    div.innerHTML += '<i class="fa fa-signal marker-color-3"></i><p> RCC Minnesota</p>';
-    div.innerHTML += '<i class="fa fa-signal marker-color-4"></i><p> Verizon</p>';
-    div.innerHTML += '<i class="fa fa-signal marker-color-5"></i><p> US Cellular</p>';
-    div.innerHTML += '<i class="fa fa-signal marker-color-6"></i><p> Hood River Cellular</p>';
-    div.innerHTML += '<i class="fa fa-signal marker-color-7"></i><p> Medford Cellular</p>';
-    div.innerHTML += '<i class="fa fa-signal marker-color-8"></i><p> Oregon RSA</p>';
-    div.innerHTML += '<i class="fa fa-signal marker-color-9"></i><p> Salem Cellular</p>';
+    div.innerHTML += '<i class="fa fa-signal marker-color-1"></i><p> AT&T </p>';
+    div.innerHTML += '<i class="fa fa-signal marker-color-2"></i><p> Eastern Sub-RSA </p>';
+    div.innerHTML += '<i class="fa fa-signal marker-color-3"></i><p> McDaniel </p>';
+    div.innerHTML += '<i class="fa fa-signal marker-color-4"></i><p> New Cingular </p>';
+    div.innerHTML += '<i class="fa fa-signal marker-color-5"></i><p> Oregon RSA </p>';
+    div.innerHTML += '<i class="fa fa-signal marker-color-6"></i><p> RCC Minnesota </p>';
+    div.innerHTML += '<i class="fa fa-signal marker-color-7"></i><p> Seattle SMSA </p>';
+    div.innerHTML += '<i class="fa fa-signal marker-color-8"></i><p> US Cellular - Richland </p>';
+    div.innerHTML += '<i class="fa fa-signal marker-color-9"></i><p> US Cellular -Washington </p>';
+    div.innerHTML += '<i class="fa fa-signal marker-color-10"></i><p> Verizon </p>';
+    div.innerHTML += '<i class="fa fa-signal marker-color-11"></i><p> Washington RSA </p>';
+    div.innerHTML += '<i class="fa fa-signal marker-color-12"></i><p> Western Sub-RSA </p>';
+    div.innerHTML += '<i class="fa fa-signal marker-color-13"></i><p> Yakima </p>';
     // Return the Legend div containing the HTML content
     return div;
 };
 
 // 11. Add a legend to map
 legend.addTo(mymap);
+
 ```
 
 Specifically, we created an instance of a  **Leaflet Control object**, calling it legend, and used the position option to tell it to locate in the top right of our map. Next, we used the `onAdd` method of the control to run a function when the legend is added. That function created a new div in the DOM, giving it a class of legend. This allowed the CSS to style everything using the legend element. In the newly created div, we are going to populate it with HTML by using a built-in JavaScript DOM method called innerHTML. Using innerHTML allows us to change the content of the HTML and add to the legend div. Using the plus-equal `+=` instead of equal `=` is the syntax for append. Every time this is used, code following is appended to the existing code. In this, we write the HTML we want to use in our legend. Note, the `i` tag represents our legend icons. Within the HTML, fill in the colors and ranges so that they match our data classification. After the HTML is appended, return the div element. Lastly, add the legend to the map.
@@ -397,27 +411,27 @@ Save and refresh the html page. Open `map4.html`  to see the legend and scale ba
 
 Choosing fonts is an essential part of cartography, and an often overlooked one. Right now, our map uses the default Browser font, usually Times New Roman. To edit fonts, we want to style CSS. In CSS, there are many options for fonts; for more reading, check out the [w3schools font documentation](http://www.w3schools.com/css/css_font.asp).
 
-Traditionally, the font is loaded into your page only if you have it on your computer. This presents a problem though, if someone does not have the font, it will change the page to use secondary or default fonts. In order to ensure that every visitor's computer displays the same, you can link to online font libraries. A standard, useful online font library is Google Fonts. Google fonts can be added to any site, and since you link to the style, you do not have to worry about the user not having the font installed on their computer. Check out the Google Font library and explore their options. Let us link a standard web font called `Titillium Web` to our document so we can use it. To link it to our document, enter the following line of code into the head section of your document. It should go right after your stylesheets.
+Traditionally, the font is loaded into your page only if you have it on your computer. This presents a problem though, if someone does not have the font, it will change the page to use secondary or default fonts. In order to ensure that every visitor's computer displays the same, you can link to online font libraries. A standard, useful online font library is Google Fonts. Google fonts can be added to any site, and since you link to the style, you do not have to worry about the user not having the font installed on their computer. Check out the Google Font library and explore their options. Let us link a standard web font called `Open Sans` to our document so we can use it. To link it to our document, enter the following line of code into the head section of your document. It should go right after your stylesheets.
 
 ```html
 <head>...
-<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 ...</head>
 ```
 
-Next, to style all text in our document with the `Titillium Web` font, modify the `.legend` tag in the CSS (the code between the style tags). Modify the body CSS properties to look like the following, adding a font-family property after margin.
+Next, to style all text in our document with the `Open Sans` font, modify the `.legend` tag in the CSS (the code between the style tags). Modify the body CSS properties to look like the following, adding a font-family property after margin.
 
 ```html
 .legend {
     ...
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     ...
 }
 ```
 
-Save and refresh your map. Or open `map5.html`.  `Titillium Web` will now be your preferred font for legend panel!
+Save and refresh your map. Or open `map5.html`.  `Open Sans` will now be your preferred font for legend panel!
 
-![](img/map5.jpg)
+![](img/map5.png)
 
 ## 5. Deliverable
 
@@ -458,12 +472,17 @@ After you successfully deploy this cell tower map, you are expected to build ano
 
 -   Try to add on a feature of the leaflet which we have not discussed in class. The new features can be found on [the plugin page](https://leafletjs.com/plugins.html) of the leafet. **(5 points)**
 
+
+## Acknowledgement
+
+[1] This lab was originally designed in the context of Oregon.  I appreciate Kevin Ko's assistance in upgrading the lab material.
+
 ## Reference
 
 [1] Map Symbolization <http://duspviz.mit.edu/web-map-workshop/map-symbolization/>
 
-[2] Data source: <http://www.mapcruzin.com/google-earth-maps-resources/google-earth-cell-towers.htm>
+[2] Data source: <https://hifld-geoplatform.opendata.arcgis.com/datasets/0835ba2ed38f494196c14af8407454fb_0?geometry=-126.488%2C45.696%2C-112.612%2C48.318>
 
-[3] Boundary: <http://oregonexplorer.info/ExternalContent/SpatialDataForDownload/RCE_counties.zip>
+[3] Boundary: <https://www.ofm.wa.gov/washington-data-research/population-demographics/gis-data/census-geographic-files>
 
 [4] Add topojson instead of geojson <http://blog.webkid.io/maps-with-leaflet-and-topojson/>
