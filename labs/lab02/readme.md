@@ -46,7 +46,7 @@ In order to register your account, you will be prompted to answer a series of qu
 
 ![](img/dev_acc.png)
 
-Then, you will enter developer portal. On the left bar, you can click on `Projects &  Apps` for checking the list of apps that you've created for getting Twitter API, but for now, the list should be empty. In order to register for Twitter API, click on `Create an app` which is under the `Standalone Apps`.
+Then, you will enter developer portal. On the left bar, you can click on `Projects &  Apps` for checking the list of apps that you've created for getting Twitter API, but for now, the list should be empty. In order to register for Twitter API, click on `+ Create App` which is under the `Standalone Apps`.
 
 ![](img/creat_app.png)
 
