@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>U.S. Department of Commerce, U.S. Census Bureau, Geography Division</origin>
+        <pubdate>2010</pubdate>
+        <title>2010 Census County, 2010 TIGER/Line Shapefile</title>
+        <edition>2010</edition>
+        <geoform>vector digital data</geoform>
+        <onlink>http://www.census.gov/geo/www/tiger</onlink>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>The TIGER/Line Files are shapefiles and related database files (.dbf) that are an extract of selected geographic and cartographic information from the U.S. Census Bureau's Master Address File / Topologically Integrated Geographic Encoding and Referencing (MAF/TIGER) Database (MTDB). The MTDB represents a seamless national file with no overlaps or gaps between parts, however, each TIGER/Line File is designed to stand alone as an independent data set, or they can be combined to cover the entire nation. The primary legal divisions of most States are termed counties. In Louisiana, these divisions are known as parishes. In Alaska, which has no counties, the equivalent entities are the organized boroughs, city and boroughs, and municipalities, and for the unorganized area, census areas. The latter are delineated cooperatively for statistical purposes by the State of Alaska and the Census Bureau. In four States (Maryland, Missouri, Nevada, and Virginia), there are one or more incorporated places that are independent of any county organization and thus constitute primary divisions of their States. These incorporated places are known as independent cities and are treated as equivalent entities for purposes of data presentation. The District of Columbia and Guam have no primary divisions, and each area is considered an equivalent entity for purposes of data presentation. The Census Bureau treats the following entities as equivalents of counties for purposes of data presentation: Municipios in Puerto Rico, Districts and Islands in American Samoa, Municipalities in the Commonwealth of the Northern Mariana Islands, and Islands in the U.S. Virgin Islands. The entire area of the United States, Puerto Rico, and the Island Areas is covered by counties or equivalent entities. The 2010 Census boundaries for counties and equivalent entities are as of January 1, 2010, primarily as reported through the Census Bureau's Boundary and Annexation Survey (BAS).</abstract>
+      <purpose>In order for others to use the information in the Census MAF/TIGER database in a geographic information system (GIS) or for other geographic applications, the Census Bureau releases to the public extracts of the database in the form of TIGER/Line Shapefiles.</purpose>
+      <Subject_Entity>Washington(53)</Subject_Entity>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate>201001</begdate>
+          <enddate>201007</enddate>
+        </rngdates>
+      </timeinfo>
+      <current>Publication Date</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>TIGER/Line Shapefiles are extracted from the Census MAF/TIGER database. No changes or updates will be made to this version of the TIGER/Line Shapefiles. Future releases of TIGER/Line Shapefiles will reflect updates made to the Census MAF/TIGER database.</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>579552.666809</westbc>
+        <eastbc>2551106.850295</eastbc>
+        <northbc>81835.082450</northbc>
+        <southbc>1355592.778933</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>ISO 19115 Topic Categories</themekt>
+        <themekey>Boundaries</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>State or equivalent entity</themekey>
+        <themekey>Polygon</themekey>
+      </theme>
+      <place>
+        <placekt>INCITS.38-200x (R2004),INCITS.31-200x (R2007),INCITS.454-200x,INCITS 455-200x,INCITS 446-2008</placekt>
+        <placekey>United States</placekey>
+        <placekey>U.S.</placekey>
+        <placekey>State or Equivalent Entity</placekey>
+        <placekey>Washington</placekey>
+        <placekey>WA</placekey>
+        <placekey>53</placekey>
+      </place>
+    </keywords>
+    <accconst>None</accconst>
+    <useconst>The TIGER/Line Shapefile products are not copyrighted however TIGER/Line and Census TIGER are registered trademarks of the U.S. Census Bureau. These products are free to use in a product or publication, however acknowledgement must be given to the U.S. Census Bureau as the source. The boundary information in the TIGER/Line Shapefiles are for statistical data collection and tabulation purposes only; their depiction and designation for statistical purposes does not constitute a determination of jurisdictional authority or rights of ownership or entitlement and they are not legal land descriptions.Coordinates in the TIGER/Line shapefiles have six implied decimal places, but the positional accuracy of these coordinates is not as great as the six decimal places suggest.</useconst>
+    <Title_13_Restrictions>Yes, the data are free from Title 13 restrictions</Title_13_Restrictions>
+    <ptcontac>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>U.S. Department of Commerce, U.S. Census Bureau, Geography Division, Geographic Products Branch</cntorg>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>Mailing address</addrtype>
+          <address>4600 Silver Hill Road, Stop 7400</address>
+          <city>Washington</city>
+          <state>DC</state>
+          <postal>20233-7400</postal>
+          <country>United States</country>
+        </cntaddr>
+        <cntvoice>301-763-1128</cntvoice>
+        <cntfax>301-763-4710</cntfax>
+        <cntemail>geo.tiger@census.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+  </idinfo>
+  <Data_Set_Character_Set>8859part1</Data_Set_Character_Set>
+  <Data_Set_Language>eng</Data_Set_Language>
+  <dataqual>
+    <attracc>
+      <attraccr>Accurate against Federal Information Processing Standards (FIPS), FIPS Publication 6-4, and FIPS-55 at the 100% level for the codes and base names. The remaining attribute information has been examined but has not been fully tested for accuracy.</attraccr>
+    </attracc>
+    <logic>The Census Bureau performed automated tests to ensure logical consistency and limits of shapefiles. Segments making up the outer and inner boundaries of a polygon tie end-to-end to completely enclose the area. All polygons are tested for closure. The Census Bureau uses its internally developed geographic update system to enhance and modify spatial and attribute data in the Census MAF/TIGER database. Standard geographic codes, such as FIPS codes for states, counties, municipalities, county subdivisions, places, American Indian/Alaska Native/Native Hawaiian areas, and congressional districts are used when encoding spatial entities. The Census Bureau performed spatial data tests for logical consistency of the codes during the compilation of the original Census MAF/TIGER database files. Most of the codes for geographic entities except states, counties, urban areas, Core Based Statistical Areas (CBSAs), American Indian Areas (AIAs), and congressional districts were provided to the Census Bureau by the USGS, the agency responsible for maintaining FIPS 55. Feature attribute information has been examined but has not been fully tested for consistency. For the TIGER/Line Shapefiles, the Point and Vector Object Count for the G-polygon SDTS Point and Vector Object Type reflects the number of records in the shapefile attribute table. For multi-polygon features, only one attribute record exists for each multi-polygon rather than one attribute record per individual G-polygon component of the multi-polygon feature. TIGER/Line Shapefile multi-polygons are an exception to the G-polygon object type classification. Therefore, when multi-polygons exist in a shapefile, the object count will be less than the actual number of G-polygons.</logic>
+    <complete>Data completeness of the TIGER/Line Shapefiles reflects the contents of the Census MAF/TIGER database at the time the TIGER/Line Shapefiles were created.</complete>
+    <lineage>
+      <srcinfo>
+        <srccite>
+          <citeinfo>
+            <origin>U.S. Department of Commerce, U.S. Census Bureau, Geography Division</origin>
+            <pubdate>Unpublished material</pubdate>
+            <title>Census MAF/TIGER database</title>
+          </citeinfo>
+        </srccite>
+        <typesrc>online</typesrc>
+        <srctime>
+          <timeinfo>
+            <rngdates>
+              <begdate>201001</begdate>
+              <enddate>201007</enddate>
+            </rngdates>
+          </timeinfo>
+          <srccurr>Publication Date</srccurr>
+        </srctime>
+        <srccitea>MAF/TIGER</srccitea>
+        <srccontr>The selected geographic and cartographic information (line segments) are derived from the U.S. Census Bureau's Master Address File Topologically Integrated Geographic Encoding and Referencing (MAF/TIGER) database.</srccontr>
+      </srcinfo>
+      <procstep>
+        <procdesc>TIGER/Line Shapefiles are extracted from the Census MAF/TIGER database by nation, state, county, and entity. Census MAF/TIGER data for all of the aforementioned geographic entities are then distributed among the shapefiles each containing attributes for line, polygon, or landmark geographic data.</procdesc>
+        <srcused>Census MAF/TIGER</srcused>
+        <procdate>2010</procdate>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <indspref>Federal Information Processing Standards (FIPS), ANSI, and feature names.</indspref>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <esriterm Name="county10">
+        <efeatyp Sync="TRUE">Simple</efeatyp>
+        <efeageom Sync="TRUE">4</efeageom>
+        <esritopo Sync="TRUE">FALSE</esritopo>
+        <efeacnt Sync="TRUE">39</efeacnt>
+        <spindex Sync="TRUE">FALSE</spindex>
+        <linrefer Sync="TRUE">FALSE</linrefer>
+      </esriterm>
+    </ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <geodetic>
+        <horizdn>North American Datum of 1983 in the 48 contiguous states, the District of Columbia, Alaska, Hawaii (only Oahu Island within Honolulu County, HI (15003)), Puerto Rico, and the U.S. Virgin Islands. Regional datums are used in the Pacific Island Areas (American Samoa, Guam, and the Commonwealth of the Northern Mariana Islands) and most of Hawaii. The datums used in the remainder of Hawaii are as follows: Hawaii County, HI (15001), Old Hawaiian Datum; Honolulu County, HI (15003), local astronomic datums for all islands northwest of 161 degrees west longitude; Kalawao County, HI (15005), Old Hawaiian Datum; Kauai County, HI (15007), Old Hawaiian Datum for Kauai Island and local astronomic datum for Kaula Rock; Maui County, HI (15009), Old Hawaiian Datum. The datums used in American Samoa are as follows: Eastern District, AS (60010), American Samoa Datum of 1962; Manu'a District, AS (60020), American Samoa Datum of 1962; Rose Island, AS (60030), local astronomic datum; Swains Island, AS (60040), local astronomic datum 1939; Western District, AS (60050), American Samoa Datum of 1962. The Guam Datum of 1963 is used in Guam (66010). The datums used in the Commonwealth of the Northern Mariana Islands are as follows: Northern Islands Municipality (69085), Guam Datum of 1963 (Agrihan, Alamagan, Anatahan, Gugan, Medinilla, Pagan, and Sarigan Islands) and local astronomic datums (Asuncion, Maug, and Farallon De Pajaros Islands); Rota Municipality (69100), Guam Datum of 1963; Saipan Municipality (69110), Guam Datum of 1963; Tinian Municipality (69120), Guam Datum of 1963.</horizdn>
+        <ellips>Geodetic Reference System 80 where the datum is the North American Datum of 1983.</ellips>
+        <semiaxis>6378137</semiaxis>
+        <denflat>298257</denflat>
+      </geodetic>
+      <cordsysn>
+        <geogcsn Sync="TRUE">GCS_North_American_1983_HARN</geogcsn>
+        <projcsn Sync="TRUE">NAD_1983_HARN_StatePlane_Washington_South_FIPS_4602_Feet</projcsn>
+      </cordsysn>
+      <planar>
+        <planci>
+          <plance Sync="TRUE">coordinate pair</plance>
+          <plandu Sync="TRUE">survey feet</plandu>
+          <coordrep>
+            <absres Sync="TRUE">0.000000</absres>
+            <ordres Sync="TRUE">0.000000</ordres>
+          </coordrep>
+        </planci>
+        <mapproj>
+          <mapprojn Sync="TRUE">Lambert Conformal Conic</mapprojn>
+          <lambertc>
+            <stdparll Sync="TRUE">45.833333</stdparll>
+            <stdparll Sync="TRUE">47.333333</stdparll>
+            <longcm Sync="TRUE">-120.500000</longcm>
+            <latprjo Sync="TRUE">45.333333</latprjo>
+            <feast Sync="TRUE">1640416.666667</feast>
+            <fnorth Sync="TRUE">0.000000</fnorth>
+          </lambertc>
+        </mapproj>
+      </planar>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed Name="county10">
+      <enttyp>
+        <enttypl>COUNTY10.shp</enttypl>
+        <enttypd>2010 Census County and Equivalent,</enttypd>
+        <enttypds>U.S. Census Bureau</enttypds>
+        <enttypt Sync="TRUE">Feature Class</enttypt>
+        <enttypc Sync="TRUE">39</enttypc>
+      </enttyp>
+      <attr>
+        <attrlabl Sync="TRUE">FID</attrlabl>
+        <attalias Sync="TRUE">FID</attalias>
+        <attrtype Sync="TRUE">OID</attrtype>
+        <attwidth Sync="TRUE">4</attwidth>
+        <atprecis Sync="TRUE">0</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+        <attrdef Sync="TRUE">Internal feature number.</attrdef>
+        <attrdefs Sync="TRUE">ESRI</attrdefs>
+        <attrdomv>
+          <udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">Shape</attrlabl>
+        <attalias Sync="TRUE">Shape</attalias>
+        <attrtype Sync="TRUE">Geometry</attrtype>
+        <attwidth Sync="TRUE">0</attwidth>
+        <atprecis Sync="TRUE">0</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+        <attrdef Sync="TRUE">Feature geometry.</attrdef>
+        <attrdefs Sync="TRUE">ESRI</attrdefs>
+        <attrdomv>
+          <udom Sync="TRUE">Coordinates defining the features.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>STATEFP10</attrlabl>
+        <attrdef>2010 Census state Federal Information Processing Standards (FIPS) codes</attrdef>
+        <attrdefs>U.S. Census Bureau</attrdefs>
+        <attrdomv>
+          <codesetd>
+            <codesetn>INCITS.38-200x (R2004), Codes for the Identification of the States, the District of Columbia, Puerto Rico, and the Insular Areas of the United States (Formerly FIPS 5-2)</codesetn>
+            <codesets>U.S. Census Bureau</codesets>
+          </codesetd>
+        </attrdomv>
+        <attalias Sync="TRUE">STATEFP10</attalias>
+        <attrtype Sync="TRUE">String</attrtype>
+        <attwidth Sync="TRUE">2</attwidth>
+        <atprecis Sync="TRUE">0</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl>COUNTYFP10</attrlabl>
+        <attrdef>2010 Census county Federal Information Processing Standards (FIPS) code</attrdef>
+        <attrdefs>U.S. Census Bureau</attrdefs>
+        <attrdomv>
+          <codesetd>
+            <codesetn>INCITS.31-200x (R2007), Codes for the Identification of the Counties and Equivalent Areas of the United States, Puerto Rico, and the Insular Areas of the United States (Formerly FIPS 6-4)</codesetn>
+            <codesets>U.S. Census Bureau</codesets>
+          </codesetd>
+        </attrdomv>
+        <attalias Sync="TRUE">COUNTYFP10</attalias>
+        <attrtype Sync="TRUE">String</attrtype>
+        <attwidth Sync="TRUE">3</attwidth>
+        <atprecis Sync="TRUE">0</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl>COUNTYNS10</attrlabl>
+        <attrdef>2010 Census county ANSI code</attrdef>
+        <attrdefs>U.S. Census Bureau</attrdefs>
+        <attrdomv>
+          <codesetd>
+            <codesetn>INCITS 446-2008, (GNIS) Identifying Attributes for Named Physical and Cultural Geographic Features (Except Roads and Highways) of the United States, Its Territories, Outlying Areas, and Freely Associated Areas, and the Waters of the Same to the Limit of the Twelve-Mile Statutory Zone</codesetn>
+            <codesets>U.S. Geological Survey (USGS)</codesets>
+          </codesetd>
+        </attrdomv>
+        <attalias Sync="TRUE">COUNTYNS10</attalias>
+        <attrtype Sync="TRUE">String</attrtype>
+        <attwidth Sync="TRUE">8</attwidth>
+        <atprecis Sync="TRUE">0</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl>GEOID10</attrlabl>
+        <attrdef>County identifier; a concatenation of 2010 Census state FIPS code and county FIPS code</attrdef>
+        <attrdefs>U.S. Census Bureau</attrdefs>
+        <attrdomv>
+          <codesetd>
+            <codesetn>INCITS.38-200x (R2004), Codes for the Identification of the States, the District of Columbia, Puerto Rico, and the Insular Areas of the United States (Formerly FIPS 5-2), INCITS.31-200x (R2007), Codes for the Identification of the Counties and Equivalent Areas of the United States, Puerto Rico, and the Insular Areas of the United States (Formerly FIPS 6-4)</codesetn>
+            <codesets>U.S. Census Bureau</codesets>
+          </codesetd>
+        </attrdomv>
+        <attalias Sync="TRUE">GEOID10</attalias>
+        <attrtype Sync="TRUE">String</attrtype>
+        <attwidth Sync="TRUE">5</attwidth>
+        <atprecis Sync="TRUE">0</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl>NAME10</attrlabl>
+        <attrdef>2010 Census county name</attrdef>
+        <attrdefs>U.S. Census Bureau</attrdefs>
+        <attrdomv>
+          <codesetd>
+            <codesetn>INCITS.31-200x (R2007), Codes for the Identification of the Counties and Equivalent Areas of the United States, Puerto Rico, and the Insular Areas of the United States (Formerly FIPS 6-4)</codesetn>
+            <codesets>U.S. Census Bureau</codesets>
+          </codesetd>
+        </attrdomv>
+        <attalias Sync="TRUE">NAME10</attalias>
+        <attrtype Sync="TRUE">String</attrtype>
+        <attwidth Sync="TRUE">100</attwidth>
+        <atprecis Sync="TRUE">0</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl>NAMELSAD10</attrlabl>
+        <attrdef>2010 Census name and the translated legal/statistical area description code for county</attrdef>
+        <attrdefs>U.S. Census Bureau</attrdefs>
+        <attrdomv>
+          <codesetd>
+            <codesetn>INCITS.31-200x (R2007), Codes for the Identification of the Counties and Equivalent Areas of the United States, Puerto Rico, and the Insular Areas of the United States (Formerly FIPS 6-4) and the translated legal/statistical area description code for county that appears in LSAD10</codesetn>
+            <codesets>U.S. Census Bureau</codesets>
+          </codesetd>
+        </attrdomv>
+        <attalias Sync="TRUE">NAMELSAD10</attalias>
+        <attrtype Sync="TRUE">String</attrtype>
+        <attwidth Sync="TRUE">100</attwidth>
+        <atprecis Sync="TRUE">0</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl>LSAD10</attrlabl>
+        <attrdef>2010 Census legal/statistical area description code for county</attrdef>
+        <attrdefs>U.S. Census Bureau</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>00</edomv>
+            <edomvd>Blank</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+          <edom>
+            <edomv>03</edomv>
+            <edomvd>City and Borough</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+          <edom>
+            <edomv>04</edomv>
+            <edomvd>Borough</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+          <edom>
+            <edomv>05</edomv>
+            <edomvd>Census Area</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+          <edom>
+            <edomv>06</edomv>
+            <edomvd>County</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+          <edom>
+            <edomv>07</edomv>
+            <edomvd>District</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+          <edom>
+            <edomv>10</edomv>
+            <edomvd>Island</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+          <edom>
+            <edomv>12</edomv>
+            <edomvd>Municipality</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+          <edom>
+            <edomv>13</edomv>
+            <edomvd>Municipio</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+          <edom>
+            <edomv>15</edomv>
+            <edomvd>Parish</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+          <edom>
+            <edomv>25</edomv>
+            <edomvd>city</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+        </attrdomv>
+        <attalias Sync="TRUE">LSAD10</attalias>
+        <attrtype Sync="TRUE">String</attrtype>
+        <attwidth Sync="TRUE">2</attwidth>
+        <atprecis Sync="TRUE">0</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl>CLASSFP10</attrlabl>
+        <attrdef>2010 Census Federal Information Processing Standards (FIPS) class code</attrdef>
+        <attrdefs>U.S. Census Bureau</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>C7</edomv>
+            <edomvd>An incorporated place that is independent of any county</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+          <edom>
+            <edomv>H1</edomv>
+            <edomvd>An active county or equivalent feature</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+          <edom>
+            <edomv>H4</edomv>
+            <edomvd>An inactive county or equivalent feature</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+          <edom>
+            <edomv>H5</edomv>
+            <edomvd>A statistical county equivalent feature</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+          <edom>
+            <edomv>H6</edomv>
+            <edomvd>A county that is coextensive with an incorporated place, part of an incorporated place, or a consolidated city and the governmental functions of the county are part of the municipal government</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+        </attrdomv>
+        <attalias Sync="TRUE">CLASSFP10</attalias>
+        <attrtype Sync="TRUE">String</attrtype>
+        <attwidth Sync="TRUE">2</attwidth>
+        <atprecis Sync="TRUE">0</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl>MTFCC10</attrlabl>
+        <attrdef>MAF/TIGER feature class code</attrdef>
+        <attrdefs>U.S. Census Bureau</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>G4020</edomv>
+            <edomvd>County or Equivalent Feature</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+        </attrdomv>
+        <attalias Sync="TRUE">MTFCC10</attalias>
+        <attrtype Sync="TRUE">String</attrtype>
+        <attwidth Sync="TRUE">5</attwidth>
+        <atprecis Sync="TRUE">0</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl>CSAFP10</attrlabl>
+        <attrdef>2010 Census combined statistical area code</attrdef>
+        <attrdefs>U.S. Census Bureau</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>100</rdommin>
+            <rdommax>599</rdommax>
+          </rdom>
+        </attrdomv>
+        <attalias Sync="TRUE">CSAFP10</attalias>
+        <attrtype Sync="TRUE">String</attrtype>
+        <attwidth Sync="TRUE">3</attwidth>
+        <atprecis Sync="TRUE">0</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl>CBSAFP10</attrlabl>
+        <attrdef>2010 Census metropolitan statistical area/micropolitan statistical area code</attrdef>
+        <attrdefs>U.S. Census Bureau</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>10000</rdommin>
+            <rdommax>49999</rdommax>
+          </rdom>
+        </attrdomv>
+        <attalias Sync="TRUE">CBSAFP10</attalias>
+        <attrtype Sync="TRUE">String</attrtype>
+        <attwidth Sync="TRUE">5</attwidth>
+        <atprecis Sync="TRUE">0</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl>METDIVFP10</attrlabl>
+        <attrdef>2010 Census metropolitan division code</attrdef>
+        <attrdefs>U.S. Census Bureau</attrdefs>
+        <attrdomv>
+          <rdom>
+            <rdommin>10004</rdommin>
+            <rdommax>49994</rdommax>
+          </rdom>
+        </attrdomv>
+        <attalias Sync="TRUE">METDIVFP10</attalias>
+        <attrtype Sync="TRUE">String</attrtype>
+        <attwidth Sync="TRUE">5</attwidth>
+        <atprecis Sync="TRUE">0</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl>FUNCSTAT10</attrlabl>
+        <attrdef>2010 Census functional status</attrdef>
+        <attrdefs>U.S. Census Bureau</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>A</edomv>
+            <edomvd>Active government providing primary general-purpose functions</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+          <edom>
+            <edomv>B</edomv>
+            <edomvd>Active government that is partially consolidated with another government but with separate officials providing primary general-purpose functions</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+          <edom>
+            <edomv>C</edomv>
+            <edomvd>Active government consolidated with another government with a single set of officials</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+          <edom>
+            <edomv>F</edomv>
+            <edomvd>Fictitious entity created to fill the Census Bureau geographic hierarchy</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+          <edom>
+            <edomv>G</edomv>
+            <edomvd>Active government that is subordinate to another unit of government</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+          <edom>
+            <edomv>N</edomv>
+            <edomvd>Nonfunctioning legal entity</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+          <edom>
+            <edomv>S</edomv>
+            <edomvd>Statistical entity</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+        </attrdomv>
+        <attalias Sync="TRUE">FUNCSTAT10</attalias>
+        <attrtype Sync="TRUE">String</attrtype>
+        <attwidth Sync="TRUE">1</attwidth>
+        <atprecis Sync="TRUE">0</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl>INTPTLAT10</attrlabl>
+        <attrdef>2010 Census latitude of the internal point</attrdef>
+        <attrdefs>U.S. Census Bureau</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>00</edomv>
+            <edomvd>Blank</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+        </attrdomv>
+        <attalias Sync="TRUE">INTPTLAT10</attalias>
+        <attrtype Sync="TRUE">Double</attrtype>
+        <attwidth Sync="TRUE">18</attwidth>
+        <atprecis Sync="TRUE">11</atprecis>
+        <attscale Sync="TRUE">7</attscale>
+      </attr>
+      <attr>
+        <attrlabl>INTPTLON10</attrlabl>
+        <attrdef>2010 Census longitude of the internal point</attrdef>
+        <attrdefs>U.S. Census Bureau</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>00</edomv>
+            <edomvd>Blank</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+        </attrdomv>
+        <attalias Sync="TRUE">INTPTLON10</attalias>
+        <attrtype Sync="TRUE">Double</attrtype>
+        <attwidth Sync="TRUE">18</attwidth>
+        <atprecis Sync="TRUE">11</atprecis>
+        <attscale Sync="TRUE">7</attscale>
+      </attr>
+      <attr>
+        <attrlabl>ALANDM</attrlabl>
+        <attrdef>2010 Census land area (square meters)</attrdef>
+        <attrdefs>U.S. Census Bureau</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>0 to 9,999,999,999,999</edomv>
+            <edomvd>Blank</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+        </attrdomv>
+        <attalias Sync="TRUE">ALANDM</attalias>
+        <attrtype Sync="TRUE">Double</attrtype>
+        <attwidth Sync="TRUE">14</attwidth>
+        <atprecis Sync="TRUE">14</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl>AWATERM</attrlabl>
+        <attrdef>2010 Census water area (square meters)</attrdef>
+        <attrdefs>U.S. Census Bureau</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>0 to 9,999,999,999,999</edomv>
+            <edomvd>Blank</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+        </attrdomv>
+        <attalias Sync="TRUE">AWATERM</attalias>
+        <attrtype Sync="TRUE">Double</attrtype>
+        <attwidth Sync="TRUE">14</attwidth>
+        <atprecis Sync="TRUE">14</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl>ALANDMI</attrlabl>
+        <attrdef>2010 Census land area (square miles)</attrdef>
+        <attrdefs>U.S. Census Bureau</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>0 to 9,999,999,999,999</edomv>
+            <edomvd>Blank</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+        </attrdomv>
+        <attalias Sync="TRUE">ALANDMI</attalias>
+        <attrtype Sync="TRUE">Double</attrtype>
+        <attwidth Sync="TRUE">8</attwidth>
+        <atprecis Sync="TRUE">3</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl>AWATERMI</attrlabl>
+        <attrdef>2010 Census water area (square miles)</attrdef>
+        <attrdefs>U.S. Census Bureau</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>0 to 9,999,999,999,999</edomv>
+            <edomvd>Blank</edomvd>
+            <edomvds>U.S. Census Bureau</edomvds>
+          </edom>
+        </attrdomv>
+        <attalias Sync="TRUE">AWATERMI</attalias>
+        <attrtype Sync="TRUE">Double</attrtype>
+        <attwidth Sync="TRUE">8</attwidth>
+        <atprecis Sync="TRUE">3</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">POP10</attrlabl>
+        <attrdef>2010 Census population</attrdef>
+        <attalias Sync="TRUE">POP10</attalias>
+        <attrtype Sync="TRUE">Integer</attrtype>
+        <attwidth Sync="TRUE">8</attwidth>
+        <atprecis Sync="TRUE">8</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">HHP10</attrlabl>
+        <attrdef>2010 Census household population</attrdef>
+        <attalias Sync="TRUE">HHP10</attalias>
+        <attrtype Sync="TRUE">Integer</attrtype>
+        <attwidth Sync="TRUE">8</attwidth>
+        <atprecis Sync="TRUE">8</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">GQ10</attrlabl>
+        <attrdef>2010 Census group quarter population</attrdef>
+        <attalias Sync="TRUE">GQ10</attalias>
+        <attrtype Sync="TRUE">Integer</attrtype>
+        <attwidth Sync="TRUE">8</attwidth>
+        <atprecis Sync="TRUE">8</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">HU10</attrlabl>
+        <attrdef>2010 Census housing units</attrdef>
+        <attalias Sync="TRUE">HU10</attalias>
+        <attrtype Sync="TRUE">Integer</attrtype>
+        <attwidth Sync="TRUE">8</attwidth>
+        <atprecis Sync="TRUE">8</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">OHU10</attrlabl>
+        <attrdef>2010 Census occupied housing units</attrdef>
+        <attalias Sync="TRUE">OHU10</attalias>
+        <attrtype Sync="TRUE">Integer</attrtype>
+        <attwidth Sync="TRUE">8</attwidth>
+        <atprecis Sync="TRUE">8</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">POPWHITE</attrlabl>
+        <attrdef>2010 Census population, White alone (includes Hispanic or Latino)</attrdef>
+        <attalias Sync="TRUE">POPWHITE</attalias>
+        <attrtype Sync="TRUE">Integer</attrtype>
+        <attwidth Sync="TRUE">8</attwidth>
+        <atprecis Sync="TRUE">8</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">POPBLACK</attrlabl>
+        <attrdef>2010 Census population, Black or African American alone (includes Hispanic or Latino)</attrdef>
+        <attalias Sync="TRUE">POPBLACK</attalias>
+        <attrtype Sync="TRUE">Integer</attrtype>
+        <attwidth Sync="TRUE">8</attwidth>
+        <atprecis Sync="TRUE">8</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">POPAIAN</attrlabl>
+        <attrdef>2010 Census population, American Indian and Alaska Native alone (includes Hispanic or Latino)</attrdef>
+        <attalias Sync="TRUE">POPAIAN</attalias>
+        <attrtype Sync="TRUE">Integer</attrtype>
+        <attwidth Sync="TRUE">8</attwidth>
+        <atprecis Sync="TRUE">8</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">POPASIAN</attrlabl>
+        <attrdef>Census 2010 Census population, Asian alone (includes Hispanic or Latino)</attrdef>
+        <attalias Sync="TRUE">POPASIAN</attalias>
+        <attrtype Sync="TRUE">Integer</attrtype>
+        <attwidth Sync="TRUE">8</attwidth>
+        <atprecis Sync="TRUE">8</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">POPNHOPI</attrlabl>
+        <attrdef>2010 Census population, Native Hawaiian and Other Pacific Islander alone (includes Hispanic or Latino)</attrdef>
+        <attalias Sync="TRUE">POPNHOPI</attalias>
+        <attrtype Sync="TRUE">Integer</attrtype>
+        <attwidth Sync="TRUE">8</attwidth>
+        <atprecis Sync="TRUE">8</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">POPOTH</attrlabl>
+        <attrdef>2010 Census population, Some Other Race alone (includes Hispanic or Latino)</attrdef>
+        <attalias Sync="TRUE">POPOTH</attalias>
+        <attrtype Sync="TRUE">Integer</attrtype>
+        <attwidth Sync="TRUE">8</attwidth>
+        <atprecis Sync="TRUE">8</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">POPTWO</attrlabl>
+        <attrdef>2010 Census population, Population of Two or More Races (includes Hispanic or Latino)</attrdef>
+        <attalias Sync="TRUE">POPTWO</attalias>
+        <attrtype Sync="TRUE">Integer</attrtype>
+        <attwidth Sync="TRUE">8</attwidth>
+        <atprecis Sync="TRUE">8</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">POPHISP</attrlabl>
+        <attrdef>2010 Census population, Hispanic or Latino (of any race)</attrdef>
+        <attalias Sync="TRUE">POPHISP</attalias>
+        <attrtype Sync="TRUE">Integer</attrtype>
+        <attwidth Sync="TRUE">8</attwidth>
+        <atprecis Sync="TRUE">8</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">POPWHITE2</attrlabl>
+        <attrdef>2010 Census population, White Alone (not Hispanic or Latino)</attrdef>
+        <attalias Sync="TRUE">POPWHITE2</attalias>
+        <attrtype Sync="TRUE">Integer</attrtype>
+        <attwidth Sync="TRUE">8</attwidth>
+        <atprecis Sync="TRUE">8</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">POPBLACK2</attrlabl>
+        <attrdef>2010 Census population, Black or African American alone (not Hispanic or Latino)</attrdef>
+        <attalias Sync="TRUE">POPBLACK2</attalias>
+        <attrtype Sync="TRUE">Integer</attrtype>
+        <attwidth Sync="TRUE">8</attwidth>
+        <atprecis Sync="TRUE">8</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">POPAIAN2</attrlabl>
+        <attrdef>2010 Census population, American Indian and Alaska Native alone (not Hispanic or Latino)</attrdef>
+        <attalias Sync="TRUE">POPAIAN2</attalias>
+        <attrtype Sync="TRUE">Integer</attrtype>
+        <attwidth Sync="TRUE">8</attwidth>
+        <atprecis Sync="TRUE">8</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">POPASIAN2</attrlabl>
+        <attrdef>2010 Census population, Asian alone (not Hispanic or Latino)</attrdef>
+        <attalias Sync="TRUE">POPASIAN2</attalias>
+        <attrtype Sync="TRUE">Integer</attrtype>
+        <attwidth Sync="TRUE">8</attwidth>
+        <atprecis Sync="TRUE">8</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">POPNHOPI2</attrlabl>
+        <attrdef>2010 Census population, Native Hawaiian and Other Pacific Islander alone (not Hispanic or Latino)</attrdef>
+        <attalias Sync="TRUE">POPNHOPI2</attalias>
+        <attrtype Sync="TRUE">Integer</attrtype>
+        <attwidth Sync="TRUE">8</attwidth>
+        <atprecis Sync="TRUE">8</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">POPOTH2</attrlabl>
+        <attrdef>2010 Census population, Some Other Race alone (not Hispanic or Latino)</attrdef>
+        <attalias Sync="TRUE">POPOTH2</attalias>
+        <attrtype Sync="TRUE">Integer</attrtype>
+        <attwidth Sync="TRUE">8</attwidth>
+        <atprecis Sync="TRUE">8</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">POPTWO2</attrlabl>
+        <attrdef>2010 Census population, Two or More Races (not Hispanic or Latino)</attrdef>
+        <attalias Sync="TRUE">POPTWO2</attalias>
+        <attrtype Sync="TRUE">Integer</attrtype>
+        <attwidth Sync="TRUE">8</attwidth>
+        <atprecis Sync="TRUE">8</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>U.S. Department of Commerce, U.S. Census Bureau, Geography Division, Geographic Products Branch</cntorg>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>Mailing address</addrtype>
+          <address>4600 Silver Hill Road, Stop 7400</address>
+          <city>Washington</city>
+          <state>DC</state>
+          <postal>20233-7400</postal>
+          <country>United States</country>
+        </cntaddr>
+        <cntvoice>301-763-1128</cntvoice>
+        <cntfax>301-763-4710</cntfax>
+        <cntemail>geo.tiger@census.gov</cntemail>
+      </cntinfo>
+    </distrib>
+    <distliab>No warranty, expressed or implied is made with regard to the accuracy of these data, and no liability is assumed by the U.S. Government in general or the U.S. Census Bureau in specific as to the spatial or attribute accuracy of the data. The act of distribution shall not constitute any such warranty and no responsibility is assumed by the U.S. government in the use of these files. The boundary information in the TIGER/Line Shapefiles is for statistical data collection and tabulation purposes only; their depiction and designation for statistical purposes do not constitute a determination of jurisdictional authority or rights of ownership or entitlement and they are not legal land descriptions.</distliab>
+    <stdorder>
+      <digform>
+        <digtinfo>
+          <formname>TGRSHP (compressed)</formname>
+          <filedec>PK-ZIP, version 1.93 A or higher</filedec>
+        </digtinfo>
+        <digtopt>
+          <onlinopt>
+            <computer>
+              <networka>
+                <networkr>http://www.census.gov/geo/www/tiger</networkr>
+              </networka>
+            </computer>
+          </onlinopt>
+          <offoptn>
+            <offmedia>DVD-ROM (Only if offered offline)</offmedia>
+            <recfmt>ISO 9660</recfmt>
+          </offoptn>
+        </digtopt>
+      </digform>
+      <fees>The online copy of the TIGER/Line files may be accessed without charge.</fees>
+      <ordering>To obtain more information about ordering TIGER/Line shapefiles visit http://www.census.gov/geo/www/tiger</ordering>
+    </stdorder>
+    <techpreq>The TIGER/Line shapefiles contain geographic data only and do not include display mapping software or statistical data. For information on how to use the TIGER/Line shapefile data with specific software package users shall contact the company that produced the software.</techpreq>
+  </distinfo>
+  <metainfo>
+    <metd>20100507</metd>
+    <metc>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>U.S. Department of Commerce, U.S. Census Bureau, Geography Division, Geographic Products Branch</cntorg>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>Mailing address</addrtype>
+          <address>4600 Silver Hill Road, Stop 7400</address>
+          <city>Washington</city>
+          <state>DC</state>
+          <postal>20233-7400</postal>
+          <country>United States</country>
+        </cntaddr>
+        <cntvoice>301-763-1128</cntvoice>
+        <cntfax>301-763-4710</cntfax>
+        <cntemail>geo.tiger@census.gov</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+    <Metadata_Character_Set>8859part1</Metadata_Character_Set>
+    <Metadata_File_Identifier>county10.shp.xml</Metadata_File_Identifier>
+    <Metadata_Language>eng</Metadata_Language>
+  </metainfo>
+</metadata>
