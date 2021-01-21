@@ -68,7 +68,7 @@
             else { id = 12;} // "Yakima MSA limited partnership"
             return L.marker(latlng, {icon: L.divIcon({className: 'fa fa-signal marker-color-' + (id + 1).toString() })});
         },
-        attribution: 'Cell Tower Data &copy; HIFLD | Washington counties &copy; Washington Data & Research | Base Map &copy; CartoDB | Made By Kevin Ko'
+        attribution: 'Cell Tower Data &copy; HIFLD | Washington counties &copy; Washington Data & Research | Base Map &copy; CartoDB | Made By Bo Zhao'
     }).addTo(mymap);
 
     // 6. Set function for color ramp
@@ -83,7 +83,7 @@
         else  { id = 0; }
         return colors[id];
     }
-    
+
     // 7. Set style function that sets fill color.md property equal to cell tower density
     function style(feature) {
         return {

@@ -92,7 +92,7 @@ In the directory `assets`, you will find a geojson file - `celltowers.geojson`. 
 var cellTowers = null;
 // Get GeoJSON and put on it on the map when it loads
 cellTowers= L.geoJson.ajax("assets/celltowers.geojson",{
-    attribution: 'Cell Tower Data &copy; HIFLD | Washington counties &copy; Washington Data & Research | Base Map &copy; CartoDB | Made By Kevin Ko'
+    attribution: 'Cell Tower Data &copy; HIFLD | Washington counties &copy; Washington Data & Research | Base Map &copy; CartoDB | Made By Bo Zhao'
 });
 // Add the cellTowers to the map.
 cellTowers.addTo(mymap);
@@ -103,7 +103,7 @@ The `cellTowers` object holds the GeoJSON data, and then it adds to the `mymap` 
 Besides, to append some credit information to the Leaflet link at the right bottom corner, we will assign the `attribute` option the credit information, as shown below.
 
 ```javascript
-attribution: 'Cell Tower Data &copy; HIFLD | Washington counties &copy; Washington Data & Research | Base Map &copy; CartoDB | Made By Kevin Ko'
+attribution: 'Cell Tower Data &copy; HIFLD | Washington counties &copy; Washington Data & Research | Base Map &copy; CartoDB | Made By Bo Zhao'
 ```
 
  Here, we add credit information about the data source and the map author's information. The map author should be your name.
