@@ -475,7 +475,7 @@ After you successfully deploy this cell tower map, you are expected to build ano
 
 ## Acknowledgement
 
-[1] This lab was originally designed in the context of Oregon.  I appreciate Kevin Ko's assistance in upgrading the lab material.
+This lab was originally designed in the context of Oregon.  I appreciate Kevin Ko's assistance in upgrading the lab material.
 
 ## Reference
 
