@@ -26,8 +26,8 @@ What Leaflet does not do: Provide any data for you! Leaflet is a framework for s
 The latest stable Leaflet release is hosted on a CDN — to start using it straight away, place this in the head of your HTML code:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 ```
 
 ## 2. Project Preparation
@@ -69,14 +69,14 @@ Within the head section, after the title, copy and paste the following. This add
 
 ```html
 <!-- External Stylesheets -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 ```
 
 Link to the JavaScript library at the bottom of the body section of our site, putting it at the bottom allows our page to load faster. Copy and paste the following. This adds the Leaflet JS file to our web page and is the Leaflet Javascript library.
 
 ```html
 <!-- Add the Leaflet JavaScript library -->
-<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 ```
 
 We can now begin working with the Leaflet library.

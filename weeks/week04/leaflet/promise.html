@@ -4,9 +4,9 @@
 <head>
   <title>Leaflet Map</title>
   <!-- External Stylesheets -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
   <!-- Add the Leaflet JavaScript library -->
-  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script> -->
   <script src="https://d3js.org/d3.v6.min.js"></script>
 </head>
@@ -28,7 +28,6 @@
     });
     layerA.addTo(mymap);
 
-
     //load all datasets through d3 and store them in an array
     Promise.all([
       d3.json("assets/geog458.geojson"),
@@ -38,7 +37,7 @@
       // Create point feature for Wilkinson Hall
       var layer = L.geoJSON(datasets[0]).addTo(mymap);
       // L.geoJSON(datasets[1]).addTo(mymap);
-      
+
     });
   </script>
 </body>
