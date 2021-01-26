@@ -108,9 +108,9 @@ Enter the following line of code at the bottom of the body section to add the jQ
 <head>
     ...
      <!-- External Stylesheets -->
-     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"/>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
      <!-- Add the Leaflet JavaScript library -->
-     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
 </head>
 <body>
