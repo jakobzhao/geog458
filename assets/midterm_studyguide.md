@@ -1,10 +1,11 @@
 ## Study Guide for Midterm
 
-Here is the study guide for 2020 Spring Geog 458 class. We will be holding Midterm on **April 30th 9:30 - 10:20 AM** on-line, via CANVAS. The midterm will cover all material that we have covered through week 1 to week 4. You are responsible for all material covered during the firt 4 weeks in this quater in any form but most of the questions will come from leactures, labs and readings.
+Here is the study guide for 2020 Spring Geog 458 class. We will be holding Midterm on **Feb 2nd 11:30 AM to 12:20 PM** on-line, via CANVAS. The midterm will cover the materials on lectures, labs as well as the technique oriented reading pieces. 
 
-The best approach to review is to make sure you understand all the concepts. Here are some the topics/concepts that we think you should be able to answer, in particular, for the test:
+The best approach to review is to make sure you understand all the concepts. Here are some the topics/concepts that we think you should be able to answer, in particular, for the mid-term exam:
 
 **Github**
+
 - Know how to clone a repository
 - What’s the difference between github and git?
 
@@ -19,6 +20,7 @@ The best approach to review is to make sure you understand all the concepts. Her
 - What’s the function of the console / elements/ sources/ netwrok?
 
 **Week 1:**
+
 - IP Addresses and Ports
   - What is IP address?
   - What are the two versions of IP in use today?
@@ -43,6 +45,7 @@ The best approach to review is to make sure you understand all the concepts. Her
   - Understand the pros and cons of Canvas and SVG
 
 **Week 2:**
+
 - Distinguish between external internet and internal network
   - Function of each server in internal network
   - Elements of a web map
@@ -53,7 +56,7 @@ The best approach to review is to make sure you understand all the concepts. Her
   - DOM structure
   - Javascript data type
   - Understand what is json file
-  - Eventlistendser
+  - Event Listener
 
 
 **Week 3:**
