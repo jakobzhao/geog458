@@ -363,7 +363,7 @@ If we save and refresh, the items you see will not make much sense. We need to u
 ```css
 .legend {
     line-height: 16px;
-    width: 140px;
+    width: 180px;
     color: #333333;
     padding: 6px 8px;
     background: white;

@@ -2,7 +2,7 @@ html, body, #map { width: 100%; height: 100%; margin: 0; background: #fff;}
 
 .legend {
     line-height: 16px;
-    width: 140px;
+    width: 180px;
     color: #333333;
     font-family: 'Titillium Web', sans-serif;
     padding: 6px 8px;
