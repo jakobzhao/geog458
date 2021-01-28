@@ -263,4 +263,4 @@ We observed several students having issues registering for a Twitter developer a
 
 ## Acknowledgement
 
-Thanks Jou Ho for his assistance in preparing this lab.
+Thanks Jou Ho and Yuke Cao for their assistance in preparing this lab.
