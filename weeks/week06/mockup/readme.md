@@ -1,4 +1,4 @@
-# Mockup-for-a-project-of-degital-geograpies
+# Project Mock-up
 
 ## 1. Introduction
 
@@ -62,11 +62,11 @@ In this part, we will create a new file with the common desktop screen size pres
 
 2. In the template window, under **Blank Presets**, check **Desktop** with default size of **1440 x 1024** as it is one of the most common screen sizes today.
 
-![](/img/0.png)
+![](img/0.png)
 
 3.Click the **Create File** button at the bottom of the window to create the file.
 
-![](/img/1.png)
+![](img/1.png)
 
 ### Base Map
 
@@ -74,11 +74,11 @@ In this part, we will add the base map we chose to our page and enable the horiz
 
 1. Download this map we provided down below or go to one of the **Map Resources** we provided above, take a screenshot of the map image you want to use.
 
-![](/img/2.png)
+![](img/2.png)
 
 2. **Cmd + Shift + K (Mac) / Ctrl + Shift + K (Windows)**  to open the import image window.
 
-![](/img/3.png)
+![](img/3.png)
 
 3. Select the map image you downloaded earlier from your computer in the window.
 
@@ -91,29 +91,29 @@ In this part, we will add the base map we chose to our page and enable the horiz
 
 6. At the left side of your screen, under **Layers**, click the **name of the image** you just imported to select it
 
-![](/img/4.png)
+![](img/4.png)
 
 7. **Cmd + R (Mac) / Ctrl + R (Windows)** to rename it to **"Map"**.
 
 8. Inside the design bar at the right side of your screen, change the **W (Width)** of the map to **2500** to make the image large enough to cover the whole page.
 
-![](/img/5.png)
+![](img/5.png)
 
 9. At the top of the design bar, click **the second and fifth icon** from left to right to make the map align horizontally and vertically center inside the page.
 
-![](/img/a.png) ![](/img/b.png)
+![](img/a.png) ![](img/b.png)
 
 10. At the left side of your screen, under **Layers**, click **Desktop - 1** to select the frame.
 
-![](/img/6.png)
+![](img/6.png)
 
 11. At the right side of your screen, select **Prototype** at the top row.
 
-![](/img/7.png)
+![](img/7.png)
 
 12. Under the **Overflow behavior**, the default should be Vertical scrolling, click the **drop down arrow** to switch it to **Horizontal and vertical scrolling**. This will enable the user to scroll the map both horizontally and vertically inside the page.
 
-![](/img/8.png)
+![](img/8.png)
 
 ### Venues
 
@@ -123,55 +123,55 @@ In this part, we will add the venues to the map. In the urban LGBTQ+ space, ther
 
 2. Uncheck the **Clip Content** option to view part of the map that is outside the page.
 
-![](/img/9.png)
+![](img/9.png)
 
 3. Hit **O** on your keyboard, then click anywhere inside the map to create an ellipse.
 
 4. At the right side of your screen under **Design**, change the **W (Width)** and the **H (Height)** to **10** to make the ellipse smaller.
 
-![](/img/10.png)
+![](img/10.png)
 
 5. Under **Fill**, change the color to **Blue (2F35CA)**.
 
-![](/img/11.png)
+![](img/11.png)
 
 6. Click the **Plus** sign right beside **Effects** to add a new effects.
 
 7. The default new effect should be **Drop shadow**. Click the **sun icon ☀️** to open a window with more detailed effecting settings.
 
-![](/img/12.png)
+![](img/12.png)
 
 8. In the drop shadow setting window, set **X** to **0**, **Y** to **0**, **Blur** to **10**, **Spread** to **7**, and **color** to **Blue (2F35CA) 25%**.
 
-![](/img/13.png)
+![](img/13.png)
 
 9. **Cmd + C (Mac) / Ctrl + C (Windows)** to copy this ellipse, then **Cmd + V (Mac) / Ctrl + V (Windows)** to paste it. The copy should be generated at the exact location of your original ellipse. Use your mouse to **select and drag** it anywhere else in the map.
 
-![](/img/14.png)
+![](img/14.png)
 
 10. At the right side of your screen under **Fill**, change the new ellipse's color to **Purple (CA2FC4)**.
 
-![](/img/15.png)
+![](img/15.png)
 
 11. Click the **sun icon ☀** to open a window with more detailed settings.
 
 12. In the drop shadow setting window, set the **color** to **Purple (CA2FC4) 25%**.
 
-![](/img/16.png)
+![](img/16.png)
 
 13. Using the same process, you could create as many ellipses as you want with different colors inside the map.
 
-![](/img/17.png)
+![](img/17.png)
 
 14. At the left side of your screen, under **Layers**, (!!! If any ellipse is outside the Desktop - 1 frame, you need to drag them down inside the Desktop - 1 frame) hold **Cmd (Mac) / Ctrl (Windows)** and click all the ellipses you just created to select them.
 
-![](/img/18.png)
+![](img/18.png)
 
 15. **Cmd + G (Mac) / Ctrl + G (Windows)** to make them into a group.
 
 16. **Cmd + R (Mac) / Ctrl + R (Windows)** to rename the group to **"Venues"**.
 
-![](/img/19.png)
+![](img/19.png)
 
 ! Remember to keep the Venues group above the map layer or the venues will be covered by the map.
 
@@ -183,29 +183,29 @@ In this part, we will add the zoom button to the top right of the page.
 
 2. At the right side of your screen under **Design**, check the **Clip Content** option to only view the part of objects that is inside the page.
 
-![](/img/20.png)
+![](img/20.png)
 
 3. Open the **[Google Map UI](https://www.figma.com/file/CDdpPaVCN2VKZVkYSW04VO/Google-Maps-UI-Kit-(Community))** in another window.
 
 4. At the left side of your screen, select **Google Maps** under **Pages**.
 
-![](/img/21.png)
+![](img/21.png)
 
 5. Select **Controls / Zoom Controls**, then **copy** it.
 
-![](/img/22.png)
+![](img/22.png)
 
 6. **Paste** the button we just copied and **drag** it to the upper right corner inside our page.
 
-![](/img/23.png)
+![](img/23.png)
 
 7. At the right side of your screen under **Constraints**, check **Fix position when scrolling** to make it position fixed.
 
-![](/img/24.png)
+![](img/24.png)
 
 8. Under **Layer**, change **Passing Through** value to **80** to make it look translucent.
 
-![](/img/25.png)
+![](img/25.png)
 
 ### Map layer selection
 
@@ -217,7 +217,7 @@ In this part, we will add the map layer selection panel right below the zoon but
 
 3. Under **Fill**, change the new ellipse's color to **White (FFFFFF)**.
 
-![](/img/26.png)
+![](img/26.png)
 
 4. Click the **Plus** sign right beside **Effects** to add new effects.
 
@@ -226,7 +226,7 @@ In this part, we will add the map layer selection panel right below the zoon but
 
 6. In the drop shadow setting window, set **X** to **0**, **Y** to **1**, **Blur** to **3**, **Spread** to **0**, and **color** to **000000 20%**.
 
-![](/img/27.png)
+![](img/27.png)
 
 7. At the left side of your screen, under **Layers**, click the **name of the rectangle** you just created to select it.
 
@@ -245,13 +245,13 @@ In this part, we will add the map layer selection panel right below the zoon but
 
 12. Type different data filters, e.g. **Men \n\n Women \n\n Place Names**.
 
-![](/img/28.png)
+![](img/28.png)
 
 13. Open the **[System Design](https://www.figma.com/file/MwkxeoAHrJshXK2xRyGQES/Material-Baseline-Design-Kit-(Community)?node-id=4%3A0)** in another window.
 
 14. Find and copy **Radio Checked button, Radio Unchecked button, Checkbox Selected button, Checkbox Unselected button** in the Stickersheet.
 
-![](/img/29.png)
+![](img/29.png)
 
 15. **Paste** the buttons we just copied inside the background.
 
@@ -261,7 +261,7 @@ In this part, we will add the map layer selection panel right below the zoon but
 
 18. Align them with the corresponding texts inside the background.
 
-![](/img/30.png)
+![](img/30.png)
 
 19. At the left side of your screen, under **Layers**, hold **Cmd (Mac) / Ctrl (Windows)** and click all the objects you just created inside the background and the background to select them all.
 
@@ -273,7 +273,7 @@ In this part, we will add the map layer selection panel right below the zoon but
 
 23. Under **Layer**, change **Passing Through** value to **80** to make it look translucent.
 
-![](/img/31.png)
+![](img/31.png)
 
 ### Timeline
 
@@ -285,11 +285,11 @@ In this part, we will add the timeline feature to the top left of our page, whic
 
 3. Type **"2012"** in the textbox.
 
-![](/img/32.png)
+![](img/32.png)
 
 4. Click the **menu button** at the top left of your screen, inside **Plugins**, click **Charts**.
 
-![](/img/33.png)
+![](img/33.png)
 
 5. Choose the **Area chart**, under **Configure**, Change **No of series** to **2**, **No of data points** to **7**, **Data range start** to **0**, **Data range end** to **20**, select **Hide grid** and **Use local styles colors**, and click **Add chart** at the bottom right of the window.
 
@@ -303,7 +303,7 @@ In this part, we will add the timeline feature to the top left of our page, whic
 
 10. **Drag** the line chart you just created to align it with the 2012 textbox.
 
-![](/img/34.png)
+![](img/34.png)
 
 11. At the left side of your screen, under **Layers**, click the textbox and the line chart you just created to select them.
 
@@ -331,7 +331,7 @@ In the part, we will add a heatmap toggle right under the timeline feature in ou
 
 6. Find and copy the **toggle button**.
 
-![](/img/35.png)
+![](img/35.png)
 
 7. **Paste** the buttons we just copied and place it right beside the heatmap text.
 
@@ -365,7 +365,7 @@ In this part, we will add an info panel at the left bottom corner of our page. I
 
 8. **Cmd + R (Mac) / Ctrl + R (Windows)** to rename it to **"Background"**.
 
-![](/img/36.png)
+![](img/36.png)
 
 9. Hit **T** on your keyboard, then click anywhere inside the background to create a text box.
 
@@ -375,7 +375,7 @@ In this part, we will add an info panel at the left bottom corner of our page. I
 
 12. Download the image down below to your computer.
 
-![](/img/c.png)
+![](img/c.png)
 
 13. In your figma page, **Cmd + Shift + K (Mac) / Ctrl + Shift + K (Windows)** to open the import image window.
 
@@ -393,15 +393,15 @@ In this part, we will add an info panel at the left bottom corner of our page. I
 
 20. Paste some **dummy text** into the textbox and drag it right beside the image.
 
-![](/img/37.png)
+![](img/37.png)
 
 21. Click the **menu button** at the top left of your screen, inside **Plugins**, click **Charts**.
 
-![](/img/38.png)
+![](img/38.png)
 
 22. Choose the **Bar chart**, under **Configure**, Change **No of series** to **2**, **No of data points** to **5**, **Data range start** to **0**, **Data range end** to **20**, select **Hide grid** and **Use local styles colors**, and click **Add chart** at the bottom right of the window.
 
-![](/img/39.png)
+![](img/39.png)
 
 23. At the right side of your screen, under **Selection colors**, change the colors to **Blue (2F35CA)** and **Purple (CA2FC4)**.
 
@@ -416,7 +416,7 @@ In this part, we will add an info panel at the left bottom corner of our page. I
 
 28. Choose the **Pie / Doughnut chart**, under **Configure**, Change **No of Segments** to **2**, **Inner radius** to **0**, **Outer radius** to **70**, and select **Hide grid**, and click **Add chart** at the bottom right of the window.
 
-![](/img/40.png)
+![](img/40.png)
 
 29. Change the segments colors to **Blue (2F35CA)** and **Purple (CA2FC4)**.
 
@@ -436,7 +436,7 @@ In this part, we will add an info panel at the left bottom corner of our page. I
 
 37. Under **Layer**, change **Passing Through** value to **80** to make it look translucent.
 
-![](/img/41.png)
+![](img/41.png)
 
 ### 3.2 Hover Over
 
@@ -444,7 +444,7 @@ In this section, we will make a copy of the page we are working on, and shows wh
 
 1. At the left of your screen, under **Layers**, select **Desktop - 1 frame**, use **Ctrl +C (Mac) / Cmd + C (Windows)**, then **Ctrl + V (Mac) / Cmd + V (Windows)** to make a copy of it.
 
-![](/img/42.png)
+![](img/42.png)
 
 2. Hit **R**, then click anywhere in the new **Desktop - 2** to create a new rectangle.
 
@@ -478,7 +478,7 @@ In this section, we will make a copy of the page we are working on, and shows wh
 
 17. At the right side of your screen, under **Layer**, change **Passing Through** value to **80** to make it look translucent.
 
-![](/img/43.png)
+![](img/43.png)
 
 ### 3.3 GUI for mobile device
 
@@ -488,7 +488,7 @@ You could also create mockups for other devices with different screen sizes in F
 
 2. In the template window, under **Blank Presets**, check the middle one and select the version of the phone you want.
 
-![](/img/44.png)
+![](img/44.png)
 
 3. Click the **Create File** button at the bottom of the window to create the file.
 
@@ -500,7 +500,7 @@ To present the mockups we just created:
 
 1. Click the **play button** in the upper right corner of your screen, a present version of your mock up should be opened in the new tab.
 
-![](/img/45.png)
+![](img/45.png)
 
 To export the mockup we just created as the format we want:
 
@@ -510,7 +510,7 @@ To export the mockup we just created as the format we want:
 
 3. Click the **Export button** to export it.
 
-![](/img/46.png)
+![](img/46.png)
 
 ## 5. Summary
 
@@ -519,6 +519,10 @@ In this lecture, we learned how to use the Figma application with some map resou
 Even though some functions or buttons may not actually work, as long as your mockup can give the user a sense how it will work, it is good enough. Remember that mockups are only supposed to be static, realistic renderings of what a product or feature will look like and how it will be used.
 
 The project actually has a website that has already been deployed. You could check it **[here](https://hgis.uw.edu/damron/seattle.html)** to compare it with the mockup you made.
+
+## Acknowledgement
+
+This mockup project was funded by a NSF awarded project HEGS: Examining Shifting Geographies of Historically Underrepresented Groups (Award ID: 1951072). The idea is driven by some initial discussion between Bo Zhao and Zhiyuan Jiao, and majority of this work is done by Zhiyuan Jiao.
 
 ## References:
 
