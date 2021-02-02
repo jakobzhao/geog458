@@ -67,13 +67,15 @@
 </head>
 
 <body>
-
+  <!-- Uses a bootstrap template to create a navigation bar -->
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
+    <!-- Creates the navigation bar with working links to different pages. Also contains an unclickable tab that
+         represents a disabled/discountinued feature -->
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
@@ -88,6 +90,7 @@
         <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
+        <!-- Create a dropdown tab tha shows more available pages for the user to see -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
           <div class="dropdown-menu" aria-labelledby="dropdown01">
@@ -97,6 +100,7 @@
           </div>
         </li>
       </ul>
+      <!-- Creates a search bar for the user to use -->
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
         <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
@@ -109,8 +113,6 @@
   <div id="map"></div>
 
   </main><!-- /.container -->
-
-
 
   <script>
     // 1. Create a map object.
@@ -125,12 +127,17 @@
     // 2. Add a base map.
     L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(mymap);
 
+    // Empty county variable to store county information and circle variable to store
+    // all circle information on the map
     var counties = null;
     var circles = new L.featureGroup();
 
+    // 3. Creates a color scale from colorbrewer (chroma.js) - 'YlOrRd' - for the
+    // counts of cell towers on the map.
     var colors = chroma.scale('YlOrRd').colors(5);
 
-
+    // 4. setColor function that takes in the density (count of cell towers per county)
+    // and assigns a color in accordance to the color scale - 'YlOrRd'
     function setColor(density) {
       var id = 0;
       if (density > 18) {
@@ -147,11 +154,15 @@
       return colors[id];
     }
 
-
+    // 5. Takes in the wacountydata.geojson to attribute information onto counties,
+    // and build circles to represent the number of cell towers in each Washington
+    // county.
     Promise.all([
       d3.json("assets/wacountydata.geojson")
     ]).then(function(datasets) {
 
+      // Stores county boundary information provided from the geojson file and
+      // create settings for display onto the map
       counties = new L.geoJSON(datasets[0], {
         style: function(feature) {
           return {
@@ -162,6 +173,8 @@
             color: 'gray'
           };
         },
+        // For each circle, center each onto the center of the county, create a proportional size
+        // for the radius of each circle, and set each circle's color accordingly
         onEachFeature: function(feature, layer) {
           var circle = L.circle(Object.values(L.polygon(feature.geometry.coordinates).getBounds().getCenter()).reverse(), {
             radius: 900 * Math.pow(feature.properties.CTNUM, 1),
@@ -172,6 +185,8 @@
             color: 'white',
             fillColor: setColor(feature.properties.CTNUM)
           });
+          // Add all circles to the circle feature variable and a pop-up when the mouse hovers onto a specific circle.
+          // Uses the tooltip function provided by d3.js.
           circle.addTo(circles);
           circle.bindTooltip("# of Cell Towers in " + feature.properties.NAME + ": " + feature.properties.CTNUM, {
             sticky: true
@@ -179,6 +194,7 @@
         }
       });
 
+      // 6. Adds circles and county information onto map.
       circles.addTo(mymap);
       counties.addTo(mymap);
       counties.bringToBack();

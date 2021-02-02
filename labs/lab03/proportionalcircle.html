@@ -39,12 +39,16 @@
     // 2. Add a base map.
     L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(mymap);
 
+    // Null variable that is set to hold Washington county data
     var counties = null;
+
+    // Circle variable that is set to hold all the circle objects on the map
     var circles = new L.featureGroup();
 
+    // 3. Create a color scale from colorbrewer (chroma.js), in this case being 'YlOrRd'
     var colors = chroma.scale('YlOrRd').colors(5);
 
-
+    // 4. setColor function to create a color range that corresponds to data values
     function setColor(density) {
       var id = 0;
       if (density > 18) {
@@ -62,10 +66,14 @@
     }
 
 
+    // 5. Uses the wacountydata.geojson file to create county boundaries,
+    //    and build circles to represent the density of cell towers in each
+    //    Washington county.
     Promise.all([
       d3.json("assets/wacountydata.geojson")
     ]).then(function(datasets) {
 
+      // Uses the previously declared county variable and store county information
       counties = new L.geoJSON(datasets[0], {
         style: function(feature) {
           return {
@@ -76,6 +84,8 @@
             color: 'gray'
           };
         },
+        // Creates the circles that reprsent the conut of cell towers from each county
+        // while also centering each circle onto each corresponding Washington county
         onEachFeature: function(feature, layer) {
           var circle = L.circle(Object.values(L.polygon(feature.geometry.coordinates).getBounds().getCenter()).reverse(), {
             radius: 900 * Math.pow(feature.properties.CTNUM, 1),
@@ -86,6 +96,8 @@
             color: 'white',
             fillColor: setColor(feature.properties.CTNUM)
           });
+          // Add all circles to the circle feature variable and a pop-up when the mouse hovers onto a specific circle.
+          // Uses the tooltip function provided by d3.js.
           circle.addTo(circles);
           circle.bindTooltip("# of Cell Towers in " + feature.properties.NAME + ": " + feature.properties.CTNUM, {
             sticky: true
@@ -93,6 +105,7 @@
         }
       });
 
+      // 6. Adds circles and county information onto map.
       circles.addTo(mymap);
       counties.addTo(mymap);
       counties.bringToBack();

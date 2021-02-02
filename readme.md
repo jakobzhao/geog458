@@ -37,9 +37,9 @@ This course is very “hands-on” and interactive! Most of our time will be spe
 
 #### Preparation: [**Gear up the working environment**](assets/gearup.md) :computer:  :beer:
 
-#### Weekly Expectations: 
+#### Weekly Expectations:
 
--   You should try to attend both lecture and lab sections each week. 
+-   You should try to attend both lecture and lab sections each week.
 -   You should complete all weekly readings before the Friday Lab sections, and submit weekly think pieces by Thursday @ 5 pm PST (further instructions below)
 
 ### Week 1: Intro to digital geographies
@@ -83,12 +83,13 @@ This week you will be making your first web map of the quarter using the popular
 -   **Readings:** a) [Leaflet Basics](weeks/week04/leaflet), b) [Map Events](weeks/week04/mapevent), c) [Digital Mapping and Segregation](https://www.forbes.com/sites/drsarahbond/2017/10/20/how-is-digital-mapping-changing-the-way-we-visualize-racism-and-segregation/#4df35c7d33fa), and d) [extended readings](weeks/week04/readings.md).
 -   **Think Piece 4:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000373) `Due: Jan 28th, by 5:00pm`
 -   **Lab 3:** [Web map application](labs/lab03) `Due:Feb 12th, by 11:59pm`,  Example: [Oregon Water Atlas](http://oregonwater.info/atlas.html)
+-   [An intergrative web mapping template](https://jakobzhao.github.io/geog458/labs/lab03/starter.html)
 
 ### Week 5 : Map design
 
 <!-- Feb 1 to 5 -->
 
--   **Lecture Notes:** [Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/)
+-   **Lecture Notes:** [BaseMap design using Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/), [Mockup for web mapping project](mockup/readme.md)
 -   **Readings:** a) [The Guide to Map Design](weeks/week05/mapbox-design.pdf), b) [Intro to Critical Cartography](https://drive.google.com/file/d/1IEz_9J4vH6foIrV36wDoIovOYNomZBWj/view?usp=sharing), c) [Mapbox Studio How-to Videos](weeks/week05/readme.md), and d) [extended readings](weeks/week05/readings.md).
 -   **Think Piece 5:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000375) `Due: Fed 4th, by 5:00pm`
 -   **Lab 4:** [Map design and tiles generation](labs/lab04) `Due: Feb 19th, by 11:59pm`
@@ -145,9 +146,9 @@ The Student Tech Loan Program is expanding as quickly as possible. We announced 
 
 **Labs:** You need to finish all four labs by the due date. In order to help you work on each lab, we will walk through most of the labs in class.
 
-**Think Pieces:** for week 1 to 8, there will be weekly reading assignments. To evaluate your reflection upon each week's reading material, we set up a discussion board for each week. You need to submit think pieces to **3** out of the 8 weeks' discussion topics. Your think pieces should be completed by Thursday @ 5 pm PST for the weeks you are submitting a piece. Your think pieces should be at least 350 words and engage substantially with the reading materials, and connections to the lab assignements and lectures. Guiding questions or prompts will be included in each week's discussion section on canvas to help frame your thinking. Submit your think pieces on Canvas in the applicable week's discussion section (https://canvas.uw.edu/courses/1434645/discussion_topics). 
+**Think Pieces:** for week 1 to 8, there will be weekly reading assignments. To evaluate your reflection upon each week's reading material, we set up a discussion board for each week. You need to submit think pieces to **3** out of the 8 weeks' discussion topics. Your think pieces should be completed by Thursday @ 5 pm PST for the weeks you are submitting a piece. Your think pieces should be at least 350 words and engage substantially with the reading materials, and connections to the lab assignements and lectures. Guiding questions or prompts will be included in each week's discussion section on canvas to help frame your thinking. Submit your think pieces on Canvas in the applicable week's discussion section (https://canvas.uw.edu/courses/1434645/discussion_topics).
 
-**Participation in in-class discussion:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and actively participate in critical discussions of those readings. You should have completed all of the weekly readings before our Friday lab sections as these sections will be devoted to critical discussion and engagement with the required readings. 
+**Participation in in-class discussion:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and actively participate in critical discussions of those readings. You should have completed all of the weekly readings before our Friday lab sections as these sections will be devoted to critical discussion and engagement with the required readings.
 
 **Individual Final Project:** Considering the difficulty of working as a team when you cannot meet each other in person, I have decided to change the final collaborative project as individual base, and cancel lab 5. So, at the end of this quarter, you only need to submit this final project. check out  [the detailed requirement for final project](project/project.md)
 
@@ -168,7 +169,7 @@ This course targets students who have a background in fundamental geographic inf
 | Final project   | 15% |
 | Essay           | 10% |
 
-> The item `participation` includes your participation in the class (e.g., self-introduction, answer questions in class, etc.) and/or your response on GitHub issues (ask questions via GitHub issue, and help your classmates using the GitHub issues function). As well as participation in the weekly lab/discussion sections. 
+> The item `participation` includes your participation in the class (e.g., self-introduction, answer questions in class, etc.) and/or your response on GitHub issues (ask questions via GitHub issue, and help your classmates using the GitHub issues function). As well as participation in the weekly lab/discussion sections.
 
 ## :love_letter: Accommodations
 
