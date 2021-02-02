@@ -89,7 +89,7 @@ This week you will be making your first web map of the quarter using the popular
 
 <!-- Feb 1 to 5 -->
 
--   **Lecture Notes:** [BaseMap design using Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/), [Mockup for web mapping project](mockup/readme.md)
+-   **Lecture Notes:** [BaseMap design using Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/) and [Mockup for web mapping project](mockup/readme.md)
 -   **Readings:** a) [The Guide to Map Design](weeks/week05/mapbox-design.pdf), b) [Intro to Critical Cartography](https://drive.google.com/file/d/1IEz_9J4vH6foIrV36wDoIovOYNomZBWj/view?usp=sharing), c) [Mapbox Studio How-to Videos](weeks/week05/readme.md), and d) [extended readings](weeks/week05/readings.md).
 -   **Think Piece 5:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000375) `Due: Fed 4th, by 5:00pm`
 -   **Lab 4:** [Map design and tiles generation](labs/lab04) `Due: Feb 19th, by 11:59pm`
