@@ -141,7 +141,7 @@ Furthermore, we also need some predefined color ramp to symbolize geographic fea
 
 > **Note:** Color palettes from Color Brewer.
 
-We need to create a set of random colors for representing cell towers of different companies. The color should follow the qualitative palettes because this palette can provide better visualization of the nominal data. Therefore, we select the `dark2` category (as shown in the figure above). Since there are nine cell tower types in Oregon, we will create nine different colors. To apply these colors, we dynamically build classes and then embed these classes in `style` elements.  The style classes are from `marker-color-1` to `marker-color-12`. Each class includes a color `property`. Below is the code snippet.
+We need to create a set of random colors for representing cell towers of different companies. The color should follow the qualitative palettes because this palette can provide better visualization of the nominal data. Therefore, we select the `dark2` category (as shown in the figure above). Since there are nine cell tower types in Washington, we will create nine different colors. To apply these colors, we dynamically build classes and then embed these classes in `style` elements.  The style classes are from `marker-color-1` to `marker-color-12`. Each class includes a color `property`. Below is the code snippet.
 
 ```javascript
 // 4. build up a set of colors from colorbrewer's dark2 category
