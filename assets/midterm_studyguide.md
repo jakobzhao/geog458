@@ -1,6 +1,6 @@
 ## Study Guide for Midterm
 
-Here is the study guide for 2021 Spring Geog 458 class. We will be holding Midterm on **Feb 2nd 11:30 AM to 12:20 PM** on-line, via CANVAS. The midterm will cover the materials on lectures, labs as well as the technique oriented reading pieces. 
+Here is the study guide for 2021 Spring Geog 458 class. We will be holding Midterm on **Feb 2nd 11:30 AM to 12:50 PM** on-line, via CANVAS. The midterm will cover the materials on lectures, labs as well as the technique oriented reading pieces. 
 
 The best approach to review is to make sure you understand all the concepts. Here are some the topics/concepts that we think you should be able to answer, in particular, for the mid-term exam:
 
