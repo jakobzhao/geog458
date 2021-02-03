@@ -4,7 +4,10 @@
 
 Mockups are essential for the design process at the early stage of a project as they give viewers an idea of how the final product will appear, and the implementation of interactive elements like buttons and icons also hints at the function. With a well-made sample in front of their eyes, stakeholders don’t have to rely so much on their imaginations. So, in this lab, we are going to learn how to use one of the most famous browser-based UI and UX design applications Figma to create mockups for a project.
 
-The project we are designing the mockup for is called **Damron Guide: Seattle**, it is a website utilizing online maps to visually explore the Damron’s Travel Guide which specifies the spatial pattern and temporal changes of the LGBT related places. Especially, The evolving space of LGBTQ life in Seattle in the past five decades. For more information, you could visit this web site (check [here](https://damron.com/about-us)).
+The project we are designing the mockup for is called [**Damron Guide: Seattle**](https://hgis.uw.edu/damron/seattle.html), it is a website utilizing online maps to visually explore the [Damron’s Travel Guide](https://damron.com/about-us) which specifies the spatial pattern and temporal changes of the LGBT related places. Especially, The evolving space of LGBTQ life in Seattle in the past five decades. For more information, you could visit this web site.
+
+![](img/website.png)
+> the figure above illustrrates the web GUI of the web map application _Damron Guide: Seattle_
 
 In this mockup, we will walk through the whole design process of the main GUI including the basemap, venues,  layer switcher, timeline and info panel. Then, we will add in some hover over functions, and finally give a brief intro to how to design user interfaces other than the desktop GUI, such as the mobile GUI.
 
@@ -514,15 +517,11 @@ To export the mockup we just created as the format we want:
 
 ## 5. Summary
 
-In this lecture, we learned how to use the Figma application with some map resources to create a mockup for the Damron Guide: Seattle project.
-
-Even though some functions or buttons may not actually work, as long as your mockup can give the user a sense how it will work, it is good enough. Remember that mockups are only supposed to be static, realistic renderings of what a product or feature will look like and how it will be used.
-
-The project actually has a website that has already been deployed. You could check it **[here](https://hgis.uw.edu/damron/seattle.html)** to compare it with the mockup you made.
+Overall, We learned how to use the Figma application with some map resources to create a mockup for the Damron Guide: Seattle project. Even though some functions or buttons may not actually work, as long as your mockup can give the user a sense how it will work, it is good enough. Remember that mockups are only supposed to be static, realistic renderings of what a product or feature will look like and how it will be used. The project actually has a website that has already been deployed. You could check it **[here](https://hgis.uw.edu/damron/seattle.html)** to compare it with the mockup you made.
 
 ## Acknowledgement
 
-This mockup project was funded by a NSF awarded project HEGS: Examining Shifting Geographies of Historically Underrepresented Groups (Award ID: 1951072). The idea is driven by some initial discussion between Bo Zhao and Zhiyuan Jiao, and majority of this work is done by Zhiyuan Jiao.
+This mockup project was funded by **a NSF awarded project HEGS: Examining Shifting Geographies of Historically Underrepresented Groups (Award ID: 1951072)**. The idea is driven by some initial discussion between Bo Zhao and Zhiyuan Jiao, and majority of this work is done by Zhiyuan Jiao.
 
 ## References:
 
