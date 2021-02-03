@@ -131,6 +131,16 @@ This week will focus on two emerging topics related to digital geographies, incl
 
 During these two weeks, each group will focusing on their final projects and essay. The instructor and teaching assistant are available during the normal lecture period, lab sections and office hours if help is needed.
 
+- **Project Mockup:** a) Web mapping and b) GeoNarrative
+- **Final project templates:** a) an intergrative web mapping template, b) smart dashboard, and c) GeoNarrative
+- **Data resources:**
+  - Geospatial data:
+  - Videos:
+  - Images:
+  - Icons:
+  - Web Fonts:
+
+
 ### Finals Week : Final project presentations
 
 <!-- Mar 15 to 19 -->
