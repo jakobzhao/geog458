@@ -129,16 +129,15 @@ This week will focus on two emerging topics related to digital geographies, incl
 
 <!-- Mar 1 to 12 -->
 
-During these two weeks, each group will focusing on their final projects and essay. The instructor and teaching assistant are available during the normal lecture period, lab sections and office hours if help is needed.
+During these two weeks, each group will focusing on their final projects and essay. The instructor and teaching assistant are available during the normal lecture period, lab sections and office hours if help is needed. Below are some resources for you to develop your final project.
 
 - **Project Mockup:** a) Web mapping and b) GeoNarrative
 - **Final project templates:** a) an intergrative web mapping template, b) smart dashboard, and c) GeoNarrative
 - **Data resources:**
-  - Geospatial data:
-  - Videos:
-  - Images:
-  - Icons:
-  - Web Fonts:
+  - Geospatial data: [Washington State Data](https://wagda.lib.washington.edu/data/geography/wa_state/), [UW Geospatial dataa Archives](https://guides.lib.uw.edu/research/gis)
+  - Image and Video Stock: [Unsplash `image only`](https://unsplash.com/), [Pixabay](https://pixabay.com/), and [Pexels](https://www.pexels.com/)
+  - Icons: [Font Awesome](https://fontawesome.com/v4.7.0/icons/)
+  - Web Fonts: [Google Fonts](https://fonts.google.com/)
 
 
 ### Finals Week : Final project presentations
