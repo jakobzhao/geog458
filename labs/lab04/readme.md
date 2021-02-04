@@ -259,24 +259,26 @@ As shown by the code, the tiles are loaded from a relative path `assets/tiles` w
 
 ## 5 Deliverable
 
-- You are expected to generate **four** tile sets of any geographic phenomena you are interested in. **Since github repository only allows you upload a limited amount of data, so please make sure not to generate too many tiles by limiting the boundingbox or the scale range.** This lab is an opportunity to make a basemap or thematic map layers for your final project. Below are the lab requirment.
+- You are expected to generate **five** tile sets of any geographic phenomena you are interested in. **Since github repository only allows you upload a limited amount of data, so please make sure not to generate too many tiles by limiting the boundingbox or the scale range.** This lab is an opportunity to make a basemap or thematic map layers for your final project. Below are the lab requirment.
 
-  - The first tile set should be a base map made by MapBox. **Please make sure it is a basemap rather than a thematic map.** In most web map applications, Basemap is overlain with other thematic map layers and/or interactive features. Its primary function is to illustrate the geographical context of the study area. Therefore, a basemap is usually made in a monochrome color scheme. You are encouraged to make your basemap directly out of the existing map layers provided by MapBox (like those monochrome map layers provided on MapBox Studio). However, please make sure you need to change at least a few color uses, a few icons, and the label font. Overall, even you made a few changes, the base map should still look visually appealing. (5 POINTS).
+  - The first tile set should be a base map made by MapBox. **Please make sure it is a basemap rather than a thematic map.** In most web map applications, Basemap is overlain with other thematic map layers and/or interactive features. Its primary function is to illustrate the geographical context of the study area. Therefore, a basemap is usually made in a monochrome color scheme. You are encouraged to make your basemap directly out of the existing map layers provided by MapBox (like those monochrome map layers provided on MapBox Studio). However, please make sure you need to change at least a few color uses, a few icons, and the label font. Overall, even you made a few changes, the base map should still look visually appealing. (4 POINTS).
 
-  - The second tile set should be a map layer of Satellite Imagery loaded through QuickMapServies. You might need to explore the list of map tile services provided by QuickMapServies, and find out which one is satellite imagery. (5 POINTS).
+  - The second tile set should be a map layer of Satellite Imagery loaded through QuickMapServies. You might need to explore the list of map tile services provided by QuickMapServies, and find out which one is satellite imagery. (4 POINTS).
 
-  - The third tile set should be a thematic layer made by your own geospatial dataset. (5 POINTS).
+  - The third tile set should be a thematic layer made by your own geospatial dataset. (4 POINTS).
 
-  - The fourth tile set should be a layer group that is composed of a thematic layer (from the third tile set) and a basemap from the first tile set, as the map tiles shown in Section 4. (5 POINTS).
+  - The fourth tile set should be a layer group that is composed of a thematic layer (from the third tile set) and a basemap from the first tile set, as the map tiles shown in Section 4. (4 POINTS).
 
--  After the map tiles are generated, you are expected to create an index.html to visualize a leaflet map to visualze the four tile map sets.
+  - The fifth tile set should be a map layer designed over Mapbox. It could a map embodying a map theme relavent to LGBTQ+, UW, Femenist Geography. Please try to use the color, icon, and label to realize the theme.  (4 POINTS).
+
+-  After the map tiles are generated, you are expected to create an index.html to visualize a leaflet map to visualze the five tile map sets.
     -  create any necessary web page elments, such as page tile, scale bar, attribution, zoom control, map description, etc. (5 POINTS)
     -  The leaflet map should be shown in the full screen. (5 POINTS).
     -  A layer switcher should be added to allow users to turn on and off each map layers. For more about the map switch control, please refer to the leaflet document at [here](https://leafletjs.com/examples/layers-control/). (6 POINTS).
 
 -  Upload everything to a github repository. In the `readme.md` file of this repository, please briefly introduce
 -
-    -  screenshots of the four layers (2 POINTS)
+    -  screenshots of the five layers (2 POINTS)
     -  the examined georaphic area, and (2 POINTS)
     -  the available zoom levels of each tile set (2 POINTS), and
     -  brief descriptions of each tile sets (3 POINTS).
