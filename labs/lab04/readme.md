@@ -1,4 +1,4 @@
-# Lab 4: Map Design and Map Tile Generation
+# Lab 4: Map Design and Tile Generation
 
 **Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu
 
