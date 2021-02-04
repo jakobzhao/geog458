@@ -169,37 +169,41 @@ Quadkeys have several interesting properties. First, the length of a quadkey (th
 
 Finally, quadkeys provide a one-dimensional index key that usually preserves the proximity of tiles in XY space. In other words, two tiles that have nearby XY coordinates usually have quadkeys that are relatively close together. This is important for optimizing database performance, because neighboring tiles are usually requested in groups, and it’s desirable to keep those tiles on the same disk blocks, in order to minimize the number of disk reads.
 
-## 3 QGIS
+## 3 Genrating Tiles in QGIS
 
-QMetaTiles is a plugin for QGIS 3. QGIS is an open source platform and is freely available. QGIS can be downloaded from **[here](https://qgis.org/en/site/forusers/download.html#)**.
+In this section we will introduce how to create map layer or load online map service, and then convert the created or loaded map layer as a tileset in QGIS 3. To do this, you need to install two QGIS plugins, including QMetaTiles and QuickMapServices.
 
-### 3.1 Install Plugins
+To enable the QuickMapServices Plugin, you need to click on the `Web` tab on the main menu bar, and then navigate to QuickMapServies and select Settings and then the tab for More Services. Then click **'Get Contibuted Pack'**. Click 'OK' for the pop-up window and then click 'Save.' If the service is successfully installed, you can open a variety of base maps.
 
-#### 3.1.1 QMetaTiles Plugin
+![](img/quickmapservicesetting.png)
 
-Make sure the QMetaTiles plugin is enabled. Click the plugins drop down menu. QMetaTiles should be listed at the bottom. If not then click the 'Manage and install Plugins...' and add QMetaTiles.
+### 3.1 Generate or Load a Map Layer
 
-#### 3.1.2 QuickMapServices Plugin
+You can either create a map from your own data source, or load a base map from the QuickMapServices, or read a map tiles from MapBox. What's more, you can even make a layer group that is made up by several different layers.
 
-Make sure the QuickMapServices plugin is installed. Check this by clicking on the Web drop down menu If you are installing QuickMapServices Plugin, you will install, and then click on the Web tab, navigate to QuickMapServies and select Settings and then the tab for More Services. Then click **'Get Contibuted Pack'**. Click 'OK' for the pop-up window and then click 'Save.' Open a Reference Map (e.g., Bing).
+Once you have the map layer or layer group ready, please change the displaying projection to **Psuedo Mercator**, the espg code is 3857. It is because most web maps are projected in the Psuedo Mercator. If you want to overlay any tiles with other external map services, you need to make sure all the displaying map layers are in the same projection.
+
+![](img/projection.png)
 
 ### 3.2 Tile Server
 
-We now want to add our original basemap created using MapBox studio to the Tile Server. Refer back to Tuesday's lecture if you need a guide to make your own MapBox basemap. After creating your own basemap, open the browser panel in QGIS. Scroll Down to the **'WMS/WMTS'**, right click, and click **'New Connection'**. A pop-up window should appear.
+It is pretty straightforward and simple to creating new map layers from raw geospatial data (e.g., shapefiles or geojson) or loading external map layers from QuickMapServices are straightforward, here I would like to talk about how to read map layers from Mapbox's Tile Services.
+
+![](img/wmts.png)
+
+Please first go over this week's lecture notes if you need a guide to make your own MapBox maplayer. After creating your own map, open the browser panel in QGIS. Scroll Down to the **'WMS/WMTS'**, right click, and click **'New Connection'**. A pop-up window should appear.
+
+![](img/new-connection.png)
 
 Here, you can make a new connection to basemaps by providing the URL. In order to obtain the URL to your mapbox basemap, click `share` located next to your map on MapBox Studio:
 
 ![](img/mapbox_url.png)
 
-Make sure you pick Third party option and copy the Integration URL like the example above. After establishing the connection, you should be able to add your basemap by double-clicking the newly created connection.
-
-### 3.3 Canvas Extent
+Make sure you pick Third party option and copy the Integration URL of `WMTS` like the example above. After establishing the connection, you should be able to add your basemap by double-clicking the newly created connection.
 
 Zoom into your tiles so that they fill most of the canvas space. The canvas is the extent we will use to generate QMetaTiles.
 
-### 3.4 Tile Server to QMetaTiles
-
-Now we need to take out tiles from MapBox and generate QMetaTiles.
+### 3.3 Generating Tiles by QMetaTiles
 
 Click the Plugins drop down, hover over QMetaTiles to open the menu and select QMetaTiles. The QMetaTiles screen pops up.  Name the directory where you want to save your QMetaTiles and provide a name for the Tileset. Select Canvas Extent and Zoom levels. In the Parameters make the **'Background transparency'** clear by changing the value to zero and make sure to select **'Write Leaflet-based viewer'**. Click Ok.
 
@@ -207,11 +211,9 @@ Click the Plugins drop down, hover over QMetaTiles to open the menu and select Q
 
 > Note: the runtime is dependent on the size and number of zoom levels.
 
-The file directory will contain your QMetaTiles and an HTML document that can be integrated with leaflet.
+The file directory will contain your QMetaTiles and an HTML document that can be integrated with leaflet. Additional help with QMetaTiles can be found **[here](http://felix.rohrba.ch/en/2017/easily-add-tilemap-layers-qgis/)**.
 
-Additional help with QMetaTiles can be found **[here](http://felix.rohrba.ch/en/2017/easily-add-tilemap-layers-qgis/)**.
-
-### 3.5 Navigate to QMetaTiles folder
+### 3.4 Navigate to QMetaTiles folder
 
 Navigate to the output file after QMetaTiles finishes running. In this folder will be your sub folders of tiles arranged by zoom level and an html document.
 
@@ -257,24 +259,46 @@ As shown by the code, the tiles are loaded from a relative path `assets/tiles` w
 
 ## 5 Deliverable
 
-You are expected to generate a tile set for an geographic area you are interested in.
+- You are expected to generate **four** tile sets of any geographic phenomena you are interested in. **Since github repository only allows you upload a limited amount of data, so please make sure not to generate too many tiles by limiting the boundingbox or the scale range.** This lab is an opportunity to make a basemap or thematic map layers for your final project. Below are the lab requirment.
 
--  **This tile set should be generated through a map made by MapBox** (25 POINTS).
+  - The first tile set should be a base map made by MapBox. **Please make sure it is a basemap rather than a thematic map.** In most web map applications, Basemap is overlain with other thematic map layers and/or interactive features. Its primary function is to illustrate the geographical context of the study area. Therefore, a basemap is usually made in a monochrome color scheme. You are encouraged to make your basemap directly out of the existing map layers provided by MapBox (like those monochrome map layers provided on MapBox Studio). However, please make sure you need to change at least a few color uses, a few icons, and the label font. Overall, even you made a few changes, the base map should still look visually appealing. (5 POINTS).
 
--  After the map tiles are generated, you are expected to create a leaflet map and add up the layer of tiles to the map (10 POINTS).
+  - The second tile set should be a map layer of Satellite Imagery loaded through QuickMapServies. You might need to explore the list of map tile services provided by QuickMapServies, and find out which one is satellite imagery. (5 POINTS).
 
--  Upload everything to a github repository. In the readme.md file of this repository, please briefly introduce this tiles, the georaphic area, and the zoom levels you select (10 POINTS).
+  - The third tile set should be a thematic layer made by your own geospatial dataset. (5 POINTS).
 
-- make sure the repository accessible through the url `https://[your_github_username].github.io/[your_repository_name]`.
+  - The fourth tile set should be a layer group that is composed of a thematic layer (from the third tile set) and a basemap from the first tile set, as the map tiles shown in Section 4. (5 POINTS).
 
-> **Note:**  Since github repository only allows you upload a limited amount of data, so please make sure not to generate too many tiles by limiting the boundingbox or the scale range. The structure of this repository should look like:
+-  After the map tiles are generated, you are expected to create an index.html to visualize a leaflet map to visualze the four tile map sets.
+    -  The leaflet map should be shown in the full screen. (8 POINTS).
+    -  A layer switcher should be added to allow users to turn on and off each map layers. For more about the map switch control, please refer to the leaflet document at [here](https://leafletjs.com/examples/layers-control/). (8 POINTS).
+
+-  Upload everything to a github repository. In the `readme.md` file of this repository, please briefly introduce
+-
+    -  screenshots of the four layers (2 POINTS)
+    -  the examined georaphic area, and (2 POINTS)
+    -  the available zoom levels of each tile set (2 POINTS), and
+    -  brief descriptions of each tile sets (3 POINTS).
+
+- make sure the repository accessible through the url `https://[your_github_username].github.io/[your_repository_name]`. Also, please provide this url to the `readme.md` file. (5 POINTS).
+
+The structure of this repository should look like:
 
 ```powershell
 [your_repository_name]
     │readme.md
     │index.html
     ├─tiles
-    │      [tile sets]
+    │      [tile sets 1]
+    │         XXX
+    │         XXX
+    │      [tile sets 2]
+    │         XXX
+    │         XXX
+    │      [tile sets 3]
+    │         XXX
+    │         XXX
+    │      [tile sets 4]
     │         XXX
     │         XXX
 ```
