@@ -4,7 +4,7 @@
 ## How to create a custom Mapbox map style using a template
 https://www.youtube.com/watch?v=tTw358pE6qk&t=4s
 
-## How to create a custom Mapbox map style using Cartogram
+## How to create a custom Mapbox map style using a template
 https://www.mapbox.com/videos/how-to/create-a-custom-map-style-using-a-template/
 
 ## How to export (and import) custom map styles between Mapbox accounts
