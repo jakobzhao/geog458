@@ -244,7 +244,6 @@ var mymap = L.map('map', {
 // 2. Add a base map.
 L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(mymap);
 
-
 var mytile =L.tileLayer('assets/tiles/{z}/{x}/{y}.png', {
     maxZoom: 9,
     tms: false,
