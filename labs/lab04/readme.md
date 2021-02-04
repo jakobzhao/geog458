@@ -270,8 +270,9 @@ As shown by the code, the tiles are loaded from a relative path `assets/tiles` w
   - The fourth tile set should be a layer group that is composed of a thematic layer (from the third tile set) and a basemap from the first tile set, as the map tiles shown in Section 4. (5 POINTS).
 
 -  After the map tiles are generated, you are expected to create an index.html to visualize a leaflet map to visualze the four tile map sets.
-    -  The leaflet map should be shown in the full screen. (8 POINTS).
-    -  A layer switcher should be added to allow users to turn on and off each map layers. For more about the map switch control, please refer to the leaflet document at [here](https://leafletjs.com/examples/layers-control/). (8 POINTS).
+    -  create any necessary web page elments, such as page tile, scale bar, attribution, zoom control, map description, etc. (5 POINTS)
+    -  The leaflet map should be shown in the full screen. (5 POINTS).
+    -  A layer switcher should be added to allow users to turn on and off each map layers. For more about the map switch control, please refer to the leaflet document at [here](https://leafletjs.com/examples/layers-control/). (6 POINTS).
 
 -  Upload everything to a github repository. In the `readme.md` file of this repository, please briefly introduce
 -
