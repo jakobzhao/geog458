@@ -277,7 +277,7 @@ As shown by the code, the tiles are loaded from a relative path `assets/tiles` w
     -  A layer switcher should be added to allow users to turn on and off each map layers. For more about the map switch control, please refer to the leaflet document at [here](https://leafletjs.com/examples/layers-control/). (6 POINTS).
 
 -  Upload everything to a github repository. In the `readme.md` file of this repository, please briefly introduce
--
+
     -  screenshots of the five layers (2 POINTS)
     -  the examined georaphic area, and (2 POINTS)
     -  the available zoom levels of each tile set (2 POINTS), and
