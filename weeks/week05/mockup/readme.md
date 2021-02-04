@@ -517,7 +517,7 @@ To export the mockup we just created as the format we want:
 
 ## 5. Summary
 
-Overall, We learned how to use the Figma application with some map resources to create a mockup for the Damron Guide: Seattle project. Even though some functions or buttons may not actually work, as long as your mockup can give the user a sense how it will work, it is good enough. Remember that mockups are only supposed to be static, realistic renderings of what a product or feature will look like and how it will be used. The project actually has a website that has already been deployed. You could check it **[here](https://hgis.uw.edu/damron/seattle.html)** to compare it with the mockup you made.
+Overall, We learned how to use the Figma application with some map resources to create a mockup for the Damron Guide: Seattle project. The mockup project can be found [here](https://www.figma.com/file/USVi3eiJjhaUoHEcl3ryiR/Damron-Seattle-mockup). Even though some functions or buttons may not actually work, as long as your mockup can give the user a sense how it will work, it is good enough. Remember that mockups are only supposed to be static, realistic renderings of what a product or feature will look like and how it will be used. The project actually has a website that has already been deployed. You could check it **[here](https://hgis.uw.edu/damron/seattle.html)** to compare it with the mockup you made.
 
 ## Acknowledgement
 
