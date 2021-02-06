@@ -101,7 +101,7 @@ This week you will be making your first web map of the quarter using the popular
 <!-- Feb 8 to 12 -->
 
 -   **Lecture Notes:** design a dashboard to monitor COVID-19 infection trend, **Examples:** [COVID-19 Dashboard](https://hgis.uw.edu/virus), [a dashboard template](https://jakobzhao.github.io/geog458/weeks/week06/)
--   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [History of the Urban Dashboard](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/), c) [3 Ways Data Dashboards Can Mislead You](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section), d) [Bootstrap](weeks/week06/tech-readings.md), and e) [extended readings](weeks/week06/readings.md).
+-   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [History of the Urban Dashboard](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/), c) [3 Ways Data Dashboards Can Mislead You](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section), d) [Bootstrap and Charts](weeks/week06/tech-readings.md), and e) [extended readings](weeks/week06/readings.md).
 -   **Think Piece 6:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000376) `Due: Feb 11th, by 5:00pm`
 
 ### Week 7 : Geo-Narratives
