@@ -131,7 +131,7 @@ This week will focus on two emerging topics related to digital geographies, incl
 
 During these two weeks, each group will focusing on their final projects and essay. The instructor and teaching assistant are available during the normal lecture period, lab sections and office hours if help is needed. Below are some resources for you to develop your final project.
 
-- **Project Mockup:** a) [Web mapping], b) [Smart Dashboard](https://www.figma.com/file/Dm30UzxUlOlw6XrjMaPh1c/Covid-Workers-Dash?node-id=0%3A1), and c) [GeoNarrative](https://www.figma.com/file/gxADc3Bjrrr1GtubAD6paz/CoPe-Geonarrative-1-Mockup).
+- **Project Mockup:** a) [Web mapping](https://www.figma.com/file/USVi3eiJjhaUoHEcl3ryiR/Damron-Seattle-mockup), b) [Smart Dashboard](https://www.figma.com/file/Dm30UzxUlOlw6XrjMaPh1c/Covid-Workers-Dash?node-id=0%3A1), and c) [GeoNarrative](https://www.figma.com/file/gxADc3Bjrrr1GtubAD6paz/CoPe-Geonarrative-1-Mockup).
 
 - **Final project templates:** a) web mapping template, b) smart dashboard, and c) GeoNarrative
 - **Data resources:**
