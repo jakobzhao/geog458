@@ -21,20 +21,7 @@
 
 <body>
   <main>
-    <div id="mobiledeck">
 
-      <div class="placename"> WASHINGTON</div>
-      <p>
-        <span class="mobile-title"># Cell Towers in the selected county: </span>
-        <span class="county-count">n/a</span>
-      <p>
-
-      <p>
-        <span class="mobile-title"># Cell Towers in Washington: </span>
-        <span class="state-count">351</span>
-      <p>
-
-    </div>
 
     <div id="info">
       <div id="title">
@@ -97,7 +84,7 @@
 
 
     // 2. Add a base map.
-     L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(mymap);
+    L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(mymap);
 
 
     // 4. build up a set of colors from colorbrewer's dark2 category
@@ -115,7 +102,8 @@
     }
 
 
-    var rchart, cellTowersLayer, countiesLayer = null, counties = {};
+    var rchart, cellTowersLayer, countiesLayer = null,
+      counties = {};
 
     //load all datasets through d3 and store them in an array
     Promise.all([
@@ -130,19 +118,33 @@
         },
         pointToLayer: function(feature, latlng) {
           var id = 0;
-          if (feature.properties.LICENSEE == "AT&T MOBILITY WIRELESS OPERATIONS HOLDINGS, INC.") { id = 0; }
-          else if (feature.properties.LICENSEE == "EASTERN SUB-RSA LIMITED PARTNERSHIP")  { id = 1; }
-          else if (feature.properties.LICENSEE == "MCDANIEL CELLULAR TELEPHONE COMPANY")  { id = 2; }
-          else if (feature.properties.LICENSEE == "NEW CINGULAR WIRELESS PCS, LLC")  { id = 3; }
-          else if (feature.properties.LICENSEE == "OREGON RSA #2, INC.")  { id = 4; }
-          else if (feature.properties.LICENSEE == "RCC MINNESOTA, INC.")  { id = 5; }
-          else if (feature.properties.LICENSEE == "SEATTLE SMSA LIMITED PARTNERSHIP")  { id = 6; }
-          else if (feature.properties.LICENSEE == "USCOC OF RICHLAND, INC.")  { id = 7; }
-          else if (feature.properties.LICENSEE == "USCOC OF WASHINGTON-4, INC.")  { id = 8; }
-          else if (feature.properties.LICENSEE == "VERIZON WIRELESS (VAW), LLC")  { id = 9; }
-          else if (feature.properties.LICENSEE == "WASHINGTON RSA #8 LIMITED PARTNERSHIP")  { id = 10; }
-          else if (feature.properties.LICENSEE == "WESTERN SUB-RSA LIMITED PARTNERSHIP")  { id = 11; }
-          else { id = 12;} // "Yakima MSA limited partnership"
+          if (feature.properties.LICENSEE == "AT&T MOBILITY WIRELESS OPERATIONS HOLDINGS, INC.") {
+            id = 0;
+          } else if (feature.properties.LICENSEE == "EASTERN SUB-RSA LIMITED PARTNERSHIP") {
+            id = 1;
+          } else if (feature.properties.LICENSEE == "MCDANIEL CELLULAR TELEPHONE COMPANY") {
+            id = 2;
+          } else if (feature.properties.LICENSEE == "NEW CINGULAR WIRELESS PCS, LLC") {
+            id = 3;
+          } else if (feature.properties.LICENSEE == "OREGON RSA #2, INC.") {
+            id = 4;
+          } else if (feature.properties.LICENSEE == "RCC MINNESOTA, INC.") {
+            id = 5;
+          } else if (feature.properties.LICENSEE == "SEATTLE SMSA LIMITED PARTNERSHIP") {
+            id = 6;
+          } else if (feature.properties.LICENSEE == "USCOC OF RICHLAND, INC.") {
+            id = 7;
+          } else if (feature.properties.LICENSEE == "USCOC OF WASHINGTON-4, INC.") {
+            id = 8;
+          } else if (feature.properties.LICENSEE == "VERIZON WIRELESS (VAW), LLC") {
+            id = 9;
+          } else if (feature.properties.LICENSEE == "WASHINGTON RSA #8 LIMITED PARTNERSHIP") {
+            id = 10;
+          } else if (feature.properties.LICENSEE == "WESTERN SUB-RSA LIMITED PARTNERSHIP") {
+            id = 11;
+          } else {
+            id = 12;
+          } // "Yakima MSA limited partnership"
 
           return L.marker(latlng, {
             icon: L.divIcon({
@@ -157,25 +159,31 @@
       //accept an density(integer) as parameterr, based on the density of the tower
       //the function will return a color that will bed used as background color
       function setColor(density) {
-          var id = 0;
-          if (density > 61) { id = 4; }
-          else if (density > 46 && density <= 60) { id = 3; }
-          else if (density > 12 && density <= 45) { id = 2; }
-          else if (density > 3 &&  density <= 11) { id = 1; }
-          else  { id = 0; }
-          return colors[id];
+        var id = 0;
+        if (density > 61) {
+          id = 4;
+        } else if (density > 46 && density <= 60) {
+          id = 3;
+        } else if (density > 12 && density <= 45) {
+          id = 2;
+        } else if (density > 3 && density <= 11) {
+          id = 1;
+        } else {
+          id = 0;
+        }
+        return colors[id];
       }
 
       // 7. Set style function that sets fill color.md property equal to cell tower density
       function style(feature) {
-          return {
-              fillColor: setColor(feature.properties.CTNUM / (feature.properties.POP / 100000)),
-              fillOpacity: 0.4,
-              weight: 2,
-              opacity: 1,
-              color: '#b4b4b4',
-              dashArray: '4'
-          };
+        return {
+          fillColor: setColor(feature.properties.CTNUM / (feature.properties.POP / 100000)),
+          fillOpacity: 0.4,
+          weight: 2,
+          opacity: 1,
+          color: '#b4b4b4',
+          dashArray: '4'
+        };
       }
 
       //this function works when there's a click on the map
@@ -277,22 +285,18 @@
         },
         data: {
           x: 'county',
-          columns: [
-            x, y
-          ],
+          columns: [x, y],
           type: 'bar', //a bar chart
-
           onclick: function(d) {
             var countyName = x[d.x + 1];
             displayPlace(countyName);
-
             datasets[1].features.forEach(function(t) {
               if (t.properties.NAME == countyName) {
-                countybound = L.geoJSON(t)
-                 mymap.fitBounds(countybound.getBounds());
-                 maymap.setZoom(16);
+                countybound = L.geoJSON(t);
+                mymap.fitBounds(countybound.getBounds());
+                maymap.setZoom(12);
               }
-            }) ;
+            });
 
           }
         },
@@ -315,8 +319,6 @@
         },
         bindto: "#county-chart" //dispay in the element with "county-chart" id
       });
-
-
     });
   </script>
 </body>

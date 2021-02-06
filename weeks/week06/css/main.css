@@ -1,41 +1,29 @@
 html, body {
   width: 100vw;
   height: 100vh;
-  margin: 0;
-  background: #fff;
 }
 
 #map {
   position: relative;
   width: 100vw;
   height: 100vh;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0;
-  background: #fff;
   font-family: 'Titillium Web', sans-serif;
 }
 
-#mobiledeck {
-  display: none;
-  visibility: hidden;
-}
-
 #info {
+  z-index: 1000;
   position: absolute;
   width: 500px;
   top: 1%;
   bottom: 1%;
   left: .5%;
-  z-index: 1000;
+  padding: 40px 15px 900px 15px;
   background: #343a40;
   color: white;
   opacity: 1;
-  padding: 40px 15px 900px 15px;
 }
 
+/* social media icons */
 #info a {
   color: lightgray;
 }
@@ -45,6 +33,29 @@ html, body {
   opacity: 0.3;
 }
 
+#info h4 i {
+  font-size: 1.25e;
+  padding-right: 10px
+}
+
+#title {
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+}
+
+#title span {
+  font-size: 14px;
+  float: right;
+  margin-right: 10px;
+}
+
+.placename {
+  font-size: 40px;
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* card decks */
 .card-deck .card {
   background: #343a40;
   padding: 2px;
@@ -71,34 +82,19 @@ html, body {
   text-align: center;
 }
 
-#info h4 i {
-  font-size: 1.25e;
-  padding-right: 10px
-}
-
-#title {
-  font-size: 25px;
-  font-family: 'Oswald', sans-serif;
-}
-
-#title span {
-  font-size: 14px;
-  float: right;
-  margin-right: 10px;
-}
-
-
-.placename {
-  font-size: 40px;
-  position: relative;
-  font-family: 'Oswald', sans-serif;
-}
-
 #county-chart {
-  top: 50px;
-
+  top: 20px;
 }
 
+.state-count {
+  color: #dc3545;
+}
+
+.county-count {
+  color: orange;
+}
+
+/* chart */
 text {
   fill: gray
 }
@@ -111,29 +107,14 @@ text {
   stroke: gray;
 }
 
-.name {
-  background-color: black;
-  color: black
-}
-
-.value {
+.name, .value {
   background-color: black;
   color: black
 }
 
 #footer {
-  position: absolute;
-  bottom: 40px;
   margin-right: 10px;
   font-size: 13px;
-  color: lightgray;
   line-height: 150%;
-}
-
-.state-count {
-  color: #dc3545;
-}
-
-.county-count {
-  color: orange;
+  color: lightgray;
 }
