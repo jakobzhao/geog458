@@ -1,6 +1,10 @@
 # Project Mock-up
 
+**Learning Objectives**
 
+- Understand the design proces and the importance of mock-up;
+- Use Figma to make a mock-up for a web mapping application; and
+- export and present the mock-up.
 
 Mockups are essential for the design process at the early stage of a project as they give viewers an idea of how the final product will appear, and the implementation of interactive elements like buttons and icons also hints at the function. With a well-made sample in front of their eyes, stakeholders don’t have to rely so much on their imaginations. So, we are going to learn how to use one of the most famous browser-based UI and UX design applications Figma to create mockups for a project.
 
