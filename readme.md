@@ -100,7 +100,7 @@ This week you will be making your first web map of the quarter using the popular
 
 <!-- Feb 8 to 12 -->
 
--   **Lecture Notes:** [Create a smart dashboard](weeks/week06/), **Examples:** [COVID-19 Dashboard](https://hgis.uw.edu/virus)
+-   **Lecture Notes:** [Create a smart dashboard](weeks/week06/), Examples: [COVID-19 Dashboard](https://hgis.uw.edu/virus)
 
 -   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [History of the Urban Dashboard](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/), c) [3 Ways Data Dashboards Can Mislead You](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section), d) [Dynamic Charts](https://c3js.org/examples.html), and e) [extended readings](weeks/week06/readings.md).
 -   **Think Piece 6:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000376) `Due: Feb 11th, by 5:00pm`
@@ -134,7 +134,7 @@ During these two weeks, each group will focusing on their final projects and ess
 
 - **Project Mockup:** a) [Web mapping](https://www.figma.com/file/USVi3eiJjhaUoHEcl3ryiR/Damron-Seattle-mockup), b) [Smart Dashboard](https://www.figma.com/file/Dm30UzxUlOlw6XrjMaPh1c/Covid-Workers-Dash?node-id=0%3A1), and c) [GeoNarrative](https://www.figma.com/file/gxADc3Bjrrr1GtubAD6paz/CoPe-Geonarrative-1-Mockup).
 
-- **Final project templates:** a) web mapping template, b) smart dashboard, and c) GeoNarrative
+- **Final project templates:** a) [web mapping template](weeks/week04/starter), b) [smart dashboard](weeks/week06/), and c) GeoNarrative
 - **Data resources:**
   - Geospatial data: [Washington State Data](https://wagda.lib.washington.edu/data/geography/wa_state/), [UW Geospatial dataa Archives](https://guides.lib.uw.edu/research/gis)
   - Image and Video Stock: [Unsplash `image only`](https://unsplash.com/), [Pixabay](https://pixabay.com/), and [Pexels](https://www.pexels.com/)
