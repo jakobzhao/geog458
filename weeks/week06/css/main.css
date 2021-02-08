@@ -15,9 +15,8 @@ html, body, #map {
   padding: 40px 15px 900px 15px;
   background: #343a40;
   color: white;
-  opacity: 1;
-}
 
+}
 
 @media only screen and (max-width: 1026px) {
   #info, {
@@ -59,23 +58,23 @@ html, body, #map {
 }
 
 /* card decks */
-.card-title {
-    text-align: center;
+#desc {
+  text-align: center;
   color: lightgray;
-  font-size: 14px;
+  font-size: medium;
   font-weight: bold;
 }
 
 #county-count {
-  font-size: 40px;
+  margin:0;
   text-align: center;
-    color: orange;
+  color: orange;
+  font-size: 50px;
 }
 
 #county-chart {
   top: 20px;
 }
-
 
 /* bar chart */
 text {

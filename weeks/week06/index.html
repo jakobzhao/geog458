@@ -19,17 +19,20 @@
 </head>
 
 <body>
-
+  <!-- sidebar -->
   <div id="info">
+
     <div id="title">
       Cell Tower in Washington - Year 2021
       <span><a href="https://twitter.com/UW" target="_blank"><i class="fa fa-twitter-square"></i></a></span>
       <span><a href="https://github.com/jakobzhao/geog458" target="_blank"><i class="fa fa-github-square"></i></a></span>
     </div>
+
     <p id="placename">Washington</p>
+
     <div id="count" class="card">
-      <h5 class="card-title"> # Cell Tower in the selected county</h5>
-      <div id="county-count">341</div>
+      <h5 id="desc"> # Cell Tower in the selected county</h5>
+      <p id="county-count">341</p>
     </div>
 
     <div id="county-chart"></div>
@@ -44,12 +47,11 @@
     </div>
   </div>
 
+  <!-- mainwindow -->
   <div id="map"></div>
 
-
   <script>
-    //create the base map and set the initial view point
-    // 1. Create a map object.
+    // 1.Create a map object and set the initial view point
     var mymap = L.map('map', {
       center: [47.33, -121.93],
       zoom: 8,
@@ -59,42 +61,40 @@
       detectRetina: true
     });
 
+    // 2. move the zoom control to the top right corner.
     new L.Control.Zoom({
       position: 'topright'
     }).addTo(mymap);
 
 
-    // 2. Add a base map.
+    // 3. Add a base map.
     L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(mymap);
 
-
-
-    var bchart, countiesLayer = null,
+    // 4. Declare three global variables for the wa counties thematic layer, bar chart, and the organized wa data.
+    var countiesLayer = null,
+      bchart = null,
       counties = {};
 
-    //load all datasets through promise mechnism and store them in an array
-    Promise.all([
-      d3.json("assets/wacountydata.geojson")
-    ]).then(function(datasets) {
+    // 5. load all datasets through promise mechnism and store them in an array
+    Promise.all([d3.json("assets/wacountydata.geojson")]).then(function(datasets) {
 
-      // //assign id to icon that has different company name based on the id, the icon will assigned a color
-      // cellTowersLayer = L.geoJSON(datasets[0], {
-      //   onEachFeature: function(feature, layer) {
-      //     layer.bindPopup(feature.properties.company);
-      //   },
-      //   pointToLayer: function(feature, latlng) {
-      //     return L.marker(latlng, {
-      //       icon: L.divIcon({
-      //         className: 'fa fa-signal'
-      //       })
-      //     });
-      //   },
-      //   attribution: 'Cell Tower Data &copy; HIFLD | Washington counties &copy; Washington Data & Research | Base Map &copy; CartoDB | Made By Bo Zhao'
-      // }).addTo(mymap);
+      // 6. Map relevant operations
 
+      // 6.1 create a couties layer
+      countiesLayer = L.geoJSON(datasets[0], {
+        onEachFeature: onEachFeature
+      }).addTo(mymap);
 
-      //this function works when there's a click on the map
-      //will highlight the layer that the mouse clicked
+      // 6.2 add three events to the the layer “countiesLayer”.
+      function onEachFeature(feature, layer) {
+        layer.on({
+          mouseover: highlightFeature,
+          click: clickFeature,
+          mouseout: resetHighlight
+        });
+      }
+
+      // 6.3 this function works when the mouse hovers over on a map feature.
       function highlightFeature(e) {
         // e indicates the current event
         var feature = e.target; //the target capture the object which the event associates with
@@ -107,52 +107,35 @@
         });
       }
 
+      // 6.4 this function executes when the mouse clicks on a map feature.
       function clickFeature(e) {
         L.DomEvent.stopPropagation(e);
-        displayPlace(e.target.feature.properties.NAME)
+        $("#placename").text(e.target.feature.properties.NAME + " County");
+        $("#county-count").text(counties[e.target.feature.properties.NAME]);
       }
 
-      // 3.2.3 reset the hightlighted feature when the mouse is out of its region.
+      // 6.5 reset the hightlighted feature when the mouse is out of its region.
       function resetHighlight(e) {
         countiesLayer.resetStyle(e.target);
       }
 
-      // 3.3 add these event the layer obejct.
-      function onEachFeature(feature, layer) {
-        layer.on({
-          mouseover: highlightFeature,
-          click: clickFeature,
-          mouseout: resetHighlight
-        });
-      }
-
-      countiesLayer = L.geoJSON(datasets[0], {
-        onEachFeature: onEachFeature
-      }).addTo(mymap);
-
-      //display the onclick feature's name to the tag with class 'placename' and 'county-count'on dashboard
-      function displayPlace(name) {
-        $("#placename").text(name + " County");
-        $("#county-count").text(counties[name]);
-      }
-
-
+      // 6.6 bind the onMapClick function to the mymap object.
       mymap.on('click', onMapClick);
-
-      //while click on the map, it will set the placename and county-count to defaulr 'washington 341'
+      // when click on any place on the map expect the counties layer, the text on the sidebar will be reset to the total number of WA.
       function onMapClick(e) {
         $("#placename").text("Washington");
         $("#county-count").text("341");
       }
 
-      //add the county name as key and the number of cell tower as values
-      //in a dictionary declared before
+      // 7 Chart relevant operations
+
+      // 7.1 generate the declared dictionary object "counties".
+      // add the county name as key and the number of cell tower as values in a dictionary declared before
       datasets[0].features.forEach(function(d) {
         counties[d.properties.NAME] = d.properties.CTNUM;
       })
 
-
-      // this function take a dictionary, return a dictionary that sorted by the number of cell towers.
+      // 7.2 this function take a dictionary, return a dictionary that sorted by the number of cell towers.
       function sortJsObject(obj) {
         items = Object.keys(obj).map(function(key) {
           return [key, obj[key]];
@@ -168,22 +151,24 @@
         })
         return (sorted_obj)
       }
-
+      // 7.3 execute the sortJsObject function
       counties_sorted = sortJsObject(counties);
 
-      //store the key(county name) of the dictionary into an array
+      // 7.4 slicing the arrays
+      // only keep the top 10 values, and push “county” to the first of the array.
       x = Object.keys(counties_sorted).slice(0, 10);
       x.reverse();
       x.push("county");
       x.reverse();
 
-      //store the value(count of cell tower) of the dictionary into an array
+      // only keep the top 10 values, and push “#” to the first of the array.
       y = Object.values(counties_sorted).slice(0, 10);
       y.reverse();
       y.push("#");
       y.reverse();
 
-      //generate the chart
+
+      // 7.5 generate the chart
       bchart = c3.generate({
         size: {
           height: 350,
@@ -191,12 +176,19 @@
         },
         data: {
           x: 'county',
-          columns: [x, y],
+          columns: [x, y], //input the x - sorted county number, y - the corresponding # of cell towers.
           type: 'bar', //a bar chart
-          onclick: function(d) {
+          onclick: function(d) { // update the map and sidebar once the bar is clicked.
             var countyName = x[d.x + 1];
-            displayPlace(countyName);
-            datasets[1].features.forEach(function(t) {
+
+
+            //display the onclick feature's name to the tag with id 'placename' and 'county-count'on dashboard
+
+            $("#placename").text(countyName + " County");
+            $("#county-count").text(counties[countyName]);
+
+
+            datasets[0].features.forEach(function(t) {
               if (t.properties.NAME == countyName) {
                 countybound = L.geoJSON(t);
                 mymap.fitBounds(countybound.getBounds());
@@ -222,7 +214,7 @@
         legend: {
           show: false
         },
-        bindto: "#county-chart" //dispay in the element with "county-chart" id
+        bindto: "#county-chart" //bind the chart to the place holder element "county-chart".
       });
     });
   </script>
