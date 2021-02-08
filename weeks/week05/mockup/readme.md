@@ -1,8 +1,10 @@
 # Project Mock-up
 
-## 1. Introduction
 
-Mockups are essential for the design process at the early stage of a project as they give viewers an idea of how the final product will appear, and the implementation of interactive elements like buttons and icons also hints at the function. With a well-made sample in front of their eyes, stakeholders don’t have to rely so much on their imaginations. So, in this lab, we are going to learn how to use one of the most famous browser-based UI and UX design applications Figma to create mockups for a project.
+
+Mockups are essential for the design process at the early stage of a project as they give viewers an idea of how the final product will appear, and the implementation of interactive elements like buttons and icons also hints at the function. With a well-made sample in front of their eyes, stakeholders don’t have to rely so much on their imaginations. So, we are going to learn how to use one of the most famous browser-based UI and UX design applications Figma to create mockups for a project.
+
+## 1. Introduction
 
 The project we are designing the mockup for is called [**Damron Guide: Seattle**](https://hgis.uw.edu/damron/seattle.html), it is a website utilizing online maps to visually explore the [Damron’s Travel Guide](https://damron.com/about-us) which specifies the spatial pattern and temporal changes of the LGBT related places. Especially, The evolving space of LGBTQ life in Seattle in the past five decades. For more information, you could visit this web site.
 
@@ -497,7 +499,7 @@ You could also create mockups for other devices with different screen sizes in F
 
 4. Everything should be the same afterwards, you just need to adjust the size for each object to make them fit in the page.
 
-## Present and export
+## 4. Present and export
 
 To present the mockups we just created:
 
