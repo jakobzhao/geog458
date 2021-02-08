@@ -1,4 +1,4 @@
-# Dashboard
+# Readings
 ### Required:
 
 [1] W3Schools (201X) Bootstrap 4 Tutorial, retrieved December 20, 2016 from http://www.w3schools.com/bootstrap4/default.asp
@@ -35,7 +35,7 @@
 
 - Bootstrap 4 Themes
 
-[2] C3.js get-started and examples https://c3js.org/examples.html and https://c3js.org/gettingstarted.html
+[2] C3.js get-started and examples  and https://c3js.org/gettingstarted.html
 
 ### Optional:
 

@@ -413,3 +413,11 @@ text {
   color: black
 }
 ```
+
+## 5. Summary
+
+This lecture has shown how to make a basic dashboard. If you are interested in more applications, please refer to the examples below.
+
+- [the water caculator](https://jakobzhao.github.io/twca/)
+- [the covid-19 dashbaord](https://hgis.uw.edu/virus)
+- [the dashbard illustrating the covid-19 risk](https://hgis.uw.edu/covid19-workers)
