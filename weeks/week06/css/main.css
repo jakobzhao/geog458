@@ -40,51 +40,42 @@ html, body, #map {
   padding-right: 10px
 }
 
+
 #title {
   font-size: 25px;
   font-family: 'Oswald', sans-serif;
 }
 
+/* social media icons */
 #title span {
   font-size: 14px;
   float: right;
   margin-right: 10px;
 }
 
-.placename {
+#placename {
   font-size: 40px;
-  position: relative;
   font-family: 'Oswald', sans-serif;
 }
 
 /* card decks */
-
-.card-body {
-  text-align: center;
-}
-
 .card-title {
+    text-align: center;
   color: lightgray;
   font-size: 14px;
   font-weight: bold;
 }
 
-.card-text {
+#county-count {
   font-size: 40px;
   text-align: center;
+    color: orange;
 }
 
 #county-chart {
   top: 20px;
 }
 
-.state-count {
-  color: #dc3545;
-}
-
-.county-count {
-  color: orange;
-}
 
 /* bar chart */
 text {
