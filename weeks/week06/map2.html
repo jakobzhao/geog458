@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Cell Towers in Washington (2021)</title>
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="css/leaflet.css" />
+  <link href="css/c3.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web|Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- javascript libraries -->
+  <script src="js/d3.js"></script>
+  <script src="js/c3.min.js"></script>
+  <script src="js/leaflet.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+  <!-- sidebar -->
+  <div id="info">
+
+    <div id="title">
+      Cell Tower in Washington - Year 2021
+      <span><a href="https://twitter.com/UW" target="_blank"><i class="fa fa-twitter-square"></i></a></span>
+      <span><a href="https://github.com/jakobzhao/geog458" target="_blank"><i class="fa fa-github-square"></i></a></span>
+    </div>
+
+    <p id="placename">Washington</p>
+
+    <div id="count" class="card">
+      <h5 id="desc"> # Cell Tower in the selected county</h5>
+      <p id="county-count">341</p>
+    </div>
+
+    <div id="county-chart"></div>
+
+    <div id="footer">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+      in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+      dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+  </div>
+
+  <!-- mainwindow -->
+  <div id="map"></div>
+
+  <script>
+    // 1.Create a map object and set the initial view point
+    var mymap = L.map('map', {
+      center: [47.33, -121.93],
+      zoom: 8,
+      maxZoom: 10,
+      minZoom: 3,
+      zoomControl: false,
+      detectRetina: true
+    });
+
+    // 2. move the zoom control to the top right corner.
+    new L.Control.Zoom({
+      position: 'topright'
+    }).addTo(mymap);
+
+
+    // 3. Add a base map.
+    L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(mymap);
+
+  </script>
+</body>
+
+</html>

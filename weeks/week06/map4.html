@@ -111,7 +111,7 @@
       function clickFeature(e) {
         L.DomEvent.stopPropagation(e);
         $("#placename").text(e.target.feature.properties.NAME + " County");
-        ("#county-count").text(e.target.feature.properties.CTNUM);
+        $("#county-count").text(e.target.feature.properties.CTNUM);
       }
 
       // 6.5 reset the hightlighted feature when the mouse is out of its region.
@@ -127,95 +127,7 @@
         $("#county-count").text("341");
       }
 
-      // 7 Chart relevant operations
 
-      // 7.1 generate the declared dictionary object "counties".
-      // add the county name as key and the number of cell tower as values in a dictionary declared before
-      datasets[0].features.forEach(function(d) {
-        counties[d.properties.NAME] = d.properties.CTNUM;
-      })
-
-      // 7.2 this function take a dictionary, return a dictionary that sorted by the number of cell towers.
-      function sortJsObject(obj) {
-        items = Object.keys(obj).map(function(key) {
-          return [key, obj[key]];
-        });
-        items.sort(function(first, second) {
-          return second[1] - first[1];
-        });
-        sorted_obj = {}
-        $.each(items, function(k, v) {
-          use_key = v[0]
-          use_value = v[1]
-          sorted_obj[use_key] = use_value
-        })
-        return (sorted_obj)
-      }
-      // 7.3 execute the sortJsObject function
-      counties_sorted = sortJsObject(counties);
-
-      // 7.4 slicing the arrays
-      // only keep the top 10 values, and push “county” to the first of the array.
-      x = Object.keys(counties_sorted).slice(0, 10);
-      x.reverse();
-      x.push("county");
-      x.reverse();
-
-      // only keep the top 10 values, and push “#” to the first of the array.
-      y = Object.values(counties_sorted).slice(0, 10);
-      y.reverse();
-      y.push("#");
-      y.reverse();
-
-
-      // 7.5 generate the chart
-      bchart = c3.generate({
-        size: {
-          height: 350,
-          width: 460
-        },
-        data: {
-          x: 'county',
-          columns: [x, y], //input the x - sorted county number, y - the corresponding # of cell towers.
-          type: 'bar', //a bar chart
-          onclick: function(d) { // update the map and sidebar once the bar is clicked.
-            var countyName = x[d.x + 1];
-
-
-            //display the onclick feature's name to the tag with id 'placename' and 'county-count'on dashboard
-
-            $("#placename").text(countyName + " County");
-            $("#county-count").text(counties[countyName]);
-
-
-            datasets[0].features.forEach(function(t) {
-              if (t.properties.NAME == countyName) {
-                countybound = L.geoJSON(t);
-                mymap.fitBounds(countybound.getBounds());
-                maymap.setZoom(12);
-              }
-            });
-          }
-        },
-        axis: {
-          x: { //county
-            type: 'category',
-            tick: {
-              rotate: -60,
-              multiline: false
-            }
-          },
-          y: { //count
-            tick: {
-              values: [5, 10, 15, 20, 25, 30]
-            },
-          }
-        },
-        legend: {
-          show: false
-        },
-        bindto: "#county-chart" //bind the chart to the place holder element "county-chart".
-      });
     });
   </script>
 </body>
