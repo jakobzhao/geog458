@@ -1,13 +1,8 @@
-html, body {
+html, body, #map {
   width: 100vw;
   height: 100vh;
-}
-
-#map {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  font-family: 'Titillium Web', sans-serif;
+  margin: 0;
+  font-family: 'Titillium Web', serif;
 }
 
 #info {
@@ -21,6 +16,13 @@ html, body {
   background: #343a40;
   color: white;
   opacity: 1;
+}
+
+
+@media only screen and (max-width: 1026px) {
+  #info, {
+    visibility: hidden !important;
+  }
 }
 
 /* social media icons */
@@ -56,24 +58,14 @@ html, body {
 }
 
 /* card decks */
-.card-deck .card {
-  background: #343a40;
-  padding: 2px;
-  margin-right: 0px;
-  margin-left: 0px;
-}
 
 .card-body {
-  padding: 0;
-  margin: 0;
   text-align: center;
-  flex: none;
 }
 
 .card-title {
   color: lightgray;
   font-size: 14px;
-  margin-bottom: 0rem;
   font-weight: bold;
 }
 
@@ -94,7 +86,7 @@ html, body {
   color: orange;
 }
 
-/* chart */
+/* bar chart */
 text {
   fill: gray
 }
@@ -113,6 +105,7 @@ text {
 }
 
 #footer {
+  margin-top: 50px;
   margin-right: 10px;
   font-size: 13px;
   line-height: 150%;
