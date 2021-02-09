@@ -111,7 +111,7 @@
       function clickFeature(e) {
         L.DomEvent.stopPropagation(e);
         $("#placename").text(e.target.feature.properties.NAME + " County");
-        ("#county-count").text(e.target.feature.properties.CTNUM);
+        $("#county-count").text(e.target.feature.properties.CTNUM);
       }
 
       // 6.5 reset the hightlighted feature when the mouse is out of its region.
