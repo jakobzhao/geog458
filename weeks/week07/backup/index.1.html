@@ -134,6 +134,16 @@
 
     }
 
+
+    Promise.all([
+      d3.json("assets/wacountydata.geojson"),
+      d3.json("assets/celltowers.geojson")
+    ]).then(function(datasets) {
+      polygonLayer = L.geoJSON(datasets[0]);
+      pointLayer = L.geoJSON(datasets[1]);
+    });
+
+
     // scrollama event handlers
     function handleStepEnter(response) {
       var index = response.index;
@@ -182,26 +192,14 @@
       window.scrollTo(0, 0);
       window.addEventListener("resize", handleResize);
 
-
-      Promise.all([
-        d3.json("assets/wacountydata.geojson"),
-        d3.json("assets/celltowers.geojson")
-      ]).then(function(datasets) {
-        polygonLayer = L.geoJSON(datasets[0]);
-        pointLayer = L.geoJSON(datasets[1]);
-
-
-        scroller
-          .setup({
-            step: "#scrolly article .step",
-            offset: 0.33,
-            debug: true
-          })
-          .onStepEnter(handleStepEnter)
-          .onStepExit(handleStepExit);
-
-
-      });
+      scroller
+        .setup({
+          step: "#scrolly article .step",
+          offset: 0.33,
+          debug: true
+        })
+        .onStepEnter(handleStepEnter)
+        .onStepExit(handleStepExit);
 
 
 
@@ -228,6 +226,7 @@
       mymap.addLayer(lightBasemap);
 
     });
+
   </script>
 </body>
 
