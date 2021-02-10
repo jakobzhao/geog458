@@ -1,45 +1,277 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>WebGL</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Leaflet -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.1/mapbox-gl.css" rel='stylesheet' />
 
-    <style>
-      html, body, #map {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-      }
-    </style>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.1/mapbox-gl.js"></script>
-    <!-- <script src="https://rawgit.com/mapbox/mapbox-gl-leaflet/master/leaflet-mapbox-gl.js"></script> -->
-<script src="https://cdn.maptiler.com/mapbox-gl-leaflet/latest/leaflet-mapbox-gl.js"></script>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Scrollama: Sticky Overlay Example</title>
+  <meta name="description" content="Scrollama: Sticky Overlay Example" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- <link href="https://cesium.com/downloads/cesiumjs/releases/1.72/Build/Cesium/Widgets/widgets.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+  <style>
+      html, body, #map { width: 100%; height: 100%; margin: 0; background: #fff; }
+  </style>
+
+  <link rel="stylesheet" href="css/scroll.css" />
+
+  <style>
+
+
+    #scrolly {
+      position: relative;
+      background-color: #f3f3f3;
+      /* padding: 1rem; */
+    }
+
+    article {
+      position: relative;
+      padding: 0;
+      max-width: 30rem;
+      margin: 0 auto;
+    }
+
+
+    #storyboard {
+      position: -webkit-sticky;
+      position: sticky;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      background-color: #8a8a8a;
+      z-index: 0;
+    }
+
+    #storyboard p {
+      text-align: center;
+      padding: 1rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -moz-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      font-size: 8rem;
+      font-weight: 900;
+      color: #fff;
+    }
+
+    .step {
+      margin: 0 auto 2rem auto;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .step:last-child {
+      margin-bottom: 0;
+    }
+
+    .step.is-active p {
+      background-color: goldenrod;
+      color: #3b3b3b;
+    }
+
+    .step p {
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.5rem;
+      background-color: #3b3b3b;
+    }
+  </style>
+  <script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
+  <!-- <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script> -->
+  <!-- <script src="js/stickyfill.min.js"></script> -->
+  <script src="https://unpkg.com/intersection-observer"></script>
+  <script src="https://unpkg.com/scrollama"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.3.4/chroma.min.js"></script>
+  <!-- <script src="https://cesium.com/downloads/cesiumjs/releases/1.72/Build/Cesium/Cesium.js"></script> -->
 </head>
 
 <body>
-<div id="map"></div>
+  <main>
+    <section id="intro">
+      <h1 class="intro__hed">project title</h1>
+      <p class="intro__dek">
+        subtitle
+      </p>
+    </section>
 
-<script>
-var map = L.map('map').setView([38.912753, -77.032194], 15);
+    <section id="scrolly">
+      <div id="storyboard">
+        <div id="map" class="fullWindow"></div>
+        <p>0</p>
+      </div>
 
-L.marker([38.912753, -77.032194])
-    .bindPopup("Hello <b>Leaflet GL</b>!<br>Whoa, it works!")
-    .addTo(map)
-    .openPopup();
+      <article>
+        <div class="step" data-step="1">
+          <p>STEP 1</p>
+        </div>
+        <div class="step" data-step="2">
+          <p>STEP 2</p>
+        </div>
+        <div class="step" data-step="3">
+          <p>STEP 3</p>
+        </div>
+        <div class="step" data-step="4">
+          <p>STEP 4</p>
+        </div>
+      </article>
+    </section>
 
-var gl = L.mapboxGL({
-    accessToken: 'no-token',
-    // get your own MapTiler token at https://cloud.maptiler.com/ or use MapBox style
-    // style: 'https://api.maptiler.com/maps/topo/style.json?key=gbetYLSD5vR8MdtZ88AQ' //topographique, pastel, outdoor, voyager, streets, hybrid, toner, topo, bright, positron, darkmatter
-     style: 'https://api.maptiler.com/maps/pastel/style.json?key=gbetYLSD5vR8MdtZ88AQ'
-    // style: 'https://openmaptiles.github.io/osm-bright-gl-style/style-cdn.json'
-}).addTo(map);
+    <section id="outro">footer</section>
+  </main>
 
-</script>
+  <script>
+    // using d3 for convenience
+    var main = d3.select("main");
+    var scrolly = main.select("#scrolly");
+    var storyboard = scrolly.select("#storyboard");
+    var article = scrolly.select("article");
+    var step = article.selectAll(".step");
+
+    // initialize the scrollama
+    var scroller = scrollama();
+
+
+    // initialize the cesium globe
+
+    var viewer = null;
+
+    // generic window resize listener event
+    function handleResize() {
+      // 1. update height of step elements
+      var stepH = Math.floor(window.innerHeight * 0.75);
+      step.style("height", stepH + "px");
+
+      var figureHeight = window.innerHeight;
+      var figureMarginTop = (window.innerHeight - figureHeight) / 2;
+
+      storyboard
+        .style("height", figureHeight + "px")
+        .style("top", figureMarginTop + "px");
+
+      // 3. tell scrollama to update new element dimensions
+      scroller.resize();
+    }
+
+
+    //spinGlobe
+    var lastNow = Date.now();
+    rotationSpeed = 0.05;
+
+    function spinGlobe(scene, time) {
+      var now = Date.now();
+      var spinRate = rotationSpeed; //0.08;
+      var delta = (now - lastNow) / 1000;
+      lastNow = now;
+      viewer.scene.camera.rotate(Cesium.Cartesian3.UNIT_Z, spinRate * delta);
+    };
+    ////Spin Globe Ends///
+
+    // scrollama event handlers
+    function handleStepEnter(response) {
+      console.log(response);
+      // response = { element, direction, index }
+
+      // add color to current step only
+      step.classed("is-active", function(d, i) {
+        return i === response.index;
+      });
+
+      // update graphic based on step
+      storyboard.select("p").text(response.index + 1);
+
+
+
+      if (response.index == 0) {
+
+        // viewer.scene.postRender.removeEventListener(spinGlobe);
+      }
+
+      if (response.index == 1) {
+
+        // spinGlobe(viewer, 0.05);
+        // spinGlobe(viewer, 0.0);
+        var center = Cesium.Cartesian3.fromDegrees(-82.5, 35.3, 500000); //lat, lon, height
+        //  viewer.camera.flyTo(center, new Cesium.Cartesian3(0.0, 0.0, 4200000.0));
+        // alert("success");
+        //cesium camera fly to
+        viewer.camera.flyTo({
+          destination: center,
+          orientation: {
+            heading: Cesium.Math.toRadians(0),
+            pitch: Cesium.Math.toRadians(-45),
+            roll: Cesium.Math.toRadians(0)
+          },
+          complete: function() {}
+        });
+      }
+    }
+
+    function handleStepExit(response) {
+
+      if (response.index == 1) {
+        viewer.scene.camera.flyHome();
+
+      }
+
+    }
+
+    function setupStickyfill() {
+      d3.selectAll(".sticky").each(function() {
+        Stickyfill.add(this);
+      });
+    }
+
+    function init() {
+      setupStickyfill();
+
+      // 1. force a resize on load to ensure proper dimensions are sent to scrollama
+      handleResize();
+
+      // 2. setup the scroller passing options
+      // 		this will also initialize trigger observations
+      // 3. bind scrollama event handlers (this can be chained like below)
+      scroller
+        .setup({
+          step: "#scrolly article .step",
+          offset: 0.33,
+          debug: true
+        })
+        .onStepEnter(handleStepEnter)
+        .onStepExit(handleStepExit);
+
+      // setup resize event
+      window.addEventListener("resize", handleResize);
+
+
+          // 1. Create a map object.
+          var mymap = L.map('map', {
+              center: [47.7511, -120.7401],
+              zoom: 7,
+              maxZoom: 10,
+              minZoom: 3,
+              detectRetina: true // detect whether the sceen is high resolution or not.
+          });
+
+          // 2. Add a base map.
+          L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(mymap);
+
+      // hide the credit banner, however you should credit the map libraries or data somewhere else.
+      document.getElementsByClassName("cesium-widget-credits")[0].style.visibility = "hidden";
+
+    }
+
+    // kick things off
+    init();
+  </script>
 </body>
+
 </html>
