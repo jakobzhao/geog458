@@ -19,7 +19,15 @@ html, body, #map {
 }
 
 @media only screen and (max-width: 1026px) {
-  #info, {
+  #info {
+    width: 0;
+    height: 0;
+    visibility: hidden !important;
+  }
+
+  #info * {
+    width: 0;
+    height: 0;
     visibility: hidden !important;
   }
 }
