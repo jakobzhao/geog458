@@ -285,7 +285,7 @@ As shown by the code, the tiles are loaded from a relative path `assets/tiles` w
 
   - The third tile set should be a layer group that is composed of a thematic layer (from the second tile set) and a basemap from the first tile set, as the map tiles shown in Section 4. (5 POINTS).
 
-  - The fourth tile set should be a map layer designed over Mapbox. It could a map embodying a map theme relavent to LGBTQ+, UW, Femenist Geography. Please try to use the color, icon, and label to realize the theme.  (5 POINTS).
+  - The fourth tile set should be a map layer designed over Mapbox. It could a map embodying a map theme relavent to you, this could be Black History month, LGBTQ+ Pride, UW, Nature/Environment, etc. Please try to use the color, icon, and label to realize the theme.  (5 POINTS).
 
 -  After the map tiles are generated, you are expected to create an index.html to visualize a leaflet map to visualze the four tile map sets.
     -  create any necessary web page elments, such as page tile, scale bar, attribution, zoom control, map description, etc. (5 POINTS)
