@@ -5,7 +5,41 @@ main,
   width: 100%;
   height: 100%;
   margin: 0;
-  /* background: #fff; */
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h1 {
+  /* margin-bottom: 0rem; */
+  font-size: xxx-large;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 0 0 6px rgba(0, 0, 0, .95);
+}
+
+h2 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
+  background-color: #3b3b3b;
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+}
+
+h5 {
+  font-size: x-large;
+  text-align: center;
+  /* padding: 1rem; */
+  /* font-size: 1.5rem; */
+}
+
+p {
+  line-height: 1.5;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 #scrolly {
@@ -26,19 +60,19 @@ main,
   /*pointer-events: none;*/
 }
 
-#landingPage {
+#cover {
   width: 100%;
   height: 100%;
   background: #fff;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-#introText {
+#introPanel {
   position: relative;
   top: 32%;
   left: 50%;
   transform: translateX(-50%) translateY(-32%);
-  width: 50vw;
+  width: 50%;
   color: #fff;
   padding: 2rem;
   border-radius: 5px;
@@ -46,29 +80,17 @@ main,
   text-shadow: 0 0 6px rgba(0, 0, 0, .95);
 }
 
-#introText p {
-  margin-top: 1rem;
+#introPanel .logos {
+  text-align: right;
 }
 
-h1 {
-  margin-bottom: 2rem;
-  /* text-shadow: 0 0 6px rgba(0, 0, 0, .95); */
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-p {
-  margin-block-start: 0 !important;
-  margin-block-end: 0 !important;
-}
-
-.logo a {
+#introPanel .logos a {
   margin-right: 0.5rem;
+   vertical-align: top;
+
 }
 
-.logo span {
+#introPanel .logos span {
   position: relative;
   bottom: -0.5rem;
   color: #fff;
@@ -85,14 +107,14 @@ p {
 .step {
   position: relative;
   max-width: 30rem;
-  margin: 0 auto 4rem auto;
+  margin: 0 auto 0 auto;
   padding: 0;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
 .step:first-child {
-  /* margin-top: -66%; */
+  margin-top: -30%;
 }
 
 .step:last-child {
@@ -100,30 +122,26 @@ p {
   margin-bottom: 0;
 }
 
-.step.is-active p {
+.step.is-active h2 {
   background-color: goldenrod;
   color: #3b3b3b;
 }
 
-.step p {
-  text-align: center;
-  padding: 1rem;
-  font-size: 1.5rem;
-  background-color: #3b3b3b;
-}
 
 #footer {
-  background-color: #3b3b3b;
+  width: 100%;
+  height: 30vh;
+  background: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* [data-step="2"] {
-  background: lightblue no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+[data-step="0"] {
+  margin-left: 4rem;
+}
 
-} */
+[data-step="1"] {
+  margin-left: 4rem;
+}
 
 [data-step="3"] {
   background: url("../img/test.jpg") no-repeat center center;
@@ -131,5 +149,5 @@ p {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin-bottom: 0;
+  height: 100vh !important;
 }

@@ -11,32 +11,31 @@
   <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.1/mapbox-gl.css" rel='stylesheet' />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
   <link rel="stylesheet" href="css/scroll.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+
+
   <script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
-  <!-- <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script> -->
-  <!-- <script src="js/stickyfill.min.js"></script> -->
   <script src="https://unpkg.com/intersection-observer"></script>
   <script src="https://unpkg.com/scrollama"></script>
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.3.4/chroma.min.js"></script>
   <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.1/mapbox-gl.js"></script>
-  <!-- <script src="https://rawgit.com/mapbox/mapbox-gl-leaflet/master/leaflet-mapbox-gl.js"></script> -->
   <script src="https://cdn.maptiler.com/mapbox-gl-leaflet/latest/leaflet-mapbox-gl.js"></script>
 </head>
 
 <body>
   <main>
-    <section id="landingPage">
-      <p>STEP 1</p>
-
+    <section id="cover">
       <video class="fullscreen canvas-center" playsinline="" autoplay="" muted="" loop="">
         <source src="assets/intro.mp4" type="video/mp4">
       </video>
-
-      <div id="introText">
-        <h1 class="text-center">The History of Cascadia Subduction Zone Science</h1>
-        <h5 class="text-center"><i>this line is a place holder for subtitle</i></h5>
-        <p style="text-align:justify">This section shows where active research is happening, and on what topics to communicate on-going nature of scientific learning. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+      <div id="introPanel">
+        <h1>A Geo-Narrative Template</h1>
+        <h5>This line is a place holder for subtitle</h5>
+        <p>This section shows where active research is happening, and on what topics to communicate on-going nature of scientific learning. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
           ligula
           eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
           fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
@@ -49,10 +48,9 @@
           amet
           nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
 
-        <div class="logo text-right">
-          <span> This project was awarded from National Science Foundation.</span>
+        <div class="logos">
+          <span> This line is a place holder for copyright note or other footnotes.</span>
           <a target="_blank" href="https://www.uw.edu"> <img src="img/uw_logo.png" width="50px"></a>
-          <a target="_blank" href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1940024"> <img src="img/nsf_logo.png" width="50px"></a>
         </div>
       </div>
 
@@ -64,23 +62,25 @@
 
       <article>
         <div class="step " data-step="0">
-          <p>STEP 1</p>
+          <h2>STEP 1</h2>
         </div>
 
         <div class="step" data-step="1">
-          <p>STEP 2</p>
+          <h2>STEP 2</h2>
         </div>
         <div class="step fullscreen" data-step="2">
-          <p>STEP 3</p>
+          <h2>STEP 3</h2>
 
         </div>
         <div class="step fullscreen" data-step="3">
-          <p>STEP 4</p>
+          <h2>STEP 4</h2>
         </div>
       </article>
     </section>
 
-    <section id="footer">footer</section>
+    <section id="footer">
+      <h2>FOOTER</h2>
+    </section>
   </main>
 
   <script>
@@ -91,10 +91,11 @@
     var article = scrolly.select("article");
     var step = article.selectAll(".step");
     var mymap = null;
+    var polygonLayer = null;
+    var pointLayer = null;
 
     // initialize the scrollama
     var scroller = scrollama();
-
 
     // generic window resize listener event
     function handleResize() {
@@ -114,80 +115,56 @@
     }
 
 
+    Promise.all([
+      d3.json("assets/wacountydata.geojson"),
+      d3.json("assets/celltowers.geojson")
+    ]).then(function(datasets) {
+      polygonLayer = L.geoJSON(datasets[0]);
+      pointLayer = L.geoJSON(datasets[1]);
+    });
+
+
     // scrollama event handlers
     function handleStepEnter(response) {
-      console.log(response);
+      var index = response.index;
 
-      // alert("enter: " + response.index);
-
-
-      // add color to current step only
-      step.classed("is-active", function(d, i) {
-
-        return i === response.index;
-      });
-
-      // update graphic based on step
-      // storyboard.select("p").text(response.index + 1);
-
-
-      if (response.index == 0) {
-        // $(".step[data-step=" + response.index + "]").css("visibility", "visible");
-        mymap.flyTo(new L.LatLng(40.737, -73.923), 8);
-
-
+      if (index === 0) {
+        mymap.setView(new L.LatLng(47.33, -121.93), 8);
+        mymap.addLayer(polygonLayer);
       }
-
-      if (response.index == 3) {
+      else if(index === 1) {
+        mymap.addLayer(pointLayer);
+      }
+      else if(index === 3) {
         mymap.flyTo(new L.LatLng(50.737, -73.923), 7);
-        $("#landingPage").css("visibility", "hidden");
-
-        // step.style("position", "fixed");
-        // step.style("top", "0");
-        // step.style("right", "0");
-        // step.style("left", "0");
-        // step.style("height", "100px");
-        // step.style("height", "100vh");
-        // step.style("width", "100vw");
-
-
+        $("#cover").css("visibility", "hidden");
       }
+
     }
 
     function handleStepExit(response) {
+      var index = response.index
 
-      // alert("exit: " + response.index);
-
-
-      if (response.index == 0) {
-        mymap.flyTo(new L.LatLng(30.737, -83.923), 6);
-        // $(".step[data-step=" + response.index + "]").css("visibility", "hidden");
+      if (index === 0) {
+        mymap.removeLayer(polygonLayer);
       }
-      if (response.index == 3) {
-        $("#landingPage").css("visibility", "visible");
+      else if(index === 1) {
+        mymap.removeLayer(pointLayer);
       }
+      else if(index === 3) {
+        mymap.flyTo(new L.LatLng(50.737, -73.923), 7);
+        $("#cover").css("visibility", "visible");
+      }
+
 
     }
 
-    // function setupStickyfill() {
-    //   d3.selectAll(".sticky").each(function() {
-    //     Stickyfill.add(this);
-    //   });
-    // }
-
-    function init() {
+    $(document).ready(function() {
       // setupStickyfill();
-      // $(".step").css("visibility", "hidden");
 
       // 1. force a resize on load to ensure proper dimensions are sent to scrollama
       handleResize();
-
-      // 2. setup the scroller passing options
-      // 		this will also initialize trigger observations
-      // 3. bind scrollama event handlers (this can be chained like below)
-
-
-
+      window.addEventListener("resize", handleResize);
 
       scroller
         .setup({
@@ -199,12 +176,11 @@
         .onStepExit(handleStepExit);
 
       // setup resize event
-      window.addEventListener("resize", handleResize);
 
 
       // 1. Create a map object.
       mymap = L.map('map', {
-        center: [47.7511, -120.7401],
+        center: [47.33, -121.93],
         zoom: 7,
         scrollWheelZoom: false,
         zoomControl: false,
@@ -213,23 +189,17 @@
         detectRetina: true // detect whether the sceen is high resolution or not.
       });
 
-      var gl = L.mapboxGL({
-        // accessToken: 'no-token',
-        // get your own MapTiler token at https://cloud.maptiler.com/ or use MapBox style
-        // style: 'https://api.maptiler.com/maps/topo/style.json?key=gbetYLSD5vR8MdtZ88AQ' //topographique, pastel, outdoor, voyager, streets, hybrid, toner, topo, bright, positron, darkmatter
-        style: 'https://api.maptiler.com/maps/voyager/style.json?key=gbetYLSD5vR8MdtZ88AQ'
-        // style: 'https://openmaptiles.github.io/osm-bright-gl-style/style-cdn.json'
-      }).addTo(mymap);
+      // var gl = L.mapboxGL({
+      //   // get your own MapTiler token at https://cloud.maptiler.com/ or use MapBox style
+      //   // style: 'https://api.maptiler.com/maps/topo/style.json?key=gbetYLSD5vR8MdtZ88AQ' //topographique, pastel, outdoor, voyager, streets, hybrid, toner, topo, bright, positron, darkmatter
+      //   style: 'https://api.maptiler.com/maps/voyager/style.json?key=gbetYLSD5vR8MdtZ88AQ'
+      //   // style: 'https://openmaptiles.github.io/osm-bright-gl-style/style-cdn.json'
+      // }).addTo(mymap);
 
-      // 2. Add a base map.
-      // L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(mymap);
+      L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(mymap);
 
-    }
+    });
 
-    // kick things off
-    init();
-
-    var a = 2;
   </script>
 </body>
 
