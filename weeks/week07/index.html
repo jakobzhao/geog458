@@ -63,57 +63,24 @@
       </div>
 
       <article>
-        <div  class="step" data-step="0">
+        <div class="step " data-step="0">
           <p>STEP 1</p>
-<!--
-          <video class="fullscreen canvas-center" playsinline="" autoplay="" muted="" loop="">
-            <source src="assets/intro.mp4" type="video/mp4">
-          </video>
-
-          <div id="introText">
-            <h1 class="text-center">The History of Cascadia Subduction Zone Science</h1>
-            <h5 class="text-center"><i>this line is a place holder for subtitle</i></h5>
-            <p style="text-align:justify">This section shows where active research is happening, and on what topics to communicate on-going nature of scientific learning. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-              ligula
-              eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
-              fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
-              vulputate
-              eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
-              Etiam
-              ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
-              vel,
-              luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit
-              amet
-              nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
-
-            <div class="logo text-right">
-              <span> This project was awarded from National Science Foundation.</span>
-              <a target="_blank" href="https://www.uw.edu"> <img src="img/uw_logo.png" width="50px"></a>
-              <a target="_blank" href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1940024"> <img src="img/nsf_logo.png" width="50px"></a>
-            </div>
-          </div> -->
-
         </div>
 
-        <div id="bg" class="step fullscreen" data-step="1">
+        <div class="step" data-step="1">
           <p>STEP 2</p>
-          <!-- <div id="bg"> -->
-          <!-- </div> -->
-
-
-          <!-- <img src="img/test.jpg"></img> -->
         </div>
-        <div id="s4" class="step" data-step="2">
+        <div class="step fullscreen" data-step="2">
           <p>STEP 3</p>
 
         </div>
-        <div class="step" data-step="3">
+        <div class="step fullscreen" data-step="3">
           <p>STEP 4</p>
         </div>
       </article>
     </section>
 
-    <!-- <section id="footer">footer</section> -->
+    <section id="footer">footer</section>
   </main>
 
   <script>
@@ -168,10 +135,12 @@
         // $(".step[data-step=" + response.index + "]").css("visibility", "visible");
         mymap.flyTo(new L.LatLng(40.737, -73.923), 8);
 
+
       }
 
-      if (response.index == 1) {
+      if (response.index == 3) {
         mymap.flyTo(new L.LatLng(50.737, -73.923), 7);
+        $("#landingPage").css("visibility", "hidden");
 
         // step.style("position", "fixed");
         // step.style("top", "0");
@@ -193,6 +162,9 @@
       if (response.index == 0) {
         mymap.flyTo(new L.LatLng(30.737, -83.923), 6);
         // $(".step[data-step=" + response.index + "]").css("visibility", "hidden");
+      }
+      if (response.index == 3) {
+        $("#landingPage").css("visibility", "visible");
       }
 
     }
