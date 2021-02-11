@@ -59,7 +59,7 @@ p {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-#introPanel {
+#intro {
   position: relative;
   top: 32%;
   left: 50%;
@@ -72,16 +72,16 @@ p {
   text-shadow: 0 0 3px rgba(0, 0, 0, .95);
 }
 
-#introPanel .footnote {
+#intro .footnote {
   text-align: right;
 }
 
-#introPanel .footnote a {
+#intro .footnote a {
   margin-right: 0.5rem;
   vertical-align: top;
 }
 
-#introPanel .footnote span {
+#intro .footnote span {
   position: relative;
   bottom: -0.5rem;
   color: #fff;
@@ -105,7 +105,7 @@ p {
   position: sticky;
 }
 
-.step {
+.scene {
   position: relative;
   max-width: 40rem;
   /* margin: 0 auto 0 auto; */
@@ -115,21 +115,21 @@ p {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.step:first-child {
+.scene:first-child {
   margin-top: -30%;
 }
 
-.step:last-child {
+.scene:last-child {
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
-.step.is-active h2 {
+.scene.is-active h2 {
   background-color: goldenrod;
   color: #3b3b3b;
 }
 
-.step p {
+.scene p {
   padding-left: 1rem;
   padding-right: 1rem;
   color: black;
@@ -147,14 +147,14 @@ p {
   margin: 1rem;
 }
 
-[data-step="5"] img {
+[data-scene="5"] img {
   display: block;
   margin: 2rem auto 0 auto;
   width: 90%;
   border: 5px solid white;
 }
 
-[data-step="6"] {
+[data-scene="6"] {
   background: url("../img/test.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;

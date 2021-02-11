@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,7 +22,7 @@
       <video class="fullscreen canvas-center" playsinline="" autoplay="" muted="" loop="">
         <source src="assets/intro.mp4" type="video/mp4">
       </video>
-      <div id="introPanel">
+      <div id="intro">
         <h1>A GeoNarrative Template</h1>
         <h5>This line is a place holder for subtitle</h5>
         <p>This section shows where active research is happening, and on what topics to communicate on-going nature of scientific learning. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
@@ -42,49 +43,47 @@
           <a target="_blank" href="https://www.uw.edu"> <img src="img/uw_logo.png" width="50px"></a>
         </div>
       </div>
-
     </section>
-    <section id="story">
+
+    <section id="geonarrative">
       <div id="storyboard">
-        <div id="map" ></div>
+        <div id="map"></div>
       </div>
 
-      <article>
-        <div class="step " data-step="0">
-          <h2>STEP 1: Loading Polygons</h2>
-        </div>
-
-        <div class="step" data-step="1">
-          <h2>STEP 2: Loading Points</h2>
-        </div>
-        <div class="step" data-step="2">
-          <h2>STEP 3: Relocate to Place A (Seattle)</h2>
-        </div>
-        <div class="step" data-step="3">
-          <h2>STEP 4: Relocate to Place B (Portland)</h2>
-        </div>
-        <div class="step" data-step="4">
-          <h2>STEP 5: Text Script</h2>
-          <p>This section shows where active research is happening, and on what topics to communicate on-going nature of scientific learning. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
-            vulputate eget, arcu. In enim justo, rhoncus ut, imperdet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate.
+      <article class="scene" data-scene="0">
+        <h2>STEP 1: Loading Polygons</h2>
+      </article>
+      <article class="scene" data-scene="1">
+        <h2>STEP 2: Loading Points</h2>
+      </article>
+      <article class="scene" data-scene="2">
+        <h2>STEP 3: Relocate to Place A (Seattle)</h2>
+      </article>
+      <article class="scene" data-scene="3">
+        <h2>STEP 4: Relocate to Place B (Portland)</h2>
+      </article>
+      <article class="scene" data-scene="4">
+        <h2>STEP 5: Text Script</h2>
+        <p>This section shows where active research is happening, and on what topics to communicate on-going nature of scientific learning. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+          vulputate eget, arcu. In enim justo, rhoncus ut, imperdet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate.
+        </p>
+        <hr>
+        <div class="cards">
+          <p><i class="fa fa-users"></i> <span>2,823</span>
           </p>
-          <hr>
-          <div class="cards">
-            <p><i class="fa fa-users"></i> <span>2,823</span>
-            </p>
-            <p><i class="fa fa-map"></i> <span>3,520</span>
-            </p>
-          </div>
-        </div>
-        <div class="step" data-step="5">
-          <h2>STEP 6: Image </h2>
-          <img src="img/test.jpg"></img>
-        </div>
-        <div class="step fullscreen" data-step="6">
-          <h2>STEP 7: Ending Page</h2>
+          <p><i class="fa fa-map"></i> <span>3,520</span>
+          </p>
         </div>
       </article>
+      <article class="scene" data-scene="5">
+        <h2>STEP 6: Image </h2>
+        <img src="img/test.jpg"></img>
+      </article>
+      <article class="scene fullscreen" data-scene="6">
+        <h2>STEP 7: Ending Page</h2>
+      </article>
+
     </section>
 
     <!-- <section id="footer">
@@ -95,8 +94,8 @@
   <script>
     // using d3 for convenience
     var storyboard = $("#storyboard");
-    var step = $(".step");
-    var mymap, polygonLayer, pointLayer, lightBasemap, satelliteBasemap;
+    var scene = $(".scene");
+    var map, polygonLayer, pointLayer, lightBasemap, satelliteBasemap;
 
     // initialize the scrollama
     var scroller = scrollama();
@@ -104,8 +103,8 @@
     // generic window resize listener event
     function handleResize() {
       // 1. update height of step elements
-      var stepH = Math.floor(window.innerHeight * 0.75);
-      step.css("height", stepH + "px");
+      var sceneH = Math.floor(window.innerHeight * 0.75);
+      scene.css("height", sceneH + "px");
 
       var storyboardHeight = window.innerHeight;
       var storyboardMarginTop = (window.innerHeight - storyboardHeight) / 2;
@@ -123,20 +122,20 @@
       var index = response.index;
 
       if (index === 0) {
-        mymap.setView(new L.LatLng(47.33, -121.93), 8);
-        mymap.addLayer(polygonLayer);
+        map.setView(new L.LatLng(47.33, -121.93), 8);
+        map.addLayer(polygonLayer);
       } else if (index === 1) {
-        mymap.setView(new L.LatLng(47.33, -121.93), 8);
-        mymap.addLayer(pointLayer);
+        map.setView(new L.LatLng(47.33, -121.93), 8);
+        map.addLayer(pointLayer);
       } else if (index === 2) {
         //Relocate toSeattle
-        mymap.setView(new L.LatLng(47.6131229, -122.4121036), 12);
+        map.setView(new L.LatLng(47.6131229, -122.4121036), 12);
       } else if (index === 3) {
         //Relocate toPortland
-        mymap.setView(new L.LatLng(45.5428119, -122.7243662), 12);
-        mymap.addLayer(satelliteBasemap);
+        map.setView(new L.LatLng(45.5428119, -122.7243662), 12);
+        map.addLayer(satelliteBasemap);
       } else if (index === 6) {
-        mymap.setView(new L.LatLng(50.737, -73.923), 7);
+        map.setView(new L.LatLng(50.737, -73.923), 7);
         $("#cover").css("visibility", "hidden");
       }
     }
@@ -145,14 +144,14 @@
       var index = response.index
 
       if (index === 0) {
-        mymap.removeLayer(polygonLayer);
+        map.removeLayer(polygonLayer);
       } else if (index === 1) {
-        mymap.removeLayer(pointLayer);
+        map.removeLayer(pointLayer);
       } else if (index === 3) {
         //exit to Portland
-        mymap.removeLayer(satelliteBasemap);
+        map.removeLayer(satelliteBasemap);
       } else if (index === 6) {
-        mymap.flyTo(new L.LatLng(50.737, -73.923), 7);
+        map.flyTo(new L.LatLng(50.737, -73.923), 7);
         $("#cover").css("visibility", "visible");
       }
 
@@ -177,7 +176,7 @@
 
         scroller
           .setup({
-            step: ".step",
+            step: ".scene",
             offset: 0.33,
             // debug: true
           })
@@ -187,7 +186,7 @@
 
 
       // 1. Create a map object.
-      mymap = L.map('map', {
+      map = L.map('map', {
         center: [47.33, -121.93],
         zoom: 7,
         scrollWheelZoom: false,
@@ -200,7 +199,7 @@
 
       lightBasemap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png');
       satelliteBasemap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}@2x');
-      mymap.addLayer(lightBasemap);
+      map.addLayer(lightBasemap);
 
     });
   </script>
