@@ -37,9 +37,6 @@ p {
 }
 
 
-#scrolly {
-  /* position: relative; */
-}
 
 .canvas-center {
   top: 50%;
@@ -75,16 +72,16 @@ p {
   text-shadow: 0 0 3px rgba(0, 0, 0, .95);
 }
 
-#introPanel .logos {
+#introPanel .footnote {
   text-align: right;
 }
 
-#introPanel .logos a {
+#introPanel .footnote a {
   margin-right: 0.5rem;
   vertical-align: top;
 }
 
-#introPanel .logos span {
+#introPanel .footnote span {
   position: relative;
   bottom: -0.5rem;
   color: #fff;

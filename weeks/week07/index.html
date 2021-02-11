@@ -9,12 +9,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap" />
-  <link rel="stylesheet" c href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/main.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/2.2.1/scrollama.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -39,7 +37,7 @@
           amet
           nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
 
-        <div class="logos">
+        <div class="footnote">
           <span> This line is a place holder for copyright note or other footnotes.</span>
           <a target="_blank" href="https://www.uw.edu"> <img src="img/uw_logo.png" width="50px"></a>
         </div>
@@ -48,7 +46,7 @@
     </section>
     <section id="story">
       <div id="storyboard">
-        <div id="map" class=""></div>
+        <div id="map" ></div>
       </div>
 
       <article>
@@ -60,10 +58,10 @@
           <h2>STEP 2: Loading Points</h2>
         </div>
         <div class="step" data-step="2">
-          <h2>STEP 3: Relocate toPlace A (Seattle)</h2>
+          <h2>STEP 3: Relocate to Place A (Seattle)</h2>
         </div>
         <div class="step" data-step="3">
-          <h2>STEP 4: Relocate toPlace B (Portland)</h2>
+          <h2>STEP 4: Relocate to Place B (Portland)</h2>
         </div>
         <div class="step" data-step="4">
           <h2>STEP 5: Text Script</h2>
@@ -109,17 +107,15 @@
       var stepH = Math.floor(window.innerHeight * 0.75);
       step.css("height", stepH + "px");
 
-      var figureHeight = window.innerHeight;
-      var figureMarginTop = (window.innerHeight - figureHeight) / 2;
+      var storyboardHeight = window.innerHeight;
+      var storyboardMarginTop = (window.innerHeight - storyboardHeight) / 2;
 
       storyboard
-        .css("height", figureHeight + "px")
-        .css("top", figureMarginTop + "px");
+        .css("height", storyboardHeight + "px")
+        .css("top", storyboardMarginTop + "px");
 
       // 3. tell scrollama to update new element dimensions
       scroller.resize();
-
-
     }
 
     // scrollama event handlers
