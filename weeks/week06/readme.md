@@ -5,7 +5,7 @@
 - the fundamental concepts relavent to smart dashboard;
 - the promise mechnism for data loading;
 - design an application for multiple devices; and
-- coordinated-reviews.
+- coordinated visualization.
 
 In this lecture, we will introuduce how to make a smart dashboard using javascript. A smart dashboard is frequently used to provide a coordinated view of multiple visual compoanents (e.g., maps, charts, texts, tables, diagrams) to holistically present the a (geographical) event. For example, one of the most popular use of smart dashboard is to visualize the trend of COVID-19 (refer to https://hgis.uw.edu/virus). Since map is an essential component for most smart dashboard applications, it has been considered as a very imporant type of digital geographies project.
 
@@ -345,7 +345,7 @@ The chart will illustrate the top ten counties containg the most cell towers. Th
 ```
 ### 4.2 Generate the chart
 
-It is straighfoward to generate a bar chart using c3.js.
+It is straighfoward to generate a bar chart using c3.js. C3.js is a javscript library built on D3.js and purposefully designed for making charts. 
 
 ```js
 // 7.5 generate the chart
@@ -425,7 +425,7 @@ text {
 
 ## 5. Summary
 
-This lecture has shown how to make a basic dashboard. If you are interested in more applications, please refer to the examples below.
+This lecture has shown the fundamental concepts and techiniques about smart dashboard using a basic example. To make a smart dashboard for a geogrpahical event or phenomenon, it is necessary to code multiple visual strategies in a holistic and coordinated manner. Moreover, we briefly talk about how to suppor the idea of responsive design -- how to visualize a web design on multiple devices. Another primary techiniqu we have practiced is to load geojson data through a Promise mechnism supported D3 or Jquery methods. If you are interested in more applications, please refer to the examples below.
 
 - [the water caculator](https://jakobzhao.github.io/twca/)
 - [the covid-19 dashbaord](https://hgis.uw.edu/virus)
