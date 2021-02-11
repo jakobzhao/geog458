@@ -70,7 +70,7 @@
           vulputate eget, arcu. In enim justo, rhoncus ut, imperdet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate.
         </p>
         <hr>
-        <div class="cards">
+        <div>
           <p><i class="fa fa-users"></i> <span>2,823</span>
           </p>
           <p><i class="fa fa-map"></i> <span>3,520</span>
@@ -79,7 +79,7 @@
       </article>
       <article class="scene" data-scene="5">
         <h2>STEP 6: Image </h2>
-        <img src="img/test.jpg"></img>
+        <img src="img/portland.jpg"></img>
       </article>
       <article class="scene fullscreen" data-scene="6">
         <h2>STEP 7: Ending Page</h2>
@@ -136,7 +136,7 @@
         map.setView(new L.LatLng(45.5428119, -122.7243662), 12);
         map.addLayer(satelliteBasemap);
       } else if (index === 6) {
-        map.setView(new L.LatLng(50.737, -73.923), 7);
+        map.setView(new L.LatLng(47.6131229, -122.4121036), 12);
         $("#cover").css("visibility", "hidden");
       }
     }
@@ -196,7 +196,7 @@
 
 
       lightBasemap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png');
-      satelliteBasemap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}@2x');
+      satelliteBasemap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}');
       map.addLayer(lightBasemap);
 
     });
