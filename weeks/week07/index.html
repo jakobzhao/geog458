@@ -87,9 +87,9 @@
       </article>
     </section>
 
-    <!-- <section id="footer">
+    <section id="footer">
       <h2>FOOTER</h2>
-    </section> -->
+    </section>
   </main>
 
   <script>
@@ -136,7 +136,7 @@
         mymap.setView(new L.LatLng(45.5428119, -122.7243662), 12);
         mymap.addLayer(satelliteBasemap);
       } else if (index === 6) {
-        mymap.flyTo(new L.LatLng(50.737, -73.923), 7);
+        mymap.setView(new L.LatLng(50.737, -73.923), 7);
         $("#cover").css("visibility", "hidden");
       }
     }

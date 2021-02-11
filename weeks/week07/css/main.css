@@ -37,7 +37,6 @@ p {
 }
 
 
-
 .canvas-center {
   top: 50%;
   left: 50%;
@@ -51,6 +50,7 @@ p {
   /* margin: 0; */
   /*pointer-events: none;*/
 }
+
 
 #cover {
   width: 100%;
@@ -90,6 +90,16 @@ p {
   font-size: small;
 }
 
+
+#footer {
+  width: 100%;
+  height: 30vh;
+  color: white;
+  background: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
 #storyboard {
   position: -webkit-sticky;
   position: sticky;
@@ -126,13 +136,7 @@ p {
   text-shadow: 0 0 6px white;
 }
 
-#footer {
-  width: 100%;
-  /* height: 30vh; */
-  color: white;
-  background: #fff;
-  background-color: rgba(0, 0, 0, 0.3);
-}
+
 
 .cards {
   font-size: xxx-large
