@@ -8,7 +8,6 @@ body,
 }
 
 h1 {
-  /* margin-bottom: 0rem; */
   font-size: xxx-large;
   font-weight: 500;
   text-align: center;
@@ -45,8 +44,6 @@ p {
   position: fixed;
   min-height: 100%;
   min-width: 100%;
-  /* margin: 0; */
-  /*pointer-events: none;*/
 }
 
 #cover {
