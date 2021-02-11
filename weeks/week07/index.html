@@ -7,13 +7,14 @@
   <meta name="description" content="GeoNarrative Template" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>GeoNarrative Template</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" />
   <link rel="stylesheet" href="css/main.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/2.2.1/scrollama.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -151,11 +152,8 @@
         //exit to Portland
         map.removeLayer(satelliteBasemap);
       } else if (index === 6) {
-        map.flyTo(new L.LatLng(50.737, -73.923), 7);
         $("#cover").css("visibility", "visible");
       }
-
-
     }
 
 
