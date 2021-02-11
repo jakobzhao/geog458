@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>GeoNarrative Template</title>
   <meta name="description" content="GeoNarrative Template" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GeoNarrative Template</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.1/mapbox-gl.css" rel='stylesheet' />
+<!-- <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" /> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap" />
-  <link rel="stylesheet" c href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/main.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/2.2.1/scrollama.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/scroll.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
+  <script src="https://unpkg.com/intersection-observer"></script>
+  <script src="https://unpkg.com/scrollama"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.3.4/chroma.min.js"></script>
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.1/mapbox-gl.js"></script>
+  <!-- script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script> -->
+  <script src="https://cdn.maptiler.com/mapbox-gl-leaflet/latest/leaflet-mapbox-gl.js"></script>
 </head>
 
 <body>
@@ -46,7 +56,7 @@
       </div>
 
     </section>
-    <section id="story">
+    <section id="scrolly">
       <div id="storyboard">
         <div id="map" class=""></div>
       </div>
@@ -60,10 +70,10 @@
           <h2>STEP 2: Loading Points</h2>
         </div>
         <div class="step" data-step="2">
-          <h2>STEP 3: Relocate toPlace A (Seattle)</h2>
+          <h2>STEP 3: Fly to Place A (Seattle)</h2>
         </div>
         <div class="step" data-step="3">
-          <h2>STEP 4: Relocate toPlace B (Portland)</h2>
+          <h2>STEP 4: Fly to Place B (Portland)</h2>
         </div>
         <div class="step" data-step="4">
           <h2>STEP 5: Text Script</h2>
@@ -84,7 +94,7 @@
           <img src="img/test.jpg"></img>
         </div>
         <div class="step fullscreen" data-step="6">
-          <h2>STEP 7: Ending Page</h2>
+          <h2>STEP 7</h2>
         </div>
       </article>
     </section>
@@ -96,8 +106,11 @@
 
   <script>
     // using d3 for convenience
-    var storyboard = $("#storyboard");
-    var step = $(".step");
+    var main = d3.select("main");
+    var scrolly = main.select("#scrolly");
+    var storyboard = scrolly.select("#storyboard");
+    var article = scrolly.select("article");
+    var step = article.selectAll(".step");
     var mymap, polygonLayer, pointLayer, lightBasemap, satelliteBasemap;
 
     // initialize the scrollama
@@ -107,14 +120,14 @@
     function handleResize() {
       // 1. update height of step elements
       var stepH = Math.floor(window.innerHeight * 0.75);
-      step.css("height", stepH + "px");
+      step.style("height", stepH + "px");
 
       var figureHeight = window.innerHeight;
       var figureMarginTop = (window.innerHeight - figureHeight) / 2;
 
       storyboard
-        .css("height", figureHeight + "px")
-        .css("top", figureMarginTop + "px");
+        .style("height", figureHeight + "px")
+        .style("top", figureMarginTop + "px");
 
       // 3. tell scrollama to update new element dimensions
       scroller.resize();
@@ -133,11 +146,11 @@
         mymap.setView(new L.LatLng(47.33, -121.93), 8);
         mymap.addLayer(pointLayer);
       } else if (index === 2) {
-        //Relocate toSeattle
-        mymap.setView(new L.LatLng(47.6131229, -122.4121036), 12);
+        //fly to Seattle
+        mymap.flyTo(new L.LatLng(47.6131229, -122.4121036), 12);
       } else if (index === 3) {
-        //Relocate toPortland
-        mymap.setView(new L.LatLng(45.5428119, -122.7243662), 12);
+        //fly to Portland
+        mymap.flyTo(new L.LatLng(45.5428119, -122.7243662), 12);
         mymap.addLayer(satelliteBasemap);
       } else if (index === 6) {
         mymap.flyTo(new L.LatLng(50.737, -73.923), 7);
@@ -163,7 +176,6 @@
 
     }
 
-
     $(document).ready(function() {
 
       // 1. force a resize on load to ensure proper dimensions are sent to scrollama
@@ -173,21 +185,25 @@
 
 
       Promise.all([
-        $.getJSON("assets/wacountydata.geojson"),
-        $.getJSON("assets/celltowers.geojson")
+        d3.json("assets/wacountydata.geojson"),
+        d3.json("assets/celltowers.geojson")
       ]).then(function(datasets) {
         polygonLayer = L.geoJSON(datasets[0]);
         pointLayer = L.geoJSON(datasets[1]);
 
+
         scroller
           .setup({
-            step: ".step",
+            step: "#scrolly article .step",
             offset: 0.33,
-            // debug: true
+            debug: true
           })
           .onStepEnter(handleStepEnter)
           .onStepExit(handleStepExit);
+
+
       });
+
 
 
       // 1. Create a map object.
@@ -201,8 +217,14 @@
         detectRetina: true // detect whether the sceen is high resolution or not.
       });
 
+      lightBasemap = L.mapboxGL({
+        // get your own MapTiler token at https://cloud.maptiler.com/ or use MapBox style
+        // style: 'https://api.maptiler.com/maps/topo/style.json?key=gbetYLSD5vR8MdtZ88AQ' //topographique, pastel, outdoor, voyager, streets, hybrid, toner, topo, bright, positron, darkmatter
+        style: 'https://api.maptiler.com/maps/positron/style.json?key=gbetYLSD5vR8MdtZ88AQ'
+        // style: 'https://openmaptiles.github.io/osm-bright-gl-style/style-cdn.json'
+      });
 
-      lightBasemap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png');
+      // lightBasemap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png');
       satelliteBasemap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}@2x');
       mymap.addLayer(lightBasemap);
 
