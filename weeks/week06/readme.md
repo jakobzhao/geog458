@@ -215,7 +215,7 @@ L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(
 
 ### 3.2 Loading the GeoJSON data
 
-Promise mechnism will be adopted to ensure the data is loaded before its use.
+Promise mechnism will be adopted to ensure the data is asynchronously loaded before its use.
 
 ```js
 // 4. Declare three global variables for the wa counties thematic layer, bar chart, and the organized wa data.
@@ -235,6 +235,15 @@ Promise.all([d3.json("assets/wacountydata.geojson")]).then(function(datasets) {
 
 });
 ```
+
+ In addition to using D3, we can also use Jquery to load the json data. I personally like both. D3 can also support loading csv dataset.
+
+ ```JS
+ // 5. load all datasets through promise mechnism and store them in an array
+ Promise.all([$.getJSON("assets/wacountydata.geojson")]).then(function(datasets) {
+   ....
+ });
+ ```
 
 ### 3.3 Map events
 
