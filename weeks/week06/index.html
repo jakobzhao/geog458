@@ -77,7 +77,7 @@
 
     // 5. load all datasets through promise mechnism and store them in an array
     Promise.all([d3.json("assets/wacountydata.geojson")]).then(function(datasets) {
-
+    // or Promise.all([$.getJSON("assets/wacountydata.geojson")]).then(function(datasets) {
       // 6. Map relevant operations
 
       // 6.1 create a couties layer
