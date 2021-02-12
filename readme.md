@@ -9,7 +9,7 @@
 
 -   **Bo Zhao**, Instructor, zhaobo@uw.edu | Office Hour: Thursdays 1:10 to 3:10 PM PST on [Slack](https://geog458-winter-2021.slack.com) or by appointment
 
--   **Tyler McCrea**, Teaching Assistant, tmccrea@uw.edu |  Office Hour: Fridays 12:30 to 1:30 PM PST on [Slack](https://geog458-winter-2021.slack.com) or by appointment
+-   **Tyler McCrea**, Teaching Assistant, tmccrea@uw.edu |  Office Hour: Fridays 12:30 to 1:30 PM PST on [Zoom](https://washington.zoom.us/j/4874322240 (Links to an external site.) ) or by appointment
 
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
 
