@@ -144,7 +144,7 @@
 
     // 6. The function performs when a scene exits the storyboard
     function handleSceneExit(response) {
-      var index = response.index
+      var index = response.index;
 
       if (index === 0) {
         map.removeLayer(polygonLayer);
@@ -175,7 +175,7 @@
       ]).then(function(datasets) {
 
         // 10. After the data are successfully loaded, the then funciton will execute in order to
-        //    a) preprocess the data
+        //    a) preprocess the data as map layers
         //    b) initialize the script panel
         //    c) initialize the map and layers.
 

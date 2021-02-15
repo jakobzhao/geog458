@@ -262,30 +262,29 @@
         <div class="row">
           <div class="col-sm-12 col-md-6">
             <h6>About</h6>
-            <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We
-              will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+            <p class="text-justify"> GeoNarrative, also being referred to as storymap, or map-based storytelling, is an visualization genre that primarily utilizes a series of maps or other types of geovisualizations to narrate a geographical event or phenomenon. In addition to geovisualization, there will be other form of information like scripts, images, or videos. </p>
           </div>
 
           <div class="col-xs-6 col-md-3">
             <h6>Categories</h6>
             <ul class="footer-links">
-              <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-              <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
-              <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
-              <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
-              <li><a href="http://scanfcode.com/category/android/">Android</a></li>
-              <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+              <li><a href="http://hgis.uw.edu/category/c-language/">StoryMap</a></li>
+              <li><a href="http://hgis.uw.edu/category/front-end-development/">Map Design</a></li>
+              <li><a href="http://hgis.uw.edu/category/back-end-development/">Cartography</a></li>
+              <li><a href="http://hgis.uw.edu/category/java-programming-language/">Web Mapping</a></li>
+              <li><a href="http://hgis.uw.edu/category/android/">Advanced Digital Geographies</a></li>
+              <li><a href="http://hgis.uw.edu/category/templates/">Templates</a></li>
             </ul>
           </div>
 
           <div class="col-xs-6 col-md-3">
             <h6>Quick Links</h6>
             <ul class="footer-links">
-              <li><a href="http://scanfcode.com/about/">About Us</a></li>
-              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-              <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+              <li><a href="http://hgis.uw.edu/about/">About Us</a></li>
+              <li><a href="http://hgis.uw.edu/contact/">Contact Us</a></li>
+              <li><a href="http://hgis.uw.edu/contribute-at-scanfcode/">Contribute</a></li>
+              <li><a href="http://hgis.uw.edu/privacy-policy/">Privacy Policy</a></li>
+              <li><a href="http://hgis.uw.edu/sitemap/">Sitemap</a></li>
             </ul>
           </div>
         </div>
@@ -294,8 +293,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
-              <a href="#">Scanfcode</a>.
+            <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by
+              <a href="#">Humanistic GIS Lab</a>.
             </p>
           </div>
 
@@ -314,113 +313,123 @@
 
 
   <script>
-    // using d3 for convenience
-    var storyboard = $("#storyboard");
-    var scene = $(".scene");
-    var map, polygonLayer, pointLayer, lightBasemap, satelliteBasemap;
+  // 1. Select those elments that wil be frequent used.
+  var storyboard = $("#storyboard");
+  var scene = $(".scene");
+  // 2. Declare the maps, thematic layers and the base maps/layers.
+  var map, polygonLayer, pointLayer, lightBasemap, satelliteBasemap;
 
-    // initialize the scrollama
-    var scroller = scrollama();
+  // 3. Initialize the geonarrative structure using scrollama
+  var scriptPanel = scrollama();
 
-    // generic window resize listener event
-    function handleResize() {
-      // 1. update height of step elements
-      var sceneH = Math.floor(window.innerHeight * 0.75);
-      scene.css("height", sceneH + "px");
+  // 4. Define Generic window resize listener event
+  function handleResize() {
+    // update the height of each scene elements
+    var sceneH = Math.floor(window.innerHeight * 0.75);
+    scene.css("height", sceneH + "px");
 
-      var storyboardHeight = window.innerHeight;
-      var storyboardMarginTop = (window.innerHeight - storyboardHeight) / 2;
+    var storyboardHeight = window.innerHeight;
+    var storyboardMarginTop = (window.innerHeight - storyboardHeight) / 2;
 
-      storyboard
-        .css("height", storyboardHeight + "px")
-        .css("top", storyboardMarginTop + "px");
+    storyboard
+      .css("height", storyboardHeight + "px")
+      .css("top", storyboardMarginTop + "px");
 
-      // 3. tell scrollama to update new element dimensions
-      scroller.resize();
+    // tell scrollama to update new element dimensions
+    scriptPanel.resize();
+  }
+
+  // 5. The function performs when a scene enters the storyboard
+  function handleSceneEnter(response) {
+    var index = response.index;
+
+    if (index === 0) {
+      map.setView(new L.LatLng(47.33, -121.93), 8);
+      map.addLayer(polygonLayer);
+    } else if (index === 1) {
+      map.setView(new L.LatLng(47.33, -121.93), 8);
+      map.addLayer(pointLayer);
+    } else if (index === 2) {
+      //Relocate toSeattle
+      map.setView(new L.LatLng(47.6131229, -122.4121036), 12);
+    } else if (index === 3) {
+      //Relocate toPortland
+      map.setView(new L.LatLng(45.5428119, -122.7243662), 12);
+      map.addLayer(satelliteBasemap);
+    } else if (index === 6) {
+      map.setView(new L.LatLng(47.6131229, -122.4121036), 12);
+      $("#cover").css("visibility", "hidden");
     }
+  }
 
-    // scrollama event handlers
-    function handleStepEnter(response) {
-      var index = response.index;
+  // 6. The function performs when a scene exits the storyboard
+  function handleSceneExit(response) {
+    var index = response.index;
 
-      if (index === 0) {
-        map.setView(new L.LatLng(47.33, -121.93), 8);
-        map.addLayer(polygonLayer);
-      } else if (index === 1) {
-        map.setView(new L.LatLng(47.33, -121.93), 8);
-        map.addLayer(pointLayer);
-      } else if (index === 2) {
-        //Relocate toSeattle
-        map.setView(new L.LatLng(47.6131229, -122.4121036), 12);
-      } else if (index === 3) {
-        //Relocate toPortland
-        map.setView(new L.LatLng(45.5428119, -122.7243662), 12);
-        map.addLayer(satelliteBasemap);
-      } else if (index === 6) {
-        map.setView(new L.LatLng(47.6131229, -122.4121036), 12);
-        $("#cover").css("visibility", "hidden");
-      }
+    if (index === 0) {
+      map.removeLayer(polygonLayer);
+    } else if (index === 1) {
+      map.removeLayer(pointLayer);
+    } else if (index === 3) {
+      //exit to Portland
+      map.removeLayer(satelliteBasemap);
+    } else if (index === 6) {
+      $("#cover").css("visibility", "visible");
     }
+  }
 
-    function handleStepExit(response) {
-      var index = response.index
+  // 7. the function performs when this html document is ready.
+  $(document).ready(function() {
 
-      if (index === 0) {
-        map.removeLayer(polygonLayer);
-      } else if (index === 1) {
-        map.removeLayer(pointLayer);
-      } else if (index === 3) {
-        //exit to Portland
-        map.removeLayer(satelliteBasemap);
-      } else if (index === 6) {
-        $("#cover").css("visibility", "visible");
-      }
-    }
+    // 8. Intialize the layout.
+    // Force a resize on load to ensure proper dimensions are sent to scrollama
+    handleResize();
+    window.scrollTo(0, 0);
+    // Bind the resize function to the window resize event
+    window.addEventListener("resize", handleResize);
 
+    // 9. Use a promise mechnism to asynchrously load the required geojson datasets.
+    Promise.all([
+      $.getJSON("assets/wacountydata.geojson"),
+      $.getJSON("assets/celltowers.geojson")
+    ]).then(function(datasets) {
 
-    $(document).ready(function() {
-
-      // 1. force a resize on load to ensure proper dimensions are sent to scrollama
-      handleResize();
-      window.scrollTo(0, 0);
-      window.addEventListener("resize", handleResize);
-
-
-      Promise.all([
-        $.getJSON("assets/wacountydata.geojson"),
-        $.getJSON("assets/celltowers.geojson")
-      ]).then(function(datasets) {
-        polygonLayer = L.geoJSON(datasets[0]);
-        pointLayer = L.geoJSON(datasets[1]);
-
-        scroller
-          .setup({
-            step: ".scene",
-            offset: 0.33,
-            // debug: true
-          })
-          .onStepEnter(handleStepEnter)
-          .onStepExit(handleStepExit);
-      });
+      // 10. After the data are successfully loaded, the then funciton will execute in order to
+      //    a) preprocess the data as map layers
+      //    b) initialize the script panel
+      //    c) initialize the map and layers.
 
 
-      // 1. Create a map object.
-      map = L.map('map', {
-        center: [47.33, -121.93],
-        zoom: 7,
-        scrollWheelZoom: false,
-        zoomControl: false,
-        maxZoom: 10,
-        minZoom: 3,
-        detectRetina: true // detect whether the sceen is high resolution or not.
-      });
+      polygonLayer = L.geoJSON(datasets[0]);
+      pointLayer = L.geoJSON(datasets[1]);
 
-
-      lightBasemap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png');
-      satelliteBasemap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}');
-      map.addLayer(lightBasemap);
-
+      scriptPanel
+        .setup({
+          step: ".scene", // all the scenes.
+          offset: 0.33,   // the location of the enter and exit trigger
+          // debug: true  // toggler on or off the debug mode.
+        })
+        .onStepEnter(handleSceneEnter)
+        .onStepExit(handleSceneExit);
     });
+
+
+    map = L.map('map', {
+      center: [47.33, -121.93],
+      zoom: 7,
+      scrollWheelZoom: false,
+      zoomControl: false,
+      maxZoom: 10,
+      minZoom: 3,
+      detectRetina: true // detect whether the sceen is high resolution or not.
+    });
+
+
+    lightBasemap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png');
+    satelliteBasemap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}');
+    map.addLayer(lightBasemap);
+
+  });
   </script>
 </body>
 

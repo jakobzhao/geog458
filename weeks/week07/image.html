@@ -20,7 +20,9 @@
 <body>
 
     <section id="cover" style="background: url('img/background.jpg') no-repeat center center;">
-
+      <video class="fullscreen canvas-center" playsinline="" autoplay="" muted="" loop="">
+        <source src="assets/intro.mp4" type="video/mp4">
+      </video>
       <div id="intro">
         <h1>A GeoNarrative Template</h1>
         <h5>This line is a place holder for subtitle</h5>
@@ -91,17 +93,18 @@
 
 
   <script>
-    // using d3 for convenience
+    // 1. Select those elments that wil be frequent used.
     var storyboard = $("#storyboard");
     var scene = $(".scene");
+    // 2. Declare the maps, thematic layers and the base maps/layers.
     var map, polygonLayer, pointLayer, lightBasemap, satelliteBasemap;
 
-    // initialize the scrollama
-    var scroller = scrollama();
+    // 3. Initialize the geonarrative structure using scrollama
+    var scriptPanel = scrollama();
 
-    // generic window resize listener event
+    // 4. Define Generic window resize listener event
     function handleResize() {
-      // 1. update height of step elements
+      // update the height of each scene elements
       var sceneH = Math.floor(window.innerHeight * 0.75);
       scene.css("height", sceneH + "px");
 
@@ -112,12 +115,12 @@
         .css("height", storyboardHeight + "px")
         .css("top", storyboardMarginTop + "px");
 
-      // 3. tell scrollama to update new element dimensions
-      scroller.resize();
+      // tell scrollama to update new element dimensions
+      scriptPanel.resize();
     }
 
-    // scrollama event handlers
-    function handleStepEnter(response) {
+    // 5. The function performs when a scene enters the storyboard
+    function handleSceneEnter(response) {
       var index = response.index;
 
       if (index === 0) {
@@ -139,8 +142,9 @@
       }
     }
 
-    function handleStepExit(response) {
-      var index = response.index
+    // 6. The function performs when a scene exits the storyboard
+    function handleSceneExit(response) {
+      var index = response.index;
 
       if (index === 0) {
         map.removeLayer(polygonLayer);
@@ -154,34 +158,42 @@
       }
     }
 
-
+    // 7. the function performs when this html document is ready.
     $(document).ready(function() {
 
-      // 1. force a resize on load to ensure proper dimensions are sent to scrollama
+      // 8. Intialize the layout.
+      // Force a resize on load to ensure proper dimensions are sent to scrollama
       handleResize();
       window.scrollTo(0, 0);
+      // Bind the resize function to the window resize event
       window.addEventListener("resize", handleResize);
 
-
+      // 9. Use a promise mechnism to asynchrously load the required geojson datasets.
       Promise.all([
         $.getJSON("assets/wacountydata.geojson"),
         $.getJSON("assets/celltowers.geojson")
       ]).then(function(datasets) {
+
+        // 10. After the data are successfully loaded, the then funciton will execute in order to
+        //    a) preprocess the data as map layers
+        //    b) initialize the script panel
+        //    c) initialize the map and layers.
+
+
         polygonLayer = L.geoJSON(datasets[0]);
         pointLayer = L.geoJSON(datasets[1]);
 
-        scroller
+        scriptPanel
           .setup({
-            step: ".scene",
-            offset: 0.33,
-            // debug: true
+            step: ".scene", // all the scenes.
+            offset: 0.33,   // the location of the enter and exit trigger
+            // debug: true  // toggler on or off the debug mode.
           })
-          .onStepEnter(handleStepEnter)
-          .onStepExit(handleStepExit);
+          .onStepEnter(handleSceneEnter)
+          .onStepExit(handleSceneExit);
       });
 
 
-      // 1. Create a map object.
       map = L.map('map', {
         center: [47.33, -121.93],
         zoom: 7,

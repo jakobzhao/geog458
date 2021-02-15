@@ -1,6 +1,6 @@
 ## Creating an Online GeoNarrative
 
-In this lecture, you will learn how to create a onbline Geo-Narrative. A GeoNarrative application, also being referred to as storymap, or map-based storytelling, is an visualization genre that primarily utilizes a series of maps or other types of geovisualizations to narrate a geographical event or phenomenon. In addition to geovisualiztion, there will be associated context that are offered by scripts, images, or videos. This lecture mainly provides an online geonarrative template which can help you to make your own geo-narrative applications. To review the geo-narrative template, please visit [this link](https://jakobzhao.github.io/weeks/week07).
+In this lecture, you will learn how to create a onbline Geo-Narrative. A GeoNarrative application, also being referred to as storymap, or map-based storytelling, is an visualization genre that primarily utilizes a series of maps or other types of geovisualizations to narrate a geographical event or phenomenon. In addition to geovisualization, there will be other form of information like scripts, images, or videos. This lecture mainly provides an online geonarrative template which can help you to make your own geo-narrative applications. To review the geo-narrative template, please visit [this link](https://jakobzhao.github.io/weeks/week07).
 
 ![](img/cover.png)
 
@@ -100,12 +100,6 @@ Then, in the head element, please include all the required stylesheets and javas
 
 ```
 
-If you want to apply any customized web components, like navigation bar, footer, you may also want to include Boostrap.
-
-```html
-<link rel="stylesheet" c href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
-```
 
 As we introduced above, a geonarrative is made up by several scenes. In the html document, each scene is held by an `article` element, and all the scenes are under a `section` element. Also, a storyboard is defined and held by a `div` element. This storyboard element anchors to the browser view window and functions as the container for the map object as well as other main graphic objects.
 
@@ -407,7 +401,7 @@ $(document).ready(function() {
   ]).then(function(datasets) {
 
     // 10. After the data are successfully loaded, the then funciton will execute in order to
-    //    a) preprocess the data
+    //    a) preprocess the data as map layers
     polygonLayer = L.geoJSON(datasets[0]);  pointLayer = L.geoJSON(datasets[1]);
 
     //    b) initialize the script panel
@@ -453,7 +447,7 @@ function handleSceneEnter(response) {
 
 // 6. The function performs when a scene exits the storyboard
 function handleSceneExit(response) {
-  var index = response.index
+  var index = response.index;
 
   if (index === 0) {
     map.removeLayer(polygonLayer);
@@ -473,3 +467,25 @@ function handleSceneExit(response) {
 
 - set the map view when a scene enters the screen, do not set map view when a scene exits.
 - add map layers when a scene enters the screen, while this scene exits, remove the previously added layers.
+
+### 2.6 Footer
+
+If you are interested in adding a footer to the geonarrative like [this](https://jakobzhao.github.io/geog458/weeks/week07/footer.html) (see the codes in the [footer.html](footer.html)), you will need to include bootstrap framework to your header element. Then, you can apply differnt types of footer templates which are supported by Bootstrap.
+
+![](img/footer.png)
+
+Here is the code you need to include to the header:
+
+```html
+<link rel="stylesheet" c href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+```
+
+Here are some pages for free footer Templates
+
+[1] https://www.mockplus.com/blog/post/bootstrap-4-footer-template
+[2] https://freefrontend.com/bootstrap-footers/
+[3]
+[4] https://colorlib.com/wp/bootstrap-footer/
+
+If you want to code your own footer, you can refer to this [link](https://mdbootstrap.com/docs/standard/navigation/footer/).
