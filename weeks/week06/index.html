@@ -10,6 +10,8 @@
   <link href="css/c3.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web|Oswald" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <!-- javascript libraries -->
   <script src="js/d3.js"></script>
@@ -68,7 +70,7 @@
 
 
     // 3. Add a base map.
-    L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(mymap);
+    L.tileLayer('http://{s}.basemaps.cartocdn.com/voyager/{z}/{x}/{y}.png').addTo(mymap);
 
     // 4. Declare three global variables for the wa counties thematic layer, bar chart, and the organized wa data.
     var countiesLayer = null,
