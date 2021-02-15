@@ -1,10 +1,10 @@
 ## Creating an Online GeoNarrative
 
-In this lecture, you will learn how to create a onbline Geo-Narrative. A GeoNarrative application, also being referred to as storymap, or map-based storytelling, is an visualization genre that primarily utilizes a series of maps or other types of geovisualizations to narrate a geographical event or phenomenon. In addition to geovisualization, there will be other form of information like scripts, images, or videos. This lecture mainly provides an online geonarrative template which can help you to make your own geo-narrative applications. To review the geo-narrative template, please visit [this link](https://jakobzhao.github.io/weeks/week07).
+In this lecture, you will learn how to create a online Geo-Narrative. A GeoNarrative application, also being referred to as storymap, or map-based storytelling, is an visualization genre that primarily utilizes a series of maps or other types of geovisualizations to narrate a geographical event or phenomenon. In addition to geovisualization, there will be other form of information like scripts, images, or videos. This lecture mainly provides an online GeoNarrative template which can help you to make your own geo-narrative applications. To review the geo-narrative template, please visit [this link](https://jakobzhao.github.io/weeks/week07).
 
 ![](img/cover.png)
 
-A online geonarrative is organically integrated by several scenes. Each scene consists of a web map and a script. You can manipulate the map by zooming, panning, and even adding more thematic layers. This library embodies the concept responsive web design, meaning the geonarrative can be shown on either desktop or mobile devices.
+An online GeoNarrative is organically integrated by several scenes. Each scene consists of a web map and a script. You can manipulate the map by zooming, panning, and even adding more thematic layers. This library embodies the concept responsive web design, meaning the GeoNarrative can be shown on either desktop or mobile devices.
 
 ## 1. Prerequisite
 
@@ -14,11 +14,11 @@ To make the geo-narrative library robust and lightweight, we select as fewer pre
 
 - jQuery: is a JavaScript library that greatly simplifies JavaScript programming.
 
-- [Scrollama](https://github.com/russellgoldenberg/scrollama): is a modern & lightweight JavaScript library for scrollytelling using IntersectionObserver in favor of scroll events.
+- [Scrollama](https://github.com/russellgoldenberg/scrollama): is a modern & lightweight JavaScript library for scrolly telling using IntersectionObserver in favor of scroll events.
 
-- Leaflet: provides a popular map framework. You can also use MapBox, ESRI javascript api, Cesium, other map/virtual globe frameworks.
+- Leaflet: provides a popular map framework. You can also use MapBox, ESRI javascript API, Cesium, other map/virtual globe frameworks.
 
-- [Font Awesome 4.7](https://fontawesome.com/v4.7.0/icons/): offers a very large set of icons for multple usages.
+- [Font Awesome 4.7](https://fontawesome.com/v4.7.0/icons/): offers a very large set of icons for multiple usages.
 
 - Google Fonts: provides customized web fonts which you can externally link from Google servers.
 
@@ -36,11 +36,11 @@ TBA
 
 ## 2. Instructions
 
-Belowe, we will walk through the major parts relevant to generating a geonarrative.
+Below, we will walk through the major parts relevant to generating a GeoNarrative.
 
 ### 2.1 Structure
 
-A piece of geonarrative is organized as a sequence of scenes, and the scenes are associated with maps. Each map are mashed up by layers, and the layers can be any types of layers that leaflet.js or other geovisualizastion libraries support. Below shows the tree structure of this story map library.
+A GeoNarrative application is organized as a sequence of scenes, and the scenes are associated with maps. Each map is mashed up by layers, and the layers can be any types of layers that leaflet.js or other geovisualization libraries support. Below shows the tree structure of this story map library.
 
 ```powershell
 A GeoNarrative
@@ -67,10 +67,10 @@ A GeoNarrative
 
 ### 2.2 Setup and Libraries
 
-First of all, create an empty repo to manage the geonarrative project, and then generate the the main folder like `js`, `css`, `assets`, `img` to manage relevant documents.
+First of all, create an empty repo to manage the GeoNarrative project, and then generate the main folder like `js`, `css`, `assets`, `img` to manage relevant documents.
 
 
-Moreover, create an empty html document `index.html` to start the coding. In the index.html document, please initialize the fundamental page struture as below.
+Moreover, create an empty html document `index.html` to start the coding. In the index.html document, please initialize the fundamental page structure as below.
 
 ```html
 <!DOCTYPE html>
@@ -86,7 +86,7 @@ Moreover, create an empty html document `index.html` to start the coding. In the
 
 ```
 
-Then, in the head element, please include all the required stylesheets and javascripts. Please make sure to add stylesheets ahead of those javascript libraries.
+Then, in the head element, please include all the required stylesheets and javascript. Please make sure to add stylesheets ahead of those javascript libraries.
 
 ```html
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
@@ -101,7 +101,7 @@ Then, in the head element, please include all the required stylesheets and javas
 ```
 
 
-As we introduced above, a geonarrative is made up by several scenes. In the html document, each scene is held by an `article` element, and all the scenes are under a `section` element. Also, a storyboard is defined and held by a `div` element. This storyboard element anchors to the browser view window and functions as the container for the map object as well as other main graphic objects.
+As we introduced above, a GeoNarrative is made up by several scenes. In the html document, each scene is held by an `article` element, and all the scenes are under a `section` element. Also, a storyboard is defined and held by a `div` element. This storyboard element anchors to the browser view window and functions as the container for the map object as well as other main graphic objects.
 
 Ahead of all the scenes, another `section` can be defined to hold a cover page or landing page, and to the end, a footer can be held by one more `section` can be used to hold the footer. Therefore, a basic geo-narrative html placeholder is:
 
@@ -132,7 +132,7 @@ Ahead of all the scenes, another `section` can be defined to hold a cover page o
 
 ```
 
-Associted with the main html document, the stylesheets are stored in the file `css/main.css`.
+Associated with the main html document, the stylesheets are stored in the file `css/main.css`.
 
 Above all, make the map occupies the full screen.
 
@@ -156,7 +156,7 @@ Also, the storyboard needs to stick to the main window of the browser.
 }
 ```
 
-The following code block makes the footer extends to the left, right and bottom edge of the geonarrative.
+The following code block makes the footer extends to the left, right and bottom edge of the GeoNarrative.
 
 ```css
 #footer {
@@ -168,20 +168,20 @@ The following code block makes the footer extends to the left, right and bottom 
 }
 ```
 
-> Notably, the cover and footer element are optional. It depends on whether the geonarrative needs such a component or not.
+> Notably, the cover and footer element are optional. It depends on whether the GeoNarrative needs such a component or not.
 
 
 ### 2.3 Cover Page
 
 #### 2.3.1 Content on the page
 
-the cover page will introduce the geonarrative to the online vistors. Usually, it will contains
+the cover page will introduce the GeoNarrative to the online visitors. Usually, it will contain
 
 - a title
 - a subtitle
-- a short description or an synopsis of the GeoNarrative,
-- authors and their affilitions
-- social media components that enable visitors to share it with others on facebook, twitter and etc, or
+- a short description or a synopsis of the GeoNarrative,
+- authors and their affiliations
+- social media components that enable visitors to share it with others on Facebook, twitter and etc, or
 - footnotes.
 
 For example, in the template, the structure of the cover page is like:
@@ -252,13 +252,13 @@ Specific style items relevant to the cover page content are defined.
 
 #### 2.3.2 Background
 
-For modern cover pages, the above-listed items are usually shown on a background of video or images. Certainly you can generate a multimedia with your own smartphone or camera. As an alternative, you can also find some free resources online from [Unsplash](https://unsplash.com/), [Pexels](https://www.pexels.com/), and [Pixabay](https://pixabay.com/).
+For modern cover pages, the above-listed items are usually shown on a background of video or images. Certainly, you can generate a multimedia with your own smartphone or camera. As an alternative, you can also find some free resources online from [Unsplash](https://unsplash.com/), [Pexels](https://www.pexels.com/), and [Pixabay](https://pixabay.com/).
 
 ![](img/prexels.png)
 
-It is necessary for any online project to be cautious to the size of data being transferred from the server to their clients. On a normal internet environment, I recommend a) an png or jpg image in a size around 1920*1080 or b) an mp4 video in a HD resolution (1280*720) for no more than 10 seconds. As my own preference, I put the image to the `img` folder whereas the video to the `assets` folder.
+It is necessary for any online project to be cautious to the size of data being transferred from the server to their clients. On a normal internet environment, I recommend a) a png or jpg image in a size around 1920*1080 or b) an mp4 video in a HD resolution (1280*720) for no more than 10 seconds. As my own preference, I put the image to the `img` folder whereas the video to the `assets` folder.
 
-**If the background is a video**, please add a video element to the child of a the cover page element. the video is inluded as the value for the `src` property of the `source` element. Often, we need to make the video autoplay, mute its sound and play in a loop. So, such properties are defined in the `video` element as shown below.
+**If the background is a video**, please add a video element to the child of the cover page element. the video is included as the value for the `src` property of the `source` element. Often, we need to make the video autoplay, mute its sound and play in a loop. So, such properties are defined in the `video` element as shown below.
 
 ```html
 <section id="cover">
@@ -274,7 +274,7 @@ It is necessary for any online project to be cautious to the size of data being 
 
 ```
 
-Associated with the `video` element, a few style items like fullscreen and canvas-center are defined too.
+Associated with the `video` element, a few style items like Fullscreen and canvas-center are defined too.
 
 ```css
 .canvas-center {
@@ -290,7 +290,7 @@ Associated with the `video` element, a few style items like fullscreen and canva
 }
 ```
 
-**If the background is an image,** you simply need to add a style item to the cover page elment as below. Please refer to this [link](http://jakobzhao.github.io/geog458/weeks/week07/image.html).
+**If the background is an image,** you simply need to add a style item to the cover page element as below. Please refer to this [link](http://jakobzhao.github.io/geog458/weeks/week07/image.html).
 
 ```css
   background: url('img/background.jpg') no-repeat center center;
@@ -298,7 +298,7 @@ Associated with the `video` element, a few style items like fullscreen and canva
 
 ### 2.4 Scene
 
-For the content of a scene element, you need to put it in its correspoding html format within the `article` tag. The content could be pure text, image, iconic illustrator, and so on. Usually, most content will be shown in a scrollable script panel. This panel can be placed to different regions of the view window of a browser. Below is the basic structure of a scene.
+For the content of a scene element, you need to put it in its corresponding html format within the `article` tag. The content could be pure text, image, iconic illustrator, and so on. Usually, most content will be shown in a scrollable script panel. This panel can be placed to different regions of the view window of a browser. Below is the basic structure of a scene.
 
 ```html
 <article class="scene" data-scene="0">
@@ -306,7 +306,7 @@ For the content of a scene element, you need to put it in its correspoding html 
 </article>
 ```
 
-Each scen is labeled with a `scene` class and assigned with an index that is stored in a data attribute "data-scene."
+Each scene is labeled with a `scene` class and assigned with an index that is stored in a data attribute "data-scene."
 
 Below is the style items for class `scene`.
 
@@ -368,10 +368,10 @@ since each scene is indexed, you can capture a specific scene by its data-scene 
 
 ### 2.5 Behaviors
 
-the javascript behavior can be stored in an seperate javascript file in the js subfolder or embedded in a `script` tag to the very end of the `body` tag.
+the javascript behavior can be stored in a separate javascript file in the js subfolder or embedded in a `script` tag to the very end of the `body` tag.
 
 
-Below is a general sequential procedure of a geonarrative.
+Below is a general sequential procedure of a GeoNarrative.
 
 ```js
 // 1. Select those elments that wil be frequent used.
@@ -418,9 +418,9 @@ $(document).ready(function() {
 });
 ```
 
-When developing a geonarrative, you may need to load multiple geojson datasets or even same csv data, please make sure use the promise mechnism rather than the geojson.ajax solution. The former option would make the program propely executes after the data are completely loaded. In a nutshell, if you are a beginner in web development, I highly recommend that you can follow the same programming procedure sequence as listed above.
+When developing a GeoNarrative, you may need to load multiple geojson datasets or even same csv data, please make sure use the promise mechanism rather than the geojson.ajax solution. The former option would make the program properly executes after the data are completely loaded. In a nutshell, if you are a beginner in web development, I highly recommend that you can follow the same programming procedure sequence as listed above.
 
-When the script panel is scrolled, the scene will be changed. Everytime when a scene appears or disappears, the **Step Enter** and **Step Exit** events of scrollama will be activated. To handle these two events, two functions named `handleSceneEnter` and `handleSceneExit` defined rspectively. A varaible will pass to these two functions when being triggered. This variable, in the format of a javascript object, contains items like the scrolling direction, displying scene element, and index. Since it is capable to capture the index of the displying scene, we can also trigger relevant map behaviors, such as relocating the map, changing base map/layer, adding or removing the thematic layers, and etc. As the example below.
+When the script panel is scrolled, the scene will appear or disappear on a screen, and  the **Step Enter** and **Step Exit** events of scrollama will be activated. To handle these two events, two functions named `handleSceneEnter` and `handleSceneExit` defined, respectively. A variable will pass to these two functions when being triggered. This variable, in the format of a javascript object, contains items like the scrolling direction, displaying scene element, and index. Since it is capable to capture the index of the displaying scene, we can also trigger relevant map behaviors, such as relocating the map, changing base map/layer, adding or removing the thematic layers, and etc. As the example below.
 
 ```js
 function handleSceneEnter(response) {
@@ -463,14 +463,14 @@ function handleSceneExit(response) {
 
 ```
 
-> TIPS: If a genarrative is composed of Scene A, B and C. The Scene A comes first, and then B and C goes the last. When Scene B enters the screen in the normal order (B follows A entering the screen), both the Scene Exit event of Scene A and the Scene Enter event of Scene B will be triggered. When Scene Scene B enters in the reversed order, both the Scene Exit event of Scene C and the Scene Enter event of Scene B will be triggered. So, to ensure the geonarrative can scroll both normally and reversely (this is what happens in the real world scenario), you will need to define both the enter and exit handlers carefully, once the functions are coded, please debug it by scrolling the geonarrative in both ways. Otherwise, the behavior could be triggered in the wrong events. Based on my personal experience, I encourage you to follow the convention below.
+> TIPS: If a GeoNarrative is composed of Scene A, B and C. The Scene A comes first, and then B and C goes the last. When Scene B enters the screen in the normal order (B follows A entering the screen), both the Scene Exit event of Scene A and the Scene Enter event of Scene B will be triggered. When Scene B enters in the reversed order, both the Scene Exit event of Scene C and the Scene Enter event of Scene B will be triggered. So, to ensure the GeoNarrative can scroll both normally and reversely (this is what happens in the real-world scenario), you will need to define both the enter and exit handlers carefully, once the functions are coded, please debug it by scrolling the GeoNarrative in both ways. Otherwise, the behavior could be triggered in the wrong events. Based on my personal experience, I encourage you to follow the convention below.
 
 - set the map view when a scene enters the screen, do not set map view when a scene exits.
 - add map layers when a scene enters the screen, while this scene exits, remove the previously added layers.
 
 ### 2.6 Footer
 
-If you are interested in adding a footer to the geonarrative like [this](https://jakobzhao.github.io/geog458/weeks/week07/footer.html) (see the codes in the [footer.html](footer.html)), you will need to include bootstrap framework to your header element. Then, you can apply differnt types of footer templates which are supported by Bootstrap.
+If you are interested in adding a footer to the GeoNarrative like [this](https://jakobzhao.github.io/geog458/weeks/week07/footer.html) (see the codes in the [footer.html](footer.html)), you will need to include bootstrap framework to your header element. Then, you can apply different types of footer templates which are supported by Bootstrap.
 
 ![](img/footer.png)
 
@@ -487,4 +487,4 @@ Here are some resources for free footer templates.
 - https://freefrontend.com/bootstrap-footers/
 - https://colorlib.com/wp/bootstrap-footer/
 
-If you want to code your own footer, pleas refer to this [link](https://mdbootstrap.com/docs/standard/navigation/footer/).
+If you want to code your own footer, please refer to this [link](https://mdbootstrap.com/docs/standard/navigation/footer/).
