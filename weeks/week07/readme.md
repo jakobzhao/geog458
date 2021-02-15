@@ -481,11 +481,10 @@ Here is the code you need to include to the header:
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
 ```
 
-Here are some pages for free footer Templates
+Here are some resources for free footer templates.
 
-[1] https://www.mockplus.com/blog/post/bootstrap-4-footer-template
-[2] https://freefrontend.com/bootstrap-footers/
-[3]
-[4] https://colorlib.com/wp/bootstrap-footer/
+- https://www.mockplus.com/blog/post/bootstrap-4-footer-template
+- https://freefrontend.com/bootstrap-footers/
+- https://colorlib.com/wp/bootstrap-footer/
 
-If you want to code your own footer, you can refer to this [link](https://mdbootstrap.com/docs/standard/navigation/footer/).
+If you want to code your own footer, pleas refer to this [link](https://mdbootstrap.com/docs/standard/navigation/footer/).
