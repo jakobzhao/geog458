@@ -6,11 +6,11 @@ In this lecture, you will learn how to create a onbline Geo-Narrative. A GeoNarr
 
 A online geonarrative is organically integrated by several scenes. Each scene consists of a web map and a script. You can manipulate the map by zooming, panning, and even adding more thematic layers. This library embodies the concept responsive web design, meaning the geonarrative can be shown on either desktop or mobile devices.
 
-## Prerequisite
+## 1. Prerequisite
 
 To make the geo-narrative library robust and lightweight, we select as fewer prerequisite libraries as possible, and prioritize the use of open source or free libraries.
 
-### Required Libraries
+### 1.1 Required Libraries
 
 - jQuery: is a JavaScript library that greatly simplifies JavaScript programming.
 
@@ -26,19 +26,19 @@ To make the geo-narrative library robust and lightweight, we select as fewer pre
 
 - `optional` Chroma: makes color ramps for automatically generating map color schema.
 
-### Image and Video Resources:
+### 1.2 Image and Video Resources:
 
 [Unsplash](https://unsplash.com/), [Pexels](https://www.pexels.com/), and [Pixabay](https://pixabay.com/).
 
-### Base Map Collections:
+### 1.3 Base Map Collections:
 
 TBA
 
-## Instructions
+## 2. Instructions
 
 Belowe, we will walk through the major parts relevant to generating a geonarrative.
 
-### Structure
+### 2.1 Structure
 
 A piece of geonarrative is organized as a sequence of scenes, and the scenes are associated with maps. Each map are mashed up by layers, and the layers can be any types of layers that leaflet.js or other geovisualizastion libraries support. Below shows the tree structure of this story map library.
 
@@ -65,7 +65,7 @@ A GeoNarrative
 │             │──── Layer N
 ```
 
-### Setup and Libraries
+### 2.2 Setup and Libraries
 
 First of all, create an empty repo to manage the geonarrative project, and then generate the the main folder like `js`, `css`, `assets`, `img` to manage relevant documents.
 
@@ -177,9 +177,9 @@ The following code block makes the footer extends to the left, right and bottom 
 > Notably, the cover and footer element are optional. It depends on whether the geonarrative needs such a component or not.
 
 
-### Cover Page
+### 2.3 Cover Page
 
-#### Content on the page
+#### 2.3.1 Content on the page
 
 the cover page will introduce the geonarrative to the online vistors. Usually, it will contains
 
@@ -256,15 +256,15 @@ Specific style items relevant to the cover page content are defined.
 
 ```
 
-#### Background
+#### 2.3.2 Background
 
 For modern cover pages, the above-listed items are usually shown on a background of video or images. Certainly you can generate a multimedia with your own smartphone or camera. As an alternative, you can also find some free resources online from [Unsplash](https://unsplash.com/), [Pexels](https://www.pexels.com/), and [Pixabay](https://pixabay.com/).
 
 ![](img/prexels.png)
 
-It is necessary for any online project to be cautious to the size of data being transferred from the server to their clients. On a normal internet environment, I recommend a) an image in a size around 1920*1080 or b) an video in a HD format (1280*720) for no more than 10 seconds. As my own preference, I put the image to the `img` folder whereas the video to the `assets` folder.
+It is necessary for any online project to be cautious to the size of data being transferred from the server to their clients. On a normal internet environment, I recommend a) an png or jpg image in a size around 1920*1080 or b) an mp4 video in a HD resolution (1280*720) for no more than 10 seconds. As my own preference, I put the image to the `img` folder whereas the video to the `assets` folder.
 
-If the background is a video, please add a video element to the child of a the cover page element. the video is inluded as the value for the `src` property of the `source` element. Often, we need to make the video autoplay, mute its sound and play in a loop. So, such properties are defined in the `video` element as shown below.
+**If the background is a video**, please add a video element to the child of a the cover page element. the video is inluded as the value for the `src` property of the `source` element. Often, we need to make the video autoplay, mute its sound and play in a loop. So, such properties are defined in the `video` element as shown below.
 
 ```html
 <section id="cover">
@@ -296,8 +296,132 @@ Associated with the `video` element, a few style items like fullscreen and canva
 }
 ```
 
-If the background is an image, you simply need to add a style item to the cover page elment as below. Please refer to this [link](http://jakobzhao.github.io/geog458/weeks/week07/image.html).
+**If the background is an image,** you simply need to add a style item to the cover page elment as below. Please refer to this [link](http://jakobzhao.github.io/geog458/weeks/week07/image.html).
 
 ```css
   background: url('img/background.jpg') no-repeat center center;
 ```
+
+### 2.4 Scene
+
+For the content of a scene element, you need to put it in its correspoding html format within the `article` tag. The content could be pure text, image, iconic illustrator, and so on. Usually, most content will be shown in a scrollable script panel. This panel can be placed to different regions of the view window of a browser. Below is the basic structure of a scene.
+
+```html
+<article class="scene" data-scene="0">
+  ... ... ... ...
+</article>
+```
+
+Each scen is labeled with a `scene` class and assigned with an index that is stored in a data attribute "data-scene."
+
+Below is the style items for class `scene`.
+
+```css
+
+.scene {
+  position: relative;
+  max-width: 40rem;
+  /* margin: 0 auto 0 auto; */
+  margin: 0 auto 0 4rem;
+  padding: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.scene:first-child {
+  margin-top: -30%;
+}
+
+.scene:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.scene p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: black;
+  text-shadow: 0 0 6px white;
+}
+```
+
+since each scene is indexed, you can capture a specific scene by its data-scene attribute using css-selector, for example, if we want to select the scene with data-scene equals 3, the selector should be `[data-scene="3"]`. Therefore, you can update the style items of each scene. Below are a few customized scene styles.
+
+```css
+[data-scene="4"] div {
+  font-size: xxx-large;
+}
+
+[data-scene="5"] img {
+  display: block;
+  margin: 2rem auto 0 auto;
+  width: 90%;
+  border: 5px solid white;
+}
+
+[data-scene="6"] {
+  background: url("../img/background.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0 auto 0 auto !important;
+  height: 100vh !important;
+}
+```
+
+> TIPS: For each scene, you can change the margin-left and/or margin-right to update location of the script panel relative to the view window of the browser, like to the left of the screen, or the middle, the right or even covering the whole screen.
+
+### 2.5 Behaviors
+
+the javascript behavior can be stored in an seperate javascript file in the js subfolder or embedded in a `script` tag to the very end of the `body` tag.
+
+
+Below is a general sequential procedure of a geonarrative.
+
+```js
+// 1. Select those elments that wil be frequent used.
+var storyboard = $("#storyboard");
+var scene = $(".scene");
+
+// 2. Declare the maps, thematic layers and the base maps/layers.
+var map, polygonLayer, pointLayer, lightBasemap, satelliteBasemap;
+
+// 3. Initialize the geonarrative structure using scrollama
+var scriptPanel = scrollama();
+
+// 4. Define Generic window resize listener event
+function handleResize() { }
+
+// 5. The function performs when a scene enters the storyboard
+function handleSceneEnter(response) { }
+
+// 6. The function performs when a scene exits the storyboard
+function handleSceneExit(response) { }
+
+// 7. the function performs when this html document is ready.
+$(document).ready(function() {
+  // 8. Intialize the layout.
+  // 9. Use a promise mechnism to asynchrously load the required geojson datasets.
+  Promise.all([ $.getJSON("..."), $.getJSON("...")
+  ]).then(function(datasets) {
+
+    // 10. After the data are successfully loaded, the then funciton will execute in order to
+    //    a) preprocess the data
+    polygonLayer = L.geoJSON(datasets[0]);  pointLayer = L.geoJSON(datasets[1]);
+
+    //    b) initialize the script panel
+    scriptPanel.setup()
+      .onStepEnter(handleSceneEnter)
+      .onStepExit(handleSceneExit);
+  });
+
+  //    c) initialize the map and layers.
+  map = L.map('map', {  });
+  lightBasemap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png');
+  map.addLayer(lightBasemap);
+
+});
+```
+
+When developing a geonarrative, you may need to load multiple geojson datasets or even same csv data, please make sure use the promise mechnism rather than the geojson.ajax solution. The former option would make the program propely executes after the data are completely loaded. In a nutshell, if you are a beginner in web development, I highly recommend that you can follow the same programming procedure sequence as listed above.
