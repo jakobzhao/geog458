@@ -417,7 +417,7 @@ $(document).ready(function() {
   });
 
   //    c) initialize the map and layers.
-  map = L.map('map', {  });
+  map = L.map('map', {});
   lightBasemap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png');
   map.addLayer(lightBasemap);
 
@@ -425,3 +425,51 @@ $(document).ready(function() {
 ```
 
 When developing a geonarrative, you may need to load multiple geojson datasets or even same csv data, please make sure use the promise mechnism rather than the geojson.ajax solution. The former option would make the program propely executes after the data are completely loaded. In a nutshell, if you are a beginner in web development, I highly recommend that you can follow the same programming procedure sequence as listed above.
+
+When the script panel is scrolled, the scene will be changed. Everytime when a scene appears or disappears, the **Step Enter** and **Step Exit** events of scrollama will be activated. To handle these two events, two functions named `handleSceneEnter` and `handleSceneExit` defined rspectively. A varaible will pass to these two functions when being triggered. This variable, in the format of a javascript object, contains items like the scrolling direction, displying scene element, and index. Since it is capable to capture the index of the displying scene, we can also trigger relevant map behaviors, such as relocating the map, changing base map/layer, adding or removing the thematic layers, and etc. As the example below.
+
+```js
+function handleSceneEnter(response) {
+  var index = response.index;
+
+  if (index === 0) {
+    map.setView(new L.LatLng(47.33, -121.93), 8);
+    map.addLayer(polygonLayer);
+  } else if (index === 1) {
+    map.setView(new L.LatLng(47.33, -121.93), 8);
+    map.addLayer(pointLayer);
+  } else if (index === 2) {
+    //Relocate toSeattle
+    map.setView(new L.LatLng(47.6131229, -122.4121036), 12);
+  } else if (index === 3) {
+    //Relocate toPortland
+    map.setView(new L.LatLng(45.5428119, -122.7243662), 12);
+    map.addLayer(satelliteBasemap);
+  } else if (index === 6) {
+    map.setView(new L.LatLng(47.6131229, -122.4121036), 12);
+    $("#cover").css("visibility", "hidden");
+  }
+}
+
+// 6. The function performs when a scene exits the storyboard
+function handleSceneExit(response) {
+  var index = response.index
+
+  if (index === 0) {
+    map.removeLayer(polygonLayer);
+  } else if (index === 1) {
+    map.removeLayer(pointLayer);
+  } else if (index === 3) {
+    //exit to Portland
+    map.removeLayer(satelliteBasemap);
+  } else if (index === 6) {
+    $("#cover").css("visibility", "visible");
+  }
+}
+
+```
+
+> TIPS: If a genarrative is composed of Scene A, B and C. The Scene A comes first, and then B and C goes the last. When Scene B enters the screen in the normal order (B follows A entering the screen), both the Scene Exit event of Scene A and the Scene Enter event of Scene B will be triggered. When Scene Scene B enters in the reversed order, both the Scene Exit event of Scene C and the Scene Enter event of Scene B will be triggered. So, to ensure the geonarrative can scroll both normally and reversely (this is what happens in the real world scenario), you will need to define both the enter and exit handlers carefully, once the functions are coded, please debug it by scrolling the geonarrative in both ways. Otherwise, the behavior could be triggered in the wrong events. Based on my personal experience, I encourage you to follow the convention below.
+
+- set the map view when a scene enters the screen, do not set map view when a scene exits.
+- add map layers when a scene enters the screen, while this scene exits, remove the previously added layers.
