@@ -30,15 +30,12 @@ To make the geo-narrative library robust and lightweight, we select as fewer pre
 
 [Unsplash](https://unsplash.com/), [Pexels](https://www.pexels.com/), and [Pixabay](https://pixabay.com/).
 
-### 1.3 Base Map Collections:
-
-TBA
 
 ## 2. Instructions
 
 Below, we will walk through the major parts relevant to generating a GeoNarrative.
 
-### 2.1 Structure
+### 2.1 GeoNarrative Structure
 
 A GeoNarrative application is organized as a sequence of scenes, and the scenes are associated with maps. Each map is mashed up by layers, and the layers can be any types of layers that leaflet.js or other geovisualization libraries support. Below shows the tree structure of this story map library.
 
