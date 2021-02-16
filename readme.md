@@ -130,14 +130,36 @@ This week will focus on two emerging topics related to digital geographies, incl
 
 During these two weeks, each group will focusing on their final projects and essay. The instructor and teaching assistant are available during the normal lecture period, lab sections and office hours if help is needed. Below are some resources for you to develop your final project.
 
+- **Final Project Milestones:**
+  - Draft a Project proposal
+    - a) content inventory
+    - b) outlines
+    - c) project format (web mapping, dashbaord, geo-narrative, etc.)
+    - d) Creat a GitHub repo for project management
+    - e) save the item a), b), c) to the `readme.md`
+  - Initialize the project with a template
+    - a) [web mapping template](weeks/week04/starter)
+    - b) [smart dashboard](weeks/week06/)
+    - c) [geonarrative](weeks/week07)
+  - Data Gathering
+    - a) data to the `assets` folder
+    - b) data inventory to the `readme.md`.
+    - resources: [Washington State Data](https://wagda.lib.washington.edu/data/geography/wa_state/), [UW Geospatial dataa Archives](https://guides.lib.uw.edu/research/gis)
+  - Map Designs
+    - a) basemaps: cartodb free tiles, leaflet previews, customized tiles by MapBox studio
+    - b) thematic maps: designing thematic layers through Q or Arc, and then coding it to the leaflet framework.
+    - c) map layer list to the `readme.`
+  - Miscellanenous items
+    - a) multimedia: [Unsplash `image only`](https://unsplash.com/), [Pixabay](https://pixabay.com/), and [Pexels](https://www.pexels.com/)
+    - b) icons: [Font Awesome](https://fontawesome.com/v4.7.0/icons/)
+    - c) web fonts: [Google Fonts](https://fonts.google.com/)
+    - d) favicon: `optional` favicon
+    - c) Multimedia inventory to the `readme.`
+  - Coding and debugging
+  - Presentation and Peer-review
+  - Fine-tuning and submission
 - **Project Mockup:** a) [Web mapping](https://www.figma.com/file/USVi3eiJjhaUoHEcl3ryiR/Damron-Seattle-mockup), b) [Smart Dashboard](https://www.figma.com/file/Dm30UzxUlOlw6XrjMaPh1c/Covid-Workers-Dash?node-id=0%3A1), and c) [GeoNarrative](https://www.figma.com/file/gxADc3Bjrrr1GtubAD6paz/CoPe-Geonarrative-1-Mockup).
 
-- **Final project templates:** a) [web mapping template](weeks/week04/starter), b) [smart dashboard](weeks/week06/), and c) GeoNarrative
-- **Data resources:**
-  - Geospatial data: [Washington State Data](https://wagda.lib.washington.edu/data/geography/wa_state/), [UW Geospatial dataa Archives](https://guides.lib.uw.edu/research/gis)
-  - Image and Video Stock: [Unsplash `image only`](https://unsplash.com/), [Pixabay](https://pixabay.com/), and [Pexels](https://www.pexels.com/)
-  - Icons: [Font Awesome](https://fontawesome.com/v4.7.0/icons/)
-  - Web Fonts: [Google Fonts](https://fonts.google.com/)
 
 
 ### Finals Week : Final project presentations
