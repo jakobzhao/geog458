@@ -26,9 +26,9 @@ To make the geo-narrative library robust and lightweight, we select as fewer pre
 
 - Leaflet: provides a popular map framework. You can also use MapBox, ESRI javascript API, Cesium, other map/virtual globe frameworks.
 
-- [Font Awesome 4.7](https://fontawesome.com/v4.7.0/icons/): offers a very large set of icons for multiple usages.
+- `optional`[Font Awesome 4.7](https://fontawesome.com/v4.7.0/icons/): offers a very large set of icons for multiple usages.
 
-- Google Fonts: provides customized web fonts which you can externally link from Google servers.
+- `optional`Google Fonts: provides customized web fonts which you can externally link from Google servers.
 
 - `optional` Bootstrap 4: provides additional web components, such as navigation bar, footer, etc.
 
@@ -38,6 +38,7 @@ To make the geo-narrative library robust and lightweight, we select as fewer pre
 
 [Unsplash](https://unsplash.com/), [Pexels](https://www.pexels.com/), and [Pixabay](https://pixabay.com/).
 
+### 1.3 Data and basemaps
 
 ## 2. Instructions
 
@@ -72,7 +73,7 @@ A GeoNarrative
 
 ### 2.2 Setup and Libraries
 
-First of all, create an empty repo to manage the GeoNarrative project, and then generate the main folder like `js`, `css`, `assets`, `img` to manage relevant documents.
+First of all, create an empty repo to manage the GeoNarrative project, and then generate the main folders like `js`, `css`, `assets`, `img` to manage relevant documents.
 
 
 Moreover, create an empty html document `index.html` to start the coding. In the index.html document, please initialize the fundamental page structure as below.
