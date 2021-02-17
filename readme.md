@@ -145,14 +145,14 @@ During these two weeks, each group will focusing on their final projects and ess
     - b) data inventory to the `readme.md`.
     - resources: [Washington State Data](https://wagda.lib.washington.edu/data/geography/wa_state/), [UW Geospatial dataa Archives](https://guides.lib.uw.edu/research/gis)
   - Map Designs
-    - a) basemaps: cartodb free tiles, leaflet previews, customized tiles by MapBox studio
+    - a) basemaps: [cartodb free tiles](https://github.com/CartoDB/basemap-styles), [leaflet-provider preview](https://leaflet-extras.github.io/leaflet-providers/preview/), customized tiles by MapBox studio
     - b) thematic maps: designing thematic layers through Q or Arc, and then coding it to the leaflet framework.
     - c) map layer list to the `readme.md`
   - Miscellanenous items
     - a) multimedia: [Unsplash `image only`](https://unsplash.com/), [Pixabay](https://pixabay.com/), and [Pexels](https://www.pexels.com/)
-    - b) icons: [Font Awesome](https://fontawesome.com/v4.7.0/icons/)
+    - b) icons: [Font Awesome](https://fontawesome.com/v4.7.0/icons/), [Bootstrap icons](https://icons.getbootstrap.com/)
     - c) web fonts: [Google Fonts](https://fonts.google.com/)
-    - d) favicon: `optional` favicon
+    - d) `optional` Favicon: [Favicon Generator](https://realfavicongenerator.net/)
     - c) Multimedia inventory to the `readme.md`
   - Coding and debugging
   - Presentation and Peer-review
