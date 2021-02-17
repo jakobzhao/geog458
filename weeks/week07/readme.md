@@ -296,10 +296,10 @@ Associated with the `video` element, a few style items like Fullscreen and canva
 }
 ```
 
-**If the background is an image,** you simply need to add a style item to the cover page element as below. Please refer to this [link](http://jakobzhao.github.io/geog458/weeks/week07/image.html).
+**If the background is an image,** you simply need to add two style properties (backgruond and background-size) to the cover page element as below. In the background, please link to the path of the background image. To see how the fullscreen background image works, please refer to this [link](http://jakobzhao.github.io/geog458/weeks/week07/image.html).
 
 ```css
-  background: url('img/background.jpg') no-repeat center center;
+  background: url('img/background.jpg') no-repeat center center;  background-size: cover;
 ```
 
 ### 2.4 Scene

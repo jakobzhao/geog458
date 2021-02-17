@@ -148,13 +148,13 @@ During these two weeks, each group will focusing on their final projects and ess
   - Map Designs
     - a) basemaps: cartodb free tiles, leaflet previews, customized tiles by MapBox studio
     - b) thematic maps: designing thematic layers through Q or Arc, and then coding it to the leaflet framework.
-    - c) map layer list to the `readme.`
+    - c) map layer list to the `readme.md`
   - Miscellanenous items
     - a) multimedia: [Unsplash `image only`](https://unsplash.com/), [Pixabay](https://pixabay.com/), and [Pexels](https://www.pexels.com/)
     - b) icons: [Font Awesome](https://fontawesome.com/v4.7.0/icons/)
     - c) web fonts: [Google Fonts](https://fonts.google.com/)
     - d) favicon: `optional` favicon
-    - c) Multimedia inventory to the `readme.`
+    - c) Multimedia inventory to the `readme.md`
   - Coding and debugging
   - Presentation and Peer-review
   - Fine-tuning and submission
