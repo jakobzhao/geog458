@@ -133,10 +133,9 @@ During these two weeks, each group will focusing on their final projects and ess
 - **Final Project Milestones:**
   - Draft a Project proposal
     - a) content inventory
-    - b) outlines
-    - c) project format (web mapping, dashbaord, geo-narrative, etc.)
-    - d) Creat a GitHub repo for project management
-    - e) save the item a), b), c) to the `readme.md`
+    - b) project format (web mapping, dashbaord, geo-narrative, etc.)
+    - c) Creat a GitHub repo for project management
+    - d) save the item a) and b) to the `readme.md`
   - Initialize the project with a template
     - a) [web mapping template](weeks/week04/starter)
     - b) [smart dashboard](weeks/week06/)
