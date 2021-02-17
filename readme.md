@@ -131,33 +131,42 @@ This week will focus on two emerging topics related to digital geographies, incl
 During these two weeks, each group will focusing on their final projects and essay. The instructor and teaching assistant are available during the normal lecture period, lab sections and office hours if help is needed. Below are some resources for you to develop your final project.
 
 - **Final Project Milestones:**
-  - Draft a Project proposal
-    - a) content inventory
-    - b) project format (web mapping, dashbaord, geo-narrative, etc.)
+  - Draft a project proposal
+    - a) Content inventory
+    - b) Project Type (web mapping, dashbaord, geo-narrative, etc.)
     - c) Creat a GitHub repo for project management
-    - d) save the item a) and b) to the `readme.md`
-  - Initialize the project with a template
+    - d) Save the item a) and b) to the `readme.md`
+  - `Optional` Project mockup:
+    - a) [Web mapping](https://www.figma.com/file/USVi3eiJjhaUoHEcl3ryiR/Damron-Seattle-mockup)
+    - b) [Smart Dashboard](https://www.figma.com/file/Dm30UzxUlOlw6XrjMaPh1c/Covid-Workers-Dash?node-id=0%3A1)
+    - c) [GeoNarrative](https://www.figma.com/file/gxADc3Bjrrr1GtubAD6paz/CoPe-Geonarrative-1-Mockup)
+  - Initialize the project using a template
     - a) [web mapping template](weeks/week04/starter)
     - b) [smart dashboard](weeks/week06/)
     - c) [geonarrative](weeks/week07)
-  - Data Gathering
+    - d) feel free to create/use your own template.
+  - Geospatial data gathering
     - a) data to the `assets` folder
-    - b) data inventory to the `readme.md`.
+    - b) save data inventory to the `readme.md`.
     - resources: [Washington State Data](https://wagda.lib.washington.edu/data/geography/wa_state/), [UW Geospatial dataa Archives](https://guides.lib.uw.edu/research/gis)
-  - Map Designs
-    - a) basemaps: [cartodb free tiles](https://github.com/CartoDB/basemap-styles), [leaflet-provider preview](https://leaflet-extras.github.io/leaflet-providers/preview/), customized tiles by MapBox studio
-    - b) thematic maps: designing thematic layers through Q or Arc, and then coding it to the leaflet framework.
-    - c) map layer list to the `readme.md`
+  - Map designs
+    - a) Basemaps:
+      - [cartodb free tiles](https://github.com/CartoDB/basemap-styles)
+      - [leaflet-provider preview](https://leaflet-extras.github.io/leaflet-providers/preview/)
+      - customized tiles by MapBox studio
+    - b) Thematic layers: Design them through Q or Arc, and then coding them using the Leaflet library.
+    - c) Save the map layer list to the `readme.md`
   - Miscellanenous items
     - a) multimedia: [Unsplash `image only`](https://unsplash.com/), [Pixabay](https://pixabay.com/), and [Pexels](https://www.pexels.com/)
     - b) icons: [Font Awesome](https://fontawesome.com/v4.7.0/icons/), [Bootstrap icons](https://icons.getbootstrap.com/)
     - c) web fonts: [Google Fonts](https://fonts.google.com/)
     - d) `optional` Favicon: [Favicon Generator](https://realfavicongenerator.net/)
-    - c) Multimedia inventory to the `readme.md`
+    - e) Save the multimedia inventory to the `readme.md`
   - Coding and debugging
-  - Presentation and Peer-review
+  - Presentation and peer-review:
+    - Presentations in the lecture meetings in the finals week
+    - Each student needs to review at least five final projects
   - Fine-tuning and submission
-- **Project Mockup:** a) [Web mapping](https://www.figma.com/file/USVi3eiJjhaUoHEcl3ryiR/Damron-Seattle-mockup), b) [Smart Dashboard](https://www.figma.com/file/Dm30UzxUlOlw6XrjMaPh1c/Covid-Workers-Dash?node-id=0%3A1), and c) [GeoNarrative](https://www.figma.com/file/gxADc3Bjrrr1GtubAD6paz/CoPe-Geonarrative-1-Mockup).
 
 
 
