@@ -110,7 +110,7 @@ This week you will be making your first web map of the quarter using the popular
 
 This week we will explore the concept of geo-narrative, the use of storytelling in mapping practice, by looking at existing geo-narrative mapping projects and engaging in a group discussion and map critique.
 
--   **Lecture Notes:** a) [A Geo-Narrative Template](weeks/week07/), b) [Planning and outlining your story map](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/sharing-collaboration/planning-and-outlining-your-story-map-how-to-set-yourself-up-for-success/).
+-   **Lecture Notes:** a) [A Geo-Narrative Template](weeks/week07/), b) [Planning and outlining your story map](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/sharing-collaboration/planning-and-outlining-your-story-map-how-to-set-yourself-up-for-success/). Exaples: a) [Oregon Atlas](http://oregonwater.info/atlas.html), b) [Stand with #Standing Rock](https://jakobzhao.github.io/standwithstandingrock/)
 -   **Readings:** a) [Affective Geovisualisations](https://drive.google.com/file/d/1aqMFkewNT9s9nrAecAVYiaBAbtCrf7xj/view?usp=sharing), b) [Anti-Eviction Mapping Project Handbook](https://static1.squarespace.com/static/52b7d7a6e4b0b3e376ac8ea2/t/5bc76571b208fc10defc815a/1539794295823/AEMP+Handbook.pdf), c)[extended readings](weeks/week07/readings.md).
 -   **Think Piece 7:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000379) `Due: Feb 18th, by 5:00pm`
 
