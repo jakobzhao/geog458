@@ -288,7 +288,7 @@ As shown by the code, the tiles are loaded from a relative path `assets/tiles` w
   - The fourth tile set should be a map layer designed over Mapbox. It could a map embodying a map theme relavent to you, this could be Black History month, LGBTQ+ Pride, UW, Nature/Environment, etc. Please try to use the color, icon, and label to realize the theme.  (5 POINTS).
 
 -  After the map tiles are generated, you are expected to create an index.html to visualize a leaflet map to visualze the four tile map sets.
-    -  create any necessary web page elments, such as page tile, scale bar, attribution, zoom control, map description, etc. (5 POINTS)
+    -  create any necessary web page elments, such as page/map tite, scale bar, attribution, zoom control, map description, etc. (5 POINTS)
     -  The leaflet map should be shown in the full screen. (5 POINTS).
     -  A layer switcher should be added to allow users to turn on and off each map layers. For more about the map switch control, please refer to the leaflet document at [here](https://leafletjs.com/examples/layers-control/). (6 POINTS).
 
