@@ -299,7 +299,7 @@ As shown by the code, the tiles are loaded from a relative path `assets/tiles` w
     -  the available zoom levels of each tile set (2 POINTS), and
     -  brief descriptions of each tile sets (3 POINTS).
 
-- make sure the repository accessible through the url `https://[your_github_username].github.io/[your_repository_name]`. Also, please provide this url to the `readme.md` file. (5 POINTS).
+- make sure the repository accessible through the url `https://[your_github_username].github.io/[your_repository_name]`. Also, please provide the url to your webmap in the `readme.md` file. (5 POINTS).
 
 The structure of this repository should look like:
 
