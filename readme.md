@@ -120,7 +120,7 @@ This week we will explore the concept of geo-narrative, the use of storytelling 
 
 This week will focus on two emerging topics related to digital geographies, including cloud point visualization and real-time environment data collection, and explore their promise and pitfalls.
 
--   **Lecture Notes:** [Point cloud (Lidar Data) visualization](https://jakobzhao.github.io/sfm/index.html) and [Real-time environmental data visualization](weeks/week08/rpi-iot).
+-   **Lecture Notes:** [Point cloud (Lidar Data) visualization](https://jakobzhao.github.io/sfm/index.html), [sample data](https://github.com/ucdavis/metashape) and [Real-time environmental data visualization](weeks/week08/rpi-iot).
 -   **Readings:** a) [Real-time GIS](https://drive.google.com/file/d/1COD2OYBxEJThG5Lfx7-nzV0EGtGedndT/view?usp=sharing), b) [Anatomy of an AI System](https://anatomyof.ai/), c) [Abolishing Racist Police Algorithms](https://www.technologyreview.com/2020/06/05/1002709/the-activist-dismantling-racist-police-algorithms/), and d) [extended readings](weeks/week08/readings.md).
 -   **Think Piece 8:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000381) `Due: Feb 25th, by 5:00pm`
 
