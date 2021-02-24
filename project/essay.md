@@ -9,6 +9,7 @@ Through writing this essay, you are expected to use the learned knowledge and sk
 - introduce this digital-geography project, including, but not limited to:
   - the goal of this project (why this project was made?)
   - the major functions
+   - list any web map element in use (e.g., scalar bar, north arrow, legend, etc.) if it has. 
   - the audience (who is the intended audience? who can use this project?)
   - the authors and their affiliations 
   - the data collected date if it has
@@ -17,15 +18,12 @@ Through writing this essay, you are expected to use the learned knowledge and sk
 - describe the systematic architecture:
   - client, server, services, and data.
   - Exploring the data flowed in between the client and server.
-
-  > note: you might want to inspect the code of this project, especially looking into the following issues:
+  - The major functions (you might want to open the inspector to explore the sourcecode.)
   
 - critique its overall UI/UX and Web Mapping design.
   - Does this project support responsive design?
+  - describe the basemap, the thematic layer and the interactive features if it has.
 
-- describe the basemap, the thematic layer and the interactive features if it has.
-
-- list any web map element in use (e.g., scalar bar, north arrow, legend, etc.) if it has.
 
 - analyze the pros and cons of the examined project. and discuss anything else you feel worthy to share.
 
