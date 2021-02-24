@@ -11,36 +11,27 @@ Through writing this essay, you are expected to use the learned knowledge and sk
   - the major functions
   - the audience (who is the intended audience? who can use this project?)
   - the authors and their affiliations 
+  - the data collected date if it has
+  - list the data sources
   
 - describe the systematic architecture:
   - client, server, services, and data.
-  
-- inspect the code of this project, especially looking into the following issues:
   - Exploring the data flowed in between the client and server.
-  - The major libraries/stylesheets in use and their functions.
+
+  > note: you might want to inspect the code of this project, especially looking into the following issues:
+  
+- critique its overall UI/UX and Web Mapping design.
   - Does this project support responsive design?
-  
-- list the data sources:
-  - vectors (i.e., geojson)
-  - rasters (i.e., TileLayer)
-  - critique its overall UI/UX and Web Mapping design if it has.
-  
+
 - describe the basemap, the thematic layer and the interactive features if it has.
 
 - list any web map element in use (e.g., scalar bar, north arrow, legend, etc.) if it has.
 
-- analyze the strengths and weakness of the examined project.
-
-- discuss anything else you feel worthy to share.
+- analyze the pros and cons of the examined project. and discuss anything else you feel worthy to share.
 
 - reflect upon this project with the references of the readings from this course or other social theories, such as digital divide, power relationship, surveillance and/or resistance.
 
-Since the essay is written in markdown syntax, please include the following four structures:
-
-- list, highlight,
-- images such as screenshot.
-- code snippet
-- table
+>  **Note:** Since the essay is written in markdown syntax, you **must** use the followin three structures: highlight, images such as screenshot, code snippet.
 
 ## Submission
 
