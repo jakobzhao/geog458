@@ -29,7 +29,7 @@ Through writing this essay, you are expected to use the learned knowledge and sk
 
 - reflect upon this project with the references of the readings from this course or other social theories, such as digital divide, power relationship, surveillance and/or resistance.
 
->  **Note:** Since the essay is written in markdown syntax, you **must** use the followin three structures: highlight, images such as screenshot, code snippet.
+>  **Note:** Since the essay is written in markdown syntax, you are encourage to use the followin three structures: highlight, images such as screenshot, code snippet.
 
 ## Submission
 
