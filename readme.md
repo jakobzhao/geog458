@@ -133,7 +133,7 @@ During these two weeks, each group will focusing on their final projects and ess
 - **Final Project Milestones:**
   - Draft a project proposal
     - a) Content inventory
-    - b) Project Type (web mapping, dashbaord, geo-narrative, etc.)
+    - b) Project Type (web mapping, dashboard, geo-narrative, etc.)
     - c) Creat a GitHub repo for project management
     - d) Save the item a) and b) to the `readme.md`
   - `Optional` Project mockup:
@@ -148,7 +148,7 @@ During these two weeks, each group will focusing on their final projects and ess
   - Geospatial data gathering
     - a) data to the `assets` folder
     - b) save data inventory to the `readme.md`.
-    - resources: [Washington State Data](https://wagda.lib.washington.edu/data/geography/wa_state/), [UW Geospatial dataa Archives](https://guides.lib.uw.edu/research/gis)
+    - resources: [Washington State Data](https://wagda.lib.washington.edu/data/geography/wa_state/), [UW Geospatial data Archives](https://guides.lib.uw.edu/research/gis)
   - Map designs
     - a) Basemaps:
       - [cartodb free tiles](https://github.com/CartoDB/basemap-styles)
