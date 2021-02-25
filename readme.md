@@ -130,6 +130,8 @@ This week will focus on two emerging topics related to digital geographies, incl
 
 During these two weeks, each group will focusing on their final projects and essay. The instructor and teaching assistant are available during the normal lecture period, lab sections and office hours if help is needed. Below are some resources for you to develop your final project.
 
+[Request an individual meeting with the Instructor via Zoom](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI)
+
 - **Final Project Milestones:**
   - Draft a project proposal
     - a) Content inventory
