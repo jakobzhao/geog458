@@ -130,10 +130,10 @@
         map.setView(new L.LatLng(47.33, -121.93), 8);
         map.addLayer(pointLayer);
       } else if (index === 2) {
-        //Relocate toSeattle
+        //Relocate to Seattle
         map.setView(new L.LatLng(47.6131229, -122.4121036), 12);
       } else if (index === 3) {
-        //Relocate toPortland
+        //Relocate to Portland
         map.setView(new L.LatLng(45.5428119, -122.7243662), 12);
         map.addLayer(satelliteBasemap);
       } else if (index === 6) {
@@ -187,7 +187,7 @@
           .setup({
             step: ".scene", // all the scenes.
             offset: 0.33,   // the location of the enter and exit trigger
-            // debug: true  // toggler on or off the debug mode.
+            debug: true  // toggler on or off the debug mode.
           })
           .onStepEnter(handleSceneEnter)
           .onStepExit(handleSceneExit);

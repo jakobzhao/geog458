@@ -12,19 +12,21 @@ The final project is a major component of this course. Each project are expected
     - Project goal (such as, what is the message you want to deliver through your project?)
     - Data sources
     - Applied libraries (e.g., Leaflet, D3, C3) and Web Services (e.g., github, basemap) in use
-    - Acknowledgement
     - Other things necessary to inform the audience.
+    - Acknowledgement
 
 ## 2\. Presentation
 
-Academics often attend conferences where they share their discoveries and browse the work of others to gain new ideas and offer feedback. during the last two lectures on Week 11, we will hold two final presentation meetings, Each student is expected to present the final project in ~4 minutes. And there will be a Q&A session in 1 ~ 2 minutes.
+Academics often attend conferences where they share their discoveries and browse the work of others to gain new ideas and offer feedback.
+
+We will hold a final presentation meeting **on March 16th, 4:30 to 7:30PM**, each student is expected to present the final project in ~3 minutes, and plus another 1 minute for Q&A session.
 
 ## 3\. Peer Review
-During the final presentation, each student will need to share some constructive comments to at least **FIVE** of your class mates's final projects. The comments needs to be submitted as a new github issue to the presenter's final project repository. The comment can be as short as one or two sentence, but you are encourgaed to comment on someting the presenter did well, and something can be further improved.
+During the final presentation, each student will need to share some constructive comments to at least **FIVE** of your class mates's final projects. The comments needs to be submitted as a new github issue to the presenter's final project repository. Your comment could start with  something the presenter did well, and the list a few iems the presenter could further improve.
 
 ## 4\. Submission
 
-To submit your final project, you will need to share the url link of your final project's github repository to a dedicated final project submission tab on Canvas **Week 11** - on Friday(June 12) by 11:59pm.
+To submit your final project, you will need to share the url link of your final project's github repository to a dedicated final project submission tab on Canvas by the end of the finals week on Friday(March 19th) by 11:59pm.
 
 
 >  **Note:** The requirements to the project may be slightly changed according the progress of this course. The final requirements are subject to the instructor's notification.
