@@ -1,9 +1,9 @@
 # GEOGRAPHY 458: Advanced Digital Geographies
 
 **Incoming Events**
-- Final Essay Due: Friday, March 12th by 11:59pm PST, [The requirement](https://github.com/jakobzhao/geog458/blob/master/project/essay.md)
-- Final Project Presentation via Zoom: Tuesday, March 16th, 4:30 to 7:30 PM. **Please fill the sign up form and register for the zoom meeting** `check the sign-up form and the zoom meeting link in one of my previous email to you.`
-- Final Project Due: Friday, March 19th by 11:59pm PST, [The requirement](https://github.com/jakobzhao/geog458/blob/master/project/project.md)
+- **Final Essay Due**: Friday, March 12th by 11:59pm PST, [The requirement](https://github.com/jakobzhao/geog458/blob/master/project/essay.md)
+- **Final Project Presentation via Zoom**: Tuesday, March 16th, 4:30 to 7:30 PM. `Please fill the sign up form and register for the zoom meeting`
+- **Final Project Due**: Friday, March 19th by 11:59pm PST, [The requirement](https://github.com/jakobzhao/geog458/blob/master/project/project.md)
 
 
 **Meetings**
