@@ -2,7 +2,7 @@
 
 **Incoming Events**
 - **Final Essay Due**: Friday, March 12th by 11:59pm PST, [The requirement](https://github.com/jakobzhao/geog458/blob/master/project/essay.md)
-- **Final Project Presentation via Zoom**: Tuesday, March 16th, 4:30 to 7:30 PM. `Please fill the sign up form and register for the zoom meeting`
+- **Final Project Presentation via Zoom**: Tuesday, March 16th, 4:30 to 7:30 PM. `Please fill the sign-up form and register for the zoom mtg.`
 - **Final Project Due**: Friday, March 19th by 11:59pm PST, [The requirement](https://github.com/jakobzhao/geog458/blob/master/project/project.md)
 
 
