@@ -1,5 +1,11 @@
 # GEOGRAPHY 458: Advanced Digital Geographies
 
+<h3 style="color:red; weight:bold">Important Events</h3>
+
+- Essay Due
+- Final Project Presentation
+- Final Project Due
+
 **Meetings**
 
 -   **Lectures:** Tuesdays and Thursdays 11:30 AM to 12:50 PM PST on [Zoom](https://washington.zoom.us/meeting/register/tJcuf-ippzIrHNA1U1xoZDe7CR9ktaTTaAwU)
