@@ -5,6 +5,7 @@
 - **Final Project Presentation**: Tuesday, March 16th, 4:30 to 7:30 PM PST. `Please fill the sign-up form and check the zoom meeting link.`
 - **Final Project Due**: Friday, March 19th by 11:59pm PST, [The requirement](https://github.com/jakobzhao/geog458/blob/master/project/project.md)
 
+> Making an individual appointment with the instructor at [here](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI).
 
 **Meetings**
 
