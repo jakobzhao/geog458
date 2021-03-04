@@ -1,7 +1,6 @@
 # GEOGRAPHY 458: Advanced Digital Geographies
 
-<h3 style="color:red; weight:bold">Important Events</h3>
-
+<font style="color:red;"><h3>Incoming Events</h3></font>
 - Essay Due
 - Final Project Presentation
 - Final Project Due
