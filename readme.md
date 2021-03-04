@@ -5,6 +5,11 @@
 - Final Project Presentation
 - Final Project Due
 
+
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
+- ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `#c5f015`
+- ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`
+
 **Meetings**
 
 -   **Lectures:** Tuesdays and Thursdays 11:30 AM to 12:50 PM PST on [Zoom](https://washington.zoom.us/meeting/register/tJcuf-ippzIrHNA1U1xoZDe7CR9ktaTTaAwU)
