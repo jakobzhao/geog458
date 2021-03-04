@@ -1,9 +1,13 @@
 # GEOGRAPHY 458: Advanced Digital Geographies
 
-<font style="color:red;"><h3>Incoming Events</h3></font>
+<font style="color:red"><h3>Incoming Events</h3></font>
 - Essay Due
 - Final Project Presentation
 - Final Project Due
+
+<p style='color:red'>This is some red text.</p>
+<font color="red">This is some text!</font>
+These are <b style='color:red'>red words</b>.
 
 **Meetings**
 
