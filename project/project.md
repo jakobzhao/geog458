@@ -22,7 +22,7 @@ Academics often attend conferences where they share their discoveries and browse
 We will hold a final presentation meeting **on March 16th, 4:30 to 7:30PM**, each student is expected to present the final project in ~3 minutes, and plus another 1 minute for Q&A session.
 
 ## 3\. Peer Review
-During the final presentation, each student will need to share some constructive comments to at least **FIVE** of your class mates's final projects. The comments needs to be submitted as a new github issue to the presenter's final project repository. Your comment could start with  something the presenter did well, and the list a few iems the presenter could further improve.
+During the final presentation, each student will need to share some constructive comments to at least **FIVE** of your class mates's final projects. The comments needs to be submitted as a new github issue to the presenter's final project repository. Your comment could start with something the presenter did well, and the list a few items the presenter could further improve.
 
 ## 4\. Submission
 
