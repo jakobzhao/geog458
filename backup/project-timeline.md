@@ -1,0 +1,40 @@
+
+[Request an individual meeting with the Instructor via Zoom](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI)
+
+- **Final Project Milestones:**
+  - Draft a project proposal
+    - a) Content inventory
+    - b) Project Type (web mapping, dashboard, geo-narrative, etc.)
+    - c) Creat a GitHub repo for project management
+    - d) Save the item a) and b) to the `readme.md`
+  - `Optional` Project mockup:
+    - a) [Web mapping](https://www.figma.com/file/USVi3eiJjhaUoHEcl3ryiR/Damron-Seattle-mockup)
+    - b) [Smart Dashboard](https://www.figma.com/file/Dm30UzxUlOlw6XrjMaPh1c/Covid-Workers-Dash?node-id=0%3A1)
+    - c) [GeoNarrative](https://www.figma.com/file/gxADc3Bjrrr1GtubAD6paz/CoPe-Geonarrative-1-Mockup)
+  - Initialize the project using a template
+    - a) [web mapping template](weeks/week04/starter)
+    - b) [smart dashboard](weeks/week06/)
+    - c) [geonarrative](weeks/week07)
+    - d) feel free to create/use your own template.
+  - Geospatial data gathering
+    - a) data to the `assets` folder
+    - b) save data inventory to the `readme.md`.
+    - resources: [Washington State Data](https://wagda.lib.washington.edu/data/geography/wa_state/), [UW Geospatial data Archives](https://guides.lib.uw.edu/research/gis)
+  - Map designs
+    - a) Basemaps:
+      - [cartodb free tiles](https://github.com/CartoDB/basemap-styles)
+      - [leaflet-provider preview](https://leaflet-extras.github.io/leaflet-providers/preview/)
+      - customized tiles by MapBox studio
+    - b) Thematic layers: Design them through Q or Arc, and then coding them using the Leaflet library.
+    - c) Save the map layer list to the `readme.md`
+  - Miscellanenous items
+    - a) multimedia: [Unsplash `image only`](https://unsplash.com/), [Pixabay](https://pixabay.com/), and [Pexels](https://www.pexels.com/)
+    - b) icons: [Font Awesome](https://fontawesome.com/v4.7.0/icons/), [Bootstrap icons](https://icons.getbootstrap.com/)
+    - c) web fonts: [Google Fonts](https://fonts.google.com/)
+    - d) `optional` Favicon: [Favicon Generator](https://realfavicongenerator.net/)
+    - e) Save the multimedia inventory to the `readme.md`
+  - Coding and debugging
+  - Presentation and peer-review:
+    - Presentations in the lecture meetings in the finals week
+    - Each student needs to review at least five final projects
+  - Fine-tuning and submission
