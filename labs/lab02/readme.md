@@ -1,8 +1,6 @@
 # Lab 2: Geo-tagged tweet collection and visualization
 
-**Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu
-
-**Due:** Jan 29th, by 11:59pm | **Points Available** = 50
+**Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu; **Points Available** = 50
 
 In this practical exercise, we will introduce how to collect Geo-tagged Twitter data using an API-based crawler and visualize them on a map using a mapping tool `QGIS`. A web crawler is a purposely designed bot for online data collection. In most cases, online data can be acquired through a dedicated API maintained by the data provider. This lab exercise focuses on visualizing the spatial distribution of twitter data, which reflects the public perception of a specific topic. As you go through this tutorial, think about how you can apply this technique to your final project. Below, we will go over in detail the process of developing an API-based crawler and using QGIS to visualize collected data onto a map. Okay, let us get started!
 

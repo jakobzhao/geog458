@@ -1,8 +1,6 @@
 # Lab 3: Web Map Application
 
-**Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu
-
-**Due:**  Feb 12th, by 11:59pm | **Points Available** = 50
+**Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu; **Points Available** = 50
 
 In this lab, we will design an interactive web map of cell towers in Washington. When creating a web map, one of the critical components is styling your elements to provide proper symbolization for your data. This increases legibility for users and can give your map an appealing, custom design. Elements that can be customized to include thematic layers (i.e., points, lines, and polygons), base maps (as a leaflet `tileLayer`), interactive features (the components of the map that allow for user interaction), and legends and supplemental information (such as credits, etc.). To do that, the county boundaries are from [Washington Data & Research](https://www.ofm.wa.gov/washington-data-research/population-demographics/gis-data/census-geographic-files), and the spatial distribution of cell towers is from [Homeland Infrastructure Foundation-Level Data (HIFLD)](https://hifld-geoplatform.opendata.arcgis.com/datasets/0835ba2ed38f494196c14af8407454fb_0?geometry=-126.488%2C45.696%2C-112.612%2C48.318). Below is the web map you will make by walking through this lab handout.
 

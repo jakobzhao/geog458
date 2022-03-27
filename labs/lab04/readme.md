@@ -1,8 +1,6 @@
 # Lab 4: Map Design and Tile Generation
 
-**Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu
-
-**Due:** Feb 19th, by 11:59pm | **Points Available** = 50
+**Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu; **Points Available** = 50
 
 The earliest web maps were typically drawn on the fly by the server, no matter how many layers were available or requested. As you may have noticed, **the symbol sets and labeling choices for this type of map are relatively limited and complex to work with**. In fact, for many years, web cartographers had to build a map with minimal layer set and simple symbols to avoid hampering performance. In many cases, a cartographer was not even involved; instead, the web map was made by a server administrator tweaking SLD files that defined the layer order, symbol sizes, and so forth. This was the case with both open specification web services (like WMS) and proprietary web services (like Esri ArcIMS).
 
