@@ -1,1 +1,0 @@
-![](img/install-atom.gif)
