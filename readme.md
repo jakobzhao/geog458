@@ -58,10 +58,9 @@ This course is very “hands-on” and interactive! Most of our time will be spe
 
 **Participation in in-class discussion:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and actively participate in critical discussions of those readings. You should have completed all of the weekly readings before our Friday lab sections as these sections will be devoted to critical discussion and engagement with the required readings.
 
-**Final Project:** Considering the difficulty of working as a team when you cannot meet each other in person, I have decided to change the final collaborative project as individual base, and cancel lab 5. So, at the end of this quarter, you only need to submit this final project. check out  [the detailed requirement for final project](project/project.md)
+**Final Project:** will be conducted by a group of 4 to 5 students who are from the same Lab session. It needs to be submitted by June 8th, 11:59pm. Check out [the detailed requirement for final project](project/project.md).
 
 **Final Essay:** Each student will complete an essay that engages with the readings and the course themes, along with additional readings that you bring into conversation with the assigned course readings. You are aiming for **no less than 2000 words** coalescing around ideas and readings from this quarter. Essay is due no later than the end of **Week 5 (May 20th, 11:59pm)** . Check out [the detailed requirement for essay](project/essay.md).
-
 
 ## :calendar: Weekly Schedule
 
@@ -116,7 +115,7 @@ This week you will be making your first web map of the quarter using the popular
 -   **Lecture Notes:** [BaseMap design using Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/) and [Mockup for web mapping project](weeks/week05/mockup/readme.md)
 -   **Readings:** a) [The Guide to Map Design](weeks/week05/mapbox-design.pdf), b) [Intro to Critical Cartography](https://drive.google.com/file/d/1IEz_9J4vH6foIrV36wDoIovOYNomZBWj/view?usp=sharing), c) [Mapbox Studio How-to Videos](weeks/week05/readme.md), and d) [extended readings](weeks/week05/readings.md).
 -   **Think Piece 5:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000375) `Due: April 28th, by 11:59pm`
--   **Lab 4:** [Map Design and Tile Generation](labs/lab04) `Due: May 5th, by 11:59pm`
+-   **Lab 4:** [Map Design and Tile Generation](labs/lab04) `Due: May 6th, by 11:59pm`
 
 ### Week 6 : Smart dashboards
 
@@ -154,9 +153,7 @@ During these two weeks, each group will focusing on their final projects and ess
 
 ### Finals Week : Final project presentations
 
-<!-- Mar 15 to 19 -->
-
-During the last two meeting sessions, each group will present their final projects. More information about final project will be shared later.
+Each group will present their final projects at GUG 220 on Wednesday (June 8th) 4:30 to 6:20pm.
 
 ## :heavy_check_mark: Grading
 
