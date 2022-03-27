@@ -21,6 +21,7 @@ As digital technologies have radically transformed human life, this course tries
 
 This course is very “hands-on” and interactive! Most of our time will be spent in a hybrid lecture/lab where students will be working together. Although there will be some individual written reflections and analyses, no formal final exam will be set up. The final project enables students to figure out a holistic solution to a real-world problem. With the completion of this course, each student can share the course work at a self-made website which can be publicly viewed by classmates, open-source community as well as future industrial recruiters. Along the way, the readings will include both applied and theoretical selections. Students will learn not only how people have been programming and visualizing, but also about how critical social theorists have identified assumptions, ideologies, and rigidities in existing practices that can help students to make effective, inclusive and empathetic decisions in today’s data-intensive geographic world.
 
+
 ## :flags: Learning Objectives
 
 -   To identify when and how the methods, sociology, and objects of geographical inquiry can be transformed through computational and networked approaches.
