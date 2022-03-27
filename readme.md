@@ -53,7 +53,7 @@ This week’s lecture and lab will prepare you for the course, and provide a the
 -   **Lecture Notes:** [Syllabus](readme.md), [Intro to the Web](weeks/week01/intro-web), and [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 -   **Readings:** a) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_), b) [Critical Atlas of the Internet](https://louisedrulhe.fr/internet-atlas/),  and c) [extended readings](weeks/week01/readings.md).
 -   **Think Piece 1:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000366) `Due: April 1st, by 5:00pm`
--   **Lab 1:** [Project management using GitHub](labs/lab01) `Due: April 1st, by 11:59pm`
+-   **Lab 1:** [Project management using GitHub](labs/lab01) `Due: April 8th, by 11:59pm`
 
 ### Week 2: Programing fundamentals
 
@@ -202,4 +202,4 @@ It is important that you take care of yourselves inside and outside of class as 
 
  Notably, students are not allow to videotape or audio-tape (record) this class in any form, and sharing recordings outside of class without the written consent of each student in the class is not permitted by [FERPA](https://registrar.washington.edu/students/ferpa/). However, I will try to record most of the classes via Zoom and share them via Canvas. Even so, I still encourage each of you attend the lectures instead of watching the recorded videos afterwards. Your in-class participation is a key factor to yield the best learning outcome. The instructor determines if their class can and cannot be recorded. This decision should be clearly communicated by the instructor at the beginning and throughout the quarter. In Zoom, the recording feature can be controlled by the instructor, as the meeting host.
  
-<a href="https://hgis.uw.edu"><img src="assets/logo.png" align="right" width="230px" target="_blank" /></a> The development of this course has been sponsored by UW's Data Science Minior committee. This course is largely based upon material designed with Tyler McCrea, and also I sincerely appreciate Jou Ho, Fengyu Xu for their assistance in developing this course.
+<a href="https://hgis.uw.edu"><img src="assets/logo.png" align="right" width="230px" target="_blank" /></a> The development of this course has been sponsored by UW's Data Science Minior committee. This course is largely based upon material designed with Tyler McCrea, and also I sincerely appreciate Jou Ho, Fengyu Xu, Steven (Xiaoqi) Bao for their assistance in developing this course.
