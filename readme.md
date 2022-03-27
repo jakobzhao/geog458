@@ -7,7 +7,7 @@
 
 **Personnel:**
 
--   **Bo Zhao**, Instructor, zhaobo@uw.edu | Office Hour: Thursdays 1 to 3 PM PST [Zoom](https://washington.zoom.us/my/bzhao) by default or in-person by request. Please make an appointment from this [link](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI).
+-   **Bo Zhao**, Instructor, zhaobo@uw.edu | Office Hour: Thursdays 1 to 3 PM PST [Zoom](https://washington.zoom.us/my/bzhao) by default or in-person by request. Make an appointment from this [link](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI).
 
 -   **Jiaxin Feng**, Teaching Assistant, jxfeng@uw.edu |  Office Hour: 
 
@@ -54,13 +54,13 @@ This course is very “hands-on” and interactive! Most of our time will be spe
 
 **Labs:** You need to finish all four labs by the due date. In order to help you work on each lab, we will walk through most of the labs in class.
 
-**Think Pieces:** for week 1 to 8, there will be weekly reading assignments. To evaluate your reflection upon each week's reading material, we set up a discussion board for each week. You need to submit think pieces to **4** out of the 8 weeks' discussion topics. Your think pieces should be completed by Thursday @ 5 pm PST for the weeks you are submitting a piece. Your think pieces should be at least 350 words and engage substantially with the reading materials, and connections to the lab assignments and lectures. Guiding questions or prompts will be included in each week's discussion section on canvas to help frame your thinking. Submit your think pieces on Canvas in the applicable week's discussion section (https://canvas.uw.edu/courses/1434645/discussion_topics).
+**Think Pieces:** for week 1 to 8, there will be weekly reading assignments. To evaluate your reflection upon each week's reading material, we set up a discussion board for each week. You need to submit think pieces to **4** out of the 8 weeks' discussion topics. Your think pieces should be completed by Thursday @ 11:59 pm for the weeks you are submitting a piece. **All the 4 thick pieces must be submitted by the end of Week 5 (May 20th, 11:59pm)**. Your think pieces should be at least 350 words and engage substantially with the reading materials, and connections to the lab assignments and lectures. Guiding questions or prompts will be included in each week's discussion section on canvas to help frame your thinking. Submit your think pieces on Canvas in the applicable week's discussion section (https://canvas.uw.edu/courses/1434645/discussion_topics).
 
 **Participation in in-class discussion:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and actively participate in critical discussions of those readings. You should have completed all of the weekly readings before our Friday lab sections as these sections will be devoted to critical discussion and engagement with the required readings.
 
 **Final Project:** Considering the difficulty of working as a team when you cannot meet each other in person, I have decided to change the final collaborative project as individual base, and cancel lab 5. So, at the end of this quarter, you only need to submit this final project. check out  [the detailed requirement for final project](project/project.md)
 
-**Essay:** Each student will complete an essay that engages with the readings and the course themes, along with additional readings that you bring into conversation with the assigned course readings. You are aiming for **no less than 2000 words** coalescing around ideas and readings from this quarter. Essay is due no later than the end of **Week 10**. Check out [the detailed requirement for essay](project/essay.md).
+**Final Essay:** Each student will complete an essay that engages with the readings and the course themes, along with additional readings that you bring into conversation with the assigned course readings. You are aiming for **no less than 2000 words** coalescing around ideas and readings from this quarter. Essay is due no later than the end of **Week 5 (May 20th, 11:59pm)** . Check out [the detailed requirement for essay](project/essay.md).
 
 
 ## :calendar: Weekly Schedule
@@ -73,7 +73,7 @@ This week’s lecture and lab will prepare you for the course, and provide a the
 
 -   **Lecture Notes:** [Syllabus](readme.md), [Intro to the Web](weeks/week01/intro-web), and [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 -   **Readings:** a) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_), b) [Critical Atlas of the Internet](https://louisedrulhe.fr/internet-atlas/),  and c) [extended readings](weeks/week01/readings.md).
--   **Think Piece 1:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000366) `Due: April 1st, by 5:00pm`
+-   **Think Piece 1:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000366) `Due: March 31st, by 11:59pm`
 -   **Lab 1:** [Project management using GitHub](labs/lab01) `Due: April 8th, by 11:59pm`
 
 ### Week 2: Programing fundamentals
@@ -84,7 +84,7 @@ This week we’ll focus on providing you all with the fundamental skill set for 
 
 -   **Lecture Notes:** [System architecture](weeks/week02/architecture), [intro-to-html, css](weeks/week02/html-css) and [javascript](weeks/week02/javascript), and [Jquery](weeks/week02/jquery).
 -   **Readings:** a) [W3School Tutorials on Html, javascript, css and jquery](weeks/week02/tech-readings.md), b) [Introducing Code/Space](https://drive.google.com/file/d/1T7ChuOnaKrgjTVhAeV_Niei2pqCWiiqK/view?usp=sharing), c) [Cloud Ethics: Algorithms and the Attributes of Ourselves and Others](https://drive.google.com/file/d/1C3925q917K7cD8-NEbw_Yik_X0oCeSfd/view?usp=sharing), and d) [extended readings](weeks/week02/readings.md).
--   **Think Piece 2:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000368) `Due: April 7, by 5:00pm`
+-   **Think Piece 2:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000368) `Due: April 7, by 11:59pm`
 
 ### Week 3 : Geospatial data
 
@@ -94,7 +94,7 @@ This week’s focus is on processing geospatial data for your digital geographie
 
 -   **Lecture Notes:** [Geospatial data for digital geographies](weeks/week03/readme.md)
 -   **Readings:** a) [Can social media clear the air? A case study of the air pollution problem in Chinese cities](https://drive.google.com/open?id=1C0MTPaPnVALVemeYEfiDChUKRZfcMjz3), b) [Putting Data back into Context](https://datajournalism.com/read/longreads/putting-data-back-into-context), c) [More than you ever wanted to know about GeoJSON](weeks/week03/assets/geojson.pdf), and d) [extended readings](weeks/week03/readings.md).
--   **Think Piece 3:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000371) `Due: April 14th, by 5:00pm`
+-   **Think Piece 3:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000371) `Due: April 14th, by 11:59pm`
 -   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: April 22nd, by 11:59pm`
 
 ### Week 4 : Web mapping
@@ -105,7 +105,7 @@ This week you will be making your first web map of the quarter using the popular
 
 -   **Lecture Notes:** [Leaflet Basics](weeks/week04/leaflet) and [Map Events](weeks/week04/mapevent).
 -   **Readings:** a) [Digital Mapping and Segregation](https://www.forbes.com/sites/drsarahbond/2017/10/20/how-is-digital-mapping-changing-the-way-we-visualize-racism-and-segregation/#4df35c7d33fa), b) [Hacker Cartography](https://drive.google.com/file/d/1H76GJFXwS5dOPZYyxfyuud0DGQzYGNIr/view?usp=sharing), and c) [extended readings](weeks/week04/readings.md).
--   **Think Piece 4:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000373) `Due: April 21st, by 5:00pm`
+-   **Think Piece 4:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000373) `Due: April 21st, by 11:59pm`
 -   **Lab 3:** [Web map application](labs/lab03) `Due: April 29th, by 11:59pm`,  Examples: [Oregon Water Atlas](http://oregonwater.info/atlas.html)
 -   [An integrative web mapping template](https://jakobzhao.github.io/geog458/weeks/week04/starter/index.html)
 
@@ -115,7 +115,7 @@ This week you will be making your first web map of the quarter using the popular
 
 -   **Lecture Notes:** [BaseMap design using Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/) and [Mockup for web mapping project](weeks/week05/mockup/readme.md)
 -   **Readings:** a) [The Guide to Map Design](weeks/week05/mapbox-design.pdf), b) [Intro to Critical Cartography](https://drive.google.com/file/d/1IEz_9J4vH6foIrV36wDoIovOYNomZBWj/view?usp=sharing), c) [Mapbox Studio How-to Videos](weeks/week05/readme.md), and d) [extended readings](weeks/week05/readings.md).
--   **Think Piece 5:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000375) `Due: April 28th, by 5:00pm`
+-   **Think Piece 5:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000375) `Due: April 28th, by 11:59pm`
 -   **Lab 4:** [Map Design and Tile Generation](labs/lab04) `Due: May 5th, by 11:59pm`
 
 ### Week 6 : Smart dashboards
@@ -124,7 +124,7 @@ This week you will be making your first web map of the quarter using the popular
 
 -   **Lecture Notes:** [Create a smart dashboard](weeks/week06/), Examples: [COVID-19 Dashboard](https://hgis.uw.edu/virus)
 -   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [History of the Urban Dashboard](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/), c) [3 Ways Data Dashboards Can Mislead You](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section), d) [Dynamic Charts](https://c3js.org/examples.html), and e) [extended readings](weeks/week06/readings.md).
--   **Think Piece 6:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000376) `Due: May 5th, by 5:00pm`
+-   **Think Piece 6:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000376) `Due: May 5th, by 11:59pm`
 
 ### Week 7 : Geo-Narratives
 
@@ -134,7 +134,7 @@ This week we will explore the concept of geo-narrative, the use of storytelling 
 
 -   **Lecture Notes:** a) [A Geo-Narrative Template](weeks/week07/), b) [Planning and outlining your story map](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/sharing-collaboration/planning-and-outlining-your-story-map-how-to-set-yourself-up-for-success/). Examples: a) [Oregon Atlas](http://oregonwater.info/atlas.html), b) [Stand with #Standing Rock](https://jakobzhao.github.io/standwithstandingrock/)
 -   **Readings:** a) [Affective Geovisualizations](https://drive.google.com/file/d/1aqMFkewNT9s9nrAecAVYiaBAbtCrf7xj/view?usp=sharing), b) [Anti-Eviction Mapping Project Handbook](https://static1.squarespace.com/static/52b7d7a6e4b0b3e376ac8ea2/t/5bc76571b208fc10defc815a/1539794295823/AEMP+Handbook.pdf), c)[extended readings](weeks/week07/readings.md).
--   **Think Piece 7:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000379) `Due: May 12th, by 5:00pm`
+-   **Think Piece 7:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000379) `Due: May 12th, by 11:59pm`
 
 ### Week 8 : Emerging topics
 
@@ -144,7 +144,7 @@ This week will focus on two emerging topics related to digital geographies, incl
 
 -   **Lecture Notes:** [Point cloud (Lidar Data) visualization](https://jakobzhao.github.io/sfm/index.html), [sample data](https://github.com/ucdavis/metashape) and [Real-time environmental data visualization](weeks/week08/rpi-iot).
 -   **Readings:** a) [Real-time GIS](https://drive.google.com/file/d/1COD2OYBxEJThG5Lfx7-nzV0EGtGedndT/view?usp=sharing), b) [Anatomy of an AI System](https://anatomyof.ai/), c) [Abolishing Racist Police Algorithms](https://www.technologyreview.com/2020/06/05/1002709/the-activist-dismantling-racist-police-algorithms/), and d) [extended readings](weeks/week08/readings.md).
--   **Think Piece 8:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000381) `Due: May 19th, by 5:00pm`
+-   **Think Piece 8:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1434645/discussion_topics/6000381) `Due: May 19th, by 11:59pm`
 
 ### Week 9 & 10 : Project studios
 
@@ -156,7 +156,7 @@ During these two weeks, each group will focusing on their final projects and ess
 
 <!-- Mar 15 to 19 -->
 
-During the last two meeting sessions, each group will present their final projects. More information about final project will be shared after the mid-term.
+During the last two meeting sessions, each group will present their final projects. More information about final project will be shared later.
 
 ## :heavy_check_mark: Grading
 
@@ -165,7 +165,7 @@ During the last two meeting sessions, each group will present their final projec
 | Participation   | 5%  |
 | Think Pieces    | 20% |
 | Lab Assignments | 30% |
-| Final Progress  | 10% |
+| Final Project Progress  | 15% |
 | Final project   | 20% |
 | Essay           | 10% |
 
