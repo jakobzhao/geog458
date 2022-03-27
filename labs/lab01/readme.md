@@ -289,22 +289,56 @@ Once the `wiki.md` is uploaded to the root of the GitHub Repository, you can see
 
 **Note：** Similar to the step 8 in section 2, You can also update a local repository from a remote github repository using Visual Studio Code. To do that, right click the github operation status on the bottom bar, and select the option `Pull`. The github operation status can be either `Fetch`, `Pull`, `Push`, `Force Push`.
 
-## 4. Deliverable
+## 4. Website host using GitHub Pages
 
-Before submitting the deliverable, please make sure the **GitHub Pages** work properly. You are expected to submit the url of the GitHub repository to the **Canvas Dropbox** of this course. This url should be in the format of `https://[github_username].github.io/wiki`. To submit, check the item of this lab on the assignment tab, and then press the `Submit Assignment` button. Please contact the instructor if you have any difficulty in submitting the url link. Here are the grading criteria:
+Github allows its user to convert a repository as a website automatically. In this section, you will need to download a website template and modify it according to your needs, and upload it to the repository `https://github.com/[github_username]/[github_username].github.io` you have just created. After you finish this sesction, you can visit this webiste at `https://[github_username].github.io`.
+
+
+[Start Bootstrap](https://startbootstrap.com/) hosts a few website Boostrap-based templates. Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation and other interface components.
+
+1\. Visit url [https://startbootstrap.com/templates/the-big-picture/](https://startbootstrap.com/templates/the-big-picture/) and download this template. (a cope of this template is stored in the [assets](assets/) subfolder of this PE.)
+
+![](img/big-picture.png)
+
+2\. Unzip/Extract the files from the zipped file and move to the local folder of the github repository `[github_username].github.io` in your workspace.
+
+**Note:** If your local PC or MacOSX does not support the unzip function, please install [7zip](https://www.7-zip.org/download.html) if you are a windows user or [Keka](https://www.keka.io/en/) if you are a MacOSX user.
+
+3\. Upload all the extracted files except the `readme.me` to the root of `https://github.com/[github_username]/[github_username].github.io`. To do so, please use the github synchronization function provided by Atom IDE **(refer to Section 3.3.3)**.
+
+![](img/front-page.png)
+
+4\. After you successfully push the local repository to github. You can visit the website at `https://[github_username].github.io`. For example, I can vist the website at `https://geovizlabtest.github.io`. Usually, the URL will automaticaly navigate to the default page under the root of the repo. Usually, the name of the default page is `index.html`.
+
+![](img/front-page-index.png)
+
+5\. Please modify the web page codes at the local repoistory. Once you push the changes to the github, please visit the url `https://geovizlabtest.github.io` to see whether the web pages have updated or not. If you want to get more familiar with web development, we encourage you walk through [w3school online web tutorials](https://www.w3schools.com/), especially the following items.
+
+- [HTML](https://www.w3schools.com/html/default.asp)
+- [JavaScript](https://www.w3schools.com/js/default.asp)
+- [CSS](https://www.w3schools.com/css/default.asp)
+- [Boostrap 4](https://www.w3schools.com/bootstrap4/default.asp)
+- [jQuery](https://www.w3schools.com/jquery/default.asp)
+
+## 5. Deliverable
+
+Before submitting the deliverable, please make sure the **GitHub Pages** work properly. You are expected to submit the url of the GitHub repository to the **Canvas Dropbox** of this course. This url should be in the format of `https://www.github.com/[github_username]/[github_username].github.io`. To submit, check the item of this lab on the assignment tab, and then press the `Submit Assignment` button. Please contact the instructor if you have any difficulty in submitting the url link. Here are the grading criteria:
 
 1\. A GitHub account is registered, You have followed the instructor's GitHub account and `star-ed` the course GitHub repository. (10 POINTS)
 
-2\. Create your own repository, and the repository should be named after `[github_username].github.io`. (10 POINTS)
+2\. The repository should be named after `[github_username].github.io`. (5 POINTS)
 
-3\. To hone your skills in Markdown syntax, the wiki page could be built upon the template that was shown in `Section 3.2`, but we still encourage you customize your wiki page. In terms of the format, your wiki page should contain (15 POINTS):
+3\. The `GitHub pages` function of the repository should work properly. That said, your resume can be visited from `https://[github_username].github.io/resume` (5 POINTS);
+
+4\. To hone your skills in Markdown syntax, the resume could be built upon the template that was shown in `Section 3.2`, but we still encourage you customize your resume. In terms of the format, your online resume should contain (15 POINTS):
 
 * Different levels of headers;
-* Different font styles
+* A block quote;
 * Several url links;
 * One or several images; and
 * A list;
 
-4\. Push the markdown file you created to your GitHub repo. Make sure that the `GitHub pages` function of the repository should work properly. That said, your wiki page can be visited from `https://[github_username].github.io/wiki` (15 POINTS);
+5\. Create a website under this newly created repository. This website can be [an online resume](https://startbootstrap.com/themes/resume/), [a project webiste](https://startbootstrap.com/themes/creative/), [an administrator dashboard](https://startbootstrap.com/themes/sb-admin-2/) and so on. I encourage you use any bootstrap4 template on [Start Bootstrap](https://startbootstrap.com/), and further modify the webpage if needed. You are not expected to make a complicated websites of several pages, but at least, a website represents some idea you planned to work on.(15 POINTS)
+
 
 **Note:** Lab assignments are required to be submitted electronically to Canvas unless stated otherwise. Efforts will be made to have them graded and returned within one week after they are submitted.Lab assignments are expected to be completed by the due date. ***A late penalty of at least 10 percentage units will be taken off each day after the due date.*** If you have a genuine reason(known medical condition, a pile-up of due assignments on other courses, ROTC,athletics teams, job interview, religious obligations etc.) for being unable to complete work on time, then some flexibility is possible. However, if in my judgment you could reasonably have let me know beforehand that there would likely be a delay, and then a late penalty will still be imposed if I don't hear from you until after the deadline has passed. For unforeseeable problems,I can be more flexible. If there are ongoing medical, personal, or other issues that are likely to affect your work all semester, then please arrange to see me to discuss the situation. There will be NO make-up exams except for circumstances like those above.
