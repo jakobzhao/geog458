@@ -20,22 +20,6 @@ Many designers and developers find it useful to have a test computer running a d
 
 The web has gone mobile! That means it is absolutely critical that you test the appearance and performance of your site on browsers on smartphones and tablet devices.
 
-### Rasperry Pi (Optinal)
-
-The Raspberry Pi is a series of small single-board computers developed in the United Kingdom by the Raspberry Pi Foundation to promote teaching of basic computer science in schools and in developing countries. The original model became far more popular than anticipated, selling outside its target market for uses such as robotics. It does not include peripherals (such as keyboards and mice) and cases. However, some accessories have been included in several official and unofficial bundles.
-
-
-The Raspberry Pi Zero, a US$5 model first introduced in 2015
-Several generations of Raspberry Pis have been released. All models feature a Broadcom system on a chip (SoC) with an integrated ARM-compatible central processing unit (CPU) and on-chip graphics processing unit (GPU).
-
-Processor speed ranges from 700 MHz to 1.4 GHz for the Pi 3 Model B+; on-board memory ranges from 256 MB to 1 GB RAM. Secure Digital (SD) cards are used to store the operating system and program memory in either SDHC (early Raspberry Pi's) or MicroSDHC (Later Raspberry Pi's) sizes. The boards have one to four USB ports. For video output, HDMI and composite video are supported, with a standard 3.5 mm tip-ring-sleeve jack for audio output. Lower-level output is provided by a number of GPIO pins, which support common protocols like I²C. The B-models have an 8P8C Ethernet port and the Pi 3 and Pi Zero W have on-board Wi-Fi 802.11n and Bluetooth. Prices range from US$5 to $35.
-
-**Reference:**
-
-[1] https://en.wikipedia.org/wiki/Raspberry_Pi
-
-[2] https://wiki.ubuntu.com/ARM/RaspberryPi
-
 ## 2. Desktop software
 
 There’s no shortage of software available for creating web pages. In the early days, we just made do with tools originally designed for print. Today, there are wonderful tools created specifically with web design in mind that make the process more efficient. It is a delicate business listing software in a book such as this because a) there are so many programs, b) everyone has their personal favorite, and c) new tools come along so rapidly that there are surely newer, cooler options that you have access to that didn’t exist as I wrote this.
@@ -131,27 +115,12 @@ We won't go into massive detail on how Terminal works but it's best to learn the
 
 [4] https://computers.tutsplus.com/tutorials/10-terminal-commands-that-every-mac-user-should-know--mac-4825
 
-### Atom
+### VS Code
 
-Atom is a free and open-source text and source code editor for macOS, Linux, and Microsoft Windows with support for plug-ins written in Node.js, and embedded Git Control, developed by GitHub. Atom is a desktop application built using web technologies. Most of the extending packages have free software licenses and are community-built and maintained. Atom is based on Electron (formerly known as Atom Shell), a framework that enables cross-platform desktop applications using Chromium and Node.js. It is written in CoffeeScript and Less. It can also be used as an integrated development environment (IDE). Atom was released from beta, as version 1.0, on 25 June 2015. Its developers call it a "hackable text editor for the 21st Century".
+Visual Studio Code is a code editor made by Microsoft for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git.
 
-Like most other configurable text editors, Atom enables users to install third-party packages and themes to customize the features and looks of the editor. Packages can be installed, managed and published via Atom's package manager apm.
+[Visual Studio Code](https://code.visualstudio.com) combines the simplicity of a code editor with what developers need for their core edit-build-debug cycle. It provides comprehensive code editing, navigation, and understanding support along with lightweight debugging, a rich extensibility model, and lightweight integration with existing tools.
 
-Initially, extension packages for Atom and anything not part of Atom's core were released under an open-source license. On 6 May 2014, the rest of Atom, including the core application, its package manager, as well as its desktop framework Electron, were released as free and open-source software under the MIT License.
-
-
-There are a lot of text editors out there; why should you spend your time learning about and using Atom?
-
-Editors like Sublime and TextMate offer convenience but only limited extensibility. On the other end of the spectrum, Emacs and Vim offer extreme flexibility, but they aren't very approachable and can only be customized with special-purpose scripting languages.
-
-We think we can do better. Our goal is a zero-compromise combination of hackability and usability: an editor that will be welcoming to an elementary school student on their first day learning to code, but also a tool they won't outgrow as they develop into seasoned hackers.
-
-As we've used Atom to build Atom, what began as an experiment has gradually matured into a tool we can't live without. On the surface, Atom is the modern desktop text editor you've come to expect. Pop the hood, however, and you'll discover a system begging to be hacked on.
-
-
-**Reference:**
-
-[1] https://flight-manual.atom.io/getting-started/sections/why-atom/
 
 ### Google Chrome
 
@@ -219,7 +188,7 @@ Unlike popular non-distributed predecessors, such as Subversion and CVS, Git onl
 Also unlike the monolithic design of Subversion and CVS, Git follows the typical Unix philosophy with a great many small components that do single atomic tasks. Of course, only a few of the dozens of separate commands are often used. Most commands are for specialized actions, and a good portion are designed to be called by shell scripts rather than users.
 
 
-Git was created by Linus Torvalds in 2005 for development of the Linux kernel, with other kernel developers contributing to its initial development. Its current maintainer since 2005 is Junio Hamano.
+Git was created by Linus Torvalds in 2005 for development of the Linux kernel, with other kernel developers contributing to its initial development.
 
 Torvalds quipped about the name git (which means unpleasant person in British English slang): "I'm an egotistical bastard, and I name all my projects after myself. First 'Linux', now 'git'." The man page describes Git as "the stupid content tracker". The readme file of the source code elaborates further:
 
@@ -296,6 +265,17 @@ To use Git, developers use specific commands to copy, create, change, and combin
 
 Learn more from [a full reference guide to Git commands](https://git-scm.com/docs).
 
+#### The GitHub flow
+The GitHub flow is a lightweight, branch-based workflow built around core Git commands used by teams around the globe—including ours.
+
+The GitHub flow has six steps, each with distinct benefits when implemented:
+
+1. Create a branch: Topic branches created from the canonical deployment branch (usually master) allow teams to contribute to many parallel efforts. Short-lived topic branches, in particular, keep teams focused and results in quick ships.
+2. Add commits: Snapshots of development efforts within a branch create safe, revertible points in the project’s history.
+3. Open a pull request: Pull requests publicize a project’s ongoing efforts and set the tone for a transparent development process.
+4. Discuss and review code: Teams participate in code reviews by commenting, testing, and reviewing open pull requests. Code review is at the core of an open and participatory culture.
+5. Merge: Upon clicking merge, GitHub automatically performs the equivalent of a local ‘git merge’ operation. GitHub also keeps the entire branch development history on the merged pull request.
+6. Deploy: Teams can choose the best release cycles or incorporate continuous integration tools and operate with the assurance that code on the deployment branch has gone through a robust workflow.
 
 **Reference**
 
@@ -310,32 +290,7 @@ Learn more from [a full reference guide to Git commands](https://git-scm.com/doc
 
 ### GitHub
 
-GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-This tutorial teaches you GitHub essentials like repositories, branches, commits, and Pull Requests. You’ll create your own Hello World repository and learn GitHub’s Pull Request workflow, a popular way to create and review code.
-
-No coding necessary
-To complete this tutorial, you need a GitHub.com account and Internet access. You don’t need to know how to code, use the command line, or install Git (the version control software GitHub is built on).
-
-Tip: Open this guide in a separate browser window (or tab) so you can see it while you complete the steps in the tutorial.
-
-#### How GitHub fits in
-GitHub is a Git hosting repository that provides developers with tools to ship better code through command line features, issues (threaded discussions), pull requests, code review, or the use of a collection of free and for-purchase apps in the GitHub Marketplace. With collaboration layers like the GitHub flow, a community of 15 million developers, and an ecosystem with hundreds of integrations, GitHub changes the way software is built.
-
-#### How GitHub works
-GitHub builds collaboration directly into the development process. Work is organized into repositories, where developers can outline requirements or direction and set expectations for team members. Then, using the GitHub flow, developers simply create a branch to work on updates, commit changes to save them, open a pull request to propose and discuss changes, and merge pull requests once everyone is on the same page.
-
-#### The GitHub flow
-The GitHub flow is a lightweight, branch-based workflow built around core Git commands used by teams around the globe—including ours.
-
-The GitHub flow has six steps, each with distinct benefits when implemented:
-
-1. Create a branch: Topic branches created from the canonical deployment branch (usually master) allow teams to contribute to many parallel efforts. Short-lived topic branches, in particular, keep teams focused and results in quick ships.
-2. Add commits: Snapshots of development efforts within a branch create safe, revertible points in the project’s history.
-3. Open a pull request: Pull requests publicize a project’s ongoing efforts and set the tone for a transparent development process.
-4. Discuss and review code: Teams participate in code reviews by commenting, testing, and reviewing open pull requests. Code review is at the core of an open and participatory culture.
-5. Merge: Upon clicking merge, GitHub automatically performs the equivalent of a local ‘git merge’ operation. GitHub also keeps the entire branch development history on the merged pull request.
-6. Deploy: Teams can choose the best release cycles or incorporate continuous integration tools and operate with the assurance that code on the deployment branch has gone through a robust workflow.
+GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. It provides developers with tools to ship better code through command line features, issues (threaded discussions), pull requests, code review, or the use of a collection of free and for-purchase apps in the GitHub Marketplace. With collaboration layers like the GitHub flow, a community of 15 million developers, and an ecosystem with hundreds of integrations, GitHub changes the way software is built.
 
 #### GitHub page
 
@@ -343,9 +298,8 @@ GitHub Pages are public webpages hosted for free through GitHub. GitHub users ca
 
 **Reference:**
 
-[1] Interactive guide https://guides.github.com/introduction/flow/
-
 [2] Github page http://jmcglone.com/guides/github-pages/
+
 
 ### MapBox
 
@@ -355,84 +309,3 @@ Mapbox is a large provider of custom online maps for websites and applications s
 The data are taken both from open data sources, such as OpenStreetMap and NASA, and from proprietary data sources, such as DigitalGlobe.The technology is based on Node.js, Mapnik, GDAL, and Leaflet.
 
 Mapbox uses data from tracks of its clients' users, such as Strava and RunKeeper, to identify likely missing data in OpenStreetMap with automatic methods, then manually applies the fixes or reports the issue to OSM contributors.
-
-## 4. Web Mapping Packages
-
-### Leaflet.js
-
-Leaflet is a widely used open source JavaScript library used to build web mapping applications. First released in 2011, it supports most mobile and desktop platforms, supporting HTML5 and CSS3. Along with OpenLayers, and the Google Maps API, it is one of the most popular JavaScript mapping libraries and is used by major web sites such as FourSquare, Pinterest and Flickr.
-
-Leaflet allows developers without a GIS background to very easily display tiled web maps hosted on a public server, with optional tiled overlays. It can load feature data from GeoJSON files, style it and create interactive layers, such as markers with popups when clicked.
-
-It is developed by Vladimir Agafonkin, who joined Mapbox in 2013.
-
-
-Leaflet is directly comparable with OpenLayers, as both are open source, client-side only JavaScript libraries. The library as a whole is much smaller, around 7,000 lines of code compared to OpenLayers' 230,000 (as of 2015). It has a smaller code footprint than OpenLayers (around 123 KB vs 423 KB) due partly to its modular structure. The code base is newer, and takes advantage of recent features of JavaScript, plus HTML5 and CSS3. However, Leaflet lacks features OpenLayers supports, such as Web Feature Service (WFS) and native support for projections other than Google Web Mercator (EPSG 3857).
-
-It is also comparable to the proprietary, closed source Google Maps API (debuting in 2005) and Bing Maps API, both of which incorporate a significant server-side component to provide services such as geocoding, routing, search and integration with features such as Google Earth. Google Maps API provides speed and simplicity, but is not flexible, and can only be used to access Google Maps services. The new DataLayer part of Google's API does allow external data sources to be displayed, however.
-
-### JQuery
-
-jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, animation, and Ajax. It is free, open-source software using the permissive MIT License Web analysis indicates that it is the most widely deployed JavaScript library by a large margin.
-
-jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications. jQuery also provides capabilities for developers to create plug-ins on top of the JavaScript library. This enables developers to create abstractions for low-level interaction and animation, advanced effects and high-level, themeable widgets. The modular approach to the jQuery library allows the creation of powerful dynamic web pages and Web applications.
-
-The set of jQuery core features—DOM element selections, traversal and manipulation—enabled by its selector engine (named "Sizzle" from v1.3), created a new "programming style", fusing algorithms and DOM data structures. This style influenced the architecture of other JavaScript frameworks like YUI v3 and Dojo, later stimulating the creation of the standard Selectors API.
-
-### Bootstrap
-
-Bootstrap is a free and open-source front-end framework for developing websites and web applications. It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions. Unlike many earlier web frameworks, it concerns itself with front-end development only.
-
-
-Bootstrap 3 supports the latest versions of the Google Chrome, Firefox, Internet Explorer, Opera, and Safari (except on Windows). It additionally supports back to IE8 and the latest Firefox Extended Support Release (ESR).
-
-Starting with version 3.0, Bootstrap adopted a mobile-first design philosophy, emphasizing responsive design by default.
-
-Version 4.0 added Sass and flexbox support.
-
-As of Bootstrap 4, Sass is used instead of Less for the stylesheets.
-
-Each Bootstrap component consists of an HTML structure, CSS declarations, and in some cases accompanying JavaScript code.
-
-Grid system and responsive design comes standard with an 1170-pixel-wide grid layout. Alternatively, the developer can use a variable-width layout. For both cases, the toolkit has four variations to make use of different resolutions and types of devices: mobile phones, portrait and landscape, tablets and PCs with low and high resolution. Each variation adjusts the width of the columns.
-
-
-Bootstrap 4 stable version released on 18th Jan 2018, is a major rewrite from Bootstrap 3. Significant changes include:
-
-- Switched from Less to Sass.
-- Launched reboot in place of normalize css.
-- Dropped IE8, IE9, and iOS 6 support.
-- Added flexbox support and then dropped non-flexbox support.
-- Added navigation customization options.
-- Added responsive spacing and sizing utilities.
-- Switched from pixels to root ems.
-- Increased global font-size from 14px to 16px.
-- Dropped the panel, thumbnail, and well components in favor of cards.
-- Dropped the Glyphicons icon font.
-- Dropped the pager component.
-- Added huge number of utility classes.
-- Improved form styling.
-- Improved buttons and dropdowns.
-- Improved media objects and image classes.
-- Rewrote almost all components, jQuery plugins and documentation.
-
-### Chroma.js
-
-Chroma.js is a small library which can be a big help with manipulating colors, so let’s see how to get started using it.
-
-Chroma color scales are designed to be delightful. You define two colors, and chroma-js finds the most pleasant path between them.
-
-The quickest way to get some pretty colors going is to define an ordinal scale like this. Choose start and end points, say you want 6 colors, and pick the `lch` mode. `lch` mode creates brigher colors than the default `rgb` mode.
-
-Here are a couple of things chroma.js can do for you:
-
-- read colors from a wide range of formats
-- analyze and manipulate colors
-- convert colors into wide range of formats
-- linear and bezier interpolation in different color spaces
-
-### Storymap.js
-
-Storymap.js is a javascript library for storytelling with web maps. This library aims to enable individuals to effectively create story map applications over the Internet. Three major tasks would be dealt with, including web interface design, map design and storytelling structure. To develop these functions, this library is written in a combination of several web programming languages, like HTML, Cascading Style Sheets (CSS) and Javascript, and builds upon several prerequisite libraries and web services. To make the story map library robust and lightweight, we select as fewer prerequisite libraries as possible, and prioritize the use of open source or free libraries. This library is currently maintained by HGIS Lab at UW-Seattle, and has been used in multiple geovisualization related courses and projects.
-
-A storymap is organically integrated by several scenes. Each scene consists of a web map and a script. You can manipulate the map by zooming, panning, and even adding more thematic layers. This library embodies the concept responsive web design, meaning the storymaps can be shown on either Desktop or mobile devices.
