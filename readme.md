@@ -2,7 +2,7 @@
 
 **Announcement:**
 
-- Please take the [Canvas Survey](https://canvas.uw.edu/courses/1547729/quizzes/1653669) by March 30th, 2022, at noon 12:00pm. Through this survey, we will group students in 20 ~ 25 teams, each of which will have 4 to 5 students who are from the same session.
+- Please take the [Survey](https://canvas.uw.edu/courses/1547729/quizzes/1653669) on Canvas by March 30th, 2022, at noon 12:00pm. Through this survey, we will group students in 20 ~ 25 teams, each of which will have 4 to 5 students who are from the same session.
 
 **Meetings:**
 
