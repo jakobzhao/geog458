@@ -10,7 +10,7 @@
 
 - **Labs:** Wednesdays 12:30 AM to 4:20 PM PST at SMI 401
 
-`Both lectures and labs are held in person, wearing mask is recommended.`
+`Both lectures and labs are held in person, wearing a mask is recommended.`
 
 **Personnel:**
 
