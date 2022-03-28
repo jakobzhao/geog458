@@ -12,7 +12,7 @@
 
 **Personnel:**
 
-- **Bo Zhao**, Instructor, zhaobo@uw.edu | Office Hour: Thursdays 1 to 3 PM via [Zoom](https://washington.zoom.us/my/bzhao) by default or in-person by request. Make an appointment from this [link](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI).
+- **Bo Zhao**, Instructor, zhaobo@uw.edu | Office Hour: Thursdays 1 to 3 PM via [Zoom](https://washington.zoom.us/my/bzhao) by default or in-person by request. Check this [link](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI) to make an appointment.
 
 - **Jiaxin Feng**, Teaching Assistant, jxfeng@uw.edu |  Office Hour: 
 
