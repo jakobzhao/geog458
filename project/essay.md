@@ -1,6 +1,6 @@
 # Guidelines for the Essay
 
-You are expected to write an essay which analyzes a digital-geography-related project (e.g., web map, smart dashboard, geo-narrative, etc.). You are aiming for **no less than 1500 words** coalescing around the examined digital-geography project and readings from this quarter.
+You are expected to write an essay which analyzes a digital-geography-related project (e.g., web map, smart dashboard, geo-narrative, etc.). You are aiming for **no less than 2000 words** coalescing around the examined digital-geography project and readings from this quarter.
 
 Through writing this essay, you are expected to use the learned knowledge and skills from this course to holistically examine the project's functions and critically reflect upon its social, political, or economic implications. This essay should be focused on the specific project you are analyzing, and **must** include the following features:
 
@@ -47,6 +47,6 @@ Through writing this essay, you are expected to use the learned knowledge and sk
 
 ## Submission
 
-Please submit the url link of your essay to the final project submission tab on Canvas. The final essay is due no later than the end of **Week 10** - on Friday, March 12th by 11:59pm PST.
+Please submit the url link of your essay to the final project submission tab on Canvas. The final essay is due no later than the end of **Week 8**.
 
 >  **Note:** The requirements to the essay may be slightly changed according the progress of this course. The final requirements are subject to the instructor's notification.
