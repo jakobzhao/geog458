@@ -1,6 +1,5 @@
 **Extended Readings:**
 
-(\*) Articles with this symbol should be skimmed before class if you are able
 
 _Topic: race, code, bias & exposure_
 
@@ -13,3 +12,5 @@ _Topic: tech and racial inequity_
 _Topic: algorithmic biases, race & tech patriarchy_
 
 -   [Algorithms of Oppression; Chapter 2: SAFIYA U. NOBLE, 2018](https://drive.google.com/file/d/1QE3A_BF3vqPL7uDsMgKwmSxrhjMGhHKN/view?usp=sharing)
+
+-  [Abolishing Racist Police Algorithms](https://www.technologyreview.com/2020/06/05/1002709/the-activist-dismantling-racist-police-algorithms/)

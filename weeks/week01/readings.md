@@ -1,6 +1,6 @@
 **Extended Readings:**
 
-(\*) Articles with this symbol should be skimmed before class if you are able
+
 
 _Topic: the internet - materiality, structure, & power_
 
