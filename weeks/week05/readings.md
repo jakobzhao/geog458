@@ -1,7 +1,5 @@
 **Extended Readings:**
 
-(\*) Articles with this symbol should be skimmed before class if you are able
-
 _Topic: maps and knowledge, indigenous mapping methods, maps as colonial tools & the construction/ordering of space_
 
 -   (\*) [Maps Are Territories: Science is an Atlas: DAVID TURNBULL & OTHERS, 1989](http://territories.indigenousknowledge.org/index.html)

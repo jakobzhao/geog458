@@ -1,6 +1,5 @@
 # Web Programming Basics III: JQuery
 
-
 **Learning Objectives**
 
 - Understand how to program in Atom and debug by Chrome through the Instructor's demostration;

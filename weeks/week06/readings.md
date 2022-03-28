@@ -1,11 +1,11 @@
 **Extended Readings:**
 
-(\*) Articles with this symbol should be skimmed before class if you are able
+
 
 _Topic: urban dashboards, data interfaces & the rise of “informational urbanism” _
 
--   (\*) [Interfacing Urban Intelligence: SHANNON MATTERN, 2014](https://placesjournal.org/article/interfacing-urban-intelligence/#0)
--   (\*) [A City is Not a Computer: SHANNON MATTERN, 2017](https://placesjournal.org/article/a-city-is-not-a-computer/#0)
+-   [Interfacing Urban Intelligence: SHANNON MATTERN, 2014](https://placesjournal.org/article/interfacing-urban-intelligence/#0)
+-   [A City is Not a Computer: SHANNON MATTERN, 2017](https://placesjournal.org/article/a-city-is-not-a-computer/#0)
 
 _Topic: data dashboard trends_
 

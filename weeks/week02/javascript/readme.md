@@ -1,11 +1,5 @@
 # Web Programming Basics II: Javascript
 
-**Meeting:** Tuesdays and Thursdays 8:30 to 10:20 AM PST on [Zoom #: 785830819](https://washington.zoom.us/j/785830819)
-
-**Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu
-
-**Office Hour:** Tuesdays 1:00 to 3:00 PM PST or by appointment on [Zoom #: 181944813](https://washington.zoom.us/j/181944813)
-
 ## 1. Preparation
 
 Html, css, and JavaScript are the fundamental programming knowledge set for developing web mapping applications. After introducing HTML and CSS, This exercise helps you get to know the basics of JavaScript, including data types, objects, functions, and events. In addition, along this course, we will get in touch with several well-known JavaScript libraries, including `JQuery`, `Leaflet`, `Cesium`, and `Bootstrap`.

@@ -2,11 +2,12 @@
 
 **Announcement:**
 
-- Please take the [Canvas Survey](https://canvas.uw.edu/courses/1547729/quizzes/1653669) by March 30th, 2022, by noon 12:00pm. Through this survey, we will group students in 20 ~ 25 teams, each of which will have 4 to 5 students who are from the same session.
+- Please take the [Canvas Survey](https://canvas.uw.edu/courses/1547729/quizzes/1653669) by March 30th, 2022, at noon 12:00pm. Through this survey, we will group students in 20 ~ 25 teams, each of which will have 4 to 5 students who are from the same session.
 
 **Meetings:**
 
 -**Lectures:** Tuesdays and Thursdays 11:30 AM to 12:50 PM PST at GUG 220
+
 -**Labs:** Wednesdays 12:30 AM to 4:20 PM PST at SMI 401
 
 **Personnel:**
@@ -21,7 +22,7 @@
 
 ![course cover](assets/img/cover.png)
 
-As digital technologies have radically transformed human life, this course tries to engage students in this digitally mediated and data-intensive geographic world, and also train them the timely technical skills which are demanding in emerging job markets. This course will provide a unique opportunity to explore emerging digital methods, to build a holistic solution to real-world problems, and to critically analyze their social implications. Rather than focusing exclusively on one or two specific topics, this course covers a full range of theoretical perspectives and practical exercises. The course begins with teaching students on geospatial project management using GitHub, and then a series of geospatial data operations and analyses are covered in detail, such as online data (e.g., geo-tagged tweets) acquisition, geocoding, and geospatial analyses. With these preparations, this course switches to online geovisualization. After a brief introduction to web programming basics (e.g., JavaScript, Html, and CSS), students will learn how to visualize and narrate geographic phenomena in an online environment. A few state-of-the-art approaches and applications in digital geographies will be practiced, such as collecting aerial imagery and point clouds using an unmanned aerial vehicle (UAV, commonly known as drone) or LiDAR, as well as storing real-time data from an environmental sensor. Throughout this quarter, students will not only learn and practice geospatial techniques which are important to many emerging jobs, but also hone their critical intellectual visions on the social implications of the applied techniques.
+As digital technologies have radically transformed human life, this course tries to engage students in this digitally mediated and data-intensive geographic world, and also train them the timely technical skills which are demanding in emerging job markets. This course will provide a unique opportunity to explore emerging digital methods, to build a holistic solution to real-world problems, and to critically analyze their social implications. Rather than focusing exclusively on one or two specific topics, this course covers a full range of theoretical perspectives and practical exercises. The course begins with teaching students on geospatial project management using GitHub, and then a series of geospatial data operations and analyses are covered in detail, such as online data (e.g., geo-tagged tweets) acquisition, geocoding, and geospatial analyses. With these preparations, this course switches to online geovisualization. After a brief introduction to web programming basics (e.g., JavaScript, Html, and CSS), students will learn how to visualize and narrate geographic phenomena in an online environment. Moreover, a few newly emerged issues in digital geographies will be introduced.  A few state-of-the-art approaches and applications in digital geographies will be practiced, such as collecting aerial imagery and point clouds using an unmanned aerial vehicle (UAV, commonly known as drone) or LiDAR, as well as storing real-time data from an environmental sensor.  Towards the end of this quarter, we will also introduce a few newly emerged issues related to digital geographies, such as an problematic use of Geospatial Artificial Intelligence and the crypto place on Blockchain. Throughout this quarter, students will not only learn and practice geospatial techniques which are important to many emerging jobs, but also hone their critical intellectual visions on the social implications of the applied techniques.
 
 This course is very “hands-on” and interactive! Most of our time will be spent in a hybrid lecture/lab where students will be working together. Although there will be some individual written reflections and analyses, no formal final exam will be set up. The final project enables students to figure out a holistic solution to a real-world problem. With the completion of this course, each student can share the course work at a self-made website which can be publicly viewed by classmates, open-source community as well as future industrial recruiters. Along the way, the readings will include both applied and theoretical selections. Students will learn not only how people have been programming and visualizing, but also about how critical social theorists have identified assumptions, ideologies, and rigidities in existing practices that can help students to make effective, inclusive and empathetic decisions in today’s data-intensive geographic world.
 
@@ -76,7 +77,7 @@ This course is very “hands-on” and interactive! Most of our time will be spe
 This week’s lecture and lab will prepare you for the course, and provide a theoretical and technical foundation to build from. We’ll work through the syllabus together, and answer any questions you all may have. Each student is expected to read the Ash et al (2018) paper. After completing Lab 1, you will be able to clone/synchronize the course material, set up a personal website, and gain practical experience using github to manage your digital geographies projects.
 
 -   **Lecture Notes:** [Syllabus](readme.md), [Intro to the Web](weeks/week01/intro-web), and [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
--   **Readings:** a) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_), b) [Critical Atlas of the Internet](https://louisedrulhe.fr/internet-atlas/),  and c) [extended readings](weeks/week01/readings.md).
+-   **Readings:** a) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_), b) [Humanistic GIS: Towards a research agenda](https://www.tandfonline.com/doi/pdf/10.1080/24694452.2021.2004875),  and c) [extended readings](weeks/week01/readings.md).
 -   **Think Piece 1:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155399) `Due: March 31st, by 11:59pm`
 -   **Lab 1:** [Project management using GitHub](labs/lab01) `Due: April 8th, by 11:59pm`
 
@@ -96,8 +97,8 @@ This week we’ll focus on honing the fundamental skill set for web programming.
 
 This week’s focus is on processing geospatial data for your digital geographies projects. We will begin by introducing the structure of the geojson format, and then look at techniques for collecting, converting and visualizing geojson objects/features in a web or desktop environment such as QGIS. After completing Lab 2, students will have learned how to collect geo-tagged tweets using specific keywords/topics (e.g., etc.), and methods for visualizing the spatial distribution of the locations for those tweets.
 
--   **Lecture Notes:** [Geospatial data for digital geographies](weeks/week03/readme.md)
--   **Readings:** a) [Can social media clear the air? A case study of the air pollution problem in Chinese cities](https://drive.google.com/open?id=1C0MTPaPnVALVemeYEfiDChUKRZfcMjz3), b) [Putting Data back into Context](https://datajournalism.com/read/longreads/putting-data-back-into-context), c) [More than you ever wanted to know about GeoJSON](weeks/week03/assets/geojson.pdf), and d) [extended readings](weeks/week03/readings.md).
+-   **Lecture Notes:** [Geospatial data for digital geographies](weeks/week03/readme.md), and [More than you ever wanted to know about GeoJSON](weeks/week03/assets/geojson.pdf)
+-   **Readings:** a) [Stand with #StandingRock: Envisioning an Epistemological Shift in Understanding Geospatial Big Data in the “Post-truth” Era](https://www.researchgate.net/profile/Bo-Zhao-3/publication/343848324_Stand_with_StandingRock_Envisioning_an_Epistemological_Shift_in_Understanding_Geospatial_Big_Data_in_the_Post-truth_Era/links/605aadfa92851cd8ce61ba65/Stand-with-StandingRock-Envisioning-an-Epistemological-Shift-in-Understanding-Geospatial-Big-Data-in-the-Post-truth-Era.pdf), b) [Putting Data back into Context](https://datajournalism.com/read/longreads/putting-data-back-into-context), c) [extended readings](weeks/week03/readings.md).
 -   **Think Piece 3:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155397) `Due: April 14th, by 11:59pm`
 -   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: April 22nd, by 11:59pm`
 
@@ -126,8 +127,8 @@ This week you will be making your first web map of the quarter using the popular
 
 <!-- May 2 to May 6 -->
 
--   **Lecture Notes:** [Create a smart dashboard](weeks/week06/), Examples: [COVID-19 Dashboard](https://hgis.uw.edu/virus)
--   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [History of the Urban Dashboard](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/), c) [3 Ways Data Dashboards Can Mislead You](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section), d) [Dynamic Charts](https://c3js.org/examples.html), and e) [extended readings](weeks/week06/readings.md).
+-   **Lecture Notes:** [Create a smart dashboard](weeks/week06/), Examples: [COVID-19 Dashboard](https://hgis.uw.edu/virus); [Dynamic Charts](https://c3js.org/examples.html).
+-   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [History of the Urban Dashboard](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/), c) [3 Ways Data Dashboards Can Mislead You](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section), and d) [extended readings](weeks/week06/readings.md).
 -   **Think Piece 6:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155394) `Due: May 5th, by 11:59pm`
 
 ### Week 7 : Geo-Narratives
@@ -146,8 +147,8 @@ This week we will explore the concept of geo-narrative, the use of storytelling 
 
 This week will focus on two emerging topics related to digital geographies, including cloud point visualization and real-time environment data collection, and explore their promise and pitfalls.
 
--   **Lecture Notes:** [Point cloud (Lidar Data) visualization](https://jakobzhao.github.io/sfm/index.html), [sample data](https://github.com/ucdavis/metashape) and [Real-time environmental data visualization](weeks/week08/rpi-iot).
--   **Readings:** a) [Real-time GIS](https://drive.google.com/file/d/1COD2OYBxEJThG5Lfx7-nzV0EGtGedndT/view?usp=sharing), b) [Anatomy of an AI System](https://anatomyof.ai/), c) [Abolishing Racist Police Algorithms](https://www.technologyreview.com/2020/06/05/1002709/the-activist-dismantling-racist-police-algorithms/), and d) [extended readings](weeks/week08/readings.md).
+-   **Lecture Notes:** a) [Point cloud (Lidar Data) visualization](https://jakobzhao.github.io/sfm/index.html), [sample data](https://github.com/ucdavis/metashape), b) [Real-time environmental data visualization](weeks/week08/rpi-iot), and c) [Real-time GIS](https://drive.google.com/file/d/1COD2OYBxEJThG5Lfx7-nzV0EGtGedndT/view?usp=sharing).
+-   **Readings:** a) [Deepfake Geography](https://www.researchgate.net/profile/Chunxue-Xu/publication/351131604_Deep_fake_geography_When_geospatial_data_encounter_Artificial_Intelligence/links/608a48f5a6fdccaebdf4f065/Deep-fake-geography-When-geospatial-data-encounter-Artificial-Intelligence.pdf), and b) [Blockchain and crypto place](https://www.sciencedirect.com/science/article/pii/S0016718520302219/pdfft?isDTMRedir=true&download=true), c) [extended readings](weeks/week08/readings.md).
 -   **Think Piece 8:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155392) `Due: May 19th, by 11:59pm`
 
 ### Week 9 & 10 : Project studios
