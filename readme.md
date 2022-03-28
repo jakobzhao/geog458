@@ -6,17 +6,17 @@
 
 **Meetings:**
 
--**Lectures:** Tuesdays and Thursdays 11:30 AM to 12:50 PM PST at GUG 220
+- **Lectures:** Tuesdays and Thursdays 11:30 AM to 12:50 PM PST at GUG 220
 
--**Labs:** Wednesdays 12:30 AM to 4:20 PM PST at SMI 401
+- **Labs:** Wednesdays 12:30 AM to 4:20 PM PST at SMI 401
 
 **Personnel:**
 
--**Bo Zhao**, Instructor, zhaobo@uw.edu | Office Hour: Thursdays 1 to 3 PM via [Zoom](https://washington.zoom.us/my/bzhao) by default or in-person by request. Make an appointment from this [link](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI).
+- **Bo Zhao**, Instructor, zhaobo@uw.edu | Office Hour: Thursdays 1 to 3 PM via [Zoom](https://washington.zoom.us/my/bzhao) by default or in-person by request. Make an appointment from this [link](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI).
 
--**Jiaxin Feng**, Teaching Assistant, jxfeng@uw.edu |  Office Hour: 
+- **Jiaxin Feng**, Teaching Assistant, jxfeng@uw.edu |  Office Hour: 
 
--**Steven Bao**, Teaching Assistant, bxq98@uw.edu |  Office Hour: 
+- **Steven Bao**, Teaching Assistant, bxq98@uw.edu |  Office Hour: 
 
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
 
