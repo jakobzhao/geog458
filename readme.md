@@ -10,7 +10,7 @@
 
 - **Labs:** Wednesdays 12:30 AM to 4:20 PM PST at SMI 401
 
-`Both lectures and labs are held in person, masks are highly recommended to protect everyone, especially those whose personal or household situation makes them more vulnerable`
+`Both lectures and labs are held in person, masks are highly recommended to protect everyone, especially those whose personal or household situation makes them more vulnerable.`
 
 **Personnel:**
 
