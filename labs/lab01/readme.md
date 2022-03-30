@@ -47,11 +47,11 @@ A GitHub account is needed for managing and synchronizing your cloud based proje
 
 I decide to host all course material on GitHub instead of Canvas system. By doing so, my goal is not to create extra trouble or sharp the learn curve. Instead, hosting on github will help you save a lot of time in downloading or migrating course materials, testing lab or lecture applications. Also, more practically, a lot of companies in the geospatial industries have already used github for their project management, such as [ESRI](https://github.com/Esri), [CartoBD](https://github.com/CartoDB), [MapBox](https://github.com/mapbox), and etc. To prepare you with the capabilities of using github, you will be familiar with an industry-level project management approach. In this lab, let us go through the procedure of downloading the course material as below.
 
-1\. On GitHub, each project is stored as a project repository. The repository for this course is located at [https://github.com/jakobzhao/geog495](https://github.com/jakobzhao/geog495). Please navigate to this url on a browser such as `Chrome`. As indicated by the course website url, this repository is created by me; my GitHub account name is `jakobzhao`, while the repository name is `geog495`.
+1\. On GitHub, each project is stored as a project repository. The repository for this course is located at [https://github.com/jakobzhao/geog458](https://github.com/jakobzhao/geog458). Please navigate to this url on a browser such as `Chrome`. As indicated by the course website url, this repository is created by me; my GitHub account name is `jakobzhao`, while the repository name is `geog458`.
 
 2\. On the front page of this repository, please click the green button named after `Clone or download` . To download the course material, you can click the `Download ZIP` button, as a result, a compressed file of the course material will be downloaded.
 
-3\. However, **we recommend you to clone this project repository**. You can get the **git url** of this repository on the same information window. The git url is [https://github.com/jakobzhao/geog495.git](https://github.com/jakobzhao/geog495.git).
+3\. However, **we recommend you to clone this project repository**. You can get the **git url** of this repository on the same information window. The git url is [https://github.com/jakobzhao/geog458.git](https://github.com/jakobzhao/geog458.git).
 
 4\. Next, open your working space on your local computer through command prompt if you are on Windows or through terminal if you are on a Mac. Here, the working space is just a centralized folder on your local computer where you can store your working materials. For me, I created a working folder to locally store my github repositories. For example, the working space of my computer is located as `C:\Workspace`. But it is up to you under which folder or path to put the workspace folder.
 
@@ -60,11 +60,11 @@ C:\Users\[windows_or_macosx_username]>cd C:\Workspace
 C:\Workspace>
 ```
 
-5\. Once acquiring the **git url** -  https://github.com/jakobzhao/geog495.git, we use the command `git clone` to clone the GitHub repository to your local computer.
+5\. Once acquiring the **git url** -  https://github.com/jakobzhao/geog458.git, we use the command `git clone` to clone the GitHub repository to your local computer.
 
  ```powershell
-C:\Workspace\>git clone https://github.com/jakobzhao/geog495.git
-Cloning into 'geog495'...
+C:\Workspace\>git clone https://github.com/jakobzhao/geog458.git
+Cloning into 'geog458'...
 remote: Counting objects: 962, done.
 remote: Compressing objects: 100% (750/750), done.
 remote: Total 962 (delta 214), reused 917 (delta 177), pack-reused 0Receiving objects:  99% (953/962), 158.77 MiB | 1.60 MiB/s
@@ -76,13 +76,13 @@ Checking out files: 100% (650/650), done.
 6\. To review the files and folders in the downloaded/cloned repository, you need to `cd` into the root directory of this repository. If you are on a Mac or Linux, type `ls` to check the file list of this repository, or try `dir` if you are on a Windows. Take windows for example.
 
 ```powershell
-C:\Workspace>cd geog495
+C:\Workspace>cd geog458
 
-C:\Workspace\geog495>dir
+C:\Workspace\geog458>dir
 Volume in drive C has no label.
 Volume Serial Number is 3E8C-9A9E
 
-Directory of C:\Workspace\geog495
+Directory of C:\Workspace\geog458
 
 09/20/2021  09:46 AM    <DIR>          .
 09/20/2021  09:46 AM    <DIR>          ..
@@ -96,13 +96,15 @@ Directory of C:\Workspace\geog495
                4 Dir(s)  898,906,136,576 bytes free
 ```
 
-In the root directory of geog495, there are folders like assets, labs, and files like readme.md and LICENSE.
+In the root directory of geog458, there are folders like assets, labs, and files like readme.md and LICENSE.
 
 ![](img/git-clone-geog595.gif)
 
 7\. Next, we open the `readme.md` file using `Visual Studio Code`. To do that, make sure you have installed the program `Visual Studio Code` and the recommended packages, such as `Markdown Preview Enhanced`.
 
-Once `Visual Studio Code` is opened, press `ctrl+k` and then `ctrl+o` to open the open folder window, navigate to `geog495` folder from your workspace and press `select folder`. Then the `geog495` repo will be opened, and a file tree will be shown in the project list panel on the left of the vscode window.
+Once `Visual Studio Code` is opened, press `ctrl+k` and then `ctrl+o` to open the open folder window, navigate to `geog458` folder from your workspace and press `select folder`. Then the `geog458` repo will be opened, and a file tree will be shown in the project list panel on the left of the vscode window.
+
+**Note:** Your folder name should be geog458. The below screenshot is only to give you an idea of what window you will see.
 
 ![](img/vscode-open-project.png)
 
@@ -113,15 +115,15 @@ In the project list panel, navigate to the `README.md` in the project tree panel
 8\. Once the course material is hosted on GitHub, it can be easily shared with a larger community. To synchronize the course material on remote GitHub repository to your local computer, you need to implement two sequential command lines `git checkout --force` and `git pull` in the root directory of the repository. Once the two commands are executed. An update notice will be shown as below.
 
 ```powershell
-C:\Workspace\geog495>git checkout --force
+C:\Workspace\geog458>git checkout --force
 Your branch is up-to-date with 'origin/main'.
 
-C:\Workspace\geog495>git pull
+C:\Workspace\geog458>git pull
 remote: Counting objects: 3, done.
 remote: Compressing objects: 100% (3/3), done.
 remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), done.
-From https://github.com/jakobzhao/geog495
+From https://github.com/jakobzhao/geog458
    13b2cab..baf74b1  main     -> origin/main
 Updating 13b2cab..baf74b1
 Fast-forward
@@ -137,7 +139,7 @@ If you implement the above two commands in a Mac or Linux system, you might need
 
 9\. Before we jump to the next section, please:
 
-- Star the course repository [https://github.com/jakobzhao/geog495](https://github.com/jakobzhao/geog495) by pressing the `star` button on the top right, and;
+- Star the course repository [https://github.com/jakobzhao/geog458](https://github.com/jakobzhao/geog458) by pressing the `star` button on the top right, and;
 
 - Navigate to Dr. Zhao's front page at [https://github.com/jakobzhao](https://github.com/jakobzhao), and click the `Follow` button to be a follower.
 
@@ -195,7 +197,7 @@ One or several paragraphs for subsection 3.
 ```
 
 
-3\. In fact, you can use any text editor to generate Markdown files. If you do not have `Visual Studio Code` at hand, you can use `Notepad` on Windows or `TextEdit` on MacOS as well. Another more advanced Markdown editor I recommend is `Typora`. Please let the instructor know if you meet any difficulty in installing this plugin.
+3\. In fact, you can use any text editor to generate Markdown files. If you do not have `Visual Studio Code` at hand, you can use `Notepad` on Windows or `TextEdit` on MacOS as well.  Please let the instructor know if you meet any difficulty in installing this plugin.
 
 ### 3.3 Upload files to GitHub
 
