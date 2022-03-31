@@ -258,7 +258,7 @@ Depending on the type of information, a web page could be qualified as being sta
 [2] https://www.ntchosting.com/encyclopedia/internet/web-page/
 
 
-## 6 Graphics on the Web
+## 7 Graphics on the Web
 
 Websites and applications often need to present graphics. Static images can easily be displayed using the `<img>` element, or by setting the background of HTML elements using the background-image property. You can also construct graphics on-the-fly, or manipulate images after the fact. These articles provide insight into how you can accomplish this.
 
