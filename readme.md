@@ -67,7 +67,7 @@ This course is very “hands-on” and interactive! Most of our time will be spe
 **Participation in in-class discussion:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and actively participate in critical discussions of those readings. You should have completed all of the weekly readings before our Friday lab sections as these sections will be devoted to critical discussion and engagement with the required readings.
 
 **In-class presentation:**
-**Also, each group will lead the presentation about an assigned topic at least once throughout this quarter. We will start assign the group presentation assignment in Week 3.**
+**Also, each group will lead the presentation about an assigned topic at least once throughout this quarter. We will start assign the group presentation assignment in Week 3.** Each group will present an previously assign paper or a digital geography related project in no more than 10 minutes. If you prepare slides for the presentation, please send it to the instructur before class via email.
 
 <!-- **Final Essay:** Each student will complete an essay that engages with the readings and the course themes, along with additional readings that you bring into conversation with the assigned course readings. You are aiming for **no less than 2000 words** coalescing around ideas and readings from this quarter. Essay is due no later than the end of **Week 8 (May 20th, 11:59pm)**. Check out [the detailed requirement for essay](project/essay.md). -->
 
@@ -108,7 +108,7 @@ This week’s focus is on processing geospatial data for your digital geographie
 -   **Readings:** a) [Stand with #StandingRock: Envisioning an Epistemological Shift in Understanding Geospatial Big Data in the “Post-truth” Era](https://www.researchgate.net/profile/Bo-Zhao-3/publication/343848324_Stand_with_StandingRock_Envisioning_an_Epistemological_Shift_in_Understanding_Geospatial_Big_Data_in_the_Post-truth_Era/links/605aadfa92851cd8ce61ba65/Stand-with-StandingRock-Envisioning-an-Epistemological-Shift-in-Understanding-Geospatial-Big-Data-in-the-Post-truth-Era.pdf), b) [Putting Data back into Context](https://datajournalism.com/read/longreads/putting-data-back-into-context), c) [extended readings](weeks/week03/readings.md).
 -   **Think Piece 3:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155397) `Due: April 14th, by 11:59pm`
 -   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: April 22nd, by 11:59pm`
--   Presentations: Tuesday: Standing Rock paper (AA1), [Native Land Digital](https://native-land.ca/) (AB1), Thursday: Data back to Context Paper (AC1), [Ukraine Interactive Map](https://liveuamap.com/en) (AD1)
+-   **Presentations**: Tuesday: Standing Rock paper (AA1), [Native Land Digital](https://native-land.ca/) (AB1), Thursday: Data back to Context Paper (AC1), [Ukraine Interactive Map](https://liveuamap.com/en) (AD1)
 
 ### Week 4 : Web mapping
 
@@ -119,9 +119,9 @@ This week you will be making your first web map of the quarter using the popular
 -   **Lecture Notes:** [Leaflet Basics](weeks/week04/leaflet) and [Map Events](weeks/week04/mapevent).
 -   **Readings:** a) [Digital Mapping and Segregation](https://www.forbes.com/sites/drsarahbond/2017/10/20/how-is-digital-mapping-changing-the-way-we-visualize-racism-and-segregation/#4df35c7d33fa), b) [Hacker Cartography](https://drive.google.com/file/d/1H76GJFXwS5dOPZYyxfyuud0DGQzYGNIr/view?usp=sharing), and c) [extended readings](weeks/week04/readings.md).
 -   **Think Piece 4:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155396) `Due: April 21st, by 11:59pm`
--   **Lab 3:** [Web map application](labs/lab03) `Due: April 29th, by 11:59pm`,  Examples: [Oregon Water Atlas](http://oregonwater.info/atlas.html)
+-   **Lab 3:** [Web map application](labs/lab03) `Due: April 29th, by 11:59pm`
 -   [An integrative web mapping template](https://jakobzhao.github.io/geog458/weeks/week04/starter/index.html)
--   Presentations: Tuesday: Digital Mapping and Segregation paper paper (AB2), [Native Land Digital](https://native-land.ca/) (AA2), Thursday: Hacker Cartography Paper (AD2), [Ukraine Interactive Map](https://liveuamap.com/en) (AC2)
+-   **Presentations**: Tuesday: Digital Mapping and Segregation paper paper (AB2), [TweetMap](https://www.heavy.ai/demos/tweetmap) (AA2), Thursday: Hacker Cartography Paper (AD2), [Oregon Water Atlas](http://oregonwater.info/atlas.html) (AC2)
 
 ### Week 5 : Map design
 
@@ -181,8 +181,7 @@ Each group will present their final projects at GUG 220 on Wednesday (June 8th) 
 | Final Project Progress  | 15% |
 | Final project   | 20% |
 
-
-> The item `participation` includes your participation in the class (e.g., self-introduction, answer questions in class, etc.) and/or your response on GitHub issues (ask questions via GitHub issue, and help your classmates using the GitHub issues function).
+> The item `participation` includes your participation in the class (e.g., self-introduction, survey, answer questions in class, etc.) and/or your response on GitHub issues (ask questions via GitHub issue, and help your classmates using the GitHub issues function).
 
 
 ## :notebook_with_decorative_cover: Equity & Inclusivity
