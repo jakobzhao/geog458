@@ -64,7 +64,7 @@ This course is very “hands-on” and interactive! Most of our time will be spe
 
 **Think Pieces:** for week 1 to 8, there will be weekly reading assignments. To evaluate your reflection upon each week's reading material, we set up a discussion board for each week. You need to submit think pieces to **4** out of the 8 weeks' discussion topics. Your think pieces should be completed by Thursday @ 11:59 pm for the weeks you are submitting a piece. **All the 4 think pieces must be submitted by the end of Week 8 (May 20th, 11:59pm)**. Your think pieces should be at least 350 words and engage substantially with the reading materials, and connections to the lab assignments and lectures. Guiding questions or prompts will be included in each week's discussion section on canvas to help frame your thinking. Submit your think pieces on Canvas in the applicable week's discussion section (https://canvas.uw.edu/courses/1434645/discussion_topics).
 
-**Participation in in-class discussion:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and actively participate in critical discussions of those readings. You should have completed all of the weekly readings before our Friday lab sections as these sections will be devoted to critical discussion and engagement with the required readings. 
+**Participation in in-class discussion:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and actively participate in critical discussions of those readings. You should have completed all of the weekly readings before our Friday lab sections as these sections will be devoted to critical discussion and engagement with the required readings.
 
 **In-class presentation:**
 **Also, each group will lead the presentation about an assigned topic at least once throughout this quarter. We will start assign the group presentation assignment in Week 3.**
@@ -108,6 +108,7 @@ This week’s focus is on processing geospatial data for your digital geographie
 -   **Readings:** a) [Stand with #StandingRock: Envisioning an Epistemological Shift in Understanding Geospatial Big Data in the “Post-truth” Era](https://www.researchgate.net/profile/Bo-Zhao-3/publication/343848324_Stand_with_StandingRock_Envisioning_an_Epistemological_Shift_in_Understanding_Geospatial_Big_Data_in_the_Post-truth_Era/links/605aadfa92851cd8ce61ba65/Stand-with-StandingRock-Envisioning-an-Epistemological-Shift-in-Understanding-Geospatial-Big-Data-in-the-Post-truth-Era.pdf), b) [Putting Data back into Context](https://datajournalism.com/read/longreads/putting-data-back-into-context), c) [extended readings](weeks/week03/readings.md).
 -   **Think Piece 3:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155397) `Due: April 14th, by 11:59pm`
 -   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: April 22nd, by 11:59pm`
+-   Presentations: Tuesday: Standing Rock paper (AA1), [Native Land Digital](https://native-land.ca/) (AB1), Thursday: Data back to Context Paper (AC1), [Ukraine Interactive Map](https://liveuamap.com/en) (AD1)
 
 ### Week 4 : Web mapping
 
@@ -120,6 +121,7 @@ This week you will be making your first web map of the quarter using the popular
 -   **Think Piece 4:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155396) `Due: April 21st, by 11:59pm`
 -   **Lab 3:** [Web map application](labs/lab03) `Due: April 29th, by 11:59pm`,  Examples: [Oregon Water Atlas](http://oregonwater.info/atlas.html)
 -   [An integrative web mapping template](https://jakobzhao.github.io/geog458/weeks/week04/starter/index.html)
+-   Presentations: Tuesday: Digital Mapping and Segregation paper paper (AB2), [Native Land Digital](https://native-land.ca/) (AA2), Thursday: Hacker Cartography Paper (AD2), [Ukraine Interactive Map](https://liveuamap.com/en) (AC2)
 
 ### Week 5 : Map design
 
