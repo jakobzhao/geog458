@@ -121,7 +121,7 @@ This week you will be making your first web map of the quarter using the popular
 -   **Think Piece 4:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155396) `Due: April 21st, by 11:59pm`
 -   **Lab 3:** [Web map application](labs/lab03) `Due: April 29th, by 11:59pm`
 -   [An integrative web mapping template](https://jakobzhao.github.io/geog458/weeks/week04/starter/index.html)
--   **Presentations**: Tuesday: Digital Mapping and Segregation paper paper (AB2), [TweetMap](https://www.heavy.ai/demos/tweetmap) (AA2), Thursday: Hacker Cartography Paper (AD2), [Oregon Water Atlas](http://oregonwater.info/atlas.html) (AC2)
+-   **Presentations**: Tuesday: Digital Mapping and Segregation paper (AB2), [TweetMap](https://www.heavy.ai/demos/tweetmap) (AA2), Thursday: Hacker Cartography Paper (AD2), [Oregon Water Atlas](http://oregonwater.info/atlas.html) (AC2)
 
 ### Week 5 : Map design
 
