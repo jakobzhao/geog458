@@ -257,7 +257,7 @@ console.log(course.name);
 You can place functions within variables.
 
 ```js
-var myFunction = functionName(argument) {
+var myFunction = function() {
     // function code goes here
 };
 ```
