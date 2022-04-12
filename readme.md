@@ -67,7 +67,7 @@ This course is very “hands-on” and interactive! Most of our time will be spe
 **Participation in in-class discussion:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and actively participate in critical discussions of those readings. You should have completed all of the weekly readings before our Friday lab sections as these sections will be devoted to critical discussion and engagement with the required readings.
 
 **In-class presentation:**
-**Also, each group will lead the presentation about an assigned topic at least once throughout this quarter. We will start assign the group presentation assignment in Week 3.** Each group will present an previously assign paper or a digital geography related project in no more than 10 minutes. If you prepare slides for the presentation, please send it to the instructur before class via email.
+**Also, each group will lead the presentation about an assigned topic at least once throughout this quarter. We will start assign the group presentation assignment in Week 3.** Each group will present an previously assign paper or a digital geography related project in no more than 10 minutes. If you prepare slides for the presentation, please send it to the instructor before class via email.
 
 <!-- **Final Essay:** Each student will complete an essay that engages with the readings and the course themes, along with additional readings that you bring into conversation with the assigned course readings. You are aiming for **no less than 2000 words** coalescing around ideas and readings from this quarter. Essay is due no later than the end of **Week 8 (May 20th, 11:59pm)**. Check out [the detailed requirement for essay](project/essay.md). -->
 
