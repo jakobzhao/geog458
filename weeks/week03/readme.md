@@ -1,6 +1,5 @@
 # Geospatial Data for Digital Geographies
 
-
 **Learning Objectives**
 
 -   Review the data tier in a web mapping architecture;
