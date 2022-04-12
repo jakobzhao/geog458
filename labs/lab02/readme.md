@@ -287,7 +287,25 @@ In this section, you have **3 main tasks** to complete:
 
 ## 5. Word cloud analysis
 
+You can make a word cloud to analyze the content of all the collected tweet. There are a few good online word cloud generator. For this lab, we use Word Art from https://wordart.com. 
 
+After registration, you can simply create a word cloud by pressing the "Create Now" Button on the front page.
+
+![](img/frontpage.png)
+
+Open `geotweets.csv` in microsoft excel or other alternative spreadsheet software. Copy the all the rows under the `text` columns. And then paste the copied data to the input text box on Word Art. You can open this text box by pressing the `import` button on the top left. After the texts is input, please type `Import words`.
+![](img/import-box.png)
+
+
+Okay, now you will see a list of words on the left panel, please first delete those common terms or meaningless terms. And then walk through the options from shapes, fonts layout and style. After you determine all the options, please type `visualize` on top of the main viewport. After a few seconds to render, you will see the word cloud!
+
+![](img/visualize.png)
+
+In order to reuse the word cloud, you need to download an image of this word cloud by pressing the `download` button on the main toolbar and then choose the image format, like `Standard PNG`. Then, the word cloud will be saved on your local drive for reuse.
+
+![](img/wordcloud.png)
+
+A word cloud will help you understand what twitter users have talked about in the specific region and time period you have performed the data crawling tasks.
 ## 6. Deliverable
 
 You are expected to walk through this instruction, execute python script in `geosearch.ipynb` with your own Twitter API keys and filtering parameters to collect geotagged tweets. Additionally, visualize your harvested geotagged data using QGIS. Then, you are asked to write a short narrative of your map, analyzing the data you gathered in a markdown file. When uploading your crawler file to your repository, be sure to remove your Twitter developer credentials from the code before uploading.
