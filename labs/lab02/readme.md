@@ -285,7 +285,6 @@ In this section, you have **3 main tasks** to complete:
 
 3.  Make any appropriate visual edits to this map. Save it as `qgz` file and export the map as an image.
 
-
 ## 5. Word cloud analysis
 
 
