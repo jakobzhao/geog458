@@ -391,7 +391,7 @@ There are two general rules.
 There are hundreds of properties you can set using CSS. Some of these include font, color, location on page, opacity, size, etc. An extensive list can be found in CSS reference documents. Two prominent references are by W3Schools and Mozilla, check them out for further reading.
 
 [Mozilla CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
-[W3Schools CSS Reference](http://www.w3schools.com/cssref/default.asp)
+[W3Schools CSS Reference](http://www.w3schools.com/cssref)
 
 
 **Style Font and Type Size**

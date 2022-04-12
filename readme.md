@@ -10,15 +10,15 @@
 
 - **Labs:** Wednesdays 12:30 AM to 4:20 PM PST at SMI 401
 
-`Both lectures and labs are held in person, wearing mask is recommended.`
+`Both lectures and labs are held in person, masks are highly recommended to protect everyone, especially those whose personal or household situation makes them more vulnerable.`
 
 **Personnel:**
 
 - **Bo Zhao**, Instructor, zhaobo@uw.edu | Office Hour: Thursdays 1 to 3 PM via [Zoom](https://washington.zoom.us/my/bzhao) by default or in-person by request. Check this [link](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI) to make an appointment.
 
-- **Jiaxin Feng**, Teaching Assistant, jxfeng@uw.edu |  Office Hour: 
+- **Jiaxin Feng**, Teaching Assistant, jxfeng@uw.edu |  Office Hour: Fridays 2:30 to 3:30 PM via [Zoom](https://washington.zoom.us/j/95734673622). Check this [link](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUNfRnRnc2hqLXFUfGRlZmF1bHR8Zjg1NTJmZDg2MDY2OGY1ODA5ZDAzNDdhMjZmMzJhMTI) to make an appointment. If you want to meet with me in person, please send me an email or a canvas message.
 
-- **Steven Bao**, Teaching Assistant, bxq98@uw.edu |  Office Hour: 
+- **Steven Bao**, Teaching Assistant, bxq98@uw.edu |  Office Hour: Mondays 1 to 2 PM via [Zoom](https://washington.zoom.us/j/3329674953). Check this [link](https://calendar.google.com/calendar/selfsched?sstoken=UURaSkhXOURSSUd4fGRlZmF1bHR8Y2I1OTM0ODUyODg3ZDZiNWZiYjVlOTY3MjhmMWMwYjQ) to make an appointment. If you want to meet with me in person, please send me an email or a canvas message.
 
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
 
@@ -62,12 +62,12 @@ This course is very “hands-on” and interactive! Most of our time will be spe
 
 **Labs:** You need to finish all four labs by the due date. In order to help you work on each lab, we will walk through most of the labs in class.
 
-**Think Pieces:** for week 1 to 8, there will be weekly reading assignments. To evaluate your reflection upon each week's reading material, we set up a discussion board for each week. You need to submit think pieces to **4** out of the 8 weeks' discussion topics. Your think pieces should be completed by Thursday @ 11:59 pm for the weeks you are submitting a piece. **All the 4 thick pieces must be submitted by the end of Week 8 (May 20th, 11:59pm)**. Your think pieces should be at least 350 words and engage substantially with the reading materials, and connections to the lab assignments and lectures. Guiding questions or prompts will be included in each week's discussion section on canvas to help frame your thinking. Submit your think pieces on Canvas in the applicable week's discussion section (https://canvas.uw.edu/courses/1434645/discussion_topics).
+**Think Pieces:** for week 1 to 8, there will be weekly reading assignments. To evaluate your reflection upon each week's reading material, we set up a discussion board for each week. You need to submit think pieces to **4** out of the 8 weeks' discussion topics. Your think pieces should be completed by Thursday @ 11:59 pm for the weeks you are submitting a piece. **All the 4 think pieces must be submitted by the end of Week 8 (May 20th, 11:59pm)**. Your think pieces should be at least 350 words and engage substantially with the reading materials, and connections to the lab assignments and lectures. Guiding questions or prompts will be included in each week's discussion section on canvas to help frame your thinking. Submit your think pieces on Canvas in the applicable week's discussion section (https://canvas.uw.edu/courses/1434645/discussion_topics).
 
-**Participation in in-class discussion:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and actively participate in critical discussions of those readings.
+**Participation in in-class discussion:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and actively participate in critical discussions of those readings. You should have completed all of the weekly readings before our Friday lab sections as these sections will be devoted to critical discussion and engagement with the required readings.
 
-**In-class presentation**
-**Also, each group will lead the presentation about an assigned topic at least once throughout this quarter. We will start assign the group presentation assignment in Week 3.**
+**In-class presentation:**
+**Also, each group will lead the presentation about an assigned topic at least once throughout this quarter. We will start assign the group presentation assignment in Week 3.** Each group will present an previously assign paper or a digital geography related project in no more than 10 minutes. If you prepare slides for the presentation, please send it to the instructur before class via email.
 
 <!-- **Final Essay:** Each student will complete an essay that engages with the readings and the course themes, along with additional readings that you bring into conversation with the assigned course readings. You are aiming for **no less than 2000 words** coalescing around ideas and readings from this quarter. Essay is due no later than the end of **Week 8 (May 20th, 11:59pm)**. Check out [the detailed requirement for essay](project/essay.md). -->
 
@@ -108,6 +108,7 @@ This week’s focus is on processing geospatial data for your digital geographie
 -   **Readings:** a) [Stand with #StandingRock: Envisioning an Epistemological Shift in Understanding Geospatial Big Data in the “Post-truth” Era](https://www.researchgate.net/profile/Bo-Zhao-3/publication/343848324_Stand_with_StandingRock_Envisioning_an_Epistemological_Shift_in_Understanding_Geospatial_Big_Data_in_the_Post-truth_Era/links/605aadfa92851cd8ce61ba65/Stand-with-StandingRock-Envisioning-an-Epistemological-Shift-in-Understanding-Geospatial-Big-Data-in-the-Post-truth-Era.pdf), b) [Putting Data back into Context](https://datajournalism.com/read/longreads/putting-data-back-into-context), c) [extended readings](weeks/week03/readings.md).
 -   **Think Piece 3:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155397) `Due: April 14th, by 11:59pm`
 -   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: April 22nd, by 11:59pm`
+-   **Presentations**: Tuesday: Standing Rock paper (AA1), [Native Land Digital](https://native-land.ca/) (AB1), Thursday: Data back to Context Paper (AC1), [Ukraine Interactive Map](https://liveuamap.com/en) (AD1)
 
 ### Week 4 : Web mapping
 
@@ -118,8 +119,9 @@ This week you will be making your first web map of the quarter using the popular
 -   **Lecture Notes:** [Leaflet Basics](weeks/week04/leaflet) and [Map Events](weeks/week04/mapevent).
 -   **Readings:** a) [Digital Mapping and Segregation](https://www.forbes.com/sites/drsarahbond/2017/10/20/how-is-digital-mapping-changing-the-way-we-visualize-racism-and-segregation/#4df35c7d33fa), b) [Hacker Cartography](https://drive.google.com/file/d/1H76GJFXwS5dOPZYyxfyuud0DGQzYGNIr/view?usp=sharing), and c) [extended readings](weeks/week04/readings.md).
 -   **Think Piece 4:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155396) `Due: April 21st, by 11:59pm`
--   **Lab 3:** [Web map application](labs/lab03) `Due: April 29th, by 11:59pm`,  Examples: [Oregon Water Atlas](http://oregonwater.info/atlas.html)
+-   **Lab 3:** [Web map application](labs/lab03) `Due: April 29th, by 11:59pm`
 -   [An integrative web mapping template](https://jakobzhao.github.io/geog458/weeks/week04/starter/index.html)
+-   **Presentations**: Tuesday: Digital Mapping and Segregation paper (AB2), [TweetMap](https://www.heavy.ai/demos/tweetmap) (AA2), Thursday: Hacker Cartography Paper (AD2), [Oregon Water Atlas](http://oregonwater.info/atlas.html) (AC2)
 
 ### Week 5 : Map design
 
@@ -162,7 +164,7 @@ This week will focus on two emerging topics related to digital geographies, incl
 
 <!-- May 23 to May 27 -->
 <!-- May 30 to June 3, May 30 is Memorial Day, which is a University Holiday -->
-During these two weeks, each group will focusing on their final projects and essay. The instructor and teaching assistant are available during the normal lecture period, lab sections and office hours if help is needed. Below are some resources for you to develop your final project.
+During these two weeks, each group will focusing on their final projects and essay. The instructor and teaching assistants are available during the normal lecture period, lab sections and office hours if help is needed.
 
 ### Finals Week : Final project presentations
 
@@ -179,8 +181,7 @@ Each group will present their final projects at GUG 220 on Wednesday (June 8th) 
 | Final Project Progress  | 15% |
 | Final project   | 20% |
 
-
-> The item `participation` includes your participation in the class (e.g., self-introduction, answer questions in class, etc.) and/or your response on GitHub issues (ask questions via GitHub issue, and help your classmates using the GitHub issues function).
+> The item `participation` includes your participation in the class (e.g., self-introduction, survey, answer questions in class, etc.) and/or your response on GitHub issues (ask questions via GitHub issue, and help your classmates using the GitHub issues function).
 
 
 ## :notebook_with_decorative_cover: Equity & Inclusivity

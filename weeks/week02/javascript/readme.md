@@ -257,7 +257,7 @@ console.log(course.name);
 You can place functions within variables.
 
 ```js
-var myFunction = functionName(argument) {
+var myFunction = function() {
     // function code goes here
 };
 ```
@@ -514,7 +514,7 @@ Loops go through a piece of code a set number of times.
 For Loop: A basic for loop will use the following syntax. Note the first argument is an index for the the start value, the second is a conditional for the index stating where the loop will stop when the value is false, and the last is the increment of the loop. Note the syntax, i++ will increase i by 1 every single time the loop circles. The code in the middle is what will run.
 
 ```javascript
-for(var i=0; i<1000, i++){
+for(var i=0; i<1000; i++){
     // code here will run 1000 times, then move on to the next
 }
 ```
