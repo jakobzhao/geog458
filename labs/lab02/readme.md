@@ -286,10 +286,10 @@ In this section, you have **3 main tasks** to complete:
 3.  Make any appropriate visual edits to this map. Save it as `qgz` file and export the map as an image.
 
 
-## 6. Word cloud analysis
+## 5. Word cloud analysis
 
 
-## 5. Deliverable
+## 6. Deliverable
 
 You are expected to walk through this instruction, execute python script in `geosearch.ipynb` with your own Twitter API keys and filtering parameters to collect geotagged tweets. Additionally, visualize your harvested geotagged data using QGIS. Then, you are asked to write a short narrative of your map, analyzing the data you gathered in a markdown file. When uploading your crawler file to your repository, be sure to remove your Twitter developer credentials from the code before uploading.
 
