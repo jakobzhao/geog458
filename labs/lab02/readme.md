@@ -17,7 +17,7 @@ In this lab, we will use Google Colab to compile the script in Python. If you ha
 
 ## 2. Apply for a Twitter developer account
 
-In order to use Twitter API, you need to have a Twitter developer account from this [link](https://developer.twitter.com/en/apply-for-access).
+In order to use Twitter API, you need to have a Twitter developer account from this [link](https://developer.twitter.com/en/apply-for-access). Please try **using your UW email for registration**.
 
 ![](img/twitter_dev.png)
 
@@ -54,20 +54,36 @@ In this section, we will create a Twitter crawler to collect geotagged tweets. M
 
 Please launch the crawler by clicking this button [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jakobzhao/geog458/blob/master/labs/lab02/geosearch.ipynb). This button will enable you to open the file [`labs/lab02/geosearch.ipynb`](./geosearch.ipynb) on Google Colab. You can also open this ipynb script through the url `https://colab.research.google.com/github/jakobzhao/geog458/blob/master/labs/lab02/geosearch.ipynb`. 
 
-As shown, `https://colab.research.google.com/` indicates the google colab root url, the subpath `github/jakobzhao/geog458/blob/master/labs/lab02/geosearch.ipynb` indicate the location where the ipynb script `labs/lab02/geosearch.ipynb` on github. You can open any `ipynb` script on Google Colab through the similar url structure.,
+As shown, `https://colab.research.google.com/` indicates the google colab root url, the subpath `github/jakobzhao/geog458/blob/master/labs/lab02/geosearch.ipynb` indicate the location where the ipynb script `labs/lab02/geosearch.ipynb` on github. You can open any `ipynb` script on Google Colab through the similar url structure.
 
 
-This crawler is based on `Tweepy` - a python based library which wraps the Twitter API. Tweepy provides a series of data crawling strategies - Harvesting geotagged tweets is just one of them. If you are interested in composing a more complicated data collection strategy, please refer to its documentation at <https://tweepy.readthedocs.io/en/latest/index.html>.
+### 3.1 Metadata and required libraries
 
+For any python script, metadata are usually stated at the very beginning.
 
-We usually need to install libraries like tweepy using command prompt (if a windows user) or terminal (if a Mac or Linux user). However, since we are working in the embedded Jupyter Notebook on Google Colab, we run the following code, as shown in the script below, to install a library.
-
-```Python
-!python -m pip install tweepy
+```python
+# created on Dec 24, 2020
+# modified on Jan 2, 2021
+# @author:          Bo Zhao
+# @email:           zhaobo@uw.edu
+# @website:         https://hgis.uw.edu
+# @organization:    Department of Geography, University of Washington, Seattle
+# @description:     Search geo-tagged tweets within the U.S. This script is modified from https://github.com/shawn-terryah/Twitter_Geolocation
 ```
 
+Next, the required python libraries for this crawler will be imported. To execute the crawling task, we will use pandas, tweepy and google.colab. Since Google Colab has already pre-installed pandas and tweepy, you do not need to install again. `Tweepy` is a python based library which wraps the Twitter API. Tweepy provides a series of data crawling strategies - Harvesting geotagged tweets is just one of them. If you are interested in composing a more complicated data collection strategy, please refer to its documentation at <https://tweepy.readthedocs.io/en/latest/index.html>.
 
+```python
+import tweepy, json, time
+import pandas as pd
+from google.colab import files
+# Create data on to Google Drive
+from google.colab import drive
+# Mount your Drive to the Colab VM.
+drive.mount('/gdrive')
+```
 
+### 3.2 Code structure
 
 This script `geosearch.ipynb` was programmed using a `class` structure instead of a run-down script structure. A `StreamListener` is defined for later use, the main procedure will be executed after the line `if __name__ == "__main__":`. This piece of code was programmed with reference to <https://github.com/shawn-terryah/Twitter_Geolocation>. So, let us start with the main procedure and then switch to the stream listener.
 
@@ -88,25 +104,49 @@ if __name__ == "__main__":
     ....
 ```
 
-Once we acquire the consumer key and access token, we can create a variable to handle the twitter authentication.
+### 3.3 Main procedure
 
-```Python
+In the main procedure, once we acquire the consumer key and access token, we can create a variable to handle the twitter authentication.
+
+Determine where on the google drive you want to store the output csv data. A CSV file is a delimited text file that uses a comma to separate values. Each line of the file is a data record. Each record consists of one or more fields, separated by commas.
+
+```python
+output_file = '/gdrive/My Drive/geotweets.csv'
+```
+
+Copy and paste the keys and tokens you received into corresponding parameters in the code below:
+
+```python
+consumer_key = "your_consumer_key"
+consumer_secret = "your_consumer_secret"
+access_token = "your_access_token"
+access_token_secret = "your_access_token_secret"
+```
+
+Initiate a tweepy API object
+
+```python
 myauth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 myauth.set_access_token(access_token, access_token_secret)
 ```
 
 To retrieve geo-tagged tweets, three bounding boxes are defined. After initializing the stream listener, a stream object is created out of `tweepy.Stream object`. Then, the LOCATION array is passed to the stream filter method. By doing so, the geo-tagged are filtered and collected.
 
-```Python
+```python
+# LOCATIONS are the longitude, latitude coordinate corners for a box that restricts the
+# geographic area from which you will stream tweets. The first two define the southwest
+# corner of the box and the second two define the northeast corner of the box.
 LOCATIONS = [-124.7771694, 24.520833, -66.947028, 49.384472,  # Contiguous US
-               -164.639405, 58.806859, -144.152365, 71.76871,  # Alaska
-               -160.161542, 18.776344, -154.641396, 22.878623]  # Hawaii
+                -164.639405, 58.806859, -144.152365, 71.76871,  # Alaska
+                -160.161542, 18.776344, -154.641396, 22.878623]  # Hawaii
+
 stream_listener = StreamListener(time_limit=60, file=output_file)
 stream = tweepy.Stream(auth=myauth, listener=stream_listener)
 stream.filter(locations=LOCATIONS)
 ```
 
 Notably, the filter not only acquires geotagged tweets but also other kinds of tweets according to the input filter strategy.
+
 tweepy allows you to filter tweets through a keyword. By choosing a keyword related to the timely topic like "coronavirus", you can obtain data that gives you an insight into the public perception of the topic.
 
 ```python
@@ -124,59 +164,78 @@ However, these different filtering parameter returns different data structures, 
 ```python
 stream_listener = StreamListener(time_limit=60, file=output_file)
 ```
+### 3.4 Stream listener
 
-The `on_data` function will handle data processing and output. In general, this function terminated after `self.limit` second. To process each record `data`, the captured `data` is converted to a JSON variable `datajson`. We will mainly output six variables, in terms of id, username, created_at, lng, lat, and text. Notably, If the geotag is a single point, the lat and lng will be captured directly from the `coordinates`. If the geotag is a place, the lat and lng will capture the centroid of the bounding box. Similarity, a new CSV file named `tweets.csv` is created under [the assets folder](assets/).
+The `on_data` function will handle data processing and output. In general, this function terminated after `self.limit` second. To process each record `data`, the captured `data` is converted to a JSON variable `datajson`. We will mainly output six variables, in terms of id, username, created_at, lng, lat, and text. Notably, If the geotag is a single point, the lat and lng will be captured directly from the `coordinates`. If the geotag is a place, the lat and lng will capture the centroid of the bounding box.
 
-In a lot of actual work environments, it is common to use a database to store information. We are using CSV files as data storage to simplify our tasks. If you would like to know more about using a database to store information, you can learn more [here](https://github.com/jakobzhao/geog458/blob/master/labs/lab02/database/pe.md).
-
-```Python
+```python
 def on_data(self, data):
     """This is called when data are streamed in."""
     if (time.time() - self.start_time) < self.limit:
         datajson = json.loads(data)
-        print (datajson)
-        id = datajson['id']
-        username = datajson['user']['screen_name']
-        created_at = datajson['created_at']
-        text = datajson['text'].strip().replace("\n", "")
-
-        # process the geo-tags
-        if datajson['coordinates'] == None:
-            bbox = datajson['place']['bounding_box']['coordinates'][0]
-            lng = (bbox[0][0] + bbox[2][0]) / 2.0
-            lat = (bbox[0][1] + bbox[1][1]) / 2.0
+        print(datajson, "\n")
+        if 'id' not in datajson.keys():
+            time.sleep(10)
         else:
-            lng = datajson['coordinates']['coordinates'][0]
-            lat = datajson['coordinates']['coordinates'][1]
+            id = datajson['id']
+            username = datajson['user']['screen_name']
+            created_at = datajson['created_at']
+            text = datajson['text'].strip().replace("\n", "")
 
-        record = '%d, %s, %s, %f, %f, %s \n' % (id, username, created_at, lng, lat, text)
-        print (record)
-        self.f.write(record)
+            # process the geo-tags
+            if datajson['coordinates'] == None:
+                try:
+                    bbox = datajson['place']['bounding_box']['coordinates'][0]
+                    lng = (bbox[0][0] + bbox[2][0]) / 2.0
+                    lat = (bbox[0][1] + bbox[1][1]) / 2.0
+                except:
+                    lat = 0
+                    lng = 0
+            else:
+                lng = datajson['coordinates']['coordinates'][0]
+                lat = datajson['coordinates']['coordinates'][1]
+
+            if lat != 0:
+                row = {
+                    'id': id,
+                    'username': username,
+                    'created_at': created_at,
+                    'lng': lng,
+                    'lat': lat,
+                    'text': text
+                }
+                print(row)
+                self.result.append(row)
+            else:
+                pass
     else:
-        self.f.close()
-        print ("finished.")
+        df = pd.DataFrame(self.result)
+        df.to_csv(self.f, index=False)
+        # download the csv to your local computer
+        files.download(self.f)
+        print("the csv has been downloaded to your local computer. The program has been completed successfully.")
         return False
 ```
 
 Now, you should have a general idea of what the script does and how to change the parameters based on your geographical area of interest. In this section, there are **3 main tasks** here for you to complete:
 
-1.  Register your own Twitter developer account to claim API keys and access tokens. Copy and paste them onto the corresponding parameter in `geosearch.ipynb` located under this lab.
+1. Register your own Twitter developer account to claim API keys and access tokens. Copy and paste them onto the corresponding parameter in `geosearch.ipynb` located under this lab.
 
-2.  Change either the location parameter or the keyword parameter to filter specific tweets based on your interest. The location could be anywhere on this earth, but try to choose locations that are large enough to collect a sufficient amount of data. (If you are interested in Twitter data that are geo-tagged in the US, you do not need to change this parameter). If you are changing the keyword parameter, think carefully about how long you should run the crawler.
+2. Change the location parameter to filter specific tweets based on your interest. The location could be anywhere on this earth, but try to choose locations that are large enough to collect a sufficient amount of data. (If you are interested in Twitter data that are geo-tagged in the US, you do not need to change this parameter).
 
-3.  Run each block of code in `geosearch.ipynb`. Your collected data will be stored in `tweets.csv` under `assets` folder.
+3. Run each block of code in `geosearch.ipynb`. Your collected data will be stored in `geotweets.csv` on your google drive.
 
-## 3. Visualizing geo-tagged data using QGIS
+## 4. Visualizing geo-tagged data using QGIS
 
 In the previous section, we developed a crawler for geotagged tweets. In this section, we will visualize the collected geotagged tweets data in the previous section using a GIS application `QGIS`. QGIS is a free and open-source cross-platform desktop geographic information system application that supports viewing, editing, and analysis of geospatial data. If you have not downloaded QGIS yet, please download the latest version [here](https://qgis.org/en/site/forusers/download.html).
 
-Under `lab02` repository, you should have a CSV file named `tweets.csv` filled with harvested data like below:
+Under `lab02/assets` repository, you should have a CSV file named `tweets.csv` filled with harvested data like below:
 
 ![](img/gathered_data.png)
 
-A CSV file is a delimited text file that uses a comma to separate values. Each line of the file is a data record. Each record consists of one or more fields, separated by commas. Download this file by clicking `File -> Download`. Store it somewhere that you can find and access easily.
+ Download this file and Store it somewhere that you can find and access easily.
 
-Now, let's open up your QGIS Desktop. When you first open GQIS, it should look like below. To create a new project, either click on the blank paper icon on the top left or press the shortcut key (Ctrl+N).
+Now, let's open up your QGIS Desktop. When you first open QGIS, it should look like below. To create a new project, either click on the blank paper icon on the top left or press the shortcut key (Ctrl+N).
 
 ![](img/q_interface.png)
 
@@ -226,9 +285,13 @@ In this section, you have **3 main tasks** to complete:
 
 3.  Make any appropriate visual edits to this map. Save it as `qgz` file and export the map as an image.
 
-## 4. Deliverable
 
-You are expected to walk through this instruction, execute python script in `geosearch.ipynb` with your own Twitter API keys and filtering parameters to collect geotagged tweets. Additionally, visualize your harvested geotagged data using QGIS. Then, you are asked to write a short narrative of your map, analyzing the data you gathered in a markdown file. When uploading your crawler file to your repository, be sure to remove your Twitter developer credentials from the code before uploading. 
+## 6. Word cloud analysis
+
+
+## 5. Deliverable
+
+You are expected to walk through this instruction, execute python script in `geosearch.ipynb` with your own Twitter API keys and filtering parameters to collect geotagged tweets. Additionally, visualize your harvested geotagged data using QGIS. Then, you are asked to write a short narrative of your map, analyzing the data you gathered in a markdown file. When uploading your crawler file to your repository, be sure to remove your Twitter developer credentials from the code before uploading.
 
 To submit your deliverable, please create a new GitHub repository, and submit the URL of the GitHub to the **Canvas Dropbox** of this practical exercise. The file structure of this GitHub repository should look similar to below.
 
@@ -245,19 +308,14 @@ To submit your deliverable, please create a new GitHub repository, and submit th
 
 Here are the grading criteria:
 
-1.  Complete the main tasks in **section 2**. Export and save the `tweets.csv` file to the `assets` folder under your own repository. (POINT 15)
+1.  Complete the main tasks in **section 3**. Export and save the `tweets.csv` file to the `assets` folder under your own repository. (POINT 15)
 
-2.  Complete the main tasks in **section 3**. Export and save both your `qgz` file and an exported image of the map to the corresponding folder in your repository. (POINT 15)
+2.  Complete the main tasks in **section 4**. Export and save both your `qgz` file and an exported image of the map to the corresponding folder in your repository. (POINT 15)
 
-3.  In the `readme.md` file, insert the exported image of your map and  write a short narrative for your generated map, making any meaningful analysis on the distribution of collected data. (POINT 20)
+3.  In the `readme.md` file, insert the exported image of your map and write a short narrative for your generated map, making any meaningful analysis on the distribution of collected data. (POINT 20)
 
-**Assignment update**
+4.  We observed several students having issues registering for a Twitter developer account. If you have issues, please  Ignore this section if you were successfully able to register for one. Please try **using your UW email for registration** or asking your classmates especially group members for the API keys privately before giving up! 
 
-We observed several students having issues registering for a Twitter developer account. Ignore this section if you were successfully able to register for one. Please try **using your UW email for registration** or asking your classmates for the API keys privately before giving up! If any of these methods still do not work for you, please follow the alternative deliverable below to complete this lab assignment. You may also be given two days extension for this lab assignment. Please consult Professor Bo Zhao if you need extension.
-
-1.  To prove that you actually applied to the Twitter Developer account, please provide proof of application. It could be a confirmation email from Twitter or a screenshot of your application page.
-
-2.  Use sample Twitter data provided to complete the deliverable. The sample Twitter data that we collected during class for demonstration is available under the `assets` folder of this lab's repository named `smaple.csv`. This dataset is a collection of geotagged Twitter data within the United States. You should be able to use this data to complete the rest of the deliverable.
 
 **Note:** Lab assignments are required to be submitted electronically to Canvas unless stated otherwise. Efforts will be made to have them graded and returned within one week after they are submitted. Lab assignments are expected to be completed by the due date. **_A late penalty of at least ten percentage units will be taken off each day after the due date._** If you have a genuine reason(known medical condition, a pile-up of due assignments on other courses, ROTC, athletics teams, job interview, religious obligations, etc.) for being unable to complete work on time, then some flexibility is possible. However, if in my judgment you could reasonably have let me know beforehand that there would likely be a delay, and then a late penalty will still be imposed if I do not hear from you until after the deadline has passed. For unforeseeable problems, I can be more flexible. If there are ongoing medical, personal, or other issues that are likely to affect your work all semester, then please arrange to see me to discuss the situation. There will be NO make-up exams except for circumstances like those above.
 
