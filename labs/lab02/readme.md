@@ -133,16 +133,16 @@ myauth.set_access_token(access_token, access_token_secret)
 To retrieve geo-tagged tweets, three bounding boxes are defined. After initializing the stream listener, a stream object is created out of `tweepy.Stream object`. Then, the LOCATION array is passed to the stream filter method. By doing so, the geo-tagged are filtered and collected.
 
 ```python
-# LOCATIONS are the longitude, latitude coordinate corners for a box that restricts the
-# geographic area from which you will stream tweets. The first two define the southwest
-# corner of the box and the second two define the northeast corner of the box.
-LOCATIONS = [-124.7771694, 24.520833, -66.947028, 49.384472,  # Contiguous US
-                -164.639405, 58.806859, -144.152365, 71.76871,  # Alaska
-                -160.161542, 18.776344, -154.641396, 22.878623]  # Hawaii
+    # LOCATIONS are the longitude, latitude coordinate corners for a box that restricts the
+    # geographic area from which you will stream tweets. The first two define the southwest
+    # corner of the box and the second two define the northeast corner of the box.
+    LOCATIONS = [-124.7771694, 24.520833, -66.947028, 49.384472,  # Contiguous US
+                 -164.639405, 58.806859, -144.152365, 71.76871,  # Alaska
+                 -160.161542, 18.776344, -154.641396, 22.878623]  # Hawaii
 
-stream_listener = StreamListener(time_limit=60, file=output_file)
-stream = tweepy.Stream(auth=myauth, listener=stream_listener)
-stream.filter(locations=LOCATIONS)
+    stream_listener = StreamListener(time_limit=60, file=output_file)
+    stream = tweepy.Stream(auth=myauth, listener=stream_listener)
+    stream.filter(locations=LOCATIONS)
 ```
 
 Notably, the filter not only acquires geotagged tweets but also other kinds of tweets according to the input filter strategy.
