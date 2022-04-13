@@ -2,13 +2,19 @@
 
 **Announcement:**
 
+- Our Lectures and Labs temporarily move to Zoom.
+  - The lectures: [https://washington.zoom.us/my/bzhao](https://washington.zoom.us/my/bzhao), 
+  - The AA & AB labs: [https://washington.zoom.us/j/97521328514](https://washington.zoom.us/j/97521328514)；
+  - The AC & AD labs: [https://washington.zoom.us/j/95926871713](https://washington.zoom.us/j/95926871713).
+
 - Please take the [Survey](https://canvas.uw.edu/courses/1547729/quizzes/1653669) on Canvas by March 30th, 2022, at noon 12:00pm. Through this survey, we will group students in 20 ~ 25 teams, each of which will have 4 to 5 students who are from the same session.
 
 **Meetings:**
 
-- **Lectures:** Tuesdays and Thursdays 11:30 AM to 12:50 PM PST at GUG 220
-
-- **Labs:** Wednesdays 12:30 AM to 4:20 PM PST at SMI 401
+- **Lectures:** Tuesdays and Thursdays 11:30 AM to 12:50 PM PST on [https://washington.zoom.us/my/bzhao](https://washington.zoom.us/my/bzhao)
+- **Labs:** Wednesdays 12:30 AM to 4:20 PM PST
+  - AA & AB: [https://washington.zoom.us/j/97521328514](https://washington.zoom.us/j/97521328514)
+  - AC & AD: [https://washington.zoom.us/j/95926871713](https://washington.zoom.us/j/95926871713)
 
 `Both lectures and labs are held in person, masks are highly recommended to protect everyone, especially those whose personal or household situation makes them more vulnerable.`
 
