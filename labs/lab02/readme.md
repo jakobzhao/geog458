@@ -147,7 +147,7 @@ Notably, the filter not only acquires geotagged tweets but also other kinds of t
 tweepy allows you to filter tweets through a keyword. By choosing a keyword related to the timely topic like "coronavirus", you can obtain data that gives you an insight into the public perception of the topic.
 
 ```python
-stream.filter(track=['coronavirus'], is_async=True)
+stream.filter(track=['coronavirus'])
 ```
 
 Additionally, to use filters to stream tweets by a specific user. The following parameter is an array of IDs. For example, the Twitter ID for the white house is `822215673812119553`, and you can collect tweets from this specific account. We will not be changing this parameter in this lab exercise, but consider how you can utilize this function if this is something that you would like to link to your final project.
