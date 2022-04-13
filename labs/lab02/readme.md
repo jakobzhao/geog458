@@ -287,13 +287,14 @@ In this section, you have **3 main tasks** to complete:
 
 ## 5. Word cloud analysis
 
-You can make a word cloud to analyze the content of all the collected tweet. There are a few good online word cloud generator. For this lab, we use Word Art from https://wordart.com. 
+You can create a word cloud to analyze the content of all the collected tweets. There are a few online word cloud generators you can use. In this lab, we use Word Art from https://wordart.com.
 
 After registration, you can simply create a word cloud by pressing the "Create Now" Button on the front page.
 
 ![](img/frontpage.png)
 
 Open `geotweets.csv` in microsoft excel or other alternative spreadsheet software. Copy the all the rows under the `text` columns. And then paste the copied data to the input text box on Word Art. You can open this text box by pressing the `import` button on the top left. After the texts is input, please type `Import words`.
+
 ![](img/import-box.png)
 
 
