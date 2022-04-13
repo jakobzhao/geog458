@@ -229,11 +229,7 @@ Now, you should have a general idea of what the script does and how to change th
 
 In the previous section, we developed a crawler for geotagged tweets. In this section, we will visualize the collected geotagged tweets data in the previous section using a GIS application `QGIS`. QGIS is a free and open-source cross-platform desktop geographic information system application that supports viewing, editing, and analysis of geospatial data. If you have not downloaded QGIS yet, please download the latest version [here](https://qgis.org/en/site/forusers/download.html).
 
-Under `lab02/assets` repository, you should have a CSV file named `tweets.csv` filled with harvested data like below:
-
-![](img/gathered_data.png)
-
- Download this file and Store it somewhere that you can find and access easily.
+Under `lab02/assets` repository, you should have a CSV file named `tweets.csv`. Download this file and Store it somewhere that you can find and access easily.
 
 Now, let's open up your QGIS Desktop. When you first open QGIS, it should look like below. To create a new project, either click on the blank paper icon on the top left or press the shortcut key (Ctrl+N).
 
@@ -287,18 +283,18 @@ In this section, you have **3 main tasks** to complete:
 
 ## 5. Word cloud analysis
 
-You can create a word cloud to analyze the content of all the collected tweets. There are a few online word cloud generators you can use. In this lab, we use Word Art from https://wordart.com.
+A word cloud can visualize the high-frequency terms and map them according to their frequency. It helps to analyze the content of all the collected tweets. There are a few online word cloud generators you can use. In this lab, we use Word Art from https://wordart.com.
 
-After registration, you can simply create a word cloud by pressing the "Create Now" Button on the front page.
+After registration, you can create a word cloud by pressing the "Create Now" Button on the front page.
 
 ![](img/frontpage.png)
 
-Open `geotweets.csv` in microsoft excel or other alternative spreadsheet software. Copy the all the rows under the `text` columns. And then paste the copied data to the input text box on Word Art. You can open this text box by pressing the `import` button on the top left. After the texts is input, please type `Import words`.
+Open `geotweets.csv` in microsoft excel or other alternative spreadsheet software. Copy all the rows under the `text` column, and then paste the copied rows to the input text box on Word Art. You need to press the `import` button on the top left to open this text box. Once complete, please type `Import words`.
 
 ![](img/import-box.png)
 
 
-Okay, now you will see a list of words on the left panel, please first delete those common terms or meaningless terms. And then walk through the options from shapes, fonts layout and style. After you determine all the options, please type `visualize` on top of the main viewport. After a few seconds to render, you will see the word cloud!
+Now you will see a list of words on the left panel, please makes sure to **delete those common terms or meaningless ones**, otherwise your word cloud will be full of meaningless terms. Then, you can configure the rendering process through adjusting the shapes, fonts, layout, and style options. After you determine all the options, please type `visualize` on top of the main viewport. It takes a few second to render the image. After that, you will see the word cloud.
 
 ![](img/visualize.png)
 
@@ -306,34 +302,39 @@ In order to reuse the word cloud, you need to download an image of this word clo
 
 ![](img/wordcloud.png)
 
-A word cloud will help you understand what twitter users have talked about in the specific region and time period you have performed the data crawling tasks.
+A word cloud will help you understand what twitter users have talked during the collecting time period and within the specific crawling geographical region.
 ## 6. Deliverable
 
-You are expected to walk through this instruction, execute python script in `geosearch.ipynb` with your own Twitter API keys and filtering parameters to collect geotagged tweets. Additionally, visualize your harvested geotagged data using QGIS. Then, you are asked to write a short narrative of your map, analyzing the data you gathered in a markdown file. When uploading your crawler file to your repository, be sure to remove your Twitter developer credentials from the code before uploading.
+You are expected to walk through this instruction. Specifically, you need to execute this `geosearch.ipynb` script twice. You can either run it in two different places or execute it in two different time period of day. With the two pieces of spreadsheets, you can make twp maps and another two word clouds. Please write a short narrative to introduce your work, and describe the maps and the word clouds. Please analyze why the maps or word clouds are different from each other. This narrative needs to be written on a `readme.md file`.
 
-To submit your deliverable, please create a new GitHub repository, and submit the URL of the GitHub to the **Canvas Dropbox** of this practical exercise. The file structure of this GitHub repository should look similar to below.
+To submit your deliverable, please create a new GitHub repository, and submit the URL of the GitHub to the **Canvas Dropbox** of this practical exercise. The file structure of this GitHub repository should look similar to below (POINT 5).
 
 ```powershell
 [your_repository]
     │ [your_crawler].ipynb
     │readme.md
     ├─assets
-    │      tweets.csv
-    |      [your_map].qgz
+    │      geotweets-1.csv
+    │      geotweets-2.csv
     ├─img
-    |      [screenshot_of_map].png
+    |      [screenshot_of_map-1].png
+    |      [screenshot_of_map-2].png
+    |      [screenshot_of_wordcloud-1].png
+    |      [screenshot_of_wordcloud-2].png
 ```
+
+ When uploading your crawler file to your repository, be sure to remove your Twitter developer credentials from the code before uploading.
+
 
 Here are the grading criteria:
 
-1.  Complete the main tasks in **section 3**. Export and save the `tweets.csv` file to the `assets` folder under your own repository. (POINT 15)
+1.  introduce your comparison of two places or two time periods. Why do you want to make this comparison? Make sure this narrative will be stored in a `readme.md`. (POINT 15)
 
-2.  Complete the main tasks in **section 4**. Export and save both your `qgz` file and an exported image of the map to the corresponding folder in your repository. (POINT 15)
+2.  export the two maps to the repository and then insert them to the `readme.md`. Please compare them and briefly discuss why they represent different geospatial patterns on the map. (POINT 15)
 
-3.  In the `readme.md` file, insert the exported image of your map and write a short narrative for your generated map, making any meaningful analysis on the distribution of collected data. (POINT 20)
+3.  export the two word clouds to the repository and then insert them to the `readme.md`. Please compare them and briefly discuss why they represent different context. (POINT 15)
 
-4.  We observed several students having issues registering for a Twitter developer account. If you have issues, please  Ignore this section if you were successfully able to register for one. Please try **using your UW email for registration** or asking your classmates especially group members for the API keys privately before giving up! 
-
+> Note: We observed several students having issues registering for a Twitter developer account. If you have issues, please  Ignore this section if you were successfully able to register for one. Please try **using your UW email for registration** or asking your classmates especially group members for the API keys privately before giving up!
 
 **Note:** Lab assignments are required to be submitted electronically to Canvas unless stated otherwise. Efforts will be made to have them graded and returned within one week after they are submitted. Lab assignments are expected to be completed by the due date. **_A late penalty of at least ten percentage units will be taken off each day after the due date._** If you have a genuine reason(known medical condition, a pile-up of due assignments on other courses, ROTC, athletics teams, job interview, religious obligations, etc.) for being unable to complete work on time, then some flexibility is possible. However, if in my judgment you could reasonably have let me know beforehand that there would likely be a delay, and then a late penalty will still be imposed if I do not hear from you until after the deadline has passed. For unforeseeable problems, I can be more flexible. If there are ongoing medical, personal, or other issues that are likely to affect your work all semester, then please arrange to see me to discuss the situation. There will be NO make-up exams except for circumstances like those above.
 
