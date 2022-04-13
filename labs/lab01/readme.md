@@ -310,6 +310,8 @@ Now you have already known how to commit a change. In practice, you will use thi
 
 Once the `resume.md` is uploaded to the root of the GitHub Repository, you can see this file listed in the root. Moreover, GitHub provide a new function named **GitHub Page** that converts a markdown file as a web page. Because your resume page is located at the root of the repository, you can directly access your resume page by visiting `http://[github_username].github.io/resume` if you implement the following steps.
 
+> Note: it takes some time for GitHub server to refresh the cache and visualize a github page. So if you cannot see correct information on `http://[github_username].github.io/resume`, please try another browser or wait for a few minutes.
+
 1\. please click the `Settings`tab on the top bar of the repository front page.
 
 2\. On the `Pages` Section, make sure `main branch` is chosen in the `Source`  dropdown list.  Next, press the `Save` button.
