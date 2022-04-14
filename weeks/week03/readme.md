@@ -98,51 +98,42 @@ The key XML tag behind KML is the **placemark**. This defines a geographic featu
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
-   <Document>
-      <Placemark>
-         <name>Wilkinson Hall</name>
-         <ExtendedData>
-            <Data name="name">
-               <value>Wilkinson Hall</value>
-            </Data>
-         </ExtendedData>
-         <Polygon>
-            <outerBoundaryIs>
-               <LinearRing>
-                  <coordinates>-123.2807596,44.5684594 -123.2807609,44.5683725 -123.281178,44.5683677 -123.281166,44.5681575 -123.2806858,44.5681652 -123.2806805,44.5682569 -123.280604,44.5682569 -123.2805987,44.5680314 -123.2801065,44.5680266 -123.2801172,44.568468 -123.2807596,44.5684594</coordinates>
-               </LinearRing>
-            </outerBoundaryIs>
-         </Polygon>
-      </Placemark>
-      <Placemark>
-         <name>Route 1</name>
-         <ExtendedData>
-            <Data name="name">
-               <value>Route 1</value>
-            </Data>
-         </ExtendedData>
-         <LineString>
-            <coordinates>-123.2775182,44.5656571 -123.2779312,44.5656457 -123.2789344,44.5657527 -123.2799214,44.566238 -123.2799482,44.5679617 -123.2803291,44.5679502 -123.2803345,44.5680305</coordinates>
-         </LineString>
-      </Placemark>
-      <Placemark>
-         <name>347 Strand Hall</name>
-         <ExtendedData>
-            <Data name="name">
-               <value>347 Strand Hall</value>
-            </Data>
-         </ExtendedData>
-         <Point>
-            <coordinates>-123.27734112739563,44.56562272511972</coordinates>
-         </Point>
-      </Placemark>
-   </Document>
+    <Document>
+        <Placemark>
+            <name>Gug 220</name>
+            <Point>
+                <coordinates>-122.30633854866029,47.654266229849185</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Smith Hall</name>
+            <Polygon>
+                <outerBoundaryIs>
+                    <LinearRing>
+                        <coordinates>-122.30760186910629,47.65648847666158 -122.30738997459412,47.65634936317266
+                            -122.30673551559447,47.65679199571452 -122.3069393634796,47.6569365279768
+                            -122.30760186910629,47.65648847666158</coordinates>
+                    </LinearRing>
+                </outerBoundaryIs>
+            </Polygon>
+        </Placemark>
+        <Placemark>
+            <name>Route 1</name>
+            <LineString>
+                <coordinates>-122.30716466903687,47.6564089832847 -122.30764210224152,47.65602596804535
+                    -122.30754017829894,47.655408079048485 -122.30667114257812,47.6541578251464
+                    -122.30651557445526,47.6542156410159</coordinates>
+            </LineString>
+        </Placemark>
+    </Document>
 </kml>
 ```
 
 Open this kml in <http://geojson.io>, you will see how these placemarks look like:
 
-![](img/kml_map.jpg)
+![](img/data-map.png)
+
+
 
 **GeoJSON**
 
@@ -160,61 +151,85 @@ Here's what a piece of GeoJSON looks like. GeoJSON vectors are commonly bundled 
 
 ```json
 {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [ -123.2807596,44.5684594],
-            [ -123.2807609,44.5683725],
-            [ -123.281178, 44.5683677],
-            [ -123.281166,44.5681575],
-            [ -123.2806858,44.5681652],
-            [ -123.2806805,44.5682569],
-            [ -123.280604,44.5682569],
-            [ -123.2805987, 44.5680314],
-            [ -123.2801065,44.5680266],
-            [ -123.2801172,44.568468],
-            [ -123.2807596,44.5684594]
-          ]
-        ]
-      },
-      "properties": {
-        "name": "Wilkinson Hall"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [-123.2775182,44.5656571],
-          [-123.2779312,44.5656457],
-          [-123.2789344,44.5657527],
-          [-123.2799214, 44.566238],
-          [-123.2799482,44.5679617],
-          [-123.2803291,44.5679502],
-          [-123.2803345,44.5680305]
-        ]
-      },
-      "properties": {
-        "name": "Route 1"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-123.27734112739563,44.56562272511972]
-      },
-      "properties": {
-        "name": "347 Strand Hall"
-      }
-    }
-  ]
+    "type": "FeatureCollection",
+    "features": [{
+            "type": "Feature",
+            "properties": {
+                "name": "Gug 220"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.30633854866029,
+                    47.654266229849185
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Smith Hall"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -122.30760186910629,
+                            47.65648847666158
+                        ],
+                        [
+                            -122.30738997459412,
+                            47.65634936317266
+                        ],
+                        [
+                            -122.30673551559447,
+                            47.65679199571452
+                        ],
+                        [
+                            -122.3069393634796,
+                            47.6569365279768
+                        ],
+                        [
+                            -122.30760186910629,
+                            47.65648847666158
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Route 1"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -122.30716466903687,
+                        47.6564089832847
+                    ],
+                    [
+                        -122.30764210224152,
+                        47.65602596804535
+                    ],
+                    [
+                        -122.30754017829894,
+                        47.655408079048485
+                    ],
+                    [
+                        -122.30667114257812,
+                        47.6541578251464
+                    ],
+                    [
+                        -122.30651557445526,
+                        47.6542156410159
+                    ]
+                ]
+            }
+        }
+    ]
 }
 ```
 
@@ -228,72 +243,54 @@ A reference implementation of the [TopoJSON specification](https://github.com/to
 
 ```json
 {
-   "type":"Topology",
-   "objects":{
-      "collection":{
-         "type":"GeometryCollection",
-         "geometries":[
-            {
-               "type":"Polygon",
-               "properties":{
-                  "name":"Wilkinson Hall"
-               },
-               "arcs":[
-                  [
-                     1
-                  ]
-               ]
-            },
-            {
-               "type":"LineString",
-               "properties":{
-                  "name":"Route 1"
-               },
-               "arcs":[
-                  0
-               ]
-            },
-            {
-               "type":"Point",
-               "properties":{
-                  "name":"347 Strand Hall"
-               },
-               "coordinates":[
-                  9999, 0
-               ]
-            }
-         ]
-      }
-   },
-   "arcs":[
-      [
-         [ 9538,121],
-         [ -1077,-40],
-         [ -2614,376],
-         [ -2572, 1705],
-         [ -70, 6058],
-         [ -993,-41],
-         [ -14,283]
-      ],
-      [
-         [ 1090,9969],
-         [ -3,-306],
-         [ -1087,-16],
-         [ 31,-739],
-         [ 1252, 27],
-         [ 13,322],
-         [ 200,0],
-         [ 14, -792],
-         [ 1282,-17],
-         [ -28,1551],
-         [ -1674,-30]
-      ]
-   ],
-   "transform":{
-      "scale":[ 3.837256330000159e-7, 2.84555943622992e-7],
-      "translate":[ -123.281178, 44.56562272511972]
-   },
-   "bbox":[ -123.281178, 44.56562272511972, -123.27734112739563, 44.568468]
+    "type": "Topology",
+    "objects": {
+        "collection": {
+            "type": "GeometryCollection",
+            "geometries": [{
+                "type": "Point",
+                "properties": {
+                    "name": "Gug 220"
+                },
+                "coordinates": [9999, 390]
+            }, {
+                "type": "Polygon",
+                "properties": {
+                    "name": "Smith Hall"
+                },
+                "arcs": [
+                    [1]
+                ]
+            }, {
+                "type": "LineString",
+                "properties": {
+                    "name": "Route 1"
+                },
+                "arcs": [0]
+            }]
+        }
+    },
+    "arcs": [
+        [
+            [3662, 8101],
+            [-3662, -1379],
+            [782, -2223],
+            [6666, -4499],
+            [1193, 208]
+        ],
+        [
+            [309, 8387],
+            [1625, -501],
+            [5020, 1593],
+            [-1564, 520],
+            [-5081, -1612]
+        ]
+    ],
+    "transform": {
+        "scale": [1.303683949618544e-7, 2.7789807284704524e-7],
+        "translate": [-122.30764210224152, 47.6541578251464]
+    },
+    "bbox": [-122.30764210224152, 47.6541578251464, -122.30633854866029, 47.6569365279768]
 }
 ```
 
@@ -313,61 +310,63 @@ Usually, the base maps are stored as tile layers, designed for fast and simple a
 
 This section shows you how to convert a shapefile to a geojson data step by step. Though there are multiple online or desktop-based tools, we could implement the conversion. Here, we would recommend using QGIS, mainly because it is intuitive to understand the conversion process and easy to use. Once you are familiar with QGIS, I believe you will be more confident in switching to other geospatial data conversion tools (e.g., ogr2ogr).
 
-1. Above all, we need to get some geospatial data. So, we download the shapefile of Oregon Counties (2015) from the data repository at [oregon explorer](http://oregonexplorer.info/data). This specific data set is located at <http://spatialdata.oregonexplorer.info/geoportal/details;id=361c06fee9de4e24a72e280fb386a771>. There is another copy of this data set in this repository at [assets/orcnty2015.zip](assets/orcnty2015.zip).
+1. Above all, we need to get some geospatial data. So, we download the shapefile of Washington Counties (2015) from the data repository at [Washington Geospatial Open Data](https://geo.wa.gov/). After searching "county boundaries", I can find the url link for downloading this data at https://fortress.wa.gov/dnr/adminsa/gisdata/datadownload/WA_County_Bndys.zip. A copy of this data set has been downloaded to this repository at [assets/WA_County_Bndys.zip](assets/WA_County_Bndys.zip).
 
-![](img/oregon_county_download.jpg)
+2. Unzip the file. You will see a group of files associated to the shapefile named after "WA_County_Bndys".
 
-2. Press the download button to download the data, and unzip the file. You will see two sets of data, in terms of orcntyline and orcntypoly. In this tutorial, we will use the orcntpoly dataset.
+![](img/download-page.png)
 
-![](img/oregon_county_download_folder.jpg)
-
-We are going to transform this current 7 file folder into a single, compact format called GeoJSON (<http://geojson.org/>). Geojson differs from a shapefile in a few ways. The first is that GeoJSON is an open standard format.
+We are going to transform this group of files into a single, compact format called GeoJSON (<http://geojson.org/>). 
 
 3. Open QGIS.
 
-![](img/qgis-interface.jpg)
+![](img/qgis-interface.png)
 
-4. A shapefile is a vector file format. We will add our shapefile to our project through the 'Add Vector Layer'. Everything in the Source type dialogue can be left as is. Use the browser to navigate to the location of your shapefile. Click open to load the shapefile into QGIS.
+4. A shapefile is a vector file format. We will add our shapefile to our project through clicking the layer tab on the main toolbar and then 'Add Vector Layer'. Everything in the Source type dialogue can be left as is. Use the browser to navigate to the location of your shapefile. Click open to load the shapefile into QGIS.
 
-![](img/qgis-open-data.jpg)
+![](img/qgis-open-data.png)
 
-5. In a new QGIS project, the great first question is, what map projection is our shapefile in? Double click on the shapefile in the Table of Contents to pull up the Properties Dialogue Box. In the General tab, under the 'Coordinate reference system', you will see a value `EPSG:4269, NAD83` representing our map projection.
+5. The pop-up window asks you to select a coordinate system transformation approach. Since there are multiple ways to converting your coordinate reference system, you ned to pick the one which mostly fits your work. In most cases, you can just choose the default option to minimize the uncertainty and measure errors. Once you selected the transformation approach, please press the "OK" button on the bottom right. 
 
-![](img/qgis-general-tab.jpg)
+![](img/qis-multiple-crs.png)
 
-For our purposes, we will convert our shapefile into a GeoJson and a geographic projection for web mapping. EPSG is a coded value that is used to identify specific projections, which in this case, is 4269. We want to convert this to 4326, WGS84, a more suitable web mapping projection.
+6. In a new QGIS project, the great first question is, what map projection is our shapefile in? Double click on the shapefile in the Table of Contents to pull up the Properties Dialogue Box. In the General tab, under the 'Coordinate reference system', you will see a value `NAD 83 / Washington South` representing our map projection.
 
-6. Close the Layer Properties page, and then Right-click on the shapefile `orcntypoly` in the Table of Contents, and click Save as.
+![](img/qgis-projection.png)
 
-![](img/qgis-save-as.jpg)
+For our purposes, we will convert our shapefile into a GeoJson and a geographic projection for web mapping. Currently, it uses the NAD 83 / Washington South project. EPSG is a coded value that is used to identify specific projections, which in this case, is 4269. We want to convert this to 4326, WGS84, a more suitable web mapping projection.
 
-7. In the Save As dialogue, switch the format to GeoJson. Then click the small globe-ish icon to the right of the CRS drop down option. Enter '4326' in the Filter box and select EPSG: 4326. Click OK.
+7. Close the Layer Properties page, right click on the layer `WA_County_Bndys`, and then "Export" --> "Save Feature As"
 
-![](img/qgis-4326.jpg)
+![](img/qgis-save-as.png)
 
-> **Note:** to reduce the size of geospatial data, you can change the coordinate precision. To do that, in the `Layer Options` Section, Please change the precision value to a smaller number. In our case, we use 10 instead of 15.
+8. In the Save As dialogue, switch the format to GeoJson. Then click the small globe-ish icon to the right of the CRS drop down option. Enter '4326' in the Filter box and select EPSG: 4326. Click OK.
 
- ![](img/qgis-precision.jpg)
+![](img/qgis-4326.png)
 
-8. Browse to your location and save the file. There is a copy of the geojson data in this repository at [assets/oregon_county.geojson](assets/oregon_county.geojson).
+> **Note:** to reduce the size of geospatial data, you can change the coordinate precision. To do that, in the `Layer Options` Section, Please change the precision value to a smaller number. In our case, we use 10 instead of 15. Also, you can deselect those properties you do not want to show in the geojson data.
 
-![](img/qgis-geojson-saveas.jpg)
+ ![](img/qgis-precision.png)
+
+9. Browse to your location and save the file. There is a copy of the geojson data in this repository at [assets/wa_counties.geojson](assets/wa_counties.geojson).
+
+![](img/qgis-geojson-saveas.png)
 
 9. The file will be automatically added to the current project view.
 
-![](img/gis-geojson-mapview.jpg)
+![](img/qgis-mapview.png)
 
-10. Now you can open the geojson file in a text editor (e.g., webstorm) to view the JSON structure.
+1.  Now you can open the geojson file in a text editor (e.g., VS code) to view the JSON structure.
 
 ![](img/gis-webstorm-view-geojson.jpg)
 
 11. And also, you can validate the data on <http://www.geojson.io>.
 
-![](img/qgis-geojson-io.jpg)
+![](img/geojson-io.png)
 
 Now we have a single geojson file opposed to a complicated shapefile structure and a geojson file in a more appropriate for web-based geovisualization.
 
-> Now, Congradulations! you have generate an appropriate geospatial data for web uses! In most cases, a geojson should be smaller than 4 megabytes considering the speed of transfering the data from the server to the client, otherwise, the web map user would take too long to download the data. If your data is still large than 4 megabytes after the optimization strategies we have introduced above, please consider converting the data from geojson to topojson (using [mapshaper](http://www.mapshaper.org/)), or even CSV.
+> Now, Congratulations! you have generate an appropriate geospatial data for web uses! In most cases, a geojson should be smaller than 4 megabytes considering the speed of transferring the data from the server to the client, otherwise, the web map user would take too long to download the data. If your data is still large than 4 megabytes after the optimization strategies we have introduced above, please consider converting the data from geojson to topojson (using [mapshaper](http://www.mapshaper.org/)), or even CSV.
 
 ## References:
 

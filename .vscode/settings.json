@@ -4,6 +4,7 @@
         "Basemaps",
         "geosearch",
         "Geovisualizations",
+        "placemarks",
         "servlet"
     ]
 }

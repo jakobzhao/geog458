@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+        <Placemark>
+            <name>Gug 220</name>
+            <Point>
+                <coordinates>-122.30633854866029,47.654266229849185</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Smith Hall</name>
+            <Polygon>
+                <outerBoundaryIs>
+                    <LinearRing>
+                        <coordinates>-122.30760186910629,47.65648847666158 -122.30738997459412,47.65634936317266
+                            -122.30673551559447,47.65679199571452 -122.3069393634796,47.6569365279768
+                            -122.30760186910629,47.65648847666158</coordinates>
+                    </LinearRing>
+                </outerBoundaryIs>
+            </Polygon>
+        </Placemark>
+        <Placemark>
+            <name>Route 1</name>
+            <LineString>
+                <coordinates>-122.30716466903687,47.6564089832847 -122.30764210224152,47.65602596804535
+                    -122.30754017829894,47.655408079048485 -122.30667114257812,47.6541578251464
+                    -122.30651557445526,47.6542156410159</coordinates>
+            </LineString>
+        </Placemark>
+    </Document>
+</kml>
