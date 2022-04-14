@@ -2,7 +2,6 @@
 
 [Weekly Schedules](##:calendar:-Weekly-Schedule)
 
-[see above](#login-optional-fields)
 
 **Announcement:**
 
