@@ -1,6 +1,6 @@
 # GEOGRAPHY 458: Advanced Digital Geographies
 
-[Weekly Schedules](## Weekly Schedule)
+[Weekly Schedules](##Weekly Schedule)
 
 **Announcement:**
 
