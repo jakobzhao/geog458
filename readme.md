@@ -142,7 +142,7 @@ This week you will be making your first web map of the quarter using the popular
 -   **Readings:** a) [The Guide to Map Design](weeks/week05/mapbox-design.pdf), b) [Intro to Critical Cartography](https://drive.google.com/file/d/1IEz_9J4vH6foIrV36wDoIovOYNomZBWj/view?usp=sharing), c) [Mapbox Studio How-to Videos](weeks/week05/readme.md), and d) [extended readings](weeks/week05/readings.md).
 -   **Think Piece 5:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155395) `Due: April 28th, by 11:59pm`
 -   **Lab 4:** [Map Design and Tile Generation](labs/lab04) `Due: May 6th, by 11:59pm`
--   **Presentations**: Tuesday: The Guide to Map Design (AA3), [processing satellite imagery](https://docs.mapbox.com/help/tutorials/processing-satellite-imagery/) (AB3), Thursday: Intro to Critical Cartography (AC3), [Georeferenced image](https://docs.mapbox.com/mapbox-gl-js/example/georeference-imagery/) (AD3)
+-   **Presentations**: Tuesday: The Guide to Map Design (AA3),, Thursday: Intro to Critical Cartography (AC3), 
 
 ### Week 6 : Smart dashboards
 
