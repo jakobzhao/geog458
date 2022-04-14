@@ -1,6 +1,10 @@
 # GEOGRAPHY 458: Advanced Digital Geographies
 
+[Weekly Schedules](## :calendar: Weekly Schedule)
+
 **Announcement:**
+
+- Two sets of quizzes have just been released on canvas ([CSS and Jquery](https://canvas.uw.edu/courses/1547729/quizzes/1653670), [HTML and Javascript](https://canvas.uw.edu/courses/1547729/quizzes/1653671)). Feel free to work on these as a way to hone or assess your web development skills. These two quizzes are optional and would not be graded.
 
 - Our Lectures and Labs temporarily move to Zoom.
   - The lectures: [https://washington.zoom.us/my/bzhao](https://washington.zoom.us/my/bzhao), 
