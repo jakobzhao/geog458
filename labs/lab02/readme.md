@@ -251,7 +251,7 @@ In the search bar, type in `QuickMapServices` and install the plugin. After inst
 
 ![](img/QWS_setting.png)
 
-Click on the `More Services` tab and click on `Get contributed pack`. This will download all the base maps that are provided by different plugin authors. Then, close the page and navigate yourself again to `Web > QuickMapServices`. This time, you will see a list of contributors and base maps that they provide. Feel free to try adding different base maps, but for our exercise, let's use a base map called `Dark Matter (retina)` under `CartoDB`.
+Click on the `More Services` tab and click on `Get contributed pack`. This will download all the base maps that are provided by different plugin authors. Then, close the page and navigate yourself again to `Web > QuickMapServices`. This time, you will see a list of contributors and base maps that they provide. Feel free to try adding different base maps, but for our exercise, let's use a base map called `Positron (retina)` under `CartoDB`.
 
 After adding the base map, it should look like this:
 
