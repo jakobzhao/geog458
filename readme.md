@@ -4,6 +4,7 @@
 
 
 **Announcement:** No recent announcements
+ -  All the final presentations have been assigned.
 
 
 **Meetings:**
