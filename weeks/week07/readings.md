@@ -2,6 +2,8 @@
 
 _Topic: geovisualization & narrativity (storytelling & emotion)_
 
+- [Affective Geovisualizations](https://drive.google.com/file/d/1aqMFkewNT9s9nrAecAVYiaBAbtCrf7xj/view?usp=sharing)
+
 -   [Using Narrativity as Methodological Tool: EEVA-KAISA PROKKOLA, 2014](https://drive.google.com/file/d/1w8kM9zdfNRA0bLaQJn5Zvdl8SCuz52Nu/view?usp=sharing)
 
 _Topic: dwelling, identity, mapping reflections of place_
@@ -16,5 +18,4 @@ _[Topic: deep mapping](https://polis.iupui.edu/defining-deep-maps/)_
 
 _Topic: online story/web maps with interesting geo-narrative or “affective” framing:_
 
--   [Mapping Amazon: GOOD JOBS FIRST](https://storymaps.arcgis.com/stories/adc5ff253a3643f88d39e7f3ef1a09ee)
 -   [Survival by Degrees: 389 Bird Species on the Brink: AUDUBON](https://www.audubon.org/climate/survivalbydegrees#climate2-survival-search)

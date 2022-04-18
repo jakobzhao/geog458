@@ -1,18 +1,10 @@
 # GEOGRAPHY 458: Advanced Digital Geographies
 
-**Hyberlinks:** [**`Weekly Schedules`**](#calendar-weekly-schedule)
+**Hyberlinks:** [**`Weekly Schedules`**](#calendar-weekly-schedule) &nbsp;&nbsp;&nbsp;&nbsp; [**`Slack Room`**](https://2022-sp-geog458.slack.com) 
 
 
-**Announcement:**
+**Announcement:** No recent annoucements
 
-- Two sets of quizzes have just been released on canvas ([CSS and Jquery](https://canvas.uw.edu/courses/1547729/quizzes/1653670), [HTML and Javascript](https://canvas.uw.edu/courses/1547729/quizzes/1653671)). Feel free to work on these as a way to hone or assess your web development skills. These two quizzes are optional and would not be graded.
-
-- Our Lectures and Labs temporarily move to Zoom.
-  - The lectures: [https://washington.zoom.us/my/bzhao](https://washington.zoom.us/my/bzhao), 
-  - The AA & AB labs: [https://washington.zoom.us/j/97521328514](https://washington.zoom.us/j/97521328514)；
-  - The AC & AD labs: [https://washington.zoom.us/j/95926871713](https://washington.zoom.us/j/95926871713).
-
-- Please take the [Survey](https://canvas.uw.edu/courses/1547729/quizzes/1653669) on Canvas by March 30th, 2022, at noon 12:00pm. Through this survey, we will group students in 20 ~ 25 teams, each of which will have 4 to 5 students who are from the same session.
 
 **Meetings:**
 
@@ -139,10 +131,10 @@ This week you will be making your first web map of the quarter using the popular
 <!-- April 25 to April 29 -->
 
 -   **Lecture Notes:** [BaseMap design using Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/) and [Mockup for web mapping project](weeks/week05/mockup/readme.md)
--   **Readings:** a) [The Guide to Map Design](weeks/week05/mapbox-design.pdf), b) [Intro to Critical Cartography](https://drive.google.com/file/d/1IEz_9J4vH6foIrV36wDoIovOYNomZBWj/view?usp=sharing), c) [Mapbox Studio How-to Videos](weeks/week05/readme.md), and d) [extended readings](weeks/week05/readings.md).
+-   **Readings:** a) [The Guide to Map Design](https://go.mapbox.com/rs/117-NXK-490/images/the-guide-to-map-design.pdf), b) [Intro to Critical Cartography](https://drive.google.com/file/d/1IEz_9J4vH6foIrV36wDoIovOYNomZBWj/view?usp=sharing), c) [Mapbox Studio How-to Videos](weeks/week05/readme.md), and d) [extended readings](weeks/week05/readings.md).
 -   **Think Piece 5:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155395) `Due: April 28th, by 11:59pm`
 -   **Lab 4:** [Map Design and Tile Generation](labs/lab04) `Due: May 6th, by 11:59pm`
--   **Presentations**: Tuesday: The Guide to Map Design (AA3),, Thursday: Intro to Critical Cartography (AC3), 
+-   **Presentations**: Tuesday: The Guide to Map Design (AA3), [Snapchat Map](https://map.snapchat.com) (AB3), Thursday: Intro to Critical Cartography paper (AC3),  [Refugee Camps Chapter from the Global Refugee Atlas](https://hgis.uw.edu/refugee/camp_menu.html) (AD3)
 
 ### Week 6 : Smart dashboards
 
@@ -151,6 +143,8 @@ This week you will be making your first web map of the quarter using the popular
 -   **Lecture Notes:** [Create a smart dashboard](weeks/week06/), Examples: [COVID-19 Dashboard](https://hgis.uw.edu/virus); [Dynamic Charts](https://c3js.org/examples.html).
 -   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [History of the Urban Dashboard](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/), c) [3 Ways Data Dashboards Can Mislead You](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section), and d) [extended readings](weeks/week06/readings.md).
 -   **Think Piece 6:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155394) `Due: May 5th, by 11:59pm`
+-   **Presentations**: Tuesday: History of the Urban Dashboard article (AB4), [United Nation's COVID-19 Data Explorer](https://www.mapbox.com/showcase/un-ocha) (AC4), Thursday: The praxis and politics paper (AD4),  [OmniSci Tweet Map](https://www.heavy.ai/demos/tweetmap) (AA4)
+
 
 ### Week 7 : Geo-Narratives
 
@@ -158,9 +152,10 @@ This week you will be making your first web map of the quarter using the popular
 
 This week we will explore the concept of geo-narrative, the use of storytelling in mapping practice, by looking at existing geo-narrative mapping projects and engaging in a group discussion and map critique.
 
--   **Lecture Notes:** a) [A Geo-Narrative Template](weeks/week07/), b) [Planning and outlining your story map](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/sharing-collaboration/planning-and-outlining-your-story-map-how-to-set-yourself-up-for-success/). Examples: a) [Oregon Atlas](http://oregonwater.info/atlas.html), b) [Stand with #Standing Rock](https://jakobzhao.github.io/standwithstandingrock/)
--   **Readings:** a) [Affective Geovisualizations](https://drive.google.com/file/d/1aqMFkewNT9s9nrAecAVYiaBAbtCrf7xj/view?usp=sharing), b) [Anti-Eviction Mapping Project Handbook](https://static1.squarespace.com/static/52b7d7a6e4b0b3e376ac8ea2/t/5bc76571b208fc10defc815a/1539794295823/AEMP+Handbook.pdf), c)[extended readings](weeks/week07/readings.md).
+-   **Lecture Notes:** a) [A Geo-Narrative Template](weeks/week07/). Examples: a) [Oregon Atlas](http://oregonwater.info/atlas.html), b) [Stand with #Standing Rock](https://jakobzhao.github.io/standwithstandingrock/)
+-   **Readings:** a) [Planning and outlining your story map](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/sharing-collaboration/planning-and-outlining-your-story-map-how-to-set-yourself-up-for-success/) , b) [Anti-Eviction Mapping Project Handbook](https://static1.squarespace.com/static/52b7d7a6e4b0b3e376ac8ea2/t/5bc76571b208fc10defc815a/1539794295823/AEMP+Handbook.pdf), c)[extended readings](weeks/week07/readings.md).
 -   **Think Piece 7:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155393) `Due: May 12th, by 11:59pm`
+-   **Presentations**: Tuesday: Planning and outlining your story map (AA5), [Mapping Amazon: GOOD JOBS FIRST](https://storymaps.arcgis.com/stories/adc5ff253a3643f88d39e7f3ef1a09ee) (AB5), Thursday: The praxis and politics paper (AC5),  [The Wall](https://www.usatoday.com/border-wall/) (AD5)
 
 ### Week 8 : Emerging topics
 
