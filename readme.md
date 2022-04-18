@@ -3,7 +3,7 @@
 **Hyberlinks:** [**`Weekly Schedules`**](#calendar-weekly-schedule) &nbsp;&nbsp;&nbsp;&nbsp; [**`Slack Room`**](https://2022-sp-geog458.slack.com) 
 
 
-**Announcement:** No recent annoucements
+**Announcement:** No recent announcements
 
 
 **Meetings:**
