@@ -1,20 +1,21 @@
 # GEOGRAPHY 458: Advanced Digital Geographies
 
-**Hyberlinks:** [**`Weekly Schedules`**](#calendar-weekly-schedule) &nbsp;&nbsp;&nbsp;&nbsp; [**`Slack Room`**](https://2022-sp-geog458.slack.com) 
+**Hyberlinks:** [**`Weekly Schedules`**](#calendar-weekly-schedule) &nbsp;&nbsp;&nbsp;&nbsp; [**`Slack Room`**](https://2022-sp-geog458.slack.com)
 
+**Announcement:**
 
-**Announcement:** No recent announcements
- -  All the final presentations have been assigned.
-
+- 04/18/2022：All the final presentations have been assigned.
 
 **Meetings:**
+
+Both lectures and labs are held in person, masks are strongly recommended to protect everyone, especially those whose personal or household situation makes them more vulnerable.
 
 - **Lectures:** Tuesdays and Thursdays 11:30 AM to 12:50 PM PST on [https://washington.zoom.us/my/bzhao](https://washington.zoom.us/my/bzhao)
 - **Labs:** Wednesdays 12:30 AM to 4:20 PM PST
   - AA & AB: [https://washington.zoom.us/j/97521328514](https://washington.zoom.us/j/97521328514)
   - AC & AD: [https://washington.zoom.us/j/95926871713](https://washington.zoom.us/j/95926871713)
 
-`Both lectures and labs are held in person, masks are highly recommended to protect everyone, especially those whose personal or household situation makes them more vulnerable.`
+
 
 **Personnel:**
 
