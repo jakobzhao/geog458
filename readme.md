@@ -117,9 +117,9 @@ This week’s focus is on processing geospatial data for your digital geographie
 
 <!-- April 18 to April 22 -->
 
-This week you will be making your first web map of the quarter using the popular web mapping library - [Leaflet](https://leafletjs.com/) The lecture section this week we’ll work together familiarizing everyone with the basics of web mapping, and then provide a detailed introduction to the Lab 3 exercise.
+This week you will be making your first web map of the quarter using the popular web mapping library - [MapBox](https://www.mapbox.com/mapbox-gljs) The lecture section this week we’ll work together familiarizing everyone with the basics of web mapping, and then provide a detailed introduction to the Lab 3 exercise.
 
--   **Lectures:** [Leaflet Basics](weeks/week04/leaflet) and [Map Events](weeks/week04/mapevent).
+-   **Lectures:** [A simple map](), [reprojection](), [geospatial data loading](), [proportional symbol](), [heatmap]()
 -   **Readings:** a) [Digital Mapping and Segregation](https://www.forbes.com/sites/drsarahbond/2017/10/20/how-is-digital-mapping-changing-the-way-we-visualize-racism-and-segregation/#4df35c7d33fa), b) [Hacker Cartography](https://drive.google.com/file/d/1H76GJFXwS5dOPZYyxfyuud0DGQzYGNIr/view?usp=sharing), and c) [extended readings](weeks/week04/readings.md).
 -   **Think Piece 4:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155396) `Due: April 21st, by 11:59pm`
 -   **Lab 3:** [Web map application](labs/lab03) `Due: April 29th, by 11:59pm`

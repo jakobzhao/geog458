@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Demo: Make a heatmap with Mapbox GL JS</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #legend {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: #fff;
+            margin-right: 20px;
+            border-radius: 3px;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 40px;
+            width: 100px;
+        }
+
+        .break {
+            position: relative;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .dot {
+            display: inline-block;
+            margin-top: 5px;
+            border-radius: 50%;
+            opacity: 0.6;
+        }
+
+        .dot-label {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-style: italic;
+        }
+        a {
+            color: black
+        }
+    </style>
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+
+</head>
+
+<body>
+    <div id="map"></div>
+    <div id="legend"></div>
+    <script>
+        mapboxgl.accessToken =
+            'pk.eyJ1IjoibWFsLXdvb2QiLCJhIjoiY2oyZ2t2em50MDAyMzJ3cnltMDFhb2NzdiJ9.X-D4Wvo5E5QxeP7K_I3O8w';
+        const map = new mapboxgl.Map({
+            container: 'map', // container ID
+            style: 'mapbox://styles/mapbox/dark-v10',
+            zoom: 3, // starting zoom
+            center: [138, 38] // starting center
+        });
+
+        var grades = [4, 5, 6],
+            colors = ['rgb(208,209,230)', 'rgb(103,169,207)', 'rgb(1,108,89)'],
+            radius = [5, 15, 20];
+
+
+        map.on('load', () => {
+            map.addSource('earthquakes', {
+                'type': 'geojson',
+                'data': 'assets/earthquakes.geojson'
+            });
+
+            map.addLayer({
+                    'id': 'earthquakes-heat',
+                    'type': 'heatmap',
+                    'source': 'earthquakes',
+                    'maxzoom': 5,
+                    'paint': {
+                        // increase weight as diameter breast height increases
+                        'heatmap-weight': {
+                            'property': 'mag',
+                            'type': 'exponential',
+                            'stops': [
+                                [3, 3],
+                                [5, 6],
+                                [6, 10]
+                            ]
+                        },
+                        // increase intensity as zoom level increases
+                        'heatmap-intensity': {
+                            'stops': [
+                                [11, 1],
+                                [15, 3]
+                            ]
+                        },
+                        // use sequential color palette to use exponentially as the weight increases
+                        'heatmap-color': [
+                            'interpolate',
+                            ['linear'],
+                            ['heatmap-density'],
+                            0,
+                            'rgba(236,222,239,0)',
+                            0.2,
+                            'rgb(208,209,230)',
+                            0.4,
+                            'rgb(166,189,219)',
+                            0.6,
+                            'rgb(103,169,207)',
+                            0.8,
+                            'rgb(28,144,153)'
+                        ],
+                        // increase radius as zoom increases
+                        'heatmap-radius': {
+                            'stops': [
+                                [11, 15],
+                                [15, 20]
+                            ]
+                        },
+                        // decrease opacity to transition into the circle layer
+                        'heatmap-opacity': {
+                            'default': 1,
+                            'stops': [
+                                [14, 1],
+                                [15, 0]
+                            ]
+                        }
+                    }
+                },
+                'waterway-label'
+            );
+            map.addLayer({
+                    'id': 'earthquakes-point',
+                    'type': 'circle',
+                    'source': 'earthquakes',
+                    'minzoom': 5,
+                    'paint': {
+                        // increase the radius of the circle as the zoom level and dbh value increases
+                        'circle-radius': {
+                            'property': 'mag',
+                            // 'type': 'exponential',
+                            'stops': [
+                                [{
+                                    zoom: 5,
+                                    value: grades[0]
+                                }, radius[0]],
+                                [{
+                                    zoom: 5,
+                                    value: grades[1]
+                                }, radius[1]],
+                                [{
+                                    zoom: 5,
+                                    value: grades[2]
+                                }, radius[2]]
+                            ]
+                        },
+                        'circle-color': {
+                            'property': 'mag',
+                            'type': 'exponential',
+                            'stops': [
+                                [grades[0], colors[0]],
+                                [grades[1], colors[1]],
+                                [grades[2], colors[2]]
+                            ]
+                        },
+                        'circle-stroke-color': 'white',
+                        'circle-stroke-width': 1,
+                        'circle-opacity': {
+                            'stops': [
+                                [3, 0],
+                                [10, 1]
+                            ]
+                        }
+                    }
+                },
+                'waterway-label'
+            );
+        });
+
+        // click on tree to view dbh in a popup
+        map.on('click', 'earthquakes-point', (event) => {
+            new mapboxgl.Popup()
+                .setLngLat(event.features[0].geometry.coordinates)
+                .setHTML(`<strong>Magnitude:</strong> ${event.features[0].properties.mag}`)
+                .addTo(map);
+        });
+
+        // create legend
+        const legend = document.getElementById('legend');
+
+        //set up legend grades and labels
+        var labels = ['<strong>Size</strong>'],
+            from, to;
+        //iterate through grades and create a scaled circle and label for each
+        for (var i = 0; i < grades.length; i++) {
+            from = grades[i];
+            to = grades[i + 1];
+            dot_radius = 2 * radius[i];
+            labels.push(
+                '<p class="break"><i class="dot" style="background:' + colors[i] + '; width: ' + dot_radius +
+                'px; height: ' +
+                dot_radius + 'px; "></i> <span class="dot-label" style="top: ' + dot_radius / 2 + 'px;">' + from +
+                '</span></p>');
+
+        }
+
+        const source = '<p style="text-align: right; font-size:10pt">Source: <a href="https://earthquake.usgs.gov/earthquakes/">USGS</a></p>';
+        
+        legend.innerHTML = labels.join('') + source;
+
+        
+    </script>
+</body>
+
+</html>
