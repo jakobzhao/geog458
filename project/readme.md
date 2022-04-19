@@ -32,7 +32,13 @@ All the final projects are expected to be published online, and the codes are 
 
 ## Timeline
 
-TBD
+Week 4: Brainstorm
+Week 5: Draft project proposal, data sources, and other multimedia 
+Week 6: Create project prototype
+Week 7: Project feasibility study revision
+Week 8: Project feasibility study revision
+Week 9-10: Coding
+Finals Week: Project presentation and submission
 
 ## Presentation
 
