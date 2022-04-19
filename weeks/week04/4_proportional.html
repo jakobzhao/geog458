@@ -9,6 +9,7 @@
     <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet" />
 
     <style>
+        /* full screen */
         body {
             margin: 0;
             padding: 0;
@@ -21,6 +22,8 @@
             width: 100%;
         }
 
+
+        /* the layout of the legend panel */
         #legend {
             position: absolute;
             bottom: 0;
@@ -34,12 +37,14 @@
             width: 100px;
         }
 
+        /* each line for a break */
         .break {
             position: relative;
             margin: 0px;
             padding: 0px;
         }
 
+        /* basic style for a dot/circle */
         .dot {
             display: inline-block;
             margin-top: 5px;
@@ -47,6 +52,7 @@
             opacity: 0.6;
         }
 
+        /* the label for the dot */
         .dot-label {
             position: absolute;
             top: 0;
@@ -54,10 +60,10 @@
             font-style: italic;
         }
 
+        /* the text color of a hyper link */
         a {
             color: black
         }
-
     </style>
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
 
@@ -69,16 +75,17 @@
     <script>
         mapboxgl.accessToken =
             'pk.eyJ1IjoibWFsLXdvb2QiLCJhIjoiY2oyZ2t2em50MDAyMzJ3cnltMDFhb2NzdiJ9.X-D4Wvo5E5QxeP7K_I3O8w';
-        const map = new mapboxgl.Map({
+
+        let map = new mapboxgl.Map({
             container: 'map', // container ID
             style: 'mapbox://styles/mapbox/dark-v10',
             zoom: 5, // starting zoom
             center: [138, 38] // starting center
         });
 
-        var grades = [4 ,5, 6],
-            colors = ['rgb(208,209,230)', 'rgb(103,169,207)','rgb(1,108,89)' ],
-            radius =  [5, 15, 20];
+        let grades = [4, 5, 6],
+            colors = ['rgb(208,209,230)', 'rgb(103,169,207)', 'rgb(1,108,89)'],
+            radius = [5, 15, 20];
 
         map.on('load', () => {
             map.addSource('earthquakes', {
@@ -95,7 +102,6 @@
                         // increase the radius of the circle as the zoom level and dbh value increases
                         'circle-radius': {
                             'property': 'mag',
-                            // 'type': 'exponential',
                             'stops': [
                                 [{
                                     zoom: 5,
@@ -113,7 +119,6 @@
                         },
                         'circle-color': {
                             'property': 'mag',
-                            'type': 'exponential',
                             'stops': [
                                 [grades[0], colors[0]],
                                 [grades[1], colors[1]],
@@ -134,7 +139,7 @@
             );
         });
 
-        // click on tree to view dbh in a popup
+        // click on tree to view magnitude in a popup
         map.on('click', 'earthquakes-point', (event) => {
             new mapboxgl.Popup()
                 .setLngLat(event.features[0].geometry.coordinates)
@@ -152,14 +157,17 @@
         for (var i = 0; i < grades.length; i++) {
             from = grades[i];
             to = grades[i + 1];
-            dot_radius =  2 * radius[i];
+            dot_radius = 2 * radius[i];
             labels.push(
-                '<p class="break"><i class="dot" style="background:'+ colors[i] + '; width: ' + dot_radius  + 'px; height: ' +
-                    dot_radius + 'px; "></i> <span class="dot-label" style="top: ' + dot_radius / 2+'px;">' + from + '</span></p>');
+                '<p class="break"><i class="dot" style="background:' + colors[i] + '; width: ' + dot_radius +
+                'px; height: ' +
+                dot_radius + 'px; "></i> <span class="dot-label" style="top: ' + dot_radius / 2 + 'px;">' + from +
+                '</span></p>');
 
         }
-        const source = '<p style="text-align: right; font-size:10pt">Source: <a href="https://earthquake.usgs.gov/earthquakes/">USGS</a></p>';
-        
+        const source =
+            '<p style="text-align: right; font-size:10pt">Source: <a href="https://earthquake.usgs.gov/earthquakes/">USGS</a></p>';
+
         legend.innerHTML = labels.join('') + source;
     </script>
 </body>

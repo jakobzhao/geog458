@@ -19,7 +19,6 @@
             bottom: 0;
             width: 100%;
         }
-
     </style>
 </head>
 
@@ -41,18 +40,25 @@
             center: [138, 38] // starting center
         });
 
+        // define the asynchronous loading function
         async function geojsonFetch() {
 
+            // Await operator is used to wait for a promise. 
+            // An await can cause an async function to pause until a Promise is settled.
             let response, earthquakes, japan;
             response = await fetch('assets/earthquakes.geojson');
             earthquakes = await response.json();
             response = await fetch('assets/japan.json');
             japan = await response.json();
 
-         
-            //load data to the map as new layers and table on the side.
+
+            //load data to the map as new layers
             map.on('load', function loadingData() {
 
+                // when loading a geojson, there are two steps
+                // add a source of the data and then add the layer out of the source
+                // since the data has already been assigned to a variable, you do not need to retrieve it from the url.
+                // it is the major difference between the native and the non-native asynchronous mapbox data source loading.
                 map.addSource('earthquakes', {
                     type: 'geojson',
                     data: earthquakes
@@ -89,9 +95,8 @@
             });
 
         }
-
+        // call the function
         geojsonFetch();
-
     </script>
 
 </body>

@@ -8,6 +8,8 @@
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.js"></script>
     <style>
+
+        /* full screen */
         body {
             margin: 0;
             padding: 0;
@@ -41,9 +43,13 @@
         });
 
 
-        //load data to the map as new layers and table on the side.
-        map.on('load', function loadingData() {
+        //load data to the map as new layers.
 
+        //map.on('load', function loadingData() {
+        map.on('load', () => { //simplifying the function statement: arrow with brackets to define a function
+
+            // when loading a geojson, there are two steps
+            // add a source of the data and then add the layer out of the source
             map.addSource('earthquakes', {
                 type: 'geojson',
                 data: 'assets/earthquakes.geojson'

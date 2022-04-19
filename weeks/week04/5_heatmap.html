@@ -191,7 +191,7 @@
             );
         });
 
-        // click on tree to view dbh in a popup
+        // click on tree to view magnitude in a popup
         map.on('click', 'earthquakes-point', (event) => {
             new mapboxgl.Popup()
                 .setLngLat(event.features[0].geometry.coordinates)
