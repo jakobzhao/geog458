@@ -1,6 +1,6 @@
 # GEOGRAPHY 458: Advanced Digital Geographies
 
-**Hyberlinks:** [**`Weekly Schedules`**](#calendar-weekly-schedule) &nbsp;&nbsp;&nbsp;&nbsp; [**Final Project Guidelines**](project/readme.md) &nbsp;&nbsp;&nbsp;&nbsp; [**`Slack Room`**](https://2022-sp-geog458.slack.com)
+**Hyberlinks:** [**`Weekly Schedules`**](#calendar-weekly-schedule) &nbsp;&nbsp;&nbsp;&nbsp; [**`Final Project Guideline`**](project/readme.md) &nbsp;&nbsp;&nbsp;&nbsp; [**`Slack Room`**](https://2022-sp-geog458.slack.com)
 
 **Announcement:**
 
