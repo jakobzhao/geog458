@@ -29,3 +29,14 @@ During the final presentation, each group will need to share some constructive c
 To submit your final project, you will need to share the url link of your final project's GitHub repository to a dedicated final project submission tab on Canvas by June 8th, 11:59pm
 
 >  **Note:** The requirements to the project may be slightly changed according the progress of this course. The final requirements are subject to the instructor's notification.
+
+
+#### Where to find Projects (not a comprehensive list):
+
+-  Mapping the Black Lives Matter Movement: https://protestmap.raceandpolicing.com
+-  COVID Care Map: https://www.covidcaremap.org/maps/us-healthcare-system-capacity
+-  Marikina City: https://comet.dlsu.edu.ph/riesgo-vis
+-  Mutual Aid Network: https://www.mutualaidhub.org/
+-  Map of direct-to-consumer brands based in NYC: https://air.inc/blog/supportnycdtc
+-  Connectivity Disparity Across Schools in Kazakhstan: https://unicef.github.io/mapbox_analysis/story/map
+-  
