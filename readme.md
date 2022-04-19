@@ -1,9 +1,10 @@
 # GEOGRAPHY 458: Advanced Digital Geographies
 
-**Hyberlinks:** [**`Weekly Schedules`**](#calendar-weekly-schedule) &nbsp;&nbsp;&nbsp;&nbsp; [**`Slack Room`**](https://2022-sp-geog458.slack.com)
+**Hyberlinks:** [**`Weekly Schedules`**](#calendar-weekly-schedule) &nbsp;&nbsp;&nbsp;&nbsp; [**Final Project Guidelines**](project/readme.md) &nbsp;&nbsp;&nbsp;&nbsp; [**`Slack Room`**](https://2022-sp-geog458.slack.com)
 
 **Announcement:**
 
+- 04/19/2022: [The final project guideline](project/readme.md) has been released.
 - 04/18/2022：All the final presentations have been assigned.
 
 **Meetings:**
@@ -31,7 +32,6 @@ As digital technologies have radically transformed human life, this course tries
 
 This course is very “hands-on” and interactive! Most of our time will be spent in a hybrid lecture/lab where students will be working together. Although there will be some individual written reflections and analyses, no formal final exam will be set up. The final project enables students to figure out a holistic solution to a real-world problem. With the completion of this course, each student can share the course work at a self-made website which can be publicly viewed by classmates, open-source community as well as future industrial recruiters. Along the way, the readings will include both applied and theoretical selections. Students will learn not only how people have been programming and visualizing, but also about how critical social theorists have identified assumptions, ideologies, and rigidities in existing practices that can help students to make effective, inclusive and empathetic decisions in today’s data-intensive geographic world.
 
-
 ## :flags: Learning Objectives
 
 -   To identify when and how the methods, sociology, and objects of geographical inquiry can be transformed through computational and networked approaches.
@@ -51,7 +51,6 @@ This course is very “hands-on” and interactive! Most of our time will be spe
 
 **Student Tech Support:** The Student Tech Loan Program is expanding as quickly as possible. We announced this to undergrads as soon as it hit the airwaves, in hopes some of them who need hardware can reserve for spring quarter. They expect new/additional machines to arrive in April. STLP Website: <https://stlp.uw.edu/> (check the [Spring Announcement](https://drive.google.com/file/d/1qlbUBPdQFJt_jXS2fAOtORwNrBVtZqCb/view)).
 
-
 **E-mail:** is the easiest way of reaching me. I will respond to all e-mails during office hours, and will periodically return e-mail at other times. Please note that the answer to many commonly e-mailed questions can be found in the syllabus or on the course website. Please also note that in order to respond your e-mail you MUST include the following information in every e-mail:
 
 -  A Salutation (Both Dr. Zhao and Professor Zhao are acceptable)
@@ -67,12 +66,9 @@ This course is very “hands-on” and interactive! Most of our time will be spe
 
 **Think Pieces:** for week 1 to 8, there will be weekly reading assignments. To evaluate your reflection upon each week's reading material, we set up a discussion board for each week. You need to submit think pieces to **4** out of the 8 weeks' discussion topics. Your think pieces should be completed by Thursday @ 11:59 pm for the weeks you are submitting a piece. **All the 4 think pieces must be submitted by the end of Week 8 (May 20th, 11:59pm)**. Your think pieces should be at least 350 words and engage substantially with the reading materials, and connections to the lab assignments and lectures. Guiding questions or prompts will be included in each week's discussion section on canvas to help frame your thinking. Submit your think pieces on Canvas in the applicable week's discussion section (https://canvas.uw.edu/courses/1434645/discussion_topics).
 
-**Participation in in-class discussion:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and actively participate in critical discussions of those readings. You should have completed all of the weekly readings before our Friday lab sections as these sections will be devoted to critical discussion and engagement with the required readings.
+**Class participation:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and actively participate in critical discussions of those readings. You should have completed all of the weekly readings before our Friday lab sections as these sections will be devoted to critical discussion and engagement with the required readings.
 
-**In-class presentation:**
-**Also, each group will lead the presentation about an assigned topic at least once throughout this quarter. We will start assign the group presentation assignment in Week 3.** Each group will present an previously assign paper or a digital geography related project in no more than 10 minutes. If you prepare slides for the presentation, please send it to the instructor before class via email.
-
-<!-- **Final Essay:** Each student will complete an essay that engages with the readings and the course themes, along with additional readings that you bring into conversation with the assigned course readings. You are aiming for **no less than 2000 words** coalescing around ideas and readings from this quarter. Essay is due no later than the end of **Week 8 (May 20th, 11:59pm)**. Check out [the detailed requirement for essay](project/essay.md). -->
+**In-class presentation:** **Also, each group will lead the presentation about an assigned topic at least once throughout this quarter. We will start assign the group presentation assignment in Week 3.** Each group will present an previously assign paper or a digital geography related project in no more than 10 minutes. If you prepare slides for the presentation, please send it to the instructor before class via email.
 
 **Final Project:** will be conducted by a group of 4 to 5 students who are from the same Lab session. It needs to be submitted by June 8th, 11:59pm. Check out [the detailed requirement for final project](project/project.md).
 
@@ -123,7 +119,6 @@ This week you will be making your first web map of the quarter using the popular
 -   **Readings:** a) [Digital Mapping and Segregation](https://www.forbes.com/sites/drsarahbond/2017/10/20/how-is-digital-mapping-changing-the-way-we-visualize-racism-and-segregation/#4df35c7d33fa), b) [Hacker Cartography](https://drive.google.com/file/d/1H76GJFXwS5dOPZYyxfyuud0DGQzYGNIr/view?usp=sharing), and c) [extended readings](weeks/week04/readings.md).
 -   **Think Piece 4:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155396) `Due: April 21st, by 11:59pm`
 -   **Lab 3:** [Web map application](labs/lab03) `Due: April 29th, by 11:59pm`
--   [An integrative web mapping template](https://jakobzhao.github.io/geog458/weeks/week04/starter/index.html)
 -   **Presentations**: Tuesday: Digital Mapping and Segregation paper (AB2), [TweetMap](https://www.heavy.ai/demos/tweetmap) (AA2), Thursday: Hacker Cartography Paper (AD2), [Oregon Water Atlas](http://oregonwater.info/atlas.html) (AC2)
 
 ### Week 5 : Map design
@@ -143,7 +138,7 @@ This week you will be making your first web map of the quarter using the popular
 -   **Lectures:** [Create a smart dashboard](weeks/week06/), Examples: [COVID-19 Dashboard](https://hgis.uw.edu/virus); [Dynamic Charts](https://c3js.org/examples.html).
 -   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [History of the Urban Dashboard](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/), c) [3 Ways Data Dashboards Can Mislead You](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section), and d) [extended readings](weeks/week06/readings.md).
 -   **Think Piece 6:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155394) `Due: May 5th, by 11:59pm`
--   **Presentations**: Tuesday: History of the Urban Dashboard article (AB4), [United Nation's COVID-19 Data Explorer](https://www.mapbox.com/showcase/un-ocha) (AC4), Thursday: The praxis and politics paper (AD4),  [OmniSci Tweet Map](https://www.heavy.ai/demos/tweetmap) (AA4)
+-   **Presentations**: Tuesday: History of the Urban Dashboard article (AB4), [United Nation's COVID-19 Data Explorer](https://www.mapbox.com/showcase/un-ocha) (AC4), Thursday: The praxis and politics paper (AD4),  (Restaurant Complaints in NYC)[https://labs.mapbox.com/bites/00304/] (AA4)
 
 
 ### Week 7 : Geo-Narratives

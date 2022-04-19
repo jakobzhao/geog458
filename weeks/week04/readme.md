@@ -2,32 +2,42 @@
 
 ## Major Steps
 
--  the skeleton of a basic web map
+-  [display a map on a webpage](https://docs.mapbox.com/mapbox-gl-js/example/simple-map/)
    -  host web map
    -  html structure
    -  mapbox token
-   -  map object, zoom level, center, and projection (map for a global, reginal or local areas)
+   -  map object, zoom level, center, and [projection](https://docs.mapbox.com/mapbox-gl-js/guides/projections/) (map for a global, reginal or local areas)
    -  example: [A basic map](https://jakobzhao.github.io/geog458/weeks/week04/1_basic.html)
--  base map options
+-  [select a base map](https://docs.mapbox.com/api/maps/styles/)
    -  monochrome -- `gray or dark background, good for most of the thematic maps`
    -  street map
    -  satellite imagery
    -  terrain
--  thematic layers
+   -  [create your own](https://www.mapbox.com/gallery/)
+-  make thematic layers
    -  search (on primary search engines), collect (data API) or create (QGIS, geojson.io) geojson files
    -  convert the original data in WGS84 project (EPSG: 4326)
    -  load geojson as vector layers
       -  native or non-native asynchronous data loading
       -  examples: [native async]((https://jakobzhao.github.io/geog458/weeks/week04/3_native_data_loading.html)) and [non-native async]((https://jakobzhao.github.io/geog458/weeks/week04/3_async_data_loading.html))
-   -  *loading pre-cache tiles as vector layers*
+   -  *load pre-cache tiles as raster layers*
    -  visual strategies
-      -  Choropleth
-      -  Proportional symbols
-      -  Heatmap
-      -  Dot map
-      -  `Optional` 3D extrusion map
+      -  [choropleth](https://github.com/jakobzhao/geog495/tree/main/labs/lab04)
+      -  proportional symbols
+         -  example: [proportional symbols](https://jakobzhao.github.io/geog458/weeks/week04/4_proportional.html)
+      -  [heatmap](https://docs.mapbox.com/help/tutorials/make-a-heatmap-with-mapbox-gl-js/)
+         -  example: [Heatmap](https://jakobzhao.github.io/geog458/weeks/week04/5_heatmap.html)
+      -  marker map ([circle/dot](https://docs.mapbox.com/mapbox-gl-js/example/center-on-feature/), [default marker](https://docs.mapbox.com/mapbox-gl-js/example/add-a-marker/), [custom marker](https://docs.mapbox.com/mapbox-gl-js/example/custom-marker-icons/]))
+      -  [dot density map](https://labs.mapbox.com/education/thematic-map-types/dot-density/)
+      -  [3D extrusion map](https://labs.mapbox.com/education/thematic-map-types/3d-extrusions/)
+         -  [3d terrain](https://docs.mapbox.com/mapbox-gl-js/example/add-terrain/)
+         -  [3d building](https://docs.mapbox.com/mapbox-gl-js/example/3d-buildings/)
    -  legend
-   -  other information
--  interactive elements
+      -  create an info panel
+      -  For proportional symbol, or dot density maps: [dot or circle](https://jakobzhao.github.io/geog458/weeks/week04/4_proportional.html)
+      -  For choropleth or heat maps: [rectangular patches](https://github.com/jakobzhao/geog495/tree/main/labs/lab04)
+      -  For other symbolized maps: marker
+   -  other information - data source, title, author, date, etc.
+-  create interactive elements
    -  click on an geographical feature
-   -  more
+   -  and more
