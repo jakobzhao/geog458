@@ -6,5 +6,6 @@
         "Geovisualizations",
         "placemarks",
         "servlet"
-    ]
+    ],
+    "livePreview.defaultPreviewPath": "/weeks/week04/proportional.html"
 }

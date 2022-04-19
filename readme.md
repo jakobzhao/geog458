@@ -15,8 +15,6 @@ Both lectures and labs are held in person, masks are strongly recommended to pro
   - AA & AB: [https://washington.zoom.us/j/97521328514](https://washington.zoom.us/j/97521328514)
   - AC & AD: [https://washington.zoom.us/j/95926871713](https://washington.zoom.us/j/95926871713)
 
-
-
 **Personnel:**
 
 - **Bo Zhao**, Instructor, zhaobo@uw.edu | Office Hour: Thursdays 1 to 3 PM via [Zoom](https://washington.zoom.us/my/bzhao) by default or in-person by request. Check this [link](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI) to make an appointment.

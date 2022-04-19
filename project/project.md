@@ -19,12 +19,7 @@ The final project is a major component of this course. Each group is expected to
 
 Academics often attend conferences where they share their discoveries and browse the work of others to gain new ideas and offer feedback. We will hold a final presentation meeting on **June 8th, 4:30 to 6:20 PM**, each group is expected to present the final project in 5 minutes, and plus another 2 minute for a Q&A session.
 
-
-## 3\. Peer Review
-
-During the final presentation, each group will need to share some constructive comments to at least **FIVE** of your classmates' final projects. The comments need to be submitted as a new GitHub issue to the presenter's final project repository. Your comment could start with something the presenter did well, and the list a few items the presenter could further improve.
-
-## 4\. Submission
+## 3\. Submission
 
 To submit your final project, you will need to share the url link of your final project's GitHub repository to a dedicated final project submission tab on Canvas by June 8th, 11:59pm
 
@@ -39,4 +34,4 @@ To submit your final project, you will need to share the url link of your final 
 -  Mutual Aid Network: https://www.mutualaidhub.org/
 -  Map of direct-to-consumer brands based in NYC: https://air.inc/blog/supportnycdtc
 -  Connectivity Disparity Across Schools in Kazakhstan: https://unicef.github.io/mapbox_analysis/story/map
--  
+-  Restaurant Complaints in NYC: https://labs.mapbox.com/bites/00304/

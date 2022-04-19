@@ -31,7 +31,6 @@ Through writing this essay, you are expected to use the learned knowledge and sk
 
 #### Resources for Writing in Markdown: Writing: 
 - [Writing and Formatting on Github](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)
-- [Writing in Atom](https://flight-manual.atom.io/using-atom/sections/writing-in-atom/)
 
 #### Where to find Projects (not a comprehensive list): 
 - [SITU Research](https://situ.nyc/research)
@@ -41,7 +40,6 @@ Through writing this essay, you are expected to use the learned knowledge and sk
 - [UKY - Explore New Maps](https://newmapsplus.as.uky.edu/explore-new-maps)
 - [Anti-Eviction Mapping Project](https://antievictionmap.com/)
 - [ArcGIS Story Maps](https://storymaps.arcgis.com/stories)
-
 
 >  **Note:** Since the essay is written in markdown syntax, you are encouraged to use the following three structures: highlight, images such as screenshot, code snippet.
 
