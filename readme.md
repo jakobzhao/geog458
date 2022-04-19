@@ -166,7 +166,7 @@ This week will focus on two emerging topics related to digital geographies, incl
 
 <!-- May 23 to May 27 -->
 <!-- May 30 to June 3, May 30 is Memorial Day, which is a University Holiday -->
-During these two weeks, each group will focusing on their final projects and essay. The instructor and teaching assistants are available during the normal lecture period, lab sections and office hours if help is needed.
+During these two weeks, each group will focusing on their final projects. The instructor and teaching assistants are available during the normal lecture period, lab sections and office hours if help is needed.
 
 ### Finals Week : Final project presentations
 
