@@ -116,7 +116,9 @@ The map object will create a new data source `earthquakes`, and it then imports 
 
 ## 3. Proportional symbol visualization
 
-First we need to define the grades of all magnitudes, the corresponding colors and radii.
+A proportional symbol map allows the symbol for each geographical feature is proportional to a specific feature value. In this map, the radius of the dot is proportional to the magnitude of the earthquake the dot illustrates. Also, the color of each dot will also become darker when the magnitude increases.
+
+To do so, we need to define the grades of all magnitudes, the corresponding colors and radii, and then use the sequence number of the three arrays to check the corresponding value among the grades, colors and radii. For example, when magnitudes equals to 4, which is grades[1], we can use the same sequence number i, in this case, i = 1, to look for the assigned color, colors[1] equal to 'rgb(208,209,230)' and the radius of the proportional symbol, which is radii[i] equal to 5.
 
 ```javascript
 const grades = [4, 5, 6], 
@@ -124,9 +126,10 @@ const grades = [4, 5, 6],
       radii = [5, 15, 20];
 ```
 
+Then, I will apply these grades, colors and radii to symbolize each dot. When determining the `circle-radius`, a zoom level is required for each of the relationship between value and radius. This feature allows a user to define multiple associations between value and radius on different zoom. In this lab, we only need to keep the relationship between value and the radius constantly. So, please put a default zoom level of the map.
 
+Similarly, we assign corresponding color to each grade. Since other value of the circle would not be changed, so we just assign a consistent value for the stroke and opacity.
 
-Then, I will apply these grades, colors and radius to symbolize each dot.
 
 ```javascript
 'paint': {
@@ -158,12 +161,7 @@ Then, I will apply these grades, colors and radius to symbolize each dot.
     },
     'circle-stroke-color': 'white',
     'circle-stroke-width': 1,
-    'circle-opacity': {
-        'stops': [
-            [3, 0],
-            [10, 1]
-        ]
-    }
+    'circle-opacity': 0.6
 }
 ```
 
@@ -178,12 +176,15 @@ When determining the colors, you need some predefined color ramp to symbolize ge
 Then, please open `map3.html` to see how the map looks like at this stage.
 
 ![](img/map3.png)
-## 3 Add a Legend
+## 4. Add a Legend
 
-Adding a legend is easy, but requires quite a bit of code. The workflow to create a legend involves creating a Leaflet control, setting the control to populate with HTML that represents the legend components, and styling the HTML with CSS, so they appear correctly on our screen. I am going to throw a bit more code at you this time, and we will walk through what it is doing. Enter the following block of code to your `script`.
+Adding a legend is easy, but requires quite a bit of code. The workflow to create a legend involves creating a place holder in the html, coding a legend object in order to add components, and styling the HTML with CSS. I am going to throw a bit more code at you this time, and we will walk through what it is doing. Enter the following block of code to your `script`.
+
+
+**Coding the legend object**
 
 ```js
-// create legend
+// create legend object, it will anchor to the div element with the id legend.
 const legend = document.getElementById('legend');
 
 //set up legend grades and labels
@@ -209,7 +210,7 @@ legend.innerHTML = labels.join('') + source;
 ```
 
 
-**Use CSS to Style**
+**Style with CSS**
 
 If we save and refresh, the items you see will not make much sense. We need to use CSS to give them placement and organization on the page. The following CSS code will style our elements. Enter it between the style tags in the head of your HTML document. Like above, we will then walk through what it does.
 
@@ -220,13 +221,13 @@ If we save and refresh, the items you see will not make much sense. We need to u
     position: absolute;
     bottom: 0;
     right: 0;
+    width: 110px;
     background: #fff;
     margin-right: 20px;
-    border-radius: 3px;
-    padding: 10px;
-    text-align: center;
     margin-bottom: 40px;
-    width: 100px;
+    padding: 10px 20px 10px 10px;
+    border-radius: 3px;
+    text-align: center;
 }
 
 /* each line for a break */
@@ -258,13 +259,13 @@ a {
 }
 ```
 
-First, we set properties for the legend using `.legend` to style the legend class. We set a line height, color, font, padding, background, drop shadow, and border corner radius. Next, we set our icon (`i`) tag. This should be set to float: left; so that elements will align into columns, then we set properties for the image (`img`) tag, making them the same size and giving them the same float as the icons. Lastly, we style our paragraph tag (`p`), making sure line-height is consistent with the others. Save and refresh your map. You should see your styled legend applied to your map.
+First, we set properties for the legend using `#legend` to style the legend element. Next, we set the basic style for each symbol that includes both the symbol `dot` and the label `dot-label`. To make the color consistent, we recolor the text of any hyperlink `a` as black. Save and refresh your map. You should see your styled legend applied to your map.
 
 Then, please open `map4.html` to see how the map looks like at this stage.
 
 ![](img/map4.png)
 
-### 4 Change the fonts
+### 5 Change the fonts
 
 Choosing fonts is an essential part of cartography, and an often overlooked one. Right now, our map uses the default Browser font, usually Times New Roman. To edit fonts, we want to style CSS. In CSS, there are many options for fonts; for more reading, check out the [w3schools font documentation](http://www.w3schools.com/css/css_font.asp).
 
@@ -276,10 +277,10 @@ Traditionally, the font is loaded into your page only if you have it on your com
 ...</head>
 ```
 
-Next, to style all text in our document with the `Open Sans` font, modify the `.legend` tag in the CSS (the code between the style tags). Modify the body CSS properties to look like the following, adding a font-family property after margin.
+Next, to style all text in our document with the `Open Sans` font, modify the `#legend` tag in the CSS (the code between the style tags). Modify the body CSS properties to look like the following, adding a font-family property after margin.
 
-```html
-.legend {
+```css
+#legend {
     ...
     font-family: 'Open Sans', sans-serif;
     ...
@@ -290,7 +291,7 @@ Save and refresh your map. Or open `map5.html`.  `Open Sans` will now be your pr
 
 ![](img/map5.png)
 
-## 5. Deliverable
+## 6. Deliverable
 
 After you successfully deploy this earthquake map, you are expected to build another thematic map of COVID-19 cases and rates in the United States.
 
