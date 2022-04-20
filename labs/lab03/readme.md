@@ -2,19 +2,19 @@
 
 **Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu; **Points Available** = 50
 
-In this lab, we will design an interactive web map of cell towers in Washington. When creating a web map, one of the critical components is styling your elements to provide proper symbolization for your data. This increases legibility for users and can give your map an appealing, custom design. Elements that can be customized to include thematic layers (i.e., points, lines, and polygons), base maps (as a leaflet `tileLayer`), interactive features (the components of the map that allow for user interaction), and legends and supplemental information (such as credits, etc.). To do that, the county boundaries are from [Washington Data & Research](https://www.ofm.wa.gov/washington-data-research/population-demographics/gis-data/census-geographic-files), and the spatial distribution of cell towers is from [Homeland Infrastructure Foundation-Level Data (HIFLD)](https://hifld-geoplatform.opendata.arcgis.com/datasets/0835ba2ed38f494196c14af8407454fb_0?geometry=-126.488%2C45.696%2C-112.612%2C48.318). Below is the web map you will make by walking through this lab handout.
+In this lab, we will design a web map application. This application is a proportional symbol map of earthquakes near Japan. When creating a web map, one of the critical components is styling your elements to provide proper symbolization for your data. This increases legibility for users and can give your map an appealing, custom design. Elements that can be customized to include thematic layers (i.e., choropleth, proportional symbols, dot density, etc), base maps, interactive features (the components of the map that allow for user interaction), and legends and supplemental information (such as credits, etc.). The earthquake data is from USGS earthquake catalog. Below is the web map you will make by walking through this lab handout.
 
 ![](img/final_map.png)
 
-To get started, please synchronize the course material to the working space of your local computer. If you are working in the Digital Earth Lab, please synchronize your course material on the desktop directory.  The material for this lab is located at `[your_working_space]/geog458/labs/lab03`. Next, open the course material in Atom.
+To get started, please synchronize the course material to the working space of your local computer. The material for this lab is located at `[your_working_space]/geog458/labs/lab03`. Next, open the course material in VS Code.
 
-## 1. Set up our Map and Add Data
+## 1. Display the map and load geospatial data
 
-In your IDE (Atom), open `map1.html` to prepare for editing.
+In your IDE (VS Code, or any other alternatives you are familiar), open `1_basic.html` to prepare for editing.
 
-In this file, you will see a basic HTML page.
+In this file, you will see the structure of a basic HTML page.
 
-Inside the `head` tag, we include both the latest version of `leaflet.css` and `leaflet.js`. After the `leaflet.css` we add a `style` tag in order to include our customized CSS styling codes.
+Inside the `head` tag, we include both the latest version of `mapbox-gl-js.css` and `mapbox-gl-js.js`. After the `mapbox-gl-js.css` we add a `style` tag in order to include our customized CSS styling codes.
 
 Inside the `body` tag, we put a `map` div tag for holding the map object. After that map `div` tag, we include a `script` tag to put the javascript codes.
 
@@ -22,114 +22,160 @@ Inside the `body` tag, we put a `map` div tag for holding the map object. After 
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Cell Towers in Washington (2010)</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"/>
+    <meta charset="utf-8">
+    <title>Earthquakes in Japan</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
     <style>
-
     </style>
-    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
 </head>
-<body>
-<!-- Our web map and content will go here -->
-<div id="map"></div>
-<script>
 
-</script>
+<body>
+    <div id="map"></div>
+    <script>
+    </script>
+
 </body>
+
 </html>
 ```
 
-**Full screen styling**
-
-To expand the map to the full screen, we set the width and height of `html`, `body`, and `#map` as `100%`, and no margin, background color as white.
-
-```css
-html, body, #map { width: 100%; height: 100%; margin: 0; background: #fff; }
-```
 
 **The Script**
 
-Inside the `script` tag,  we create a `mymap` variable to hold the leaflet map object. The first parameter of `L.map` object `'map'` is the `id` of the div to hold the map object.
+Inside the `script` tag,  we create a `map` as a variable to hold the mapboxgl map object. The first parameter `container` will anchor to the map element placeholder in the body element.
 
-Next, we add a `tileLayer` to add a base map to the `mymap` variable.
+In the style parameter, we can also add a basemap style. Mapbox dark style (mapbox://styles/mapbox/dark-v10) is selected.
 
 ```js
-// 1. Create a map object.
-var mymap = L.map('map', {
-    center: [47.7511, -120.7401],
-    zoom: 7,
-    maxZoom: 10,
-    minZoom: 3,
-    detectRetina: true // detect whether the sceen is high resolution or not.
+mapboxgl.accessToken =
+    'pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw';
+let map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/mapbox/streets-v11', // style URL
+    center: [-74.5, 40], // starting position [lng, lat]
+    zoom: 4 // starting zoom
 });
-
-// 2. Add a base map.
-L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(mymap);
 ```
 
-If you are using Atom, please open up the atom live server, and then navigate to the map1.html. If you follow the default setting of Atom, the URL address of map1.html should be `https://localhost:3000/labs/lab03/map1.html`.
+
+**Make the map full screen**
+
+To expand the map to the full screen, we set no margin and padding of the body element, and the map element will anchor to both the top and bottom. The width of the map will occupy the whole screen. 
+
+```css
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+```
+
+
+If you are using VS code, please open up the live server, and then navigate to 1_basic.html. If you follow the default setting of VS Code, the URL address of map1.html should be `http://127.0.0.1:5500/labs/lab03/1_basic.html`.
 
 ![](img/map1.png)
 
-The base map (in the format of `tile layer`) is provided by CartoDB. The light color stands out the principal features. In addition to switch to other map providers, please refer to [Leaflet providers](http://leaflet-extras.github.io/leaflet-providers/preview/).
+The dark color base map will enable the thematic year stands out. In addition to switch to other map style, please refer to [map style collection](https://www.mapbox.com/gallery/).
 
-**Add the Cell Towers Data**
+**Asynchrous geospatial data loading**
 
-Next, we want to add the cell tower data set to the map. Firstly, we need to include another Javascript library [`leaflet.ajax`](https://github.com/calvinmetcalf/leaflet-ajax) in the `head` element. This library will be used to read `GeoJson` data asynchronously.
-
-```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+Next, we want to add the earthquake data set to the map. 
 ```
 
-In the directory `assets`, you will find a geojson file - `celltowers.geojson`. Enter the following code snippet to add the cell towers to the map.
-
-```js
-// 3. Add cell towers GeoJSON Data
-// Null variable that will hold cell tower data
-var cellTowers = null;
-// Get GeoJSON and put on it on the map when it loads
-cellTowers= L.geoJson.ajax("assets/celltowers.geojson",{
-    attribution: 'Cell Tower Data &copy; HIFLD | Washington counties &copy; Washington Data & Research | Base Map &copy; CartoDB | Made By Bo Zhao'
-});
-// Add the cellTowers to the map.
-cellTowers.addTo(mymap);
-```
-
-The `cellTowers` object holds the GeoJSON data, and then it adds to the `mymap` object. Save and refresh your map. You should see the points populate. That is a lot of cell towers!
-
-Besides, to append some credit information to the Leaflet link at the right bottom corner, we will assign the `attribute` option the credit information, as shown below.
+In the directory `assets`, you will find a geojson file - `earthquakes.geojson`. Enter the following code snippet to add it to the map.
 
 ```javascript
-attribution: 'Cell Tower Data &copy; HIFLD | Washington counties &copy; Washington Data & Research | Base Map &copy; CartoDB | Made By Bo Zhao'
+map.on('load', () => { 
+    // when loading a geojson, there are two steps
+    // add a source of the data and then add the layer out of the source
+    map.addSource('earthquakes', {
+        type: 'geojson',
+        data: 'assets/earthquakes.geojson'
+    });
+
+    map.addLayer({
+        'id': 'earthquakes-layer',
+        'type': 'circle',
+        'source': 'earthquakes',
+        'paint': {
+            'circle-radius': 8,
+            'circle-stroke-width': 2,
+            'circle-color': 'red',
+            'circle-stroke-color': 'white'
+        }
+    });
+
+});
+
 ```
 
- Here, we add credit information about the data source and the map author's information. The map author should be your name.
+The map object will create a new data source `earthquakes`, and it then imports to the new `earthquakes-layer`. We set the default style of each earthquake as a black dot. But they will be refreshed into new styles after applying the proportional symbol strategies.
 
- Then, please open `map2.html` to see how the map looks like at this stage.
+Then, please open `map2.html` to see how the map looks like at this stage.
 
 ![](img/map2.png)
 
-## 2. Point Marker Visualization
+## 2. Proportional symbol visualization
 
-Right now, each cell tower is visualized as the default blue marker. To differentiate the cell tower ownership by color, we will introduce how to apply a custom icon using **Font Awesome** and how to make a color scheme with **Chroma.js**.
+First we need to define the grades of all magnitudes, the corresponding color radius.
 
-### 2.1 Create the color scheme for markers
 
-[**Font Awesome**](http://fontawesome.io/) allows you to add icons by CSS classes. To apply Font Awesome, you will need to include its CSS link in the `head` tag.
-
-```html
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+```javascript
+const grades = [4, 5, 6],
+    colors = ['rgb(208,209,230)', 'rgb(103,169,207)', 'rgb(1,108,89)'],
+    radius = [5, 15, 20];
 ```
 
-In addition, we will use another library `chroma.js` to colorize the icon and utilize `$` of `jQuery` to manipulate `html` elements. [Chroma.js](https://gka.github.io/chroma.js/) is a javascript library to manipulate colors. Therefore, we need to include both `chroma.js` and `jQuery` in the `head` tag.
+Then, I will apply these grades, colors and radius to symbolize each dot.
 
-```html
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.3.4/chroma.min.js"></script>
+```javascript
+'paint': {
+    // increase the radius of the circle as the zoom level and dbh value increases
+    'circle-radius': {
+        'property': 'mag',
+        'stops': [
+            [{
+                zoom: 5,
+                value: grades[0]
+            }, radius[0]],
+            [{
+                zoom: 5,
+                value: grades[1]
+            }, radius[1]],
+            [{
+                zoom: 5,
+                value: grades[2]
+            }, radius[2]]
+        ]
+    },
+    'circle-color': {
+        'property': 'mag',
+        'stops': [
+            [grades[0], colors[0]],
+            [grades[1], colors[1]],
+            [grades[2], colors[2]]
+        ]
+    },
+    'circle-stroke-color': 'white',
+    'circle-stroke-width': 1,
+    'circle-opacity': {
+        'stops': [
+            [3, 0],
+            [10, 1]
+        ]
+    }
+}
 ```
 
-Furthermore, we also need some predefined color ramp to symbolize geographic features. [ColorBrewer](http://colorbrewer2.org/) is an online tool designed to help people select good color schemes for maps and other graphics. It provides three types of palettes: sequential, diverging, and qualitative.
+When determining the colors, I need some predefined color ramp to symbolize geographic features. [ColorBrewer](http://colorbrewer2.org/) is an online tool designed to help people select good color schemes for maps and other graphics. It provides three types of palettes: sequential, diverging, and qualitative.
 
 -   Sequential palettes are suited to ordered data that progress from low to high.
 -   Diverging palettes are suited to centered data with extremes in either direction.
@@ -139,273 +185,91 @@ Furthermore, we also need some predefined color ramp to symbolize geographic fea
 
 > **Note:** Color palettes from Color Brewer.
 
-We need to create a set of random colors for representing cell towers of different companies. The color should follow the qualitative palettes because this palette can provide better visualization of the nominal data. Therefore, we select the `dark2` category (as shown in the figure above). Since there are nine cell tower types in Washington, we will create nine different colors. To apply these colors, we dynamically build classes and then embed these classes in `style` elements.  The style classes are from `marker-color-1` to `marker-color-12`. Each class includes a color `property`. Below is the code snippet.
 
-```javascript
-// 4. build up a set of colors from colorbrewer's dark2 category
-var colors = chroma.scale('Set2').mode('lch').colors(13);
 
-// 5. dynamically append style classes to this page. This style classes will be used for colorize the markers.
-for (i = 0; i < 13; i++) {
-    $('head').append($("<style> .marker-color-" + (i + 1).toString() + " { color: " + colors[i] + "; font-size: 15px; text-shadow: 0 0 3px #ffffff;} </style>"));
-}
-```
-
-> **Note:**  Refer to the color palettes from color brewer, and try other palettes such as `Set1`, `Dark2` , etc.
-
-### 2.2 Assign a style class to each company
-
-Next, we will assign a style class to each type of cell tower company. The twelve wireless companies are `New Cingular`, `Verizon`, `Cello`, `AT&T`, etc.  We number the company name from 0 to 12 and then assign the style class (from `marker-color-1` to `marker-color-12`) to markers. If the value of `feature.property.LICENSEE` is equal to "New Cingular", we set `marker-color-1` class to it, and so on so forth.
-
-Here we use `If.. Else` statement. To do this, we can put a conditional statement to see whether the value of the `feature.property.LICENSEE` variable is equal to a specific company name.  If it equals, we determine its id value, and if not, the else statement will run, setting other id value. Below is the code snippet.
-
-```javascript
-function (feature, latlng) {
-    var id = 0;
-    if (feature.properties.LICENSEE == "AT&T MOBILITY WIRELESS OPERATIONS HOLDINGS, INC.") { id = 0; }
-    else if (feature.properties.LICENSEE == "EASTERN SUB-RSA LIMITED PARTNERSHIP")  { id = 1; }
-    else if (feature.properties.LICENSEE == "MCDANIEL CELLULAR TELEPHONE COMPANY")  { id = 2; }
-    else if (feature.properties.LICENSEE == "NEW CINGULAR WIRELESS PCS, LLC")  { id = 3; }
-    else if (feature.properties.LICENSEE == "OREGON RSA #2, INC.")  { id = 4; }
-    else if (feature.properties.LICENSEE == "RCC MINNESOTA, INC.")  { id = 5; }
-    else if (feature.properties.LICENSEE == "SEATTLE SMSA LIMITED PARTNERSHIP")  { id = 6; }
-    else if (feature.properties.LICENSEE == "USCOC OF RICHLAND, INC.")  { id = 7; }
-    else if (feature.properties.LICENSEE == "USCOC OF WASHINGTON-4, INC.")  { id = 8; }
-    else if (feature.properties.LICENSEE == "VERIZON WIRELESS (VAW), LLC")  { id = 9; }
-    else if (feature.properties.LICENSEE == "WASHINGTON RSA #8 LIMITED PARTNERSHIP")  { id = 10; }
-    else if (feature.properties.LICENSEE == "WESTERN SUB-RSA LIMITED PARTNERSHIP")  { id = 11; }
-    else { id = 12;}
-    return L.marker(latlng, {icon: L.divIcon({className: 'fa fa-signal marker-color-' + (id + 1).toString() })});
-}
-```
-
-### 2.3. Apply an Icon
-
-We apply an icon to each marker. To apply that, you will link the class with the marker. Notably, a javascript object or HTML element can carry multiple classes. In our case, a class `fa` informs that the font awesome will be applied, and another class `fa-signal` informs that an icon showing a signal will be added. And other classes `marker-color-1~12` deal with color, font-size, as well as text-shadow.
-
-> **Note:** If you feel a little confused about the style properties of a class, please try to change the property value to some extreme numbers, and then see the differences. For example, you can change the font-size from 15 to 100, and then see what has been changed.
-
-**Use `point to layer` option of `L.geoJson.ajax` to set the icon**
-
-To set icons in a different color, we will use the `pointToLayer` option. `pointToLayer` runs a function when the geojson data is loaded. This option enables us to process each feature and return an `L.marker` object.
-
-```js
-pointToLayer: function (feature, latlng) {
-    var id = 0;
-    if (feature.properties.LICENSEE == "AT&T MOBILITY WIRELESS OPERATIONS HOLDINGS, INC.") { id = 0; }
-    else if (feature.properties.LICENSEE == "EASTERN SUB-RSA LIMITED PARTNERSHIP")  { id = 1; }
-    else if (feature.properties.LICENSEE == "MCDANIEL CELLULAR TELEPHONE COMPANY")  { id = 2; }
-    else if (feature.properties.LICENSEE == "NEW CINGULAR WIRELESS PCS, LLC")  { id = 3; }
-    else if (feature.properties.LICENSEE == "OREGON RSA #2, INC.")  { id = 4; }
-    else if (feature.properties.LICENSEE == "RCC MINNESOTA, INC.")  { id = 5; }
-    else if (feature.properties.LICENSEE == "SEATTLE SMSA LIMITED PARTNERSHIP")  { id = 6; }
-    else if (feature.properties.LICENSEE == "USCOC OF RICHLAND, INC.")  { id = 7; }
-    else if (feature.properties.LICENSEE == "USCOC OF WASHINGTON-4, INC.")  { id = 8; }
-    else if (feature.properties.LICENSEE == "VERIZON WIRELESS (VAW), LLC")  { id = 9; }
-    else if (feature.properties.LICENSEE == "WASHINGTON RSA #8 LIMITED PARTNERSHIP")  { id = 10; }
-    else if (feature.properties.LICENSEE == "WESTERN SUB-RSA LIMITED PARTNERSHIP")  { id = 11; }
-    else { id = 12;} // "Yakima MSA limited partnership"
-    return L.marker(latlng, {icon: L.divIcon({className: 'fa fa-signal marker-color-' + (id + 1).toString() })});
-}
-```
-
-> **Note:**  Two-equal signs (==)  is a very particular javascript operator. To read more, check out this documentation from `w3schools`.
-
-**Options available for `L.geoJson.ajax` include**:
-
--   `pointToLayer`: Function that will be used for creating layers for GeoJSON points (if not specified, simple markers will be created).
--   `style`: Function that will be used to get style options for vector layers created for GeoJSON features.
--   `onEachFeature`: Function that will be called on for each created feature layer. Useful for attaching events and popups to features.
--   `filter`: Function that will be used to decide whether to show a feature or not.
--   `coordsToLatLng`: Function that will be used for converting GeoJSON coordinates to `LatLng` points (if not specified, coordinates will be assumed to be WGS84 — standard [longitude, latitude] values in degrees).
-
-In addition to `pointToLayer`, we will use `onEachFeature` option to set the popup.
-
-```js
-// assign a function to the onEachFeature parameter of the cellTowers object.
-// Then each (point) feature will bind a popup window.
-// The content of the popup window is the value of `feature.properties.company`
-onEachFeature: function (feature, layer) {
-    layer.bindPopup(feature.properties.LOCCOUNTY);
-},
-```
-
- Please open **map3.html** to see how the map looks like. We have changed icon to cell tower!
-
-![](img/map3.png)
-
-## 3. Polygon Visualization
-
-In the `assets` directory, you will see another dataset  `wacountydata.geojson`. This file stores all the counties of Washington. Each county contains the number of cell towers; this number is pre-calculated in QGIS. To add the data to the map, create another `L.geoJson.ajax` object. Enter the following code at the end of your script, staying within the `script` tag.
-
-```js
-// create the county layer
-L.geoJson.ajax("assets/wacountydata.geojson").addTo(mymap);
-```
-
-Save and refresh your map. Counties of Washington will be displayed on the map, symbolized in a default blue.
-
-![](img/map3-1.png)
-
-Let us do something about that default blue and thematically style our data to these polygons useful by turning them into a choropleth layer. The `wacountydata.geojson` file contains numbers of cell towers in each county, calculated in QGIS.  To symbolize the counties by the number of counties, we will use the `style` option that contains styling properties.
-
-### 3.1 Set a sequential color palette
-
-The first step is to set up a function to create color classes.  One way to hard code the colors is to make the color scheme via QGIS or ArcGIS, selecting some classification rule like Jenk's Natural Breaks, and copy the break numbers as well as the color value. Alternatively, you can check out a color ramp from [colorbrewer2.org](<>). In this lab, you will use `chroma.js` to dynamically create an array of colors. Since the number of cell towers in each county is ordered data that progress from low to high, we will use a sequential color palette `YlOrRd` (meaning from Yellow, Orange to Red). Then, we develop a `setColor` function that returns the color value using the number of cell tower lying in a county. Add the following code snippet in the `script` tag.
-
-```js
-// 6. Set function for color ramp
-colors = chroma.scale('YlOrRd').colors(5);
-
-function setColor(density) {
-    var id = 0;
-    if (density > 61) { id = 4; }
-    else if (density > 46 && density <= 60) { id = 3; }
-    else if (density > 12 && density <= 45) { id = 2; }
-    else if (density > 3 &&  density <= 11) { id = 1; }
-    else  { id = 0; }
-    return colors[id];
-}
-```
-
-### 3.2 Apply the color palette
-
-Next, develop a function that will set the style option of  `L.geoJson.ajax()` object. We name this function `style`, and it can accept a GeoJson feature. Having the feature loaded, this function sets the `fillColor` property with `setColor` function as well as an input value - `feature.properties.CTNUM / (features.properties.POP/100000)`. Here we want to find the number of cell towers per 100k residents. Then, we add the following code snippet in the `script` element.
-
-```js
-// 7. Set style function that sets fill color.md property equal to cell tower density
-function style(feature) {
-    return {
-        fillColor: setColor(feature.properties.CTNUM / (feature.properties.POP/100000)),
-        fillOpacity: 0.4,
-        weight: 2,
-        opacity: 1,
-        color: '#b4b4b4',
-        dashArray: '4'
-    };
-}
-
-```
-
-While `fillColor` and `fillOpacity` properties are for the fill; `weight`, `opacity`, `color`, and `dashArray` properties are for the border.
-
-### 3.3 Set style option
-
-The final step is to set the style option for the county layer. Below shows the code of adding the county polygons to the map, and also applying the style.
-
-```js
-// 8. Add county polygons
-L.geoJson.ajax("assets/wacountydata.geojson", {
-    style: style
-}).addTo(mymap);
-```
-
-Save and refresh the html page. Open `map4.html`  to see our styled polygons!
-
-![](img/map4.png)
-
-## 4. Map Elements
-
-Now we add a legend to help the audience to read this map. To do this, the main Leaflet object is the `Control` object, or `L.control`. It allows for adding various elements to your map.
-
-### 4.1 Add a Legend
+## 3 Add a Legend
 
 Adding a legend is easy, but requires quite a bit of code. The workflow to create a legend involves creating a Leaflet control, setting the control to populate with HTML that represents the legend components, and styling the HTML with CSS, so they appear correctly on our screen. I am going to throw a bit more code at you this time, and we will walk through what it is doing. Enter the following block of code to your `script`.
 
 ```js
-// 9. Create Leaflet Control Object for Legend
-var legend = L.control({position: 'topright'});
+// create legend
+const legend = document.getElementById('legend');
 
-// 10. Function that runs when legend is added to map
-legend.onAdd = function () {
+//set up legend grades and labels
+var labels = ['<strong>Size</strong>'], from, to;
+//iterate through grades and create a scaled circle and label for each
+for (var i = 0; i < grades.length; i++) {
+    from = grades[i];
+    to = grades[i + 1];
+    dot_radius = 2 * radius[i];
+    labels.push(
+        '<p class="break"><i class="dot" style="background:' + colors[i] + '; width: ' + dot_radius +
+        'px; height: ' +
+        dot_radius + 'px; "></i> <span class="dot-label" style="top: ' + dot_radius / 2 + 'px;">' + from +
+        '</span></p>');
 
-    // Create Div Element and Populate it with HTML
-    var div = L.DomUtil.create('div', 'legend');
-    div.innerHTML += '<b># Cell Tower per 100k residents</b><br />';
-    div.innerHTML += '<i style="background: ' + colors[4] + '; opacity: 0.5"></i><p> 61+ </p>';
-    div.innerHTML += '<i style="background: ' + colors[3] + '; opacity: 0.5"></i><p> 46-60 </p>';
-    div.innerHTML += '<i style="background: ' + colors[2] + '; opacity: 0.5"></i><p> 12-45 </p>';
-    div.innerHTML += '<i style="background: ' + colors[1] + '; opacity: 0.5"></i><p> 3-11 </p>';
-    div.innerHTML += '<i style="background: ' + colors[0] + '; opacity: 0.5"></i><p> 0-2 </p>';
-    div.innerHTML += '<hr><b>Company<b><br />';
-    div.innerHTML += '<i class="fa fa-signal marker-color-1"></i><p> AT&T </p>';
-    div.innerHTML += '<i class="fa fa-signal marker-color-2"></i><p> Eastern Sub-RSA </p>';
-    div.innerHTML += '<i class="fa fa-signal marker-color-3"></i><p> McDaniel </p>';
-    div.innerHTML += '<i class="fa fa-signal marker-color-4"></i><p> New Cingular </p>';
-    div.innerHTML += '<i class="fa fa-signal marker-color-5"></i><p> Oregon RSA </p>';
-    div.innerHTML += '<i class="fa fa-signal marker-color-6"></i><p> RCC Minnesota </p>';
-    div.innerHTML += '<i class="fa fa-signal marker-color-7"></i><p> Seattle SMSA </p>';
-    div.innerHTML += '<i class="fa fa-signal marker-color-8"></i><p> US Cellular - Richland </p>';
-    div.innerHTML += '<i class="fa fa-signal marker-color-9"></i><p> US Cellular -Washington </p>';
-    div.innerHTML += '<i class="fa fa-signal marker-color-10"></i><p> Verizon </p>';
-    div.innerHTML += '<i class="fa fa-signal marker-color-11"></i><p> Washington RSA </p>';
-    div.innerHTML += '<i class="fa fa-signal marker-color-12"></i><p> Western Sub-RSA </p>';
-    div.innerHTML += '<i class="fa fa-signal marker-color-13"></i><p> Yakima </p>';
-    // Return the Legend div containing the HTML content
-    return div;
+}
+const source =
+    '<p style="text-align: right; font-size:10pt">Source: <a href="https://earthquake.usgs.gov/earthquakes/">USGS</a></p>';
+
+legend.innerHTML = labels.join('') + source;
 };
-
-// 11. Add a legend to map
-legend.addTo(mymap);
 
 ```
 
-Specifically, we created an instance of a  **Leaflet Control object**, calling it legend, and used the position option to tell it to locate in the top right of our map. Next, we used the `onAdd` method of the control to run a function when the legend is added. That function created a new div in the DOM, giving it a class of legend. This allowed the CSS to style everything using the legend element. In the newly created div, we are going to populate it with HTML by using a built-in JavaScript DOM method called innerHTML. Using innerHTML allows us to change the content of the HTML and add to the legend div. Using the plus-equal `+=` instead of equal `=` is the syntax for append. Every time this is used, code following is appended to the existing code. In this, we write the HTML we want to use in our legend. Note, the `i` tag represents our legend icons. Within the HTML, fill in the colors and ranges so that they match our data classification. After the HTML is appended, return the div element. Lastly, add the legend to the map.
-
-> **Note:** Instead of using innerHTML, what in jQuery can we use to do the same task?
 
 **Use CSS to Style**
 
 If we save and refresh, the items you see will not make much sense. We need to use CSS to give them placement and organization on the page. The following CSS code will style our elements. Enter it between the style tags in the head of your HTML document. Like above, we will then walk through what it does.
 
 ```css
-.legend {
-    line-height: 16px;
-    width: 180px;
-    color: #333333;
-    padding: 6px 8px;
-    background: white;
-    background: rgba(255,255,255,0.5);
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    border-radius: 5px;
+
+/* the layout of the legend panel */
+#legend {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    margin-right: 20px;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100px;
 }
 
-.legend i {
-    width: 16px;
-    height: 16px;
-    float: left;
-    margin-right: 8px;
-    opacity: 0.9;
+/* each line for a break */
+.break {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
 }
 
-.legend img {
-    width: 16px;
-    height: 16px;
-    margin-right: 3px;
-    float: left;
+/* basic style for a dot/circle */
+.dot {
+    display: inline-block;
+    margin-top: 5px;
+    border-radius: 50%;
+    opacity: 0.6;
 }
 
-.legend p {
-    font-size: 12px;
-    line-height: 16px;
-    margin: 0;
+/* the label for the dot */
+.dot-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-style: italic;
+}
+
+/* the text color of a hyper link */
+a {
+    color: black
 }
 ```
 
 First, we set properties for the legend using `.legend` to style the legend class. We set a line height, color, font, padding, background, drop shadow, and border corner radius. Next, we set our icon (`i`) tag. This should be set to float: left; so that elements will align into columns, then we set properties for the image (`img`) tag, making them the same size and giving them the same float as the icons. Lastly, we style our paragraph tag (`p`), making sure line-height is consistent with the others. Save and refresh your map. You should see your styled legend applied to your map.
 
-### 4.2 Add a Scale Bar
-
-The Leaflet Control object allows you to add several elements, including attribution and zoom controls. To add a scale bar, please enter the following line to add a scale bar to your map.
-
-```js
-// 12. Add a scale bar to map
-L.control.scale({position: 'bottomleft'}).addTo(mymap);
-```
-
-Save and refresh the html page. Open `map4.html`  to see the legend and scale bar.
-
-### 4.3 Change the fonts
+### 4 Change the fonts
 
 Choosing fonts is an essential part of cartography, and an often overlooked one. Right now, our map uses the default Browser font, usually Times New Roman. To edit fonts, we want to style CSS. In CSS, there are many options for fonts; for more reading, check out the [w3schools font documentation](http://www.w3schools.com/css/css_font.asp).
 
@@ -433,30 +297,43 @@ Save and refresh your map. Or open `map5.html`.  `Open Sans` will now be your pr
 
 ## 5. Deliverable
 
-After you successfully deploy this cell tower map, you are expected to build another web map of airports in the United States. In the `assets` directory of this lab, you will see two geojson files: one is [`airports.geojson`](assets/airports.geojson), another is [`us-states.geojson`](assets/us-states.geojson).
+After you successfully deploy this earthquake map, you are expected to build another thematic map of COVID-19 cases and rates in the United States.
 
-`airports.geojson` contains all the airports in the United States. This data is converted from a shapefile, which was downloaded and unzipped from <https://catalog.data.gov/dataset/usgs-small-scale-dataset-airports-of-the-united-states-201207-shapefile>. For each airport feature, the field `CNTL_TWR` indicates whether the airport has an air traffic control tower or not. If there is a tower, the value of `CNTL_TWR` is 'Y', otherwise 'N'. You may need to find an appropriate icon on `font awesome`. **(7 points)**
+Whenever we are working with data, it’s very important that we understand the nature of the data and the intellectual context within which it operates. In the `assets` directory of this lab, you will see a zipped file named after "us-covid-2020.zip". after you unzipped it, you will find two set of shapefiles files: us-covid-2020-rates and us-covid-2020-counts. The COVID-19 case/death data you will be using are originally from [The New York Times](https://github.com/nytimes/covid-19-data/blob/43d32dde2f87bd4dafbb7d23f5d9e878124018b8/live/us-counties.csv). The data include all the cases in 2020. The population data used for calculating the case rates are from the [2018 ACS 5 year estimates](https://data.census.gov/cedsci/table?g=0100000US.050000&d=ACS%205-Year%20Estimates%20Data%20Profiles&tid=ACSDP5Y2018.DP05&hidePreview=true). Both data are at the county level. The U.S. county boundary shapefile was downloaded from [the U.S. Census Bureau](https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html). The data have been processed by us in order to suit the purpose of this lab. The case rate is calculated as cases per thousand residents. When you go further into GIS, you will find that, for most of the time, you will need to process the data by yourself before actually mapping it.
 
-`us-states.geojson` is a geojson data file containing all the states' boundaries of the United States. This data is acquired from [Mike Bostock](http://bost.ocks.org/mike) of [D3](http://d3js.org/). The `count` field indicates the number of airports within the boundary of the state under investigation. So please make a choropleth map based on the number of airports within each state.  **(7 points)**
+For your lab deliverable, you need to create a github repository to host two thematic maps, one is a choropleth map of the covid-19 rates and the other is a proportional symbols map of covid-19 cases. If you have taken the course "Web and Mobile GIS", you must be very familiar with choropleth map making, but if you are not familiar with it, you can walk through this [step-by-step lab tutorial](https://github.com/jakobzhao/geog495/tree/main/labs/lab04) before making the choropleth map. The choropleth map should be compiled in the map1.html page, while the proportional symbols map should be in map2.html.  You are expected to submit the url of the GitHub repository to the Canvas Dropbox of this course. This url should be in the format of https://www.github.com/[your_github_username]/[your_repository_name].
 
--   an appropriate basemap;  **(7 points)**
--   some interactive elements, like a clickable marker; **(8 points)**
--   some map elements, such as legend, scale bar, credit;  **(8 points)**
--   write up a project description in the `readme.md` file. This file will introduce the project name, a brief introduction, the primary functions(especially the function which was not covered in the lectures), libraries, data sources, credit, acknowledgment, and other necessary information. **(8 points)**
+We expect the followings for your deliverable:
 
--   you will need to synchronize this project to a GitHub repository. And make sure the web map is accessible from a URL link, which should be similar to `http://[your_github_username].github.io/[your_repository_name]/index.html`. (To do that, you may want to check out a previous lecture or lab handouts on how to host a repository on GitHub pages.); **(6 points)**
+- the shapefiles have been properly converted to geojson data. We expect the geojson has the right projection, the unused attributes has been deleted, the geometric shapes has been simplified (e.g., using [mapshaper](https://mapshaper.org/)). **(4 points)**
 
-> **Note:** Please make sure the name of your repository is **NOT** `lab03` or similar, use a name that can describe the theme of the map you will make. Think about that, which one do you prefer? - showing your future employer or Ph.D. admission committee a lot of course work on GitHub or a list of professional projects.
+- for each map:
+  -   an appropriate basemap for each map;  **(2 points per map)**
 
--   please make sure the internal structure of the files in your project repository is well organized. For example, it may be similar to the file structure below. **(5 points)**
+  -   a fully-functioning thematic layer for each map;  **(4 points for map)**
+
+  -   a legend for each map;  **(4 points for map)**
+
+  -   some interactive elements, like a clickable dot; **(4 points for map)**
+
+  -   supplementary information, like the map title, map description, users, the data sources; **(2 points per map)**
+
+-   write up a project description in the `readme.md` file. This file will introduce the project name, a brief introduction, links to the map, screenshots, the primary functions(especially the function which was not covered in the lectures), libraries in use, data sources, credit, acknowledgment, and other necessary information. **(6 points)**
+
+-   synchronize this project to a GitHub repository. Make sure both maps can be properly visualized using the url https://[your_github_username].github.io/[your_repository_name]/map1.html or map2.html. (To do that, you may want to check out a previous lecture or lab handouts on how to host a repository on GitHub pages.); **(4 points)**
+
+> **Note:** Please make sure the name of your repository is **NOT** `lab03` or similar, use a name that can describe the theme of the map you will make.
+
+-   please make sure the internal structure of the files in your project repository is well organized. For example, it may be similar to the file structure below. **(4 points)**
 
 ```powershell
 [your_repository_name]
-    │index.html
+    │map1.html
+    │map2.html
     │readme.md
     ├─assets
-    │      airports.geojson
-    │      us-states.geojson
+    │      us-covid-2020-counts.geojson
+    │      us-covid-2020-rates.geojson
     ├─css
     │      main.css
     ├─img
@@ -464,23 +341,10 @@ After you successfully deploy this cell tower map, you are expected to build ano
     └─js
             main.js
 ```
-- Finally, submit your repository URL under `Lab 3. An integrative web mapping` on Canvas.
+- Finally, submit your repository URL under `Lab 3` on Canvas.
 
-#### Optional tasks:
-
--   Try to add on a feature of the leaflet which we have not discussed in class. The new features can be found on [the plugin page](https://leafletjs.com/plugins.html) of the leafet. **(5 points)**
 
 
 ## Acknowledgement
 
-This lab was originally designed in the context of Oregon.  I appreciate Kevin Ko's assistance in upgrading the lab material.
-
-## Reference
-
-[1] Map Symbolization <http://duspviz.mit.edu/web-map-workshop/map-symbolization/>
-
-[2] Data source: <https://hifld-geoplatform.opendata.arcgis.com/datasets/0835ba2ed38f494196c14af8407454fb_0?geometry=-126.488%2C45.696%2C-112.612%2C48.318>
-
-[3] Boundary: <https://www.ofm.wa.gov/washington-data-research/population-demographics/gis-data/census-geographic-files>
-
-[4] Add topojson instead of geojson <http://blog.webkid.io/maps-with-leaflet-and-topojson/>
+The data has bee processed by Steven Bao, I appreciate Steven's assistance in creating the labe data.
