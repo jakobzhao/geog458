@@ -78,8 +78,7 @@ body {
 }
 ```
 
-
-If you are using VS code, please open up the live server, and then navigate to 1_basic.html. If you follow the default setting of VS Code, the URL address of map1.html should be `http://127.0.0.1:5500/labs/lab03/1_basic.html`.
+If you are using VS code, please open up the live server, and then navigate to 1_basic.html. If you follow the default setting of VS Code, the URL address of map1.html should be `http://127.0.0.1:5500/labs/lab03/map1.html`.
 
 ![](img/map1.png)
 
@@ -87,7 +86,7 @@ The dark color base map will enable the thematic year stands out. In addition to
 
 **Asynchrous geospatial data loading**
 
-Next, we want to add the earthquake data set to the map. 
+Next, we want to add the earthquake data set to the map.
 ```
 
 In the directory `assets`, you will find a geojson file - `earthquakes.geojson`. Enter the following code snippet to add it to the map.
@@ -104,13 +103,7 @@ map.on('load', () => {
     map.addLayer({
         'id': 'earthquakes-layer',
         'type': 'circle',
-        'source': 'earthquakes',
-        'paint': {
-            'circle-radius': 8,
-            'circle-stroke-width': 2,
-            'circle-color': 'red',
-            'circle-stroke-color': 'white'
-        }
+        'source': 'earthquakes'
     });
 
 });
@@ -175,7 +168,7 @@ Then, I will apply these grades, colors and radius to symbolize each dot.
 }
 ```
 
-When determining the colors, I need some predefined color ramp to symbolize geographic features. [ColorBrewer](http://colorbrewer2.org/) is an online tool designed to help people select good color schemes for maps and other graphics. It provides three types of palettes: sequential, diverging, and qualitative.
+When determining the colors, you need some predefined color ramp to symbolize geographic features. [ColorBrewer](http://colorbrewer2.org/) is an online tool designed to help people select good color schemes for maps and other graphics. It provides three types of palettes: sequential, diverging, and qualitative.
 
 -   Sequential palettes are suited to ordered data that progress from low to high.
 -   Diverging palettes are suited to centered data with extremes in either direction.
@@ -183,10 +176,9 @@ When determining the colors, I need some predefined color ramp to symbolize geog
 
 ![](img/colorbrewer.jpg)
 
-> **Note:** Color palettes from Color Brewer.
+Then, please open `map3.html` to see how the map looks like at this stage.
 
-
-
+![](img/map3.png)
 ## 3 Add a Legend
 
 Adding a legend is easy, but requires quite a bit of code. The workflow to create a legend involves creating a Leaflet control, setting the control to populate with HTML that represents the legend components, and styling the HTML with CSS, so they appear correctly on our screen. I am going to throw a bit more code at you this time, and we will walk through what it is doing. Enter the following block of code to your `script`.
@@ -269,6 +261,10 @@ a {
 
 First, we set properties for the legend using `.legend` to style the legend class. We set a line height, color, font, padding, background, drop shadow, and border corner radius. Next, we set our icon (`i`) tag. This should be set to float: left; so that elements will align into columns, then we set properties for the image (`img`) tag, making them the same size and giving them the same float as the icons. Lastly, we style our paragraph tag (`p`), making sure line-height is consistent with the others. Save and refresh your map. You should see your styled legend applied to your map.
 
+Then, please open `map4.html` to see how the map looks like at this stage.
+
+![](img/map4.png)
+
 ### 4 Change the fonts
 
 Choosing fonts is an essential part of cartography, and an often overlooked one. Right now, our map uses the default Browser font, usually Times New Roman. To edit fonts, we want to style CSS. In CSS, there are many options for fonts; for more reading, check out the [w3schools font documentation](http://www.w3schools.com/css/css_font.asp).
@@ -308,13 +304,15 @@ We expect the followings for your deliverable:
 - the shapefiles have been properly converted to geojson data. We expect the geojson has the right projection, the unused attributes has been deleted, the geometric shapes has been simplified (e.g., using [mapshaper](https://mapshaper.org/)). **(4 points)**
 
 - for each map:
-  -   an appropriate basemap for each map;  **(2 points per map)**
+  -   use appropriate zoom level, map center, please apply "Albers" projection for this map. **(2 points per map)**
+  
+  -   an appropriate basemap for each map;  **(1 points per map)**
 
   -   a fully-functioning thematic layer for each map;  **(4 points for map)**
 
   -   a legend for each map;  **(4 points for map)**
 
-  -   some interactive elements, like a clickable dot; **(4 points for map)**
+  -   some interactive elements, like a clickable dot; **(3 points for map)**
 
   -   supplementary information, like the map title, map description, users, the data sources; **(2 points per map)**
 
