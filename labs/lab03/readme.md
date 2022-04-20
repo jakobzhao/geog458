@@ -2,7 +2,7 @@
 
 **Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu; **Points Available** = 50
 
-In this lab, we will design a web map application. This application is a proportional symbol map of earthquakes near Japan. When creating a web map, one of the critical components is styling your elements to provide proper symbolization for your data. This increases legibility for users and can give your map an appealing, custom design. Elements that can be customized to include thematic layers (i.e., choropleth, proportional symbols, dot density, etc), base maps, interactive features (the components of the map that allow for user interaction), and legends and supplemental information (such as credits, etc.). The earthquake data is from USGS earthquake catalog. Below is the web map you will make by walking through this lab handout.
+In this lab, we will design a web map application. This application is a proportional symbol map of earthquakes near Japan in 2017. When creating a web map, one crucial work is to symbolize the map elements to provide proper message about the raw data. This increases legibility for users and can give your map an appealing, custom design. An thematic map can includes base maps, thematic layers (i.e., choropleth, proportional symbols, dot density, etc), and interactive features (the components of the map that allow for user interaction). To make this map, we have gathered earthquakes taking place near Japan in September 2017. The data are from USGS earthquake catalog. Below is the web map you will make after walking through this lab handout.
 
 ![](img/final_map.png)
 
@@ -10,7 +10,7 @@ To get started, please synchronize the course material to the working space of y
 
 ## 1. Display the map and load geospatial data
 
-In your IDE (VS Code, or any other alternatives you are familiar), open `1_basic.html` to prepare for editing.
+In your IDE (VS Code, or any other alternatives you are familiar), open `map1.html` to prepare for editing.
 
 In this file, you will see the structure of a basic HTML page.
 
@@ -41,7 +41,6 @@ Inside the `body` tag, we put a `map` div tag for holding the map object. After 
 </html>
 ```
 
-
 **The Script**
 
 Inside the `script` tag,  we create a `map` as a variable to hold the mapboxgl map object. The first parameter `container` will anchor to the map element placeholder in the body element.
@@ -59,10 +58,9 @@ let map = new mapboxgl.Map({
 });
 ```
 
-
 **Make the map full screen**
 
-To expand the map to the full screen, we set no margin and padding of the body element, and the map element will anchor to both the top and bottom. The width of the map will occupy the whole screen. 
+To expand the map to the full screen, we set no margin and padding of the body element, and the map element will anchor to both the top and bottom. The width of the map will occupy the whole screen.
 
 ```css
 body {
@@ -78,23 +76,18 @@ body {
 }
 ```
 
-If you are using VS code, please open up the live server, and then navigate to 1_basic.html. If you follow the default setting of VS Code, the URL address of map1.html should be `http://127.0.0.1:5500/labs/lab03/map1.html`.
+If you are using VS code, please turn on the live server, map1 will be shown on your browser. If your VS code follows the default setting, the URL address of map1.html should be `http://127.0.0.1:5500/labs/lab03/map1.html`.
 
 ![](img/map1.png)
 
-The dark color base map will enable the thematic year stands out. In addition to switch to other map style, please refer to [map style collection](https://www.mapbox.com/gallery/).
+The dark color base map will enable the thematic layer stand out. If you want to change the base map, please refer to [map style collection](https://www.mapbox.com/gallery/).
 
-**Asynchrous geospatial data loading**
+## 2. Asynchronous geospatial data loading
 
-Next, we want to add the earthquake data set to the map.
-```
-
-In the directory `assets`, you will find a geojson file - `earthquakes.geojson`. Enter the following code snippet to add it to the map.
+Next, we want to add the earthquake data set to the map. In the directory `assets`, you will find a geojson file - `earthquakes.geojson`. Enter the following code snippet to add it to the map.
 
 ```javascript
-map.on('load', () => { 
-    // when loading a geojson, there are two steps
-    // add a source of the data and then add the layer out of the source
+map.on('load', () => {
     map.addSource('earthquakes', {
         type: 'geojson',
         data: 'assets/earthquakes.geojson'
@@ -107,25 +100,31 @@ map.on('load', () => {
     });
 
 });
-
 ```
 
-The map object will create a new data source `earthquakes`, and it then imports to the new `earthquakes-layer`. We set the default style of each earthquake as a black dot. But they will be refreshed into new styles after applying the proportional symbol strategies.
+The operator `=>` is a convenient way to define a function. It could also be expanded to
 
-Then, please open `map2.html` to see how the map looks like at this stage.
+```javascript
+map.on('load', function loadingdata() {
+    ... ...
+    ... ...
+});
+```
+The map object will create a new data source `earthquakes`, and it then imports to the new `earthquakes-layer`. The default style of each earthquake is a black dot. But it will be refreshed into new styles after applying the proportional symbol strategies. You can open `map2.html` to see how the map looks like at this stage.
 
 ![](img/map2.png)
 
-## 2. Proportional symbol visualization
+## 3. Proportional symbol visualization
 
-First we need to define the grades of all magnitudes, the corresponding color radius.
-
+First we need to define the grades of all magnitudes, the corresponding colors and radii.
 
 ```javascript
-const grades = [4, 5, 6],
-    colors = ['rgb(208,209,230)', 'rgb(103,169,207)', 'rgb(1,108,89)'],
-    radius = [5, 15, 20];
+const grades = [4, 5, 6], 
+      colors = ['rgb(208,209,230)', 'rgb(103,169,207)', 'rgb(1,108,89)'], 
+      radii = [5, 15, 20];
 ```
+
+
 
 Then, I will apply these grades, colors and radius to symbolize each dot.
 

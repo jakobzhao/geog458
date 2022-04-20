@@ -36,7 +36,7 @@
 
         const grades = [4, 5, 6],
             colors = ['rgb(208,209,230)', 'rgb(103,169,207)', 'rgb(1,108,89)'],
-            radius = [5, 15, 20];
+            radii = [5, 15, 20];
 
         //load data to the map as new layers.
         //map.on('load', function loadingData() {
@@ -55,22 +55,22 @@
                     'source': 'earthquakes',
                     'minzoom': 5,
                     'paint': {
-                        // increase the radius of the circle as the zoom level and dbh value increases
+                        // increase the radii of the circle as the zoom level and dbh value increases
                         'circle-radius': {
                             'property': 'mag',
                             'stops': [
                                 [{
                                     zoom: 5,
                                     value: grades[0]
-                                }, radius[0]],
+                                }, radii[0]],
                                 [{
                                     zoom: 5,
                                     value: grades[1]
-                                }, radius[1]],
+                                }, radii[1]],
                                 [{
                                     zoom: 5,
                                     value: grades[2]
-                                }, radius[2]]
+                                }, radii[2]]
                             ]
                         },
                         'circle-color': {

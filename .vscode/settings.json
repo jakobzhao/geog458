@@ -5,6 +5,7 @@
         "choropleth",
         "geosearch",
         "Geovisualizations",
+        "loadingdata",
         "placemarks",
         "servlet"
     ],

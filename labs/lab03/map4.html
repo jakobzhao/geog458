@@ -79,7 +79,7 @@
 
         const grades = [4, 5, 6],
             colors = ['rgb(208,209,230)', 'rgb(103,169,207)', 'rgb(1,108,89)'],
-            radius = [5, 15, 20];
+            radii = [5, 15, 20];
 
         //load data to the map as new layers.
         //map.on('load', function loadingData() {
@@ -98,22 +98,22 @@
                     'source': 'earthquakes',
                     'minzoom': 5,
                     'paint': {
-                        // increase the radius of the circle as the zoom level and dbh value increases
+                        // increase the radii of the circle as the zoom level and dbh value increases
                         'circle-radius': {
                             'property': 'mag',
                             'stops': [
                                 [{
                                     zoom: 5,
                                     value: grades[0]
-                                }, radius[0]],
+                                }, radii[0]],
                                 [{
                                     zoom: 5,
                                     value: grades[1]
-                                }, radius[1]],
+                                }, radii[1]],
                                 [{
                                     zoom: 5,
                                     value: grades[2]
-                                }, radius[2]]
+                                }, radii[2]]
                             ]
                         },
                         'circle-color': {
@@ -159,11 +159,11 @@
         for (var i = 0; i < grades.length; i++) {
             from = grades[i];
             to = grades[i + 1];
-            dot_radius = 2 * radius[i];
+            dot_radii = 2 * radii[i];
             labels.push(
-                '<p class="break"><i class="dot" style="background:' + colors[i] + '; width: ' + dot_radius +
+                '<p class="break"><i class="dot" style="background:' + colors[i] + '; width: ' + dot_radii +
                 'px; height: ' +
-                dot_radius + 'px; "></i> <span class="dot-label" style="top: ' + dot_radius / 2 + 'px;">' + from +
+                dot_radii + 'px; "></i> <span class="dot-label" style="top: ' + dot_radii / 2 + 'px;">' + from +
                 '</span></p>');
 
         }
