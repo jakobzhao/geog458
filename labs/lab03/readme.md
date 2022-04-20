@@ -4,7 +4,7 @@
 
 In this lab, we will design a web map application. This application is a proportional symbol map of earthquakes near Japan in 2017. When creating a web map, one crucial work is to symbolize the map elements to provide proper message about the raw data. This increases legibility for users and can give your map an appealing, custom design. An thematic map can includes base maps, thematic layers (i.e., choropleth, proportional symbols, dot density, etc), and interactive features (the components of the map that allow for user interaction). To make this map, we have gathered earthquakes taking place near Japan in September 2017. The data are from USGS earthquake catalog. Below is the web map you will make after walking through this lab handout.
 
-![](img/final_map.png)
+![](img/map-final.png)
 
 To get started, please synchronize the course material to the working space of your local computer. The material for this lab is located at `[your_working_space]/geog458/labs/lab03`. Next, open the course material in VS Code.
 
@@ -173,13 +173,33 @@ When determining the colors, you need some predefined color ramp to symbolize ge
 
 ![](img/colorbrewer.jpg)
 
+
+After symbolizing the dots, we will make each dot interactive. Once clicking on the dot, the magnitude information will appear.
+
+```javascript
+// click on tree to view magnitude in a popup
+map.on('click', 'earthquakes-point', (event) => {
+    new mapboxgl.Popup()
+        .setLngLat(event.features[0].geometry.coordinates)
+        .setHTML(`<strong>Magnitude:</strong> ${event.features[0].properties.mag}`)
+        .addTo(map);
+});
+```
+
 Then, please open `map3.html` to see how the map looks like at this stage.
 
 ![](img/map3.png)
 ## 4. Add a Legend
 
-Adding a legend is easy, but requires quite a bit of code. The workflow to create a legend involves creating a place holder in the html, coding a legend object in order to add components, and styling the HTML with CSS. I am going to throw a bit more code at you this time, and we will walk through what it is doing. Enter the following block of code to your `script`.
+Adding a legend requires quite a bit of code. The workflow to create a legend involves creating a place holder in the html, coding a legend object in order to add components, and styling the HTML with CSS. I am going to throw a bit more code at you this time, and we will walk through what it is doing. Enter the following block of code to your `script`.
 
+**Creat a place hoder in the html**
+
+First, we will create a place holder for the legend right after the map element.
+
+```html
+<div id="legend"></div>
+```
 
 **Coding the legend object**
 
@@ -188,27 +208,29 @@ Adding a legend is easy, but requires quite a bit of code. The workflow to creat
 const legend = document.getElementById('legend');
 
 //set up legend grades and labels
-var labels = ['<strong>Size</strong>'], from, to;
+var labels = ['<strong>Size</strong>'], vbreak;
 //iterate through grades and create a scaled circle and label for each
 for (var i = 0; i < grades.length; i++) {
-    from = grades[i];
-    to = grades[i + 1];
+    vbreak = grades[i];
+    // you need to manually adjust the radius of each dot on the legend 
+    // in order to make sure the legend can be properly referred to the dot on the map.
     dot_radius = 2 * radius[i];
     labels.push(
         '<p class="break"><i class="dot" style="background:' + colors[i] + '; width: ' + dot_radius +
         'px; height: ' +
-        dot_radius + 'px; "></i> <span class="dot-label" style="top: ' + dot_radius / 2 + 'px;">' + from +
+        dot_radius + 'px; "></i> <span class="dot-label" style="top: ' + dot_radius / 2 + 'px;">' + vbreak +
         '</span></p>');
 
 }
+
 const source =
     '<p style="text-align: right; font-size:10pt">Source: <a href="https://earthquake.usgs.gov/earthquakes/">USGS</a></p>';
 
+// combine all the html codes.
 legend.innerHTML = labels.join('') + source;
-};
+
 
 ```
-
 
 **Style with CSS**
 
@@ -259,7 +281,13 @@ a {
 }
 ```
 
-First, we set properties for the legend using `#legend` to style the legend element. Next, we set the basic style for each symbol that includes both the symbol `dot` and the label `dot-label`. To make the color consistent, we recolor the text of any hyperlink `a` as black. Save and refresh your map. You should see your styled legend applied to your map.
+We set properties for the legend using `#legend` to style the legend element. Next, we set the basic style for each symbol that includes both the symbol `dot` and the label `dot-label`. To make the color consistent, we recolor the text of any hyperlink `a` as black. Save and refresh your map. You should see your styled legend applied to your map.
+
+
+It is worth noting that, creating a legend for a proportional symbol can be labor-intensive. If you look at the line `dot_radius = 2 * radius[i]`, you may wonder how I determine the dot radius on the legend would be twice as large as the dot radius on the map. Frankly speaking, I manually tested different options by times the radius with different constant value, in the end, I found out a constant number `2` would suffice. I have not found an efficient way to automate the process of determining an appropriate dot radius for the legend.
+
+Based on my experience, an easier way starts from determining which magnitude level breaks you plan to put on the legend. Once the specific breaks have been determined, you can compare the legend dot to the map dot of the same value. For example, I first picked magnitude 6, and then multiple it by 1/3, 1/2, 3, 2. Comparing the legend dot with an dot illustrating an earthquake with Magnitude 6, finally, I found 2 would be the best number to make the two dots in equal size.  
+
 
 Then, please open `map4.html` to see how the map looks like at this stage.
 
@@ -290,6 +318,66 @@ Next, to style all text in our document with the `Open Sans` font, modify the `#
 Save and refresh your map. Or open `map5.html`.  `Open Sans` will now be your preferred font for legend panel!
 
 ![](img/map5.png)
+
+
+### 6. supplementary components
+
+To the end, I will add a map title "Earthquakes near Japan (September, 2017)," to the top left of this map. Also, I save the javascript code to the js folder as `main.js`, the css to the css folder as `style.css`. And then link them in the html `index.html` in the header.  Below is the code snippet.
+
+**add a place holder**
+
+```html
+<div id="title">
+    Earthquakes in Japan
+</div>
+<div id="subtitle">
+    September 2017
+</div>
+```
+
+**style the titles***
+
+```css
+
+#title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25pt;
+    color: white
+}
+
+
+#subtitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 70px;
+    margin-left: 190px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15pt;
+    color: white
+}
+```
+
+**add external links**
+
+```html
+<head>
+    ... ...
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+    ... ...
+    <script src="js/main.js"></script>
+</body>
+```
+
+Then, please open `index.html` to see how the map looks like at this stage. Congratulatons!
 
 ## 6. Deliverable
 
@@ -333,7 +421,7 @@ We expect the followings for your deliverable:
     │      us-covid-2020-counts.geojson
     │      us-covid-2020-rates.geojson
     ├─css
-    │      main.css
+    │      style.css
     ├─img
     │      xxx.jpg
     └─js
