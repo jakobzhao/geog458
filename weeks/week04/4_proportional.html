@@ -85,7 +85,7 @@
 
         let grades = [4, 5, 6],
             colors = ['rgb(208,209,230)', 'rgb(103,169,207)', 'rgb(1,108,89)'],
-            radius = [5, 15, 20];
+            radii = [5, 15, 20];
 
         map.on('load', () => {
             map.addSource('earthquakes', {
@@ -106,15 +106,15 @@
                                 [{
                                     zoom: 5,
                                     value: grades[0]
-                                }, radius[0]],
+                                }, radii[0]],
                                 [{
                                     zoom: 5,
                                     value: grades[1]
-                                }, radius[1]],
+                                }, radii[1]],
                                 [{
                                     zoom: 5,
                                     value: grades[2]
-                                }, radius[2]]
+                                }, radii[2]]
                             ]
                         },
                         'circle-color': {
@@ -127,12 +127,7 @@
                         },
                         'circle-stroke-color': 'white',
                         'circle-stroke-width': 1,
-                        'circle-opacity': {
-                            'stops': [
-                                [3, 0],
-                                [10, 1]
-                            ]
-                        }
+                        'circle-opacity': 0.6
                     }
                 },
                 'waterway-label'
@@ -157,7 +152,7 @@
         for (var i = 0; i < grades.length; i++) {
             from = grades[i];
             to = grades[i + 1];
-            dot_radius = 2 * radius[i];
+            dot_radius = 2 * radii[i];
             labels.push(
                 '<p class="break"><i class="dot" style="background:' + colors[i] + '; width: ' + dot_radius +
                 'px; height: ' +
