@@ -4,7 +4,7 @@
 
 **Announcement:**
 
-- 04/21/2022: Requirement for [your final project proposal](https://canvas.uw.edu/courses/1547729/discussion_topics/7237157) is released. It is due on May 13.
+- 04/21/2022: Requirement for [your final project proposal](https://canvas.uw.edu/courses/1547729/discussion_topics/7237157) is released. It is due on April 30th.
 - 04/19/2022: [The final project guideline](project/readme.md) has been released.
 - 04/18/2022：All the final presentations have been assigned.
 

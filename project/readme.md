@@ -34,7 +34,7 @@ All the final projects are expected to be published online, and the codes are 
 
 Week 4: Brainstorm
 
-Week 5: [Draft project proposal, data sources, and other multimedia](https://canvas.uw.edu/courses/1547729/discussion_topics/7237157) `Due: May 13 11:59pm`
+Week 5: [Draft project proposal, data sources, and other multimedia](https://canvas.uw.edu/courses/1547729/discussion_topics/7237157) `Due: Apr 30 11:59pm`
 
 > Please share your final project proposal on this discussion board.  A proposal only needs to be shared once by one of your group members. In the proposal, please indicate what you want to make by the end of this quarter, the targeting audience,  the available datasets, the required multimedia (e.g., texts, images, videos, etc), and the functions. It would be great if you can find one or two digital geographies-related projects that you can learn from. It will give the instructor and TAs a better idea of how to help you.  The project needs to have **at least 300 words** and one or two screenshots of the available projects that you want to learn from. Once a project proposal is shared, I welcome any suggestions if you have, the TAs and the instructor will participate in the discussion too.
 
