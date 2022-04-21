@@ -9,7 +9,7 @@
 
 **Meetings:**
 
-Both lectures and labs are held in person, masks are strongly recommended to protect everyone, especially those whose personal or household situation makes them more vulnerable.
+Both lectures and labs are held virtually, masks are strongly recommended to protect everyone, especially those whose personal or household situation makes them more vulnerable.
 
 - **Lectures:** Tuesdays and Thursdays 11:30 AM to 12:50 PM PST on [https://washington.zoom.us/my/bzhao](https://washington.zoom.us/my/bzhao)
 - **Labs:** Wednesdays 12:30 AM to 4:20 PM PST
@@ -71,8 +71,6 @@ This course is very “hands-on” and interactive! Most of our time will be spe
 **In-class presentation:** **Also, each group will lead the presentation about an assigned topic at least once throughout this quarter. We will start assign the group presentation assignment in Week 3.** Each group will present an previously assign paper or a digital geography related project in no more than 10 minutes. If you prepare slides for the presentation, please send it to the instructor before class via email.
 
 **Final Project:** will be conducted by a group of 4 to 5 students who are from the same Lab session. It needs to be submitted by June 8th, 11:59pm. Check out [the detailed requirement for final project](project/project.md).
-
-
 
 ## :calendar: Weekly Schedule
 
