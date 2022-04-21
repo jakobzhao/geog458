@@ -7,7 +7,8 @@
         "Geovisualizations",
         "loadingdata",
         "placemarks",
-        "servlet"
+        "servlet",
+        "vbreak"
     ],
     "livePreview.defaultPreviewPath": "/weeks/week04/proportional.html"
 }

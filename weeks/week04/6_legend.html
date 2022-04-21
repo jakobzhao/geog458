@@ -56,8 +56,20 @@
         a {
             color: black
         }
+        .slice {
+            display: inline-block;
+            width: 4px;
+            height: 10px;
+        }
+        .placeholder {
+            display: inline-block;
+            width: 30px;
+
+        }
     </style>
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"></script>
+
 
 </head>
 
@@ -71,6 +83,7 @@
             container: 'map', // container ID
             style: 'mapbox://styles/mapbox/dark-v10',
             zoom: 3, // starting zoom
+            minZoom: 3,
             center: [138, 38] // starting center
         });
 
@@ -99,13 +112,6 @@
                                 [3, 3],
                                 [5, 6],
                                 [6, 10]
-                            ]
-                        },
-                        // increase intensity as zoom level increases
-                        'heatmap-intensity': {
-                            'stops': [
-                                [11, 1],
-                                [15, 3]
                             ]
                         },
                         // use sequential color palette to use exponentially as the weight increases
@@ -198,7 +204,7 @@
         const legend = document.getElementById('legend');
 
         //set up legend grades and labels
-        var labels = ['<strong>Magnitude</strong>'], vbreak;
+        var labels = ['<strong class="break">Magnitude</strong>'], vbreak;
         //iterate through grades and create a scaled circle and label for each
         for (var i = 0; i < grades.length; i++) {
             vbreak = grades[i];
@@ -212,7 +218,17 @@
                 '</span></p>');
 
         }
+        labels.push('<hr />');
+        labels.push('<strong class="break">Frequency</strong>');
+        labels.push('<p class="break">');
+        let legend_colors = chroma.scale(['rgba(236,222,239,0)', 'rgb(28,144,153)']).colors(20);
 
+        for (var i = 0; i < 20; i++) {
+            labels.push(
+                '<span class="slice" style="background:' + legend_colors[i] + ';"></span>');
+        }
+        labels.push('</p>');
+        labels.push('<p class="break"> less <span class="placeholder"> </span> more</p>');
         const source = '<p style="text-align: right; font-size:10pt">Source: <a href="https://earthquake.usgs.gov/earthquakes/">USGS</a></p>';
         
         legend.innerHTML = labels.join('') + source;
