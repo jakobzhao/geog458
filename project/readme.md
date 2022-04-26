@@ -36,13 +36,16 @@ Week 4: Brainstorm
 
 Week 5: [Draft project proposal, data sources, and other multimedia](https://canvas.uw.edu/courses/1547729/discussion_topics/7237157) `Due: Apr 30 11:59pm`
 
-> Please share your final project proposal on this discussion board.  A proposal only needs to be shared once by one of your group members. In the proposal, please indicate what you want to make by the end of this quarter, the targeting audience,  the available datasets, the required multimedia (e.g., texts, images, videos, etc), and the functions. It would be great if you can find one or two digital geographies-related projects that you can learn from. It will give the instructor and TAs a better idea of how to help you.  The project needs to have **at least 300 words** and one or two screenshots of the available projects that you want to learn from. Once a project proposal is shared, I welcome any suggestions if you have, the TAs and the instructor will participate in the discussion too.
+> Please share your final project proposal on this discussion board.  A proposal only needs to be shared once by one of your group members. In the proposal, please indicate what you want to make by the end of this quarter, the targeting audience,  the available datasets, the required multimedia (e.g., texts, images, videos, etc), and the functions. It would be great if you can find one or two digital geographies-related projects that you can learn from. It will give the instructor and TAs a better idea of how to help you.  The proposal needs to have **at least 300 words** and one or two screenshots of the available projects that you want to learn from. Once a project proposal is shared, I welcome any suggestions if you have, the TAs and the instructor will participate in the discussion too.
 
-Week 6: Create project prototype
+Week 6: Design project prototype
 
-Week 7: Project feasibility study revision
+> Please share your project prototype on this discussion board. A project prototype will contain a few graphic interfaces of the proposed project. For each graphic interaface design, you need to 1) determin what types of projects your group plan to work on: a general web map project, a storymap, or a dashboard; 2) appropriatley illustrate each components to its planned position on a web page, 3) balance the richness of the information and the legibility of the design. In other words, a prototype should by no means as the same as the project. It should illustrate adequate information about the project and make the design not too complicated. You are encuraged to create the prototype by drawing on a paper or designing on [figma](https://www.figma.com/) if you have learnt figma in your previous course. 
 
-Week 8: Project feasibility study revision
+
+Week 7: Project pilot study and proposal revision
+
+Week 8: Proposal revision and project development
 
 Week 9-10: Coding
 
