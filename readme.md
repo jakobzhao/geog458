@@ -140,8 +140,7 @@ This week you will be making your first web map of the quarter using the popular
 -   **Lectures:** [Create a smart dashboard](weeks/week06/), Examples: [COVID-19 Dashboard](https://hgis.uw.edu/virus); [Dynamic Charts](https://c3js.org/examples.html).
 -   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [History of the Urban Dashboard](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/), c) [3 Ways Data Dashboards Can Mislead You](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section), and d) [extended readings](weeks/week06/readings.md).
 -   **Think Piece 6:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155394) `Due: May 5th, by 11:59pm`
--   **Presentations**: Tuesday: History of the Urban Dashboard article (AB4), [United Nation's COVID-19 Data Explorer](https://www.mapbox.com/showcase/un-ocha) (AC4), Thursday: The praxis and politics paper (AD4),  (Restaurant Complaints in NYC)[https://labs.mapbox.com/bites/00304/] (AA4)
-
+-   **Presentations**: Tuesday: History of the Urban Dashboard article (AB4), [United Nation's COVID-19 Data Explorer](https://www.mapbox.com/showcase/un-ocha) (AC4), Thursday: The praxis and politics paper (AD4),  [Restaurant Complaints in NYC](https://labs.mapbox.com/bites/00304/) (AA4)
 
 ### Week 7 : Geo-Narratives
 
