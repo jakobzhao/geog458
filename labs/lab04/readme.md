@@ -130,9 +130,9 @@ Make sure you pick Third party option and copy the Integration URL of `WMTS` lik
 
 Zoom into your tiles so that they fill most of the canvas space. The canvas is the extent we will use to generate QMetaTiles.
 
-### 3.3 Generating Tiles by QMetaTiles
+### 3.3 Generating Tiles by QMetaTiles (or QTiles)
 
-Click the Plugins drop down, hover over QMetaTiles to open the menu and select QMetaTiles. The QMetaTiles screen pops up.  Name the directory where you want to save your QMetaTiles and provide a name for the Tileset. Select Canvas Extent and Zoom levels. In the Parameters make the **'Background transparency'** clear by changing the value to zero and make sure to select **'Write Leaflet-based viewer'**. Click Ok.
+Click the Plugins drop down, hover over QMetaTiles to open the menu and select it. The QMetaTiles screen pops up. **For some version of QGIS, there is no plugin named QMetaTiles, Instead, you can use QTiles.** Name the directory where you want to save your tiles and provide a name for the Tileset. Select Canvas Extent and Zoom levels. In the Parameters make the **'Background transparency'** clear by changing the value to zero and make sure to select **'Write Leaflet-based viewer'**. Click Ok.
 
 ![QMetaTiles](img/qmetatiles_to_leaflet.png)
 
