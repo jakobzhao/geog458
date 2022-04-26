@@ -12,14 +12,7 @@ The figure below shows how a tiled map consists of a "pyramid" of images coverin
 
 > Tiled web maps take the form of a pyramid where the map is drawn at a progressive series of scale levels, with the smallest (zoomed out) scales using fewer tiles.
 
-Cartographers loved the tiled maps, because now they could invest all the tools of their trade into making an aesthetically pleasing web map without worrying about performance. Once you had created the tiles, you just had a set of images sitting on disk, and the server could retrieve a beautiful image just as fast as it could retrieve an ugly one. And because the tiled map images could be distributed so quickly by a web server, Google and others were able to employ **asynchronous JavaScript and XML (AJAX)** programming techniques to retrieve the tiles with no page blink as people panned.
-
-> AJAX stands for Asynchronous JavaScript and XML. In a nutshell, it is the use of the `XMLHttpRequest` object to communicate with server-side scripts. It can send as well as receive information in a variety of formats, including JSON, XML, HTML, and even text files. AJAX’s most appealing characteristic, however, is its "asynchronous" nature, which means it can do all of this without having to refresh the page. This lets you update portions of a page based upon user events.
->
-> The two major features of AJAX allow you to do the following:
->
-> -   Make requests to the server without reloading the page
-> -   Receive and work with data from the server
+Cartographers loved the tiled maps, because now they could invest all the tools of their trade into making an aesthetically pleasing web map without worrying about performance. Once you had created the tiles, you just had a set of images sitting on disk, and the server could retrieve a beautiful image just as fast as it could retrieve an ugly one. And because the tiled map images could be distributed so quickly by a web server, Google and others were able to retrieve the tiles with no page blink as people panned.
 
 Within a year or two of Google Maps' release, commercial GIS software began offering the ability to build map tiles. For many, ArcGIS Server was desirable because the map could be authored using the mature map authoring tools in ArcMap; however, cost was a concern for some. [Arc2Earth](https://www.arc2earth.com/) was another commercial alternative. The free and open source [Mapnik](http://mapnik.org/) library could also build tiles, but it wasn't until recent years that projects like [TileMill](https://tilemill-project.github.io/tilemill/) wrapped a user-friendly GUI around Mapnik.
 
@@ -102,72 +95,8 @@ This table shows each of these values at each level of detail, **as measured at
 |                  22 |                     1,073,741,824 |                                 0.0373 | 1 : 141.06               |
 |                  23 |                     2,147,483,648 |                                 0.0187 | 1 : 70.53                |
 
-### 2.3 Pixel Coordinates
 
-Having chosen the projection and scale to use at each level of detail, we can convert geographic coordinates into pixel coordinates. Since the map width and height is different at each level, so are the pixel coordinates. The pixel at the upper-left corner of the map always has pixel coordinates (0, 0). The pixel at the lower-right corner of the map has pixel coordinates $$(width-1, height-1)$$, or referring to the equations in the previous section,
-$$(256 _ 2^{level}–1, 256 _ 2^{level}–1)$$.
-
-For example, at level 3, the pixel coordinates range from (0, 0) to (2047, 2047), like this:
-
-![img](img/bing_overview2.png)
-
-Given latitude and longitude in degrees, and the level of detail, the pixel XY coordinates can be calculated as follows:
-
-$$
-sinLatitude = sin(latitude _ pi/180)
-$$
-$$
-pixelX = ((longitude + 180) / 360) _ 256 _ 2^{level}
-$$
-$$
-pixelY = (0.5 – log((1 + sinLatitude) / (1 – sinLatitude)) / (4 _ pi)) _ 256 _ 2\\mathit{level}
-$$
-
-The latitude and longitude are assumed to be on the WGS 84 datum. Even though Bing Maps uses a spherical projection, it’s important to convert all geographic coordinates into a common datum, and WGS 84 was chosen to be that datum. The longitude is assumed to range from -180 to +180 degrees, and **the latitude must be clipped to range from -85.05112878 to 85.05112878. This avoids a singularity at the poles, and it causes the projected map to be square**.
-
-### 2.4 Tile Coordinates and Quadkeys
-
-To optimize the performance of map retrieval and display, the rendered map is cut into tiles of 256 x 256 pixels each. As the number of pixels differs at each level of detail, so does the number of tiles:
-
-$$
-map width = map height = 2^{level} tiles
-$$
-
-Each tile is given XY coordinates ranging from $$(0, 0)$$ in the upper left to $$(2^{level}–1, 2^{level}–1)$$ in the lower right. For example, at level 3 the tile coordinates range from $$(0, 0)$$ to $$(7, 7)$$ as follows:
-
-![img](img/bing_overview3.png)
-
-Given a pair of pixel XY coordinates, you can easily determine the tile XY coordinates of the tile containing that pixel:
-
-$$
-tileX = floor(pixelX / 256)
-$$
-
-$$
-tileY = floor(pixelY / 256)
-$$
-
-To optimize the indexing and storage of tiles, the two-dimensional tile XY coordinates are combined into one-dimensional strings called quadtree keys, or “quadkeys” for short. Each quadkey uniquely identifies a single tile at a particular level of detail, and it can be used as an key in common database B-tree indexes. To convert tile coordinates into a quadkey, the bits of the Y and X coordinates are interleaved, and the result is interpreted as a base-4 number (with leading zeros maintained) and converted into a string. For instance, given tile XY coordinates of (3, 5) at level 3, the quadkey is determined as follows:
-
-$$
-tileX = 3 = 011^2
-$$
-
-$$
-tileY = 5 = 101^2
-$$
-
-$$
-quadkey = 100111^2 = 2134 = “213”
-$$
-
-Quadkeys have several interesting properties. First, the length of a quadkey (the number of digits) equals the level of detail of the corresponding tile. Second, the quadkey of any tile starts with the quadkey of its parent tile (the containing tile at the previous level). As shown in the example below, tile 2 is the parent of tiles 20 through 23, and tile 13 is the parent of tiles 130 through 133:
-
-![img](img/bing_overview4.png)
-
-Finally, quadkeys provide a one-dimensional index key that usually preserves the proximity of tiles in XY space. In other words, two tiles that have nearby XY coordinates usually have quadkeys that are relatively close together. This is important for optimizing database performance, because neighboring tiles are usually requested in groups, and it’s desirable to keep those tiles on the same disk blocks, in order to minimize the number of disk reads.
-
-## 3 Genrating Tiles in QGIS
+## 3 Generating Tiles in QGIS
 
 In this section we will introduce how to create map layer or load online map service, and then convert the created or loaded map layer as a tileset in QGIS 3. To do this, you need to install two QGIS plugins, including QMetaTiles and QuickMapServices.
 
@@ -179,7 +108,7 @@ To enable the QuickMapServices Plugin, you need to click on the `Web` tab on the
 
 You can either create a map from your own data source, or load a base map from the QuickMapServices, or read a map tiles from MapBox. What's more, you can even make a layer group that is made up by several different layers.
 
-Once you have the map layer or layer group ready, please change the displaying projection to **Psuedo Mercator**, the espg code is 3857. It is because most web maps are projected in the Psuedo Mercator. If you want to overlay any tiles with other external map services, you need to make sure all the displaying map layers are in the same projection.
+Once you have the map layer or layer group ready, please change the displaying projection to **Pseudo Mercator**, the epsg code is 3857. It is because most web maps are projected in the Pseudo Mercator. If you want to overlay any tiles with other external map services, you need to make sure all the displaying map layers are in the same projection.
 
 ![](img/projection.png)
 
@@ -215,85 +144,87 @@ The file directory will contain your QMetaTiles and an HTML document that can be
 
 Navigate to the output file after QMetaTiles finishes running. In this folder will be your sub folders of tiles arranged by zoom level and an html document.
 
-Open the html and look at the source code. The L.tileLayer object is in charg of loading the layer of map tiles.
+Open the html and look at the source code. The L.tileLayer object is in charge of loading the layer of map tiles.
 
-```js
-L.tileLayer('http://{s}.somedomain.com/{foo}/{z}/{x}/{y}.png', {
-  foo: 'bar',
-  detectRetina: true | false
+```javascript
+map.addSource('sample-tiles', {
+    'type': 'raster',
+    'tiles': [
+        'http://{s}.somedomain.com/{foo}/{z}/{x}/{y}.png'
+    ],
+    'tileSize': 256,
+    'attribution': 'Map tiles designed by Bo Zhao</a>'
+});
+
+map.addLayer({
+    'id': 'sample-layer',
+    'type': 'raster',
+    'layout': {
+        'visibility': 'none'
+    },
+    'source': 'sample-tiles'
 });
 ```
-> **The `detectRetina` Option for LeafLet TileLayer:** If `true` and user is on a retina display, it will request four tiles of half the specified size and a bigger zoom level in place of one to utilize the high resolution. displays that have a higher pixel density than traditional displays. Apple has applied to register the term "Retina" as a trademark in regard to computers and mobile devices. When introducing the iPhone 4, Steve Jobs said the number of pixels needed for a Retina Display is **326PPI**.
 
 In the code above, `{s}` means one of the available subdomains (used sequentially to help with browser parallel requests per domain limitation; subdomain values are specified in options; a, b or c by default, can be omitted), `{z}` — zoom level, `{x}` and `{y}` — tile coordinates. `{r}` can be used to add "@2x" to the URL to load retina tiles.
 
 
-## 4 Add map tiles to a Leaflet Map
+## 4 Add map tiles to a MapBox Map
 
 For web mapping and geovisualization applications, the QMetaTiles folder generated above in QGIS should become your assets folder on github. **In the code you will need to adjust absolute pathnames to relative path names.**
 
-```javascript
-var map = L.map('map', {
-  maxZoom: 14,
-  minZoom: 12
-}).setView([47.6002614, -122.2559435], 12);
+```js
 
-var grayscale = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}@2x.png').addTo(map);
-var streets = L.tileLayer('http://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}@2x.png');
-var satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}@2x');
+map.on('load', () => { //simplifying the function statement: arrow with brackets to define a function
 
-var uw = L.tileLayer('assets/uw/{z}/{x}/{y}.png', {
-  attribution: 'Generated by Bo Zhao | UW Style',
-  detectRetina: true
+  map.addSource('sample-tiles', {
+      'type': 'raster',
+      'tiles': [
+          'http://{s}.somedomain.com/{foo}/{z}/{x}/{y}.png'
+      ],
+      'tileSize': 256,
+      'attribution': 'Map tiles designed by Bo Zhao</a>'
+  });
+
+  map.addLayer({
+      'id': 'sample-layer',
+      'type': 'raster',
+      'layout': {
+          'visibility': 'none'
+      },
+      'source': 'sample-tiles'
+  });
+
+
 });
 
-var lgbtq = L.tileLayer('assets/lgbtq/{z}/{x}/{y}.png', {
-  attribution: 'Generated by Bo Zhao | UW Style',
-  detectRetina: true
-});
-
-var baseLayers = {
-  'Grayscale': grayscale,
-  'Streets': streets,
-  'Satellite': satellite
-};
-
-var overlays = {
-  "UW style": uw,
-  "LGBTQ+": lgbtq
-}
-
-L.control.layers(baseLayers, overlays, {
-  collapsed: false,
-  position: 'topright'
-}).addTo(map);
 ```
 
-![leafletmap](img/qmetatiles.jpg)
+![mapbox map](img/final-map.png)
 
 As shown by the code, the tiles are loaded from a relative path `assets/tiles` which exists at a location in your internal network. Here is what the final output looks like **[here](http://jakobzhao.github.io/geog458/labs/lab04/index.html)**.
 
 ## 5 Deliverable
 
-- You are expected to generate **four** tile sets of any geographic phenomena you are interested in. **Since github repository only allows you upload a limited amount of data, so please make sure not to generate too many tiles by limiting the boundingbox or the scale range.** This lab is an opportunity to make a basemap or thematic map layers for your final project. Below are the lab requirment.
+- You are expected to generate **four** tile sets of any geographic phenomena you are interested in. **Since github repository only allows you upload a limited amount of data, so please make sure not to generate too many tiles by limiting the boundingbox or the scale range.** This lab is an opportunity to make a basemap or thematic map layers for your final project. Below are the lab requirement.
 
-  - The first tile set should be a base map made by MapBox. **Please make sure it is a basemap rather than a thematic map.** In most web map applications, Basemap is overlain with other thematic map layers and/or interactive features. Its primary function is to illustrate the geographical context of the study area. Therefore, a basemap is usually made in a monochrome color scheme. You are encouraged to make your basemap directly out of the existing map layers provided by MapBox (like those monochrome map layers provided on MapBox Studio). However, please make sure you need to change at least a few color uses, a few icons, and the label font. Overall, even you made a few changes, the base map should still look visually appealing. (5 POINTS).
+  - The first tile set should be a base map provided by MapBox. **Please make sure it is a basemap rather than a thematic map.** In most web map applications, Basemap is overlain with other thematic map layers and/or interactive features. Its primary function is to illustrate the geographical context of the study area. Therefore, a basemap is usually made in a monochrome color scheme. You are encouraged to make your basemap directly out of the existing map layers provided by MapBox (like those monochrome map layers provided on MapBox Studio). However, please make sure to change at least a few color uses, icons, and the label font. Overall, even you made a few changes, the base map should still look visually appealing. (5 POINTS).
 
   - The second tile set should be a thematic layer made by your own geospatial dataset. (5 POINTS).
 
   - The third tile set should be a layer group that is composed of a thematic layer (from the second tile set) and a basemap from the first tile set, as the map tiles shown in Section 4. (5 POINTS).
 
-  - The fourth tile set should be a map layer designed over Mapbox. It could a map embodying a map theme relavent to you, this could be Black History month, LGBTQ+ Pride, UW, Nature/Environment, etc. Please try to use the color, icon, and label to realize the theme.  (5 POINTS).
+  - The fourth tile set should be a map layer designed over Mapbox. It should embody a map theme relevant to your research interests, which could be Black History month, LGBTQ+ Pride, UW, Nature/Environment, etc. Please try to use the color, icon, and label to realize the theme.  (5 POINTS).
 
--  After the map tiles are generated, you are expected to create an index.html to visualize a leaflet map to visualze the four tile map sets.
-    -  create any necessary web page elments, such as page/map tite, scale bar, attribution, zoom control, map description, etc. (5 POINTS)
-    -  The leaflet map should be shown in the full screen. (5 POINTS).
-    -  A layer switcher should be added to allow users to turn on and off each map layers. For more about the map switch control, please refer to the leaflet document at [here](https://leafletjs.com/examples/layers-control/). (6 POINTS).
+-  After the map tiles are generated, you are expected to create an index.html to visualize the four tile map sets.
+    -  create any necessary web page elements, such as page/map title, scale bar, attribution, zoom control, map description, etc. (5 POINTS)
+    -  The map should be shown in the full screen. (5 POINTS).
+    -  A layer switcher should be added to allow users to turn on and off each map layers. For more about the map switch control, please refer to the document at [here](https://leafletjs.com/examples/layers-control/). (6 POINTS).
 
 -  Upload everything to a github repository. In the `readme.md` file of this repository, please briefly introduce
 
     -  screenshots of the four layers (2 POINTS)
-    -  the examined georaphic area, and (2 POINTS)
+    -  the examined geographic area, and (2 POINTS)
     -  the available zoom levels of each tile set (2 POINTS), and
     -  brief descriptions of each tile sets (3 POINTS).
 

@@ -8,7 +8,9 @@
         "loadingdata",
         "placemarks",
         "servlet",
-        "vbreak"
+        "tileset",
+        "vbreak",
+        "webmap"
     ],
     "livePreview.defaultPreviewPath": "/weeks/week04/proportional.html"
 }
