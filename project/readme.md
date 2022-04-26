@@ -42,7 +42,6 @@ Week 6: [Design project prototype](https://canvas.uw.edu/courses/1547729/discuss
 
 > Please share your project prototype on this discussion board. A prototype is a sketch of your expected graphic user interface (GUI) of the project. Usually, it will contain a few GUIs of the proposed project. When designing the prototype, you are expected to first 1) determine what types of projects your group plan to work on: a general web map project, a storymap, or a dashboard; and then for each interface, you are expected to 2) appropriately illustrate each component (e.g., map view, title, legend, side panel, etc.) in its right size to its position on a web page. Please make sure 3) to balance the information richness and the legibility of the design. In other words, it should not be too complicated, but it can still illustrate adequate information about the project. You are encouraged to create the prototype by drawing on paper or designing on [Figma](https://www.figma.com) if you prefer.
 
-
 Week 7: Project pilot study and proposal revision
 
 Week 8: Proposal revision and project development
