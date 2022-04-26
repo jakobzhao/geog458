@@ -1,4 +1,4 @@
-# The Guideline for the Final Project
+# Final Project Guideline
 
 The final project is a major component of this course. Each group is expected to develop a digital-geographies related project. It can be a web map, a smart dashboard, a geo-narrative, or a project that has been approved by the instructor. To have a better idea of the course expectations, you can refer to the examples below:
 
