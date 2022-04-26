@@ -13,9 +13,8 @@
 
 **Meetings:**
 
-Both lectures and labs are held virtually, masks are strongly recommended to protect everyone, especially those whose personal or household situation makes them more vulnerable.
+Both lab and lectures have been switched to virtual meetings temporarily. ~~*Masks are strongly recommended to protect everyone, especially those whose personal or household situation makes them more vulnerable.*~~
 
-We have temporarily switched to virtual meetings.
 
 - **Lectures:** Tuesdays and Thursdays 11:30 AM to 12:50 PM PST on [https://washington.zoom.us/my/bzhao](https://washington.zoom.us/my/bzhao)
 - **Labs:** Wednesdays 12:30 AM to 4:20 PM PST
