@@ -20,7 +20,7 @@
             width: 100%;
         }
 
-
+        /* the style of the layer control menu */
         #menu {
             background: #fff;
             position: absolute;
@@ -33,6 +33,7 @@
             font-family: 'Open Sans', sans-serif;
         }
 
+        /* each layer on the menu */
         #menu a {
             font-size: 13px;
             color: #404040;
@@ -45,10 +46,12 @@
             text-align: center;
         }
 
+        /* the last item of the layer items will not include a seperator */
         #menu a:last-child {
             border: none;
         }
 
+        /* change color and background color while a pointer is on an hybrid link. */
         #menu a:hover {
             background-color: #f8f8f8;
             color: #404040;
@@ -70,26 +73,7 @@
     <nav id="menu"></nav>
     <div id='map'></div>
 
-    <div class="container" id="switcher">
-        <h3>Map Color</h3>
-        <div class="container-drawer">
-            <div class="button" id="paletteA-toggle">
-                <div class="checkbox radio checked" id="paletteA-check"></div>
-                <p>Primary</p>
-            </div>
-            <div class="button" id="paletteB-toggle">
-                <div class="checkbox radio" id="paletteB-check"></div>
-                <p>Secondary</p>
-            </div>
-            <div class="break"></div>
-            <div class="button" id="satellite-toggle">
-                <div class="checkbox" id="sat-check"></div>
-                <p>Satellite</p>
-            </div>
-        </div>
-        <h3>Data</h3>
-        <div class="container-drawer" id="data-layers"></div>
-    </div>
+
     <script type="text/javascript">
         mapboxgl.accessToken =
             'pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw';
@@ -170,7 +154,13 @@
                 // Show or hide layer when the toggle is clicked.
                 link.onclick = function (e) {
                     const clickedLayer = this.textContent;
+                    // preventDefault() tells the user agent that if the event does not get explicitly handled, 
+                    // its default action should not be taken as it normally would be.
                     e.preventDefault();
+                    // The stopPropagation() method prevents further propagation of the current event in the capturing 
+                    // and bubbling phases. It does not, however, prevent any default behaviors from occurring; 
+                    // for instance, clicks on links are still processed. If you want to stop those behaviors, 
+                    // see the preventDefault() method.
                     e.stopPropagation();
 
                     const visibility = map.getLayoutProperty(
@@ -179,10 +169,11 @@
                     );
 
                     // Toggle layer visibility by changing the layout object's visibility property.
+                    // if it is currently visible, after the clicking, it will be turned off.
                     if (visibility === 'visible') {
                         map.setLayoutProperty(clickedLayer, 'visibility', 'none');
                         this.className = '';
-                    } else {
+                    } else { //otherise, it will be turned on.
                         this.className = 'active';
                         map.setLayoutProperty(
                             clickedLayer,
@@ -192,6 +183,7 @@
                     }
                 };
 
+                // in the menu place holder, insert the layer links.
                 const layers = document.getElementById('menu');
                 layers.appendChild(link);
             }
