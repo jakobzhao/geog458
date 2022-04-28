@@ -214,15 +214,16 @@ As shown by the code, the tiles are loaded from a relative path `assets/tiles` w
 
   - The third tile set should be a layer group that is composed of a thematic layer (from the second tile set) and a basemap from the first tile set, as the map tiles shown in Section 4. (5 POINTS).
 
-  - The fourth tile set should be a map layer designed over Mapbox. It should embody a map theme relevant to your research interests, which could be Black History month, LGBTQ+ Pride, UW, Nature/Environment, etc. Please try to use the color, icon, and label to realize the theme.  (5 POINTS).
+  - The fourth tile set should be a map layer designed over Mapbox. It should embody a map theme relevant to your research interests, which could be Black History month, LGBTQ+ Pride, UW, Nature/Environment, etc. Please try to use the color, icon, and label to realize the theme.  (5 POINTS). 
 
 -  After the map tiles are generated, you are expected to create an index.html to visualize the four tile map sets.
     -  create any necessary web page elements, such as page/map title, scale bar, attribution, zoom control, map description, etc. (5 POINTS)
     -  The map should be shown in the full screen. (5 POINTS).
-    -  A layer switcher should be added to allow users to turn on and off each map layers. For more about the map switch control, please refer to the document at [here](https://leafletjs.com/examples/layers-control/). (6 POINTS).
+    -  A layer switcher should be added to allow users to turn on and off each map layers.. (6 POINTS).
 
 -  Upload everything to a github repository. In the `readme.md` file of this repository, please briefly introduce
 
+    -  the url to access the web map you have made.
     -  screenshots of the four layers (2 POINTS)
     -  the examined geographic area, and (2 POINTS)
     -  the available zoom levels of each tile set (2 POINTS), and
