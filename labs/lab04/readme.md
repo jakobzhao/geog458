@@ -216,6 +216,8 @@ As shown by the code, the tiles are loaded from a relative path `assets/tiles` w
 
   - The fourth tile set should be a map layer designed over Mapbox. It should embody a map theme relevant to your research interests, which could be Black History month, LGBTQ+ Pride, UW, Nature/Environment, etc. Please try to use the color, icon, and label to realize the theme.  (5 POINTS). 
 
+> An example can be found from [here](https://ramouj.github.io/Map-Tile-Generation/index.html). Although the map library of this example is leaflet, but you can refer the map this student has designed as an example. 
+
 -  After the map tiles are generated, you are expected to create an index.html to visualize the four tile map sets.
     -  create any necessary web page elements, such as page/map title, scale bar, attribution, zoom control, map description, etc. (5 POINTS)
     -  The map should be shown in the full screen. (5 POINTS).
