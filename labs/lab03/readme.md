@@ -389,7 +389,7 @@ For your lab deliverable, you need to create a github repository to host two the
 
 We expect the followings for your deliverable:
 
-- the shapefiles have been properly converted to geojson data. We expect the geojson has the right projection, the unused attributes has been deleted, the geometric shapes has been simplified (e.g., using [mapshaper](https://mapshaper.org/)). **(4 points)**
+- the shapefiles have been properly converted to geojson data. We expect the geojson has the right projection, the unused attributes has been deleted, the geometric shapes has been simplified (e.g., using [mapshaper](https://mapshaper.org/)(You will download a geojson type file but with a deceiving suffix '.json'. Don't worry. It will work fine!)). **(4 points)**
 
 - for each map:
   -   use appropriate zoom level, map center, please apply "Albers" projection for this map. **(2 points per map)**
