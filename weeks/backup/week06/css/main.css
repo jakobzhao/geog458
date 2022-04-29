@@ -1,0 +1,111 @@
+html, body, #map {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Titillium Web', serif;
+}
+
+#info {
+  z-index: 1000;
+  position: absolute;
+  width: 500px;
+  top: 1%;
+  bottom: 1%;
+  left: .5%;
+  padding: 40px 15px 900px 15px;
+  background: #343a40;
+  color: white;
+
+}
+
+@media only screen and (max-width: 1026px) {
+  #info {
+    width: 0;
+    height: 0;
+    visibility: hidden !important;
+  }
+
+  #info * {
+    width: 0;
+    height: 0;
+    visibility: hidden !important;
+  }
+}
+
+/* social media icons */
+#info a {
+  color: lightgray;
+}
+
+#info a:hover {
+  color: white;
+  opacity: 0.3;
+}
+
+#info h4 i {
+  font-size: 1.25e;
+  padding-right: 10px
+}
+
+
+#title {
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* social media icons */
+#title span {
+  font-size: 14px;
+  float: right;
+  margin-right: 10px;
+}
+
+#placename {
+  font-size: 40px;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* card decks */
+#desc {
+  text-align: center;
+  color: lightgray;
+  font-size: medium;
+  font-weight: bold;
+}
+
+#county-count {
+  margin:0;
+  text-align: center;
+  color: orange;
+  font-size: 50px;
+}
+
+#county-chart {
+  top: 20px;
+}
+
+/* bar chart */
+text {
+  fill: gray
+}
+
+.tick line {
+  stroke: gray;
+}
+
+.c3-axis path {
+  stroke: gray;
+}
+
+.name, .value {
+  background-color: black;
+  color: black
+}
+
+#footer {
+  margin-top: 50px;
+  margin-right: 10px;
+  font-size: 13px;
+  line-height: 150%;
+  color: lightgray;
+}
