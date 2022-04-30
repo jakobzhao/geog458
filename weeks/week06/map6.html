@@ -8,130 +8,126 @@
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web|Oswald" rel="stylesheet">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link rel="stylesheet" href="css/c3.min.css">
     <style>
         body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Titillium Web', serif;
-}
+            margin: 0;
+            padding: 0;
+            font-family: 'Titillium Web', serif;
+        }
 
-#map {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-}
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
 
-#info {
-  z-index: 1000;
-  position: absolute;
-  width: 500px;
-  top: 1%;
-  bottom: 1%;
-  left: .5%;
-  padding: 40px 15px 900px 15px;
-  background: #343a40;
-  color: white;
+        #info {
+            z-index: 1000;
+            position: absolute;
+            width: 500px;
+            top: 1%;
+            bottom: 1%;
+            left: .5%;
+            padding: 40px 15px 900px 15px;
+            background: #343a40;
+            color: white;
 
-}
-
-
-/* social media icons */
-#info a {
-  color: lightgray;
-}
-
-#info a:hover {
-  color: white;
-  opacity: 0.3;
-}
+        }
 
 
-#title {
-  font-size: 25px;
-  font-family: 'Oswald', sans-serif;
-}
+        /* social media icons */
+        #info a {
+            color: lightgray;
+        }
 
-/* social media icons */
-#title span {
-  font-size: 14px;
-  float: right;
-  margin-right: 10px;
-}
-
-/* card decks */
-#desc {
-  text-align: center;
-  color: lightgray;
-  font-size: medium;
-  font-weight: bold;
-  margin-bottom: 0px;
-}
-
-#earthquake-count {
-  margin:0;
-  text-align: center;
-  color: orange;
-  font-size: 50px;
-}
-
-#earthquake-chart {
-  top: 20px;
-}
+        #info a:hover {
+            color: white;
+            opacity: 0.3;
+        }
 
 
-#footer {
-  position: absolute;
-  bottom: 0px;
-  margin-bottom:20px;
-  margin-right: 10px;
-  font-size: 13px;
-  line-height: 150%;
-  color: lightgray;
-}
+        #title {
+            font-size: 25px;
+            font-family: 'Oswald', sans-serif;
+        }
 
-/* the layout of the legend panel */
-#legend {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 110px;
-    background: #fff;
-    margin-right: 20px;
-    margin-bottom: 40px;
-    padding: 10px 20px 10px 10px;
-    border-radius: 3px;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-}
+        /* social media icons */
+        #title span {
+            font-size: 14px;
+            float: right;
+            margin-right: 10px;
+        }
 
-/* each line for a break */
-.break {
-    position: relative;
-    margin: 0px;
-    padding: 0px;
-}
+        /* card decks */
+        #desc {
+            text-align: center;
+            color: lightgray;
+            font-size: medium;
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
 
-/* basic style for a dot/circle */
-.dot {
-    display: inline-block;
-    margin-top: 5px;
-    border-radius: 50%;
-    opacity: 0.6;
-}
+        #earthquake-count {
+            margin: 0;
+            text-align: center;
+            color: orange;
+            font-size: 50px;
+        }
 
-/* the label for the dot */
-.dot-label {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-style: italic;
-}
+        #earthquake-chart {
+            top: 20px;
+        }
 
 
+        #footer {
+            position: absolute;
+            bottom: 0px;
+            margin-bottom: 20px;
+            margin-right: 10px;
+            font-size: 13px;
+            line-height: 150%;
+            color: lightgray;
+        }
 
+        /* the layout of the legend panel */
+        #legend {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 110px;
+            background: #fff;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            padding: 10px 20px 10px 10px;
+            border-radius: 3px;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        /* each line for a break */
+        .break {
+            position: relative;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* basic style for a dot/circle */
+        .dot {
+            display: inline-block;
+            margin-top: 5px;
+            border-radius: 50%;
+            opacity: 0.6;
+        }
+
+        /* the label for the dot */
+        .dot-label {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-style: italic;
+        }
     </style>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
     <script src="js/d3.js"></script>
@@ -142,10 +138,9 @@
     <div id="info">
         <div id="title">
             Earthquakes in Japan - September 2017
-            <span><a href="https://twitter.com/UW" target="_blank"><i class="fa fa-twitter-square"></i></a></span>
-            <span><a href="https://github.com/jakobzhao/geog458" target="_blank"><i
-                        class="fa fa-github-square"></i></a></span>
-                        <span id="reset"><a href="#">reset</a></span>
+            <span><a href="https://twitter.com/UW" target="_blank"><i class="bi bi-twitter"></i></a></span>
+            <span><a href="https://github.com/jakobzhao/geog458" target="_blank"><i class="bi bi-github"></i></a></span>
+            <span id="reset"><a href="#">reset</a></span>
         </div>
         <div id="count" class="card">
             <h5 id="desc"> # Earthquakes in the displaying region</h5>
@@ -176,250 +171,248 @@
     <div id="map"></div>
     <div id="legend"></div>
     <script>
-mapboxgl.accessToken =
-    'pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw';
-let map = new mapboxgl.Map({
-    container: 'map', // container ID
-    style: 'mapbox://styles/mapbox/dark-v10',
-    zoom: 5, // starting zoom
-    minZoom: 5,
-    center: [138, 38] // starting center
-});
+        mapboxgl.accessToken =
+            'pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw';
+        let map = new mapboxgl.Map({
+            container: 'map', // container ID
+            style: 'mapbox://styles/mapbox/dark-v10',
+            zoom: 5, // starting zoom
+            minZoom: 5,
+            center: [138, 38] // starting center
+        });
 
-let earthquakeChart = null,
-    magnitude = {},
-    numEarthquakes = 0;
+        let earthquakeChart = null,
+            magnitude = {},
+            numEarthquakes = 0;
 
-const grades = [4, 5, 6],
-    colors = ['rgb(208,209,230)', 'rgb(103,169,207)', 'rgb(1,108,89)'],
-    radii = [5, 15, 20];
-
-
-
-
-// create legend
-const legend = document.getElementById('legend');
-
-//set up legend grades and labels
-var labels = ['<strong>Magnitude</strong>'],
-    vbreak;
-//iterate through grades and create a scaled circle and label for each
-for (var i = 0; i < grades.length; i++) {
-    vbreak = grades[i];
-    // you need to manually adjust the radius of each dot on the legend 
-    // in order to make sure the legend can be properly referred to the dot on the map.
-    dot_radii = 2 * radii[i];
-    labels.push(
-        '<p class="break"><i class="dot" style="background:' + colors[i] + '; width: ' + dot_radii +
-        'px; height: ' +
-        dot_radii + 'px; "></i> <span class="dot-label" style="top: ' + dot_radii / 2 + 'px;">' + vbreak +
-        '</span></p>');
-
-}
-const source =
-    '<p style="text-align: right; font-size:10pt">Source: <a href="https://earthquake.usgs.gov/earthquakes/">USGS</a></p>';
-
-legend.innerHTML = labels.join('') + source;
+        const grades = [4, 5, 6],
+            colors = ['rgb(208,209,230)', 'rgb(103,169,207)', 'rgb(1,108,89)'],
+            radii = [5, 15, 20];
 
 
 
 
-//load data to the map as new layers.
-//map.on('load', function loadingData() {
-map.on('load', () => { //simplifying the function statement: arrow with brackets to define a function
+        // create legend
+        const legend = document.getElementById('legend');
 
-    // when loading a geojson, there are two steps
-    // add a source of the data and then add the layer out of the source
-    map.addSource('earthquakes', {
-        type: 'geojson',
-        data: earthquakes
-    });
+        //set up legend grades and labels
+        var labels = ['<strong>Magnitude</strong>'],
+            vbreak;
+        //iterate through grades and create a scaled circle and label for each
+        for (var i = 0; i < grades.length; i++) {
+            vbreak = grades[i];
+            // you need to manually adjust the radius of each dot on the legend 
+            // in order to make sure the legend can be properly referred to the dot on the map.
+            dot_radii = 2 * radii[i];
+            labels.push(
+                '<p class="break"><i class="dot" style="background:' + colors[i] + '; width: ' + dot_radii +
+                'px; height: ' +
+                dot_radii + 'px; "></i> <span class="dot-label" style="top: ' + dot_radii / 2 + 'px;">' + vbreak +
+                '</span></p>');
+
+        }
+        const source =
+            '<p style="text-align: right; font-size:10pt">Source: <a href="https://earthquake.usgs.gov/earthquakes/">USGS</a></p>';
+
+        legend.innerHTML = labels.join('') + source;
 
 
-    map.addLayer({
-            'id': 'earthquakes-point',
-            'type': 'circle',
-            'source': 'earthquakes',
-            'minzoom': 5,
-            'paint': {
-                // increase the radii of the circle as the zoom level and dbh value increases
-                'circle-radius': {
-                    'property': 'mag',
-                    'stops': [
-                        [{
-                            zoom: 5,
-                            value: grades[0]
-                        }, radii[0]],
-                        [{
-                            zoom: 5,
-                            value: grades[1]
-                        }, radii[1]],
-                        [{
-                            zoom: 5,
-                            value: grades[2]
-                        }, radii[2]]
-                    ]
+
+
+        //load data to the map as new layers.
+        //map.on('load', function loadingData() {
+        map.on('load', () => { //simplifying the function statement: arrow with brackets to define a function
+
+            // when loading a geojson, there are two steps
+            // add a source of the data and then add the layer out of the source
+            map.addSource('earthquakes', {
+                type: 'geojson',
+                data: earthquakes
+            });
+
+
+            map.addLayer({
+                    'id': 'earthquakes-point',
+                    'type': 'circle',
+                    'source': 'earthquakes',
+                    'minzoom': 5,
+                    'paint': {
+                        // increase the radii of the circle as the zoom level and dbh value increases
+                        'circle-radius': {
+                            'property': 'mag',
+                            'stops': [
+                                [{
+                                    zoom: 5,
+                                    value: grades[0]
+                                }, radii[0]],
+                                [{
+                                    zoom: 5,
+                                    value: grades[1]
+                                }, radii[1]],
+                                [{
+                                    zoom: 5,
+                                    value: grades[2]
+                                }, radii[2]]
+                            ]
+                        },
+                        'circle-color': {
+                            'property': 'mag',
+                            'stops': [
+                                [grades[0], colors[0]],
+                                [grades[1], colors[1]],
+                                [grades[2], colors[2]]
+                            ]
+                        },
+                        'circle-stroke-color': 'white',
+                        'circle-stroke-width': 1,
+                        'circle-opacity': 0.6
+                    }
                 },
-                'circle-color': {
-                    'property': 'mag',
-                    'stops': [
-                        [grades[0], colors[0]],
-                        [grades[1], colors[1]],
-                        [grades[2], colors[2]]
-                    ]
+                'waterway-label'
+            );
+
+
+            // click on tree to view magnitude in a popup
+            map.on('click', 'earthquakes-point', (event) => {
+                new mapboxgl.Popup()
+                    .setLngLat(event.features[0].geometry.coordinates)
+                    .setHTML(`<strong>Magnitude:</strong> ${event.features[0].properties.mag}`)
+                    .addTo(map);
+            });
+
+
+
+            // 7 Chart relevant operations
+            // 7.1 generate the declared dictionary object "counties".
+            // add the county name as key and the number of cell tower as values in a dictionary declared before
+            // let mapBound = map.getBounds();
+
+            magnitudes = calEarthquakes(earthquakes, map.getBounds());
+            numEarthquakes = magnitudes[4] + magnitudes[5] + magnitudes[6];
+            document.getElementById("earthquake-count").innerHTML = numEarthquakes;
+
+
+            // 7.4 slicing the arrays
+            // only keep the top 10 values, and push “county” to the first of the array.
+            x = Object.keys(magnitudes);
+            x.unshift("mag")
+
+            // only keep the top 10 values, and push “#” to the first of the array.
+            y = Object.values(magnitudes);
+            y.unshift("#")
+
+
+            // 7.5 generate the chart
+
+
+            earthquakeChart = c3.generate({
+                size: {
+                    height: 350,
+                    width: 460
                 },
-                'circle-stroke-color': 'white',
-                'circle-stroke-width': 1,
-                'circle-opacity': 0.6
-            }
-        },
-        'waterway-label'
-    );
+                data: {
+                    x: 'mag',
+                    columns: [x,
+                    y], //input the x - sorted county number, y - the corresponding # of cell towers.
+                    type: 'bar',
+                    colors: {
+                        '#': (d) => {
+                            return colors[d["x"]];
+                        }
+                    },
+                    onclick: function (d) { // update the map and sidebar once the bar is clicked.
+                        let floor = parseInt(x[1 + d["x"]]),
+                            ceiling = floor + 1;
+                        map.setFilter('earthquakes-point',
+                            ['all',
+                                ['>=', 'mag', floor],
+                                ['<', 'mag', ceiling]
+                            ]);
+                    }
+                },
+                axis: {
+                    x: { //county
+                        type: 'category',
+                    },
+                    y: { //count
+                        tick: {
+                            values: [10, 20, 30, 40]
+                        }
+                    }
+                },
+                legend: {
+                    show: false
+                },
+                bindto: "#earthquake-chart" //bind the chart to the place holder element "county-chart".
+            });
+
+        });
 
 
-    // click on tree to view magnitude in a popup
-    map.on('click', 'earthquakes-point', (event) => {
-        new mapboxgl.Popup()
-            .setLngLat(event.features[0].geometry.coordinates)
-            .setHTML(`<strong>Magnitude:</strong> ${event.features[0].properties.mag}`)
-            .addTo(map);
-    });
+
+        //load data to the map as new layers.
+        //map.on('load', function loadingData() {
+        map.on('idle', () => { //simplifying the function statement: arrow with brackets to define a function
+            // 7 Chart relevant operations
+            // 7.1 generate the declared dictionary object "counties".
+            // add the county name as key and the number of cell tower as values in a dictionary declared before
+
+            magnitudes = calEarthquakes(earthquakes, map.getBounds());
+            numEarthquakes = magnitudes[4] + magnitudes[5] + magnitudes[6];
+            document.getElementById("earthquake-count").innerHTML = numEarthquakes;
+
+
+            // 7.4 slicing the arrays
+            // only keep the top 10 values, and push “county” to the first of the array.
+            x = Object.keys(magnitudes);
+            x.unshift("mag")
+
+            // only keep the top 10 values, and push “#” to the first of the array.
+            y = Object.values(magnitudes);
+            y.unshift("#")
+
+            // 7.5 generate the chart
+            earthquakeChart.load({
+                columns: [x, y]
+            });
+
+        });
 
 
 
-    // 7 Chart relevant operations
-    // 7.1 generate the declared dictionary object "counties".
-    // add the county name as key and the number of cell tower as values in a dictionary declared before
-    // let mapBound = map.getBounds();
+        }
+        // call the function
+        geojsonFetch();
 
-    magnitudes = calEarthquakes(earthquakes, map.getBounds());
-    numEarthquakes = magnitudes[4] + magnitudes[5] + magnitudes[6];
-    document.getElementById("earthquake-count").innerHTML = numEarthquakes;
+        function calEarthquakes(currentEarthquakes, currentMapBounds) {
 
+            let magnitudesClasses = {
+                4: 0,
+                5: 0,
+                6: 0
+            };
+            currentEarthquakes.features.forEach(function (d) {
 
-    // 7.4 slicing the arrays
-    // only keep the top 10 values, and push “county” to the first of the array.
-    x = Object.keys(magnitudes);
-    x.unshift("mag")
-
-    // only keep the top 10 values, and push “#” to the first of the array.
-    y = Object.values(magnitudes);
-    y.unshift("#")
-
-
-    // 7.5 generate the chart
-
-
-    earthquakeChart = c3.generate({
-        size: {
-            height: 350,
-            width: 460
-        },
-        data: {
-            x: 'mag',
-            columns: [x, y], //input the x - sorted county number, y - the corresponding # of cell towers.
-            type: 'bar',
-            colors: {
-                '#': (d) => {
-                    return colors[d["x"]];
+                if (currentMapBounds.contains(d.geometry.coordinates)) {
+                    // earthquakeCount += 1;
+                    magnitudesClasses[Math.floor(d.properties.mag)] += 1;
                 }
-            },
-            onclick: function (d) { // update the map and sidebar once the bar is clicked.
-                let floor = parseInt(x[1 + d["x"]]),
-                    ceiling = floor + 1;
-                map.setFilter('earthquakes-point',
-                    ['all',
-                        ['>=', 'mag', floor],
-                        ['<', 'mag', ceiling]
-                    ]);
-            }
-        },
-        axis: {
-            x: { //county
-                type: 'category',
-            },
-            y: { //count
-                tick: {
-                    values: [10, 20, 30, 40]
-                }
-            }
-        },
-        legend: {
-            show: false
-        },
-        bindto: "#earthquake-chart" //bind the chart to the place holder element "county-chart".
-    });
 
-});
-
-
-
-//load data to the map as new layers.
-//map.on('load', function loadingData() {
-map.on('idle', () => { //simplifying the function statement: arrow with brackets to define a function
-    // 7 Chart relevant operations
-    // 7.1 generate the declared dictionary object "counties".
-    // add the county name as key and the number of cell tower as values in a dictionary declared before
-   
-    magnitudes = calEarthquakes(earthquakes, map.getBounds());
-    numEarthquakes = magnitudes[4] + magnitudes[5] + magnitudes[6];
-    document.getElementById("earthquake-count").innerHTML = numEarthquakes;
-
-
-    // 7.4 slicing the arrays
-    // only keep the top 10 values, and push “county” to the first of the array.
-    x = Object.keys(magnitudes);
-    x.unshift("mag")
-
-    // only keep the top 10 values, and push “#” to the first of the array.
-    y = Object.values(magnitudes);
-    y.unshift("#")
-
-    // 7.5 generate the chart
-    earthquakeChart.load({
-        columns: [x, y]
-    });
-
-});
-
-
-
-}
-// call the function
-geojsonFetch();
-
-function calEarthquakes(currentEarthquakes, currentMapBounds) {
-
-    let magnitudesClasses = {
-        4: 0,
-        5: 0,
-        6: 0
-    };
-    currentEarthquakes.features.forEach(function (d) {
-
-        if (currentMapBounds.contains(d.geometry.coordinates)) {
-            // earthquakeCount += 1;
-            magnitudesClasses[Math.floor(d.properties.mag)] += 1;
+            })
+            return magnitudesClasses;
         }
 
-    })
-    return magnitudesClasses;
-}
+        const reset = document.getElementById('reset');
+        reset.addEventListener('click', event => {
+            map.flyTo({
+                zoom: 5,
+                center: [138, 38]
+            });
 
-const reset = document.getElementById('reset');
-reset.addEventListener('click', event => {
-    map.flyTo({
-        zoom: 5,
-        center: [138, 38]
-    });
-
-    map.setFilter('earthquakes-point', null)
+            map.setFilter('earthquakes-point', null)
 
 
-});
-
-
-
+        });
     </script>
 </body>
 

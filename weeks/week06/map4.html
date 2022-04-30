@@ -2,237 +2,231 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Earthquakes in Japan</title>
-    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web|Oswald" rel="stylesheet">
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-    <link rel="stylesheet" href="css/c3.min.css">
-    <style>
-        body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Titillium Web', serif;
-}
+  <meta charset="utf-8">
+  <title>Earthquakes in Japan</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web|Oswald" rel="stylesheet">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/c3.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Titillium Web', serif;
+    }
 
-#map {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-}
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
 
-#info {
-  z-index: 1000;
-  position: absolute;
-  width: 500px;
-  top: 1%;
-  bottom: 1%;
-  left: .5%;
-  padding: 40px 15px 900px 15px;
-  background: #343a40;
-  color: white;
+    #info {
+      z-index: 1000;
+      position: absolute;
+      width: 500px;
+      top: 1%;
+      bottom: 1%;
+      left: .5%;
+      padding: 40px 15px 900px 15px;
+      background: #343a40;
+      color: white;
 
-}
-
-
-/* social media icons */
-#info a {
-  color: lightgray;
-}
-
-#info a:hover {
-  color: white;
-  opacity: 0.3;
-}
+    }
 
 
-#title {
-  font-size: 25px;
-  font-family: 'Oswald', sans-serif;
-}
+    /* social media icons */
+    #info a {
+      color: lightgray;
+    }
 
-/* social media icons */
-#title span {
-  font-size: 14px;
-  float: right;
-  margin-right: 10px;
-}
-
-/* card decks */
-#desc {
-  text-align: center;
-  color: lightgray;
-  font-size: medium;
-  font-weight: bold;
-  margin-bottom: 0px;
-}
-
-#earthquake-count {
-  margin:0;
-  text-align: center;
-  color: orange;
-  font-size: 50px;
-}
-
-#earthquake-chart {
-  top: 20px;
-}
+    #info a:hover {
+      color: white;
+      opacity: 0.3;
+    }
 
 
-#footer {
-  position: absolute;
-  bottom: 0px;
-  margin-bottom:20px;
-  margin-right: 10px;
-  font-size: 13px;
-  line-height: 150%;
-  color: lightgray;
-}
+    #title {
+      font-size: 25px;
+      font-family: 'Oswald', sans-serif;
+    }
 
-/* the layout of the legend panel */
-#legend {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 110px;
-    background: #fff;
-    margin-right: 20px;
-    margin-bottom: 40px;
-    padding: 10px 20px 10px 10px;
-    border-radius: 3px;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-}
+    /* social media icons */
+    #title span {
+      font-size: 14px;
+      float: right;
+      margin-right: 10px;
+    }
 
-/* each line for a break */
-.break {
-    position: relative;
-    margin: 0px;
-    padding: 0px;
-}
+    /* card decks */
+    #desc {
+      text-align: center;
+      color: lightgray;
+      font-size: medium;
+      font-weight: bold;
+      margin-bottom: 0px;
+    }
 
-/* basic style for a dot/circle */
-.dot {
-    display: inline-block;
-    margin-top: 5px;
-    border-radius: 50%;
-    opacity: 0.6;
-}
+    #earthquake-count {
+      margin: 0;
+      text-align: center;
+      color: orange;
+      font-size: 50px;
+    }
 
-/* the label for the dot */
-.dot-label {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-style: italic;
-}
+    #earthquake-chart {
+      top: 20px;
+    }
 
 
+    #footer {
+      position: absolute;
+      bottom: 0px;
+      margin-bottom: 20px;
+      margin-right: 10px;
+      font-size: 13px;
+      line-height: 150%;
+      color: lightgray;
+    }
 
-    </style>
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
-    <script src="js/d3.js"></script>
-    <script src="js/c3.min.js"></script>
+    /* the layout of the legend panel */
+    #legend {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 110px;
+      background: #fff;
+      margin-right: 20px;
+      margin-bottom: 40px;
+      padding: 10px 20px 10px 10px;
+      border-radius: 3px;
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    /* each line for a break */
+    .break {
+      position: relative;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    /* basic style for a dot/circle */
+    .dot {
+      display: inline-block;
+      margin-top: 5px;
+      border-radius: 50%;
+      opacity: 0.6;
+    }
+
+    /* the label for the dot */
+    .dot-label {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-style: italic;
+    }
+  </style>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+  <script src="js/d3.js"></script>
+  <script src="js/c3.min.js"></script>
 </head>
 
 <body>
-    <div id="info">
-        <div id="title">
-            Earthquakes in Japan - September 2017
-            <span><a href="https://twitter.com/UW" target="_blank"><i class="fa fa-twitter-square"></i></a></span>
-            <span><a href="https://github.com/jakobzhao/geog458" target="_blank"><i
-                        class="fa fa-github-square"></i></a></span>
-                        <span id="reset"><a href="#">reset</a></span>
-        </div>
-        <div id="count" class="card">
-            <h5 id="desc"> # Earthquakes in the displaying region</h5>
-            <p id="earthquake-count"></p>
-        </div>
-        <div id="earthquake-chart"></div>
-
-        <div id="footer">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-            dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit
-            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-            in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum.
-        </div>
+  <div id="info">
+    <div id="title">
+      Earthquakes in Japan - September 2017
+      <span><a href="https://twitter.com/UW" target="_blank"><i class="bi bi-twitter"></i></a></span>
+      <span><a href="https://github.com/jakobzhao/geog458" target="_blank"><i class="bi bi-github"></i></a></span>
+      <span id="reset"><a href="#">reset</a></span>
     </div>
-    <div id="map"></div>
-    <div id="legend"></div>
-    <script>
-mapboxgl.accessToken =
-    'pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw';
-let map = new mapboxgl.Map({
-    container: 'map', // container ID
-    style: 'mapbox://styles/mapbox/dark-v10',
-    zoom: 5, // starting zoom
-    minZoom: 5,
-    center: [138, 38] // starting center
-});
+    <div id="count" class="card">
+      <h5 id="desc"> # Earthquakes in the displaying region</h5>
+      <p id="earthquake-count"></p>
+    </div>
+    <div id="earthquake-chart"></div>
 
-let earthquakeChart = null,
-    magnitude = {},
-    numEarthquakes = 0;
-
-const grades = [4, 5, 6],
-    colors = ['rgb(208,209,230)', 'rgb(103,169,207)', 'rgb(1,108,89)'],
-    radii = [5, 15, 20];
-
-const reset = document.getElementById('reset');
-reset.addEventListener('click', event => {
-    map.flyTo({
-        zoom: 5,
-        center: [138, 38]
+    <div id="footer">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+      ea commodo consequat. Duis aute
+      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
+      dolor sit amet,
+      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+      irure dolor in reprehenderit
+      in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+      in voluptate velit esse cillum
+      dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+      deserunt mollit anim id est laborum.
+    </div>
+  </div>
+  <div id="map"></div>
+  <div id="legend"></div>
+  <script>
+    mapboxgl.accessToken =
+      'pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw';
+    let map = new mapboxgl.Map({
+      container: 'map', // container ID
+      style: 'mapbox://styles/mapbox/dark-v10',
+      zoom: 5, // starting zoom
+      minZoom: 5,
+      center: [138, 38] // starting center
     });
 
-    map.setFilter('earthquakes-point', null)
+    let earthquakeChart = null,
+      magnitude = {},
+      numEarthquakes = 0;
+
+    const grades = [4, 5, 6],
+      colors = ['rgb(208,209,230)', 'rgb(103,169,207)', 'rgb(1,108,89)'],
+      radii = [5, 15, 20];
+
+    const reset = document.getElementById('reset');
+    reset.addEventListener('click', event => {
+      map.flyTo({
+        zoom: 5,
+        center: [138, 38]
+      });
+
+      map.setFilter('earthquakes-point', null)
 
 
-});
+    });
 
 
 
-// create legend
-const legend = document.getElementById('legend');
+    // create legend
+    const legend = document.getElementById('legend');
 
-//set up legend grades and labels
-var labels = ['<strong>Magnitude</strong>'],
-    vbreak;
-//iterate through grades and create a scaled circle and label for each
-for (var i = 0; i < grades.length; i++) {
-    vbreak = grades[i];
-    // you need to manually adjust the radius of each dot on the legend 
-    // in order to make sure the legend can be properly referred to the dot on the map.
-    dot_radii = 2 * radii[i];
-    labels.push(
+    //set up legend grades and labels
+    var labels = ['<strong>Magnitude</strong>'],
+      vbreak;
+    //iterate through grades and create a scaled circle and label for each
+    for (var i = 0; i < grades.length; i++) {
+      vbreak = grades[i];
+      // you need to manually adjust the radius of each dot on the legend 
+      // in order to make sure the legend can be properly referred to the dot on the map.
+      dot_radii = 2 * radii[i];
+      labels.push(
         '<p class="break"><i class="dot" style="background:' + colors[i] + '; width: ' + dot_radii +
         'px; height: ' +
         dot_radii + 'px; "></i> <span class="dot-label" style="top: ' + dot_radii / 2 + 'px;">' + vbreak +
         '</span></p>');
 
-}
-const source =
-    '<p style="text-align: right; font-size:10pt">Source: <a href="https://earthquake.usgs.gov/earthquakes/">USGS</a></p>';
+    }
+    const source =
+      '<p style="text-align: right; font-size:10pt">Source: <a href="https://earthquake.usgs.gov/earthquakes/">USGS</a></p>';
 
-legend.innerHTML = labels.join('') + source;
-
-    </script>
+    legend.innerHTML = labels.join('') + source;
+  </script>
 </body>
 
 </html>
