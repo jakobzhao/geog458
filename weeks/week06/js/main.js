@@ -121,13 +121,20 @@ async function geojsonFetch() {
             data: {
                 x: 'mag',
                 columns: [x, y], //input the x - sorted county number, y - the corresponding # of cell towers.
-                type: 'bar', //a bar chart
+                type: 'bar',
+                colors: {
+                    '#': (d)=>{
+                      return colors[d["x"]];
+                    }
+                },
                 onclick: function (d) { // update the map and sidebar once the bar is clicked.
                     let floor = parseInt(x[1 + d["x"]]),
                         ceiling = floor + 1;
-                    map.setFilter('earthquakes-point', ['all', ['>=', 'mag', floor],
-                        ['<', 'mag', ceiling]
-                    ]);
+                    map.setFilter('earthquakes-point', 
+                        ['all', 
+                            ['>=', 'mag', floor],
+                            ['<', 'mag', ceiling]
+                        ]);
                 }
             },
             axis: {
