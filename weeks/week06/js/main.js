@@ -18,24 +18,6 @@ const grades = [4, 5, 6],
 
 
 
-
-
-// call the function
-geojsonFetch();
-
-
-const reset = document.getElementById('reset');
-reset.addEventListener('click', event => {
-    map.flyTo({
-        zoom: 5,
-        center: [138, 38]
-    });
-
-    map.setFilter('earthquakes-point', null)
-
-
-});
-
 // create legend
 const legend = document.getElementById('legend');
 
@@ -61,23 +43,7 @@ const source =
 legend.innerHTML = labels.join('') + source;
 
 
-function calEarthquakes(currentEarthquakes, currentMapBounds) {
 
-    let magnitudesClasses = {
-        4: 0,
-        5: 0,
-        6: 0
-    };
-    currentEarthquakes.features.forEach(function (d) {
-
-        if (currentMapBounds.contains(d.geometry.coordinates)) {
-            // earthquakeCount += 1;
-            magnitudesClasses[Math.floor(d.properties.mag)] += 1;
-        }
-
-    })
-    return magnitudesClasses;
-}
 
 async function geojsonFetch() {
 
@@ -250,3 +216,37 @@ async function geojsonFetch() {
 
 
 }
+
+// call the function
+geojsonFetch();
+
+function calEarthquakes(currentEarthquakes, currentMapBounds) {
+
+    let magnitudesClasses = {
+        4: 0,
+        5: 0,
+        6: 0
+    };
+    currentEarthquakes.features.forEach(function (d) {
+
+        if (currentMapBounds.contains(d.geometry.coordinates)) {
+            // earthquakeCount += 1;
+            magnitudesClasses[Math.floor(d.properties.mag)] += 1;
+        }
+
+    })
+    return magnitudesClasses;
+}
+
+
+const reset = document.getElementById('reset');
+reset.addEventListener('click', event => {
+    map.flyTo({
+        zoom: 5,
+        center: [138, 38]
+    });
+
+    map.setFilter('earthquakes-point', null)
+
+
+});

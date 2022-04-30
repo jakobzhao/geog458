@@ -24,19 +24,6 @@ body {
 
 }
 
-@media only screen and (max-width: 1026px) {
-  #info {
-    width: 0;
-    height: 0;
-    visibility: hidden !important;
-  }
-
-  #info * {
-    width: 0;
-    height: 0;
-    visibility: hidden !important;
-  }
-}
 
 /* social media icons */
 #info a {
@@ -48,10 +35,6 @@ body {
   opacity: 0.3;
 }
 
-#info h4 i {
-  font-size: 1.25e;
-  padding-right: 10px
-}
 
 
 #title {
@@ -135,11 +118,6 @@ body {
     top: 0;
     right: 0;
     font-style: italic;
-}
-
-/* the text color of a hyper link */
-a {
-    color: black
 }
 
 
