@@ -35,7 +35,7 @@
 { "type": "Feature", "properties": { "id": "us2000awm5", "mag": 4.3, "time": 1505773697460, "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": [ 150.1858, 46.1638, 102.95 ] } },
 { "type": "Feature", "properties": { "id": "us2000at5n", "mag": 4.5, "time": 1505662282900, "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": [ 140.7612, 44.1688, 33.57 ] } },
 { "type": "Feature", "properties": { "id": "us2000apgy", "mag": 4.9, "time": 1505640302130, "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": [ 141.2485, 37.3415, 54.96 ] } },
-{ "type": "Feature", "properties": { "id": "us2000apln", "mag": 3.8, "time": 1505599105290, "felt": 27, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": [ 139.4711, 35.839, 65.43 ] } },
+{ "type": "Feature", "properties": { "id": "us2000apln", "mag": 6.8, "time": 1505599105290, "felt": 27, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": [ 139.4711, 35.839, 65.43 ] } },
 { "type": "Feature", "properties": { "id": "us2000asmu", "mag": 4.3, "time": 1505510611600, "felt": null, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": [ 137.0445, 34.5022, 328.82 ] } },
 { "type": "Feature", "properties": { "id": "us2000am0x", "mag": 4.6, "time": 1505348843700, "felt": 139, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": [ 139.6152, 35.7719, 48.83 ] } },
 { "type": "Feature", "properties": { "id": "us2000ajqf", "mag": 4.6, "time": 1505058668170, "felt": 49, "tsunami": 0 }, "geometry": { "type": "Point", "coordinates": [ 139.1945, 35.7377, 54.25 ] } },

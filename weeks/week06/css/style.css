@@ -1,8 +1,14 @@
-html, body, #map {
-  width: 100vw;
-  height: 100vh;
+body {
   margin: 0;
+  padding: 0;
   font-family: 'Titillium Web', serif;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 #info {
@@ -60,29 +66,83 @@ html, body, #map {
   margin-right: 10px;
 }
 
-#placename {
-  font-size: 40px;
-  font-family: 'Oswald', sans-serif;
-}
-
 /* card decks */
 #desc {
   text-align: center;
   color: lightgray;
   font-size: medium;
   font-weight: bold;
+  margin-bottom: 0px;
 }
 
-#county-count {
+#earthquake-count {
   margin:0;
   text-align: center;
   color: orange;
   font-size: 50px;
 }
 
-#county-chart {
+#earthquake-chart {
   top: 20px;
 }
+
+
+#footer {
+  position: absolute;
+  bottom: 0px;
+  margin-bottom:20px;
+  margin-right: 10px;
+  font-size: 13px;
+  line-height: 150%;
+  color: lightgray;
+}
+
+
+
+/* the layout of the legend panel */
+#legend {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 110px;
+    background: #fff;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    padding: 10px 20px 10px 10px;
+    border-radius: 3px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* each line for a break */
+.break {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* basic style for a dot/circle */
+.dot {
+    display: inline-block;
+    margin-top: 5px;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+/* the label for the dot */
+.dot-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-style: italic;
+}
+
+/* the text color of a hyper link */
+a {
+    color: black
+}
+
+
 
 /* bar chart */
 text {
@@ -102,10 +162,4 @@ text {
   color: black
 }
 
-#footer {
-  margin-top: 50px;
-  margin-right: 10px;
-  font-size: 13px;
-  line-height: 150%;
-  color: lightgray;
-}
+
