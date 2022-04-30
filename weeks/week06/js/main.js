@@ -8,7 +8,9 @@ let map = new mapboxgl.Map({
     center: [138, 38] // starting center
 });
 
-let earthquakeChart = null;
+let earthquakeChart = null,
+    magnitude = {},
+    numEarthquakes = 0;
 
 const grades = [4, 5, 6],
     colors = ['rgb(208,209,230)', 'rgb(103,169,207)', 'rgb(1,108,89)'],
@@ -31,8 +33,6 @@ async function geojsonFetch() {
 
         // when loading a geojson, there are two steps
         // add a source of the data and then add the layer out of the source
-
-
         map.addSource('earthquakes', {
             type: 'geojson',
             data: earthquakes
@@ -93,38 +93,21 @@ async function geojsonFetch() {
         // 7 Chart relevant operations
         // 7.1 generate the declared dictionary object "counties".
         // add the county name as key and the number of cell tower as values in a dictionary declared before
-        magnitudes = {
-            4: 0,
-            5: 0,
-            6: 0
-        };
+        // let mapBound = map.getBounds();
 
-        let mapBound = map.getBounds();
-        let earthquakeCount = 0;
-        earthquakes.features.forEach(function (d) {
-
-            if (mapBound.contains(d.geometry.coordinates)) {
-                earthquakeCount += 1;
-                magnitudes[Math.floor(d.properties.mag)] += 1;
-            }
-
-        })
-
-        document.getElementById("earthquake-count").innerHTML = earthquakeCount;
+        magnitudes = calEarthquakes(earthquakes, map.getBounds());
+        numEarthquakes = magnitudes[4] + magnitudes[5] + magnitudes[6];
+        document.getElementById("earthquake-count").innerHTML = numEarthquakes;
 
 
         // 7.4 slicing the arrays
         // only keep the top 10 values, and push “county” to the first of the array.
         x = Object.keys(magnitudes);
-        x.reverse();
-        x.push("mag");
-        x.reverse();
+        x.unshift("mag")
 
         // only keep the top 10 values, and push “#” to the first of the array.
         y = Object.values(magnitudes);
-        y.reverse();
-        y.push("#");
-        y.reverse();
+        y.unshift("#")
 
 
         // 7.5 generate the chart
@@ -140,11 +123,11 @@ async function geojsonFetch() {
                 columns: [x, y], //input the x - sorted county number, y - the corresponding # of cell towers.
                 type: 'bar', //a bar chart
                 onclick: function (d) { // update the map and sidebar once the bar is clicked.
-                    map.setPaintProperty(
-                        'earthquakes-point',
-                        'circle-stroke-width',
-                        100
-                        );
+                    let floor = parseInt(x[1 + d["x"]]),
+                        ceiling = floor + 1;
+                    map.setFilter('earthquakes-point', ['all', ['>=', 'mag', floor],
+                        ['<', 'mag', ceiling]
+                    ]);
                 }
             },
             axis: {
@@ -163,7 +146,6 @@ async function geojsonFetch() {
             bindto: "#earthquake-chart" //bind the chart to the place holder element "county-chart".
         });
 
-
     });
 
 
@@ -180,42 +162,24 @@ async function geojsonFetch() {
             6: 0
         };
 
-
-        let mapBound = map.getBounds();
-        let earthquakeCount = 0;
-        earthquakes.features.forEach(function (d) {
-            if (mapBound.contains(d.geometry.coordinates)) {
-                earthquakeCount += 1;
-                magnitudes[Math.floor(d.properties.mag)] += 1;
-            }
-
-        })
-
-        document.getElementById("earthquake-count").innerHTML = earthquakeCount;
+        magnitudes = calEarthquakes(earthquakes, map.getBounds());
+        numEarthquakes = magnitudes[4] + magnitudes[5] + magnitudes[6];
+        document.getElementById("earthquake-count").innerHTML = numEarthquakes;
 
 
         // 7.4 slicing the arrays
         // only keep the top 10 values, and push “county” to the first of the array.
         x = Object.keys(magnitudes);
-        x.reverse();
-        x.push("mag");
-        x.reverse();
+        x.unshift("mag")
 
         // only keep the top 10 values, and push “#” to the first of the array.
         y = Object.values(magnitudes);
-        y.reverse();
-        y.push("#");
-        y.reverse();
-
+        y.unshift("#")
 
         // 7.5 generate the chart
-        bchart.load({
-            data: {
-                x: 'mag',
-                columns: [x, y]
-            }
+        earthquakeChart.load({
+            columns: [x, y]
         });
-
 
     });
 
@@ -251,3 +215,23 @@ const source =
     '<p style="text-align: right; font-size:10pt">Source: <a href="https://earthquake.usgs.gov/earthquakes/">USGS</a></p>';
 
 legend.innerHTML = labels.join('') + source;
+
+
+function calEarthquakes(currentEarthquakes, currentMapBounds) {
+    // let mapBound = map.getBounds();
+    // let earthquakeCount = 0;
+    let magnitudesClasses = {
+        4: 0,
+        5: 0,
+        6: 0
+    };
+    currentEarthquakes.features.forEach(function (d) {
+
+        if (currentMapBounds.contains(d.geometry.coordinates)) {
+            // earthquakeCount += 1;
+            magnitudesClasses[Math.floor(d.properties.mag)] += 1;
+        }
+
+    })
+    return magnitudesClasses;
+}
