@@ -2,12 +2,12 @@
 
 **Learning Objectives**
 
-- the fundamental concepts relavent to smart dashboard;
-- the promise mechnism for data loading;
+- the fundamental concepts relevant to smart dashboard;
+- the promise mechanism for data loading;
 - design an application for multiple devices; and
 - coordinated visualization.
 
-In this lecture, we will introuduce how to make a smart dashboard using javascript. A smart dashboard is frequently used to provide a coordinated view of multiple visual compoanents (e.g., maps, charts, texts, tables, diagrams) to holistically present the a (geographical) event. For example, one of the most popular use of smart dashboard is to visualize the trend of COVID-19 (refer to https://hgis.uw.edu/virus). Since map is an essential component for most smart dashboard applications, it has been considered as a very imporant type of digital geographies project.
+In this lecture, we will introduce how to make a smart dashboard using javascript. A smart dashboard is frequently used to provide a coordinated view of multiple visual components (e.g., maps, charts, texts, tables, diagrams) to holistically present the a (geographical) event. For example, one of the most popular use of smart dashboard is to visualize the trend of COVID-19 (refer to https://hgis.uw.edu/virus). Since map is an essential component for most smart dashboard applications, it has been considered as a very important type of digital geographies project.
 
 In order to show how to create a smart dashboard, we wil walk through a smart dashboard together. This dashboard illustrates the descriptive statistics of cell towers in each county Washington State in the year of 2010. You can review the final look of this dashboard at [here](https://jakobzhao.github.io/geog458/weeks/week06/index.html).
 
@@ -425,7 +425,7 @@ text {
 
 ## 5. Summary
 
-This lecture has shown the fundamental concepts and techiniques about smart dashboard using a basic example. To make a smart dashboard for a geogrpahical event or phenomenon, it is necessary to code multiple visual strategies in a holistic and coordinated manner. Moreover, we briefly talk about how to suppor the idea of responsive design -- how to visualize a web design on multiple devices. Another primary techiniqu we have practiced is to load geojson data through a Promise mechnism supported D3 or Jquery methods. If you are interested in more applications, please refer to the examples below.
+This lecture has shown the fundamental concepts and techiniques about smart dashboard using a basic example. To make a smart dashboard for a geographical event or phenomenon, it is necessary to code multiple visual strategies in a holistic and coordinated manner. Moreover, we briefly talk about how to suppor the idea of responsive design -- how to visualize a web design on multiple devices. Another primary technique we have practiced is to load geojson data through a Promise mechanism supported D3 or Jquery methods. If you are interested in more applications, please refer to the examples below.
 
 - [the water caculator](https://jakobzhao.github.io/twca/)
 - [the covid-19 dashbaord](https://hgis.uw.edu/virus)

@@ -17,6 +17,68 @@ const grades = [4, 5, 6],
     radii = [5, 15, 20];
 
 
+
+
+
+// call the function
+geojsonFetch();
+
+
+const reset = document.getElementById('reset');
+reset.addEventListener('click', event => {
+    map.flyTo({
+        zoom: 5,
+        center: [138, 38]
+    });
+
+    map.setFilter('earthquakes-point', null)
+
+
+});
+
+// create legend
+const legend = document.getElementById('legend');
+
+//set up legend grades and labels
+var labels = ['<strong>Magnitude</strong>'],
+    vbreak;
+//iterate through grades and create a scaled circle and label for each
+for (var i = 0; i < grades.length; i++) {
+    vbreak = grades[i];
+    // you need to manually adjust the radius of each dot on the legend 
+    // in order to make sure the legend can be properly referred to the dot on the map.
+    dot_radii = 2 * radii[i];
+    labels.push(
+        '<p class="break"><i class="dot" style="background:' + colors[i] + '; width: ' + dot_radii +
+        'px; height: ' +
+        dot_radii + 'px; "></i> <span class="dot-label" style="top: ' + dot_radii / 2 + 'px;">' + vbreak +
+        '</span></p>');
+
+}
+const source =
+    '<p style="text-align: right; font-size:10pt">Source: <a href="https://earthquake.usgs.gov/earthquakes/">USGS</a></p>';
+
+legend.innerHTML = labels.join('') + source;
+
+
+function calEarthquakes(currentEarthquakes, currentMapBounds) {
+
+    let magnitudesClasses = {
+        4: 0,
+        5: 0,
+        6: 0
+    };
+    currentEarthquakes.features.forEach(function (d) {
+
+        if (currentMapBounds.contains(d.geometry.coordinates)) {
+            // earthquakeCount += 1;
+            magnitudesClasses[Math.floor(d.properties.mag)] += 1;
+        }
+
+    })
+    return magnitudesClasses;
+}
+
 async function geojsonFetch() {
 
     // Await operator is used to wait for a promise. 
@@ -123,15 +185,15 @@ async function geojsonFetch() {
                 columns: [x, y], //input the x - sorted county number, y - the corresponding # of cell towers.
                 type: 'bar',
                 colors: {
-                    '#': (d)=>{
-                      return colors[d["x"]];
+                    '#': (d) => {
+                        return colors[d["x"]];
                     }
                 },
                 onclick: function (d) { // update the map and sidebar once the bar is clicked.
                     let floor = parseInt(x[1 + d["x"]]),
                         ceiling = floor + 1;
-                    map.setFilter('earthquakes-point', 
-                        ['all', 
+                    map.setFilter('earthquakes-point',
+                        ['all',
                             ['>=', 'mag', floor],
                             ['<', 'mag', ceiling]
                         ]);
@@ -163,12 +225,7 @@ async function geojsonFetch() {
         // 7 Chart relevant operations
         // 7.1 generate the declared dictionary object "counties".
         // add the county name as key and the number of cell tower as values in a dictionary declared before
-        magnitudes = {
-            4: 0,
-            5: 0,
-            6: 0
-        };
-
+       
         magnitudes = calEarthquakes(earthquakes, map.getBounds());
         numEarthquakes = magnitudes[4] + magnitudes[5] + magnitudes[6];
         document.getElementById("earthquake-count").innerHTML = numEarthquakes;
@@ -192,53 +249,4 @@ async function geojsonFetch() {
 
 
 
-}
-
-
-// call the function
-geojsonFetch();
-
-
-// create legend
-const legend = document.getElementById('legend');
-
-//set up legend grades and labels
-var labels = ['<strong>Magnitude</strong>'],
-    vbreak;
-//iterate through grades and create a scaled circle and label for each
-for (var i = 0; i < grades.length; i++) {
-    vbreak = grades[i];
-    // you need to manually adjust the radius of each dot on the legend 
-    // in order to make sure the legend can be properly referred to the dot on the map.
-    dot_radii = 2 * radii[i];
-    labels.push(
-        '<p class="break"><i class="dot" style="background:' + colors[i] + '; width: ' + dot_radii +
-        'px; height: ' +
-        dot_radii + 'px; "></i> <span class="dot-label" style="top: ' + dot_radii / 2 + 'px;">' + vbreak +
-        '</span></p>');
-
-}
-const source =
-    '<p style="text-align: right; font-size:10pt">Source: <a href="https://earthquake.usgs.gov/earthquakes/">USGS</a></p>';
-
-legend.innerHTML = labels.join('') + source;
-
-
-function calEarthquakes(currentEarthquakes, currentMapBounds) {
-    // let mapBound = map.getBounds();
-    // let earthquakeCount = 0;
-    let magnitudesClasses = {
-        4: 0,
-        5: 0,
-        6: 0
-    };
-    currentEarthquakes.features.forEach(function (d) {
-
-        if (currentMapBounds.contains(d.geometry.coordinates)) {
-            // earthquakeCount += 1;
-            magnitudesClasses[Math.floor(d.properties.mag)] += 1;
-        }
-
-    })
-    return magnitudesClasses;
 }
