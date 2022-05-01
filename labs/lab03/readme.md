@@ -118,7 +118,7 @@ The map object will create a new data source `earthquakes`, and it then imports 
 
 A proportional symbol map allows the symbol for each geographical feature is proportional to a specific feature value. In this map, the radius of the dot is proportional to the magnitude of the earthquake the dot illustrates. Also, the color of each dot will also become darker when the magnitude increases.
 
-To do so, we need to define the grades of all magnitudes, the corresponding colors and radii, and then use the sequence number of the three arrays to check the corresponding value among the grades, colors and radii. For example, when magnitudes equals to 4, which is grades[1], we can use the same sequence number i, in this case, i = 1, to look for the assigned color, colors[1] equal to 'rgb(208,209,230)' and the radius of the proportional symbol, which is radii[i] equal to 5.
+To do so, we need to define the grades of all magnitudes, the corresponding colors and radii, and then use the sequence number of the three arrays to check the corresponding value among the grades, colors and radii. For example, when magnitudes equals to 4, which is grades[0], we can use the same sequence number i, in this case, i = 0, to look for the assigned color, colors[0] equal to 'rgb(208,209,230)' and the radius of the proportional symbol, which is radii[i] equal to 5.
 
 ```javascript
 const grades = [4, 5, 6], 
