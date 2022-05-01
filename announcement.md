@@ -1,5 +1,11 @@
 # Announcement
 
+- 04/19/2022: [The final project guideline](project/readme.md) has been released.
+
+- 04/18/2022：All the final presentations have been assigned.
+
+- check previous [announcements](announcement.md).
+
 - Two sets of quizzes have just been released on canvas ([CSS and Jquery](https://canvas.uw.edu/courses/1547729/quizzes/1653670), [HTML and Javascript](https://canvas.uw.edu/courses/1547729/quizzes/1653671)). Feel free to work on these as a way to hone or assess your web development skills. These two quizzes are optional and would not be graded.
 
 - Our Lectures and Labs temporarily move to Zoom.
