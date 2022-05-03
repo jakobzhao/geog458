@@ -1,5 +1,8 @@
 # Announcement
 
+- 04/22/2022：You can submit more than four think pieces. We will view them all, but the four with the hightest scores will be counted towards your final grade.
+
+- 04/21/2022: Requirement for [your final project proposal](https://canvas.uw.edu/courses/1547729/discussion_topics/7237157) is released. It is due on April 30th.
 - 04/19/2022: [The final project guideline](project/readme.md) has been released.
 
 - 04/18/2022：All the final presentations have been assigned.
