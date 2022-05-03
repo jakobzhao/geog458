@@ -255,6 +255,21 @@
 
         // call the function
         geojsonFetch();
+
+        // capture the element reset and add a click event to it.
+        const reset = document.getElementById('reset');
+        reset.addEventListener('click', event => {
+
+            // this event will trigger the map fly to its origin location and zoom level.
+            map.flyTo({
+                zoom: 5,
+                center: [138, 38]
+            });
+            // also remove all the applied filters
+            map.setFilter('earthquakes-point', null)
+
+
+        });
     </script>
 </body>
 
