@@ -82,8 +82,16 @@ Week 7: [Proposal revision and pilot study](https://canvas.uw.edu/courses/154772
 >           - ii. the associated script
 >           - iii. the multimedia (e.g., image, video, chart, external links, etc)
 >       - how would you transit from one scene/action to another one? like, fly from one location to another, zoom in or zoom out?
+> 
+>  In the meantime, you should initiate your final project by completing the following items:
+> 
+> - create a github repository
+> - add all your team members as contributors to this final project repo
+> - create its img and assets folder, and then upload multimedia and/or geospatial data to those folders. 
+> - start drafting the project description page onto the `readme.md`. You can move a lot of items from your revised proposal to the readme.md.
 
-Week 8: Proposal revision and project development
+
+Week 8: Project development
 
 Week 9-10: Coding and group meeting with TAs
 
