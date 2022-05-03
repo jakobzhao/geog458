@@ -23,18 +23,18 @@ All the final projects are expected to be published online, and the codes are 
 - A `readme.md` describes your project, including, but not limited to,
     - Project title
     - The url to visit the project. It should be in the format of `[username].github.io/[repo_name]`.
-    - team mates
+    - Team mates
     - Project description
     - One or two screenshots to illustrate the visualization of the project.
     - Project goal (such as, what is the message you want to deliver through your project?)
     - Data sources
-    - Applied libraries (e.g., Mapbox, D3, C3) and Web Services (e.g., github, basemap) in use
+    - Applied libraries (e.g., Mapbox, D3, C3) and Web Services in use (e.g., github, basemap). 
     - Other things that are necessary to inform the audience.
     - Acknowledgment
 
-- You are strongly recommended to share the final project on Twitter and Facebook. In the post, feel free to acknowledge contributions or to call for attention by tagging someone's account names. Those people or organizations may include but not limited to your group mates, TAs, instructor, UW, Mapbox, and etc.
+- You are **strongly recommended to share the final project on Twitter and Facebook**. In the post, feel free to acknowledge contributions or to call for attention by tagging someone's account names. Those people or organizations may include but not limited to your group mates, TAs, instructor, UW, Mapbox, and etc.
 
-- You need to create an about page or about window to introduce your group mates and their contributions. Also, feel free to introduce your TAs and Instructor as well. Take a look at this [about page](https://jakobzhao.github.io/slr/about.html) for ideas.
+- You need to **create an about page or about window** to describe your project, to introduce your group mates and their contributions. Also, feel free to introduce your TAs and Instructor as well. Take a look at this [about page](https://jakobzhao.github.io/slr/about.html) for ideas.
 
 ## Timeline
 
@@ -82,18 +82,21 @@ Week 7: [Proposal revision and pilot study](https://canvas.uw.edu/courses/154772
 >           - ii. the associated script
 >           - iii. the multimedia (e.g., image, video, chart, external links, etc)
 >       - how would you transit from one scene/action to another one? like, fly from one location to another, zoom in or zoom out?
-> 
->  In the meantime, you should initiate your final project by completing the following items:
-> 
+>
+> In the meantime, you should initiate your final project by completing the following items:
+>
 > - create a github repository
 > - add all your team members as contributors to this final project repo
 > - create its img and assets folder, and then upload multimedia and/or geospatial data to those folders. 
 > - start drafting the project description page onto the `readme.md`. You can move a lot of items from your revised proposal to the readme.md.
 
+Week 8: Project development and identified issues
 
-Week 8: Project development
 
-Week 9-10: Coding and group meeting with TAs
+
+Week 9-10: Project development and group meeting with TAs
+
+> There is no deliverable in these two weeks, but you are required to concentrate on developing your final project. In the meantime, **each group will need to meet your TA at least once during the lab session in Week 9. So, please participate in the lab sessions!** Also, in Week 9 to 10, the instructor will be available for virtual meetings during the normal lecture sessions and office hour sessions. You can make an appoint with the instructor via this [link](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI). If the time does not work for you, please reach out to schedule a commonly available time slot.
 
 Finals Week: Project presentation and submission
 
