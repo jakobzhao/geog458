@@ -90,7 +90,7 @@ All the final projects are expected to be published online, and the codes are 
 > - create its img and assets folder, and then upload multimedia and/or geospatial data to those folders.
 > - start drafting the project description page onto the `readme.md`. You can move a lot of items from your revised proposal to the readme.md.
 
-##### Week 8: [Project development and identified issues](https://canvas.uw.edu/courses/1547729/discussion_topics/7261370) `Due: May 21, by 11:59pm`
+#### Week 8: [Project development and identified issues](https://canvas.uw.edu/courses/1547729/discussion_topics/7261370) `Due: May 21, by 11:59pm`
 
 > This week, you are expected to work on your final project. We do not expect huge progress by the end of this week, but we do want to see that you have coded, tried out different approaches, and visualized geospatial data. So, please submit a project progress report to the discussion board. In this report, please present your progress in the following three aspects:
 >
@@ -98,7 +98,7 @@ All the final projects are expected to be published online, and the codes are 
 > - Template：Please create an `index.html` file which includes the template of your final project. It can be a html template for a generic web map project, a smart dashboard, or a geo-narrative. Also, you can create folders like `css`, `js`, `img`, `assets` in the github repository if needed. Please also include the github url of this `index.html` page that enables us to easily access its visualization.
 > - Identified issues: please list a few issues that you come across during the project development. The TAs will get back to your issues in a follow-up message or in the planned group meetings in Week 9.
 
-##### Week 9-10: Project development and group meeting with TAs
+#### Week 9-10: Project development and group meeting with TAs
 
 > There is no deliverable in these two weeks, but you are required to concentrate on developing your final project. In the meantime, **each group will need to meet your TA at least once during the lab session in Week 9. So, please participate in the lab sessions!** Also, in Week 9 to 10, the instructor will be available for virtual meetings during the normal lecture sessions and office hour sessions. You can make an appoint with the instructor via this [link](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI). If the time does not work for you, please reach out to schedule a commonly available time slot.
 
