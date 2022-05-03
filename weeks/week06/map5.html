@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <title>Earthquakes in Japan</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <!-- include google web fonts -->
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web|Oswald" rel="stylesheet">
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
+    <!-- include icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/c3.min.css">
     <style>
@@ -60,7 +62,7 @@
             margin-right: 10px;
         }
 
-        /* card decks */
+
         #desc {
             text-align: center;
             color: lightgray;
@@ -130,6 +132,7 @@
         }
     </style>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+    <!-- include c3.js to make charts. c3.js is built upon d3.js -->
     <script src="js/d3.js"></script>
     <script src="js/c3.min.js"></script>
 </head>
@@ -171,8 +174,11 @@
     <div id="map"></div>
     <div id="legend"></div>
     <script>
+        // assign the access token
         mapboxgl.accessToken =
             'pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw';
+
+        // declare the map object
         let map = new mapboxgl.Map({
             container: 'map', // container ID
             style: 'mapbox://styles/mapbox/dark-v10',
@@ -181,21 +187,23 @@
             center: [138, 38] // starting center
         });
 
+        // declare the coordinated chart as well as other variables.
         let earthquakeChart = null,
             magnitude = {},
             numEarthquakes = 0;
 
+        // create a few constant variables.
         const grades = [4, 5, 6],
             colors = ['rgb(208,209,230)', 'rgb(103,169,207)', 'rgb(1,108,89)'],
             radii = [5, 15, 20];
 
-
-        // create legend
+        // create the legend object and anchor it to the html element with id legend.
         const legend = document.getElementById('legend');
 
-        //set up legend grades and labels
-        var labels = ['<strong>Magnitude</strong>'],
+        //set up legend grades content and labels
+        let labels = ['<strong>Magnitude</strong>'],
             vbreak;
+
         //iterate through grades and create a scaled circle and label for each
         for (var i = 0; i < grades.length; i++) {
             vbreak = grades[i];
@@ -212,13 +220,13 @@
         const source =
             '<p style="text-align: right; font-size:10pt">Source: <a href="https://earthquake.usgs.gov/earthquakes/">USGS</a></p>';
 
+        // join all the labels and the source to create the legend content.
         legend.innerHTML = labels.join('') + source;
 
 
 
 
-
-
+        // define the asynchronous function to load geojson data.
 
         async function geojsonFetch() {
 
