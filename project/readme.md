@@ -42,65 +42,67 @@ All the final projects are expected to be published online, and the codes are 
 
 #### Week 5: [Draft project proposal, data sources, and other multimedia](https://canvas.uw.edu/courses/1547729/discussion_topics/7237157) `Due: April 30, 11:59pm`
 
-> Please share your final project proposal on this discussion board.  A proposal only needs to be shared once by one of your group members. In the proposal, please indicate what you want to make by the end of this quarter, the targeting audience,  the available datasets, the required multimedia (e.g., texts, images, videos, etc), and the functions. It would be great if you can find one or two digital geographies-related projects that you can learn from. It will give the instructor and TAs a better idea of how to help you. The proposal needs to have **at least 300 words** and one or two screenshots of the available projects that you want to learn from. Once a project proposal is shared, I welcome any suggestions if you have, the TAs and the instructor will participate in the discussion too.
+Please share your final project proposal on this discussion board.  A proposal only needs to be shared once by one of your group members. In the proposal, please indicate what you want to make by the end of this quarter, the targeting audience,  the available datasets, the required multimedia (e.g., texts, images, videos, etc), and the functions. It would be great if you can find one or two digital geographies-related projects that you can learn from. It will give the instructor and TAs a better idea of how to help you. The proposal needs to have **at least 300 words** and one or two screenshots of the available projects that you want to learn from. Once a project proposal is shared, I welcome any suggestions if you have, the TAs and the instructor will participate in the discussion too.
 
 #### Week 6: [Design project prototype](https://canvas.uw.edu/courses/1547729/discussion_topics/7246492)  `Due: May 7, by 11:59pm`
 
-> Please share your project prototype on this discussion board. A prototype is a sketch of your expected graphic user interface (GUI) of the project. Usually, it will contain a few GUIs of the proposed project. When designing the prototype, you are expected to first 1) determine what types of projects your group plan to work on: a generic web map project, a storymap, or a dashboard; and then for each interface, you are expected to 2) appropriately illustrate each component (e.g., map view, title, legend, side panel, etc.) in its right size to its position on a web page. Please make sure 3) to balance the information richness and the legibility of the design. In other words, it should not be too complicated, even though, it can still illustrate adequate information about the project. You are encouraged to create the prototype by drawing on paper or designing on [Figma](https://www.figma.com) if you prefer.
+Please share your project prototype on this discussion board. A prototype is a sketch of your expected graphic user interface (GUI) of the project. Usually, it will contain a few GUIs of the proposed project. When designing the prototype, you are expected to first 1) determine what types of projects your group plan to work on: a generic web map project, a storymap, or a dashboard; and then for each interface, you are expected to 2) appropriately illustrate each component (e.g., map view, title, legend, side panel, etc.) in its right size to its position on a web page. Please make sure 3) to balance the information richness and the legibility of the design. In other words, it should not be too complicated, even though, it can still illustrate adequate information about the project. You are encouraged to create the prototype by drawing on paper or designing on [Figma](https://www.figma.com) if you prefer.
 
 #### Week 7: [Proposal revision and pilot study](https://canvas.uw.edu/courses/1547729/discussion_topics/7260760)   `Due: May 14, by 11:59pm`
 
-> This week, you are required to revise your proposal based on the feedback from the TAs and the instructor. In the meantime, please conduct pilot studies in order to 1) test and/or fine-tune your proposed idea to a practical level and 2) detail specific project components. Once done, please share your revised proposal onto the discussion board. This deliverable should **not be less than 300 words**. Your revised proposal should have the following components. 
->
-> - project idea
-> - project significance and broader impacts
->   - please think critically, could your project generate any negative impact once done? how would you avoid that?
-> - primary functions and major data sources
-> - targeted audience
-> - multimedia (e.g., external links, texts, images, youtube videos, and etc.)
-> - project format
->   - **Option one**: Generic digital geographies project
->       - map projection, map zoom levels, center.
->       - description of the base map you plan to use.
->       - description of the thematic layers you will make.
->           - i. the used visual strategies: choropleth, proportional symbols, etc.
->           - ii. the supporting data sets for each thematic map layer.
->           - iii. vector or raster layer. If it is a vector, which data attribute to use? If a raster, which zoom level and presumed boundingbox to use?
->       - proposed interactive functions
->   - **Option two**: Smart dashboard
->       - respond to all the items listed in the option one
->       - How to arrange all the components on the graphical user interface (GUI)?
->       - What are the coordinated charts you plan to make?
->           -  i. javascript that supports the making of a chart.
->           -  ii. type of chart (e.g., line, bar, pie, etc.)
->           -  iii. data attributes to be visualized.
->   - **Option three**: Geo-narrative/Storymap
->       - respond to all the items listed in the option one
->       - draft the storyline
->       - for each scene/action, describe the following items in detail:
->           - i. the map you plan to draw
->           - ii. the associated script
->           - iii. the multimedia (e.g., image, video, chart, external links, etc)
->       - how would you transit from one scene/action to another one? like, fly from one location to another, zoom in or zoom out?
->
-> In the meantime, you should initiate your final project by completing the following items:
->
-> - create a github repository
-> - add all your team members as contributors to this final project repo
-> - create its img and assets folder, and then upload multimedia and/or geospatial data to those folders.
-> - start drafting the project description page onto the `readme.md`. You can move a lot of items from your revised proposal to the readme.md.
+This week, you are required to revise your proposal based on the feedback from the TAs and the instructor. In the meantime, please conduct pilot studies in order to 1) test and/or fine-tune your proposed idea to a practical level and 2) detail specific project components. Once done, please share your revised proposal onto the discussion board. This deliverable should **not be less than 300 words**. Your revised proposal should have the following components. 
+
+- project idea
+- project significance and broader impacts
+ - please think critically, could your project generate any negative impact once done? how would you avoid that?
+ - primary functions and major data sources
+ - targeted audience
+ - multimedia (e.g., external links, texts, images, youtube videos, and etc.)
+ - project format
+   - **Option one**: Generic digital geographies project
+       - map projection, map zoom levels, center.
+       - description of the base map you plan to use.
+       - description of the thematic layers you will make.
+           - i. the used visual strategies: choropleth, proportional symbols, etc.
+           - ii. the supporting data sets for each thematic map layer.
+           - iii. vector or raster layer. If it is a vector, which data attribute to use? If a raster, which zoom level and presumed boundingbox to use?
+       - proposed interactive functions
+   - **Option two**: Smart dashboard
+       - respond to all the items listed in the option one
+       - How to arrange all the components on the graphical user interface (GUI)?
+       - What are the coordinated charts you plan to make?
+           -  i. javascript that supports the making of a chart.
+           -  ii. type of chart (e.g., line, bar, pie, etc.)
+           -  iii. data attributes to be visualized.
+   - **Option three**: Geo-narrative/Storymap
+       - respond to all the items listed in the option one
+       - draft the storyline
+       - for each scene/action, describe the following items in detail:
+           - i. the map you plan to draw
+           - ii. the associated script
+           - iii. the multimedia (e.g., image, video, chart, external links, etc)
+       - how would you transit from one scene/action to another one? like, fly from one location to another, zoom in or zoom out?
+
+In the meantime, you should initiate your final project by completing the following items:
+
+- create a github repository
+- add all your team members as contributors to this final project repo
+- create its img and assets folder, and then upload multimedia and/or geospatial data to those folders.
+- start drafting the project description page onto the `readme.md`. You can move a lot of items from your revised proposal to the readme.md.
 
 #### Week 8: [Project development and identified issues](https://canvas.uw.edu/courses/1547729/discussion_topics/7261370) `Due: May 21, by 11:59pm`
 
-> This week, you are expected to work on your final project. We do not expect huge progress by the end of this week, but we do want to see that you have coded, tried out different approaches, and visualized geospatial data. So, please submit a project progress report to the discussion board. In this report, please present your progress in the following three aspects:
->
-> - Visualizations: we did not expect that you complete all the web maps this week. But we do want to see whether you are able to visualize the collected geospatial data in the planned visual strategies. So, if your final project consists of a few maps, we would like to review a few html pages named after `map1.html` to `mapN.html`, each of them will contain a base map and the planned thematic layers (choropleth, proportional symbols, dot density, etc). If you plan to make a smart dashboard, we would like to see a few standalone html page visualizing the charts. In your report, please describe each map or chart, and followed by a corresponding github url that enables us to access the visualizations.
-> - Template：Please create an `index.html` file which includes the template of your final project. It can be a html template for a generic web map project, a smart dashboard, or a geo-narrative. Also, you can create folders like `css`, `js`, `img`, `assets` in the github repository if needed. Please also include the github url of this `index.html` page that enables us to easily access its visualization.
-> - Identified issues: please list a few issues that you come across during the project development. The TAs will get back to your issues in a follow-up message or in the planned group meetings in Week 9.
+This week, you are expected to work on your final project. We do not expect huge progress by the end of this week, but we do want to see that you have coded, tried out different approaches, and visualized geospatial data. So, please submit a project progress report to the discussion board. In this report, please present your progress in the following three aspects:
+
+- Visualizations: we did not expect that you complete all the web maps this week. But we do want to see whether you are able to visualize the collected geospatial data in the planned visual strategies. So, if your final project consists of a few maps, we would like to review a few html pages named after `map1.html` to `mapN.html`, each of them will contain a base map and the planned thematic layers (choropleth, proportional symbols, dot density, etc). If you plan to make a smart dashboard, we would like to see a few standalone html page visualizing the charts. In your report, please describe each map or chart, and followed by a corresponding github url that enables us to access the visualizations.
+
+- Template：Please create an `index.html` file which includes the template of your final project. It can be a html template for a generic web map project, a smart dashboard, or a geo-narrative. Also, you can create folders like `css`, `js`, `img`, `assets` in the github repository if needed. Please also include the github url of this `index.html` page that enables us to easily access its visualization.
+
+- Identified issues: please list a few issues that you come across during the project development. The TAs will get back to your issues in a follow-up message or in the planned group meetings in Week 9.
 
 #### Week 9-10: Project development and group meeting with TAs
 
-> There is no deliverable in these two weeks, but you are required to concentrate on developing your final project. In the meantime, **each group will need to meet your TA at least once during the lab session in Week 9. So, please participate in the lab sessions!** Also, in Week 9 to 10, the instructor will be available for virtual meetings during the normal lecture sessions and office hour sessions. You can make an appoint with the instructor via this [link](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI). If the time does not work for you, please reach out to schedule a commonly available time slot.
+There is no deliverable in these two weeks, but you are required to concentrate on developing your final project. In the meantime, **each group will need to meet your TA at least once during the lab session in Week 9. So, please participate in the lab sessions!** Also, in Week 9 to 10, the instructor will be available for virtual meetings during the normal lecture sessions and office hour sessions. You can make an appoint with the instructor via this [link](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI). If the time does not work for you, please reach out to schedule a commonly available time slot.
 
 #### Finals Week: Project presentation and submission
 
