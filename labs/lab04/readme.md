@@ -177,22 +177,22 @@ For web mapping and geovisualization applications, the QMetaTiles folder generat
 
 map.on('load', () => { //simplifying the function statement: arrow with brackets to define a function
 
-  map.addSource('sample-tiles', {
+  map.addSource('uw-tiles', {
       'type': 'raster',
       'tiles': [
-          'http://{s}.somedomain.com/{foo}/{z}/{x}/{y}.png'
+          'assets/uw/{z}/{x}/{y}.png'
       ],
       'tileSize': 256,
       'attribution': 'Map tiles designed by Bo Zhao</a>'
   });
 
   map.addLayer({
-      'id': 'sample-layer',
+      'id': 'uw',
       'type': 'raster',
       'layout': {
           'visibility': 'none'
       },
-      'source': 'sample-tiles'
+      'source': 'uw-tiles'
   });
 
 
