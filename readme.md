@@ -151,7 +151,7 @@ This week we will explore the concept of geo-narrative, the use of storytelling 
 -   **Lectures:** a) [A Geo-Narrative Template](weeks/week07/). Examples: a) [Oregon Atlas](http://oregonwater.info/atlas.html), b) [Stand with #Standing Rock](https://jakobzhao.github.io/standwithstandingrock/)
 -   **Readings:** a) [Planning and outlining your story map](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/sharing-collaboration/planning-and-outlining-your-story-map-how-to-set-yourself-up-for-success/) , b) [Anti-Eviction Mapping Project Handbook](https://static1.squarespace.com/static/52b7d7a6e4b0b3e376ac8ea2/t/5bc76571b208fc10defc815a/1539794295823/AEMP+Handbook.pdf), c)[extended readings](weeks/week07/readings.md).
 -   **Think Piece 7:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155393) `Due: May 12th, by 11:59pm`
--   **Presentations**: Tuesday: Planning and outlining your story map (AA5), [Mapping Amazon: GOOD JOBS FIRST](https://storymaps.arcgis.com/stories/adc5ff253a3643f88d39e7f3ef1a09ee) (AB5), Thursday: The praxis and politics paper (AC5),  [The Wall](https://www.usatoday.com/border-wall/) (AD5)
+-   **Presentations**: Tuesday: Planning and outlining your story map (AA5), [Mapping Amazon: GOOD JOBS FIRST](https://storymaps.arcgis.com/stories/adc5ff253a3643f88d39e7f3ef1a09ee) (AB5), Thursday: the Anti-Eviction Mapping Project Handbook (AC5),  [The Wall](https://www.usatoday.com/border-wall/) (AD5)
 
 ### Week 8 : Emerging topics
 
