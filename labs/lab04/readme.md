@@ -138,7 +138,7 @@ Click the Plugins drop down, hover over QMetaTiles to open the menu and select i
 
 > Note: the runtime is dependent on the size and number of zoom levels. Please do not select the `use TMS tile convertion` option.
 
-The file directory will contain your QMetaTiles and an HTML document that can be integrated with leaflet. Additional help with QMetaTiles can be found **[here](http://felix.rohrba.ch/en/2017/easily-add-tilemap-layers-qgis/)**. The leaflet map will help you view the map tiles.
+The file directory will contain your QMetaTiles and an HTML document that can be integrated with leaflet. Additional help with QMetaTiles can be found **[here](http://felix.rohrba.ch/en/2017/easily-add-tilemap-layers-qgis/)**. The leaflet map will help you view the map tiles. But for your own deliverable, you need to load the maps using [Mapbox GS JS](https://docs.mapbox.com/mapbox-gl-js/api/).
 
 ### 3.4 Navigate to QMetaTiles folder
 
@@ -206,7 +206,7 @@ As shown by the code, the tiles are loaded from a relative path `assets/tiles` w
 
 ## 5 Deliverable
 
-- You are expected to generate **four** tile sets of any geographic phenomena you are interested in. **Since github repository only allows you upload a limited amount of data, so please make sure not to generate too many tiles by limiting the boundingbox or the scale range.** This lab is an opportunity to make a basemap or thematic map layers for your final project. Below are the lab requirement.
+- You are expected to generate **four** tile sets of any geographic phenomena you are interested in, and assemble all the layers to a mapbox made out of Mapbox gs js. **Since github repository only allows you upload a limited amount of data, so please make sure not to generate too many tiles by limiting the boundingbox or the scale range.** This lab is an opportunity to make a basemap or thematic map layers for your final project. Below are the lab requirement.
 
   - The first tile set should be a base map provided by MapBox. **Please make sure it is a basemap rather than a thematic map.** In most web map applications, Basemap is overlain with other thematic map layers and/or interactive features. Its primary function is to illustrate the geographical context of the study area. Therefore, a basemap is usually made in a monochrome color scheme. You are encouraged to make your basemap directly out of the existing map layers provided by MapBox (like those monochrome map layers provided on MapBox Studio). However, please make sure to change at least a few color uses, icons, and the label font. Overall, even you made a few changes, the base map should still look visually appealing. (5 POINTS).
 
