@@ -7,20 +7,15 @@
   <meta name="description" content="GeoNarrative Template" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>GeoNarrative Template</title>
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" /> -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap" />
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" /> -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Titillium+Web|Oswald" rel="stylesheet"> -->
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-  <!-- <link rel="stylesheet" href="css/c3.min.css"> -->
   <link rel="stylesheet" href="css/main.css" />
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/2.2.1/scrollama.min.js"></script>
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js"></script> -->
 </head>
 
 <body>
@@ -115,39 +110,16 @@
 
 
   <script>
-    // 1. Select those elments that wil be frequent used.
-    let storyboard = document.getElementById("storyboard");
-    let scenes = document.getElementsByClassName("scene");
+    window.scrollTo(0, 0);
+    const storyboard = document.getElementById("storyboard");
+    const scenes = document.getElementsByClassName("scene");
     // 2. Declare the maps, thematic layers and the base maps/layers.
-    let map, countiesLayer, cellTowersLayer, polygonLayer, pointLayer, lightBasemap, satelliteBasemap;
+    let map, countiesLayer, cellTowersLayer, polygonLayer, pointLayer, lightBasemap, satelliteLayer;
+
+
 
     // 3. Initialize the geonarrative structure using scrollama
     let scriptPanel = scrollama();
-
-    // 4. Define Generic window resize listener event
-    function handleResize() {
-      // update the height of each scene elements
-      let sceneH = Math.floor(window.innerHeight * 0.75);
-
-      for (const scene of scenes) {
-        scene.style.height = sceneH + "px";
-
-      }
-      // scenes.style.height = sceneH + "px";
-      // scene.css("height", sceneH + "px");
-
-      let storyboardHeight = window.innerHeight;
-      let storyboardMarginTop = (window.innerHeight - storyboardHeight) / 2;
-
-      // storyboard
-      //   .css("height", storyboardHeight + "px")
-      //   .css("top", storyboardMarginTop + "px");
-      storyboard.style.height = storyboardHeight + "px";
-      storyboard.style.top = storyboardMarginTop + "px"
-
-      // tell scrollama to update new element dimensions
-      scriptPanel.resize();
-    }
 
 
 
@@ -156,12 +128,42 @@
 
     // 8. Intialize the layout.
     // Force a resize on load to ensure proper dimensions are sent to scrollama
-    handleResize();
-    window.scrollTo(0, 0);
+    // handleSize();
+
+
+
+
+
     // Bind the resize function to the window resize event
-    window.addEventListener("resize", handleResize);
+
+    adjustStoryboardlSize();
+
+
+
+    // assign the access token
+    mapboxgl.accessToken =
+      'pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw';
+    // declare the map object
+    map = new mapboxgl.Map({
+      container: 'map', // container ID
+      style: 'mapbox://styles/mapbox/light-v10',
+      zoom: 7, // starting zoom
+      minZoom: 3,
+      maxZoom: 10,
+      center: [-121.93, 47.33] // starting center
+    });
+    // disable map zoom when using scroll
+    map.scrollZoom.disable();
+
+    window.addEventListener("resize", adjustStoryboardlSize);
+    // window.addEventListener("load", handleSize);
+    // document.addEventListener("DOMContentLoaded", handleSize);
 
     // 9. Use a promise mechnism to asynchrously load the required geojson datasets.
+
+
+
+    // 1. Select those elments that wil be frequent used.
 
 
     // define the asynchronous function to load geojson data.
@@ -208,11 +210,9 @@
         'source': 'counties-src',
         'minzoom': 5,
         'paint': {
-          'fill-color': '#0080ff', // blue color fill
+          'fill-color': '#0080ff',
           'fill-opacity': 0.5
         }
-        // },
-        // 'waterway-label' // make the thematic layer above the waterway-label layer.
       };
 
       let cellTowersLayer = {
@@ -228,12 +228,10 @@
       };
 
       let satelliteLayer = {
-
         id: "raster-satellite",
         source: "satellite-src",
         type: "raster"
       }
-
 
 
       // 5. The function performs when a scene enters the storyboard
@@ -321,27 +319,34 @@
     };
 
 
-
-
-    // assign the access token
-    mapboxgl.accessToken =
-      'pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw';
-
-    // declare the map object
-    map = new mapboxgl.Map({
-      container: 'map', // container ID
-      style: 'mapbox://styles/mapbox/light-v10',
-      zoom: 7, // starting zoom
-      minZoom: 3,
-      maxZoom: 10,
-      center: [-121.93, 47.33] // starting center
-    });
-    // disable map zoom when using scroll
-    map.scrollZoom.disable();
-
     geojsonFetch();
 
 
+
+    // 4. Define Generic window resize listener event
+    function adjustStoryboardlSize() {
+      // update the height of each scene elements
+      let sceneH = Math.floor(window.innerHeight * 0.75);
+
+      for (const scene of scenes) {
+        scene.style.height = sceneH + "px";
+
+      }
+      // scenes.style.height = sceneH + "px";
+      // scene.css("height", sceneH + "px");
+
+      let storyboardHeight = window.innerHeight;
+      let storyboardMarginTop = (window.innerHeight - storyboardHeight) / 2;
+
+      // storyboard
+      //   .css("height", storyboardHeight + "px")
+      //   .css("top", storyboardMarginTop + "px");
+      storyboard.style.height = storyboardHeight + "px";
+      storyboard.style.top = storyboardMarginTop + "px"
+
+      // tell scrollama to update new element dimensions
+      // scriptPanel.resize();
+    }
   </script>
 </body>
 
