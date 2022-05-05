@@ -132,19 +132,19 @@ Zoom into your tiles so that they fill most of the canvas space. The canvas is t
 
 ### 3.3 Generating Tiles by QMetaTiles (or QTiles)
 
-Click the Plugins drop down, hover over QMetaTiles to open the menu and select it. The QMetaTiles screen pops up. **For some version of QGIS, there is no plugin named QMetaTiles, Instead, you can use QTiles.** Name the directory where you want to save your tiles and provide a name for the Tileset. Select Canvas Extent and Zoom levels. In the Parameters make the **'Background transparency'** clear by changing the value to zero and make sure to select **'Write Leaflet-based viewer'**. Click Ok.
+Click the Plugins drop down, hover over QMetaTiles to open the menu and select it. The QMetaTiles screen pops up. **For some version of QGIS, there is no plugin named QMetaTiles, Instead, you can use QTiles.** Name the directory where you want to save your tiles and provide a name for the Tileset. Select Canvas Extent and Zoom levels. In the Parameters make the **'Background transparency'** clear by changing the value to zero. Click Ok.
 
 ![QMetaTiles](img/qmetatiles_to_leaflet.png)
 
 > Note: the runtime is dependent on the size and number of zoom levels. Please do not select the `use TMS tile convertion` option.
 
-The file directory will contain your QMetaTiles and an HTML document that can be integrated with leaflet. Additional help with QMetaTiles can be found **[here](http://felix.rohrba.ch/en/2017/easily-add-tilemap-layers-qgis/)**.
+The file directory will contain your QMetaTiles and an HTML document that can be integrated with leaflet. Additional help with QMetaTiles can be found **[here](http://felix.rohrba.ch/en/2017/easily-add-tilemap-layers-qgis/)**. The leaflet map will help you view the map tiles.
 
 ### 3.4 Navigate to QMetaTiles folder
 
 Navigate to the output file after QMetaTiles finishes running. In this folder will be your sub folders of tiles arranged by zoom level and an html document.
 
-Open the html and look at the source code. The L.tileLayer object is in charge of loading the layer of map tiles.
+Open the html and look at the source code. To load the layers, you can refer to the code below. 
 
 ```javascript
 map.addSource('sample-tiles', {
@@ -216,7 +216,7 @@ As shown by the code, the tiles are loaded from a relative path `assets/tiles` w
 
   - The fourth tile set should be a map layer designed over Mapbox. It should embody a map theme relevant to your research interests, which could be Black History month, LGBTQ+ Pride, UW, Nature/Environment, etc. Please try to use the color, icon, and label to realize the theme.  (5 POINTS). 
 
-> An example can be found from [here](https://ramouj.github.io/Map-Tile-Generation/index.html). Although the map library of this example is leaflet, but you can refer the map this student has designed as an example. 
+> An example can be found from [here](https://ramouj.github.io/Map-Tile-Generation/index.html). Although the map library of this example is leaflet, but you can refer the map this student has designed as an example. You need to make the maps using Mapbox GS JS.
 
 -  After the map tiles are generated, you are expected to create an index.html to visualize the four tile map sets.
     -  create any necessary web page elements, such as page/map title, scale bar, attribution, zoom control, map description, etc. (5 POINTS)
