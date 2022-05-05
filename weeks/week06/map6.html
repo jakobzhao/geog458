@@ -329,8 +329,7 @@
                                 return colors[d["x"]];
                             }
                         },
-                        onclick: function (
-                        d) { // update the map and sidebar once the bar is clicked.
+                        onclick: function (d) { // update the map and sidebar once the bar is clicked.
                             let floor = parseInt(x[1 + d["x"]]),
                                 ceiling = floor + 1;
                             // combine two filters, the first is ['>=', 'mag', floor], the second is ['<', 'mag', ceiling]
