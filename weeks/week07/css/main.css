@@ -7,6 +7,7 @@ body,
   font-family: 'Fira Sans', sans-serif;
 }
 
+
 #storyboard {
   position: -webkit-sticky;
   position: sticky;
@@ -60,9 +61,9 @@ p {
 
 #intro {
   position: relative;
-  top: 32%;
+  top: 40%;
   left: 50%;
-  transform: translateX(-50%) translateY(-32%);
+  transform: translateX(-50%) translateY(-50%);
   width: 50%;
   color: #fff;
   padding: 2rem;

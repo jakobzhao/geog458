@@ -12,9 +12,7 @@
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/main.css" />
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/2.2.1/scrollama.min.js"></script>
+  <script src="https://unpkg.com/scrollama"></script>
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
 </head>
 
@@ -110,11 +108,12 @@
 
 
   <script>
-    window.scrollTo(0, 0);
+
+    
     const storyboard = document.getElementById("storyboard");
     const scenes = document.getElementsByClassName("scene");
     // 2. Declare the maps, thematic layers and the base maps/layers.
-    let map, countiesLayer, cellTowersLayer, polygonLayer, pointLayer, lightBasemap, satelliteLayer;
+    let map, countiesLayer, cellTowersLayer;
 
 
 
@@ -124,21 +123,17 @@
 
 
     // 7. the function performs when this html document is ready.
-    // $(document).ready(function () {
 
     // 8. Intialize the layout.
     // Force a resize on load to ensure proper dimensions are sent to scrollama
-    // handleSize();
 
 
 
 
-
-    // Bind the resize function to the window resize event
-
+    history.scrollRestoration = "manual";
+    window.scrollTo(0, 0);
     adjustStoryboardlSize();
-
-
+    window.addEventListener("resize", adjustStoryboardlSize);
 
     // assign the access token
     mapboxgl.accessToken =
@@ -155,7 +150,7 @@
     // disable map zoom when using scroll
     map.scrollZoom.disable();
 
-    window.addEventListener("resize", adjustStoryboardlSize);
+  
     // window.addEventListener("load", handleSize);
     // document.addEventListener("DOMContentLoaded", handleSize);
 
@@ -227,22 +222,17 @@
         }
       };
 
-      let satelliteLayer = {
-        id: "raster-satellite",
-        source: "satellite-src",
-        type: "raster"
-      }
-
-
       // 5. The function performs when a scene enters the storyboard
       function handleSceneEnter(response) {
+
         var index = response.index;
 
         if (index === 0) {
-          // map.setView(new L.LatLng(47.33, -121.93), 8);
+
           map.flyTo({
             center: [-121.93, 47.33],
             zoom: 8,
+            pitch: 0,
             speed: 0.5
           });
           map.addLayer(countiesLayer);
@@ -250,56 +240,59 @@
           map.flyTo({
             center: [-121.93, 47.33],
             zoom: 8,
+            pitch: 60,
             speed: 0.5
 
           });
-          // map.setView(new L.LatLng(47.33, -121.93), 8);
+
           map.addLayer(cellTowersLayer);
         } else if (index === 2) {
           //Relocate to Seattle
           map.flyTo({
             center: [-122.4121036, 47.6131229],
             zoom: 12,
+            pitch: 0,
             speed: 0.5
 
           });
-          // map.setView(new L.LatLng(47.6131229, -122.4121036), 12);
+
         } else if (index === 3) {
           //Relocate to Portland
           map.flyTo({
             center: [-122.724366, 45.5428119],
             zoom: 12,
+            pitch: 60,
             speed: 0.5
 
           });
-          // map.setView(new L.LatLng(45.5428119, -122.7243662), 12);
-          map.addLayer(satelliteLayer);
+
+          map.setStyle('mapbox://styles/mapbox/satellite-streets-v10');
         } else if (index === 6) {
-          // map.setView(new L.LatLng(47.6131229, -122.4121036), 12);
+
           map.flyTo({
             center: [-122.4121036, 47.6131229],
             zoom: 12,
+            pitch: 0,
             speed: 0.5
 
           });
           document.getElementById("cover").style.visibility = "hidden";
-          // $("#cover").css("visibility", "hidden");
+
         }
       }
 
-      // 6. The function performs when a scene exits the storyboard
+
       function handleSceneExit(response) {
         var index = response.index;
 
         if (index === 0) {
-          // map.removeLayer(countiesLayer);
           map.removeLayer('counties-polygons');
         } else if (index === 1) {
-          // map.removeLayer(cellTowersLayer);
+
           map.removeLayer('celltowers-points');
         } else if (index === 3) {
           //exit to Portland
-          map.removeLayer('raster-satellite');
+          map.setStyle('mapbox://styles/mapbox/light-v10');
         } else if (index === 6) {
           document.getElementById("cover").style.visibility = "visible";
         }
@@ -310,7 +303,7 @@
         .setup({
           step: ".scene", // all the scenes.
           offset: 0.33, // the location of the enter and exit trigger
-          debug: true // toggler on or off the debug mode.
+          debug: false // toggler on or off the debug mode.
         })
         .onStepEnter(handleSceneEnter)
         .onStepExit(handleSceneExit);
@@ -325,6 +318,7 @@
 
     // 4. Define Generic window resize listener event
     function adjustStoryboardlSize() {
+
       // update the height of each scene elements
       let sceneH = Math.floor(window.innerHeight * 0.75);
 
@@ -332,20 +326,14 @@
         scene.style.height = sceneH + "px";
 
       }
-      // scenes.style.height = sceneH + "px";
-      // scene.css("height", sceneH + "px");
-
       let storyboardHeight = window.innerHeight;
       let storyboardMarginTop = (window.innerHeight - storyboardHeight) / 2;
 
-      // storyboard
-      //   .css("height", storyboardHeight + "px")
-      //   .css("top", storyboardMarginTop + "px");
       storyboard.style.height = storyboardHeight + "px";
       storyboard.style.top = storyboardMarginTop + "px"
 
       // tell scrollama to update new element dimensions
-      // scriptPanel.resize();
+      scriptPanel.resize();
     }
   </script>
 </body>
