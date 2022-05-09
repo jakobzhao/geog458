@@ -1,4 +1,4 @@
-## Creating an Online GeoNarrative
+## Create an Online GeoNarrative
 
 **Learning Objectives**
 
