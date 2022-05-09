@@ -4,19 +4,18 @@
 
 **Announcement:**
 
+- 05/06/2022. We are back to in-person teaching. Both lecture and lab will be held in person. :mask: Masks are still strongly recommended to protect everyone.
 - 05/02/2022. Feedback for your final project proposal has been offered. All the proposals are amazing!!! :star_struck: Also, please check the project progress assignments that you will need to turn in by Week 7 and 8 respectively. Check details in [Final Project Guideline](project/readme.md).
 - 04/25/2022: Requirement for [your final project prototype design](https://canvas.uw.edu/courses/1547729/discussion_topics/7246492) is released. It is due on May 7th.
 
 
 **Meetings:**
 
-Both lab and lectures have been switched to virtual meetings temporarily. ~~*Masks are strongly recommended to protect everyone, especially those whose personal or household situation makes them more vulnerable.*~~
+*Masks are strongly recommended to protect everyone, especially those whose personal or household situation makes them more vulnerable.*
 
 
-- **Lectures:** Tuesdays and Thursdays 11:30 AM to 12:50 PM PST on [https://washington.zoom.us/my/bzhao](https://washington.zoom.us/my/bzhao)
-- **Labs:** Wednesdays 12:30 AM to 4:20 PM PST
-  - AA & AB: [https://washington.zoom.us/j/97521328514](https://washington.zoom.us/j/97521328514)
-  - AC & AD: [https://washington.zoom.us/j/95926871713](https://washington.zoom.us/j/95926871713)
+- **Lectures:** Tuesdays and Thursdays 11:30 AM to 12:50 PM PST at GUG 220
+- **Labs:** Wednesdays 12:30 AM to 4:20 PM PST SMI 401
 
 **Personnel:**
 
