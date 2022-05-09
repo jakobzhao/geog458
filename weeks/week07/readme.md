@@ -2,11 +2,12 @@
 
 **Learning Objectives**
 
-- the fundamental concepts relavent to online GeoNarrative;
-- Make a Cover Page with a fullscreen image or video;
+- the fundamental concepts relevant to online GeoNarrative;
+- Make a cover page with a fullscreen image or video;
 - Make a customized footer using Bootstrap;
-- Apply a story using GeoNarrative; and
-- Understand the data-attribute.
+- Understand the data-attribute; and
+- Apply a story using GeoNarrative,
+
 
 In this lecture, you will learn how to create a online Geo-Narrative. A GeoNarrative application, also being referred to as storymap, or map-based storytelling, is an visualization genre that primarily utilizes a series of maps or other types of geovisualizations to narrate a geographical event or phenomenon. In addition to geovisualization, there will be other form of information like scripts, images, or videos. This lecture mainly provides an online GeoNarrative template which can help you to make your own geo-narrative applications. To review the geo-narrative template, please visit [this link](https://jakobzhao.github.io/geog458/weeks/week07).
 
@@ -18,27 +19,11 @@ An online GeoNarrative is organically integrated by several scenes. Each scene c
 
 To make the geo-narrative library robust and lightweight, we select as fewer prerequisite libraries as possible, and prioritize the use of open source or free libraries.
 
-### 1.1 Required Libraries
-
-- jQuery: is a JavaScript library that greatly simplifies JavaScript programming.
-
-- [Scrollama](https://github.com/russellgoldenberg/scrollama): is a modern & lightweight JavaScript library for scrolly telling using IntersectionObserver in favor of scroll events.
-
-- Leaflet: provides a popular map framework. You can also use MapBox, ESRI javascript API, Cesium, other map/virtual globe frameworks.
-
-- `optional`[Font Awesome 4.7](https://fontawesome.com/v4.7.0/icons/): offers a very large set of icons for multiple usages.
-
-- `optional`Google Fonts: provides customized web fonts which you can externally link from Google servers.
-
-- `optional` Bootstrap 4: provides additional web components, such as navigation bar, footer, etc.
-
-- `optional` Chroma: makes color ramps for automatically generating map color schema.
-
-### 1.2 Image and Video Resources:
+### 1.1 Image and Video Resources
 
 [Unsplash](https://unsplash.com/), [Pexels](https://www.pexels.com/), and [Pixabay](https://pixabay.com/).
 
-### 1.3 Data and basemaps
+### 1.2 Data and basemaps
 
 ## 2. Instructions
 
@@ -46,7 +31,7 @@ Below, we will walk through the major parts relevant to generating a GeoNarrativ
 
 ### 2.1 GeoNarrative Structure
 
-A GeoNarrative application is organized as a sequence of scenes, and the scenes are associated with maps. Each map is mashed up by layers, and the layers can be any types of layers that leaflet.js or other geovisualization libraries support. Below shows the tree structure of this story map library.
+A GeoNarrative application is organized as a sequence of scenes, and the scenes are associated with maps. Each map is mashed up by layers, and the layers can be any types of layers that Mapbox or other geovisualization libraries support. Below shows the tree structure of this story map library.
 
 ```powershell
 A GeoNarrative
@@ -80,7 +65,7 @@ Moreover, create an empty html document `index.html` to start the coding. In the
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
@@ -95,17 +80,22 @@ Moreover, create an empty html document `index.html` to start the coding. In the
 Then, in the head element, please include all the required stylesheets and javascript. Please make sure to add stylesheets ahead of those javascript libraries.
 
 ```html
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" />
-  <link rel="stylesheet" href="css/main.css" />
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/2.2.1/scrollama.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js"></script>
-
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap" />
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://unpkg.com/scrollama"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
 ```
 
+Instead of importing the css in the html, you can also import them in the main.css.
+
+```css
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css');
+@import url('https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css');
+```
 
 As we introduced above, a GeoNarrative is made up by several scenes. In the html document, each scene is held by an `article` element, and all the scenes are under a `section` element. Also, a storyboard is defined and held by a `div` element. This storyboard element anchors to the browser view window and functions as the container for the map object as well as other main graphic objects.
 
@@ -376,78 +366,88 @@ since each scene is indexed, you can capture a specific scene by its data-scene 
 
 the javascript behavior can be stored in a separate javascript file in the js subfolder or embedded in a `script` tag to the very end of the `body` tag.
 
-
 Below is a general sequential procedure of a GeoNarrative.
 
 ```js
-// 1. Select those elments that wil be frequent used.
-var storyboard = $("#storyboard");
-var scene = $(".scene");
+    // 1. Declare the maps, script panels, and different thematic layers.
+    let map, scriptPanel = scrollama(), countiesLayer, cellTowersLayer;
+    // 2. Initialize the layout.
+    ... ... ...
+    // 3. Define Generic window resize listener event
+    function adjustStoryboardlSize() {
+    }
 
-// 2. Declare the maps, thematic layers and the base maps/layers.
-var map, polygonLayer, pointLayer, lightBasemap, satelliteBasemap;
+    // 4. Initialize the mapbox
+    ... ...
+    // 5. define the asynchronous function to load geojson data and then performs the dependent actions.
+    async function geojsonFetch() {
+      // 6 wait till the data of washington counties and celltowers are fully loaded.
+      ... ... ...
+      // 7. Trigger operations inside of the the ()=> {} funciton while loading the map.
+      map.on('load', () => {
+        // 8. add map source and declare layers.
+        ... ... ...
+        // 9. Initialize the script panel
+        scriptPanel
+          .setup({
+            step: ".scene", // all the scenes.
+            offset: 0.33, // the location of the enter and exit trigger
+            debug: false // toggler on or off the debug mode.
+          })
+          .onStepEnter(handleSceneEnter)
+          .onStepExit(handleSceneExit);
+        
+        // 10. This function performs when a scene enters the storyboard
+        function handleSceneEnter(response) { }
 
-// 3. Initialize the geonarrative structure using scrollama
-var scriptPanel = scrollama();
+        // 11. This function performs when a scene exists the storyboard
+        function handleSceneExit(response) { }
+      });
 
-// 4. Define Generic window resize listener event
-function handleResize() { }
+    };
 
-// 5. The function performs when a scene enters the storyboard
-function handleSceneEnter(response) { }
-
-// 6. The function performs when a scene exits the storyboard
-function handleSceneExit(response) { }
-
-// 7. the function performs when this html document is ready.
-$(document).ready(function() {
-  // 8. Intialize the layout.
-  // 9. Use a promise mechnism to asynchrously load the required geojson datasets.
-  Promise.all([ $.getJSON("..."), $.getJSON("...")
-  ]).then(function(datasets) {
-
-    // 10. After the data are successfully loaded, the then funciton will execute in order to
-    //    a) preprocess the data as map layers
-    polygonLayer = L.geoJSON(datasets[0]);  pointLayer = L.geoJSON(datasets[1]);
-
-    //    b) initialize the script panel
-    scriptPanel.setup()
-      .onStepEnter(handleSceneEnter)
-      .onStepExit(handleSceneExit);
-  });
-
-  //    c) initialize the map and layers.
-  map = L.map('map', {});
-  lightBasemap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png');
-  map.addLayer(lightBasemap);
-
-});
+    // 5 call the data loading function.
+    geojsonFetch();
 ```
-
-When developing a GeoNarrative, you may need to load multiple geojson datasets or even same csv data, please make sure use the promise mechanism rather than the geojson.ajax solution. The former option would make the program properly executes after the data are completely loaded. In a nutshell, if you are a beginner in web development, I highly recommend that you can follow the same programming procedure sequence as listed above.
 
 When the script panel is scrolled, the scene will appear or disappear on a screen, and  the **Step Enter** and **Step Exit** events of scrollama will be activated. To handle these two events, two functions named `handleSceneEnter` and `handleSceneExit` defined, respectively. A variable will pass to these two functions when being triggered. This variable, in the format of a javascript object, contains items like the scrolling direction, displaying scene element, and index. Since it is capable to capture the index of the displaying scene, we can also trigger relevant map behaviors, such as relocating the map, changing base map/layer, adding or removing the thematic layers, and etc. As the example below.
 
 ```js
 function handleSceneEnter(response) {
-  var index = response.index;
+  var index = response.index; // capture the id of the current scene. 
 
-  if (index === 0) {
-    map.setView(new L.LatLng(47.33, -121.93), 8);
-    map.addLayer(polygonLayer);
-  } else if (index === 1) {
-    map.setView(new L.LatLng(47.33, -121.93), 8);
-    map.addLayer(pointLayer);
+  if (index === 0) { // When enter the first scene
+
+    map.flyTo({
+      center: [-121.93, 47.33],
+      zoom: 8,
+      pitch: 0,
+      speed: 0.5
+    }); // fly to a new location
+    
+    if (typeof (map.getSource('counties-src')) == 'undefined') { //if the map source 'counties-src' does not exist
+      map.addSource('counties-src', {
+        type: 'geojson',
+        data: counties
+      }); // reload the map source of 'counties-src'
+    } else {
+      map.getSource('counties-src').setData(counties); // if the map source does not exist, relaod the data counties to the pre-defined map source 'counties-src'.
+
+    }
+
+    if (!map.getLayer("counties-polygons")) { // if the map layer 'counties-polygons' does not exit
+      map.addLayer(countiesLayer);
+    }
+    document.getElementById("cover").style.visibility = "hidden"; // Hide the cover page
+
+  } else if (index === 1) { // When enter the second scene.
+    ... ... ...
   } else if (index === 2) {
-    //Relocate toSeattle
-    map.setView(new L.LatLng(47.6131229, -122.4121036), 12);
   } else if (index === 3) {
-    //Relocate toPortland
-    map.setView(new L.LatLng(45.5428119, -122.7243662), 12);
-    map.addLayer(satelliteBasemap);
   } else if (index === 6) {
-    map.setView(new L.LatLng(47.6131229, -122.4121036), 12);
-    $("#cover").css("visibility", "hidden");
+    ... ... ...
+
+    });
   }
 }
 
@@ -456,15 +456,20 @@ function handleSceneExit(response) {
   var index = response.index;
 
   if (index === 0) {
-    map.removeLayer(polygonLayer);
+    if (map.getLayer("counties-polygons")) {
+      map.removeLayer('counties-polygons');
+    }
+    if (response.direction == 'down') { 
+      document.getElementById("cover").style.visibility = "hidden"; // when you scroll down, the cover page will be hided.
+    } else {
+      document.getElementById("cover").style.visibility = "visible"; // when you scroll up, the cover page will be shown.
+    }
   } else if (index === 1) {
-    map.removeLayer(pointLayer);
+    ... ... ...
   } else if (index === 3) {
     //exit to Portland
-    map.removeLayer(satelliteBasemap);
-  } else if (index === 6) {
-    $("#cover").css("visibility", "visible");
-  }
+    map.setStyle('mapbox://styles/mapbox/light-v10');
+  } 
 }
 
 ```
@@ -476,7 +481,7 @@ function handleSceneExit(response) {
 
 ### 2.6 Footer
 
-If you are interested in adding a footer to the GeoNarrative like [this](https://jakobzhao.github.io/geog458/weeks/week07/footer.html) (see the codes in the [footer.html](footer.html)), you will need to include bootstrap framework to your header element. Then, you can apply different types of footer templates which are supported by Bootstrap.
+If you are interested in adding a footer to the GeoNarrative like [this](https://jakobzhao.github.io/geog458/weeks/week07/incoperates-a-footer.html) (see the codes in the [footer.html](incoperates-a-footer.html)), you will need to include bootstrap framework to your header element. Then, you can apply different types of footer templates which are supported by Bootstrap.
 
 ![](img/footer.png)
 
