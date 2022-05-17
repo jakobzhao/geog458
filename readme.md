@@ -4,10 +4,6 @@
 
 **Announcement:**
 
-- 05/06/2022. We are back to in-person teaching. Both lecture and lab will be held in person. :mask: Masks are still strongly recommended to protect everyone.
-- 05/02/2022. Feedback for your final project proposal has been offered. All the proposals are amazing!!! :star_struck: Also, please check the project progress assignments that you will need to turn in by Week 7 and 8 respectively. Check details in [Final Project Guideline](project/readme.md).
-- 04/25/2022: Requirement for [your final project prototype design](https://canvas.uw.edu/courses/1547729/discussion_topics/7246492) is released. It is due on May 7th.
-
 
 **Meetings:**
 
@@ -164,6 +160,8 @@ This week will focus on two emerging topics related to digital geographies, incl
 
 ### Week 9 & 10 : Project studios
 
+**Each group will need to meet your TA at least once during the lab session in Week 9. So, you need to participate in the lab sessions in Week 9!** Also, in Week 9 to 10, the instructor will be available for troubleshooting via virtual meetings during the normal lecture sessions and office hour sessions. For the lecture sections, you can join via this [Zoom link](https://washington.zoom.us/my/bzhao) directly. For the office hours, You can make an appoint with the instructor via this [link](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI). If either time slot does not work for you, please contact the instructor to schedule a meeting during a commonly available time slot.
+
 <!-- May 23 to May 27 -->
 <!-- May 30 to June 3, May 30 is Memorial Day, which is a University Holiday -->
 During these two weeks, each group will focusing on their final projects. The instructor and teaching assistants are available during the normal lecture period, lab sections and office hours if help is needed.
@@ -198,7 +196,7 @@ We welcome the opportunity to work with any students with disabilities in this c
 
 Washington state law requires that UW develop a policy for accommodation of student absences or significant hardship due to reasons of faith or conscience, or for organized religious activities. The UW’s policy, including more information about how to request an accommodation, is available at [Religious Accommodations Policy](https://registrar.washington.edu/staffandfaculty/religious-accommodations-policy/). Accommodations must be requested within the first two weeks of this course using the [Religious Accommodations Request form](https://https:/registrar.washington.edu/students/religious-accommodations-request/).
 
- ## :memo: Student Care & Safety
+## :memo: Student Care & Safety
 
 It is important that you take care of yourselves inside and outside of class as you work through stress and other obstacles. There are many different support services on campus that can help, such as the Counseling Center, Hall Health, and the IMA. UW’s Student Care program can help you connect to these and other resources. Learn more an contact them directly: http://depts.washington.edu/livewell/student-care/, livewell@uw.edu, or 206.543.6085. If you are concerned about yourself or a friend who is struggling SafeCampus is a helpful resource. Please add 206.685.7233 to your phones
 

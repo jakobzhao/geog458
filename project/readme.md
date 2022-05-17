@@ -22,13 +22,13 @@ All the final projects are expected to be published online, and the codes are 
 
 - A `readme.md` describes your project, including, but not limited to,
     - Project title
-    - The url to visit the project. It should be in the format of `[username].github.io/[repo_name]`.
-    - Team mates
+    - The url to visit the project. It should be in the format of `[username].github.io/[repo_name]`. `the repository name should be in lowercase.`
+    - Team members
     - Project description
-    - One or two screenshots to illustrate the visualization of the project.
+    - One or two screenshots to illustrate the project's functions.
     - Project goal (such as, what is the message you want to deliver through your project?)
     - Data sources
-    - Applied libraries (e.g., Mapbox, D3, C3) and Web Services in use (e.g., github, basemap). 
+    - Applied libraries (e.g., Mapbox, D3, C3) and Web Services in use (e.g., github, basemap).
     - Other things that are necessary to inform the audience.
     - Acknowledgment
 

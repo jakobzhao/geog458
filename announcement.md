@@ -1,7 +1,9 @@
 # Announcement
 
+- 05/06/2022. We are back to in-person teaching. Both lecture and lab will be held in person. :mask: Masks are still strongly recommended to protect everyone.
+- 05/02/2022. Feedback for your final project proposal has been offered. All the proposals are amazing!!! :star_struck: Also, please check the project progress assignments that you will need to turn in by Week 7 and 8 respectively. Check details in [Final Project Guideline](project/readme.md).
+- 04/25/2022: Requirement for [your final project prototype design](https://canvas.uw.edu/courses/1547729/discussion_topics/7246492) is released. It is due on May 7th.
 - 04/22/2022：You can submit more than four think pieces. We will view them all, but the four with the hightest scores will be counted towards your final grade.
-
 - 04/21/2022: Requirement for [your final project proposal](https://canvas.uw.edu/courses/1547729/discussion_topics/7237157) is released. It is due on April 30th.
 - 04/19/2022: [The final project guideline](project/readme.md) has been released.
 
