@@ -4,6 +4,7 @@
 
 **Announcement:**
 
+- 05/19/2022 In the last two weeks, the lectures will become virtual office hours, please feel free to drop by the instructor's zoom room during the lecture sessions. The instructor is avaiable for troubleshooting and any questions about your final project. In the meantime, **please make sure to attend the lab session in Week 9 in-person.** The TAs will have a conversation with each team about the identified issues of final project and share with you comments/suggestions.
 
 **Meetings:**
 
