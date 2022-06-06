@@ -4,7 +4,7 @@
 
 **Announcement:**
 
-- 05/19/2022 In the last two weeks, the lectures will become virtual office hours, please feel free to drop by the instructor's zoom room during the lecture sessions. The instructor is avaiable for troubleshooting and any questions about your final project. In the meantime, **please make sure to attend the lab session in Week 9 in-person.** The TAs will have a conversation with each team about the identified issues of final project and share with you comments/suggestions.
+- 06/06/2022 On Wednesday (June 8th), we will hold the in-person final presentation meeting in GUG 220 at 4:30 pm. Prior to the meeting, please fill in the final project presentation form (https://docs.google.com/spreadsheets/d/1MoE9114LcLHaoUbMnl-6zlBlaE1_8IvU82Axm7NXzWA/edit?usp=sharing). By doing so, we can accelerate the process of the meeting. In addition, each student is encouraged to submit an in-group peer review (https://canvas.uw.edu/courses/1547729/assignments/7418163) by the end of June 10th. Your feedback will be applied in assigning the grade for the project. Please try to be as honest and fair as possible in your assessment. This is an anonymous review.
 
 **Meetings:**
 
