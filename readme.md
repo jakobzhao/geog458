@@ -45,9 +45,9 @@ This course is designed to be highly interactive and hands-on. Most of the cours
 
 ### Week 1: Intro to digital geographies
 
-<!-- March 28 to April 2 -->
+<!-- Jan 2 to Jan 6 -->
 
-This week’s lecture and lab will prepare you for the course, and provide a theoretical and technical foundation to build from. We’ll work through the syllabus together, and answer any questions you all may have. Each student is expected to read the Ash et al (2018) paper. After completing Lab 1, you will be able to clone/synchronize the course material, set up a personal website, and gain practical experience using github to manage your digital geographies projects.
+Welcome to the beginning of an exciting journey into the world of digital geographies! This week's lecture and lab are designed to set you up for success in the course and provide a solid foundation of theoretical and technical knowledge. Together, we'll work through the syllabus and make sure that you have all the information you need to succeed. To get started, each student is expected to read the Ash et al (2018) paper. After completing Lab 1, you'll be able to clone/synchronize the course material, set up a personal website, and get some hands-on experience using github to manage your digital geographies projects. 
 
 -   **Lectures:** [Syllabus](readme.md), [Intro to the Web](weeks/week01/intro-web), and [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 -   **Readings:** a) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_), b) [Humanistic GIS: Towards a research agenda](https://www.tandfonline.com/doi/pdf/10.1080/24694452.2021.2004875),  and c) [extended readings](weeks/week01/readings.md).
@@ -56,19 +56,25 @@ This week’s lecture and lab will prepare you for the course, and provide a the
 
 ### Week 2: Programing fundamentals
 
-<!-- April 4 to April 8 -->
+<!-- Jan 9 to Jan 13 -->
 
-This week we’ll focus on honing the fundamental skill set for web programming. We will begin with an overview of the system architecture required for a digital geographies project,  then guide you through some of the essential front-end fundamentals. Including, internet basics, html, javascript, and css. This week requires a lot of self-learning,  and includes fairly lengthy readings and practical exercises. Please be prepared.
+This week is all about mastering the fundamental skills of web programming! We'll start by giving you an overview of the system architecture you'll need to have in place for a successful digital geographies project. From there, we'll guide you through some of the essential front-end fundamentals, including internet basics, HTML, JavaScript, and CSS.
 
--   **Lectures:** [System architecture](weeks/week02/architecture), [intro-to-html, css](weeks/week02/html-css) and [javascript](weeks/week02/javascript), and [Jquery](weeks/week02/jquery).
--   **Readings:** a) [W3School Tutorials on Html, javascript, css and jquery](weeks/week02/tech-readings.md), b) [Introducing Code/Space](https://drive.google.com/file/d/1T7ChuOnaKrgjTVhAeV_Niei2pqCWiiqK/view?usp=sharing), c) [Cloud Ethics: Algorithms and the Attributes of Ourselves and Others](https://drive.google.com/file/d/1C3925q917K7cD8-NEbw_Yik_X0oCeSfd/view?usp=sharing), and d) [extended readings](weeks/week02/readings.md).
+This week will require a lot of self-learning, so be prepared for some fairly lengthy readings and practical exercises. But trust us – all of this hard work will pay off in the end, leaving you with a strong foundation in web programming that you can build upon throughout the course. So let's roll up our sleeves and get to work – we can't wait to see what you're capable of!
+
+-   **Lectures:** [System architecture](weeks/week02/architecture), [intro-to-html, css](weeks/week02/html-css) and [javascript](weeks/week02/javascript).
+-   **Readings:** a) [W3School Tutorials on Html, javascript, css](weeks/week02/tech-readings.md), b) [Introducing Code/Space](https://drive.google.com/file/d/1T7ChuOnaKrgjTVhAeV_Niei2pqCWiiqK/view?usp=sharing), c) [Cloud Ethics: Algorithms and the Attributes of Ourselves and Others](https://drive.google.com/file/d/1C3925q917K7cD8-NEbw_Yik_X0oCeSfd/view?usp=sharing), and d) [extended readings](weeks/week02/readings.md).
 -   **Think Piece 2:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155398) `Due: April 7, by 11:59pm`
 
 ### Week 3 : Geospatial data
 
-<!-- April 11 to April 15 -->
+<!-- Jan 16 to Jan 20 -->
 
-This week’s focus is on processing geospatial data for your digital geographies projects. We will begin by introducing the structure of the geojson format, and then look at techniques for collecting, converting and visualizing geojson objects/features in a web or desktop environment such as QGIS. After completing Lab 2, students will have learned how to collect geo-tagged tweets using specific keywords/topics (e.g., etc.), and methods for visualizing the spatial distribution of the locations for those tweets.
+This week, it's all about mastering the art of processing geospatial data for your digital geographies projects! We'll start by introducing you to the structure of the geojson format, and then delve into techniques for collecting, converting, and visualizing geojson objects and features in a web or desktop environment like QGIS.
+
+By the time you complete Lab 2, you'll have learned how to collect geo-tagged tweets using specific keywords and topics, as well as methods for visualizing the spatial distribution of the locations for those tweets. This is a crucial skill for any digital geographer, and we can't wait to see what you're capable of. So let's get to work!
+
+
 
 -   **Lectures:** [Geospatial data for digital geographies](weeks/week03/readme.md), and [More than you ever wanted to know about GeoJSON](weeks/week03/assets/geojson.pdf)
 -   **Readings:** a) [Stand with #StandingRock: Envisioning an Epistemological Shift in Understanding Geospatial Big Data in the “Post-truth” Era](https://www.researchgate.net/profile/Bo-Zhao-3/publication/343848324_Stand_with_StandingRock_Envisioning_an_Epistemological_Shift_in_Understanding_Geospatial_Big_Data_in_the_Post-truth_Era/links/605aadfa92851cd8ce61ba65/Stand-with-StandingRock-Envisioning-an-Epistemological-Shift-in-Understanding-Geospatial-Big-Data-in-the-Post-truth-Era.pdf), b) [Putting Data back into Context](https://datajournalism.com/read/longreads/putting-data-back-into-context), c) [extended readings](weeks/week03/readings.md).
@@ -78,9 +84,9 @@ This week’s focus is on processing geospatial data for your digital geographie
 
 ### Week 4 : Web mapping
 
-<!-- April 18 to April 22 -->
+<!-- Jan 23 to Jan 27 -->
 
-This week you will be making your first web map of the quarter using the popular web mapping library - [MapBox](https://www.mapbox.com/mapbox-gljs) The lecture section this week we’ll work together familiarizing everyone with the basics of web mapping, and then provide a detailed introduction to the Lab 3 exercise.
+Get ready to take your web mapping skills to the next level! This week, you'll be creating your first web map of the quarter using the popular library [MapBox](https://www.mapbox.com/mapbox-gljs). In the lecture section, we'll work together to make sure everyone is familiar with the basics of web mapping, and then provide a detailed introduction to the Lab 3 exercise. This is your chance to showcase your skills and bring your digital geographies projects to life with interactive, visually stunning maps. So let's get to work and see what you're capable of – we can't wait to see your creations!
 
 -   **Lectures:** [Making Thematic Maps on the Internet using MapBox](weeks/week04/readme.md)
 -   **Readings:** a) [Digital Mapping and Segregation](https://www.forbes.com/sites/drsarahbond/2017/10/20/how-is-digital-mapping-changing-the-way-we-visualize-racism-and-segregation/#4df35c7d33fa), b) [Hacker Cartography](https://drive.google.com/file/d/1H76GJFXwS5dOPZYyxfyuud0DGQzYGNIr/view?usp=sharing), and c) [extended readings](weeks/week04/readings.md).
@@ -90,7 +96,7 @@ This week you will be making your first web map of the quarter using the popular
 
 ### Week 5 : Map design
 
-<!-- April 25 to April 29 -->
+<!-- Jan 30 to Feb 3 -->
 
 -   **Lectures:** [BaseMap design using Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/) and [Mockup for web mapping project](weeks/week05/mockup/readme.md)
 -   **Readings:** a) [The Guide to Map Design](https://go.mapbox.com/rs/117-NXK-490/images/the-guide-to-map-design.pdf), b) [Intro to Critical Cartography](https://drive.google.com/file/d/1IEz_9J4vH6foIrV36wDoIovOYNomZBWj/view?usp=sharing), c) [Mapbox Studio How-to Videos](weeks/week05/readme.md), and d) [extended readings](weeks/week05/readings.md).
@@ -100,9 +106,10 @@ This week you will be making your first web map of the quarter using the popular
 
 ### Week 6 : Smart dashboards
 
-<!-- May 2 to May 6 -->
+<!-- Feb 6 to Feb 10 -->
 
-A smart dashboard is frequently used to provide a coordinated view of multiple visual components (e.g., maps, charts, texts, tables, diagrams) to holistically present the a (geographical) event. For example, one of the most popular use of smart dashboard is to visualize the trend of COVID-19 (refer to https://hgis.uw.edu/virus).
+Smart dashboards are an incredibly powerful tool for visualizing and presenting complex events, particularly in the field of geography. By coordinating multiple visual components like maps, charts, texts, tables, and diagrams, smart dashboards allow you to present a holistic view of a given event in an intuitive and easy-to-understand way. One of the most popular uses for smart dashboards is to visualize the trend of COVID-19(refer to https://hgis.uw.edu/virus), but these powerful tools can be used for all kinds of applications. So get ready to take your data visualization skills to the next level and create stunning, interactive dashboards that will help you tell your story in a way that truly engages and informs your audience.
+
 
 -   **Lectures:** introduce how to [create a smart dashboard](weeks/week06/readme.md). The instructor wil walk through a smart dashboard illustrating earthquakes in Japan in September 2017 together during the lectures (Check out this dashboard at [here](https://jakobzhao.github.io/geog458/weeks/week06/index.html)). This dashboard is primarily built with a map component and a dynamic chart. This map component is made by MapBox, while the chart was built upon [C3.js](https://c3js.org/examples.html).
 -   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [History of the Urban Dashboard](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/), c) [3 Ways Data Dashboards Can Mislead You](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section), and d) [extended readings](weeks/week06/readings.md).
@@ -111,9 +118,11 @@ A smart dashboard is frequently used to provide a coordinated view of multiple v
 
 ### Week 7 : Geo-Narratives
 
-<!-- May 9 to May 13 -->
+<!-- Feb 13 to Feb 17 -->
 
-This week we will explore the concept of geo-narrative, the use of storytelling in mapping practice, by looking at existing geo-narrative mapping projects and engaging in a group discussion and map critique.
+This week, we're diving into geo-narrative – the use of storytelling in mapping practice. We'll explore this concept by looking at some of the most innovative geo-narrative mapping projects out there and engaging in group discussions and map critiques.
+
+Whether you're an experienced mapmaker or new to the field, this is your chance to push the boundaries of what's possible with maps and create truly immersive, interactive stories that engage and inform your audience.
 
 -   **Lectures:** a) [A Geo-Narrative Template](weeks/week07/). Examples: a) [Oregon Atlas](http://oregonwater.info/atlas.html), b) [Stand with #Standing Rock](https://jakobzhao.github.io/standwithstandingrock/)
 -   **Readings:** a) [Planning and outlining your story map](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/sharing-collaboration/planning-and-outlining-your-story-map-how-to-set-yourself-up-for-success/) , b) [Anti-Eviction Mapping Project Handbook](https://static1.squarespace.com/static/52b7d7a6e4b0b3e376ac8ea2/t/5bc76571b208fc10defc815a/1539794295823/AEMP+Handbook.pdf), c)[extended readings](weeks/week07/readings.md).
@@ -122,9 +131,11 @@ This week we will explore the concept of geo-narrative, the use of storytelling 
 
 ### Week 8 : Emerging topics
 
-<!-- May 16 to May 20 -->
+<!-- Feb 20 to Feb 24 -->
 
-This week will focus on two emerging topics related to digital geographies, including cloud point visualization and real-time environment data collection, and explore their promise and pitfalls.
+This week, we're exploring emerging topics in digital geographies! We'll be focusing on two cutting-edge topics – cloud point visualization and real-time environment data collection – and examining their potential as well as the challenges and pitfalls they present.
+
+This is your chance to get a glimpse of the future of digital geographies and think about how these technologies will shape the way we understand and interact with the world around us. 
 
 -   **Lectures:** a) [Blockchain-based network map](https://www.mapbox.com/showcase/helium),  b) [Real-time GIS](https://drive.google.com/file/d/1COD2OYBxEJThG5Lfx7-nzV0EGtGedndT/view?usp=sharing), and c) [Real-time environmental data visualization](weeks/week08/rpi-iot).
 -   **Readings:** a) [Deepfake Geography](https://www.researchgate.net/profile/Chunxue-Xu/publication/351131604_Deep_fake_geography_When_geospatial_data_encounter_Artificial_Intelligence/links/608a48f5a6fdccaebdf4f065/Deep-fake-geography-When-geospatial-data-encounter-Artificial-Intelligence.pdf), and b) [Blockchain and crypto place](https://www.sciencedirect.com/science/article/pii/S0016718520302219/pdfft?isDTMRedir=true&download=true), c) [extended readings](weeks/week08/readings.md).
@@ -132,11 +143,11 @@ This week will focus on two emerging topics related to digital geographies, incl
 
 ### Week 9 & 10 : Project studios
 
-**Each group will need to meet your TA at least once during the lab session in Week 9. So, you need to participate in the lab sessions in Week 9!** Also, in Week 9 to 10, the instructor will be available for troubleshooting via virtual meetings during the normal lecture sessions and office hour sessions. For the lecture sections, you can join via this [Zoom link](https://washington.zoom.us/my/bzhao) directly. For the office hours, You can make an appoint with the instructor via this [link](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI). If either time slot does not work for you, please contact the instructor to schedule a meeting during a commonly available time slot.
+<!-- Feb 27 to Mar 10-->
 
-<!-- May 23 to May 27 -->
-<!-- May 30 to June 3, May 30 is Memorial Day, which is a University Holiday -->
-During these two weeks, each group will focusing on their final projects. The instructor and teaching assistants are available during the normal lecture period, lab sections and office hours if help is needed.
+**It is important that each group meets with their TA at least once during the lab session in Week 9. Therefore, it is crucial that all students participate in the lab sessions during this week. ** Additionally, the instructor will be available for virtual meetings during normal lecture and office hours in Weeks 9 and 10 for troubleshooting and to offer assistance with the final projects. These meetings can be accessed via the [Zoom link](https://washington.zoom.us/my/bzhao) provided for lectures and by scheduling an appointment through the designated [link](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI) for office hours. If neither of these time slots is convenient, please contact the instructor to arrange a meeting at a mutually available time.
+
+During these two weeks, each group will focus on their final projects, with the instructor and TAs available to provide support during normal lecture periods, lab sessions, and office hours. Don't hesitate to reach out if you need any help along the way.
 
 ### Finals Week : Final project presentations
 
@@ -146,10 +157,11 @@ TBD.
 
 **E-mail:** is the easiest way of reaching me. I will respond to all e-mails during office hours, and will periodically return e-mail at other times. Please note that the answer to many commonly e-mailed questions can be found in the syllabus or on the course website. Please also note that in order to respond your e-mail you MUST include the following information in every e-mail:
 
--  A Salutation (Both Dr. Zhao and Professor Zhao are acceptable)
--  Your Full Name
--  What class you are in
--  Subject line summarizing your e-mail (i.e. “Question regarding Map Design” for example)
+
+    -  A Salutation (Both Dr. Zhao and Professor Zhao are acceptable)
+    -  Your Full Name
+    -  What class you are in
+    -  Subject line summarizing your e-mail (i.e. “Question regarding Map Design” for example)
 
 `For all the questions related to quizzes and labs, please contact the TA.`
 
@@ -196,8 +208,4 @@ It is important that you take care of yourselves inside and outside of class as 
 
 ## :book: Copyright
 
- This course advocates for the open culture. The course materials are open source for both students and open source community to access.
-
- Notably, students are not allow to videotape or audio-tape (record) this class in any form, and sharing recordings outside of class without the written consent of each student in the class is not permitted by [FERPA](https://registrar.washington.edu/students/ferpa/). However, I will try to record most of the classes via Zoom and share them via Canvas. Even so, I still encourage each of you attend the lectures instead of watching the recorded videos afterwards. Your in-class participation is a key factor to yield the best learning outcome. The instructor determines if their class can and cannot be recorded. This decision should be clearly communicated by the instructor at the beginning and throughout the quarter. In Zoom, the recording feature can be controlled by the instructor, as the meeting host.
- 
-<a href="https://hgis.uw.edu"><img src="assets/logo.png" align="right" width="230px" target="_blank" /></a> The development of this course has been sponsored by UW's Data Science Minior committee. This course is largely based upon material designed with Tyler McCrea, and also I sincerely appreciate Jou Ho, Fengyu Xu, Steven (Xiaoqi) Bao for their assistance in developing this course.
+ <a href="https://hgis.uw.edu"><img src="assets/logo.png" align="right" width="230px" target="_blank" /></a> This course advocates for the open culture. The course materials are open source for both students and open source community to access. The development of this course has been sponsored by UW's Data Science Minior committee. This course is largely based upon material designed with Tyler McCrea, and also I sincerely appreciate Jou Ho, Fengyu Xu, Xiaoqi “Steven” Bao for their assistance in developing this course.
