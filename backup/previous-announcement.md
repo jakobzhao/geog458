@@ -25,3 +25,10 @@
   - The AC & AD labs: [https://washington.zoom.us/j/95926871713](https://washington.zoom.us/j/95926871713).
 
 - Please take the [Survey](https://canvas.uw.edu/courses/1547729/quizzes/1653669) on Canvas by March 30th, 2022, at noon 12:00pm. Through this survey, we will group students in 20 ~ 25 teams, each of which will have 4 to 5 students who are from the same session.
+
+
+
+- On Wednesday (June 8th), we will hold the in-person final presentation meeting in GUG 220 at 4:30 pm. Here is an instruction that we highly recommend you to follow:
+   - Prior to the meeting, please fill in the final project presentation form (https://docs.google.com/spreadsheets/d/1MoE9114LcLHaoUbMnl-6zlBlaE1_8IvU82Axm7NXzWA/edit?usp=sharing). By doing so, we can better coordinate the meeting. 
+   - In addition, each student is encouraged to submit an in-group peer review (https://canvas.uw.edu/courses/1547729/assignments/7418163) by the end of June 10th.This year has been a difficult year for everyone. When you assess your teammates, please consider how this pandemic has influenced them, and if you yourself have been severely influenced by the pandemic, please also let us know.Your feedback will be applied in assigning the grade for the project. Please try to be as honest and fair as possible in your assessment. This is an anonymous review.
+   - We will mostly refer to an openly-shared [grade conversation file](https://depts.washington.edu/lingta/grade_conversion.pdf) to convert percentages to the UW grading scale.

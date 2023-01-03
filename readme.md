@@ -1,27 +1,19 @@
 # GEOGRAPHY 458: Advanced Digital Geographies
 
-**Hyberlinks:** [**`Weekly Schedules`**](#calendar-weekly-schedule) &nbsp;&nbsp;&nbsp;&nbsp; [**`Final Project Guideline`**](project/readme.md) &nbsp;&nbsp;&nbsp;&nbsp; [**`Slack Room`**](https://2022-sp-geog458.slack.com)
-
-**Announcement:**
-
-- On Wednesday (June 8th), we will hold the in-person final presentation meeting in GUG 220 at 4:30 pm. Here is an instruction that we highly recommend you to follow:
-   - Prior to the meeting, please fill in the final project presentation form (https://docs.google.com/spreadsheets/d/1MoE9114LcLHaoUbMnl-6zlBlaE1_8IvU82Axm7NXzWA/edit?usp=sharing). By doing so, we can better coordinate the meeting. 
-   - In addition, each student is encouraged to submit an in-group peer review (https://canvas.uw.edu/courses/1547729/assignments/7418163) by the end of June 10th.This year has been a difficult year for everyone. When you assess your teammates, please consider how this pandemic has influenced them, and if you yourself have been severely influenced by the pandemic, please also let us know.Your feedback will be applied in assigning the grade for the project. Please try to be as honest and fair as possible in your assessment. This is an anonymous review.
-   - We will mostly refer to an openly-shared [grade conversation file](https://depts.washington.edu/lingta/grade_conversion.pdf) to convert percentages to the UW grading scale.
+**Hyberlinks:** [**`Weekly Schedules`**](#calendar-weekly-schedule) &nbsp;&nbsp;&nbsp;&nbsp; [**`Final Project Guideline`**](project/readme.md)
 
 **Meetings:**
 
 *Masks are strongly recommended to protect everyone, especially those whose personal or household situation makes them more vulnerable.*
 
 
-- **Lectures:** Tuesdays and Thursdays 11:30 AM to 12:50 PM PST at GUG 220
-- **Labs:** Wednesdays 12:30 AM to 4:20 PM PST SMI 401
+- **Lectures:** Tuesdays and Thursdays 12:00 PM to 1:20 PM PST at BAG 260
+- **Labs:** Fridays 1:30 PM to 3:20 PM PST at SMI 401
 
 **Personnel:**
 
-- **Bo Zhao**, Instructor, zhaobo@uw.edu | Office Hour: Thursdays 1 to 3 PM via [Zoom](https://washington.zoom.us/my/bzhao) by default or in-person by request. Check this [link](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI) to make an appointment.
+- **Bo Zhao**, Instructor, zhaobo@uw.edu | Office Hour: Thursdays 2 to 4 PM by appointment. Make appointment [here](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI).
 
-- **Jiaxin Feng**, Teaching Assistant, jxfeng@uw.edu |  Office Hour: Fridays 2:30 to 3:30 PM via [Zoom](https://washington.zoom.us/j/95734673622). Check this [link](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUNfRnRnc2hqLXFUfGRlZmF1bHR8Zjg1NTJmZDg2MDY2OGY1ODA5ZDAzNDdhMjZmMzJhMTI) to make an appointment. If you want to meet with me in person, please send me an email or a canvas message.
 
 - **Steven Bao**, Teaching Assistant, bxq98@uw.edu |  Office Hour: Mondays 1 to 2 PM via [Zoom](https://washington.zoom.us/j/3329674953). Check this [link](https://calendar.google.com/calendar/selfsched?sstoken=UURaSkhXOURSSUd4fGRlZmF1bHR8Y2I1OTM0ODUyODg3ZDZiNWZiYjVlOTY3MjhmMWMwYjQ) to make an appointment. If you want to meet with me in person, please send me an email or a canvas message.
 
@@ -29,49 +21,25 @@
 
 ![course cover](assets/img/cover.png)
 
-As digital technologies have radically transformed human life, this course tries to engage students in this digitally mediated and data-intensive geographic world, and also train them the timely technical skills which are demanding in emerging job markets. This course will provide a unique opportunity to explore emerging digital methods, to build a holistic solution to real-world problems, and to critically analyze their social implications. Rather than focusing exclusively on one or two specific topics, this course covers a full range of theoretical perspectives and practical exercises. The course begins with teaching students on geospatial project management using GitHub, and then a series of geospatial data operations and analyses are covered in detail, such as online data (e.g., geo-tagged tweets) acquisition, geocoding, and geospatial analyses. With these preparations, this course switches to online geovisualization. After a brief introduction to web programming basics (e.g., JavaScript, Html, and CSS), students will learn how to visualize and narrate geographic phenomena in an online environment. Moreover, a few newly emerged issues in digital geographies will be introduced. A few state-of-the-art approaches and applications in digital geographies will be practiced, such as collecting aerial imagery and point clouds using an unmanned aerial vehicle (UAV, commonly known as drone) or LiDAR, as well as storing real-time data from an environmental sensor.  Towards the end of this quarter, we will also introduce a few newly emerged issues related to digital geographies, such as an problematic use of Geospatial Artificial Intelligence and the crypto place on Blockchain. Throughout this quarter, students will not only learn and practice geospatial techniques which are important to many emerging jobs, but also hone their critical intellectual visions on the social implications of the applied techniques.
+Embrace the power of technology and join us on a journey into the dynamic world of digital geographies! This course is designed to equip students with the technical skills that are in high demand in emerging job markets, while also providing a unique opportunity to explore the latest emerging digital methods and technologies. By building holistic solutions to real-world problems and critically analyzing their social implications, students will be well-prepared to tackle the challenges of the digital age. Through a full range of theoretical perspectives and practical exercises, students will learn everything from geospatial project management using GitHub to online geovisualization. Along the way, they will delve into a series of geospatial data operations and analyses, such as acquiring online data (e.g., geo-tagged tweets), geocoding, and performing geospatial analyses. With a brief introduction to web programming basics (e.g., JavaScript, HTML, and CSS), students will even learn how to visualize and narrate geographic phenomena online.
 
-This course is very “hands-on” and interactive! Most of our time will be spent in a hybrid lecture/lab where students will be working together. Although there will be some individual written reflections and analyses, no formal final exam will be set up. The final project enables students to figure out a holistic solution to a real-world problem. With the completion of this course, each student can share the course work at a self-made website which can be publicly viewed by classmates, open-source community as well as future industrial recruiters. Along the way, the readings will include both applied and theoretical selections. Students will learn not only how people have been programming and visualizing, but also about how critical social theorists have identified assumptions, ideologies, and rigidities in existing practices that can help students to make effective, inclusive and empathetic decisions in today’s data-intensive geographic world.
+But that's not all! This course will also introduce students to a range of state-of-the-art approaches and applications in digital geographies, such as collecting aerial imagery and point clouds using UAVs or LiDAR, and storing real-time data from environmental sensors. As we approach the end of the quarter, we'll delve into newly emerged issues in digital geographies, such as the problematic use of artificial intelligence and the role of blockchain in geospatial contexts. By the end of this course, students will not only have mastered a range of technical skills that are important to many emerging jobs, but also honed their critical intellectual visions on the social implications of these applied techniques.
+
+This course is designed to be highly interactive and hands-on. Most of the course time will be spent in a hybrid lecture/lab setting, where students will have the opportunity to work together and apply their knowledge in a practical setting. While there will be some individual written reflections and analyses, there will not be a formal final exam. Instead, students will be tasked with completing a final project that allows them to develop a holistic solution to a real-world problem. Upon completion of the course, each student will have the opportunity to share their course work on a self-made website, which will be publicly accessible to classmates, the open-source community, and potential industrial recruiters. In addition to practical skills, students will also be exposed to a range of applied and theoretical readings. These readings will cover both the technical aspects of programming and visualization, as well as critical social theory, providing students with a well-rounded understanding of the field and helping them to make informed, effective, and inclusive decisions in today's data-intensive geographic world. By the end of the course, students will have gained a wealth of knowledge and practical experience that will set them up for success in their future endeavors.
 
 ## :flags: Learning Objectives
 
--   To identify when and how the methods, sociology, and objects of geographical inquiry can be transformed through computational and networked approaches.
+- To understand how computational and networked approaches can transform the methods, sociology, and objects of geographical inquiry.
 
--   To learn to find, evaluate, use, extend, and combine various methods and tools of digital geography as needed for a given task. Examples of such tools have included: GitHub, QGIS, Python, JavaScript, and Mapbox.
+- To learn how to find, evaluate, use, extend, and combine various methods and tools of digital geography as needed for a given task. These tools may include GitHub, QGIS, Python, JavaScript, and Mapbox.
 
--   To practice and reflect theoretically upon emerging born-digital, multi-modal, narrative, and interactive approaches to cartography and scholarly communication.
+- To gain practical experience with and reflect theoretically on emerging born-digital, multi-modal, narrative, and interactive approaches to cartography and scholarly communication.
 
--   To reflect on the iterative and social dimensions to one’s own learning process.
+- To consider the iterative and social dimensions of the learning process.
 
--   To think critically about the technologies used in digital scholarship, including the material, social, and political implications of digital tech development, maintenance and utilization.
+- To develop critical thinking skills regarding the technologies used in digital scholarship, including the material, social, and political implications of their development, maintenance, and utilization.
 
--   To discern, through investigation, the relationship between space, technology, and society through critical engagement with practical and theoretical digital geographies methods.
-
-
-## :bell: Course Requirement
-
-**Student Tech Support:** The Student Tech Loan Program is expanding as quickly as possible. We announced this to undergrads as soon as it hit the airwaves, in hopes some of them who need hardware can reserve for spring quarter. They expect new/additional machines to arrive in April. STLP Website: <https://stlp.uw.edu/> (check the [Spring Announcement](https://drive.google.com/file/d/1qlbUBPdQFJt_jXS2fAOtORwNrBVtZqCb/view)).
-
-**E-mail:** is the easiest way of reaching me. I will respond to all e-mails during office hours, and will periodically return e-mail at other times. Please note that the answer to many commonly e-mailed questions can be found in the syllabus or on the course website. Please also note that in order to respond your e-mail you MUST include the following information in every e-mail:
-
--  A Salutation (Both Dr. Zhao and Professor Zhao are acceptable)
--  Your Full Name
--  What class you are in
--  Subject line summarizing your e-mail (i.e. “Question regarding Map Design” for example)
-
-`For all the questions related to quizzes and labs, please contact the TA.`
-
-**GitHub:** This course material will be hosted on GitHub instead of UW Canvas. On this dedicated GitHub repository, you can find most of the course material, participate in group discussions by submitting GitHub issues, and create new GitHub repositories to turn in the lab deliverables. By the end of this quarter, you will be more proficient in operating a cloud-based coding environment and able to host your work online as a way to gain public and peer attentions.
-
-**Labs:** You need to finish all four labs by the due date. In order to help you work on each lab, we will walk through most of the labs in class.
-
-**Think Pieces:** for week 1 to 8, there will be weekly reading assignments. To evaluate your reflection upon each week's reading material, we set up a discussion board for each week. You need to submit at least think pieces to **4** out of the 8 weeks' discussion topics. We will review them all, but only the four with hightest scores will be counted towards your final grade. Your think pieces should be completed by Thursday @ 11:59 pm for the weeks you are submitting a piece. **All the 4 think pieces must be submitted by the end of Week 8 (May 20th, 11:59pm)**. Your think pieces should be at least 350 words and engage substantially with the reading materials, and connections to the lab assignments and lectures. Guiding questions or prompts will be included in each week's discussion section on canvas to help frame your thinking. Submit your think pieces on Canvas in the applicable week's discussion section (https://canvas.uw.edu/courses/1434645/discussion_topics).
-
-**Class participation:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and actively participate in critical discussions of those readings. You should have completed all of the weekly readings before our Friday lab sections as these sections will be devoted to critical discussion and engagement with the required readings.
-
-**In-class presentation:** **Also, each group will lead the presentation about an assigned topic at least once throughout this quarter. We will start assign the group presentation assignment in Week 3.** Each group will present an previously assign paper or a digital geography related project in no more than 10 minutes. If you prepare slides for the presentation, please send it to the instructor before class via email.
-
-**Final Project:** will be conducted by a group of 4 to 5 students who are from the same Lab session. It needs to be submitted by June 8th, 11:59pm. Check out [the detailed requirement for final project](project/readme.md).
+- To investigate the relationship between space, technology, and society through the critical engagement with practical and theoretical digital geographies methods.
 
 ## :calendar: Weekly Schedule
 
@@ -172,21 +140,43 @@ During these two weeks, each group will focusing on their final projects. The in
 
 ### Finals Week : Final project presentations
 
-Each group will present their final projects at GUG 220 on Wednesday (June 8th) 4:30 to 6:20pm.
+TBD.
+
+## :bell: Course Requirement
+
+**E-mail:** is the easiest way of reaching me. I will respond to all e-mails during office hours, and will periodically return e-mail at other times. Please note that the answer to many commonly e-mailed questions can be found in the syllabus or on the course website. Please also note that in order to respond your e-mail you MUST include the following information in every e-mail:
+
+-  A Salutation (Both Dr. Zhao and Professor Zhao are acceptable)
+-  Your Full Name
+-  What class you are in
+-  Subject line summarizing your e-mail (i.e. “Question regarding Map Design” for example)
+
+`For all the questions related to quizzes and labs, please contact the TA.`
+
+**GitHub:** The course material will be hosted on GitHub instead of UW Canvas. On this dedicated GitHub repository, you can find most of the course material, participate in group discussions by submitting GitHub issues, and create new GitHub repositories to turn in the lab deliverables. By the end of this quarter, you will be more proficient in operating a cloud-based coding environment and able to host your work online as a way to gain public and peer attentions.
+
+**Labs:** You need to finish all four labs by the due date. In order to help you work on each lab, we will walk through most of the labs in class.
+
+**Think Pieces:** for week 1 to 8, there will be weekly reading assignments. To evaluate your reflection upon each week's reading material, we set up a discussion board for each week. You need to submit at least think pieces to **4** out of the 8 weeks' discussion topics. We will review them all, but only the four with hightest scores will be counted towards your final grade. Your think pieces should be completed by Thursday @ 11:59 pm for the weeks you are submitting a piece. **All the 4 think pieces must be submitted by the end of Week 8**. Your think pieces should be at least 350 words and engage substantially with the reading materials, and connections to the lab assignments and lectures. Guiding questions or prompts will be included in each week's discussion section on canvas to help frame your thinking. Submit your think pieces on Canvas in the applicable week's discussion section (https://canvas.uw.edu/courses/1434645/discussion_topics).
+
+**Class participation:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and actively participate in critical discussions of those readings. You should have completed all of the weekly readings before our Friday lab sections as these sections will be devoted to critical discussion and engagement with the required readings.
+
+**In-class presentation:** **Also, each group will lead the presentation about an assigned topic at least once throughout this quarter. We will start assign the group presentation assignment in Week 3.** Each group will present an previously assign paper or a digital geography related project in no more than 10 minutes. If you prepare slides for the presentation, please send it to the instructor before class via email.
+
+**Final Project:** will be conducted by a group of 4 to 5 students who are from the same Lab session. It needs to be submitted by June 8th, 11:59pm. Check out [the detailed requirement for final project](project/readme.md).
 
 ## :heavy_check_mark: Grading
 
-| Grading items   | %   |
-| --------------- | --- |
-| Participation   | 5%  |
-| In-class Presentation           | 10% |
-| Think Pieces    | 20% |
-| Lab Assignments | 30% |
-| Final Project Progress  | 15% |
-| Final project   | 20% |
+| Grading items          | %   |
+| ---------------------- | --- |
+| Participation          | 5%  |
+| In-class Presentation  | 10% |
+| Think Pieces           | 20% |
+| Lab Assignments        | 30% |
+| Final Project Progress | 15% |
+| Final project          | 20% |
 
 > The item `participation` includes your participation in the class (e.g., self-introduction, survey, answer questions in class, etc.) and/or your response on GitHub issues (ask questions via GitHub issue, and help your classmates using the GitHub issues function).
-
 
 ## :notebook_with_decorative_cover: Equity & Inclusivity
 
