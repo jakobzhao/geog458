@@ -96,7 +96,7 @@ Get ready to take your web mapping skills to the next level! This week, you'll b
 
 ### Week 5 : Map design
 
-<!-- Jan 30 to Feb 3 -->
+<!-- Jan 30 to Feb 3, Meeting in Pennsylvania -->
 
 -   **Lectures:** [BaseMap design using Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/) and [Mockup for web mapping project](weeks/week05/mockup/readme.md)
 -   **Readings:** a) [The Guide to Map Design](https://go.mapbox.com/rs/117-NXK-490/images/the-guide-to-map-design.pdf), b) [Intro to Critical Cartography](https://drive.google.com/file/d/1IEz_9J4vH6foIrV36wDoIovOYNomZBWj/view?usp=sharing), c) [Mapbox Studio How-to Videos](weeks/week05/readme.md), and d) [extended readings](weeks/week05/readings.md).
@@ -143,7 +143,8 @@ This is your chance to get a glimpse of the future of digital geographies and th
 
 ### Week 9 & 10 : Project studios, presentation and submission.
 
-<!-- Feb 27 to Mar 10-->
+<!-- Feb 27 to Mar 10, Meeting in Arizona --> 
+
 
 **It is important that each group meets with their TA at least once during the lab session in Week 9. Therefore, it is crucial that all students participate in the lab sessions during this week. ** Additionally, the instructor will be available for virtual meetings during normal lecture and office hours in Weeks 9 and 10 for troubleshooting and to offer assistance with the final projects. These meetings can be accessed via the [Zoom link](https://washington.zoom.us/my/bzhao) provided for lectures and by scheduling an appointment through the designated [link](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI) for office hours. If neither of these time slots is convenient, please contact the instructor to arrange a meeting at a mutually available time.
 
