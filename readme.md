@@ -15,7 +15,7 @@
 - **Bo Zhao**, Instructor, zhaobo@uw.edu | Office Hour: Thursdays 2 to 4 PM by appointment. Make appointment [here](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI).
 
 
-- **Steven Bao**, Teaching Assistant, bxq98@uw.edu |  Office Hour: TBD.
+- **Steven Bao**, Teaching Assistant, bxq98@uw.edu |  Office Hour: Wednesdays 1 to 2 PM at SMI 401. It is recommended to send me an email or canvas message briefly describing your question(s) before your visit, as this will help me provide better answers. If the listed time does not work for you, please also feel free to send me an email/canvas message to schedule for anothe time.
 
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
 
