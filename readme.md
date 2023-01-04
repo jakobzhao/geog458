@@ -15,7 +15,7 @@
 - **Bo Zhao**, Instructor, zhaobo@uw.edu | Office Hour: Thursdays 2 to 4 PM by appointment. Make appointment [here](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI).
 
 
-- **Steven Bao**, Teaching Assistant, bxq98@uw.edu |  Office Hour: Mondays 1 to 2 PM via [Zoom](https://washington.zoom.us/j/3329674953). Check this [link](https://calendar.google.com/calendar/selfsched?sstoken=UURaSkhXOURSSUd4fGRlZmF1bHR8Y2I1OTM0ODUyODg3ZDZiNWZiYjVlOTY3MjhmMWMwYjQ) to make an appointment. If you want to meet with me in person, please send me an email or a canvas message.
+- **Steven Bao**, Teaching Assistant, bxq98@uw.edu |  Office Hour: TBD.
 
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
 
