@@ -141,19 +141,3 @@
 - JS Style Guide
 
 - JS Best Practices
-
-[4] W3Schools (201X) jQuery Tutorial, retrieved December 28, 2016 from https://www.w3schools.com/jquery/
-
-- jQuery Tutorial
-
-- jQuery Home
-
-- jQuery Intro
-
-- jQuery Get Started
-
-- jQuery Syntax
-
-- jQuery Selectors
-
-- jQuery Events

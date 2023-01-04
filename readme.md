@@ -62,8 +62,8 @@ This week is all about mastering the fundamental skills of web programming! We'l
 
 This week will require a lot of self-learning, so be prepared for some fairly lengthy readings and practical exercises. But trust us – all of this hard work will pay off in the end, leaving you with a strong foundation in web programming that you can build upon throughout the course. So let's roll up our sleeves and get to work – we can't wait to see what you're capable of!
 
--   **Lectures:** [System architecture](weeks/week02/architecture), [intro-to-html, css](weeks/week02/html-css) and [javascript](weeks/week02/javascript).
--   **Readings:** a) [W3School Tutorials on Html, javascript, css](weeks/week02/tech-readings.md), b) [Introducing Code/Space](https://drive.google.com/file/d/1T7ChuOnaKrgjTVhAeV_Niei2pqCWiiqK/view?usp=sharing), c) [Cloud Ethics: Algorithms and the Attributes of Ourselves and Others](https://drive.google.com/file/d/1C3925q917K7cD8-NEbw_Yik_X0oCeSfd/view?usp=sharing), and d) [extended readings](weeks/week02/readings.md).
+-   **Lectures:** [System architecture](weeks/week02/architecture), [intro-to-html, css](weeks/week02/html-css) and [javascript](weeks/week02/javascript). [More tutorial on web development fundamentals](weeks/week02/tech-readings.md)
+-   **Readings:**  a) [Introducing Code/Space](https://drive.google.com/file/d/1T7ChuOnaKrgjTVhAeV_Niei2pqCWiiqK/view?usp=sharing), b) [A White Paper on Locational Information and the Public Interest](https://www.aag.org/wp-content/uploads/1900/09/2022-White-Paper-on-Locational-Information-and-the-Public-Interest.pdf), and c) [extended readings](weeks/week02/readings.md).
 -   **Think Piece 2:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155398) `Due: Jan 12, by 11:59pm`
 
 ### Week 3 : Geospatial data
@@ -80,7 +80,7 @@ By the time you complete Lab 2, you'll have learned how to collect geo-tagged tw
 -   **Readings:** a) [Stand with #StandingRock: Envisioning an Epistemological Shift in Understanding Geospatial Big Data in the “Post-truth” Era](https://www.researchgate.net/profile/Bo-Zhao-3/publication/343848324_Stand_with_StandingRock_Envisioning_an_Epistemological_Shift_in_Understanding_Geospatial_Big_Data_in_the_Post-truth_Era/links/605aadfa92851cd8ce61ba65/Stand-with-StandingRock-Envisioning-an-Epistemological-Shift-in-Understanding-Geospatial-Big-Data-in-the-Post-truth-Era.pdf), b) [Putting Data back into Context](https://datajournalism.com/read/longreads/putting-data-back-into-context), c) [extended readings](weeks/week03/readings.md).
 -   **Think Piece 3:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155397) `Due: Jan 19, by 11:59pm`
 -   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due:TBA` If you want to integrate a word cloud to your final project please refer to [this tutorial](troubleshoots/wordcloud/readme.md)
--   **Presentations**: Tuesday: Standing Rock paper (AA1), [Native Land Digital](https://native-land.ca/) (AB1), Thursday: Data back to Context Paper (AC1), [Ukraine Interactive Map](https://liveuamap.com/en) (AD1)
+-   **Presentations**: Tuesday: Standing Rock paper (AA1), Thursday:  [Native Land Digital](https://native-land.ca/) (AB1)
 
 ### Week 4 : Web mapping
 
@@ -92,7 +92,7 @@ Get ready to take your web mapping skills to the next level! This week, you'll b
 -   **Readings:** a) [Digital Mapping and Segregation](https://www.forbes.com/sites/drsarahbond/2017/10/20/how-is-digital-mapping-changing-the-way-we-visualize-racism-and-segregation/#4df35c7d33fa), b) [Hacker Cartography](https://drive.google.com/file/d/1H76GJFXwS5dOPZYyxfyuud0DGQzYGNIr/view?usp=sharing), and c) [extended readings](weeks/week04/readings.md).
 -   **Think Piece 4:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155396) `Due: Jan 26, by 11:59pm`
 -   **Lab 3:** [Web map application](labs/lab03) `Due:TBA`
--   **Presentations**: Tuesday: Digital Mapping and Segregation paper (AB2), [TweetMap](https://www.heavy.ai/demos/tweetmap) (AA2), Thursday: Hacker Cartography Paper (AD2), [Oregon Water Atlas](http://oregonwater.info/atlas.html) (AC2)
+-   **Presentations**: Tuesday: Hacker Cartography Paper (AD2),(AB2), [TweetMap](https://www.heavy.ai/demos/tweetmap) (AA2)
 
 ### Week 5 : Map design
 
@@ -102,7 +102,7 @@ Get ready to take your web mapping skills to the next level! This week, you'll b
 -   **Readings:** a) [The Guide to Map Design](https://go.mapbox.com/rs/117-NXK-490/images/the-guide-to-map-design.pdf), b) [Intro to Critical Cartography](https://drive.google.com/file/d/1IEz_9J4vH6foIrV36wDoIovOYNomZBWj/view?usp=sharing), c) [Mapbox Studio How-to Videos](weeks/week05/readme.md), and d) [extended readings](weeks/week05/readings.md).
 -   **Think Piece 5:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155395) `Due: Feb 2nd, by 11:59pm`
 -   **Lab 4:** [Map Design and Tile Generation](labs/lab04) `Due: TBA`
--   **Presentations**: Tuesday: The Guide to Map Design (AA3), [Snapchat Map](https://map.snapchat.com) (AB3), Thursday: [Refugee Camps Chapter from the Global Refugee Atlas](https://hgis.uw.edu/refugee/camp_menu.html) (AD3), Intro to Critical Cartography paper (AC3)
+-   **Presentations**: Tuesday: The Guide to Map Design (AA3),  Thursday: [Snapchat Map](https://map.snapchat.com) (AB3)
 
 ### Week 6 : Smart dashboards
 
@@ -124,20 +124,19 @@ This week, we're diving into geo-narrative – the use of storytelling in mappin
 
 Whether you're an experienced mapmaker or new to the field, this is your chance to push the boundaries of what's possible with maps and create truly immersive, interactive stories that engage and inform your audience.
 
--   **Lectures:** a) [A Geo-Narrative Template](weeks/week07/). Examples: a) [Oregon Atlas](http://oregonwater.info/atlas.html), b) [Stand with #Standing Rock](https://jakobzhao.github.io/standwithstandingrock/)
--   **Readings:** a) [Planning and outlining your story map](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/sharing-collaboration/planning-and-outlining-your-story-map-how-to-set-yourself-up-for-success/) , b) [Anti-Eviction Mapping Project Handbook](https://static1.squarespace.com/static/52b7d7a6e4b0b3e376ac8ea2/t/5bc76571b208fc10defc815a/1539794295823/AEMP+Handbook.pdf), c)[extended readings](weeks/week07/readings.md).
+-   **Lectures:** a) [A Geo-Narrative Template](weeks/week07/). Examples: a) [Oregon Atlas](http://oregonwater.info/atlas.html), b) [Stand with #Standing Rock](https://jakobzhao.github.io/standwithstandingrock/), c) []
+-   **Readings:** a) [Planning and outlining your story map](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/sharing-collaboration/planning-and-outlining-your-story-map-how-to-set-yourself-up-for-success/) , b) [Cartographic Design as Visual Storytelling: Synthesis and Review of Map-Based Narratives, Genres, and Tropes](https://drive.google.com/drive/folders/1JoXMil3jC6jAS9gE3K8zeP0NSHyHJkE7), c)[extended readings](weeks/week07/readings.md).
 -   **Think Piece 7:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155393) `Due: Feb 16, by 11:59pm`
--   **Presentations**: Tuesday: Planning and outlining your story map (AA5), [Mapping Amazon: GOOD JOBS FIRST](https://storymaps.arcgis.com/stories/adc5ff253a3643f88d39e7f3ef1a09ee) (AB5), Thursday: the Anti-Eviction Mapping Project Handbook (AC5),  [The Wall](https://www.usatoday.com/border-wall/) (AD5)
+-   **Presentations**: Tuesday: Planning and outlining your story map (AA5),  Thursday: [Mapping Amazon: GOOD JOBS FIRST](https://storymaps.arcgis.com/stories/adc5ff253a3643f88d39e7f3ef1a09ee) (AB5)
+
 
 ### Week 8 : Emerging topics
 
 <!-- Feb 20 to Feb 24 -->
 
-This week, we're exploring emerging topics in digital geographies! We'll be focusing on two cutting-edge topics – cloud point visualization and real-time environment data collection – and examining their potential as well as the challenges and pitfalls they present.
+This week, we're exploring emerging topics in digital geographies! We'll be focusing on two cutting-edge topics – deepfake Geography and crypto place  – and examining their potential as well as the challenges and pitfalls they present. This is your chance to get a glimpse of the future of digital geographies and think about how these technologies will shape the way we understand and interact with the world around us. 
 
-This is your chance to get a glimpse of the future of digital geographies and think about how these technologies will shape the way we understand and interact with the world around us. 
-
--   **Lectures:** a) [Blockchain-based network map](https://www.mapbox.com/showcase/helium),  b) [Real-time GIS](https://drive.google.com/file/d/1COD2OYBxEJThG5Lfx7-nzV0EGtGedndT/view?usp=sharing), and c) [Real-time environmental data visualization](weeks/week08/rpi-iot).
+-   **Lectures:** The lecture focuses on the following papers.
 -   **Readings:** a) [Deepfake Geography](https://www.researchgate.net/profile/Chunxue-Xu/publication/351131604_Deep_fake_geography_When_geospatial_data_encounter_Artificial_Intelligence/links/608a48f5a6fdccaebdf4f065/Deep-fake-geography-When-geospatial-data-encounter-Artificial-Intelligence.pdf), and b) [Blockchain and crypto place](https://www.sciencedirect.com/science/article/pii/S0016718520302219/pdfft?isDTMRedir=true&download=true), c) [extended readings](weeks/week08/readings.md).
 -   **Think Piece 8:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155392) `Due: Feb 23, by 11:59pm`
 
