@@ -51,7 +51,7 @@ Welcome to the beginning of an exciting journey into digital geographies! This w
 
 -   **Lectures:** [Syllabus](readme.md), [Intro to the Web](weeks/week01/intro-web), and [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 -   **Readings:** a) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_), b) [Humanistic GIS: Towards a research agenda](https://www.tandfonline.com/doi/pdf/10.1080/24694452.2021.2004875),  and c) [extended readings](weeks/week01/readings.md).
--   **Think Piece 1:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155399) `Due: Jan 5, by 11:59pm`
+-   **Think Piece 1:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773104) `Due: Jan 5, by 11:59pm`
 -   **Lab 1:** [Project management using GitHub](labs/lab01) `Due: TBA`
 
 ### Week 2: Programing fundamentals
@@ -64,7 +64,7 @@ This week will require a lot of self-learning, so be prepared for some fairly le
 
 -   **Lectures:** [System architecture](weeks/week02/architecture), [intro-to-html, css](weeks/week02/html-css) and [javascript](weeks/week02/javascript). [More tutorial on web development fundamentals](weeks/week02/tech-readings.md)
 -   **Readings:**  a) [Introducing Code/Space](https://drive.google.com/file/d/1T7ChuOnaKrgjTVhAeV_Niei2pqCWiiqK/view?usp=sharing), b) [A White Paper on Locational Information and the Public Interest](https://www.aag.org/wp-content/uploads/1900/09/2022-White-Paper-on-Locational-Information-and-the-Public-Interest.pdf), and c) [extended readings](weeks/week02/readings.md).
--   **Think Piece 2:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155398) `Due: Jan 12, by 11:59pm`
+-   **Think Piece 2:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773105) `Due: Jan 12, by 11:59pm`
 
 ### Week 3 : Geospatial data
 
@@ -78,7 +78,7 @@ By the time you complete Lab 2, you'll have learned how to collect geo-tagged tw
 
 -   **Lectures:** [Geospatial data for digital geographies](weeks/week03/readme.md), and [More than you ever wanted to know about GeoJSON](weeks/week03/assets/geojson.pdf)
 -   **Readings:** a) [Stand with #StandingRock: Envisioning an Epistemological Shift in Understanding Geospatial Big Data in the “Post-truth” Era](https://www.researchgate.net/profile/Bo-Zhao-3/publication/343848324_Stand_with_StandingRock_Envisioning_an_Epistemological_Shift_in_Understanding_Geospatial_Big_Data_in_the_Post-truth_Era/links/605aadfa92851cd8ce61ba65/Stand-with-StandingRock-Envisioning-an-Epistemological-Shift-in-Understanding-Geospatial-Big-Data-in-the-Post-truth-Era.pdf), b) [Putting Data back into Context](https://datajournalism.com/read/longreads/putting-data-back-into-context), c) [extended readings](weeks/week03/readings.md).
--   **Think Piece 3:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155397) `Due: Jan 19, by 11:59pm`
+-   **Think Piece 3:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773106) `Due: Jan 19, by 11:59pm`
 -   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due:TBA` If you want to integrate a word cloud to your final project please refer to [this tutorial](troubleshoots/wordcloud/readme.md)
 -   **Presentations**: Tuesday: Standing Rock paper (AA1), Thursday:  [Native Land Digital](https://native-land.ca/) (AB1)
 
@@ -90,7 +90,7 @@ Get ready to take your web mapping skills to the next level! This week, you'll b
 
 -   **Lectures:** [Making Thematic Maps on the Internet using MapBox](weeks/week04/readme.md)
 -   **Readings:** a) [Digital Mapping and Segregation](https://www.forbes.com/sites/drsarahbond/2017/10/20/how-is-digital-mapping-changing-the-way-we-visualize-racism-and-segregation/#4df35c7d33fa), b) [Hacker Cartography](https://drive.google.com/file/d/1H76GJFXwS5dOPZYyxfyuud0DGQzYGNIr/view?usp=sharing), and c) [extended readings](weeks/week04/readings.md).
--   **Think Piece 4:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155396) `Due: Jan 26, by 11:59pm`
+-   **Think Piece 4:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773107) `Due: Jan 26, by 11:59pm`
 -   **Lab 3:** [Web map application](labs/lab03) `Due:TBA`
 -   **Presentations**: Tuesday: Hacker Cartography Paper (AD2),(AB2), [TweetMap](https://www.heavy.ai/demos/tweetmap) (AA2)
 
@@ -100,7 +100,7 @@ Get ready to take your web mapping skills to the next level! This week, you'll b
 
 -   **Lectures:** [BaseMap design using Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/) and [Mockup for web mapping project](weeks/week05/mockup/readme.md)
 -   **Readings:** a) [The Guide to Map Design](https://go.mapbox.com/rs/117-NXK-490/images/the-guide-to-map-design.pdf), b) [Intro to Critical Cartography](https://drive.google.com/file/d/1IEz_9J4vH6foIrV36wDoIovOYNomZBWj/view?usp=sharing), c) [Mapbox Studio How-to Videos](weeks/week05/readme.md), and d) [extended readings](weeks/week05/readings.md).
--   **Think Piece 5:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155395) `Due: Feb 2nd, by 11:59pm`
+-   **Think Piece 5:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773108) `Due: Feb 2nd, by 11:59pm`
 -   **Lab 4:** [Map Design and Tile Generation](labs/lab04) `Due: TBA`
 -   **Presentations**: Tuesday: The Guide to Map Design (AA3),  Thursday: [Snapchat Map](https://map.snapchat.com) (AB3)
 
@@ -113,7 +113,7 @@ Smart dashboards are an incredibly powerful tool for visualizing and presenting 
 
 -   **Lectures:** introduce how to [create a smart dashboard](weeks/week06/readme.md). The instructor wil walk through a smart dashboard illustrating earthquakes in Japan in September 2017 together during the lectures (Check out this dashboard at [here](https://jakobzhao.github.io/geog458/weeks/week06/index.html)). This dashboard is primarily built with a map component and a dynamic chart. This map component is made by MapBox, while the chart was built upon [C3.js](https://c3js.org/examples.html).
 -   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [History of the Urban Dashboard](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/), c) [3 Ways Data Dashboards Can Mislead You](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section), and d) [extended readings](weeks/week06/readings.md).
--   **Think Piece 6:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155394) `Due: Feb 9th by 11:59pm`
+-   **Think Piece 6:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773109) `Due: Feb 9th by 11:59pm`
 -   **Presentations**: Tuesday: History of the Urban Dashboard article (AB4), [United Nation's COVID-19 Data Explorer](https://www.mapbox.com/showcase/un-ocha) (AC4), Thursday: The praxis and politics paper (AD4),  [Restaurant Complaints in NYC](https://labs.mapbox.com/bites/00304/) (AA4)
 
 ### Week 7 : Geo-Narratives
@@ -126,7 +126,7 @@ Whether you're an experienced mapmaker or new to the field, this is your chance 
 
 -   **Lectures:** a) [A Geo-Narrative Template](weeks/week07/). Examples: a) [Oregon Atlas](http://oregonwater.info/atlas.html), b) [Stand with #Standing Rock](https://jakobzhao.github.io/standwithstandingrock/), c) []
 -   **Readings:** a) [Planning and outlining your story map](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/sharing-collaboration/planning-and-outlining-your-story-map-how-to-set-yourself-up-for-success/) , b) [Cartographic Design as Visual Storytelling: Synthesis and Review of Map-Based Narratives, Genres, and Tropes](https://drive.google.com/drive/folders/1JoXMil3jC6jAS9gE3K8zeP0NSHyHJkE7), c)[extended readings](weeks/week07/readings.md).
--   **Think Piece 7:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155393) `Due: Feb 16, by 11:59pm`
+-   **Think Piece 7:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773110) `Due: Feb 16, by 11:59pm`
 -   **Presentations**: Tuesday: Planning and outlining your story map (AA5),  Thursday: [Mapping Amazon: GOOD JOBS FIRST](https://storymaps.arcgis.com/stories/adc5ff253a3643f88d39e7f3ef1a09ee) (AB5)
 
 
@@ -138,7 +138,7 @@ This week, we're exploring emerging topics in digital geographies! We'll be focu
 
 -   **Lectures:** The lecture focuses on the following papers.
 -   **Readings:** a) [Deepfake Geography](https://www.researchgate.net/profile/Chunxue-Xu/publication/351131604_Deep_fake_geography_When_geospatial_data_encounter_Artificial_Intelligence/links/608a48f5a6fdccaebdf4f065/Deep-fake-geography-When-geospatial-data-encounter-Artificial-Intelligence.pdf), and b) [Blockchain and crypto place](https://www.sciencedirect.com/science/article/pii/S0016718520302219/pdfft?isDTMRedir=true&download=true), c) [extended readings](weeks/week08/readings.md).
--   **Think Piece 8:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1547729/discussion_topics/7155392) `Due: Feb 23, by 11:59pm`
+-   **Think Piece 8:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773111) `Due: Feb 23, by 11:59pm`
 
 ### Week 9 & 10 : Project studios, presentation and submission.
 
