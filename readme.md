@@ -114,7 +114,7 @@ Smart dashboards are an incredibly powerful tool for visualizing and presenting 
 -   **Lectures:** introduce how to [create a smart dashboard](weeks/week06/readme.md). The instructor wil walk through a smart dashboard illustrating earthquakes in Japan in September 2017 together during the lectures (Check out this dashboard at [here](https://jakobzhao.github.io/geog458/weeks/week06/index.html)). This dashboard is primarily built with a map component and a dynamic chart. This map component is made by MapBox, while the chart was built upon [C3.js](https://c3js.org/examples.html).
 -   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [History of the Urban Dashboard](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/), c) [3 Ways Data Dashboards Can Mislead You](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section), and d) [extended readings](weeks/week06/readings.md).
 -   **Think Piece 6:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773109) `Due: Feb 9th by 11:59pm`
--   **Presentations**: Tuesday: History of the Urban Dashboard article (AB4), [United Nation's COVID-19 Data Explorer](https://www.mapbox.com/showcase/un-ocha) (AC4), Thursday: The praxis and politics paper (AD4),  [Restaurant Complaints in NYC](https://labs.mapbox.com/bites/00304/) (AA4)
+-   **Presentations**: Tuesday: [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing) (AB4), [Restaurant Complaints in NYC](https://labs.mapbox.com/bites/00304/) (AA4)
 
 ### Week 7 : Geo-Narratives
 
@@ -127,7 +127,7 @@ Whether you're an experienced mapmaker or new to the field, this is your chance 
 -   **Lectures:** a) [A Geo-Narrative Template](weeks/week07/). Examples: a) [Oregon Atlas](http://oregonwater.info/atlas.html), b) [Stand with #Standing Rock](https://jakobzhao.github.io/standwithstandingrock/)
 -   **Readings:** a) [Planning and outlining your story map](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/sharing-collaboration/planning-and-outlining-your-story-map-how-to-set-yourself-up-for-success/) , b) [Cartographic Design as Visual Storytelling: Synthesis and Review of Map-Based Narratives, Genres, and Tropes](https://drive.google.com/drive/folders/1JoXMil3jC6jAS9gE3K8zeP0NSHyHJkE7), c)[extended readings](weeks/week07/readings.md).
 -   **Think Piece 7:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773110) `Due: Feb 16, by 11:59pm`
--   **Presentations**: Tuesday: Planning and outlining your story map (AA5),  Thursday: [Mapping Amazon: GOOD JOBS FIRST](https://storymaps.arcgis.com/stories/adc5ff253a3643f88d39e7f3ef1a09ee) (AB5)
+-   **Presentations**: Tuesday: Planning and outlining your story map (AA5),  Thursday: [A Geo-Narrative Template](weeks/week07/)
 
 
 ### Week 8 : Emerging topics
