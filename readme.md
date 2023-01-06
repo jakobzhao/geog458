@@ -52,7 +52,7 @@ Welcome to the beginning of an exciting journey into digital geographies! This w
 -   **Lectures:** [Syllabus](readme.md), [Intro to the Web](weeks/week01/intro-web), and [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 -   **Readings:** a) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_), b) [Humanistic GIS: Towards a research agenda](https://www.tandfonline.com/doi/pdf/10.1080/24694452.2021.2004875),  and c) [extended readings](weeks/week01/readings.md).
 -   **Think Piece 1:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773104) `Due: Jan 5th, by 11:59pm`
--   **Lab 1:** [Project management using GitHub](labs/lab01) `Due: Jan 11th, by 11:59pm`
+-   **Lab 1:** [Project management using GitHub](labs/lab01) `Due: Jan 13th, by 11:59pm`
 
 ### Week 2: Programing fundamentals
 
