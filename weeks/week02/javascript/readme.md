@@ -2,9 +2,9 @@
 
 ## 1. Preparation
 
-Html, css, and JavaScript are the fundamental programming knowledge set for developing web mapping applications. After introducing HTML and CSS, This exercise helps you get to know the basics of JavaScript, including data types, objects, functions, and events. In addition, along this course, we will get in touch with several well-known JavaScript libraries, including `JQuery`, `Leaflet`, `Cesium`, and `Bootstrap`.
+Html, css, and JavaScript are the fundamental programming knowledge set for developing web mapping applications. After introducing HTML and CSS, This exercise helps you get to know the basics of JavaScript, including data types, objects, functions, and events. In addition, along this course, we will get in touch with several well-known JavaScript libraries, including `Mapbox GL JS`, `Cesium`, and `Bootstrap`.
 
-JavaScript is a web programming language that manipulates and controls the behavior of web pages by interacting with the various elements on the page and loading data. Many web site templates, such as `Bootstrap`, are in JavaScript, and it is the programming language that most of the major mapping and data visualization libraries, including `Leaflet` and `Cesium` that we are using in this course, are implemented in.
+JavaScript is a web programming language that manipulates and controls the behavior of web pages by interacting with the various elements on the page and loading data. Many web site templates, such as `Bootstrap`, are in JavaScript, and it is the programming language that most of the major mapping and data visualization libraries, including `Mapbox GL JS` and `Cesium` that we are using in this course, are implemented in.
 
 One major concept in web development is **server-side versus client-side**. The server is the location on the web that serves your website to the rest of the world, the client is the computer that is accessing that website, requesting information from the server. JavaScript can be both, but is primarily a client-side language, working on your client computer. In the manner we are using it, JavaScript is a scripting language that will operate in two fundamental ways. The first is executing scripts and tasks when the web page is loaded (i.e. load a dataset on page open), and the second is executing scripts and tasks after the web page visitor tells it to (i.e. clicking a button) or another task is completed (i.e. a menu is closed). When the script executes, it can manipulate the content of the page, change how it is being viewed through the browser, give information to a server, or tell the browser to go back to the server and get new information. Often, however, the instructions given by the script can be followed without additional communication with the server.
 
@@ -36,7 +36,7 @@ geog458
                └──main.js
             └─img
 ```
-Please activate a web server environment under the lab02 directory by **SimpleHTTPServer** or **Atom**.  Then visit `index.html` on Google Chrome. For example, if you activate a web server environment by SimpleHTTPServer with default setting, you may need to visit http://localhost:8000/index.html.
+Please activate a web server environment under the `weeks/week02/javascript` directory using VSCode.  Then visit `index.html` on Google Chrome. For example, if you activate a web server environment by VSCode with default setting, you may need to visit http://localhost:5050/index.html.
 
 At the bottom of the body section, you will see the following code. This will read all code found in the `main.js` file that is in the js folder.
 
@@ -65,7 +65,7 @@ code snippets.
 
 >  **Snippet** is a programming term for a small region of re-usable source **code**, machine **code**, or text.Ordinarily, these are formally defined operative units to incorporate intolarger programming modules. **Snippet** management is a feature of some texteditors, program source **code** editors, IDEs, and related software.
 
-Or in this lab, we recommend to test Javascript codes with In-browser console, such as Firefox firebug,  google in-browser console, etc. Open up your browser (Google Chrome), navigate to a page (e.g., www.google.com), and open the browser JavaScript console and dosome basic coding to show some of the principles.
+We also recommend to test Javascript codes with In-browser console, such as Firefox firebug,  google in-browser console, etc. Open up your browser (Google Chrome), navigate to a page (e.g., www.google.com), and open the browser JavaScript console and dosome basic coding to show some of the principles.
 
 Chrome’s integrated JavaScript console allows you to inputand explore JavaScript. Use **CTRL+SHIFT+J** (Windows) / **CMD+OPTION+J** (Mac) to open the console.
 
