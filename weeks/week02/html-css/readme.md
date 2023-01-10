@@ -44,16 +44,15 @@ You can also have supplemental files, such as images, style files, scripts, and 
 
 <img src="img/environment.jpg" alt="Drawing" style="text-align: center; width: 300px;"/>
 
-To host a web application, you need to move the codes and the supplemental files to the server. For most of the lecture and lab demos, you can launch a web server on your computer by python SimpleHTTPServer or a server integrated in `Atom`, also you can host your web map through github page.
+To host a web application, you need to move the codes and the supplemental files to the server. For most of the lecture and lab demos, you can launch a web server on your computer by the live Server plugin integrated in `VS Code`, also you can host your web map through github page.
 
 > **Note:** If you have your own dedicated server, you may need to dragged and saved the files in a specific folder (e.g., a folder named "www") which will be the hosting place of the server. If the server is a remote computer or in the cloud (e.g., the google cloud platform), you can use an `FTP` ot `SSH` connected to your hosting space, or drag and drop into your www folder.
 
 ## 3. Use an IDE
 
-While you can get away with using a basic text editor to create HTML files, there are Integrated Development Environment (IDE) designed to make your life easier by color coding code snips and autocompleting lines. Download and install one of the following text editing software if you don’t already have one. In this lecture, you will mainly use `Atom` to edit HTML, CSS, and Javascript files. We also have `Atom` installed in the Digital Earth Lab, and you can install an open source version of `Atom` on your own machine, no matter you are a Mac or Windows users. Here is a list of other IDEs:
+While you can get away with using a basic text editor to create HTML files, there are Integrated Development Environment (IDE) designed to make your life easier by color coding code snips and autocompleting lines. Download and install one of the following text editing software if you don’t already have one. In this lecture, you will mainly use `VS Code` to edit HTML, CSS, and Javascript files. You can install an open source version of `VS Code` on your own machine, no matter you are a Mac or Windows users. Here is a list of other IDEs:
 
-- `VS Code`
-
+- `VS Code` - Visual Studio Code, also commonly referred to as VS Code, is a source-code editor made by Microsoft with the Electron Framework, for Windows, Linux and macOS.Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. Users can change the theme, keyboard shortcuts, preferences, and install extensions that add additional functionality.
 - `Webstorm` - (Windows, Mac, or Linux) One of cross-platform IDEs primarily for web, JavaScript and TypeScript development. Many of JetBrain's other IDEs include the feature set of WebStorm via plugins.
 - `Sublime Text` – (Windows, Mac, or Linux) One of the most popular and well-loved text editors around. Free to download and use, but will occasionally show a pop-up window if you don’t purchase it. This is what I’ll be using during the workshop
 - `Brackets` – (Windows, Mac, or Linux) A newer, free open source code editor.
@@ -65,24 +64,9 @@ While you can get away with using a basic text editor to create HTML files, ther
 
 For testing and debugging purpose, we need our computer to act like a WebServer, allowing it to access files online. There are many tools for doing this, and one is built right into python. If you use a Mac or Linux, please open `Terminal`, if on Windows, open command prompt. In the main working interface, use the command `cd` to **change directory** to the folder in which your website files are located. Once there, type the following to start a simple Python server.
 
-you can also If you work in `Atom` (what we suggested for this course), you do not need to start the Python server by inputting commands in the Terminal or Command promt. In Atom's main window, please press a key combination `Ctrl` + `Alt` + `l` to open up a live server. In this way, a server environment will automatically launch, and a browser showing the front page of the server will be opened up.
-
- Sometimes, you will need to relaunch the live server, so you can stop the server by pressing `Ctrl` + `Alt` + `q`, and then quickly start it by pressing `Ctrl` + `Alt` + `l`. Also, to set up the server on a dedicated port, or you want to set up multiple server for testing purpose, please refer to the commands below:
-
- - `Ctrl` + `Alt` + `3` launch live server on port 3000;
-
- - `Ctrl` + `Alt` + `4`launch live server on port 4000;
-
- - `Ctrl` + `Alt` + `5` launch live server on port 5000; and
-
- - `Ctrl` + `Alt` + `8` launch live server on port 8000.
-
-The best part of the Atom's live server is that it can simultaneously visualize the change of the code as a new web page in the browser. Most IDEs do not provide this live-update feature. Conventionally, once a change has been made, you will need to stop the server and relaunch it again to ensure the change is applied to the web page. In this sense, this feature has greatly increase the efficency of web programming. See the demo below:
-
-![](img/live-server.gif)
+you can also If you work in `VS Code` (what we suggested for this course), once you have the live server installed, you can click the `Go Live` notice at the bottom right of the screen to activate the server. In this way, a server environment will automatically launch, and a browser showing the front page of the serverside code will be opened up. It is worth noting that, for testing purpose, VS code will set up the server to the the server will be set up to the `5500` port.
 
 
- > For more detailed information about the integrated live server on atom, please refer to [https://atom.io/packages/atom-live-server](https://atom.io/packages/atom-live-server).
 
 ## 5. HTML: The Core Concepts
 
