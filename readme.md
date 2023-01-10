@@ -80,7 +80,7 @@ By the time you complete Lab 2, you'll have learned how to collect geo-tagged tw
 -   **Readings:** a) [Stand with #StandingRock: Envisioning an Epistemological Shift in Understanding Geospatial Big Data in the “Post-truth” Era](https://www.researchgate.net/profile/Bo-Zhao-3/publication/343848324_Stand_with_StandingRock_Envisioning_an_Epistemological_Shift_in_Understanding_Geospatial_Big_Data_in_the_Post-truth_Era/links/605aadfa92851cd8ce61ba65/Stand-with-StandingRock-Envisioning-an-Epistemological-Shift-in-Understanding-Geospatial-Big-Data-in-the-Post-truth-Era.pdf), b) [Putting Data back into Context](https://datajournalism.com/read/longreads/putting-data-back-into-context), c) [extended readings](weeks/week03/readings.md).
 -   **Think Piece 3:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773106) `Due: Jan 19th, by 11:59pm`
 -   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: Jan 22nd, by 11:59pm` If you want to integrate a word cloud to your final project please refer to [this tutorial](troubleshoots/wordcloud/readme.md)
--   **Presentations**: Tuesday: Standing Rock paper (AA1), Thursday:  [Native Land Digital](https://native-land.ca/) (AB1)
+-   **Presentations**: Tuesday: Standing Rock paper (AA1), Thursday:  [Native Land Digital](https://native-land.ca/) (AA4)
 
 ### Week 4 : Web mapping
 
@@ -92,7 +92,7 @@ Get ready to take your web mapping skills to the next level! This week, you'll b
 -   **Readings:** a) [Digital Mapping and Segregation](https://www.forbes.com/sites/drsarahbond/2017/10/20/how-is-digital-mapping-changing-the-way-we-visualize-racism-and-segregation/#4df35c7d33fa), b) [Hacker Cartography](https://drive.google.com/file/d/1H76GJFXwS5dOPZYyxfyuud0DGQzYGNIr/view?usp=sharing), and c) [extended readings](weeks/week04/readings.md).
 -   **Think Piece 4:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773107) `Due: Jan 26th, by 11:59pm`
 -   **Lab 3:** [Web map application](labs/lab03) `Due: Feb 5th, by 11:59pm`
--   **Presentations**: Tuesday: Hacker Cartography Paper (AD2),(AB2), [TweetMap](https://www.heavy.ai/demos/tweetmap) (AA2)
+-   **Presentations**: Tuesday: Hacker Cartography Paper (AA3), [TweetMap](https://www.heavy.ai/demos/tweetmap) (AB3)
 
 ### Week 5 : Map design
 
@@ -102,7 +102,7 @@ Get ready to take your web mapping skills to the next level! This week, you'll b
 -   **Readings:** a) [The Guide to Map Design](https://go.mapbox.com/rs/117-NXK-490/images/the-guide-to-map-design.pdf), b) [Intro to Critical Cartography](https://drive.google.com/file/d/1IEz_9J4vH6foIrV36wDoIovOYNomZBWj/view?usp=sharing), c) [Mapbox Studio How-to Videos](weeks/week05/readme.md), and d) [extended readings](weeks/week05/readings.md).
 -   **Think Piece 5:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773108) `Due: Feb 2nd, by 11:59pm`
 -   **Lab 4:** [Map Design and Tile Generation](labs/lab04) `Due: Feb 20th, by 11:59pm`
--   **Presentations**: Tuesday: The Guide to Map Design (AA3),  Thursday: [Snapchat Map](https://map.snapchat.com) (AB3)
+-   **Presentations**: Tuesday: The Guide to Map Design (AA5),  Thursday: [Snapchat Map](https://map.snapchat.com) (AB2)
 
 ### Week 6 : Smart dashboards
 
@@ -114,7 +114,7 @@ Smart dashboards are an incredibly powerful tool for visualizing and presenting 
 -   **Lectures:** introduce how to [create a smart dashboard](weeks/week06/readme.md). The instructor wil walk through a smart dashboard illustrating earthquakes in Japan in September 2017 together during the lectures (Check out this dashboard at [here](https://jakobzhao.github.io/geog458/weeks/week06/index.html)). This dashboard is primarily built with a map component and a dynamic chart. This map component is made by MapBox, while the chart was built upon [C3.js](https://c3js.org/examples.html).
 -   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [History of the Urban Dashboard](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/), c) [3 Ways Data Dashboards Can Mislead You](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section), and d) [extended readings](weeks/week06/readings.md).
 -   **Think Piece 6:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773109) `Due: Feb 9th by 11:59pm`
--   **Presentations**: Tuesday: [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing) (AB4), [Restaurant Complaints in NYC](https://labs.mapbox.com/bites/00304/) (AA4)
+-   **Presentations**: Tuesday: [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing) (AA2), [Restaurant Complaints in NYC](https://labs.mapbox.com/bites/00304/) (AB4)
 
 ### Week 7 : Geo-Narratives
 
@@ -127,7 +127,7 @@ Whether you're an experienced mapmaker or new to the field, this is your chance 
 -   **Lectures:** a) [A Geo-Narrative Template](weeks/week07/). Examples: a) [Oregon Atlas](http://oregonwater.info/atlas.html), b) [Stand with #Standing Rock](https://jakobzhao.github.io/standwithstandingrock/)
 -   **Readings:** a) [Planning and outlining your story map](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/sharing-collaboration/planning-and-outlining-your-story-map-how-to-set-yourself-up-for-success/) , b) [Cartographic Design as Visual Storytelling: Synthesis and Review of Map-Based Narratives, Genres, and Tropes](https://drive.google.com/drive/folders/1JoXMil3jC6jAS9gE3K8zeP0NSHyHJkE7), c)[extended readings](weeks/week07/readings.md).
 -   **Think Piece 7:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773110) `Due: Feb 16, by 11:59pm`
--   **Presentations**: Tuesday: Planning and outlining your story map (AA5),  Thursday: [A Geo-Narrative Template](weeks/week07/)
+-   **Presentations**: Tuesday: Planning and outlining your story map (AB1),  Thursday: [A Geo-Narrative Template](weeks/week07/) (AB5)
 
 
 ### Week 8 : Emerging topics
