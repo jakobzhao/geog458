@@ -56,13 +56,14 @@ access_token = "your_access_token"
 access_token_secret = "your_access_token_secret"
 ```
 
-## 3. Harvest geo-tagged tweets using a API-based crawler
+## 3. Harvest real-time geo-tagged tweets using a API-based crawler
 
-In this section, we will create a Twitter crawler to collect geotagged tweets. Most of the codes are already written for you in `geosearch.ipynb` except for some parameters to change. Your essential task here is to understand what each piece of code is doing and be able to utilize it later in this assignment.
+In this section, we will create a Twitter crawler to collect geotagged tweets. Most of the codes are already written for you in `twstream.ipynb` except for some parameters to change. Your essential task here is to understand what each piece of code is doing and be able to utilize it later in this assignment.
 
-Please launch the crawler by clicking this button [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jakobzhao/geog458/blob/master/labs/lab02/geosearch.ipynb). This button will enable you to open the file [`labs/lab02/geosearch.ipynb`](./geosearch.ipynb) on Google Colab. You can also open this ipynb script through the url `https://colab.research.google.com/github/jakobzhao/geog458/blob/master/labs/lab02/geosearch.ipynb`. 
+Please launch the crawler by clicking this button [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jakobzhao/geog458/blob/master/labs/lab02/twstream.ipynb). This button will enable you to open the file [`labs/lab02/twtream.ipynb`](./twtream.ipynb) on Google Colab. You can also open this ipynb script through the url `https://colab.research.google.com/github/jakobzhao/geog458/blob/master/labs/lab02/twtream.ipynb`.
 
-As shown, `https://colab.research.google.com/` indicates the google colab root url, the subpath `github/jakobzhao/geog458/blob/master/labs/lab02/geosearch.ipynb` indicate the location where the ipynb script `labs/lab02/geosearch.ipynb` on github. You can open any `ipynb` script on Google Colab through the similar url structure.
+As shown, `https://colab.research.google.com/` indicates the google colab root url, the subpath `github/jakobzhao/geog458/blob/master/labs/lab02/twtream.ipynb` indicate the location where the ipynb script `labs/lab02/twtream.ipynb` on github. You can open any `ipynb` script on Google Colab through the similar url structure.
+
 
 
 ### 3.1 Metadata and required libraries
@@ -81,6 +82,7 @@ For any python script, metadata are usually stated at the very beginning.
 
 Next, the required python libraries for this crawler will be imported. To execute the crawling task, we will use pandas, tweepy and google.colab. Since Google Colab has already pre-installed pandas and tweepy, you do not need to install again. `Tweepy` is a python based library which wraps the Twitter API. Tweepy provides a series of data crawling strategies - Harvesting geotagged tweets is just one of them. If you are interested in composing a more complicated data collection strategy, please refer to its documentation at <https://tweepy.readthedocs.io/en/latest/index.html>.
 
+
 ```python
 import tweepy, json, time
 import pandas as pd
@@ -91,9 +93,21 @@ from google.colab import drive
 drive.mount('/gdrive')
 ```
 
+ If you want to use tweepy in your local computer, you need to install tweepy using on command prompt (if a windows user) or terminal (if a Mac or Linux user), as shown in the script below.
+
+```powershell
+pip install tweepy
+```
+
+Although we also work on the Jupyter Notebook, we do not need to manually install tweepy because Google Colab has automatically incorporate it into its preloaded libraries. However, if a library has not been preinstalled on google colab, you will need to use the following line to install a library, let us the name of the library is tempLib
+
+```powershell
+!pip install tempLib
+```
+
 ### 3.2 Code structure
 
-This script `geosearch.ipynb` was programmed using a `class` structure instead of a run-down script structure. A `StreamListener` is defined for later use, the main procedure will be executed after the line `if __name__ == "__main__":`. This piece of code was programmed with reference to <https://github.com/shawn-terryah/Twitter_Geolocation>. So, let us start with the main procedure and then switch to the stream listener.
+This script `twtream.ipynb` was programmed using a `class` structure instead of a run-down script structure. A `StreamListener` is defined for later use, the main procedure will be executed after the line `if __name__ == "__main__":`. This piece of code was programmed with reference to <https://github.com/shawn-terryah/Twitter_Geolocation>. So, let us start with the main procedure and then switch to the stream listener.
 
 ```Python
 class StreamListener(tweepy.StreamListener):
@@ -167,11 +181,12 @@ Additionally, to use filters to stream tweets by a specific user. The following 
 stream.filter(follow=["2211149702"])
 ```
 
-However, these different filtering parameter returns different data structures, and they store different information about the tweets. For this reason, keyword filtering does not return plenty of geotagged tweets. If you are changing the keyword parameter, you should run this crawler for a longer duration. To do so, simply change the `time_limit` parameter. For example, if you want to run this crawler for 5 minutes, set it to 300. If you are trying to use a less common keyword, the chance is you will not have a sufficient amount of data. In that case, consider running this crawler for even longer.
+However, these different filtering parameter returns different data structures, and they store different information about the tweets. For this reason, keyword filtering does not return plenty of geotagged tweets. If you are changing the keyword parameter, you should run this crawler for a longer duration. To do so, simply change the `time_limit` parameter. For example, if you want to run this crawler for 5 minutes, set it to 300. If you are trying to use a less common keyword, the chance is you will not have a sufficient amount of data. In that case, consider running this crawler for even longer, like a few hours.
 
 ```python
 stream_listener = StreamListener(time_limit=60, file=output_file)
 ```
+
 ### 3.4 Stream listener
 
 The `on_data` function will handle data processing and output. In general, this function terminated after `self.limit` second. To process each record `data`, the captured `data` is converted to a JSON variable `datajson`. We will mainly output six variables, in terms of id, username, created_at, lng, lat, and text. Notably, If the geotag is a single point, the lat and lng will be captured directly from the `coordinates`. If the geotag is a place, the lat and lng will capture the centroid of the bounding box.
@@ -227,13 +242,107 @@ def on_data(self, data):
 
 Now, you should have a general idea of what the script does and how to change the parameters based on your geographical area of interest. In this section, there are **3 main tasks** here for you to complete:
 
-1. Register your own Twitter developer account to claim API keys and access tokens. Copy and paste them onto the corresponding parameter in `geosearch.ipynb` located under this lab.
+1. Register your own Twitter developer account to claim API keys and access tokens. Copy and paste them onto the corresponding parameter in `twstream.ipynb` located under this lab.
 
 2. Change the location parameter to filter specific tweets based on your interest. The location could be anywhere on this earth, but try to choose locations that are large enough to collect a sufficient amount of data. (If you are interested in Twitter data that are geo-tagged in the US, you do not need to change this parameter).
 
-3. Run each block of code in `geosearch.ipynb`. Your collected data will be stored in `geotweets.csv` on your google drive.
+3. Run each block of code in `twstream.ipynb`. Your collected data will be stored in `geotweets.csv` on your google drive.
 
-## 4. Visualizing geo-tagged data using QGIS
+
+## 4. Search historical tweets using locational information
+
+Please launch this Twitter crawler script by clicking this button [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jakobzhao/geog458/blob/master/labs/lab02/twsearch.ipynb). This button will enable you to open the file [labs/lab02/twsearch.ipynb](./twsearch.ipynb) on Google Colab.
+
+
+## 4.1 Initiating the API object
+
+As similiar to the previous section, we will import the needed libraries
+
+```python
+import tweepy
+import pandas as pd
+```
+
+Copy and paste the keys and tokens you received into corresponding parameters in the code below:
+
+```Python
+consumer_key = "your_consumer_key"
+consumer_secret = "your_consumer_secret"
+access_token = "your_access_token"
+access_token_secret = "your_access_token_secret"
+```
+
+Initiate a tweepy API object
+
+```python
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_token_secret)
+api = tweepy.API(auth, wait_on_rate_limit=True)
+```
+
+Define the search term and the date_since date as variables. We will harvest all the tweets that contains the keyword "#BLM". Also, the tweets must be sent in Capitol Hill at Seattle and since October 16th, 2020.
+
+```python
+search_words = "#BLM"
+location = "47.6138893,-122.3107869,100mi"
+date_since = "2020-10-16"
+```
+
+## 4.2 Data Harvest
+
+Then, we input the parameters to the tweepy harvesting cursor, and we want to get back at most 1000 tweets for one single query.
+
+```python
+# Collect tweets
+tweets = tweepy.Cursor(api.search, q=search_words, geocode=location, lang="en", since=date_since).items(1000)
+```
+
+We first create an empty array to store the retrieved data. As how we process each video in the first crawler we designed, we use the similar strategy to process each tweet, and store them in a pandas data frame.
+
+```python
+# create an array to store the result
+result = []
+
+# Iterate and print tweets
+for tweet in tweets:
+    row = {
+        'username': tweet.author.name,
+        'userid': tweet.author.id,
+        'profile_location': tweet.author.location,
+        'created_at': str(tweet.author.created_at),
+        'text': tweet.text,
+        'retweet_count': tweet.retweet_count,
+        'source': tweet.source,
+        'coordinates': tweet.coordinates
+    }
+    result.append(row)
+    print(row)
+
+# Store the results as a pandas dataframe
+df = pd.DataFrame(result)
+
+# notify the completion of the crawling in the console.
+print("the crawling task is finished.")
+```
+
+In the end, we can store the tweets as a csv file to Google drive or download to the local computer.
+
+```python
+# Create data on to Google Drive
+from google.colab import drive
+# Mount your Drive to the Colab VM.
+drive.mount('/gdrive')
+  
+df.to_csv(output_file, index=False)
+
+
+# download the csv to your local computer
+from google.colab import files
+files.download(output_file)
+print("the csv has been downloaded to your local computer. The program has been completed successfully.")
+```
+
+## 5. Visualizing geo-tagged data using QGIS
 
 In the previous section, we developed a crawler for geotagged tweets. In this section, we will visualize the collected geotagged tweets data in the previous section using a GIS application `QGIS`. QGIS is a free and open-source cross-platform desktop geographic information system application that supports viewing, editing, and analysis of geospatial data. If you have not downloaded QGIS yet, please download the latest version [here](https://qgis.org/en/site/forusers/download.html).
 
@@ -289,7 +398,7 @@ In this section, you have **3 main tasks** to complete:
 
 3.  Make any appropriate visual edits to this map. Save it as `qgz` file and export the map as an image.
 
-## 5. Word cloud analysis
+## 6. Word cloud analysis
 
 A word cloud can visualize the high-frequency terms and map them according to their frequency. It helps to analyze the content of all the collected tweets. There are a few online word cloud generators you can use. In this lab, we use Word Art from https://wordart.com.
 
@@ -311,7 +420,8 @@ In order to reuse the word cloud, you need to download an image of this word clo
 ![](img/wordcloud.png)
 
 A word cloud will help you understand what twitter users have talked during the collecting time period and within the specific crawling geographical region.
-## 6. Deliverable
+
+## 7. Deliverable
 
 You are expected to walk through this instruction. Specifically, you need to execute this `geosearch.ipynb` script twice. You can either run it in two different places or execute it in two different time period of day. With the two pieces of spreadsheets, you can make two maps and another two word clouds. Please write a short narrative to introduce your work, and describe the maps and the word clouds. Please analyze why the maps or word clouds are different from each other. This narrative needs to be written on a `readme.md file`.
 
