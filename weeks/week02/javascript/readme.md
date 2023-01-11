@@ -54,7 +54,7 @@ So where is helloworld function? It is in the main.js document. The structure of
 
 ```js
 function helloworld() {
-    document.getElementById('foo').innerHTML = 'Hello, Web Mapping!';
+    document.getElementById('foo').innerHTML = 'Hello, Advanced Digital Geographies!';
 }
 ```
 
@@ -197,9 +197,9 @@ var lost = false;
 
 Boolean values can be applied to logical operators.
 
-- && - AND operator. True only if both values are true.
-- || - OR operator. True if one or both values are true.
-- ! - NOT operator. True if statement is false.
+- `&&` - AND operator. True only if both values are true.
+- `||` - OR operator. True if one or both values are true.
+- `!` - NOT operator. True if statement is false.
 
 **Null**
 
@@ -363,26 +363,60 @@ newCar.start();
 
 In JavaScript, a variable can be declared after it has been used. In other words; a variable can be used before it has been declared. I use an example from w3schools.  The following two code snippets will return the same result.
 
-**declare before use**
+**use before declaration**
 
 ```js
 //code snippet 1
-notice = "web mapping"; // Assign a string to notice
-console.log(notice)
+notice = "advanced digital geographies"; // Assign a string to notice
+console.log(notice);
 var notice; // Declare x
 ```
 
-**declare after use**
+**use after declaration**
 
 ```js
 //code snippet 2
 var notice; // Declare notice
-notice = "web mapping"; // Assign a string to notice
-console.log(notice)
+notice = "advance digital geographies"; // Assign a string to notice
+console.log(notice);
+```
+
+Hoisting is JavaScript's default behavior of moving declarations to the top. If a function is declared, it can be called before the declaration. This is the default behavior of JavaScript, and it moves functions to the top of the scope. It is called hoisting. Function expressions are not hoisted, however.
+
+**use before declaration**
+
+```js
+//code snippet 3
+helloworld();
+
+function helloworld() {
+  console.log("Hello World!")
+}
+```
+
+**use after declaration**
+
+```js
+//code snippet 4
+function helloworld() {
+  console.log("Hello World!")
+}
+
+helloworld();
+```
+
+**use before function expression**
+
+```js
+//code snippet 5
+helloworld();
+
+var helloworld = function (){
+  console.log("Hello World!")
+}
 ```
 
 
-Hoisting is JavaScript's default behavior of moving declarations to the top. If a function is declared, it can be called before the declaration. This is the default behavior of JavaScript, and it moves functions to the top of the scope. It is called hoisting. Function expressions are not hoisted, however.
 
 ### 2.5 Variable Scope
 
@@ -645,21 +679,19 @@ function displayDate() {
 
 ### 2.12 Working with Libraries
 
-Unless you want to become a JavaScript master, most often, you will be working with a library that is already written. A library is a collection of pre-written JavaScript with allows for easier development of JavaScript based applications. Libraries are packages of code that when loaded into your document allow access to the objects of that code. In this class, we are primarily going to be using three JavaScript libraries: `jQuery`, `Leaflet`, and `Cesium`.
+Unless you want to become a JavaScript master, most often, you will be working with a library that is already written. A library is a collection of pre-written JavaScript with allows for easier development of JavaScript based applications. Libraries are packages of code that when loaded into your document allow access to the objects of that code. 
 
-What are these used for?
+For instance, you will use `Mapbox GL JS` library in the future for this class. Adding `Mapbox GL JS` to your webpage is done by including the following line of code in the <head> section of your HTML file
 
-- jQuery is great for adding user interaction and making calls to other websites, for example, you can easily use it to load data. [Visit the jQuery homepage](http://jquery.com/). In this course, we will use JQuery quite often in manipulating document elements and requesting data from remote servers.
-
-Adding jQuery to your webpage is done by including the following line of code at the bottom of your body section. Please put this in your page.
-
-```js
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+```html
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js'></script>
 ```
 
-- Leaflet is an easy to use mapping library that makes web maps for displaying geospatial data.
-- Cesium is a javascript library to make virtual global.
+Sometimes, certain JS libraries also requires specific CSS files for styling. It should also be added in the `<head>` section as follows.
 
+```html
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css' rel='stylesheet' />
+```
 
 ## 3. Ungraded questions
 
