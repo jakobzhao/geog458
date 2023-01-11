@@ -15,7 +15,7 @@
 - **Bo Zhao**, Instructor, zhaobo@uw.edu | Office Hour: Thursdays 2 to 4 PM by appointment. Make appointment [here](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI).
 
 
-- **Steven Bao**, Teaching Assistant, bxq98@uw.edu |  Office Hour: Wednesdays 1 to 2 PM at SMI 401. It is recommended to send me an email or canvas message briefly describing your question(s) before your visit, as this will help me provide better answers. If the listed time does not work for you, please also feel free to send me an email/canvas message to schedule for anothe time.
+- **Steven Bao**, Teaching Assistant, bxq98@uw.edu |  Office Hour: Wednesdays 2 to 3 PM at SMI 401. It is recommended to send me an email or canvas message briefly describing your question(s) before your visit, as this will help me provide better answers. If the listed time does not work for you, please also feel free to send me an email/canvas message to schedule for anothe time.
 
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
 
@@ -64,6 +64,7 @@ This week will require a lot of self-learning, so be prepared for some fairly le
 
 -   **Lectures:** [System architecture](weeks/week02/architecture), [intro-to-html, css](weeks/week02/html-css) and [javascript](weeks/week02/javascript). [More tutorial on web development fundamentals](weeks/week02/tech-readings.md)
 -   **Readings:**  a) [Introducing Code/Space](https://drive.google.com/file/d/1T7ChuOnaKrgjTVhAeV_Niei2pqCWiiqK/view?usp=sharing), b) [A White Paper on Locational Information and the Public Interest](https://www.aag.org/wp-content/uploads/1900/09/2022-White-Paper-on-Locational-Information-and-the-Public-Interest.pdf), and c) [extended readings](weeks/week02/readings.md).
+-   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: Jan 22nd, by 11:59pm` If you want to integrate a word cloud to your final project please refer to [this tutorial](troubleshoots/wordcloud/readme.md)
 -   **Think Piece 2:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773105) `Due: Jan 12th, by 11:59pm`
 
 ### Week 3 : Geospatial data
@@ -74,12 +75,9 @@ This week, it's all about mastering the art of processing geospatial data for yo
 
 By the time you complete Lab 2, you'll have learned how to collect geo-tagged tweets using specific keywords and topics, as well as methods for visualizing the spatial distribution of the locations for those tweets. This is a crucial skill for any digital geographer, and we can't wait to see what you're capable of. So let's get to work!
 
-
-
 -   **Lectures:** [Geospatial data for digital geographies](weeks/week03/readme.md), and [More than you ever wanted to know about GeoJSON](weeks/week03/assets/geojson.pdf)
 -   **Readings:** a) [Stand with #StandingRock: Envisioning an Epistemological Shift in Understanding Geospatial Big Data in the “Post-truth” Era](https://www.researchgate.net/profile/Bo-Zhao-3/publication/343848324_Stand_with_StandingRock_Envisioning_an_Epistemological_Shift_in_Understanding_Geospatial_Big_Data_in_the_Post-truth_Era/links/605aadfa92851cd8ce61ba65/Stand-with-StandingRock-Envisioning-an-Epistemological-Shift-in-Understanding-Geospatial-Big-Data-in-the-Post-truth-Era.pdf), b) [Putting Data back into Context](https://datajournalism.com/read/longreads/putting-data-back-into-context), c) [extended readings](weeks/week03/readings.md).
 -   **Think Piece 3:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773106) `Due: Jan 19th, by 11:59pm`
--   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: Jan 22nd, by 11:59pm` If you want to integrate a word cloud to your final project please refer to [this tutorial](troubleshoots/wordcloud/readme.md)
 -   **Presentations**: Tuesday: Standing Rock paper (AA1), Thursday:  [Native Land Digital](https://native-land.ca/) (AA4)
 
 ### Week 4 : Web mapping
