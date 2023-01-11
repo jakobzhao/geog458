@@ -253,10 +253,22 @@ Now, you should have a general idea of what the script does and how to change th
 
 Please launch this Twitter crawler script by clicking this button [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jakobzhao/geog458/blob/master/labs/lab02/twsearch.ipynb). This button will enable you to open the file [labs/lab02/twsearch.ipynb](./twsearch.ipynb) on Google Colab.
 
+### 4.1 Metadata and required libraries
 
-## 4.1 Initiating the API object
+For any python script, metadata are usually stated at the very beginning.
 
-As similiar to the previous section, we will import the needed libraries
+```python
+# created on Dec 24, 2020
+# modified on April 14, 2021
+# modified on Jan 2, 2021
+# @author:          Bo Zhao
+# @email:           zhaobo@uw.edu
+# @website:         https://hgis.uw.edu
+# @organization:    Department of Geography, University of Washington, Seattle
+# @description:     Search historical tweets using locational information
+```
+
+Similar to the previous section, we will import the needed libraries
 
 ```python
 import tweepy
@@ -280,14 +292,36 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth, wait_on_rate_limit=True)
 ```
 
-Define the search term and the date_since date as variables. We will harvest all the tweets that contains the keyword "#BLM". Also, the tweets must be sent in Capitol Hill at Seattle and since October 16th, 2020.
+## 4.2 Define the search term and search parameters
+
+Define the search term and the date_since date as search parameter. We plan to collect all the tweets containing the hashtag "#BLM" that were sent near the Police Office in Capitol Hill, Seattle when the movement of Capitol Hill Occupied Protest (CHOP) initiated. So, to do that, we define the search variables as below.
 
 ```python
 search_words = "#BLM"
-location = "47.6138893,-122.3107869,100mi"
-date_since = "2020-10-16"
+location = "47.615230293582556, -122.31699241321647,100mi"
+date_since = "2020-6-9"
 ```
 
+As shown, the search term is `#BLM`, the start date is `June 8, 2020`. Now, we will need to identify a buffer area. All the tweets falling in the buffer will be captured. Specifically, 
+
+- Open [Google maps](https://www.google.com/maps/@47.6156911,-122.3182621,16z) on your desktop browser, then navigate to the place where you plan to collect tweets from.
+  
+- Right click on the location, a dropdown popup will appears, Click the latitude and longitude information on the first line of the popup.
+  
+![](img/location.png)
+
+- Now you have the coordinate in your clipboard, please save it to the script as the center of th buffer area.
+  
+-  To determine the radius, please right click on location again, then click the `measure distance` at the bottom of the dropdown menu.
+
+-  Now, draw a line to estimate the radius. In my case, the radius is `2,000 feet`, which allows the buffer covers the area where the data will be collected.
+
+![](img/measure.png)
+
+
+of the policy office. To do that open, on your desktop browser and navigate to the place where you want to collect the tweets.  That is the time and place the Capitol Hill Occupied Protest Zone was formed.
+
+Some times 
 ## 4.2 Data Harvest
 
 Then, we input the parameters to the tweepy harvesting cursor, and we want to get back at most 1000 tweets for one single query.
