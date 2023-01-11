@@ -133,7 +133,7 @@ In the main procedure, once we acquire the consumer key and access token, we can
 Determine where on the google drive you want to store the output csv data. A CSV file is a delimited text file that uses a comma to separate values. Each line of the file is a data record. Each record consists of one or more fields, separated by commas.
 
 ```python
-output_file = '/gdrive/My Drive/geotweets.csv'
+output_file = '/gdrive/My Drive/twstream-result.csv'
 ```
 
 Copy and paste the keys and tokens you received into corresponding parameters in the code below:
@@ -246,7 +246,7 @@ Now, you should have a general idea of what the script does and how to change th
 
 2. Change the location parameter to filter specific tweets based on your interest. The location could be anywhere on this earth, but try to choose locations that are large enough to collect a sufficient amount of data. (If you are interested in Twitter data that are geo-tagged in the US, you do not need to change this parameter).
 
-3. Run each block of code in `twstream.ipynb`. Your collected data will be stored in `geotweets.csv` on your google drive.
+3. Run each block of code in `twstream.ipynb`. Your collected data will be stored in `twstream-result.csv` on your google drive.
 
 
 ## 4. Search historical tweets using locational information
@@ -294,17 +294,18 @@ api = tweepy.API(auth, wait_on_rate_limit=True)
 
 ## 4.2 Define the search term and search parameters
 
-Define the search term and the date_since date as search parameter. We plan to collect all the tweets containing the hashtag "#BLM" that were sent near the Police Office in Capitol Hill, Seattle when the movement of Capitol Hill Occupied Protest (CHOP) initiated. So, to do that, we define the search variables as below.
+Define the search term and the date_since date as search parameter. We plan to collect all the tweets containing "BLM" that were sent in larger Seattle since the movement of Capitol Hill Occupied Protest (CHOP) began. To do that, we define the search variables as below.
 
 ```python
-search_words = "#BLM"
-location = "47.615230293582556, -122.31699241321647,100mi"
+search_words = "BLM"
+# make sure there is no space between lat, long and the radius.
+location = "47.62039945423961,-122.30359179186148,15.8mi"
 date_since = "2020-6-9"
 ```
 
-As shown, the search term is `#BLM`, the start date is `June 8, 2020`. Now, we will need to identify a buffer area. All the tweets falling in the buffer will be captured. Specifically, 
+As shown, the search term is `#BLM`, the start date is `June 9, 2020`. Now, we will need to identify a buffer area. All the tweets falling in the buffer will be captured. Specifically, 
 
-- Open [Google maps](https://www.google.com/maps/@47.6156911,-122.3182621,16z) on your desktop browser, then navigate to the place where you plan to collect tweets from.
+- Open [Google maps](https://www.google.com/maps/@47.6368272,-122.2448836,11z) on your desktop browser, then navigate to the place where you plan to collect tweets from.
   
 - Right click on the location, a dropdown popup will appears, Click the latitude and longitude information on the first line of the popup.
   
@@ -314,14 +315,11 @@ As shown, the search term is `#BLM`, the start date is `June 8, 2020`. Now, we w
   
 -  To determine the radius, please right click on location again, then click the `measure distance` at the bottom of the dropdown menu.
 
--  Now, draw a line to estimate the radius. In my case, the radius is `2,000 feet`, which allows the buffer covers the area where the data will be collected.
+-  Now, draw a line to estimate the radius. In my case, the radius is `15.8 miles`, which allows the buffer covers the area where the data will be collected. So, the radius should be `15.8mi`. Notably, the API only supports the unit miles, so if your measure is in feet or other units, please convert it to mile.
 
 ![](img/measure.png)
 
 
-of the policy office. To do that open, on your desktop browser and navigate to the place where you want to collect the tweets.  That is the time and place the Capitol Hill Occupied Protest Zone was formed.
-
-Some times 
 ## 4.2 Data Harvest
 
 Then, we input the parameters to the tweepy harvesting cursor, and we want to get back at most 1000 tweets for one single query.
@@ -330,6 +328,7 @@ Then, we input the parameters to the tweepy harvesting cursor, and we want to ge
 # Collect tweets
 tweets = tweepy.Cursor(api.search, q=search_words, geocode=location, lang="en", since=date_since).items(1000)
 ```
+
 
 We first create an empty array to store the retrieved data. As how we process each video in the first crawler we designed, we use the similar strategy to process each tweet, and store them in a pandas data frame.
 
@@ -380,7 +379,7 @@ print("the csv has been downloaded to your local computer. The program has been 
 
 In the previous section, we developed a crawler for geotagged tweets. In this section, we will visualize the collected geotagged tweets data in the previous section using a GIS application `QGIS`. QGIS is a free and open-source cross-platform desktop geographic information system application that supports viewing, editing, and analysis of geospatial data. If you have not downloaded QGIS yet, please download the latest version [here](https://qgis.org/en/site/forusers/download.html).
 
-Under `lab02/assets` repository, you should have a CSV file named `tweets.csv`. Download this file and Store it somewhere that you can find and access easily.
+Under `lab02/assets` repository, you should have a CSV file named `twsearch-result.csv`. Download this file and store it somewhere that you can find and access easily.
 
 Now, let's open up your QGIS Desktop. When you first open QGIS, it should look like below. To create a new project, either click on the blank paper icon on the top left or press the shortcut key (Ctrl+N).
 
@@ -440,7 +439,7 @@ After registration, you can create a word cloud by pressing the "Create Now" But
 
 ![](img/frontpage.png)
 
-Open `geotweets.csv` in microsoft excel or other alternative spreadsheet software. Copy all the rows under the `text` column, and then paste the copied rows to the input text box on Word Art. You need to press the `import` button on the top left to open this text box. Once complete, please type `Import words`.
+Open `twsearch-result.csv` in microsoft excel or other alternative spreadsheet software. Copy all the rows under the `text` column, and then paste the copied rows to the input text box on Word Art. You need to press the `import` button on the top left to open this text box. Once complete, please type `Import words`.
 
 ![](img/import-box.png)
 
