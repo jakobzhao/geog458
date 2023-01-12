@@ -523,7 +523,7 @@ You can also use for loops to loop through arrays and datasets.
 
 ```javascript
 // iterate through a dataset, logging values to the console
-for (i in data) {
+for (var i in data) {
     // run this on each value in data
 }
 ```
@@ -534,7 +534,8 @@ While Loop: Similar to the for loop, the while loop
 var counter = 0;
 while(counter < 1000){
     // code here will run
-    counter += 1 // adds 1 to counter each time, will stop at 1000
+    console.log(counter); // print current counter value before adding 1
+    counter += 1; // adds 1 to counter each time, will stop at 1000
 }
 ```
 
@@ -546,13 +547,23 @@ Data can be stored in something called JSON, which is a JavaScript element. A JS
 
 ```javascript
 // set employee directory dataset
-var directory = {"employees":[
-    {"firstName":"John", "lastName":"Doe"},
-    {"firstName":"Anna", "lastName":"Smith"},
-    {"firstName":"Peter", "lastName":"Jones"}
-]}
+var directory = {
+    "employees": [{
+            "firstName": "John",
+            "lastName": "Doe"
+        },
+        {
+            "firstName": "Anna",
+            "lastName": "Smith"
+        },
+        {
+            "firstName": "Peter",
+            "lastName": "Jones"
+        }
+    ]
+};
 
-console.log(directory.employees)
+console.log(directory.employees);
 console.log(directory.employees[1]);
 console.log(directory.employees[1].firstName);
 ```
@@ -561,14 +572,14 @@ A GeoJSON is a Geographic JSON element, and contains geometry!
 
 ```javascript
 var dataset = {
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [125.6, 10.1]
-  },
-  "properties": {
-    "name": "Dinagat Islands"
-  }
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [125.6, 10.1]
+    },
+    "properties": {
+        "name": "Dinagat Islands"
+    }
 }
 
 console.log(dataset);
@@ -585,18 +596,26 @@ Try the following block of code in your console:
 
 ```javascript
 // employee directory dataset
-var directory = {"employees":[
-    {"firstName":"John", "lastName":"Doe"},
-    {"firstName":"Anna", "lastName":"Smith"},
-    {"firstName":"Peter", "lastName":"Jones"}
-]}
-
+var directory = {
+    "employees": [{
+            "firstName": "John",
+            "lastName": "Doe"
+        },
+        {
+            "firstName": "Anna",
+            "lastName": "Smith"
+        },
+        {
+            "firstName": "Peter",
+            "lastName": "Jones"
+        }
+    ]
+}
 // create array of employee names
 var data = directory.employees;
 console.log(data);
-
 // iterate through the array, logging values to the console
-for(var i in data){
+for (var i in data) {
     fName = data[i].firstName;
     lName = data[i].lastName;
     // do something with each value of the array
@@ -613,7 +632,7 @@ Accessing elements of your page in JavaScript is easy because JavaScript can rea
 document;
 ```
 
-Try document.body to see elements within the document body.
+Try `document.body` to see elements within the document `<body>`.
 
 Access elements by ID, class, or and make changes to properties
 
@@ -623,8 +642,8 @@ You can access elements by DOM selectors. Use the [W3 HTML DOM Elements](http://
 // Access element by element ID
 document.getElementById("foo");
 
-// Access element by class name
-document.getElementByClassName("class-name");
+// Access elements by class name
+document.getElementsByClassName("class-name");
 ```
 
 
