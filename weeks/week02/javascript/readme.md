@@ -128,9 +128,7 @@ Try typing **car.start()**. You should get confirmation that your car started. T
 
 ### 2.2 Variables
 
-Variables are containers that hold data values, simple or complex, that can be referred to later in your code, much like algebra. For example, in order to fully instantiate the `Leaflet` map object, we have to use our script to create an object that will hold the Leaflet map object. The map object creates a map, but to put in our page, we need to create another object that will contain the map that is created. To do this, we use a variable.
-
-The following are examples of variables. Run these lines in your JavaScript console one by one, hitting enter after each. **Note the semicolon**. All individual lines in JavaScript must end with a semicolon.
+Variables are containers that hold data values, simple or complex, that can be referred to later in your code, much like algebra. The following are examples of variables. Run these lines in your JavaScript console one by one, hitting enter after each. **Note the semicolon**. All individual lines in JavaScript must end with a semicolon.
 
 ```js
 var x = 5;
@@ -245,7 +243,7 @@ Object Literal data type is a comma separated list of name value pairs.
 ```javascript
 var course = {
     name: "Advanced Digital Geographies",
-    year: 2020,
+    year: 2023,
     univ: "University of Washington"
 };
 
@@ -359,8 +357,9 @@ console.log(newCar.make);
 newCar.start();
 ```
 
-**Function Hoisting**
 
+
+<details><summary><b>Function Hoisting</b></summary>
 In JavaScript, a variable can be declared after it has been used. In other words; a variable can be used before it has been declared. I use an example from w3schools.  The following two code snippets will return the same result.
 
 **use before declaration**
@@ -382,41 +381,7 @@ console.log(notice);
 ```
 
 Hoisting is JavaScript's default behavior of moving declarations to the top. If a function is declared, it can be called before the declaration. This is the default behavior of JavaScript, and it moves functions to the top of the scope. It is called hoisting. Function expressions are not hoisted, however.
-
-**use before declaration**
-
-```js
-//code snippet 3
-helloworld();
-
-function helloworld() {
-  console.log("Hello World!")
-}
-```
-
-**use after declaration**
-
-```js
-//code snippet 4
-function helloworld() {
-  console.log("Hello World!")
-}
-
-helloworld();
-```
-
-**use before function expression**
-
-```js
-//code snippet 5
-helloworld();
-
-var helloworld = function (){
-  console.log("Hello World!")
-}
-```
-
-
+</details>
 
 ### 2.5 Variable Scope
 
@@ -486,12 +451,12 @@ This creates an object called car, then sets the properties of car to be a Black
 If we wanted to change the color, we would access it through this method. For example, overwrite the color property currently set to "Black" by changing it to "Blue" by using the following.
 
 ```javascript
-> car.color;
-"Black"
-> car.color = "Blue";
+car.color;
+> "Black"
+car.color = "Blue";
 >
-> car.color;
-"Blue"
+car.color;
+> "Blue"
 ```
 
 ### 2.8 Flow Control
@@ -505,36 +470,37 @@ Statements in your document will run top to bottom, but you can control this usi
 
 Run pieces of code if an expression produces a boolean value. Your code can 'diverge' and run different paths.
 
-Conditionals run if true, skip if false.
+Conditionals run if true, skip if false. Often times `if` is combined with `else`.
 
 ```js
-> var number = 100;
->
-> if(number == 100){
+var number = 100;
+
+if (number == 100) {
+    console.log("Variable 'number' is 100.")
+} else {
+    console.log("Variable 'number' is not 100.")
+};
+
+> "Variable 'number' is 100.""  // result shown
+
+if (number == 99) {
     console.log("True")
-    } else {
+} else {
     console.log("False")
-    };
-True  // returned value
->
-> if(number == 99){
-    console.log("True")
-    } else {
-    console.log("False")
-    };
-False  // returned value
+};
+> "Variable 'number' is not 100.""  // result shown
 ```
 
 If statements can be used to check if elements on in your page, or if properties are set to certain values. For example, you can toggle layers on and off in a web map by using an `if statement` to see if the layers is visible. If visible is true, hide the layer, and vice versa.
 
-Conditionals are powerful! You can use multiple else statements to explore multiple options.
+Conditionals are powerful! You can use multiple `else if` statements to explore multiple options.
 
 ```javascript
 var number = 100;
 
-if(number == 100){
+if (number == 100) {
     console.log("Number is 100");
-} else if (number < 100){
+} else if (number < 100) {
     console.log("Number is less than 100.");
 } else {
     console.log("Number is greater than 100.");
@@ -548,7 +514,7 @@ Loops go through a piece of code a set number of times.
 For Loop: A basic for loop will use the following syntax. Note the first argument is an index for the the start value, the second is a conditional for the index stating where the loop will stop when the value is false, and the last is the increment of the loop. Note the syntax, i++ will increase i by 1 every single time the loop circles. The code in the middle is what will run.
 
 ```javascript
-for(var i=0; i<1000; i++){
+for (var i = 0; i < 1000; i++) {
     // code here will run 1000 times, then move on to the next
 }
 ```
@@ -557,7 +523,7 @@ You can also use for loops to loop through arrays and datasets.
 
 ```javascript
 // iterate through a dataset, logging values to the console
-for(var i in data){
+for (i in data) {
     // run this on each value in data
 }
 ```
