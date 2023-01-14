@@ -253,7 +253,9 @@ Now, you should have a general idea of what the script does and how to change th
 
 ## 4. Search historical tweets using locational information
 
-Please launch this Twitter crawler script by clicking this button [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jakobzhao/geog458/blob/master/labs/lab02/twsearch.ipynb). This button will enable you to open the file [labs/lab02/twsearch.ipynb](./twsearch.ipynb) on Google Colab.
+Twitter's API previously allowed all users to collect historical tweets dating back to the platform's inception. **However, recent changes to Twitter's policy now limit access to historical tweets to elevated users, only allowing them to download data from the past seven days.** Despite this restriction, it is still possible to access historical Twitter data by applying for an academic user account, which is free of charge. This is not a requirement for the lab, but an option for those interested in downloading a longer dataset. As you can see, an academic account will grant you a significant amount of freedom to analyze online sentiments regarding various social issues.
+
+So, in this section, you will learn how to collect recent tweets. Please launch this Twitter crawler script by clicking this button [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jakobzhao/geog458/blob/master/labs/lab02/twsearch.ipynb). This button will enable you to open the file [labs/lab02/twsearch.ipynb](./twsearch.ipynb) on Google Colab.
 
 ### 4.1 Metadata and required libraries
 
@@ -296,18 +298,20 @@ api = tweepy.API(auth, wait_on_rate_limit=True)
 
 ## 4.2 Define the search term and search parameters
 
-Define the search term and the date_since date as search parameter. We plan to collect all the tweets containing "BLM" that were sent in larger Seattle since the movement of Capitol Hill Occupied Protest (CHOP) began. To do that, we define the search variables as below.
+Define the search term and the date_since date as search parameter. ~~We plan to collect all the tweets containing "BLM" that were sent in larger Seattle since the movement of Capitol Hill Occupied Protest (CHOP) began. To do that, we define the search variables as below.~~
+
+As the recent modification of twitter policy, an API user can only collect tweets in the past seven days. So, instead of collecting data a few years ago, we plan to collect tweets containing the discussion of "BLM" in the last seven days. We define the search variables as below.
 
 ```python
 search_words = "BLM"
 # make sure there is no space between lat, long and the radius.
 location = "47.62039945423961,-122.30359179186148,15.8mi"
-date_since = "2020-6-9"
+# date_since = "2020-6-9" # you can still define a data_since parameter, but it has to be a date within the last seven days.
 ```
 
-As shown, the search term is `#BLM`, the start date is `June 9, 2020`. please refer to [https://developer.twitter.com/en/docs/twitter-api/v1/rules-and-filtering/search-operators](https://developer.twitter.com/en/docs/twitter-api/v1/rules-and-filtering/search-operators).
+As shown, the search term is `#BLM`, the start date is `June 9, 2020`. It is worth noting that, you can still define a data_since parameter, but it has to be a date within the last seven days. If you are looking for advanced skills for creating search terms, please refer to [https://developer.twitter.com/en/docs/twitter-api/v1/rules-and-filtering/search-operators](https://developer.twitter.com/en/docs/twitter-api/v1/rules-and-filtering/search-operators).
 
-Now, we will need to identify a buffer area. All the tweets falling in the buffer will be captured. If you are looking for advanced skills for creating search terms,  Specifically, 
+Now, we will need to identify a buffer area. All the tweets falling in the buffer will be captured. To find the location parameter, you can follow the procedure below.
 
 - Open [Google maps](https://www.google.com/maps/@47.6368272,-122.2448836,11z) on your desktop browser, then navigate to the place where you plan to collect tweets from.
   
@@ -326,7 +330,7 @@ Now, we will need to identify a buffer area. All the tweets falling in the buffe
 
 ## 4.2 Data Harvest
 
-Then, we input the parameters to the tweepy harvesting cursor, and we want to get back at most 1000 tweets for one single query. It is worth noting, that another parameter `lang` is applied, it will make sure all the acquired tweets are in English (`en` indicates English, for example, `kr` indicates korean, `cn` indicates Chinese, `sp` indicates spanish). However, for your own crawling strategy, you can pick a specific language that all the tweets uses. 
+Then, we input the parameters to the tweepy harvesting cursor, and we want to get back at most 1000 tweets for one single query. It is worth noting, that another parameter `lang` is applied, it will make sure all the acquired tweets are in English (`en` indicates English, for example, `kr` indicates korean, `cn` indicates Chinese, `sp` indicates spanish). However, for your own crawling strategy, you can pick a specific language that all the tweets uses.
 
 ```python
 # Collect tweets
@@ -337,8 +341,9 @@ tweets = tweepy.Cursor(api.search, q=search_words, geocode=location, lang="en", 
 > Note: in addition to q, geocode, lang, you can also the following parameters:
 >
 >  - from: - to specify a specific Twitter user profile
->  - since: - to specify the beginning date of the search
->  - until: - to specify the ending date of the search. 
+>  - since: - to specify the beginning date of the search (it is a date within the past seven days)
+>  - until: - to specify the ending date of the search. (it is a date within the past seven days)
+> 
 > The cursor can also receive other parameters, such as the language and the tweet_mode. If tweet_mode='extended', all the text of the tweet is returned, otherwise only the first 140 characters.
 
 We first create an empty array to store the retrieved data. As how we process each video in the first crawler we designed, we use the similar strategy to process each tweet, and store them in a pandas data frame.
@@ -471,8 +476,7 @@ For your deliverable, You are expected to walk through this instruction by runni
 
 - When running the `twstream.ipynb` script, please execute the script twice. You can either run it in two different places or execute it in two different time periods of day. **Please make two maps with the two pieces of spreadsheets, and write a short narrative to introduce the parameters you use, why the maps show different spatial patterns.**
 
-- When running `twsearch.ipynb` script, please think about a specific social or geographic topic you want to explore. By saying that, you need to think critically and carefully about the search term and search parameters. Sometimes, you might want to conduct the script several times to collect a statistically significant amount of  tweets to better reflect the examined topic. For example, to understand how people talk about UW, you might want to execute the script with a combination of keywords includes "uw", "university of washington", "univ of washington". Only one key term might be insufficient. **You are expected to run the `twsearch.ipynb` in least three different places with the same set of search parameters (e.g., search terms, date, etc.).** Once you collect all the data, please make at least three word clouds.
-
+- When running `twsearch.ipynb` script, please think about a specific social or geographic topic you want to explore. By saying that, you need to think critically and carefully about the search term and search parameters. Sometimes, you might want to conduct the script several times to collect a statistically significant amount of tweets to better reflect the examined topic. For example, to understand how people talk about UW, you might want to execute the script with a combination of keywords includes "uw", "university of washington", "univ of washington". Only one key term might be insufficient. **You are expected to run the `twsearch.ipynb` in least three different places with the same set of search parameters (e.g., search terms, date, etc.).** Once you collect all the data, please make at least three word clouds.
 
 To submit your deliverable, please create a new GitHub repository, and submit the URL of the GitHub to the **Canvas Dropbox** of this practical exercise. The file structure of this GitHub repository should look similar to below (POINT 5).
 
@@ -500,11 +504,11 @@ Here are the grading criteria:
 
 1.  Regarding your narratives about the exercise of the `twstream.ipynb`, introduce your comparison of more places or two time periods. Why do you want to make this comparison? Make sure this narrative will be stored in a `readme.md`. (POINT 6)
 
-2.  export the two maps to the repository and then insert them to the `readme.md`. The `readme.md` also needs to include a url to download the result spreadsheets. Please compare them and briefly discuss why they represent different geospatial patterns on the map. Is there anything you find from the map or data that is different from your expectation before the exercise.(POINT 6)
+2.  export the two maps to the repository and then insert them to the `readme.md`. The `readme.md` also needs to include a url to download the result spreadsheets.Please i) describe the parameters you have used for search, ii) compare them and briefly discuss why they represent different geospatial patterns on the map, and iii)  anything you find from the map or data that is different from your expectation before the exercise.(POINT 6)
 
 3. Regarding your narratives about the exercise of the `twsearch.ipynb`, please introduce your research design. What topic you have chosen, how you pick the search terms as well as the search parameters.(POINT 9)
 
-4.  export the two or more word clouds to the repository and then insert them to the `readme.md`. The `readme.md` also needs to include a url to download the result spreadsheets. Please compare them and briefly discuss why they represent different context. Is there anything you find from the map or data that is different from your expectation before the exercise? (POINT 9)
+4.  export the two or more word clouds to the repository and then insert them to the `readme.md`. The `readme.md` also needs to include a url to download the result spreadsheets.Please i) describe the parameters you have used for search, ii) compare them and briefly discuss why they represent different geospatial patterns on the map, and iii)  anything you find from the map or data that is different from your expectation before the exercise. (POINT 9)
 
 > Note: We observed several students having issues registering for a Twitter developer account. If you have issues, please ignore this section if you were successfully able to register for one. Please try **using your UW email for registration** or asking your classmates especially group members for the API keys privately before giving up!
 

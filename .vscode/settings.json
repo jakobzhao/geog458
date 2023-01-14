@@ -4,11 +4,13 @@
         "Basemaps",
         "choropleth",
         "geosearch",
+        "geospatial",
         "Geovisualizations",
         "loadingdata",
         "placemarks",
         "servlet",
         "tileset",
+        "twsearch",
         "vbreak",
         "webmap"
     ],
