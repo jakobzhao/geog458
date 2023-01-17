@@ -16,12 +16,14 @@
 
 - **Steven Bao**, Teaching Assistant, bxq98@uw.edu |  Office Hour: Wednesdays 2 to 3 PM at SMI 401. It is recommended to send me an email or canvas message briefly describing your question(s) before your visit, as this will help me provide better answers. If the listed time does not work for you, please also feel free to send me an email/canvas message to schedule for anothe time.
 
-# Announcement
+> _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
+
+## :trumpet: Announcement
 
 - ***1/14/2023:*** Lab 02 has been updated due to changes in Twitter's API, which now only allows elevated accounts to collect recent tweets within the past seven days. Please review the updated lab material for specific changes.
 
 
-> _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
+
 
 ![course cover](assets/img/cover.png)
 
