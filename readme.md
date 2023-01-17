@@ -18,6 +18,8 @@
 
 # Announcement
 
+- ***1/17/2023:*** To help each team brainstorm the final project idea, The instructor will introduce the three formats for your final project in the lecture of Week 3 on Thursday Jan. 19.
+
 - ***1/14/2023:*** Lab 02 has been updated due to changes in Twitter's API, which now only allows elevated accounts to collect recent tweets within the past seven days. Please review the updated lab material for specific changes.
 
 
