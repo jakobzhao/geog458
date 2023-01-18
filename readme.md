@@ -20,6 +20,8 @@
 
 ## :trumpet: Announcement
 
+- ***1/18/2023:***  Through out the quarter, each group is expected to ask at least 3 questions in total during the Q&A sessions after your classmates presentation. This will count toward your class participation grade.
+
 - ***1/17/2023:*** To help each team brainstorm the final project idea, The instructor will introduce the three formats for your final project in the lecture of Week 3 on Thursday Jan. 19.
 
 - ***1/14/2023:*** Lab 02 has been updated due to changes in Twitter's API, which now only allows elevated accounts to collect recent tweets within the past seven days. Please review the updated lab material for specific changes.
@@ -174,9 +176,11 @@ During these two weeks, each group will focus on their final projects, with the 
 
 **Think Pieces:** for week 1 to 8, there will be weekly reading assignments. To evaluate your reflection upon each week's reading material, we set up a discussion board for each week. You need to submit at least think pieces to **4** out of the 8 weeks' discussion topics. We will review them all, but only the four with hightest scores will be counted towards your final grade. Your think pieces should be completed by Thursday @ 11:59 pm for the weeks you are submitting a piece. **All the 4 think pieces must be submitted by the end of Week 8**. Your think pieces should be at least 350 words and engage substantially with the reading materials, and connections to the lab assignments and lectures. **The focus of your discussion should be the main readings**, as the extended readings are for your further interests. Guiding questions or prompts will be included in each week's discussion section on canvas to help frame your thinking. Submit your think pieces on Canvas in the applicable week's discussion section (https://canvas.uw.edu/courses/1434645/discussion_topics).
 
-**Class participation:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and actively participate in critical discussions of those readings. You should have completed all of the weekly readings before the Thursday lectures as we will discuss and engage with the required readings. What's more, Through out the quarter, each group is expected to ask at least 3 questions in total during the Q&A sessions after your classmates presentation. This will count toward your class participation grade.
+**Class participation:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and actively participate in critical discussions of those readings. You should have completed all of the weekly readings before the Thursday lectures as we will discuss and engage with the required readings. What's more, **Through out the quarter, each group is expected to ask at least 3 questions in total during the Q&A sessions after your classmates presentation. This will count toward your class participation grade.**
 
-**In-class presentation:** **Also, each group will lead the presentation about an assigned topic at least once throughout this quarter. We will start the group presentation in Week 3.** Each group will present an previously assign paper or a digital geography related project in no more than 15 minutes. If you prepare slides for the presentation, please send it to the instructor before class via email. 
+**In-class presentation:** **Also, each group will lead the presentation about an assigned topic at least once throughout this quarter. We will start the group presentation in Week 3.** Each group will present an previously assign paper or a digital geography related project in no more than 15 minutes. If you prepare slides for the presentation, please send it to the instructor before class via email to the instructor. 
+
+- When preparing an in-class presentation for a digital project, like an interactive map, make sure to cover the main topic and key functions of the project. Also, connect the reading material and your think-piece with the project, for example providing a critical assessment of the use of geospatial data. Additionally, make sure to go into depth about the technical aspects of the project, such as the system architecture and the code.
 
 **Final Project:** will be conducted by a group of 4 to 5 students who are from the same Lab session. It needs to be submitted by `March 6th 11:59pm`. Check out [the detailed requirement for final project](project/readme.md).
 

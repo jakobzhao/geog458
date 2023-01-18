@@ -116,10 +116,12 @@ There is no deliverable in these two weeks, but you are required to concentrate 
 
 #### Final project submission
 
-To submit your final project, you will need to share the url link of your final project's GitHub repository to a dedicated final project submission tab on Canvas by `March 6th 11:59pm`. This first submission will be mainly used by the instruction team to provide you with necessary feedback on improving your project. After receving feedback, you can continue crafting your project until presentation day (Mar. 10th). The final grade for the project will be based on the work done by the end of March 10th.
+To submit your final project, you will need to share the url link of your final project's GitHub repository to a dedicated final project submission tab on Canvas by `March 6th 11:59pm`. This first submission will be mainly used by the instruction team to provide you with necessary feedback on improving your project. After receiving feedback, you can continue crafting your project until presentation day (Mar. 10th). The final grade for the project will be based on the work done by the end of March 10th.
 
 #### Final project presentation
 
 Academics often attend conferences where they share their discoveries and browse the work of others to gain new ideas and offer feedback. We will hold a final presentation meeting on in SMI 401 **Mar 10th, 1:30 PM to 3:20 PM**, each group is expected to present the final project in 8 minutes, and plus another 2 minute for a Q&A session.
+
+  - Each group is expected to ask at least 3 questions in total during the Q&A sessions after each of the presentations. This will count toward your groups of the Final Project Progress grade.
 
 >  **Note:** The requirements to the project may be slightly changed according the progress of this course. The final requirements are subject to the instructor's notification.
