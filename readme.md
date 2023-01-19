@@ -89,7 +89,7 @@ By the time you complete Lab 2, you'll have learned how to collect geo-tagged tw
 -   **Readings:** a) [Stand with #StandingRock: Envisioning an Epistemological Shift in Understanding Geospatial Big Data in the “Post-truth” Era](https://www.researchgate.net/profile/Bo-Zhao-3/publication/343848324_Stand_with_StandingRock_Envisioning_an_Epistemological_Shift_in_Understanding_Geospatial_Big_Data_in_the_Post-truth_Era/links/605aadfa92851cd8ce61ba65/Stand-with-StandingRock-Envisioning-an-Epistemological-Shift-in-Understanding-Geospatial-Big-Data-in-the-Post-truth-Era.pdf), b) [Putting Data back into Context](https://datajournalism.com/read/longreads/putting-data-back-into-context), c) [extended readings](weeks/week03/readings.md).
 -   **Think Piece 3:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773106) `Due: Jan 19th, by 11:59pm`
 -   **Presentations**: Tuesday: Standing Rock paper (AA1), Thursday:  [Native Land Digital](https://native-land.ca/) (AA4)
--   **Extra Credit**: [Participatory Mapping](ecredit/pm.md)
+-   **Extra Credit**: [Participatory Mapping](extracredit/pm.md)
 
 ### Week 4 : Web mapping
 
