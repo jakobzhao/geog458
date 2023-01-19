@@ -107,18 +107,18 @@ Get ready to take your web mapping skills to the next level! This week, you'll b
 
 <!-- Jan 30 to Feb 3, Meeting in Pennsylvania -->
 
--   **Lectures:** [BaseMap design using Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/) and [Mockup for web mapping project](weeks/week05/mockup/readme.md)
--   **Readings:** a) [The Guide to Map Design](https://go.mapbox.com/rs/117-NXK-490/images/the-guide-to-map-design.pdf), b) [Intro to Critical Cartography](https://drive.google.com/file/d/1IEz_9J4vH6foIrV36wDoIovOYNomZBWj/view?usp=sharing), c) [Mapbox Studio How-to Videos](weeks/week05/readme.md), and d) [extended readings](weeks/week05/readings.md).
+-   **Lectures:** [BaseMap design using Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/), [Mockup for web mapping project](weeks/week05/mockup/readme.md)
+-   **Readings:** a) [MapBox Studio How-to Videos](weeks/week05/readme.md), and c) [Topological City](https://www.tandfonline.com/doi/pdf/10.1080/02723638.2013.778698) d) [extended readings](weeks/week05/readings.md).
 -   **Think Piece 5:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773108) `Due: Feb 2nd, by 11:59pm`
 -   **Lab 4:** [Map Design and Tile Generation](labs/lab04) `Due: Feb 20th, by 11:59pm`
--   **Presentations**: Tuesday: The Guide to Map Design (AA5),  Thursday: [Snapchat Map](https://map.snapchat.com) (AB2)
+-   **Presentations**: Tuesday: Topological City (AA5),  Thursday: MapBox Studio How-to Videos (AB2)
+-   **Extra Credit 2**: [ChatGPT, DALL·E and Stable Diffusion](extracredit/openai.md)
 
 ### Week 6 : Smart dashboards
 
 <!-- Feb 6 to Feb 10 -->
 
 Smart dashboards are an incredibly powerful tool for visualizing and presenting complex events, particularly in the field of geography. By coordinating multiple visual components like maps, charts, texts, tables, and diagrams, smart dashboards allow you to present a holistic view of a given event in an intuitive and easy-to-understand way. One of the most popular uses for smart dashboards is to visualize the trend of COVID-19(refer to https://hgis.uw.edu/virus), but these powerful tools can be used for all kinds of applications. So get ready to take your data visualization skills to the next level and create stunning, interactive dashboards that will help you tell your story in a way that truly engages and informs your audience.
-
 
 -   **Lectures:** introduce how to [create a smart dashboard](weeks/week06/readme.md). The instructor wil walk through a smart dashboard illustrating earthquakes in Japan in September 2017 together during the lectures (Check out this dashboard at [here](https://jakobzhao.github.io/geog458/weeks/week06/index.html)). This dashboard is primarily built with a map component and a dynamic chart. This map component is made by MapBox, while the chart was built upon [C3.js](https://c3js.org/examples.html).
 -   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [History of the Urban Dashboard](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/), c) [3 Ways Data Dashboards Can Mislead You](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section), and d) [extended readings](weeks/week06/readings.md).
