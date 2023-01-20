@@ -508,7 +508,7 @@ Here are the grading criteria:
     5.  how your research could be improved in the future (5 PTS)
     6.  anything you find from the map or data that is different from your expectation before the exercise, or anything that stands out to you (5 PTS)
 2.  Export the two or more word clouds to the repository and then insert them to the `readme.md`.  (5 PTS)
-3.  The `readme.md` also needs to include a url to download the result spreadsheets (css file) of the collected data (5 PTS). 
+3.  The `readme.md` also needs to include a url to download the result spreadsheets (csv file) of the collected data (5 PTS). 
 
 > Note: We observed several students having issues registering for a Twitter developer account. If you have issues, please ignore this section if you were successfully able to register for one. Please try **using your UW email for registration** or asking your classmates especially group members for the API keys privately before giving up!
 
