@@ -105,7 +105,7 @@ Get ready to take your web mapping skills to the next level! This week, you'll b
 <!-- Jan 30 to Feb 3, Meeting in Pennsylvania -->
 
 -   **Lectures:** [BaseMap design using Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/), [Mockup for web mapping project](weeks/week05/mockup/readme.md)
--   **Readings:** a) [MapBox Studio How-to Videos](weeks/week05/readme.md), and c) [Topological City](https://www.tandfonline.com/doi/pdf/10.1080/02723638.2013.778698) d) [extended readings](weeks/week05/readings.md).
+-   **Readings:** a) [MapBox Studio How-to Videos](weeks/week05/readme.md), b) [Topological City](https://www.tandfonline.com/doi/pdf/10.1080/02723638.2013.778698), and c) [extended readings](weeks/week05/readings.md).
 -   **Think Piece 5:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773108) `Due: Feb 2nd, by 11:59pm`
 -   **Lab 4:** [Map Design and Tile Generation](labs/lab04) `Due: Feb 20th, by 11:59pm`
 -   **Presentations**: Tuesday: Topological City (AA5),  Thursday: MapBox Studio How-to Videos (AB2)
