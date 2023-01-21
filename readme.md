@@ -1,6 +1,6 @@
 # GEOGRAPHY 458: Advanced Digital Geographies
 
-**Hyberlinks:** [**`Weekly Schedules`**](#calendar-weekly-schedule) &nbsp;&nbsp;&nbsp;&nbsp; [**`Final Project Guideline`**](project/readme.md)
+**Hyperlinks:** [**`Weekly Schedules`**](#calendar-weekly-schedule) &nbsp;&nbsp;&nbsp;&nbsp; [**`Course requirement`**](#bell-course-requirement) &nbsp;&nbsp;&nbsp;&nbsp; [**`Final Project Guideline`**](project/readme.md)
 
 **Meetings:**
 
@@ -25,9 +25,6 @@
 - ***1/17/2023:*** To help each team brainstorm the final project idea, The instructor will introduce the three formats for your final project in the lecture of Week 3 on Thursday Jan. 19.
 
 - ***1/14/2023:*** Lab 02 has been updated due to changes in Twitter's API, which now only allows elevated accounts to collect recent tweets within the past seven days. Please review the updated lab material for specific changes.
-
-
-
 
 ![course cover](assets/img/cover.png)
 
@@ -57,7 +54,7 @@ This course is designed to be highly interactive and hands-on. Most of the cours
 
 <!-- Jan 2 to Jan 6 -->
 
-Welcome to the beginning of an exciting journey into digital geographies! This week's lecture and lab are designed to set you up for success in the course and provide a solid foundation of theoretical and technical knowledge. Together, we'll work through the syllabus and make sure that you have all the information you need to succeed. To get started, each student is expected to read the Ash et al (2018) paper. After completing Lab 1, you'll be able to clone/synchronize the course material, set up a personal website, and get some hands-on experience using github to manage your digital geographies projects. 
+Welcome to the beginning of an exciting journey into digital geographies! This week's lecture and lab are designed to set you up for success in the course and provide a solid foundation of theoretical and technical knowledge. Together, we'll work through the syllabus and make sure that you have all the information you need to succeed. To get started, each student is expected to read the Ash et al (2018) paper. After completing Lab 1, you'll be able to clone/synchronize the course material, set up a personal website, and get some hands-on experience using github to manage your digital geographies projects.
 
 -   **Lectures:** [Syllabus](readme.md), [Intro to the Web](weeks/week01/intro-web), and [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 -   **Readings:** a) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_), b) [Humanistic GIS: Towards a research agenda](https://www.tandfonline.com/doi/pdf/10.1080/24694452.2021.2004875),  and c) [extended readings](weeks/week01/readings.md).
