@@ -63,6 +63,7 @@ This week, you are required to revise your proposal based on the feedback from t
 - project idea
 - project significance and broader impacts
  - please think critically, could your project generate any negative impact once done? how would you avoid that?
+ - create the disclaimer or welcome page. refer to [../troubleshoots/starter/disclaimer.html](../troubleshoots/starter/disclaimer.html).
  - primary functions and major data sources
  - targeted audience
  - multimedia (e.g., external links, texts, images, youtube videos, and etc.)
