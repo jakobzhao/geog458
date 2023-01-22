@@ -63,7 +63,6 @@ This week, you are required to revise your proposal based on the feedback from t
 - project idea
 - project significance and broader impacts
  - please think critically, could your project generate any negative impact once done? how would you avoid that?
- - create the disclaimer or welcome page. refer to [../troubleshoots/starter/disclaimer.html](../troubleshoots/starter/disclaimer.html).
  - primary functions and major data sources
  - targeted audience
  - multimedia (e.g., external links, texts, images, youtube videos, and etc.)
@@ -100,6 +99,7 @@ In the meantime, you should initiate your final project by completing the follow
   - Data processing is always an important step for creating GIS applications. Based on past experiences, students may find themselves spending significant amount of time on processing the spatial dataset before they could use it in the proposed project. Therefore, by the end of week 7, we expect you to have your dataset properly cleaned and processed, so that you could spend the rest of the time working on the coding part of the project. Besides providing the cleaned data, you should also write a few sentences to describe how you cleaned the data and why the data processing steps you take are necessary or beneficial to your final project. Include the paragraph as a `readme.md` file directly under the folder where you save your data (typicaly `assets`)
 
 - start drafting the project description page onto the `readme.md`. You can move a lot of items from your revised proposal to the readme.md.
+-  ***`optional`*** create the disclaimer or welcome panel. refer to [../troubleshoots/starter/disclaimer.html](../troubleshoots/starter/disclaimer.html).
 
 #### Week 8: [Project development and identified issues](https://canvas.uw.edu/courses/1612951/assignments/7978347) `Due: Feb. 26th, by 11:59pm`
 
