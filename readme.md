@@ -72,7 +72,7 @@ This week will require a lot of self-learning, so be prepared for some fairly le
 -   **Lectures:** [System architecture](weeks/week02/architecture), [intro-to-html, css](weeks/week02/html-css) and [javascript](weeks/week02/javascript). [More tutorial on web development fundamentals](weeks/week02/tech-readings.md)
 -   **Readings:**  a) [Introducing Code/Space](https://drive.google.com/file/d/1T7ChuOnaKrgjTVhAeV_Niei2pqCWiiqK/view?usp=sharing), b) [A White Paper on Locational Information and the Public Interest](https://www.aag.org/wp-content/uploads/1900/09/2022-White-Paper-on-Locational-Information-and-the-Public-Interest.pdf), and c) [extended readings](weeks/week02/readings.md).
 -   **Think Piece 2:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773105) `Due: Jan 12th, by 11:59pm`
--   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: Jan 22nd, by 11:59pm` If you want to integrate a word cloud to your final project please refer to [this tutorial](troubleshoots/wordcloud/readme.md)
+-   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: Jan 22nd, by 11:59pm (Re-submission due Jan 26th by 11:59pm)` If you want to integrate a word cloud to your final project please refer to [this tutorial](troubleshoots/wordcloud/readme.md)
 
 ### Week 3 : Geospatial data
 
