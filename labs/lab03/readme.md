@@ -110,7 +110,7 @@ map.on('load', function loadingdata() {
     ... ...
 });
 ```
-The map object will create a new data source `earthquakes`, and it then imports to the new `earthquakes-layer`. The default style of each earthquake is a black dot. But it will be refreshed into new styles after applying the proportional symbol strategies. You can open `map2.html` to see how the map looks like at this stage.
+The map object will create a new data source `earthquakes`, and it then imports to the new `earthquakes-point`. The default style of each earthquake is a black dot. But it will be refreshed into new styles after applying the proportional symbol strategies. You can open `map2.html` to see how the map looks like at this stage.
 
 ![](img/map2.png)
 
