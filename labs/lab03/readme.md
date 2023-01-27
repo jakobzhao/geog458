@@ -94,7 +94,7 @@ map.on('load', () => {
     });
 
     map.addLayer({
-        'id': 'earthquakes-layer',
+        'id': 'earthquakes-point',
         'type': 'circle',
         'source': 'earthquakes'
     });
