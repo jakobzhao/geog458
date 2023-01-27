@@ -205,7 +205,7 @@ for (var i = 0; i < grades.length; i++) {
     vbreak = grades[i];
     // you need to manually adjust the radius of each dot on the legend 
     // in order to make sure the legend can be properly referred to the dot on the map.
-    dot_radius = 2 * radius[i];
+    dot_radius = 2 * radii[i];
     labels.push(
         '<p class="break"><i class="dot" style="background:' + colors[i] + '; width: ' + dot_radius +
         'px; height: ' +
