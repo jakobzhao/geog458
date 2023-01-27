@@ -133,22 +133,13 @@ Similarly, we assign corresponding color to each grade. Since other value of the
 
 ```javascript
 'paint': {
-    // increase the radius of the circle as the zoom level and dbh value increases
+    // increase the radii of the circle as the zoom level and dbh value increases
     'circle-radius': {
         'property': 'mag',
         'stops': [
-            [{
-                zoom: 5,
-                value: grades[0]
-            }, radius[0]],
-            [{
-                zoom: 5,
-                value: grades[1]
-            }, radius[1]],
-            [{
-                zoom: 5,
-                value: grades[2]
-            }, radius[2]]
+            [grades[0], radii[0]],
+            [grades[1], radii[1]],
+            [grades[2], radii[2]]
         ]
     },
     'circle-color': {

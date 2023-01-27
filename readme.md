@@ -109,6 +109,7 @@ Get ready to take your web mapping skills to the next level! This week, you'll b
 -   **Think Piece 5:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773108) `Due: Feb 2nd, by 11:59pm`
 -   **Lab 4:** [Map Design and Tile Generation](labs/lab04) `Due: Feb 20th, by 11:59pm`
 -   **Presentations**: Tuesday: Topological City (AA5),  Thursday: MapBox Studio How-to Videos (AB2)
+-   **[Final Project](project/readme.md):** [Draft project proposal, data sources, and other multimedia](https://canvas.uw.edu/courses/1612951/discussion_topics/7773115) `Due: Feb. 5th 11:59pm`
 -   **Extra Credit 2**: [ChatGPT, DALL·E and Stable Diffusion](extracredit/openai.md)
 
 ### Week 6 : Smart dashboards
@@ -121,6 +122,7 @@ Smart dashboards are an incredibly powerful tool for visualizing and presenting 
 -   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [History of the Urban Dashboard](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/), c) [3 Ways Data Dashboards Can Mislead You](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section), and d) [extended readings](weeks/week06/readings.md).
 -   **Think Piece 6:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773109) `Due: Feb 9th by 11:59pm`
 -   **Presentations**: Tuesday: [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing) (AA2), [Restaurant Complaints in NYC](https://labs.mapbox.com/bites/00304/) (AB4)
+-   **[Final Project](project/readme.md):** [Design project prototype & data preparation](https://canvas.uw.edu/courses/1612951/assignments/7978349) `Due: Feb. 12th, by 11:59pm`
 
 ### Week 7 : Geo-Narratives
 
@@ -134,6 +136,7 @@ Whether you're an experienced mapmaker or new to the field, this is your chance 
 -   **Readings:** a) [Planning and outlining your story map](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/sharing-collaboration/planning-and-outlining-your-story-map-how-to-set-yourself-up-for-success/) , b) [Cartographic Design as Visual Storytelling: Synthesis and Review of Map-Based Narratives, Genres, and Tropes](https://drive.google.com/drive/folders/1JoXMil3jC6jAS9gE3K8zeP0NSHyHJkE7), c)[extended readings](weeks/week07/readings.md).
 -   **Think Piece 7:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773110) `Due: Feb 16, by 11:59pm`
 -   **Presentations**: Tuesday: Planning and outlining your story map (AB1),  Thursday: [A Geo-Narrative Template](weeks/week07/) (AB5)
+-   **[Final Project](project/readme.md):** [Proposal revision and pilot study](https://canvas.uw.edu/courses/1612951/assignments/7978348) `Due: Feb. 20th, by 11:59pm`
 
 
 ### Week 8 : Emerging topics
@@ -145,6 +148,7 @@ This week, we're exploring emerging topics in digital geographies! We'll be focu
 -   **Lectures:** The lecture focuses on the following papers.
 -   **Readings:** a) [Deepfake Geography](https://www.researchgate.net/profile/Chunxue-Xu/publication/351131604_Deep_fake_geography_When_geospatial_data_encounter_Artificial_Intelligence/links/608a48f5a6fdccaebdf4f065/Deep-fake-geography-When-geospatial-data-encounter-Artificial-Intelligence.pdf), and b) [Blockchain and crypto place](https://www.sciencedirect.com/science/article/pii/S0016718520302219/pdfft?isDTMRedir=true&download=true), c) [extended readings](weeks/week08/readings.md).
 -   **Think Piece 8:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773111) `Due: Feb 23, by 11:59pm`
+-   **[Final Project](project/readme.md):** [Project development and identified issues](https://canvas.uw.edu/courses/1612951/assignments/7978347) `Due: Feb. 26th, by 11:59pm`
 
 ### Week 9 & 10 : Project studios, presentation and submission.
 
