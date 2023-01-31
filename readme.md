@@ -105,12 +105,12 @@ Get ready to take your web mapping skills to the next level! This week, you'll b
 <!-- Jan 30 to Feb 3, Meeting in Pennsylvania -->
 
 -   **Lectures:** [BaseMap design using Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/), [Mockup for web mapping project](weeks/week05/mockup/readme.md)
--   **Readings:** a) [MapBox Studio How-to Videos](weeks/week05/readme.md), b) [Topological City](https://www.tandfonline.com/doi/pdf/10.1080/02723638.2013.778698), and c) [extended readings](weeks/week05/readings.md).
+-   **Readings:** a) [MapBox Studio How-to Videos](weeks/week05/readme.md), b) [Topological City](https://drive.google.com/file/d/1090CXt_DTgZUZlKeQmCbTS8e6W7-Btz2/view?usp=share_link), and c) [extended readings](weeks/week05/readings.md).
 -   **Think Piece 5:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773108) `Due: Feb 2nd, by 11:59pm`
 -   **Lab 4:** [Map Design and Tile Generation](labs/lab04) `Due: Feb 20th, by 11:59pm`
 -   **Presentations**: Tuesday: Topological City (AA5),  Thursday: MapBox Studio How-to Videos (AB2)
 -   **[Final Project](project/readme.md):** [Draft project proposal, data sources, and other multimedia](https://canvas.uw.edu/courses/1612951/discussion_topics/7773115) `Due: Feb. 5th 11:59pm`
--   **Extra Credit 2**: [ChatGPT, DALL·E and Stable Diffusion](extracredit/openai.md)
+-   **Extra Credit 2**: [Imagining spaces using stable diffusion model](extracredit/openai.md)
 
 ### Week 6 : Smart dashboards
 

@@ -1,3 +1,0 @@
-# OpenAI and Spatiality
-
-TBA
