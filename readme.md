@@ -110,7 +110,7 @@ Get ready to take your web mapping skills to the next level! This week, you'll b
 -   **Lab 4:** [Map Design and Tile Generation](labs/lab04) `Due: Feb 20th, by 11:59pm`
 -   **Presentations**: Tuesday: Topological City (AA5),  Thursday: MapBox Studio How-to Videos (AB2)
 -   **[Final Project](project/readme.md):** [Draft project proposal, data sources, and other multimedia](https://canvas.uw.edu/courses/1612951/discussion_topics/7773115) `Due: Feb. 5th 11:59pm`
--   **Extra Credit 2**: [Imagining Space using stable diffusion model](extracredit/openai.md)
+-   **Extra Credit 2**: [Imagining Space using stable diffusion model](extracredit/sd.md)
 
 ### Week 6 : Smart dashboards
 
