@@ -14,5 +14,6 @@
         "vbreak",
         "webmap"
     ],
-    "livePreview.defaultPreviewPath": "/weeks/week06/index.html"
+    "livePreview.defaultPreviewPath": "/weeks/week06/index.html",
+    "files.defaultLanguage": "en"
 }

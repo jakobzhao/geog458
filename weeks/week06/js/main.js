@@ -77,24 +77,16 @@ async function geojsonFetch() {
                 'source': 'earthquakes',
                 'minzoom': 5,
                 'paint': {
-                    // increase the radii of the circle as the zoom level and dbh value increases
+                    // increase the radii of the circle as mag value increases
                     'circle-radius': {
                         'property': 'mag',
                         'stops': [
-                            [{
-                                zoom: 5,
-                                value: grades[0]
-                            }, radii[0]],
-                            [{
-                                zoom: 5,
-                                value: grades[1]
-                            }, radii[1]],
-                            [{
-                                zoom: 5,
-                                value: grades[2]
-                            }, radii[2]]
+                            [grades[0], radii[0]],
+                            [grades[1], radii[1]],
+                            [grades[2], radii[2]]
                         ]
                     },
+                    // change the color of the circle as mag value increases
                     'circle-color': {
                         'property': 'mag',
                         'stops': [
