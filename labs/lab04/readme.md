@@ -138,30 +138,6 @@ The file directory will contain your QMetaTiles and an HTML document that can be
 
 Navigate to the output file after QMetaTiles finishes running. In this folder will be your sub folders of tiles arranged by zoom level, and an html document if you checked "Write Leaflet-based viewer" when generating tiles in QGIS.
 
-Open the html and look at the source code. To load the layers, you can refer to the code below. 
-
-```javascript
-map.addSource('sample-tiles', {
-    'type': 'raster',
-    'tiles': [
-        'http://{s}.somedomain.com/{foo}/{z}/{x}/{y}.png'
-    ],
-    'tileSize': 256,
-    'attribution': 'Map tiles designed by Bo Zhao</a>'
-});
-
-map.addLayer({
-    'id': 'sample-layer',
-    'type': 'raster',
-    'layout': {
-        'visibility': 'none'
-    },
-    'source': 'sample-tiles'
-});
-```
-
-In the code above, `{s}` means one of the available subdomains (used sequentially to help with browser parallel requests per domain limitation; subdomain values are specified in options; a, b or c by default, can be omitted), `{z}` — zoom level, `{x}` and `{y}` — tile coordinates. `{r}` can be used to add "@2x" to the URL to load retina tiles.
-
 
 ## 4 Add map tiles to a MapBox Map
 
