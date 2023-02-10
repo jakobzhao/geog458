@@ -185,7 +185,7 @@ As shown by the code, the tiles are loaded from a relative path `assets/[tileset
 
   - The second tile set should be a thematic layer made by your own geospatial dataset. (5 POINTS).
 
-  - The third tile set should be composed of a thematic layer (from the second tile set) and a basemap from the first tile set, as the map tiles shown in Section 4. (5 POINTS).
+  - The third tile set should be composed of the thematic layer (from the second tile set) and the basemap from the first tile set. (5 POINTS).
 
   - The fourth tile set should be a map layer designed over Mapbox. It should embody a map theme relevant to your research interests, which, for instance, could be Black History month, LGBTQ+ Pride, UW, Nature/Environment, etc. Please try to use the color, icon, and label to realize the theme.  (5 POINTS). 
 
