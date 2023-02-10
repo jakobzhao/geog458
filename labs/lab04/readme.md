@@ -98,27 +98,21 @@ This table shows each of these values at each level of detail, **as measured at
 
 ## 3 Generating Tiles in QGIS
 
-In this section we will introduce how to create map layer or load online map service, and then convert the created or loaded map layer as a tileset in QGIS 3. To do this, you need to install two QGIS plugins, including QMetaTiles and QuickMapServices.
+In this section we will introduce how to load online map service as a map layer, and then convert the map layer as a tileset in QGIS 3. To do this, you need to install the QGIS plugin `QMetaTiles`.
 
-To enable the QuickMapServices Plugin, you need to click on the `Web` tab on the main menu bar, and then navigate to QuickMapServies and select Settings and then the tab for More Services. Then click **'Get Contibuted Pack'**. Click 'OK' for the pop-up window and then click 'Save.' If the service is successfully installed, you can open a variety of base maps.
-
-![](img/quickmapservicesetting.png)
-
-### 3.1 Generate or Load a Map Layer
-
-You can either create a map from your own data source, or load a base map from the QuickMapServices, or read a map tiles from MapBox. What's more, you can even make a layer group that is made up by several different layers.
+To install the `QMetaTiles` Plugin, you need to click on `Plugins` on the main menu bar, and then `Manage and Install Plugins`. Then search for `QMetaTiles` and install the plugin. **For some version of QGIS, there is no plugin named `QMetaTiles`, Instead, you can use `QTiles`.**
 
 Once you have the map layer or layer group ready, please change the displaying projection to **Pseudo Mercator**, the epsg code is 3857. It is because most web maps are projected in the Pseudo Mercator. If you want to overlay any tiles with other external map services, you need to make sure all the displaying map layers are in the same projection.
 
 ![](img/projection.png)
 
-### 3.2 Tile Server
+### 3.1 Load a Map Layer from Mapbox Studio
 
-It is pretty straightforward and simple to creating new map layers from raw geospatial data (e.g., shapefiles or geojson) or loading external map layers from QuickMapServices are straightforward, here I would like to talk about how to read map layers from Mapbox's Tile Services.
+You can load individual map layers from Mapbox Studio styles. What's more, you can even make a layer group that is made up by several different layers. This section will walkthrough how to read map layers from Mapbox's Tile Services.
 
 ![](img/wmts.png)
 
-Please first go over this week's lecture notes if you need a guide to make your own MapBox maplayer. After creating your own map, open the browser panel in QGIS. Scroll Down to the **'WMS/WMTS'**, right click, and click **'New Connection'**. A pop-up window should appear.
+If you need a guide to make your own MapBox maplayer, you can refer to [this Mapbox Studio Guide](https://docs.mapbox.com/studio-manual/overview/). After creating your own map, open the browser panel in QGIS. Scroll Down to the **'WMS/WMTS'**, right click, and click **'New Connection'**. A pop-up window should appear.
 
 ![](img/new-connection.png)
 
@@ -128,7 +122,7 @@ Here, you can make a new connection to basemaps by providing the URL. In order t
 
 Make sure you pick Third party option and copy the Integration URL of `WMTS` like the example above. After establishing the connection, you should be able to add your basemap by double-clicking the newly created connection.
 
-Zoom into your tiles so that they fill most of the canvas space. The canvas is the extent we will use to generate QMetaTiles.
+Zoom into your tiles so that they fill most of the canvas space. **The canvas extent is the extent we will use to generate QMetaTiles.**
 
 ### 3.3 Generating Tiles by QMetaTiles (or QTiles)
 
@@ -138,11 +132,11 @@ Click the Plugins drop down, hover over QMetaTiles to open the menu and select i
 
 > Note: the runtime is dependent on the size and number of zoom levels. Please do not select the `use TMS tile convertion` option.
 
-The file directory will contain your QMetaTiles and an HTML document that can be integrated with leaflet. Additional help with QMetaTiles can be found **[here](http://felix.rohrba.ch/en/2017/easily-add-tilemap-layers-qgis/)**. The leaflet map will help you view the map tiles. But for your own deliverable, you need to load the maps using [Mapbox GS JS](https://docs.mapbox.com/mapbox-gl-js/api/).
+The file directory will contain your QMetaTiles and an HTML document that can be integrated with `leaflet` if you checked "Write Leaflet-based viewer". Additional help with QMetaTiles can be found **[here](http://felix.rohrba.ch/en/2017/easily-add-tilemap-layers-qgis/)**. The leaflet map will help you view the map tiles. But for your own deliverable, you need to load the maps using [Mapbox GS JS](https://docs.mapbox.com/mapbox-gl-js/api/).
 
 ### 3.4 Navigate to QMetaTiles folder
 
-Navigate to the output file after QMetaTiles finishes running. In this folder will be your sub folders of tiles arranged by zoom level and an html document.
+Navigate to the output file after QMetaTiles finishes running. In this folder will be your sub folders of tiles arranged by zoom level, and an html document if you checked "Write Leaflet-based viewer" when generating tiles in QGIS.
 
 Open the html and look at the source code. To load the layers, you can refer to the code below. 
 
@@ -171,7 +165,7 @@ In the code above, `{s}` means one of the available subdomains (used sequentiall
 
 ## 4 Add map tiles to a MapBox Map
 
-For web mapping and geovisualization applications, the QMetaTiles folder generated above in QGIS should become your assets folder on github. **In the code you will need to adjust absolute pathnames to relative path names.**
+For web mapping and geovisualization applications, the QMetaTiles folder generated above in QGIS (the folder that holds all tiles at different zoom levels) should be placed in your assets folder of your repository. To get a starter code for the map, you can refer to [the class materials in week 4](https://github.com/jakobzhao/geog458/tree/master/weeks/week04). You can refer to the code below as an example for add the files as a map layer. **In the code you will need to use relative path names.**
 
 ```js
 
@@ -190,19 +184,22 @@ map.on('load', () => { //simplifying the function statement: arrow with brackets
       'id': 'uw',
       'type': 'raster',
       'layout': {
-          'visibility': 'none'
+          // 'visibility': 'none'
+        	// Uncomment the line above will hide this map layer at first.
+        	// This will be useful when you have multiple layers added to your map.
       },
       'source': 'uw-tiles'
   });
 
 
 });
-
 ```
 
-![mapbox map](img/final-map.png)
+As shown by the code, the tiles are loaded from a relative path `assets/[tilesets]` which exists at a location in your internal network. For the following parameters in the path: `{z}` indicates zoom level, `{x}` and `{y}` are tile coordinates. 
 
-As shown by the code, the tiles are loaded from a relative path `assets/tiles` which exists at a location in your internal network. Here is what the final output looks like **[here](http://jakobzhao.github.io/geog458/labs/lab04/index.html)**.
+[Here](http://jakobzhao.github.io/geog458/labs/lab04/index.html) is what the final output looks like. The source code for the map can be found [here](index.html). The source code include the additional code for adding a layer switcher, as shown at the upper right corner of the screenshot below.
+
+![mapbox map](img/final-map.png)
 
 ## 5 Deliverable
 
@@ -212,9 +209,9 @@ As shown by the code, the tiles are loaded from a relative path `assets/tiles` w
 
   - The second tile set should be a thematic layer made by your own geospatial dataset. (5 POINTS).
 
-  - The third tile set should be a layer group that is composed of a thematic layer (from the second tile set) and a basemap from the first tile set, as the map tiles shown in Section 4. (5 POINTS).
+  - The third tile set should be composed of a thematic layer (from the second tile set) and a basemap from the first tile set, as the map tiles shown in Section 4. (5 POINTS).
 
-  - The fourth tile set should be a map layer designed over Mapbox. It should embody a map theme relevant to your research interests, which could be Black History month, LGBTQ+ Pride, UW, Nature/Environment, etc. Please try to use the color, icon, and label to realize the theme.  (5 POINTS). 
+  - The fourth tile set should be a map layer designed over Mapbox. It should embody a map theme relevant to your research interests, which, for instance, could be Black History month, LGBTQ+ Pride, UW, Nature/Environment, etc. Please try to use the color, icon, and label to realize the theme.  (5 POINTS). 
 
 > An example can be found from [here](https://ramouj.github.io/Map-Tile-Generation/index.html). Although the map library of this example is leaflet, but you can refer the map this student has designed as an example. You need to make the maps using Mapbox GS JS.
 
@@ -239,7 +236,7 @@ The structure of this repository should look like:
 [your_repository_name]
     │readme.md
     │index.html
-    ├─tiles
+    ├─assets
     │      [tile sets 1]
     │         XXX
     │         XXX
