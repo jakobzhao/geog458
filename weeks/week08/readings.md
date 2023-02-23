@@ -1,5 +1,6 @@
 **Extended Readings:**
 
+- [Structure-from-motion](https://github.com/jakobzhao/geog595/tree/master/07_vr)
 -  [Anatomy of an AI System](https://anatomyof.ai/) 
 
 _Topic: mapping futures - where are the blank spaces?_
