@@ -2,8 +2,6 @@
 
 **Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu; **Points Available** = 10
 
-After reading this week's paper on topological city (Secor 2012), 
-
 The interactive map of the CHOP (https://hgis.uw.edu/chop) allows users to contribute their personal perspectives to the platform. This method, known as Participatory Mapping, involves using online mapping tools to gather data from non-experts. It can aid different stakeholders to enhance their geospatial databases and can be seen as a way to integrate critical and participatory approaches in GIS. This exercise will give you the chance to experience participatory mapping and consider important factors to keep in mind during development, as well as its potential impact on society. I hope this exercise will inspire you to consider incorporating a participatory mapping component in your future projects.
 
 To earn the extra credit, you can contribute to the  map following these steps:
