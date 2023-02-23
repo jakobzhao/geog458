@@ -149,6 +149,7 @@ This week, we're exploring emerging topics in digital geographies! We'll be focu
 -   **Readings:** a) [Deepfake Geography](https://www.researchgate.net/profile/Chunxue-Xu/publication/351131604_Deep_fake_geography_When_geospatial_data_encounter_Artificial_Intelligence/links/608a48f5a6fdccaebdf4f065/Deep-fake-geography-When-geospatial-data-encounter-Artificial-Intelligence.pdf), and b) [Blockchain and crypto place](https://www.sciencedirect.com/science/article/pii/S0016718520302219/pdfft?isDTMRedir=true&download=true), c) [extended readings](weeks/week08/readings.md).
 -   **Think Piece 8:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773111) `Due: Feb 23, by 11:59pm`
 -   **[Final Project](project/readme.md):** [Project development and identified issues](https://canvas.uw.edu/courses/1612951/assignments/7978347) `Due: Feb. 26th, by 11:59pm`
+-   **Extra Credit**: [Structure From Motion](extracredit/sm.md)
 
 ### Week 9 & 10 : Project studios, presentation and submission.
 
