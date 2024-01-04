@@ -4,27 +4,21 @@
 
 **Meetings:**
 
-*Masks are strongly recommended to protect everyone, especially those whose personal or household situation makes them more vulnerable.*
-
-- **Lectures:** Tuesdays and Thursdays 12:00 PM to 1:20 PM PST at BAG 260
-- **Labs:** Fridays 1:30 PM to 3:20 PM PST at SMI 401
+- **Lectures:** Tuesdays and Thursdays 11:30 PM to 12:50 PM PST at CHL 015
+- **Labs:** Fridays at SMI 401, AA: 1:30 PM to 2:20 PM, AB: 2:30 PM to 3:20 PM
 
 **Personnel:**
 
-- **Bo Zhao**, Instructor, zhaobo@uw.edu | Office Hour: Thursdays 2 to 4 PM by appointment. Make an appointment [here](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI).
+- **Bo Zhao**, Instructor, zhaobo@uw.edu | Office Hour: Thursdays 2:30 to 5 PM by appointment. Make an appointment [here](https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0Jh4b5wVcZtAUS2Z973GLwqA1vgOxlZsAvai4qDgTkroQO0CpEJzYk8xicaKaUI-chESrsNd8G).
 
 
-- **Steven Bao**, Teaching Assistant, bxq98@uw.edu |  Office Hour: Wednesdays 2 to 3 PM at SMI 401. It is recommended to send me an email or canvas message briefly describing your question(s) before your visit, as this will help me provide better answers. If the listed time does not work for you, please also feel free to send me an email/canvas message to schedule for anothe time.
+- **Liz Peng**, Teaching Assistant, lp36@uw.edu |  Office Hour: TBD. It is recommended to send me an email or canvas message briefly describing your question(s) before your visit, as this will help me provide better answers. If the listed time does not work for you, please also feel free to send me an email/canvas message to schedule for another time.
 
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
 
 ## :trumpet: Announcement
 
-- ***1/18/2023:***  Through out the quarter, each group is expected to ask at least 3 questions in total during the Q&A sessions after your classmates presentation. This will count toward your class participation grade.
-
-- ***1/17/2023:*** To help each team brainstorm the final project idea, The instructor will introduce the three formats for your final project in the lecture of Week 3 on Thursday Jan. 19.
-
-- ***1/14/2023:*** Lab 02 has been updated due to changes in Twitter's API, which now only allows elevated accounts to collect recent tweets within the past seven days. Please review the updated lab material for specific changes.
+<!-- - ***MM/YY/2024:*** -->
 
 ![course cover](assets/img/cover.png)
 
@@ -50,20 +44,26 @@ This course is designed to be highly interactive and hands-on. Most of the cours
 
 ## :calendar: Weekly Schedule
 
+### Week 0: Intro to this course
+
+Please attend both the lecture and lab session. The instructor team will walk through the syllabus and lab instructions.
+
+-  **Lecture** [Syllabus](readme.md)
+  
 ### Week 1: Intro to digital geographies
 
-<!-- Jan 2 to Jan 6 -->
+<!-- Jan 8 to Jan 12 -->
 
 Welcome to the beginning of an exciting journey into digital geographies! This week's lecture and lab are designed to set you up for success in the course and provide a solid foundation of theoretical and technical knowledge. Together, we'll work through the syllabus and make sure that you have all the information you need to succeed. To get started, each student is expected to read the Ash et al (2018) paper. After completing Lab 1, you'll be able to clone/synchronize the course material, set up a personal website, and get some hands-on experience using github to manage your digital geographies projects.
 
--   **Lectures:** [Syllabus](readme.md), [Intro to the Web](weeks/week01/intro-web), and [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+-   **Lectures:**  [Intro to the Web](weeks/week01/intro-web), and [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 -   **Readings:** a) [Digital turn, digital geographies?](https://drive.google.com/open?id=14HybNKsIik6oqefSpd-wAsKBF5lScwT_), b) [Humanistic GIS: Towards a research agenda](https://www.tandfonline.com/doi/pdf/10.1080/24694452.2021.2004875),  and c) [extended readings](weeks/week01/readings.md).
--   **Think Piece 1:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773104) `Due: Jan 5th, by 11:59pm`
--   **Lab 1:** [Project management using GitHub](labs/lab01) `Due: Jan 13th, by 11:59pm`
+-   **Think Piece 1:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773104) `Due: Jan 11th, by 11:59pm`
+-   **Lab 1:** [Project management using GitHub](labs/lab01) `Due: Jan 19th, by 11:59pm`
 
 ### Week 2: Programing fundamentals
 
-<!-- Jan 9 to Jan 13 -->
+<!-- Jan 15 to Jan 19 -->
 
 This week is all about mastering the fundamental skills of web programming! We'll start by giving you an overview of the system architecture you'll need to have in place for a successful digital geographies project. From there, we'll guide you through some of the essential front-end fundamentals, including internet basics, HTML, JavaScript, and CSS.
 
@@ -71,12 +71,12 @@ This week will require a lot of self-learning, so be prepared for some fairly le
 
 -   **Lectures:** [System architecture](weeks/week02/architecture), [intro-to-html, css](weeks/week02/html-css) and [javascript](weeks/week02/javascript). [More tutorial on web development fundamentals](weeks/week02/tech-readings.md)
 -   **Readings:**  a) [Introducing Code/Space](https://drive.google.com/file/d/1T7ChuOnaKrgjTVhAeV_Niei2pqCWiiqK/view?usp=sharing), b) [A White Paper on Locational Information and the Public Interest](https://www.aag.org/wp-content/uploads/1900/09/2022-White-Paper-on-Locational-Information-and-the-Public-Interest.pdf), and c) [extended readings](weeks/week02/readings.md).
--   **Think Piece 2:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773105) `Due: Jan 12th, by 11:59pm`
--   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: Jan 22nd, by 11:59pm (Re-submission due Jan 26th by 11:59pm)` If you want to integrate a word cloud to your final project please refer to [this tutorial](troubleshoots/wordcloud/readme.md)
+-   **Think Piece 2:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773105) `Due: Jan 18th, by 11:59pm`
+-   **Lab 2:** [Geo-tagged tweet collection and visualization](labs/lab02) `Due: Jan 28nd, by 11:59pm` If you want to integrate a word cloud to your final project please refer to [this tutorial](troubleshoots/wordcloud/readme.md)
 
-### Week 3 : Geospatial data
+### Week 3: Geospatial data
 
-<!-- Jan 16 to Jan 20 -->
+<!-- Jan 22 to Jan 26 -->
 
 This week, it's all about mastering the art of processing geospatial data for your digital geographies projects! We'll start by introducing you to the structure of the geojson format, and then delve into techniques for collecting, converting, and visualizing geojson objects and features in a web or desktop environment like QGIS.
 
@@ -84,49 +84,49 @@ By the time you complete Lab 2, you'll have learned how to collect geo-tagged tw
 
 -   **Lectures:** [Geospatial data for digital geographies](weeks/week03/readme.md), and [More than you ever wanted to know about GeoJSON](weeks/week03/assets/geojson.pdf)
 -   **Readings:** a) [Stand with #StandingRock: Envisioning an Epistemological Shift in Understanding Geospatial Big Data in the “Post-truth” Era](https://www.researchgate.net/profile/Bo-Zhao-3/publication/343848324_Stand_with_StandingRock_Envisioning_an_Epistemological_Shift_in_Understanding_Geospatial_Big_Data_in_the_Post-truth_Era/links/605aadfa92851cd8ce61ba65/Stand-with-StandingRock-Envisioning-an-Epistemological-Shift-in-Understanding-Geospatial-Big-Data-in-the-Post-truth-Era.pdf), b) [Putting Data back into Context](https://datajournalism.com/read/longreads/putting-data-back-into-context), c) [extended readings](weeks/week03/readings.md).
--   **Think Piece 3:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773106) `Due: Jan 19th, by 11:59pm`
+-   **Think Piece 3:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773106) `Due: Jan 25th, by 11:59pm`
 -   **Presentations**: Tuesday: Standing Rock paper (AA1), Thursday:  [Native Land Digital](https://native-land.ca/) (AA4)
 -   **Extra Credit**: [Participatory Mapping](extracredit/pm.md)
 
-### Week 4 : Web mapping
+### Week 4: Web mapping
 
-<!-- Jan 23 to Jan 27 -->
+<!-- Jan 29 to Feb 2 -->
 
 Get ready to take your web mapping skills to the next level! This week, you'll be creating your first web map of the quarter using the popular library [MapBox](https://www.mapbox.com/mapbox-gljs). In the lecture section, we'll work together to make sure everyone is familiar with the basics of web mapping, and then provide a detailed introduction to the Lab 3 exercise. This is your chance to showcase your skills and bring your digital geographies projects to life with interactive, visually stunning maps. So let's get to work and see what you're capable of – we can't wait to see your creations!
 
 -   **Lectures:** [Making Thematic Maps on the Internet using MapBox](weeks/week04/readme.md)
 -   **Readings:** a) [Digital Mapping and Segregation](https://www.forbes.com/sites/drsarahbond/2017/10/20/how-is-digital-mapping-changing-the-way-we-visualize-racism-and-segregation/#4df35c7d33fa), b) [Hacker Cartography](https://drive.google.com/file/d/1H76GJFXwS5dOPZYyxfyuud0DGQzYGNIr/view?usp=sharing), and c) [extended readings](weeks/week04/readings.md).
--   **Think Piece 4:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773107) `Due: Jan 26th, by 11:59pm`
--   **Lab 3:** [Web map application](labs/lab03) `Due: Feb 5th, by 11:59pm`
+-   **Think Piece 4:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773107) `Due: Feb 1st, by 11:59pm`
+-   **Lab 3:** [Web map application](labs/lab03) `Due: Feb 11th, by 11:59pm`
 -   **Presentations**: Tuesday: Hacker Cartography Paper (AA3), [TweetMap](https://www.heavy.ai/demos/tweetmap) (AB3)
 
-### Week 5 : Map design
+### Week 5: Map design
 
-<!-- Jan 30 to Feb 3, Meeting in Pennsylvania -->
+<!-- Feb 5 to Feb 9  -->
 
 -   **Lectures:** [BaseMap design using Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/), [Mockup for web mapping project](weeks/week05/mockup/readme.md)
 -   **Readings:** a) [MapBox Studio How-to Videos](weeks/week05/readme.md), b) [Topological City](https://drive.google.com/file/d/1090CXt_DTgZUZlKeQmCbTS8e6W7-Btz2/view?usp=share_link), and c) [extended readings](weeks/week05/readings.md).
--   **Think Piece 5:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773108) `Due: Feb 2nd, by 11:59pm`
--   **Lab 4:** [Map Design and Tile Generation](labs/lab04) `Due: Feb 20th, by 11:59pm`
+-   **Think Piece 5:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773108) `Due: Feb 8th, by 11:59pm`
+-   **Lab 4:** [Map Design and Tile Generation](labs/lab04) `Due: Feb 26th, by 11:59pm`
 -   **Presentations**: Tuesday: Topological City (AA5),  Thursday: MapBox Studio How-to Videos (AB2)
--   **[Final Project](project/readme.md):** [Draft project proposal, data sources, and other multimedia](https://canvas.uw.edu/courses/1612951/discussion_topics/7773115) `Due: Feb. 5th 11:59pm`
+-   **[Final Project](project/readme.md):** [Draft project proposal, data sources, and other multimedia](https://canvas.uw.edu/courses/1612951/discussion_topics/7773115) `Due: Feb. 11th 11:59pm`
 -   **Extra Credit 2**: [Imagining Space using stable diffusion model](extracredit/sd.md)
 
-### Week 6 : Smart dashboards
+### Week 6: Smart dashboards
 
-<!-- Feb 6 to Feb 10 -->
+<!-- Feb 12 to Feb 16-->
 
 Smart dashboards are an incredibly powerful tool for visualizing and presenting complex events, particularly in the field of geography. By coordinating multiple visual components like maps, charts, texts, tables, and diagrams, smart dashboards allow you to present a holistic view of a given event in an intuitive and easy-to-understand way. One of the most popular uses for smart dashboards is to visualize the trend of COVID-19(refer to https://hgis.uw.edu/virus), but these powerful tools can be used for all kinds of applications. So get ready to take your data visualization skills to the next level and create stunning, interactive dashboards that will help you tell your story in a way that truly engages and informs your audience.
 
 -   **Lectures:** introduce how to [create a smart dashboard](weeks/week06/readme.md). The instructor wil walk through a smart dashboard illustrating earthquakes in Japan in September 2017 together during the lectures (Check out this dashboard at [here](https://jakobzhao.github.io/geog458/weeks/week06/index.html)). This dashboard is primarily built with a map component and a dynamic chart. This map component is made by MapBox, while the chart was built upon [C3.js](https://c3js.org/examples.html).
 -   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [History of the Urban Dashboard](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/), c) [3 Ways Data Dashboards Can Mislead You](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section), and d) [extended readings](weeks/week06/readings.md).
--   **Think Piece 6:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773109) `Due: Feb 9th by 11:59pm`
+-   **Think Piece 6:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773109) `Due: Feb 15th by 11:59pm`
 -   **Presentations**: Tuesday: [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing) (AA2), Thursday: [Restaurant Complaints in NYC](https://labs.mapbox.com/bites/00304/) (AB4)
--   **[Final Project](project/readme.md):** [Design project prototype & data preparation](https://canvas.uw.edu/courses/1612951/assignments/7978349) `Due: Feb. 12th, by 11:59pm`
+-   **[Final Project](project/readme.md):** [Design project prototype & data preparation](https://canvas.uw.edu/courses/1612951/assignments/7978349) `Due: Feb. 18th, by 11:59pm`
 
-### Week 7 : Geo-Narratives
+### Week 7: Geo-Narratives
 
-<!-- Feb 13 to Feb 17 -->
+<!-- Feb 19 to Feb 23 -->
 
 This week, we're diving into geo-narrative – the use of storytelling in mapping practice. We'll explore this concept by looking at some of the most innovative geo-narrative mapping projects out there and engaging in group discussions and map critiques.
 
@@ -134,30 +134,30 @@ Whether you're an experienced mapmaker or new to the field, this is your chance 
 
 -   **Lectures:** a) [A Geo-Narrative Template](weeks/week07/). Examples: a) [Oregon Atlas](http://oregonwater.info/atlas.html), b) [Stand with #Standing Rock](https://jakobzhao.github.io/standwithstandingrock/)
 -   **Readings:** a) [Planning and outlining your story map](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/sharing-collaboration/planning-and-outlining-your-story-map-how-to-set-yourself-up-for-success/) , b) [Cartographic Design as Visual Storytelling: Synthesis and Review of Map-Based Narratives, Genres, and Tropes](https://drive.google.com/drive/folders/1JoXMil3jC6jAS9gE3K8zeP0NSHyHJkE7), c)[extended readings](weeks/week07/readings.md).
--   **Think Piece 7:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773110) `Due: Feb 16, by 11:59pm`
+-   **Think Piece 7:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773110) `Due: Feb 22, by 11:59pm`
 -   **Presentations**: Tuesday: Planning and outlining your story map (AB1),  Thursday: [A Geo-Narrative Template](weeks/week07/) (AB5)
--   **[Final Project](project/readme.md):** [Proposal revision and pilot study](https://canvas.uw.edu/courses/1612951/assignments/7978348) `Due: Feb. 20th, by 11:59pm`
+-   **[Final Project](project/readme.md):** [Proposal revision and pilot study](https://canvas.uw.edu/courses/1612951/assignments/7978348) `Due: Feb. 26th, by 11:59pm`
 
 
-### Week 8 : Emerging topics
+### Week 8: Emerging topics
 
-<!-- Feb 20 to Feb 24 -->
+<!-- Feb 26 to Mar 1 -->
 
 This week, we're exploring emerging topics in digital geographies! We'll be focusing on two cutting-edge topics – deepfake Geography and crypto place  – and examining their potential as well as the challenges and pitfalls they present. This is your chance to get a glimpse of the future of digital geographies and think about how these technologies will shape the way we understand and interact with the world around us. 
 
 -   **Lectures:** The lecture focuses on the following papers.
 -   **Readings:** a) [Deepfake Geography](https://www.researchgate.net/profile/Chunxue-Xu/publication/351131604_Deep_fake_geography_When_geospatial_data_encounter_Artificial_Intelligence/links/608a48f5a6fdccaebdf4f065/Deep-fake-geography-When-geospatial-data-encounter-Artificial-Intelligence.pdf), and b) [Blockchain and crypto place](https://www.sciencedirect.com/science/article/pii/S0016718520302219/pdfft?isDTMRedir=true&download=true), c) [extended readings](weeks/week08/readings.md).
--   **Think Piece 8:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773111) `Due: Feb 23, by 11:59pm`
--   **[Final Project](project/readme.md):** [Project development and identified issues](https://canvas.uw.edu/courses/1612951/assignments/7978347) `Due: Feb. 26th, by 11:59pm`
+-   **Think Piece 8:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1612951/discussion_topics/7773111) `Due: Feb 29, by 11:59pm`
+-   **[Final Project](project/readme.md):** [Project development and identified issues](https://canvas.uw.edu/courses/1612951/assignments/7978347) `Due: Mar 3rd, by 11:59pm`
 -   **Extra Credit**: [Structure From Motion](extracredit/sm.md)
 
-### Week 9 & 10 : Project studios, presentation and submission.
+### Week 9: Project studios, presentation and submission.
 
-<!-- Feb 27 to Mar 10, Meeting in Arizona --> 
+<!-- Mar 4 to Mar 8 --> 
 
-**It is important that each group meets with their TA at least once during the lab session in Week 9. Therefore, it is crucial that all students participate in the lab sessions during this week.** Additionally, the instructor will be available for virtual meetings during normal lecture and office hours in Weeks 9 and 10 for troubleshooting and to offer assistance with the final projects. These meetings can be accessed via the [Zoom link](https://washington.zoom.us/my/bzhao) provided for lectures and by scheduling an appointment through the designated [link](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI) for office hours. If neither of these time slots is convenient, please contact the instructor to arrange a meeting at a mutually available time.
+**It is important that each group meets with their TA at least once during the lab session in Week 9. Therefore, it is crucial that all students participate in the lab sessions during this week.** Additionally, the instructor will be available for virtual meetings during normal lecture and office hours in Weeks 9 for troubleshooting and to offer assistance with the final projects. These meetings can be accessed via the [Zoom link](https://washington.zoom.us/my/bzhao) provided for lectures and by scheduling an appointment through the designated [link](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI) for office hours. If neither of these time slots is convenient, please contact the instructor to arrange a meeting at a mutually available time.
 
-During these two weeks, each group will focus on their final projects, with the instructor and TAs available to provide support during normal lecture periods, lab sessions, and office hours. Don't hesitate to reach out if you need any help along the way.
+During this week, each group will focus on their final projects, with the instructor and TAs available to provide support during normal lecture periods, lab sessions, and office hours. Don't hesitate to reach out if you need any help along the way.
 
 
 ## :bell: Course Requirement
@@ -184,7 +184,7 @@ During these two weeks, each group will focus on their final projects, with the 
 
 - When preparing an in-class presentation for a digital project, like an interactive map, make sure to cover the main topic and key functions of the project. Also, connect the reading material and your think-piece with the project, for example providing a critical assessment of the use of geospatial data. Additionally, make sure to go into depth about the technical aspects of the project, such as the system architecture and the code.
 
-**Final Project:** will be conducted by a group of 4 to 5 students who are from the same Lab session. It needs to be submitted by `March 6th 11:59pm`. Check out [the detailed requirement for final project](project/readme.md).
+**Final Project:** will be conducted by a group of 4 to 5 students who are from the same Lab session. It needs to be submitted by `March 12th 11:59pm`. Check out [the detailed requirement for final project](project/readme.md).
 
 ## :heavy_check_mark: Grading
 

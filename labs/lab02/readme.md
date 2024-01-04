@@ -395,64 +395,7 @@ files.download(output_file)
 print("the csv has been downloaded to your local computer. The program has been completed successfully.")
 ```
 
-<details><summary><h2><strike>5. Visualizing geo-tagged data using QGIS</strike> (This part is removed from the lab as part 3 is unavailable)</h2></summary>
-
-~~In the previous section, we developed a crawler for geotagged tweets. In this section, we will visualize the collected geotagged tweets data in the previous section using a GIS application `QGIS`. QGIS is a free and open-source cross-platform desktop geographic information system application that supports viewing, editing, and analysis of geospatial data. If you have not downloaded QGIS yet, please download the latest version [here](https://qgis.org/en/site/forusers/download.html).~~
-
-~~Under `lab02/assets` repository, you should have a CSV file named `twsearch-result.csv`. Download this file and store it somewhere that you can find and access easily.~~
-
-~~Now, let's open up your QGIS Desktop. When you first open QGIS, it should look like below. To create a new project, either click on the blank paper icon on the top left or press the shortcut key (Ctrl+N).~~
-
-~~![](img/q_interface.png)~~
-
-~~The first step of mapping our data is to add a base map. A base map is a layer with geographic information that serves as a background. A base map provides context for additional layers that are overlaid on top of the base map. We first need to download a plugin that provides different base maps. After you open a new project in QGIS, navigate yourself to `Plugins > Manage and Install Plugins`. It will open a window like this:~~
-
-~~![](img/plugin_install.png)~~
-
-~~In the search bar, type in `QuickMapServices` and install the plugin. After installing it, close the plugins window. Navigate yourself to `Web > QuickMapServices > Settings`. You should see a page like this:~~
-
-~~![](img/QWS_setting.png)~~
-
-~~Click on the `More Services` tab and click on `Get contributed pack`. This will download all the base maps that are provided by different plugin authors. Then, close the page and navigate yourself again to `Web > QuickMapServices`. This time, you will see a list of contributors and base maps that they provide. Feel free to try adding different base maps, but for our exercise, let's use a base map called `Positron (retina)` under `CartoDB`.~~
-
-~~After adding the base map, it should look like this:~~
-
-~~![](img/basemap.png)~~
-
-~~Now let us project the data we collected to this base map. Click on `Layer > Add Layer`. You will see different ways of adding a layer. In our case, we would like to add data stored in a CSV file, which is a delimited text file. Therefore, choose  `Add Delimited Text Layer`. In the file name section, choose the file we just downloaded from Jupyter Notebook named. Choose CSV as the file format. Expand `Geometry Definition` tab, set the X field as `lng`, and set the Y field as `lat`. Additionally, set Geometry CRS as `Default CRS: EPSG:4326 - WGS 84` and leave everything else as default. Now, go ahead and `add` this layer. All the layers you add to a map can be edited and managed in the `layer` section on bottom-left corner of QGIS interface.~~
-
-~~![](img/layer_section.png)~~
-
-~~After adding the layer, close your data source manager. Zoom in to wherever you chose your target geographical area. Your map should look something similar to this:~~
-
-~~![](img/layer_added.png)~~
-
-~~You can also change the symbology (size, color, etc.) of data points. Left-click on the `tweets` layer and click on `Properties -> Symbology`. Here, not only can you choose the color and size of each data point, you can also edit what shape/symbol to represent each data point. Feel free to change the color/size/symbol here appropriately so that it looks aesthetically pleasing to your audience.~~
-
-~~We can now see geocoded locations where tweets were made, and distribution of the tweets tells us in which geographic areas Twitter is most frequently used. Such a trend gives us further insight when compared with other data. For example, this trend might be a result of the increasing population in the west and east coast.~~
-
-~~Finally, save your map as a `qgz` file. To do so, click on `Project -> Save as` and change the file type to qgz format.~~
-
-> ~~What is QGZ file? QGZ file is a Quantum GIS Compressed Project. Quantum GIS (QGIS) is a cross-platform free and open-source desktop geographic information systems (GIS) application that provides data viewing, editing, and analysis capabilities.~~
-
-~~![](img/save_as.png)~~
-
-~~Additionally, export this map as an image. To do so, `Project -> Import/Export -> Export Map to Image...`.~~
-
-~~![](img/image_export.png)~~
-
-~~You will insert your qgz file and this exported image to your repository later.~~
-
-~~In this section, you have **3 main tasks** to complete:~~
-
-1.  ~~Download the CSV file with Twitter data to your computer.~~
-
-2.  ~~Download `QGIS` and plot the data onto a map.~~
-
-3.  ~~Make any appropriate visual edits to this map. Save it as `qgz` file and export the map as an image.~~
-</details>
-
-## 6. Word cloud analysis
+## 5. Word cloud analysis
 
 A word cloud can visualize the high-frequency terms and map them according to their frequency. It helps to analyze the content of all the collected tweets. There are a few online word cloud generators you can use. In this lab, we use Word Art from https://wordart.com.
 
@@ -475,7 +418,7 @@ In order to reuse the word cloud, you need to download an image of this word clo
 
 A word cloud will help you understand what twitter users have talked during the collecting time period and within the specific crawling geographical region.
 
-## 7. Deliverable
+## 6. Deliverable
 
 For your deliverable, You are expected to walk through this instruction by running the `twsearch.ipynb`script with self-determined parameters.
 
@@ -516,4 +459,4 @@ Here are the grading criteria:
 
 ## Acknowledgement
 
-Thanks Jou Ho and Yuke Cao for their assistance in preparing this lab.
+Thanks Jou Ho, Yuke Cao, and Steven Bao for their assistance in preparing this lab.
