@@ -1,26 +1,11 @@
 **Extended Readings:**
 
-[For geographical imagination systems](https://www.tandfonline.com/doi/pdf/10.1080/24694452.2020.1750941)
+1. Dunn, C. 2007. Participatory GIS: A people’s GIS? Progress in Human Geography 31(5): 617-638.
 
-<!-- _Topic: maps and knowledge, indigenous mapping methods, maps as colonial tools & the construction/ordering of space_
+2. Elwood, S. 2006. Beyond cooptation or resistance: Urban spatial politics, community organizations, and GIS-based spatial narratives. Annals of the Association of American Geographers 96(2): 323-341.
 
--   [Maps Are Territories: Science is an Atlas: DAVID TURNBULL & OTHERS, 1989](http://territories.indigenousknowledge.org/index.html)
+3. Bailey, K. &amp; Grosshardt, T. 2010. Toward Structured Public Involvement: Justice, Geography and Collaborative Geospatial/Geovisual Decision Support Systems, Annals of the Association of American Geographers 100(1): 57-86
 
-_Topic: counter mapping practice_
+4. Bryan, Herlihy, Cruz, &amp; Agnew in Political Geography 29(7): 414-423 (this is a series of four short editorial pieces in response to a 2008/9 conflict over a participatory GIS project in Mexcico. They appear in this order in your course packet)
 
--   [Counter Map Collection: VARIOUS CONTRIBUTORS, 2013](http://countermapcollection.org/collection/)
-
-_Topic: mapping practice & community impact_
-
--   [William Bunge, the DGEI & Radical Cartography: MORRIS & VOYCE, 2015](http://jacket2.org/commentary/william-bunge-dgei-radical-cartography)
-
--   [Mapshop: Learning to Map, Mapping to Learn: BARRETT & WILSON, 2019](http://livingmaps.review/journal/index.php/LMR/article/view/166/306)
-
--  [Intro to Critical Cartography](https://drive.google.com/file/d/1IEz_9J4vH6foIrV36wDoIovOYNomZBWj/view?usp=sharing)
-
-**Supplemental Resources**
-
--   [Base Maps and Invisible Landscapes (Lecture): BILL RANKIN, 2018](https://www.youtube.com/watch?v=_ffKBxwmIKk&ab)
--   [Map Compare: GEOFABRIK TOOLS](https://tools.geofabrik.de/mc/#14/2.7601/32.3076&num=4&mt0=here-satellite&mt1=mapnik&mt2=geofabrik-basic-colour&mt3=mapnik-german)
--   [Fild Papers: STAMEN DESIGNS](http://fieldpapers.org/)
--   [Cartographic Grounds - Projecting the Landscape Imaginary: JILL DESIMINI, 2013](https://placesjournal.org/article/cartographic-grounds-projecting-the-landscape-imaginary/) -->
+5. Lin, W. Forthcoming, 2012. When Web 2.0 meets public participation GIS: Volunteered geographic information and spaces of participatory mapping in China. In Sui, D., Goodchild, M., &amp; Elwood, S. (Eds). Volunteered Geographic Information: New Developments and Applications. Berlin, Springer.
