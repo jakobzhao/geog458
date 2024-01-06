@@ -1,4 +1,4 @@
-# Lab 2: Geo-tagged tweet collection and visualization
+# Lab 2: Web data collection and visualization
 
 **Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu; **Points Available** = 50
 
