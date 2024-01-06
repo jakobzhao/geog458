@@ -12,7 +12,7 @@
 - **Bo Zhao**, Instructor, zhaobo@uw.edu | Office Hour: Thursdays 2:30 to 5 PM by appointment. Make an appointment [here](https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0Jh4b5wVcZtAUS2Z973GLwqA1vgOxlZsAvai4qDgTkroQO0CpEJzYk8xicaKaUI-chESrsNd8G).
 
 
-- **Liz Peng**, Teaching Assistant, lp36@uw.edu |  Office Hour: TBD. It is recommended to send me an email or canvas message briefly describing your question(s) before your visit, as this will help me provide better answers. If the listed time does not work for you, please also feel free to send me an email/canvas message to schedule for another time.
+- **Liz Peng**, Teaching Assistant, lp36@uw.edu |  Office Hour: Tuesdays 2:30 to 4:30 in SMI 430. It is recommended to send me an email or canvas message briefly describing your question(s) before your visit, as this will help me provide better answers. If the listed time does not work for you, please also feel free to send me an email/canvas message to schedule for another time.
 
 > _This web page is the syllabus - There is no printed version, please refer here instead. Make sure refer to this page as often as possible. Also, Feel free to ask the instructor for clarifications whenever needed._
 
@@ -48,7 +48,7 @@ This course is designed to be highly interactive and hands-on. Most of the cours
 
 Please attend both the lecture and lab session. The instructor team will walk through the syllabus and lab instructions.
 
--  **Lecture** [Syllabus](readme.md)
+-  **Lecture:** [Syllabus](readme.md)
   
 ### Week 1: Intro to digital geographies
 
@@ -176,7 +176,7 @@ During this week, each group will focus on their final projects, with the instru
 
 **Labs:** You need to finish all four labs by the due date. In order to help you work on each lab, we will walk through most of the labs in lab sections.
 
-**Think Pieces:** for week 1 to 8, there will be weekly reading assignments. To evaluate your reflection upon each week's reading material, we set up a discussion board for each week. You need to submit at least think pieces to **4** out of the 8 weeks' discussion topics. We will review them all, but only the four with hightest scores will be counted towards your final grade. Your think pieces should be completed by Thursday @ 11:59 pm for the weeks you are submitting a piece. **All the 4 think pieces must be submitted by the end of Week 8**. Your think pieces should be at least 350 words and engage substantially with the reading materials, and connections to the lab assignments and lectures. **The focus of your discussion should be the main readings**, as the extended readings are for your further interests. Guiding questions or prompts will be included in each week's discussion section on canvas to help frame your thinking. Submit your think pieces on Canvas in the applicable week's discussion section (https://canvas.uw.edu/courses/1434645/discussion_topics).
+**Think Pieces:** for week 1 to 8, there will be weekly reading assignments. To evaluate your reflection upon each week's reading material, we set up a discussion board for each week. You need to submit at least think pieces to **4** out of the 8 weeks' discussion topics. We will review them all, but only the four with hightest scores will be counted towards your final grade. Your think pieces should be completed by Thursday @ 11:59 pm for the weeks you are submitting a piece. **All the 4 think pieces must be submitted by the end of Week 8**. Your think pieces should be at least 350 words and engage substantially with the reading materials, and connections to the lab assignments and lectures. **The focus of your discussion should be the main readings**, as the extended readings are for your further interests. Guiding questions or prompts will be included in each week's discussion section on canvas to help frame your thinking. Submit your think pieces on Canvas in the applicable week's discussion section.
 
 **Participation:** Complete all assigned readings and get familiar with the lab instructions before class meetings, and actively participate in critical discussions of those readings. You should have completed all of the weekly readings before the Thursday lectures as we will discuss and engage with the required readings. What's more, **Through out the quarter, each group is expected to ask at least 3 questions in total during the Q&A sessions after your classmates presentation. This will count toward your class participation grade.**
 
