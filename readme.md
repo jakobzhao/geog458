@@ -61,7 +61,7 @@ Welcome to the beginning of an exciting journey into digital geographies! This w
 -   **Think Piece 1:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1696704/discussion_topics/8613877) `Due: Jan 11th, by 11:59pm`
 -   **Lab 1:** [Project management using GitHub](labs/lab01) `Due: Jan 19th, by 11:59pm`
 
-### Week 2: Programing fundamentals
+### Week 2: Coding fundamentals
 
 <!-- Jan 15 to Jan 19 -->
 
@@ -111,7 +111,7 @@ Get ready to take your web mapping skills to the next level! This week, you'll b
 -   **Lectures:** []
 -   **Readings:** a) [Participatory GIS - a people's GIS?](https://drive.google.com/file/d/1e31D5WlDuSwfGPrNJFoFKQKLpfe3_dWW/view?usp=sharing) b) [When Web 2.0 meets PPGIS](https://drive.google.com/file/d/1ZP5sC_s3ncdWCqadPIwq60hK6rtRF1-_/view?usp=sharing), and c) [extended readings](weeks/week05/readings.md).
 -   **Think Piece 5:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1696704/discussion_topics/8613873) `Due: Feb 8th, by 11:59pm`
--   **Lab 5:** [Participatory Online Map Application](labs/lab04) `Due: Feb 26th, by 11:59pm`
+-   **Lab 5:** [Participatory Online Map Application](labs/lab05) `Due: Feb 26th, by 11:59pm`
 
 -   **[Final Project Checkpoint](project/readme.md):** [Draft project proposal, data sources, and other multimedia](https://canvas.uw.edu/courses/1612951/discussion_topics/7773115) `Due: Feb. 11th 11:59pm`
 
@@ -121,12 +121,11 @@ Get ready to take your web mapping skills to the next level! This week, you'll b
 
 Smart dashboards are an incredibly powerful tool for visualizing and presenting complex events, particularly in the field of geography. By coordinating multiple visual components like maps, charts, texts, tables, and diagrams, smart dashboards allow you to present a holistic view of a given event in an intuitive and easy-to-understand way. One of the most popular uses for smart dashboards is to visualize the trend of COVID-19(refer to https://hgis.uw.edu/virus), but these powerful tools can be used for all kinds of applications. So get ready to take your data visualization skills to the next level and create stunning, interactive dashboards that will help you tell your story in a way that truly engages and informs your audience.
 
-
 -   **Presentations**: Tuesday: [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing) (AA2), Thursday: [Restaurant Complaints in NYC](https://labs.mapbox.com/bites/00304/) (AB4)
 -   **Lectures:** introduce how to [create a smart dashboard](weeks/week06/readme.md). The instructor wil walk through a smart dashboard illustrating earthquakes in Japan in September 2017 together during the lectures (Check out this dashboard at [here](https://jakobzhao.github.io/geog458/weeks/week06/index.html)). This dashboard is primarily built with a map component and a dynamic chart. This map component is made by MapBox, while the chart was built upon [C3.js](https://c3js.org/examples.html).
--   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [History of the Urban Dashboard](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/), c) [3 Ways Data Dashboards Can Mislead You](https://hbr.org/2017/01/3-ways-data-dashboards-can-mislead-you#comment-section), and d) [extended readings](weeks/week06/readings.md).
+-   **Readings:** a) [The praxis and politics of building urban dashboards](https://drive.google.com/file/d/1l3V1drqXMxn9rib7nTuDtxJC5YcWL0pY/view?usp=sharing), b) [History of the Urban Dashboard](https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/), and c) [extended readings](weeks/week06/readings.md).
 -   **Think Piece 6:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1696704/discussion_topics/8613872) `Due: Feb 15th by 11:59pm`
--  **Lab 6:** [Smart Dashboard Application](labs/lab04) `Due: Feb 26th, by 11:59pm`
+-  **Lab 6:** [Smart Dashboard Application](labs/lab06) `Due: Feb 26th, by 11:59pm`
 
 -   **[Final Project Checkpoint](project/readme.md):** [Design project prototype & data preparation](https://canvas.uw.edu/courses/1612951/assignments/7978349) `Due: Feb. 18th, by 11:59pm`
 
@@ -143,7 +142,7 @@ Whether you're an experienced mapmaker or new to the field, this is your chance 
 -   **Lectures:** a) [A Geo-Narrative Template](weeks/week07/). Examples: a) [Oregon Atlas](http://oregonwater.info/atlas.html), b) [Stand with #Standing Rock](https://jakobzhao.github.io/standwithstandingrock/)
 -   **Readings:** a) [Planning and outlining your story map](https://www.esri.com/arcgis-blog/products/arcgis-storymaps/sharing-collaboration/planning-and-outlining-your-story-map-how-to-set-yourself-up-for-success/) , b) [Cartographic Design as Visual Storytelling: Synthesis and Review of Map-Based Narratives, Genres, and Tropes](https://drive.google.com/drive/folders/1JoXMil3jC6jAS9gE3K8zeP0NSHyHJkE7), c)[extended readings](weeks/week07/readings.md).
 -   **Think Piece 7:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1696704/discussion_topics/8613871) `Due: Feb 22, by 11:59pm`
--  **Lab 7:** [Making a Map-based Storytelling Application](labs/lab04) `Due: Feb 26th, by 11:59pm`
+-  **Lab 7:** [Making a Map-based Storytelling Application](labs/lab07) `Due: Feb 26th, by 11:59pm`
 
 -   **[Final Project Checkpoint](project/readme.md):** [Proposal revision and pilot study](https://canvas.uw.edu/courses/1612951/assignments/7978348) `Due: Feb. 26th, by 11:59pm`
 
@@ -183,7 +182,7 @@ During this week, each group will focus on their final projects, with the instru
 
 **GitHub:** The course material will be hosted on GitHub instead of UW Canvas. On this dedicated GitHub repository, you can find most of the course material, participate in group discussions by submitting GitHub issues, and create new GitHub repositories to turn in the lab deliverables. By the end of this quarter, you will be more proficient in operating a cloud-based coding environment and able to host your work online as a way to gain public and peer attentions.
 
-**Labs:** You need to finish all four labs by the due date. In order to help you work on each lab, we will walk through most of the labs in lab sections.
+**Labs:** You need to finish Lab 1, 2, 3, and 4. Then, finish either of Lab 5, 6, and 7. So, you will finish 5 labs in total. 
 
 **Think Pieces:** for week 1 to 8, there will be weekly reading assignments. To evaluate your reflection upon each week's reading material, we set up a discussion board for each week. You need to submit at least think pieces to **4** out of the 8 weeks' discussion topics. We will review them all, but only the four with hightest scores will be counted towards your final grade. Your think pieces should be completed by Thursday @ 11:59 pm for the weeks you are submitting a piece. **All the 4 think pieces must be submitted by the end of Week 8**. Your think pieces should be at least 350 words and engage substantially with the reading materials, and connections to the lab assignments and lectures. **The focus of your discussion should be the main readings**, as the extended readings are for your further interests. Guiding questions or prompts will be included in each week's discussion section on canvas to help frame your thinking. Submit your think pieces on Canvas in the applicable week's discussion section.
 
