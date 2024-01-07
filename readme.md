@@ -22,9 +22,9 @@
 
 ![course cover](assets/img/cover.png)
 
-Join us on a journey into the dynamic world of digital geographies! This course is designed to equip students with the technical skills that are in high demand in emerging job markets, while also providing a unique opportunity to explore the latest emerging digital methods and technologies. By building holistic solutions to real-world problems and critically analyzing their social implications, students will be well-prepared to tackle the challenges of the digital age. Through a full range of theoretical perspectives and practical exercises, students will learn everything from geospatial project management using GitHub to online geovisualization. Along the way, they will delve into a series of geospatial data operations and analyses, such as acquiring online data (e.g., geo-tagged tweets), geocoding, and performing geospatial analyses. With a brief introduction to web programming basics (e.g., JavaScript, HTML, and CSS), students will even learn how to visualize and narrate geographic phenomena online.
+Join us on a journey into the dynamic world of digital geographies! This course is designed to equip students with the technical skills that are in high demand in emerging job markets, while also providing a unique opportunity to explore the latest emerging digital methods and technologies. By building holistic solutions to real-world problems and critically analyzing their social implications, students will be well-prepared to tackle the challenges of the digital age. Through a full range of theoretical perspectives and practical exercises, students will learn everything from geospatial project management using GitHub to online geovisualization. Along the way, they will delve into a series of geospatial data operations and analyses, such as acquiring online data (e.g., youtube data), geocoding, and performing geospatial analyses. With a brief introduction to web programming basics (e.g., JavaScript, HTML, and CSS), students will even learn how to visualize and narrate geographic phenomena online.
 
-But that's not all! This course will also introduce students to a range of state-of-the-art approaches and applications in digital geographies, such as collecting aerial imagery and point clouds using UAVs or LiDAR, and storing real-time data from environmental sensors. As we approach the end of the quarter, we'll delve into newly emerged issues in digital geographies, such as the problematic use of artificial intelligence and the role of blockchain in geospatial contexts. By the end of this course, students will not only have mastered a range of technical skills that are important to many emerging jobs, but also honed their critical intellectual visions on the social implications of these applied techniques.
+But that's not all! This course will also introduce students to a range of state-of-the-art approaches and applications in digital geographies, such as participatory GIS, smart dashboard and geo-narrative. As we approach the end of the quarter, we'll delve into newly emerged issues in digital geographies, such as the problematic use of artificial intelligence and the role of blockchain in geospatial contexts. By the end of this course, students will not only have mastered a range of technical skills that are important to many emerging jobs, but also honed their critical intellectual visions on the social implications of these applied techniques.
 
 This course is designed to be highly interactive and hands-on. Most of the course time will be spent in a hybrid lecture/lab setting, where students will have the opportunity to work together and apply their knowledge in a practical setting. While there will be some individual written reflections and analyses, there will not be a formal final exam. Instead, students will be tasked with completing a final project that allows them to develop a holistic solution to a real-world problem. Upon completion of the course, each student will have the opportunity to share their course work on a self-made website, which will be publicly accessible to classmates, the open-source community, and potential industrial recruiters. In addition to practical skills, students will also be exposed to a range of applied and theoretical readings. These readings will cover both the technical aspects of programming and visualization, as well as critical social theory, providing students with a well-rounded understanding of the field and helping them to make informed, effective, and inclusive decisions in today's data-intensive geographic world. By the end of the course, students will have gained a wealth of knowledge and practical experience that will set them up for success in their future endeavors.
 
@@ -80,9 +80,7 @@ This week will require a lot of self-learning, so be prepared for some fairly le
 
 <!-- Jan 22 to Jan 26 -->
 
-This week, it's all about mastering the art of processing geospatial data for your digital geographies projects! We'll start by introducing you to the structure of the geojson format, and then delve into techniques for collecting, converting, and visualizing geojson objects and features in a web or desktop environment like QGIS.
-
-Get ready to take your web mapping skills to the next level! This week, you'll be creating your first web map of the quarter using the popular library [MapBox](https://www.mapbox.com/mapbox-gljs). In the lecture section, we'll work together to make sure everyone is familiar with the basics of web mapping, and then provide a detailed introduction to the Lab 3 exercise. This is your chance to showcase your skills and bring your digital geographies projects to life with interactive, visually stunning maps. So let's get to work and see what you're capable of – we can't wait to see your creations!
+This week, it's all about mastering the art of processing geospatial data for your digital geographies projects! We'll start by introducing you to the structure of the geojson format, and then delve into techniques for collecting, converting, and visualizing geojson objects and features in a web or desktop environment like QGIS. Also, please get ready to take your web mapping skills to the next level! Also, in the lab section, we will introduce how to create your first web map of the quarter using the popular library [MapBox](https://www.mapbox.com/mapbox-gljs). 
 
 
 -   **Presentations**: Tuesday: Standing Rock paper (AA1), Thursday:  [Native Land Digital](https://native-land.ca/) (AA4)
@@ -96,6 +94,8 @@ Get ready to take your web mapping skills to the next level! This week, you'll b
 
 <!-- Jan 29 to Feb 2 -->
 
+In the lecture section, we'll work together to make sure everyone is familiar with the basics of web mapping, and then provide a detailed introduction to the Lab 4 exercise. This is your chance to showcase your skills and bring your digital geographies projects to life with interactive, visually stunning maps. So let's get to work and see what you're capable of – we can't wait to see your creations!
+
 -   **Presentations**: Tuesday: Hacker Cartography Paper (AA3), [TweetMap](https://www.heavy.ai/demos/tweetmap) (AB3)
 -   **Lectures:** [BaseMap design using Mapbox Studio](https://docs.mapbox.com/studio-manual/overview/), [Mockup for web mapping project](weeks/week04/mockup/readme.md), and [MapBox Studio How-to Videos](weeks/week05/readme.md).
 -   **Readings:** a) [Digital Mapping and Segregation](https://www.forbes.com/sites/drsarahbond/2017/10/20/how-is-digital-mapping-changing-the-way-we-visualize-racism-and-segregation/#4df35c7d33fa), b) [Hacker Cartography](https://drive.google.com/file/d/1H76GJFXwS5dOPZYyxfyuud0DGQzYGNIr/view?usp=sharing), and c) [extended readings](weeks/week04/readings.md).
@@ -106,9 +106,10 @@ Get ready to take your web mapping skills to the next level! This week, you'll b
 ### Week 5: Participatory GIS
 
 <!-- Feb 5 to Feb 9  -->
+This week, we shift our focus to the concept of Participatory GIS, a pivotal area that intertwines the technological aspects of geographic information systems with the human elements of participation and community engagement. Participatory GIS emphasizes the involvement and perspectives of local communities, empowering individuals to contribute to the mapping and analysis of their own environments. It’s a unique blend of technology and sociology, where maps become tools for social change and community development.
 
 -   **Presentations**: Tuesday: A People's GIS? (AA5),  Thursday: [Queering The Map](https://www.queeringthemap.com) (AB5)
--   **Lectures:** []
+-   **Lectures:** introduces how to make a [Participatory mapping project](https://github.com/jakobzhao/participatory-mapping). You will need to register a Heroku account and deploy your web mapping application to Heroku.
 -   **Readings:** a) [Participatory GIS - a people's GIS?](https://drive.google.com/file/d/1e31D5WlDuSwfGPrNJFoFKQKLpfe3_dWW/view?usp=sharing) b) [When Web 2.0 meets PPGIS](https://drive.google.com/file/d/1ZP5sC_s3ncdWCqadPIwq60hK6rtRF1-_/view?usp=sharing), and c) [extended readings](weeks/week05/readings.md).
 -   **Think Piece 5:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1696704/discussion_topics/8613873) `Due: Feb 8th, by 11:59pm`
 -   **Lab 5:** [Participatory Online Map Application](labs/lab05) `Due: Feb 26th, by 11:59pm`
@@ -133,9 +134,7 @@ Smart dashboards are an incredibly powerful tool for visualizing and presenting 
 
 <!-- Feb 19 to Feb 23 -->
 
-This week, we're diving into geo-narrative – the use of storytelling in mapping practice. We'll explore this concept by looking at some of the most innovative geo-narrative mapping projects out there and engaging in group discussions and map critiques.
-
-Whether you're an experienced mapmaker or new to the field, this is your chance to push the boundaries of what's possible with maps and create truly immersive, interactive stories that engage and inform your audience.
+This week, we're diving into geo-narrative – the use of storytelling in mapping practice. We'll explore this concept by looking at some of the most innovative geo-narrative mapping projects out there and engaging in group discussions and map critiques. Whether you're an experienced mapmaker or new to the field, this is your chance to push the boundaries of what's possible with maps and create truly immersive, interactive stories that engage and inform your audience.
 
 
 -   **Presentations**: Tuesday: Planning and outlining your story map (AB1),  Thursday: [A Geo-Narrative Template](weeks/week07/) (AB5)

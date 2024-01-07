@@ -2,237 +2,258 @@
 
 **Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu; **Points Available** = 50
 
-The earliest web maps were typically drawn on the fly by the server, no matter how many layers were available or requested. As you may have noticed, **the symbol sets and labeling choices for this type of map are relatively limited and complex to work with**. In fact, for many years, web cartographers had to build a map with minimal layer set and simple symbols to avoid hampering performance. In many cases, a cartographer was not even involved; instead, the web map was made by a server administrator tweaking SLD files that defined the layer order, symbol sizes, and so forth. This was the case with both open specification web services (like WMS) and proprietary web services (like Esri ArcIMS).
+In this lab, please walk through the [Participatory mapping project](https://github.com/jakobzhao/participatory-mapping) tutorial. This tutorial helps geographers to create their own participatory mapping project. It offers a map demo (https://jakobzhao.github.io/participatory-mapping/, see figure 1) and a detailed instruction on how to create it. This map demo enables its users to contribute their local knowledge by clicking on a map, inputting their information, and viewing their input represented as a red dot. Existing contributions can also be viewed in a similar manner on the map. While this minimum viable map only offers essential functionality, it can be tailored or expanded to suit different participatory mapping initiatives. This approach can be particularly beneficial for digital geographers who want to kick-start their own participatory mapping projects.
 
-In the mid-2000s, after Google Maps, Microsoft Virtual Earth (now Bing Maps), and other popular mapping applications hit the web, **people started to realize that maybe they didn't need the ability to tinker with the properties of every single layer**. These providers had started fusing their vector layers together in a single rasterized image that was divided into 256 x 256 pixel images, or tiles. These tiles were pregenerated and stored on disk for rapid distribution to clients. This was done out of necessity to support hundreds or thousands of simultaneous users, a burden too great for drawing the maps on the fly.
-
-The figure below shows how a tiled map consists of a "pyramid" of images covering the extent of the map across various scales. Tiled maps typically come with a level, row, and column numbering scheme that can be shared across caches to make sure that tile boundaries match up if you are overlaying two tile sets.
-
-![ Tile Pyramid](img/tile_pyramid.png)
-
-> Tiled web maps take the form of a pyramid where the map is drawn at a progressive series of scale levels, with the smallest (zoomed out) scales using fewer tiles.
-
-Cartographers loved the tiled maps, because now they could invest all the tools of their trade into making an aesthetically pleasing web map without worrying about performance. Once you had created the tiles, you just had a set of images sitting on disk, and the server could retrieve a beautiful image just as fast as it could retrieve an ugly one. And because the tiled map images could be distributed so quickly by a web server, Google and others were able to retrieve the tiles with no page blink as people panned.
-
-Within a year or two of Google Maps' release, commercial GIS software began offering the ability to build map tiles. For many, ArcGIS Server was desirable because the map could be authored using the mature map authoring tools in ArcMap; however, cost was a concern for some. [Arc2Earth](https://www.arc2earth.com/) was another commercial alternative. The free and open source [Mapnik](http://mapnik.org/) library could also build tiles, but it wasn't until recent years that projects like [TileMill](https://tilemill-project.github.io/tilemill/) wrapped a user-friendly GUI around Mapnik.
-
-![ Tiles from OpenStreetMap data, rendered by MapQuest](img/tiled_map.jpg)
-
-> Credit: Tiles from OpenStreetMap data, rendered by MapQuest
-
-Tiled maps were the only model that could reasonably work for serving complex web maps to thousands of simultaneous users. However, they eliminated the ability for users to change layer order or symbols. People started working around this by serving out their general-purpose basemap layers as tiles and then overlaying a separate layer with thematic information. The general-purpose basemap tiles could be re-used in many applications. The thematic layers could also be tiled if the data did not change too quickly or cover too broad an area at large scales. For example, if you examine Google Maps with a developer tool, you will see that the basemap and the thematic layers (such as Panoramio photographs) are both retrieved as tiles.
-
-![ Photos appearing as tiles in Google Maps](img/google_photo_tiles.png)
-
-> The thematic layer of Panoramio photos is brought into Google Maps as predrawn tiles. This is evident when viewing the layer in Firebug.
-
-## 2. Bing Tile System
-
-The tile system of Microsoft Bing map is one of the earliest map tile system. To illustrate how the tile system work, I will focus on the Bing Tile system in this section. Bing Maps provides a world map that users can directly manipulate to pan and zoom. To make this interaction as fast and responsive as possible, Bing chose to pre-render the map at many different levels of detail, and to cut each map into tiles for quick retrieval and display. This section describes the projection, coordinate systems, and addressing scheme of the map tiles, which collectively are called the Bing Maps Tile System.
-
-### 2.1 Map Projection
-
-To make the map seamless, and to ensure that aerial images from different sources line up properly, we have to use a single projection for the entire world. We chose to use the **Mercator projection**, which looks like this:
-
-![img](img/bing_overview.png)
-
-Although the Mercator projection significantly distorts scale and area (particularly near the poles), it has two important properties that outweigh the scale distortion:
-
-1.  It’s a **conformal** projection, which means that it preserves the shape of relatively small objects. **This is especially important when showing aerial imagery**, because we want to avoid distorting the shape of buildings. Square buildings should appear square, not rectangular.
-2.  It’s a **cylindrical** projection, which means that **north and south** are always straight up and down, and west and east are always straight left and right.
-
-Since the Mercator projection goes to infinity at the poles, it doesn’t actually show the entire world. Using a square aspect ratio for the map, the maximum latitude shown is approximately 85.05 degrees.
-
-To simplify the calculations, we use the spherical form of this projection, not the ellipsoidal form. Since the projection is used only for map display, and not for displaying numeric coordinates, we don’t need the extra precision of an ellipsoidal projection. The spherical projection causes approximately 0.33% scale distortion in the Y direction, which is not visually noticeable.
-
-### 2.2 Ground resolution and map scale
-
-In addition to the projection, the ground resolution or map scale must be specified in order to render a map. At the lowest level of detail `Level 1`, the map is 512 x 512 pixels. At each successive level of detail, the map width and height grow by a factor of 2: Level 2 is 1024 x 1024 pixels, Level 3 is 2048 x 2048 pixels, Level 4 is 4096 x 4096 pixels, and so on. In general, the width and height of the map (in pixels) can be calculated as:
-
-$$
-map width = map height = 256 * 2^m pixels
-$$
-
-The **ground resolution** indicates the distance on the ground that’s represented by a single pixel in the map. For example, at a ground resolution of 10 meters/pixel, each pixel represents a ground distance of 10 meters. The ground resolution varies depending on the level of detail and the latitude at which it’s measured. Using an earth radius of 6,378,137 meters, the ground resolution (in meters per pixel) can be calculated as:
-
-$$
-ground resolution = cos(latitude * pi/180) * earth circumference / map width = (cos(latitude * pi/180) * 2 * pi * 6378137 meters) / (256 * 2^m pixels)
-$$
-
-The **map scale** indicates the ratio between map distance and ground distance, when measured in the same units. For instance, at a map scale of 1 : 100,000, each inch on the map represents a ground distance of 100,000 inches. Like the ground resolution, the map scale varies with the level of detail and the latitude of measurement. It can be calculated from the ground resolution as follows, given the screen resolution in dots per inch, **typically 96 dpi**:
-
-$$
-map scale = 1 : ground resolution * screen dpi / 0.0254 meters/inch  = 1 : (cos(latitude * pi/180) * 2 * pi * 6378137 * screen dpi) / (256 * 2^m * 0.0254)
-$$
+This lab will be an opportunity to make a template for your final project of this course.
 
 
 
-This table shows each of these values at each level of detail, **as measured at the Equator**. (Note that the ground resolution and map scale also vary with the latitude, as shown in the equations above, but not shown in the table below.)
 
-| **Level of Detail** | **Map Width and Height (pixels)** | **Ground Resolution (meters / pixel)** | **Map Scale(at 96 dpi)** |
-| ------------------: | --------------------------------: | -------------------------------------: | :----------------------- |
-|                   1 |                               512 |                            78,271.5170 | 1 : 295,829,355.45       |
-|                   2 |                             1,024 |                            39,135.7585 | 1 : 147,914,677.73       |
-|                   3 |                             2,048 |                            19,567.8792 | 1 : 73,957,338.86        |
-|                   4 |                             4,096 |                             9,783.9396 | 1 : 36,978,669.43        |
-|                   5 |                             8,192 |                             4,891.9698 | 1 : 18,489,334.72        |
-|                   6 |                            16,384 |                             2,445.9849 | 1 : 9,244,667.36         |
-|                   7 |                            32,768 |                             1,222.9925 | 1 : 4,622,333.68         |
-|                   8 |                            65,536 |                               611.4962 | 1 : 2,311,166.84         |
-|                   9 |                           131,072 |                               305.7481 | 1 : 1,155,583.42         |
-|                  10 |                           262,144 |                               152.8741 | 1 : 577,791.71           |
-|                  11 |                           524,288 |                                76.4370 | 1 : 288,895.85           |
-|                  12 |                         1,048,576 |                                38.2185 | 1 : 144,447.93           |
-|                  13 |                         2,097,152 |                                19.1093 | 1 : 72,223.96            |
-|                  14 |                         4,194,304 |                                 9.5546 | 1 : 36,111.98            |
-|                  15 |                         8,388,608 |                                 4.7773 | 1 : 18,055.99            |
-|                  16 |                        16,777,216 |                                 2.3887 | 1 : 9,028.00             |
-|                  17 |                        33,554,432 |                                 1.1943 | 1 : 4,514.00             |
-|                  18 |                        67,108,864 |                                 0.5972 | 1 : 2,257.00             |
-|                  19 |                       134,217,728 |                                 0.2986 | 1 : 1,128.50             |
-|                  20 |                       268,435,456 |                                 0.1493 | 1 : 564.25               |
-|                  21 |                       536,870,912 |                                 0.0746 | 1 : 282.12               |
-|                  22 |                     1,073,741,824 |                                 0.0373 | 1 : 141.06               |
-|                  23 |                     2,147,483,648 |                                 0.0187 | 1 : 70.53                |
+Creating Your Own Participatory Mapping Project: A Guide
+Bo Zhao | Department of Geography | University of Washington
+
+First release: June 17th, 2023 | Last Update: June 23th, 2023
+
+Cite this work: Zhao, Bo, 2023, "Crafting Your Own Participatory Mapping Project: A Guide", https://doi.org/10.7910/DVN/VSND2H, Harvard Dataverse, V1
+
+Participatory mapping, also known as community-based mapping, is a general term that refers to the process of creating maps by, for, or with local communities. It allows local communities to represent their own perceptions, knowledge, and experiences about their environment. These maps can be used for a variety of purposes, such as natural resource management, land use planning, advocacy for land rights, counter-mapping, etc. Examples include Shifting LGBTQ+ Spaces, Archiving the CHOP, and Queering the Map.
+
+This tutorial helps geographers to create their own participatory mapping project. It offers a map demo (https://jakobzhao.github.io/participatory-mapping/, see figure 1) and a detailed instruction on how to create it. This map demo enables its users to contribute their local knowledge by clicking on a map, inputting their information, and viewing their input represented as a red dot. Existing contributions can also be viewed in a similar manner on the map. While this minimum viable map only offers essential functionality, it can be tailored or expanded to suit different participatory mapping initiatives. This approach can be particularly beneficial for digital geographers who want to kick-start their own participatory mapping projects.
 
 
-## 3 Generating Tiles in QGIS
 
-In this section we will introduce how to load online map service as a map layer, and then convert the map layer as a tileset in QGIS 3. To do this, you need to install the QGIS plugin `QMetaTiles`.
+Figure 1. the screenshot of the minimum viable participatory mapping tool
 
-To install the `QMetaTiles` Plugin, you need to click on `Plugins` on the main menu bar, and then `Manage and Install Plugins`. Then search for `QMetaTiles` and install the plugin. **For some version of QGIS, there is no plugin named `QMetaTiles`, Instead, you can use `QTiles`.**
+Here are a few prerequisites to follow this tutorial. Again, you do not need to be an expert, but you should be able to follow the instructions in this tutorial. You should have:
 
-Once you have the map layer or layer group ready, please change the displaying projection to **Pseudo Mercator**, the epsg code is 3857. It is because most web maps are projected in the Pseudo Mercator. If you want to overlay any tiles with other external map services, you need to make sure all the displaying map layers are in the same projection.
+A basic understanding of HTML, CSS, and JavaScript,
+Familiarity with the command line, Node.js, and the PostgreSQL database
+Some experience with open source web mapping, and
+Accounts on Github and Heroku, and be willing to pay $20 for the Heroku service.
+If you are not familiar with these topics, you can find many tutorials online. For example, W3Schools provides a comprehensive introduction to HTML, CSS, and JavaScript. The Command Line Crash Course is a good place to start learning the command line. The Node.js Tutorial is a good place to start learning Node.js. The PostgreSQL Tutorial is a good place to start learning PostgreSQL. The MapLibre GL JS Docs is a good place to start learning Leaflet. The Github Tutorial is a good place to start learning Github. The Heroku Tutorial is a good place to start learning Heroku. If you believe you are ready, let's get started!
 
-![](img/projection.png)
+2. Fork the repository
+Here's a beginner-friendly overview on how to fork the repository at https://github.com/jakobzhao/participatory-mapping under your own account, and rename it to anything you want. This is the first step to create your own participatory mapping project.
 
-### 3.1 Load a Map Layer from Mapbox Studio
-
-You can load individual map layers from Mapbox Studio styles. What's more, you can even make a layer group that is made up by several different layers. This section will walkthrough how to read map layers from Mapbox's Tile Services.
-
-![](img/wmts.png)
-
-If you need a guide to make your own MapBox maplayer, you can refer to [this Mapbox Studio Guide](https://docs.mapbox.com/studio-manual/overview/). After creating your own map, open the browser panel in QGIS. Scroll Down to the **'WMS/WMTS'**, right click, and click **'New Connection'**. A pop-up window should appear.
-
-![](img/new-connection.png)
-
-Here, you can make a new connection to basemaps by providing the URL. In order to obtain the URL to your mapbox basemap, click `share` located next to your map on MapBox Studio:
-
-![](img/mapbox_url.png)
-
-Make sure you pick Third party option and copy the Integration URL of `WMTS` like the example above. After establishing the connection, you should be able to add your basemap by double-clicking the newly created connection.
-
-Zoom into your tiles so that they fill most of the canvas space. **The canvas extent is the extent we will use to generate QMetaTiles.**
-
-### 3.3 Generating Tiles by QMetaTiles (or QTiles)
-
-Click the Plugins drop down, hover over QMetaTiles to open the menu and select it. The QMetaTiles screen pops up. **For some version of QGIS, there is no plugin named QMetaTiles, Instead, you can use QTiles.** Name the directory where you want to save your tiles and provide a name for the Tileset. Select Canvas Extent and Zoom levels. In the Parameters make the **'Background transparency'** clear by changing the value to zero. Click Ok.
-
-![QMetaTiles](img/qmetatiles_to_leaflet.png)
-
-> Note: the runtime is dependent on the size and number of zoom levels. Please do not select the `use TMS tile convertion` option.
-
-The file directory will contain your QMetaTiles and an HTML document that can be integrated with `leaflet` if you checked "Write Leaflet-based viewer". Additional help with QMetaTiles can be found **[here](http://felix.rohrba.ch/en/2017/easily-add-tilemap-layers-qgis/)**. The leaflet map will help you view the map tiles. But for your own deliverable, you need to load the maps using [Mapbox GS JS](https://docs.mapbox.com/mapbox-gl-js/api/).
-
-### 3.4 Navigate to QMetaTiles folder
-
-Navigate to the output file after QMetaTiles finishes running. In this folder will be your sub folders of tiles arranged by zoom level, and an html document if you checked "Write Leaflet-based viewer" when generating tiles in QGIS.
+Log into your GitHub account: Open your web browser and go to GitHub. In the top-right corner of the page, you'll see two options: Sign in and Sign up. If you have an account already, click Sign in. If you don't, click Sign up and follow the instructions to create a new account.
 
 
-## 4 Add map tiles to a MapBox Map
+Go to the repository you want to fork: In your web browser, navigate to the specific URL of the repository you want to fork, which is https://github.com/jakobzhao/participatory-mapping. You can copy this URL and paste it into your browser's address bar.
 
-For web mapping and geovisualization applications, the QMetaTiles folder generated above in QGIS (the folder that holds all tiles at different zoom levels) should be placed in your assets folder of your repository. To get a starter code for the map, you can refer to [the class materials in week 4](https://github.com/jakobzhao/geog458/tree/master/weeks/week04). You can refer to the code below as an example for add the files as a map layer. **In the code you will need to use relative path names.**
-
-```js
-
-map.on('load', () => { //simplifying the function statement: arrow with brackets to define a function
-
-  map.addSource('uw-tiles', {
-      'type': 'raster',
-      'tiles': [
-          'assets/uw/{z}/{x}/{y}.png'
-      ],
-      'tileSize': 256,
-      'attribution': 'Map tiles designed by Bo Zhao</a>'
-  });
-
-  map.addLayer({
-      'id': 'uw',
-      'type': 'raster',
-      'layout': {
-          // 'visibility': 'none'
-        	// Uncomment the line above will hide this map layer at first.
-        	// This will be useful when you have multiple layers added to your map.
-      },
-      'source': 'uw-tiles'
-  });
+Fork the repository: In the top-right corner of the page, you'll see a button that says 'Fork'. Click on it. This will direct you to a page that help you create a copy of the repository under your own GitHub account. A fork is essentially your own copy of someone else's project, which you can modify and use as you wish without affecting the original project.
 
 
+
+Create the fork: You can rename your repository name, For example, you can type 'my-awesome-map' into the text box. From now on, you can access this repository at https://github.com/YourUsername/my-awesome-map, where YourUsername is replaced by your actual GitHub username.
+
+
+3. Understand the system mechanism
+To know how the system works, we need to understand the structure of the repository, the functionality of the main files, and the system workflow.
+
+3.1 repository structure
+In order to comprehend the functioning of the system, it is essential to delve into the repository's structure, familiarize ourselves with the core files' functionalities, and grasp the overall workflow of the system. The structure of the repository and the functions of the contained files are show below:
+
+├── README.md                    // project instruction
+├── docs                         // the web client
+│   ├── index.html
+├── src                          // the web server
+│   ├── config
+│       ├── database.js
+│   ├── controllers
+│       ├── product.controller.js
+│   ├── routes
+│       ├── index.js
+│       ├── product.routes.js
+│   ├── app.js
+├── node_modules                 // server-side dependencies
+│   ├── ...
+├── server.js                    // the main server file
+├── package.json                 // the configuration file
+├── database.sql                 // the database schema
+├── package.json                 // the config file (automatically generated)
+├── package-lock.json            // the config file (automatically generated)
+├── PROCFILE                     // the config file for Heroku
+docs: This is a folder where the static files are stored. As a minimum viable solution, it only has one file index.html, but you can contain additional files to enrich your own project. In our project, this is the location where the web client is stored.
+
+docs/index.html: serves as the main HTML document for the web application, which is a participatory mapping tool.
+node_modules: This is a folder where Node.js modules (or packages) are stored. When you use Node.js and install packages using the Node Package Manager (npm), those packages are placed in this folder. Node modules will build up the server and deal with a lot of the back-end functionality that you do not need to worry about.
+
+src: This is typically where the source code of the application is stored. For a Node.js application, this would usually contain JavaScript files. From a web gis system perspective, this is the location where the server is stored.
+
+src/config: This is a folder where the configuration files are stored. In this case, it contains a file called database.js, which is used to configure the database connection. within this folder, database.js is used to configure the database connection. It contains the database connection parameters, such as the host, user, password, and database name.
+
+src/controllers: This is a folder where the controllers are stored. In this case, it contains a file called product.controller.js, which is used to control the product. product.controller.js is used to control the product. It contains functions to create, retrieve, update, and delete products.
+
+src/routes: This is a folder where the routes are stored. In this case, it contains two files: index.js and product.routes.js. The index.js file is used to define the routes for the application, and the product.routes.js file is used to define the routes for the product.
+
+src/app.js: This is the main application file. It is used to configure the application and start the server.
+
+PROCFILE: A Procfile is a mechanism for declaring what commands are run by your application's dynos on the Heroku platform. It is used to explicitly declare what command should be executed to start your app.
+
+README.md: This is a markdown file that usually contains information about the software, such as what it does, how to install it, how to use it, and sometimes, how to contribute to it. It's the first thing people see when they visit the repository on GitHub.
+
+datatable.sql: This appears to be an SQL file, which typically contains SQL commands for interacting with a database. This could be creating tables, inserting data, querying data, etc. In this case, it is likely used to set up the database structure for the participatory mapping application.
+
+package-lock.json: This is an automatically generated file by npm, which is used to keep track of the exact version of every package that is installed. This helps to ensure that the dependencies remain the same on all machines the project is installed on.
+
+package.json: This file is used in Node.js projects to keep track of all the packages (dependencies) that your project uses. This includes things like libraries and frameworks that your project depends on. It can also contain other metadata such as the project's name, description, and version.
+
+server.js: This is likely the main entry point for the application. In a Node.js application, this file usually sets up the server and starts it, often setting up routes for a web server and other server configuration.
+
+3.2 system workflow
+This workflow illustrates how the system uses a combination of static web hosting (via GitHub Pages), server-side operations (via Heroku and Node.js), and cloud-based database management (via Heroku and PostgreSQL) to provide a dynamic and interactive participatory mapping tool.
+
+Let's delve into the system workflow step-by-step to understand how this particular system operates and how you can construct a similar one.
+
+Accessing the Website: When a user types in https://jakobzhao.github.io/participatory-mapping/ in their browser, they are directed to the index.html file in the docs folder. This is because GitHub Pages, which is being used to host this site, serves static files and the docs folder is set as the root directory for the website.
+
+Client-Side Operations: The index.html page serves as the client-side of the application, housing the primary functions of the participatory mapping tool. It can dispatch requests to, and receive responses from, the web services hosted on Heroku. For instance, when a user fills out a form and clicks the submit button, the client-side code sends a request to the server-side code, which then stores the user-contributed data in the database. The function submitNewRecord in the index.html file manages the data submission process. In this function, the code snippet await fetch('https://participatory-mapping-70cdde6a8df5.herokuapp.com/api/add-record', settings) forwards the data to the server-side code via the /add-record route. The addRecord function in the controllers/productController.js file processes the data and stores it in the database.
+
+Server-Side Operations: The server-side of the application, hosted on Heroku, uses Node.js for coding. Heroku, a cloud-based platform, enables developers to build, run, and operate applications. The commands to kickstart the server on Heroku are detailed in the PROCFILE. The files server.js, app.js, and routes/*.js are primarily used to set up the server, create web applications, and establish routes to the services. For example, the code snippet router.post('/add-record', productController.addRecord) triggers the addRecord function in the controllers/productController.js file when the client-side code sends a request via the /add-record route.
+
+Web Services: The server-side code handles client-side requests, processing them to return the appropriate response. These web services can retrieve existing data from the database or store new user-contributed data. For example, the addRecord function, defined in controllers/productController.js, extracts the contributed data (e.g., contributor, content, lat, lng) and stores them in the database. The code snippet let {recordRows} = await db.query('INSERT INTO tblRecord(contributor, content, lat, lng) VALUES ($1, $2, $3, $4)', [contributor, content, lat, lng]) is used for this purpose.
+
+Database Operations: The application uses a PostgreSQL database to store and manage data. This database is cloud-hosted through Heroku. Connection information for this database is provided in the src/config/database.js file, ensuring successful execution of the SQL statement in the data query method db.query().
+
+4. Deploy your project on Heroku
+To deploy your forked GitHub repository to Heroku, you'll need to follow these step-by-step instructions. Before starting, ensure you have a Heroku account. If you don't have one, sign up for free at https://signup.heroku.com/.
+
+Create a new app on Heroku:
+Log in to your Heroku account.
+On the Heroku dashboard, click the New button, then select Create new app.
+Give your app a unique name (e.g., my-app-name).
+Choose the region closest to your location.
+Click the Create app button.
+
+
+Connect the Heroku app to your GitHub repository:
+
+On the Deploy tab of your Heroku app dashboard, under Deployment method, choose GitHub.
+In the Connect to GitHub section, search for the repository you forked and click the Connect button.
+Set up the build command:
+
+In the Deploy tab of your Heroku app dashboard, scroll down to the Manual deploy section.
+Click the Deploy Branch button to manually deploy the app for the first time.
+In the Automatic deploys section, enable automatic deploys if desired.
+In the Manual deploy section, make sure the correct branch is selected.  
+In the Settings tab of your Heroku app dashboard, Scroll down to the Buildpacks section and click on the Add buildpack button.
+Choose the appropriate buildpack for your application. Since we are deploying a Node.js app, select the Node.js buildpack.
+Click the Save changes button to update the buildpacks.
+Congratulations! You have successfully deployed your forked GitHub repository to Heroku. The app is now live and accessible to the public. You can continue making changes to your repository and deploying updates to Heroku using the configured automatic deployment or manually triggering deployments. Remember to regularly check your Heroku app dashboard for logs and potential issues. You can also monitor your app's performance, scale it as needed, and manage other aspects of your deployed application through the Heroku dashboard.
+
+5. Initialize the database
+This participatory mapping tool enables the data management through a cloud-based PostgreSQL database that is offered by Heroku. Initializing the database on Heroku involves a few steps. Here is a step-by-step guide on how to do it.
+
+Add a PostgreSQL add-on: In your Heorku app dashboard, click on the Overview tab. Under the Installed add-ons section, click on Configure Add-ons. In the Add-ons search bar, type Heroku Postgres and select it. FOr testing purpose, the mini plan costing $5 per moth is enough.
+
+Retrieve the Database URL: After adding the PostgreSQL add-on to your app, you need to retrieve the database URL. Here are the steps:
+
+Click on the Heroku Postgres add-on under the Resources tab. This will take you to the Heroku Postgres dashboard.
+In the Heroku Postgres dashboard, click on the Settings tab.
+Click on the View Credentials button. This will display the credentials for your PostgreSQL database, including the database URL.
+
+
+Connect to your Database: To connect to the database, you can use any PostgreSQL client, such as pgAdmin. You need to have pgAdmin installed on your machine. If you don't have it yet, you can download it from the official pgAdmin website. The installation process may vary depending on your operating system.
+
+After installing pgAdmin, open it. You will see the pgAdmin dashboard. In pgAdmin, servers are essentially connections to databases. To create a new server:
+
+Right-click on the Servers in the left panel and choose Register > Server....
+In the Register - Server dialog box, enter a name for the server under the General tab. This can be any name you like and doesn't affect the connection.
+Click on the Connection tab. Here, you will enter the details of your Heroku Postgres database. These details can be found from the View Credentials section of your database in the Heroku dashboard.
+Host: This is the Host value in Heroku credentials.
+Port: This is the Port value in Heroku credentials.
+Maintenance database: This is the Database value in Heroku credentials.
+Username: This is the User value in Heroku credentials.
+Password: This is the Password value in Heroku credentials.
+After entering these details, click Save.
+
+
+Connect to the Database: After creating the server, you can connect to your database. In the left panel, navigate to Servers > [Your Server Name] > Databases > [Your Database Name]. Double-click on your database name to connect to it.
+
+Open SQL Query Tool: After connecting to your database, you can open the SQL Query Tool. Right-click on your database name and choose Query Tool. This will open a new SQL Query Tool tab.
+
+Initialize your Database: In the SQL Query Tool, you can now initialize your database with the provided SQL script. Paste the SQL script in the file datatable.sql into the query editor. After pasting the script, click on the Execute button (which looks like a Play button) to run the script. This will create your table in the database. You have now initialized a table in your PostgreSQL database on Heroku using pgAdmin.
+
+6. Publish your map
+Currently, the forked project is successfully deployed on Heroku, and the database is initialized. In this phase, we will guide you through the steps to customize the project and publish it online.
+
+Access the map:
+
+Method 1: On your Heroku dashboard, go to the Settings tab and find the URL under the Domains section. This URL serves as the direct link to your map. Additionally, you can access the map by clicking the View button located at the top right corner of the dashboard. The URL follows a format like https://your-app-name.herokuapp-random-token.com/. For example, you can access the demo map using the URL https://participatory-mapping-70cdde6a8df5.herokuapp.com.
+Method 2: If you find the Heroku URL lengthy and difficult to remember (due to the random token), you have another option. You can access your map through your-account-name.github.io. To do this, visit your GitHub repository page, navigate to Settings, and scroll down to the GitHub Pages section under the General tab. Here, you will find the URL for your map. Please ensure that your web map is built and deployed using the docs folder in the main branch. It is worth noting that, in the file src/app.js, please add the https://your-account-name.github.io (your-account-name in the url should be replaced by your actual account name) to the origin property of the corsOptions variable. By doing so, the data changes between heroku and your-account-name.github.io will be granted. This edit should be done in your forked repository, if you turn on the automatic deploys function, this corsOption will be immediately applied.Now, your map will be appropriately accessible via the URL https://your-account-name.github.io/your-repository-name/. For example, the demo map can be accessed through the URL https://jakobzhao.github.io/participatory-mapping/.
+Method 3: If you wish to customize the domain name further, you have options available. Please refer to the GitHub documentation for more details. for detailed instructions on customizing the domain name. Alternatively, you can customize the domain through Heroku. For more information, consult the Heroku documentation.
+Updating the Info Panel:
+
+To provide additional details about your map or introduce your own participatory map, you can update the information displayed in the info panel. This panel is located in the index.html file.
+Open the index.html file and locate the section containing the title, description, and image of the info panel.
+Modify the title, description, and image to reflect the desired information you want to present.
+Switching the Basemap:
+
+Currently, the base map utilizes MapTiler's streets-v2 style. If you prefer a different style, you can explore the available map styles at www.maptiler.com.
+Sign up for MapTiler to access the token for each free map style at https://cloud.maptiler.com/maps/.
+When copying the map style, ensure you select the vector style option.
+In the index.html file, locate the code snippet responsible for setting the basemap.
+Replace the existing map style token with the newly copied token. This update will switch the basemap to the desired style.
+// Create a new map instance
+let map = new maplibregl.Map({
+  container: 'map', // container id
+  style: 'https://api.maptiler.com/maps/streets-v2/style.json?key=Cusoe5zmfmn26glFoeoe', // style URL
+  center: [-122.3321, 47.6062], // starting position [lng, lat]
+  pitch: 45, // pitch in degrees
+  zoom: 12 // starting zoom
 });
-```
+For more advanced approaches to switching the basemap, you can refer to the maplibre examples.
 
-As shown by the code, the tiles are loaded from a relative path `assets/[tilesets]` which exists at a location in your internal network. For the following parameters in the path: `{z}` indicates zoom level, `{x}` and `{y}` are tile coordinates. 
+Collect your data: This minimum viable map only allows you collect the contributor's name, their message, and the location of the message. You can customize your forked repository to collect your own dataset. A few edits across the repository are required to enable its functionality. You have the option to edit the repository's code using an Integrated Development Environment (IDE) on your local machine or GitHub's web editing interface on the cloud. To learn more about how to edit a repository through the web interface, please check out this tutorial. In this tutorial, we will primarily focus on editing the repository through GitHub's web interface for simplicity. If you prefer using an IDE, most web developers recommend Visual Studio Code (VS Code). You can follow the steps below to edit the repository using VS Code.
 
-[Here](http://jakobzhao.github.io/geog458/labs/lab04/index.html) is what the final output looks like. The source code for the map can be found [here](index.html). The source code include the additional code for adding a layer switcher, as shown at the upper right corner of the screenshot below.
+Once forked and renamed, you can clone the repository to your local machine. To do this, you'll need to have Git installed on your computer. If you don't have Git installed, you can download it from https://git-scm.com/downloads. Once Git is installed, you can clone the repository to your local machine. To do this, you will need to use either Command Prompt on Windows or Terminal on Mac OS to complete this task. After opening the command prompt or terminal, please navigate to a desired directory for managing your projects using cd, like cd C:\YourDirectory in command prompt or cd ~/YourDirectory in Terminal. Then, clone the forked repository by typing git clone https://github.com/YourUsername/my-awesome-map.git
 
-![mapbox map](img/final-map.png)
+Once cloned to your local machine, you can edit your repository in your local machine using VS code. Visual Studio Code is a free source-code editor made by Microsoft for Windows, Linux, and MacOS. It includes support for debugging, embedded Git control, GitHub, syntax highlighting, intelligent code completion, snippets, and code refactoring. You can download it from the Visual Studio Code download page. To open a repository in Visual Studio Code: please go to File -> Open Folder... on Windows or File -> Open... on MacOS, navigate to your cloned repository and open it. Now, you're ready to edit files in the repository.
 
-## 5 Deliverable
+Customize Data Submission:
+Based on your data collection plan, you need to edit the data submission process in the index.html file. For example, you can add a field to collect the contributor's email address. To do this, include an email text input field in the popupContent variable.
+Define a CSS selector to stylize the email input field.
+Append the collected email value to newRecord using newRecord.append('email', email);.
+Update each geojson feature to include a property to store the email variable.
+Update the addRecord Method:
+Navigate to the src/controllers/product.controller.js file.
+Update the addRecord method to include the email field.
+You can refer to the existing addRecord method in the file as a reference.
+Update the Data Table Schema:
+Use pgAdmin (PostgreSQL administration and management tool) to access the data table schema.
+Update the schema to include the email field.
+Now, your map is ready to collect your data. You can share the map with your targeting audience and collect their data on the map.
 
-- You are expected to generate **four** tile sets of any geographic phenomena you are interested in, and assemble all the layers to a mapbox made out of Mapbox gs js. **Since github repository only allows you upload a limited amount of data, so please make sure not to generate too many tiles by limiting the boundingbox or the scale range.** This lab is an opportunity to make a basemap or thematic map layers for your final project. Below are the lab requirement.
+Final Thoughts
+This text provides a detailed, step-by-step tutorial on how to create a minimum viable participatory mapping project using several technical skills and platforms, including HTML, CSS, JavaScript, command line, Node.js, PostgreSQL, GitHub, and Heroku. The author effectively demystifies the process of participatory mapping by explaining concepts and providing actionable instructions.
 
-  - The first tile set should be a base map provided by MapBox. **Please make sure it is a basemap rather than a thematic map.** In most web map applications, Basemap is overlain with other thematic map layers and/or interactive features. Its primary function is to illustrate the geographical context of the study area. Therefore, a basemap is usually made in a monochrome color scheme. You are encouraged to make your basemap directly out of the existing map layers provided by MapBox (like those monochrome map layers provided on MapBox Studio). However, please make sure to change at least a few color uses, icons, and the label font. Overall, even you made a few changes, the base map should still look visually appealing. (5 POINTS).
+Participatory mapping, as the author noted, is a crucial tool that empowers local communities to document their knowledge and experiences about their environment, thus supporting decision-making processes.
 
-  - The second tile set should be a thematic layer made by your own geospatial dataset. (5 POINTS).
+However, the complexity of the tutorial implies that this process is best suited for those with a foundational understanding of the technologies involved. The tutorial may be overwhelming for those without a background in these technologies or novice users. Furthermore, the cost of Heroku services could also be a limiting factor for some.
 
-  - The third tile set should be composed of the thematic layer (from the second tile set) and the basemap from the first tile set. (5 POINTS).
+Despite some limitations, with careful execution and continuous enhancements, it can serve as an empowering platform that truly reflects the lived experiences of communities. As digital geographers continue to explore this field, we can expect to see more diverse and inclusive mapping projects that capture the myriad ways in which we relate to and experience our environment.
 
-  - The fourth tile set should be a map layer designed over Mapbox. It should embody a map theme relevant to your research interests, which, for instance, could be Black History month, LGBTQ+ Pride, UW, Nature/Environment, etc. Please try to use the color, icon, and label to realize the theme.  (5 POINTS). 
 
-> An example can be found from [here](https://ramouj.github.io/Map-Tile-Generation/index.html). Although the map library of this example is leaflet, but you can refer the map this student has designed as an example. You need to make the maps using Mapbox GS JS.
+For your deliverable, you need to make a participatory mapping project all by yourself. Your map should target a specific group of people. For example, you can make a participatory mapping project for the LGBTQ+ community, or for the Black History Month, or for the UW community, or for the Nature/Environment, etc. When you determine the targeting group, make sure the use of language on the information panel and the map style are relevant to the group. (20 POINTS).
 
--  After the map tiles are generated, you are expected to create an index.html to visualize the four tile map sets.
-    -  create any necessary web page elements, such as page/map title, scale bar, attribution, zoom control, map description, etc. (5 POINTS)
-    -  The map should be shown in the full screen. (5 POINTS).
-    -  A layer switcher should be added to allow users to turn on and off each map layers.. (6 POINTS).
+ Below are a few other requirement.
+   
+   - the existing participatory mapping template enable users to input user name and the message, please incoperate new fields. For example, you can add a field to collect the contributor's email address. (5 POINTS)
 
--  Upload everything to a github repository. In the `readme.md` file of this repository, please briefly introduce
+   - update the style of the visualized dots on the map. (5 POINTS)
+   - user can contribute to this map and the contributed data should be stored in a database and properly visualized on the map. (15 POINTS)
+   - make sure the repository accessible through the url `https://[your_github_username].github.io/[your_repository_name]`. Also, please provide the url to your webmap in the `readme.md` file. (5 POINTS).
 
-    -  the url to access the web map you have made.
-    -  screenshots of the four layers (2 POINTS)
-    -  the examined geographic area, and (2 POINTS)
-    -  the available zoom levels of each tile set (2 POINTS), and
-    -  brief descriptions of each tile sets (3 POINTS).
-
-- make sure the repository accessible through the url `https://[your_github_username].github.io/[your_repository_name]`. Also, please provide the url to your webmap in the `readme.md` file. (5 POINTS).
-
-The structure of this repository should look like:
+Please make sure the internal structure of the files in your project repository is well organized. For example, it may be similar to the file structure below.
 
 ```powershell
 [your_repository_name]
-    │readme.md
     │index.html
-    ├─assets
-    │      [tile sets 1]
-    │         XXX
-    │         XXX
-    │      [tile sets 2]
-    │         XXX
-    │         XXX
-    │      [tile sets 3]
-    │         XXX
-    │         XXX
-    │      [tile sets 4]
-    │         XXX
-    │         XXX
+    │readme.md
+    ├─css
+    │      style.css
+    ├─img
+    │      xxx.jpg
+    └─js
+            main.js
 ```
-
-## Extended Readings
-
--   Vector Tiles: <http://docs.geoserver.org/latest/en/user/extensions/vectortiles/tutorial.html>
--   3D Tiles: <https://github.com/AnalyticalGraphicsInc/3d-tile>
-
-## References:
-
-1.  <https://www.e-education.psu.edu/geog585/node/706>
-2.  <https://docs.microsoft.com/en-us/bingmaps/articles/bing-maps-tile-system>
