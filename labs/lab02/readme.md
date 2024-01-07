@@ -2,7 +2,7 @@
 
 **Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu; **Points Available** = 50
 
-In this practical exercise, we will introduce how to collect Geo-tagged Twitter data using an API-based crawler and visualize them on a map using a mapping tool `QGIS`. A web crawler is a purposely designed bot for online data collection. In most cases, online data can be acquired through a dedicated API maintained by the data provider. This lab exercise focuses on visualizing the spatial distribution of twitter data, which reflects the public perception of a specific topic. As you go through this lab, think about how you can apply this technique to your final project. Below, we will go over in detail the process of developing an API-based crawler and using QGIS to visualize collected data onto a map. Okay, let us get started!
+In this practical exercise, we will learn how to create a web crawler and then visualize the collected data. This lab exercise focuses on collecting and visualizing data from youtube. As you go through this lab, think about how you can apply this technique to your final project. Below, we will go over in detail the process of developing an web crawler to visualize data collected from Youtube. Okay, let us get started!
 
 ## 1. Setup the execution environment on the cloud
 
@@ -27,6 +27,8 @@ For any python script, metadata are usually stated at the very beginning.
 ```python
 # created on April 14, 2021
 # modified on Jan 2, 2022
+# modified on April 20, 2023
+# modified on January 5, 2024
 # @author:          Bo Zhao
 # @email:           zhaobo@uw.edu
 # @website:         https://hgis.uw.edu
@@ -34,12 +36,24 @@ For any python script, metadata are usually stated at the very beginning.
 # @description:     A demo of collecting data from YouTube.
 ```
 
-The normal operation of Selenium requires the support of a browser in the local computer. Since we move the execution environment to the cloud, it is necessary to ensure the cloud side (Google CoLab in our case) can manipulate the browser. To do so, you plan to use Kora to control Selenium. Kora is a collection of tools to make programming on Google Colab easier. One tool of Kora is to control Selenium. The following line will enable the python program to install kora.
+The normal operation of Selenium requires the support of a browser in the local computer. Since we move the execution environment to the cloud, it is necessary to ensure the cloud side (Google CoLab in our case) can manipulate the browser. To do so, you plan to run the code block below to install selenium, chromedriver and a few dependencies.
 
-```Python
-# Installing Kora to the remote google colab server. Kora is a collection of tools to make programming on Google Colab easier.
-!pip install kora -q
+```python
+%%shell
+sudo apt -y update
+sudo apt install -y wget curl unzip
+wget http://archive.ubuntu.com/ubuntu/pool/main/libu/libu2f-host/libu2f-udev_1.1.4-1_all.deb
+dpkg -i libu2f-udev_1.1.4-1_all.deb
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+dpkg -i google-chrome-stable_current_amd64.deb
+
+wget -N https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/120.0.6099.199/linux64/chromedriver-linux64.zip -P /tmp/
+unzip -o /tmp/chromedriver-linux64.zip -d /tmp/
+chmod +x /tmp/chromedriver-linux64/chromedriver
+mv /tmp/chromedriver-linux64/chromedriver /usr/local/bin/chromedriver
+pip install selenium chromedriver_autoinstaller
 ```
+
 
 Next, the required python libraries for this crawler will be imported. To execute the crawling task, we will use BeautifulSoup, time, datetime, pandas. Since Google Colab has already pre-installed BeautifulSoup and pandas, you do not need to install again like how you install kora.
 
