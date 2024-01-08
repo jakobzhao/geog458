@@ -1,6 +1,6 @@
 # Final Project Guideline
 
-The final project is a major component of this course. Each group is expected to develop a digital-geographies related project. It can be a web map, a smart dashboard, a geo-narrative, or a project that has been approved by the instructor. To have a better idea of the course expectations, you can refer to the examples below:
+The final project is a major component of this course. Each group is expected to develop a digital-geographies related project. It can be a participatory map, a smart dashboard, a geo-narrative, or a project that has been approved by the instructor. To have a better idea of the course expectations, you can refer to the examples below:
 
 -  Mapping the Black Lives Matter Movement: https://protestmap.raceandpolicing.com
 -  COVID Care Map: https://www.covidcaremap.org/maps/us-healthcare-system-capacity
@@ -14,11 +14,11 @@ The final project is a major component of this course. Each group is expected to
 
 ## Requirement
 
-All the final projects are expected to be published online, and the codes are expected to be shared on GitHub in order to contribute to both the open-source community and academia. The final project must satisfy the following items:
+All the final projects are expected to be published online, and the codes are expected to be shared on GitHub in order to contribute to both the open-source community and academia. Also, your final project must build upon Lab 5, 6, 7. If your final project builds upon neither of there labs, you need to ask the instructor to permit your final project template or idea. In addition, the final project must satisfy the following items:
 
 - Host your project on github. By doing so, your project can be visited via a url link such as `[username].github.io/[repo_name]`.
 
-- In addition to the main feature of the digital-geographies (e.g. web map, smart dashboard, or geo-narrative), you should also show the project title, a short description, legend, data sources, and acknowledgment at easily found places on the web page.
+- In addition to the main feature of the digital-geographies (e.g. participatory map, smart dashboard, or geo-narrative), you should also show the project title, a short description, legend, data sources, and acknowledgment at easily found places on the web page.
 
 - A `readme.md` describes your project, including, but not limited to,
     - Project title
@@ -48,15 +48,15 @@ All the final projects are expected to be published online, and the codes are 
 
 #### Week 4: Brainstorm
 
-#### Week 5: [Draft project proposal, data sources, and other multimedia](https://canvas.uw.edu/courses/1612951/discussion_topics/7773115) `Due: Feb. 11th 11:59pm`
+#### Week 5: [Draft project proposal, data sources, and other multimedia](https://canvas.uw.edu/courses/1696704/discussion_topics/8613882) `Due: Feb. 11th 11:59pm`
 
 Please share your final project proposal on this discussion board.  A proposal only needs to be shared once by one of your group members. In the proposal, please indicate what you want to make by the end of this quarter, the targeting audience,  the available datasets, the required multimedia (e.g., texts, images, videos, etc), and the functions. It would be great if you can find one or two digital geographies-related projects that you can learn from. It will give the instructor and TAs a better idea of how to help you. The proposal needs to have **at least 300 words** and one or two screenshots of the available projects that you want to learn from. Once a project proposal is shared, I welcome any suggestions if you have, the TAs and the instructor will participate in the discussion too.
 
-#### Week 6: [Design project prototype](https://canvas.uw.edu/courses/1612951/assignments/7978349)  `Due: Feb. 17th, by 11:59pm`
+#### Week 6: [Design project prototype](https://canvas.uw.edu/courses/1696704/discussion_topics/8613881)  `Due: Feb. 18th, by 11:59pm`
 
 Please share your project prototype on this discussion board. A prototype is a sketch of your expected graphic user interface (GUI) of the project. Usually, it will contain a few GUIs of the proposed project. When designing the prototype, you are expected to first 1) determine what types of projects your group plan to work on: a generic web map project, a storymap, or a dashboard; and then for each interface, you are expected to 2) appropriately illustrate each component (e.g., map view, title, legend, side panel, etc.) in its right size to its position on a web page. Please make sure 3) to balance the information richness and the legibility of the design. In other words, it should not be too complicated, even though, it can still illustrate adequate information about the project. You are encouraged to create the prototype by drawing on paper or designing on [Figma](https://www.figma.com) if you prefer.
 
-#### Week 7: [Proposal revision and pilot study](https://canvas.uw.edu/courses/1612951/assignments/7978348)   `Due: Feb. 26th, by 11:59pm`
+#### Week 7: [Proposal revision and pilot study](https://canvas.uw.edu/courses/1696704/discussion_topics/8613880)   `Due: Feb. 26th, by 11:59pm`
 
 This week, you are required to revise your proposal based on the feedback from the TAs and the instructor. In the meantime, please conduct pilot studies in order to 1) test and/or fine-tune your proposed idea to a practical level and 2) detail specific project components. Once done, please share your revised proposal onto the discussion board. This deliverable should **not be less than 300 words**. Your revised proposal should have the following components. 
 
@@ -101,7 +101,7 @@ In the meantime, you should initiate your final project by completing the follow
 - start drafting the project description page onto the `readme.md`. You can move a lot of items from your revised proposal to the readme.md.
 -  ***`optional`*** create the disclaimer or welcome panel. refer to [../troubleshoots/starter/disclaimer.html](../troubleshoots/starter/disclaimer.html).
 
-#### Week 8: [Project development and identified issues](https://canvas.uw.edu/courses/1612951/assignments/7978347) `Due: Mar. 3rd, by 11:59pm`
+#### Week 8: [Project development and identified issues](https://canvas.uw.edu/courses/1696704/discussion_topics/8613879) `Due: Mar. 3rd, by 11:59pm`
 
 This week, you are expected to work on your final project. We do not expect huge progress by the end of this week, but we do want to see that you have coded, tried out different approaches, and visualized geospatial data. So, please submit a project progress report to the discussion board. In this report, please present your progress in the following three aspects:
 
@@ -113,15 +113,15 @@ This week, you are expected to work on your final project. We do not expect huge
 
 #### Week 9: Project development and group meeting with TA
 
-There is no deliverable in these two weeks, but you are required to concentrate on developing your final project. In the meantime, **each group will need to meet your TA at least once during the lab session in Week 9. So, please participate in the lab sessions!** Also, in Week 9, the instructor will be available for virtual meetings during the normal lecture sessions and office hour sessions. You can make an appoint with the instructor via this [link](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUZvU2gxXzVlZnZpfGRlZmF1bHR8NzM4ODA5MzUyNjAxZDU2Y2ViNTZiMzk2ZmM0N2VmNzI). If the time does not work for you, please reach out to schedule a commonly available time slot.
+There is no deliverable in this week, but you are required to concentrate on developing your final project. In the meantime, **each group will need to meet your TA at least once during the lab session in Week 9. So, please participate in the lab sessions!** Also, in Week 9, the instructor will be available for virtual meetings during the normal lecture sessions and office hour sessions. You can make an appoint with the instructor via this [link](https://). If the time does not work for you, please reach out to schedule a commonly available time slot.
 
-#### Final project submission
+**Final project submission**
 
-To submit your final project, you will need to share the url link of your final project's GitHub repository to a dedicated final project submission tab on Canvas by `March 12th 11:59pm`. This first submission will be mainly used by the instruction team to provide you with necessary feedback on improving your project. After receiving feedback, you can continue crafting your project until presentation day (Mar. 10th). The final grade for the project will be based on the work done by the end of March 10th.
+To submit your final project, you will need to share the url link of your final project's GitHub repository to a dedicated final project submission tab on Canvas by `March 11th 11:59pm`. This first submission will be mainly used by the instruction team to provide you with necessary feedback on improving your project. After receiving feedback, you can continue crafting your project until presentation day (Mar. 10th). The final grade for the project will be based on the work done by the end of March 10th.
 
-#### Final project presentation
+**Final project presentation**
 
-Academics often attend conferences where they share their discoveries and browse the work of others to gain new ideas and offer feedback. We will hold a final presentation meeting on in (Loation TBD) **Mar 11th, 1:30 PM to 5:20 PM**, each group is expected to present the final project in 8 minutes, and plus another 2 minute for a Q&A session.
+Academics often attend conferences where they share their discoveries and browse the work of others to gain new ideas and offer feedback. We will hold a final presentation meeting on in (Location SMI 401) **Mar 8th, 1:30 PM to 3:20 PM**, each group is expected to present the final project in 8 minutes, and plus another 2 minute for a Q&A session.
 
   - Each group is expected to ask at least 3 questions in total during the Q&A sessions after each of the presentations. This will count toward your groups of the Final Project Progress grade.
 

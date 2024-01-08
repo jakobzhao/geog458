@@ -114,7 +114,7 @@ This week, we shift our focus to the concept of Participatory GIS, a pivotal are
 -   **Think Piece 5:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1696704/discussion_topics/8613873) `Due: Feb 8th, by 11:59pm`
 -   **Lab 5:** [Participatory Online Map Application](labs/lab05) `Due: Feb 26th, by 11:59pm`
 
--   **[Final Project Checkpoint](project/readme.md):** [Draft project proposal, data sources, and other multimedia](https://canvas.uw.edu/courses/1612951/discussion_topics/7773115) `Due: Feb. 11th 11:59pm`
+-   **[Final Project Checkpoint](project/readme.md):** [Draft project proposal, data sources, and other multimedia](https://canvas.uw.edu/courses/1696704/discussion_topics/8613882) `Due: Feb. 11th 11:59pm`
 
 ### Week 6: Smart dashboards
 
@@ -128,7 +128,7 @@ Smart dashboards are an incredibly powerful tool for visualizing and presenting 
 -   **Think Piece 6:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1696704/discussion_topics/8613872) `Due: Feb 15th by 11:59pm`
 -  **Lab 6:** [Smart Dashboard Application](labs/lab06) `Due: Feb 26th, by 11:59pm`
 
--   **[Final Project Checkpoint](project/readme.md):** [Design project prototype & data preparation](https://canvas.uw.edu/courses/1612951/assignments/7978349) `Due: Feb. 18th, by 11:59pm`
+-   **[Final Project Checkpoint](project/readme.md):** [Design project prototype & data preparation](https://canvas.uw.edu/courses/1696704/discussion_topics/8613881) `Due: Feb. 18th, by 11:59pm`
 
 ### Week 7: Geo-Narratives
 
@@ -143,7 +143,7 @@ This week, we're diving into geo-narrative – the use of storytelling in mappin
 -   **Think Piece 7:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1696704/discussion_topics/8613871) `Due: Feb 22, by 11:59pm`
 -  **Lab 7:** [Making a Map-based Storytelling Application](labs/lab07) `Due: Feb 26th, by 11:59pm`
 
--   **[Final Project Checkpoint](project/readme.md):** [Proposal revision and pilot study](https://canvas.uw.edu/courses/1612951/assignments/7978348) `Due: Feb. 26th, by 11:59pm`
+-   **[Final Project Checkpoint](project/readme.md):** [Proposal revision and pilot study](https://canvas.uw.edu/courses/1696704/discussion_topics/8613880) `Due: Feb. 26th, by 11:59pm`
 
 
 ### Week 8: Emerging topics
@@ -155,7 +155,7 @@ This week, we're exploring emerging topics in digital geographies! We'll be focu
 -   **Lectures:** The lecture focuses on the following papers.
 -   **Readings:** a) [Deepfake Geography](https://www.researchgate.net/profile/Chunxue-Xu/publication/351131604_Deep_fake_geography_When_geospatial_data_encounter_Artificial_Intelligence/links/608a48f5a6fdccaebdf4f065/Deep-fake-geography-When-geospatial-data-encounter-Artificial-Intelligence.pdf), and b) [Blockchain and crypto place](https://www.sciencedirect.com/science/article/pii/S0016718520302219/pdfft?isDTMRedir=true&download=true), c) [extended readings](weeks/week08/readings.md).
 -   **Think Piece 8:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1696704/discussion_topics/8613870) `Due: Feb 29, by 11:59pm`
--   **[Final Project Checkpoint](project/readme.md):** [Project development and identified issues](https://canvas.uw.edu/courses/1612951/assignments/7978347) `Due: Mar 3rd, by 11:59pm`
+-   **[Final Project Checkpoint](project/readme.md):** [Project development and identified issues](https://canvas.uw.edu/courses/1696704/discussion_topics/8613879) `Due: Mar 3rd, by 11:59pm`
 -   **Extra Credit**: [Structure From Motion](extracredit/sm.md)
 
 ### Week 9: Project presentation
@@ -181,7 +181,7 @@ During this week, each group will focus on their final projects, with the instru
 
 **GitHub:** The course material will be hosted on GitHub instead of UW Canvas. On this dedicated GitHub repository, you can find most of the course material, participate in group discussions by submitting GitHub issues, and create new GitHub repositories to turn in the lab deliverables. By the end of this quarter, you will be more proficient in operating a cloud-based coding environment and able to host your work online as a way to gain public and peer attentions.
 
-**Labs:** You need to finish Lab 1, 2, 3, and 4. Then, finish either of Lab 5, 6, and 7. So, you will finish 5 labs in total. 
+**Labs:** Over this quarter, we offer 7 lab assignments. But you do not need to finish them all. You ned to finish Lab 1, 2, 3, and 4. And then finish either one of Lab 5, 6, and 7. So, you will finish 5 labs in total. **Remember, your final project will be built upon either Lab 5, 6, 7, or a project that has been approved by the instructor. So, a group can strategically choose which lab to finish.**
 
 **Think Pieces:** for week 1 to 8, there will be weekly reading assignments. To evaluate your reflection upon each week's reading material, we set up a discussion board for each week. You need to submit at least think pieces to **4** out of the 8 weeks' discussion topics. We will review them all, but only the four with hightest scores will be counted towards your final grade. Your think pieces should be completed by Thursday @ 11:59 pm for the weeks you are submitting a piece. **All the 4 think pieces must be submitted by the end of Week 8**. Your think pieces should be at least 350 words and engage substantially with the reading materials, and connections to the lab assignments and lectures. **The focus of your discussion should be the main readings**, as the extended readings are for your further interests. Guiding questions or prompts will be included in each week's discussion section on canvas to help frame your thinking. Submit your think pieces on Canvas in the applicable week's discussion section.
 
