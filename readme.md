@@ -72,7 +72,7 @@ By the time you complete Lab 2, you'll have learned how to collect geo-tagged tw
 This week will require a lot of self-learning, so be prepared for some fairly lengthy readings and practical exercises. But trust us – all of this hard work will pay off in the end, leaving you with a strong foundation in web programming that you can build upon throughout the course. So let's roll up our sleeves and get to work – we can't wait to see what you're capable of!
 
 -   **Lectures:** [System architecture](weeks/week02/architecture), [intro-to-html, css](weeks/week02/html-css) and [javascript](weeks/week02/javascript). [More tutorial on web development fundamentals](weeks/week02/tech-readings.md)
--   **Readings:**  a) [Introducing Code/Space](https://drive.google.com/file/d/11bL1grUFMD1Cw_bhuAZ2FHLDjM7kzW2Z/view?usp=sharing), b) [A White Paper on Locational Information and the Public Interest](https://www.aag.org/wp-content/uploads/1900/09/2022-White-Paper-on-Locational-Information-and-the-Public-Interest.pdf), and c) [extended readings](weeks/week02/readings.md).
+-   **Readings:**  a) [Introducing Code/Space](https://drive.google.com/file/d/11bL1grUFMD1Cw_bhuAZ2FHLDjM7kzW2Z/view?usp=sharing), b) [A White Paper on Locational Information and the Public Interest](https://drive.google.com/file/d/13JHgDfdID6Yynk5jfKimgtB6h7ygGFsO/view?usp=sharing), and c) [extended readings](weeks/week02/readings.md).
 -   **Think Piece 2:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1696704/discussion_topics/8613876) `Due: Jan 18th, by 11:59pm`
 -   **Lab 2:** [Web data collection and visualization](labs/lab02) `Due: Jan 28nd, by 11:59pm` If you want to integrate a word cloud to your final project please refer to [this tutorial](troubleshoots/wordcloud/readme.md)
 
