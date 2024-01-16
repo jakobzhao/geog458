@@ -85,7 +85,7 @@ This week, it's all about mastering the art of processing geospatial data for yo
 
 -   **Presentations**: Tuesday: Standing Rock paper (AA1), Thursday:  [Native Land Digital](https://native-land.ca/) (AA4)
 -   **Lectures:** [Geospatial data for digital geographies](weeks/week03/readme.md), [More than you ever wanted to know about GeoJSON](weeks/week03/assets/geojson.pdf), and [Making Thematic Maps on the Internet using MapBox](weeks/week04/readme.md)
--   **Readings:** a) [Stand with #StandingRock: Envisioning an Epistemological Shift in Understanding Geospatial Big Data in the “Post-truth” Era](https://www.researchgate.net/profile/Bo-Zhao-3/publication/343848324_Stand_with_StandingRock_Envisioning_an_Epistemological_Shift_in_Understanding_Geospatial_Big_Data_in_the_Post-truth_Era/links/605aadfa92851cd8ce61ba65/Stand-with-StandingRock-Envisioning-an-Epistemological-Shift-in-Understanding-Geospatial-Big-Data-in-the-Post-truth-Era.pdf), b) [Putting Data back into Context](https://datajournalism.com/read/longreads/putting-data-back-into-context), c) [extended readings](weeks/week03/readings.md).
+-   **Readings:** a) [Stand with #StandingRock: Envisioning an Epistemological Shift in Understanding Geospatial Big Data in the “Post-truth” Era](https://drive.google.com/file/d/1nYGPMOCbDgSlKa9sW0ZChKXIIteIrVQA/view?usp=sharing), b) [Putting Data back into Context](https://datajournalism.com/read/longreads/putting-data-back-into-context), c) [extended readings](weeks/week03/readings.md).
 -   **Think Piece 3:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1696704/discussion_topics/8613875) `Due: Jan 25th, by 11:59pm`
 -   **Lab 3:** [Web map application](labs/lab03) `Due: Feb 4th, by 11:59pm`
 
