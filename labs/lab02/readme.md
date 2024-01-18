@@ -225,11 +225,11 @@ print("the csv has been downloaded to your local computer. The program has been 
 
 ## 3. Word cloud analysis
 
-A word cloud can visualize the high-frequency terms and map them according to their frequency. It helps to analyze the content of all the collected tweets. There are a few online word cloud generators you can use. In this lab, we use Word Art from https://wordart.com. You can use your UW email to register an account. After registration, you can create a word cloud by pressing the "Create Now" Button on the front page.
+A word cloud can visualize the high-frequency terms and map them according to their frequency. It helps to analyze the content of all the collected data. There are a few online word cloud generators you can use. In this lab, we use Word Art from https://wordart.com. You can use your UW email to register an account. After registration, you can create a word cloud by pressing the "Create Now" Button on the front page.
 
 ![](img/frontpage.png)
 
-Open `twsearch-result.csv` in microsoft excel or other alternative spreadsheet software. Copy all the rows under the `text` column, and then paste the copied rows to the input text box on Word Art. You need to press the `import` button on the top left to open this text box. Once complete, please type `Import words`.
+Open `videos.csv` in microsoft excel or other alternative spreadsheet software. Copy all the rows under the `shortdesc` column, and then paste the copied rows to the input text box on Word Art. You need to press the `import` button on the top left to open this text box. Once complete, please type `Import words`.
 
 ![](img/import-box.png)
 
