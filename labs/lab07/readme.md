@@ -1,4 +1,4 @@
-# Lab 6: Making a Map-based Storytelling Project
+# Lab 07: Making a Map-based Storytelling Project
 
 **Instructor:** Bo Zhao, 206.685.3846 or zhaobo@uw.edu; **Points Available** = 50
 
