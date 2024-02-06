@@ -4,7 +4,7 @@
 
 In this lab, you will need to walk through the procedure to [create a smart dashboard](../../weeks/week06/readme.md). The smart dashboard illustrates the earthquakes in Japan in September 2017, check out the demo from [here](https://jakobzhao.github.io/geog458/weeks/week06/index.html)). This dashboard is primarily built with a map component and a dynamic chart. This map component is made by MapBox, while the chart was built upon [C3.js](https://c3js.org/examples.html).
 
-For your deliverable, you need to create a smart dashboard all by yourself upon the [template](../../weeks/week06/readme.md) we have provided. You should make this dashboard to visualize a specific geographical phenomenon. For example, you can create a smart dashboard to visualize the distribution of the COVID-19 cases in the US, or the vehicle collisions in Seattle. When you determine the geographical phenomenon, make sure the use of language on the information panel and the map style are relevant to the group. (20 POINTS).
+For your deliverable, you need to create a smart dashboard all by yourself upon the template we have provided. You should make this dashboard to visualize a specific geographical phenomenon. For example, you can create a smart dashboard to visualize the distribution of the COVID-19 cases in the US, or the vehicle collisions in Seattle. When you determine the geographical phenomenon, make sure the use of language on the information panel and the map style are relevant to the group. (20 POINTS).
 
  Below are a few other requirement.
    
