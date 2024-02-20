@@ -67,14 +67,11 @@ This week, you are required to revise your proposal based on the feedback from t
  - targeted audience
  - multimedia (e.g., external links, texts, images, youtube videos, and etc.)
  - project format
-   - **Option one**: Generic digital geographies project
+   - **Option one**:Partipantoary Mapping
        - map projection, map zoom levels, center.
-       - description of the base map you plan to use.
-       - description of the thematic layers you will make.
-           - i. the used visual strategies: choropleth, proportional symbols, etc.
-           - ii. the supporting data sets for each thematic map layer.
-           - iii. vector or raster layer. If it is a vector, which data attribute to use? If a raster, which zoom level and presumed boundingbox to use?
-       - proposed interactive functions
+       - make your own base map, thematic layer and interactive features
+       - deploy the project to Heroku or other cloud based platform
+       - users can participante and contribute to this platform
    - **Option two**: Smart dashboard
        - respond to all the items listed in the option one
        - How to arrange all the components on the graphical user interface (GUI)?
