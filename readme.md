@@ -190,7 +190,7 @@ During this week, each group will focus on their final projects, with the instru
 
 - When preparing an in-class presentation for a digital project, like an interactive map, make sure to cover the main topic and key functions of the project. Also, connect the reading material and your think-piece with the project, for example providing a critical assessment of the use of geospatial data. Additionally, make sure to go into depth about the technical aspects of the project, such as the system architecture and the code.
 
-**Final Project:** will be conducted by a group of 4 to 5 students who are from the same Lab session. It needs to be submitted by `March 12th 11:59pm`. Check out [the detailed requirement for final project](project/readme.md).
+**Final Project:** will be conducted by a group of 4 to 5 students who are from the same Lab session. It needs to be submitted by `March 11th 11:59pm`. Check out [the detailed requirement for final project](project/readme.md).
 
 ## :heavy_check_mark: Grading
 
