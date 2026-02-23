@@ -114,7 +114,7 @@ There is no deliverable in this week, but you are required to concentrate on dev
 
 #### Week 10: Project Presentation and Submission
 
-- **Final Project Presentation:** will be held on Wednesday, March 11th, in SMI 401 during the lab sessions from 12:30PM to 4:20PM PST. Each group is expected to present the final project in 8 minutes, and plus another 2 minute for a Q&A session. In addition, each group is expected to ask at least 3 questions in total during the Q&A sessions after each of the presentations. This will count toward your groups of the Final Project Progress grade.
+- **Final Project Presentation:** will be held on Wednesday, March 11th, in SMI 401 during the lab sessions from 12:30PM to 4:20PM PST. Each group is expected to present the final project in 10 minutes, and plus another 3 minute for a Q&A session. In addition, each group is expected to ask at least 3 questions in total during the Q&A sessions after each of the presentations. This will count toward your groups of the Final Project Progress grade.
 
 - **Final Project Submission：**needs to be delivered to Canvas by the next Monday, March 16th, 11:59 PST. To submit your final project, you will need to share the url link of your final project's GitHub repository to a dedicated final project submission tab on Canvas.
 
