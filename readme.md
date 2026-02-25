@@ -170,7 +170,7 @@ This week, we're exploring emerging topics in digital geographies! We'll be focu
 <summary><b>Readings, Labs, and Weekly Think Pieces</b></summary>
 
 -   **Lectures:** The lecture focuses on the following papers.
--   **Readings:** a) [Deepfake Geography](https://www.researchgate.net/profile/Chunxue-Xu/publication/351131604_Deep_fake_geography_When_geospatial_data_encounter_Artificial_Intelligence/links/608a48f5a6fdccaebdf4f065/Deep-fake-geography-When-geospatial-data-encounter-Artificial-Intelligence.pdf), b) [Blockchain and crypto place](https://www.sciencedirect.com/science/article/pii/S0016718520302219/pdfft?isDTMRedir=true&download=true), and c) [extended readings](weeks/week08/readings.md).
+-   **Readings:** a) [Deepfake Geography](https://www.researchgate.net/profile/Chunxue-Xu/publication/351131604_Deep_fake_geography_When_geospatial_data_encounter_Artificial_Intelligence/links/608a48f5a6fdccaebdf4f065/Deep-fake-geography-When-geospatial-data-encounter-Artificial-Intelligence.pdf), b) [Blockchain and crypto place](https://www.sciencedirect.com/science/article/pii/S0016718520302219), and c) [extended readings](weeks/week08/readings.md).
 -   **Think Piece 8:** [Think Piece Canvas Link](https://canvas.uw.edu/courses/1862477/discussion_topics/10211934) `Due: Mar 2nd, by 11:59pm`
 -   **[Final Project Checkpoint](project/readme.md):** [Project development and identified issues](https://canvas.uw.edu/courses/1862477/discussion_topics/10211935) `Due: Mar. 2nd, by 11:59pm`
 
