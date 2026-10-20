@@ -470,7 +470,7 @@ Positioning your element
 
 Another available property is called is `float`. Float can be used to wrap text around images.
 
-CSS is the way you style your page, learn more by referring to the references, or playing around in a sandbox such as [CSS Desk](http://www.cssdesk.com/).
+CSS is the way you style your page, learn more by referring to the references, or playing around in a sandbox such as [Coddy's HTML/CSS playground](https://coddy.tech/playground/html).
 
 ## Reference:
 
